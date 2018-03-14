@@ -1,0 +1,43 @@
+MESSAGE "Pass 1. Scanning modules hierarchy."
+MESSAGE_SP VCP2113 "Module \$root found in current working library."
+BEGINPROGRESS Compiling...
+UPDATEPROGRESS 35
+MESSAGE "Pass 2. Processing instantiations."
+UPDATEPROGRESS 45
+MESSAGE "Pass 3. Processing behavioral statements."
+UPDATEPROGRESS 47
+UPDATEPROGRESS 50
+UPDATEPROGRESS 53
+UPDATEPROGRESS 56
+UPDATEPROGRESS 59
+UPDATEPROGRESS 62
+UPDATEPROGRESS 65
+UPDATEPROGRESS 68
+UPDATEPROGRESS 71
+UPDATEPROGRESS 74
+UPDATEPROGRESS 80
+MESSAGE "Parameters in case labels, will not check for overlapping labels (e:/upwork/gnarly_grey/received/jpeg_encoder/rtl_conversion/sim/jpeg_enc_rtl_conversion/src/jpeg_enc.v, ln 175)."
+MESSAGE "Parameters in case labels, will not check for overlapping labels (e:/upwork/gnarly_grey/received/jpeg_encoder/rtl_conversion/sim/jpeg_enc_rtl_conversion/src/jpeg_enc.v, ln 339)."
+MESSAGE "Parameters in case labels, will not check for overlapping labels (e:/upwork/gnarly_grey/received/jpeg_encoder/rtl_conversion/sim/jpeg_enc_rtl_conversion/src/jpeg_enc.v, ln 496)."
+MESSAGE "Parameters in case labels, will not check for overlapping labels (e:/upwork/gnarly_grey/received/jpeg_encoder/rtl_conversion/sim/jpeg_enc_rtl_conversion/src/jpeg_enc.v, ln 642)."
+MESSAGE "Parameters in case labels, will not check for overlapping labels (e:/upwork/gnarly_grey/received/jpeg_encoder/rtl_conversion/sim/jpeg_enc_rtl_conversion/src/jpeg_enc.v, ln 792)."
+MESSAGE "Parameters in case labels, will not check for overlapping labels (e:/upwork/gnarly_grey/received/jpeg_encoder/rtl_conversion/sim/jpeg_enc_rtl_conversion/src/jpeg_enc.v, ln 846)."
+MESSAGE "Parameters in case labels, will not check for overlapping labels (e:/upwork/gnarly_grey/received/jpeg_encoder/rtl_conversion/sim/jpeg_enc_rtl_conversion/src/jpeg_enc.v, ln 991)."
+MESSAGE "Parameters in case labels, will not check for overlapping labels (e:/upwork/gnarly_grey/received/jpeg_encoder/rtl_conversion/sim/jpeg_enc_rtl_conversion/src/jpeg_enc.v, ln 1102)."
+MESSAGE "Parameters in case labels, will not check for overlapping labels (e:/upwork/gnarly_grey/received/jpeg_encoder/rtl_conversion/sim/jpeg_enc_rtl_conversion/src/jpeg_enc.v, ln 1130)."
+MESSAGE "Parameters in case labels, will not check for overlapping labels (e:/upwork/gnarly_grey/received/jpeg_encoder/rtl_conversion/sim/jpeg_enc_rtl_conversion/src/jpeg_enc.v, ln 1163)."
+MESSAGE "Parameters in case labels, will not check for overlapping labels (e:/upwork/gnarly_grey/received/jpeg_encoder/rtl_conversion/sim/jpeg_enc_rtl_conversion/src/jpeg_enc.v, ln 1213)."
+MESSAGE "Parameters in case labels, will not check for overlapping labels (e:/upwork/gnarly_grey/received/jpeg_encoder/rtl_conversion/sim/jpeg_enc_rtl_conversion/src/jpeg_enc.v, ln 1234)."
+MESSAGE "Running Optimizer."
+MESSAGE "ELB/DAG code generating."
+MESSAGE_SP VCP2113 "Module \$root found in current working library."
+UPDATEPROGRESS 84
+UPDATEPROGRESS 88
+UPDATEPROGRESS 92
+UPDATEPROGRESS 96
+MESSAGE "$root top modules: jpeg_enc_tb."
+UPDATEPROGRESS 100
+ENDPROGRESS Compiling...
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time: 0[s]."
+WARNING ALOG: "The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available."
+MESSAGE "done"

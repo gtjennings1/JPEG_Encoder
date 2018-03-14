@@ -1,0 +1,61 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=3
+Current Config=compile
+
+[Configurations]
+compile=rtl_conversion
+
+[Library]
+rtl_conversion=.\rtl_conversion\rtl_conversion.lib
+
+[Settings]
+AccessRead=1
+AccessReadWrite=0
+AccessACCB=0
+AccessACCR=0
+AccessReadWriteSLP=0
+AccessReadTopLevel=0
+DisableC=1
+ENABLE_ADV_DATAFLOW=0
+FLOW_TYPE=HDL
+LANGUAGE=VERILOG
+REFRESH_FLOW=1
+FLOWTOOLS=NONE
+FAMILY=Lattice ECP3
+fileopenfolder=E:\upwork\gnarly_grey\received\jpeg_encoder\rtl_conversion\sim\jpeg_enc_rtl_conversion\src
+
+[LocalVerilogSets]
+EnableSLP=1
+EnableDebug=0
+
+[LocalVhdlSets]
+CompileWithDebug=0
+
+[$LibMap$]
+rtl_conversion=.
+Active_lib=
+
+[Files]
+/flower_1024x768_rgb.hex=-1
+/jpeg_enc_tb.v=-1
+/jpeg_enc.v=-1
+/jpeg_enc_inc.v=-1
+/header_rom_data.v=-1
+
+[Files.Data]
+.\src\flower_1024x768_rgb.hex=Memory File
+.\src\jpeg_enc_tb.v=Verilog Source Code
+.\src\jpeg_enc.v=Verilog Source Code
+.\src\jpeg_enc_inc.v=Verilog Source Code
+.\src\header_rom_data.v=Verilog Source Code
+
+[SpecTracer]
+WindowVisible=0
+
+[HierarchyViewer]
+HierarchyInformation=
+ShowHide=ShowTopLevel
+Selected=
+
