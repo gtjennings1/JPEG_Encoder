@@ -174,14 +174,14 @@ module jpeg_enc_dct (
                             tmp_du[4] <= #1 tmp10 - tmp11;
                           end
             DCT_CAL_P6  : begin
-                            tmp_du[2] <= #1 tmp0 >>> 4;/// 10;
-                            tmp_du[6] <= #1 tmp7 >>> 4;/// 10;
+                            tmp_du[2] <= #1 tmp0 >>> 3;//4;/// 10;
+                            tmp_du[6] <= #1 tmp7 >>> 3;//4;/// 10;
                           end       
             DCT_CAL_P7  : begin
-                            tmp_du[5] <= #1 tmp1 >>> 4;/// 10;
-                            tmp_du[3] <= #1 tmp2 >>> 4;/// 10;
-                            tmp_du[1] <= #1 tmp3 >>> 4;/// 10;
-                            tmp_du[7] <= #1 tmp4 >>> 4;/// 10;
+                            tmp_du[5] <= #1 tmp1 >>> 3;//4;/// 10;
+                            tmp_du[3] <= #1 tmp2 >>> 3;//4;/// 10;
+                            tmp_du[1] <= #1 tmp3 >>> 3;//4;/// 10;
+                            tmp_du[7] <= #1 tmp4 >>> 3;//4;/// 10;
                           end
             default     : begin
                             tmp_du[0] <= #1 tmp_du[0];
@@ -233,11 +233,11 @@ module jpeg_enc_dct (
                           end
             DCT_CAL_P3  : begin
                             tmp1 <= #1 tmp12 + tmp13; //z1
-                            tmp2 <= #1 tmp20 * 8;//5;     //z2
-                            tmp3 <= #1 tmp21 * 11;//7;     //z3
-                            tmp4 <= #1 tmp22 * 20;//13;    //z4
+                            tmp2 <= #1 tmp20 << 2;//* 4;//8;//5;     //z2
+                            tmp3 <= #1 tmp21 * 5;//11;//7;     //z3
+                            tmp4 <= #1 tmp22 * 10;//20;//13;    //z4
                             tmp5 <= #1 tmp20 - tmp22; //z5
-                            tmp6 <= #1 tmp13 << 4;//* 10;    //du2/6: (tmp13 * 10)                            
+                            tmp6 <= #1 tmp13 << 3;//4;//* 10;    //du2/6: (tmp13 * 10)                            
                           end
             DCT_CAL_P5  : begin
                             tmp0 <= #1 tmp6 + tmp10;  //du2/6: + z1
@@ -295,9 +295,9 @@ module jpeg_enc_dct (
                             tmp22 <= #1 tmp6 + tmp7;           
                           end
             DCT_CAL_P4  : begin
-                            tmp10 <= #1 tmp1 * 11;//7;    //z1
-                            tmp11 <= #1 tmp5 * 6;//3;    //z5
-                            tmp12 <= #1 tmp7 << 4;//* 10;   //z11/z13: (tmp7 * 10)           
+                            tmp10 <= #1 tmp1 * 5;//11;//7;    //z1
+                            tmp11 <= #1 tmp5 * 3;//6;//3;    //z5
+                            tmp12 <= #1 tmp7 << 3;//4;//* 10;   //z11/z13: (tmp7 * 10)           
                           end 
             DCT_CAL_P5  : begin
                             tmp13 <= #1 tmp12 + tmp3; //z11

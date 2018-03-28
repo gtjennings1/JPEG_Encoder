@@ -1,57 +1,62 @@
-timestamp=1522039509483
+timestamp=1522237299781
 
 [~A]
+E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_synrtl/jpeg_enc_synrtl/jpeg_enc_synrtl/src/jpeg_enc.v=0*350228*359480
+E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_synrtl/jpeg_enc_synrtl/jpeg_enc_synrtl/src/jpeg_enc_dct.v=0*368491*372051
+E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_synrtl/jpeg_enc_synrtl/jpeg_enc_synrtl/src/jpeg_enc_mem.v=0*360787*362395
+E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_synrtl/jpeg_enc_synrtl/jpeg_enc_synrtl/src/jpeg_enc_tb.v=0*347074*348617
 E:/upwork/gnarly_grey/received/jpeg_encoder/rtl_conversion/sim/jpeg_enc_synrtl/jpeg_enc_synrtl/jpeg_enc_synrtl/src/jpeg_enc.v=0*71566*82501
 E:/upwork/gnarly_grey/received/jpeg_encoder/rtl_conversion/sim/jpeg_enc_synrtl/jpeg_enc_synrtl/jpeg_enc_synrtl/src/jpeg_enc_mem.v=0*56620*57493
 E:/upwork/gnarly_grey/received/jpeg_encoder/rtl_conversion/sim/jpeg_enc_synrtl/jpeg_enc_synrtl/jpeg_enc_synrtl/src/jpeg_enc_tb.v=0*404*1949
-ModifyID=38
+LastVerilogToplevel=jpeg_enc_tb
+ModifyID=43
 Version=74
 e:/upwork/gnarly_grey/received/jpeg_encoder/rtl_conversion/sim/jpeg_enc_synrtl/jpeg_enc_synrtl/jpeg_enc_synrtl/src/jpeg_enc.v=0*331866*341120
 e:/upwork/gnarly_grey/received/jpeg_encoder/rtl_conversion/sim/jpeg_enc_synrtl/jpeg_enc_synrtl/jpeg_enc_synrtl/src/jpeg_enc_dct.v=0*342418*345980
 e:/upwork/gnarly_grey/received/jpeg_encoder/rtl_conversion/sim/jpeg_enc_synrtl/jpeg_enc_synrtl/jpeg_enc_synrtl/src/jpeg_enc_mem.v=0*244738*246348
 
 [$root]
-A/$root=22|||1*741282
-BinI32/$root=3*1177721
-SLP=3*1177825
-Version=10.3.3558.6081  (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|c73a565f2ade592f8ac1c68f484c92164ae90145c0efd24109c8222bd40ded68
+A/$root=22|||1*799377
+BinI32/$root=3*1253392
+SLP=3*1253496
+Version=10.3.3558.6081  (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|c73a565f2ade592f8ac1c68f484c92160240d3406296be4421481787ef86de42
 
 [jpeg_enc]
-A/jpeg_enc=22|./../src/jpeg_enc.v|12|1*716340
-BinI32/jpeg_enc=3*1142966
+A/jpeg_enc=22|./../src/jpeg_enc.v|12|1*755089
+BinI32/jpeg_enc=3*1197264
 R=./../src/jpeg_enc.v|12
-SLP=3*1164793
-Version=10.3.3558.6081  (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|c5b7a4341a5d5e6c68083ef163daff3837d41cce7d3717084c2e219b4548e8eb1742150161422da2d0723fe8828a987f
+SLP=3*1219245
+Version=10.3.3558.6081  (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|c5b7a4341a5d5e6c68083ef163daff3837d41cce7d3717084c2e219b4548e8eb63fc25aade44e6014a7f2c7794fcd1a7
 
 [jpeg_enc_dct]
-A/jpeg_enc_dct=22|./../src/jpeg_enc_dct.v|1|1*741656
-BinI32/jpeg_enc_dct=3*1177893
+A/jpeg_enc_dct=22|./../src/jpeg_enc_dct.v|1|1*799751
+BinI32/jpeg_enc_dct=3*1253564
 R=./../src/jpeg_enc_dct.v|1
-SLP=3*1186922
-Version=10.3.3558.6081  (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|441177e149bde8d3f8fab0f4bdfec88db9f2806b8e8b38e8e5021162351fafe058bc867ba8bf7842a8ff95325d2f539e
+SLP=3*1262596
+Version=10.3.3558.6081  (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|441177e149bde8d3f8fab0f4bdfec88db9f2806b8e8b38e8e5021162351fafe0c7a6118d0173a17d72e9b4e8482bb293
 
 [jpeg_enc_mem]
-A/jpeg_enc_mem=22|./../src/jpeg_enc_mem.v|1|1*516878
-BinI32/jpeg_enc_mem=3*868254
+A/jpeg_enc_mem=22|./../src/jpeg_enc_mem.v|1|1*780405
+BinI32/jpeg_enc_mem=3*1232345
 R=./../src/jpeg_enc_mem.v|1
-SLP=3*872435
-Version=10.3.3558.6081  (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|73a14e4e2e55075f3bab2c80a6b6eb5c29bd1a0c30598d1831e45e2ea7a29ed99a69322eaa83bc7301bd9245b85b0100
+SLP=3*1236629
+Version=10.3.3558.6081  (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|73a14e4e2e55075f3bab2c80a6b6eb5c29bd1a0c30598d1831e45e2ea7a29ed971384d4e94a011f62b9d2b8dc6354397
 
 [jpeg_enc_tb]
-A/jpeg_enc_tb=22|./../src/jpeg_enc_tb.v|3|1*374
-BinI32/jpeg_enc_tb=3*172
+A/jpeg_enc_tb=22|./../src/jpeg_enc_tb.v|3|1*751101
+BinI32/jpeg_enc_tb=3*1192671
 R=./../src/jpeg_enc_tb.v|3
-SLP=3*3126
-Version=10.3.3558.6081  (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|19271db0598cdda18c8519ae1c80fba59f7692b14210c45eb1dcc37e7fe3fa4fe4de87bc27ce335e6c90acca95851fed
+SLP=3*1195640
+Version=10.3.3558.6081  (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|19271db0598cdda18c8519ae1c80fba59f7692b14210c45eb1dcc37e7fe3fa4f676a196703fbeb6dccd6aa67e81902a6
 
 [~MFT]
-0=6|0jpeg_enc_synrtl.mgf|345980|285270
-1=4|1jpeg_enc_synrtl.mgf|741656|703199
-3=8|3jpeg_enc_synrtl.mgf|1186922|1132369
+0=6|0jpeg_enc_synrtl.mgf|372051|289486
+1=4|1jpeg_enc_synrtl.mgf|799751|761294
+3=8|3jpeg_enc_synrtl.mgf|1262596|1207768
 
 [~U]
-$root=12|0*341806|
-jpeg_enc=12|0*331124|
-jpeg_enc_dct=12|0*342004|
-jpeg_enc_mem=12|0*244297|
-jpeg_enc_tb=12|0*166||0x10
+$root=12|0*367895|
+jpeg_enc=12|0*349486|
+jpeg_enc_dct=12|0*368077|
+jpeg_enc_mem=12|0*360346|
+jpeg_enc_tb=12|0*346836||0x10

@@ -1,3 +1,20 @@
+alog -O2 -sve -msg 5 -sv2k12 -work jpeg_enc_synrtl $dsn/src/jpeg_enc_tb.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module jpeg_enc found in current working library.
+# Pass 2. Processing instantiations.
+# Info: VCP2618 jpeg_enc_tb.v : (16, 19): Array size is greater than 2^24 bits: frame_buf reg[7:0]$[2359295:0].
+# Pass 3. Processing behavioral statements.
+# Info: VCP2618 jpeg_enc_tb.v : (16, 19): Array size is greater than 2^24 bits: frame_buf reg[7:0]$[2359295:0].
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_synrtl/jpeg_enc_synrtl/jpeg_enc_synrtl/src/jpeg_enc_tb.v, ln 81).
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: jpeg_enc_tb.
+# $root top modules: jpeg_enc_tb.
+# Compile success 0 Errors 0 Warnings  Analysis time: 1[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
 alog -O2 -sve -msg 5 -sv2k12 -work jpeg_enc_synrtl $dsn/src/jpeg_enc.v
 # Pass 1. Scanning modules hierarchy.
 # Info: VCP2113 Module \$root found in current working library.
@@ -5,23 +22,55 @@ alog -O2 -sve -msg 5 -sv2k12 -work jpeg_enc_synrtl $dsn/src/jpeg_enc.v
 # Info: VCP2113 Module jpeg_enc_dct found in current working library.
 # Pass 2. Processing instantiations.
 # Pass 3. Processing behavioral statements.
-# Parameters in case labels, will not check for overlapping labels (e:/upwork/gnarly_grey/received/jpeg_encoder/rtl_conversion/sim/jpeg_enc_synrtl/jpeg_enc_synrtl/jpeg_enc_synrtl/src/jpeg_enc.v, ln 298).
-# Parameters in case labels, will not check for overlapping labels (e:/upwork/gnarly_grey/received/jpeg_encoder/rtl_conversion/sim/jpeg_enc_synrtl/jpeg_enc_synrtl/jpeg_enc_synrtl/src/jpeg_enc.v, ln 474).
-# Parameters in case labels, will not check for overlapping labels (e:/upwork/gnarly_grey/received/jpeg_encoder/rtl_conversion/sim/jpeg_enc_synrtl/jpeg_enc_synrtl/jpeg_enc_synrtl/src/jpeg_enc.v, ln 987).
-# Parameters in case labels, will not check for overlapping labels (e:/upwork/gnarly_grey/received/jpeg_encoder/rtl_conversion/sim/jpeg_enc_synrtl/jpeg_enc_synrtl/jpeg_enc_synrtl/src/jpeg_enc.v, ln 1008).
-# Parameters in case labels, will not check for overlapping labels (e:/upwork/gnarly_grey/received/jpeg_encoder/rtl_conversion/sim/jpeg_enc_synrtl/jpeg_enc_synrtl/jpeg_enc_synrtl/src/jpeg_enc.v, ln 1051).
-# Parameters in case labels, will not check for overlapping labels (e:/upwork/gnarly_grey/received/jpeg_encoder/rtl_conversion/sim/jpeg_enc_synrtl/jpeg_enc_synrtl/jpeg_enc_synrtl/src/jpeg_enc.v, ln 1101).
-# Parameters in case labels, will not check for overlapping labels (e:/upwork/gnarly_grey/received/jpeg_encoder/rtl_conversion/sim/jpeg_enc_synrtl/jpeg_enc_synrtl/jpeg_enc_synrtl/src/jpeg_enc.v, ln 1256).
-# Parameters in case labels, will not check for overlapping labels (e:/upwork/gnarly_grey/received/jpeg_encoder/rtl_conversion/sim/jpeg_enc_synrtl/jpeg_enc_synrtl/jpeg_enc_synrtl/src/jpeg_enc.v, ln 1367).
-# Parameters in case labels, will not check for overlapping labels (e:/upwork/gnarly_grey/received/jpeg_encoder/rtl_conversion/sim/jpeg_enc_synrtl/jpeg_enc_synrtl/jpeg_enc_synrtl/src/jpeg_enc.v, ln 1395).
-# Parameters in case labels, will not check for overlapping labels (e:/upwork/gnarly_grey/received/jpeg_encoder/rtl_conversion/sim/jpeg_enc_synrtl/jpeg_enc_synrtl/jpeg_enc_synrtl/src/jpeg_enc.v, ln 1428).
-# Parameters in case labels, will not check for overlapping labels (e:/upwork/gnarly_grey/received/jpeg_encoder/rtl_conversion/sim/jpeg_enc_synrtl/jpeg_enc_synrtl/jpeg_enc_synrtl/src/jpeg_enc.v, ln 1482).
-# Parameters in case labels, will not check for overlapping labels (e:/upwork/gnarly_grey/received/jpeg_encoder/rtl_conversion/sim/jpeg_enc_synrtl/jpeg_enc_synrtl/jpeg_enc_synrtl/src/jpeg_enc.v, ln 1504).
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_synrtl/jpeg_enc_synrtl/jpeg_enc_synrtl/src/jpeg_enc.v, ln 298).
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_synrtl/jpeg_enc_synrtl/jpeg_enc_synrtl/src/jpeg_enc.v, ln 474).
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_synrtl/jpeg_enc_synrtl/jpeg_enc_synrtl/src/jpeg_enc.v, ln 988).
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_synrtl/jpeg_enc_synrtl/jpeg_enc_synrtl/src/jpeg_enc.v, ln 1009).
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_synrtl/jpeg_enc_synrtl/jpeg_enc_synrtl/src/jpeg_enc.v, ln 1052).
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_synrtl/jpeg_enc_synrtl/jpeg_enc_synrtl/src/jpeg_enc.v, ln 1102).
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_synrtl/jpeg_enc_synrtl/jpeg_enc_synrtl/src/jpeg_enc.v, ln 1257).
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_synrtl/jpeg_enc_synrtl/jpeg_enc_synrtl/src/jpeg_enc.v, ln 1368).
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_synrtl/jpeg_enc_synrtl/jpeg_enc_synrtl/src/jpeg_enc.v, ln 1396).
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_synrtl/jpeg_enc_synrtl/jpeg_enc_synrtl/src/jpeg_enc.v, ln 1429).
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_synrtl/jpeg_enc_synrtl/jpeg_enc_synrtl/src/jpeg_enc.v, ln 1483).
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_synrtl/jpeg_enc_synrtl/jpeg_enc_synrtl/src/jpeg_enc.v, ln 1505).
 # Running Optimizer.
 # ELB/DAG code generating.
 # Info: VCP2113 Module \$root found in current working library.
 # $root top modules: jpeg_enc_tb.
-# Compile success 0 Errors 0 Warnings  Analysis time: 1[s].
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+alog -O2 -sve -msg 5 -sv2k12 -work jpeg_enc_synrtl $dsn/src/jpeg_enc_mem.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# $root top modules: jpeg_enc_tb.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+alog -O2 -sve -msg 5 -sv2k12 -work jpeg_enc_synrtl $dsn/src/jpeg_enc_dct.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_synrtl/jpeg_enc_synrtl/jpeg_enc_synrtl/src/jpeg_enc_dct.v, ln 76).
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_synrtl/jpeg_enc_synrtl/jpeg_enc_synrtl/src/jpeg_enc_dct.v, ln 122).
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_synrtl/jpeg_enc_synrtl/jpeg_enc_synrtl/src/jpeg_enc_dct.v, ln 134).
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_synrtl/jpeg_enc_synrtl/jpeg_enc_synrtl/src/jpeg_enc_dct.v, ln 164).
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_synrtl/jpeg_enc_synrtl/jpeg_enc_synrtl/src/jpeg_enc_dct.v, ln 223).
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_synrtl/jpeg_enc_synrtl/jpeg_enc_synrtl/src/jpeg_enc_dct.v, ln 287).
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_synrtl/jpeg_enc_synrtl/jpeg_enc_synrtl/src/jpeg_enc_dct.v, ln 334).
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_synrtl/jpeg_enc_synrtl/jpeg_enc_synrtl/src/jpeg_enc_dct.v, ln 363).
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# $root top modules: jpeg_enc_tb.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
 # Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
 # done
 # ELBREAD: Elaboration process.
@@ -48,151 +97,37 @@ asim -O5 +access +r jpeg_enc_tb
 # SLP: Elaboration phase ...
 # SLP: Elaboration phase ... done : 0.1 [s]
 # SLP: Generation phase ...
-# SLP: Generation phase ... done : 1.5 [s]
-# SLP: Finished : 2.0 [s]
+# SLP: Generation phase ... done : 2.2 [s]
+# SLP: Finished : 2.4 [s]
 # SLP: 0 primitives and 98 (100.00%) other processes in SLP
 # SLP: 196 (93.33%) signals in SLP and 13 (6.19%) interface signals
-# ELAB2: Elaboration final pass complete - time: 2.4 [s].
+# ELAB2: Elaboration final pass complete - time: 3.4 [s].
 # KERNEL: SLP loading done - time: 0.0 [s].
 # KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
 # KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
 # KERNEL: SLP simulation initialization done - time: 0.0 [s].
 # KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 10336 kB (elbread=1280 elab2=8903 kernel=152 sdf=0)
-# KERNEL: ASDB file was created in location e:\upwork\gnarly_grey\received\jpeg_encoder\rtl_conversion\sim\jpeg_enc_synrtl\jpeg_enc_synrtl\jpeg_enc_synrtl\src\wave.asdb
-#  09:35, 26 March 2018
+# Allocation: Simulator allocated 10335 kB (elbread=1280 elab2=8902 kernel=152 sdf=0)
+# KERNEL: ASDB file was created in location E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\sim\jpeg_enc_synrtl\jpeg_enc_synrtl\jpeg_enc_synrtl\src\wave.asdb
+#  17:06, 28 March 2018
 #  Simulation has been initialized
-# add wave -noreg {/jpeg_enc_tb/dut/img_out_reg}
-# add wave -noreg {/jpeg_enc_tb/dut/img_valid_reg}
-# add wave -noreg {/jpeg_enc_tb/dut/img_valid_reg_fl}
-# add wave -noreg {/jpeg_enc_tb/dut/img_done_reg}
-# add wave -noreg {/jpeg_enc_tb/dut/byte_count}
-# add wave -noreg {/jpeg_enc_tb/dut/header_rom_d}
-# add wave -noreg {/jpeg_enc_tb/dut/du_ram_we}
-# add wave -noreg {/jpeg_enc_tb/dut/du_ram_aw}
-# add wave -noreg {/jpeg_enc_tb/dut/QNT_DU}
-# add wave -noreg {/jpeg_enc_tb/dut/dct_comp_sel}
-# add wave -noreg {/jpeg_enc_tb/dut/dct_comp_idx}
-# add wave -noreg {/jpeg_enc_tb/dut/dct_idx_cnt}
-# add wave -noreg {/jpeg_enc_tb/dut/DCY}
-# add wave -noreg {/jpeg_enc_tb/dut/DCU}
-# add wave -noreg {/jpeg_enc_tb/dut/DCV}
-# add wave -noreg {/jpeg_enc_tb/dut/diff_DC}
-# add wave -noreg {/jpeg_enc_tb/dut/zzdu_ram_we}
-# add wave -noreg {/jpeg_enc_tb/dut/zzdu_ram_ar}
-# add wave -noreg {/jpeg_enc_tb/dut/dcht_bc_rom_a}
-# add wave -noreg {/jpeg_enc_tb/dut/dcht_bb_rom_a}
-# add wave -noreg {/jpeg_enc_tb/dut/acht_bc_rom_a}
-# add wave -noreg {/jpeg_enc_tb/dut/acht_bb_rom_a}
-# add wave -noreg {/jpeg_enc_tb/dut/img_x}
-# add wave -noreg {/jpeg_enc_tb/dut/img_col}
-# add wave -noreg {/jpeg_enc_tb/dut/img_y}
-# add wave -noreg {/jpeg_enc_tb/dut/img_row}
-# add wave -noreg {/jpeg_enc_tb/dut/img_col_p}
-# add wave -noreg {/jpeg_enc_tb/dut/img_col_p_fl1}
-# add wave -noreg {/jpeg_enc_tb/dut/img_col_p_fl2}
-# add wave -noreg {/jpeg_enc_tb/dut/col_cnt}
-# add wave -noreg {/jpeg_enc_tb/dut/row_cnt}
-# add wave -noreg {/jpeg_enc_tb/dut/col_cnt_fl1}
-# add wave -noreg {/jpeg_enc_tb/dut/row_cnt_fl1}
-# add wave -noreg {/jpeg_enc_tb/dut/col_cnt_fl2}
-# add wave -noreg {/jpeg_enc_tb/dut/row_cnt_fl2}
-# add wave -noreg {/jpeg_enc_tb/dut/load_du_done_fl}
-# add wave -noreg {/jpeg_enc_tb/dut/qz_cnt}
-# add wave -noreg {/jpeg_enc_tb/dut/c_state}
-# add wave -noreg {/jpeg_enc_tb/dut/n_state}
-# add wave -noreg {/jpeg_enc_tb/dut/b_state}
-# add wave -noreg {/jpeg_enc_tb/dut/fb_addr_reg}
-# add wave -noreg {/jpeg_enc_tb/dut/wb_bit_cnt}
-# add wave -noreg {/jpeg_enc_tb/dut/wb_bc_tmp}
-# add wave -noreg {/jpeg_enc_tb/dut/wb_bit_buf}
-# add wave -noreg {/jpeg_enc_tb/dut/wb_bb_tmp}
-# add wave -noreg {/jpeg_enc_tb/dut/wb_c}
-# add wave -noreg {/jpeg_enc_tb/dut/cb_bb_mask}
-# add wave -noreg {/jpeg_enc_tb/dut/cb_bit_buf}
-# add wave -noreg {/jpeg_enc_tb/dut/cb_bb_tmp}
-# add wave -noreg {/jpeg_enc_tb/dut/cb_bit_cnt}
-# add wave -noreg {/jpeg_enc_tb/dut/end0pos}
-# add wave -noreg {/jpeg_enc_tb/dut/du_ac0}
-# add wave -noreg {/jpeg_enc_tb/dut/ac_idx}
-# add wave -noreg {/jpeg_enc_tb/dut/ac0_idx}
-# add wave -noreg {/jpeg_enc_tb/dut/ac0_cnt}
-# add wave -noreg {/jpeg_enc_tb/dut/last_du}
-# add wave -noreg {/jpeg_enc_tb/dut/last_du_p}
-# add wave -noreg {/jpeg_enc_tb/dut/header_tx_done}
-# add wave -noreg {/jpeg_enc_tb/dut/inc_img_col_p}
-# add wave -noreg {/jpeg_enc_tb/dut/rst_img_col_p}
-# add wave -noreg {/jpeg_enc_tb/dut/col_max}
-# add wave -noreg {/jpeg_enc_tb/dut/row_max}
-# add wave -noreg {/jpeg_enc_tb/dut/inc_row_cnt}
-# add wave -noreg {/jpeg_enc_tb/dut/load_du_done}
-# add wave -noreg {/jpeg_enc_tb/dut/dct_done}
-# add wave -noreg {/jpeg_enc_tb/dut/qz_done}
-# add wave -noreg {/jpeg_enc_tb/dut/diff_dc_zero}
-# add wave -noreg {/jpeg_enc_tb/dut/diff_dc_neg}
-# add wave -noreg {/jpeg_enc_tb/dut/bit_cnt_gte_8}
-# add wave -noreg {/jpeg_enc_tb/dut/byte_out_eq_255}
-# add wave -noreg {/jpeg_enc_tb/dut/check_next_element}
-# add wave -noreg {/jpeg_enc_tb/dut/e0p_zero}
-# add wave -noreg {/jpeg_enc_tb/dut/inc_ac0_idx}
-# add wave -noreg {/jpeg_enc_tb/dut/inc_ac0_cnt}
-# add wave -noreg {/jpeg_enc_tb/dut/ac0_cnt_gte_16}
-# add wave -noreg {/jpeg_enc_tb/dut/e0p_ne_63}
-# add wave -noreg {/jpeg_enc_tb/dut/du_ac_neg}
-# add wave -noreg {/jpeg_enc_tb/dut/last_comp}
-# add wave -noreg {/jpeg_enc_tb/dut/du_ram_do}
-# add wave -noreg {/jpeg_enc_tb/dut/fdtbl_rom_d}
-# add wave -noreg {/jpeg_enc_tb/dut/zzidx_rom_d}
-# add wave -noreg {/jpeg_enc_tb/dut/zzdu_ram_do}
-# add wave -noreg {/jpeg_enc_tb/dut/dcht_bc_rom_d}
-# add wave -noreg {/jpeg_enc_tb/dut/acht_bc_rom_d}
-# add wave -noreg {/jpeg_enc_tb/dut/dcht_bb_rom_d}
-# add wave -noreg {/jpeg_enc_tb/dut/acht_bb_rom_d}
-# add wave -noreg {/jpeg_enc_tb/dut/start_dct}
-# add wave -noreg {/jpeg_enc_tb/dut/du_ram_a_dct}
-# add wave -noreg {/jpeg_enc_tb/dut/dctdu_ram_aw}
-# add wave -noreg {/jpeg_enc_tb/dut/dctdu_ram_ar_dct}
-# add wave -noreg {/jpeg_enc_tb/dut/dctdu_ram_ar}
-# add wave -noreg {/jpeg_enc_tb/dut/dctdu_ram_we}
-# add wave -noreg {/jpeg_enc_tb/dut/dctdu_ram_di}
-# add wave -noreg {/jpeg_enc_tb/dut/dctdu_ram_do}
-# add wave -noreg {/jpeg_enc_tb/dut/clk}
-# add wave -noreg {/jpeg_enc_tb/dut/reset_n}
-# add wave -noreg {/jpeg_enc_tb/dut/conv_en}
-# add wave -noreg {/jpeg_enc_tb/dut/fb_data}
-# add wave -noreg {/jpeg_enc_tb/dut/fb_addr}
-# add wave -noreg {/jpeg_enc_tb/dut/img_out}
-# add wave -noreg {/jpeg_enc_tb/dut/img_valid}
-# add wave -noreg {/jpeg_enc_tb/dut/img_done}
-# 102 signal(s) traced.
-# Waveform file 'untitled.awc' connected to 'e:/upwork/gnarly_grey/received/jpeg_encoder/rtl_conversion/sim/jpeg_enc_synrtl/jpeg_enc_synrtl/jpeg_enc_synrtl/src/wave.asdb'.
-run 5000 us
-# KERNEL: Conversion Done
-# RUNTIME: Info: RUNTIME_0068 jpeg_enc_tb.v (118): $finish called.
-# KERNEL: Time: 190 ns,  Iteration: 0,  Instance: /jpeg_enc_tb,  Process: @ALWAYS#68,105,111_2@.
-# KERNEL: stopped at time: 190 ns
-# VSIM: Simulation has finished. There are no more test vectors to simulate.
+run 765000 us
 endsim
+# KERNEL: stopped at time: 150775030 ns
 # VSIM: Simulation has finished.
-alog -O2 -sve -msg 5 -sv2k12 -work jpeg_enc_synrtl $dsn/src/jpeg_enc.v
+alog -O2 -sve -msg 5 -sv2k12 -work jpeg_enc_synrtl $dsn/src/jpeg_enc_dct.v
 # Pass 1. Scanning modules hierarchy.
 # Info: VCP2113 Module \$root found in current working library.
-# Info: VCP2113 Module jpeg_enc_mem found in current working library.
-# Info: VCP2113 Module jpeg_enc_dct found in current working library.
 # Pass 2. Processing instantiations.
 # Pass 3. Processing behavioral statements.
-# Parameters in case labels, will not check for overlapping labels (e:/upwork/gnarly_grey/received/jpeg_encoder/rtl_conversion/sim/jpeg_enc_synrtl/jpeg_enc_synrtl/jpeg_enc_synrtl/src/jpeg_enc.v, ln 298).
-# Parameters in case labels, will not check for overlapping labels (e:/upwork/gnarly_grey/received/jpeg_encoder/rtl_conversion/sim/jpeg_enc_synrtl/jpeg_enc_synrtl/jpeg_enc_synrtl/src/jpeg_enc.v, ln 474).
-# Parameters in case labels, will not check for overlapping labels (e:/upwork/gnarly_grey/received/jpeg_encoder/rtl_conversion/sim/jpeg_enc_synrtl/jpeg_enc_synrtl/jpeg_enc_synrtl/src/jpeg_enc.v, ln 987).
-# Parameters in case labels, will not check for overlapping labels (e:/upwork/gnarly_grey/received/jpeg_encoder/rtl_conversion/sim/jpeg_enc_synrtl/jpeg_enc_synrtl/jpeg_enc_synrtl/src/jpeg_enc.v, ln 1008).
-# Parameters in case labels, will not check for overlapping labels (e:/upwork/gnarly_grey/received/jpeg_encoder/rtl_conversion/sim/jpeg_enc_synrtl/jpeg_enc_synrtl/jpeg_enc_synrtl/src/jpeg_enc.v, ln 1051).
-# Parameters in case labels, will not check for overlapping labels (e:/upwork/gnarly_grey/received/jpeg_encoder/rtl_conversion/sim/jpeg_enc_synrtl/jpeg_enc_synrtl/jpeg_enc_synrtl/src/jpeg_enc.v, ln 1101).
-# Parameters in case labels, will not check for overlapping labels (e:/upwork/gnarly_grey/received/jpeg_encoder/rtl_conversion/sim/jpeg_enc_synrtl/jpeg_enc_synrtl/jpeg_enc_synrtl/src/jpeg_enc.v, ln 1256).
-# Parameters in case labels, will not check for overlapping labels (e:/upwork/gnarly_grey/received/jpeg_encoder/rtl_conversion/sim/jpeg_enc_synrtl/jpeg_enc_synrtl/jpeg_enc_synrtl/src/jpeg_enc.v, ln 1367).
-# Parameters in case labels, will not check for overlapping labels (e:/upwork/gnarly_grey/received/jpeg_encoder/rtl_conversion/sim/jpeg_enc_synrtl/jpeg_enc_synrtl/jpeg_enc_synrtl/src/jpeg_enc.v, ln 1395).
-# Parameters in case labels, will not check for overlapping labels (e:/upwork/gnarly_grey/received/jpeg_encoder/rtl_conversion/sim/jpeg_enc_synrtl/jpeg_enc_synrtl/jpeg_enc_synrtl/src/jpeg_enc.v, ln 1428).
-# Parameters in case labels, will not check for overlapping labels (e:/upwork/gnarly_grey/received/jpeg_encoder/rtl_conversion/sim/jpeg_enc_synrtl/jpeg_enc_synrtl/jpeg_enc_synrtl/src/jpeg_enc.v, ln 1482).
-# Parameters in case labels, will not check for overlapping labels (e:/upwork/gnarly_grey/received/jpeg_encoder/rtl_conversion/sim/jpeg_enc_synrtl/jpeg_enc_synrtl/jpeg_enc_synrtl/src/jpeg_enc.v, ln 1504).
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_synrtl/jpeg_enc_synrtl/jpeg_enc_synrtl/src/jpeg_enc_dct.v, ln 76).
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_synrtl/jpeg_enc_synrtl/jpeg_enc_synrtl/src/jpeg_enc_dct.v, ln 122).
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_synrtl/jpeg_enc_synrtl/jpeg_enc_synrtl/src/jpeg_enc_dct.v, ln 134).
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_synrtl/jpeg_enc_synrtl/jpeg_enc_synrtl/src/jpeg_enc_dct.v, ln 164).
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_synrtl/jpeg_enc_synrtl/jpeg_enc_synrtl/src/jpeg_enc_dct.v, ln 223).
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_synrtl/jpeg_enc_synrtl/jpeg_enc_synrtl/src/jpeg_enc_dct.v, ln 287).
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_synrtl/jpeg_enc_synrtl/jpeg_enc_synrtl/src/jpeg_enc_dct.v, ln 334).
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_synrtl/jpeg_enc_synrtl/jpeg_enc_synrtl/src/jpeg_enc_dct.v, ln 363).
 # Running Optimizer.
 # ELB/DAG code generating.
 # Info: VCP2113 Module \$root found in current working library.
@@ -225,179 +160,7 @@ asim -O5 +access +r jpeg_enc_tb
 # SLP: Elaboration phase ... done : 0.0 [s]
 # SLP: Generation phase ...
 # SLP: Generation phase ... done : 1.2 [s]
-# SLP: Finished : 1.2 [s]
-# SLP: 0 primitives and 98 (100.00%) other processes in SLP
-# SLP: 196 (93.33%) signals in SLP and 13 (6.19%) interface signals
-# ELAB2: Elaboration final pass complete - time: 1.3 [s].
-# KERNEL: SLP loading done - time: 0.0 [s].
-# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
-# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
-# KERNEL: SLP simulation initialization done - time: 0.0 [s].
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 10336 kB (elbread=1280 elab2=8903 kernel=152 sdf=0)
-# KERNEL: ASDB file was created in location e:\upwork\gnarly_grey\received\jpeg_encoder\rtl_conversion\sim\jpeg_enc_synrtl\jpeg_enc_synrtl\jpeg_enc_synrtl\src\wave.asdb
-#  09:37, 26 March 2018
-#  Simulation has been initialized
-# Waveform file 'untitled.awc' connected to 'e:/upwork/gnarly_grey/received/jpeg_encoder/rtl_conversion/sim/jpeg_enc_synrtl/jpeg_enc_synrtl/jpeg_enc_synrtl/src/wave.asdb'.
-# add wave -noreg {/jpeg_enc_tb/dut/img_out_reg}
-# add wave -noreg {/jpeg_enc_tb/dut/img_valid_reg}
-# add wave -noreg {/jpeg_enc_tb/dut/img_valid_reg_fl}
-# add wave -noreg {/jpeg_enc_tb/dut/img_done_reg}
-# add wave -noreg {/jpeg_enc_tb/dut/byte_count}
-# add wave -noreg {/jpeg_enc_tb/dut/header_rom_d}
-# add wave -noreg {/jpeg_enc_tb/dut/du_ram_we}
-# add wave -noreg {/jpeg_enc_tb/dut/du_ram_aw}
-# add wave -noreg {/jpeg_enc_tb/dut/QNT_DU}
-# add wave -noreg {/jpeg_enc_tb/dut/dct_comp_sel}
-# add wave -noreg {/jpeg_enc_tb/dut/dct_comp_idx}
-# add wave -noreg {/jpeg_enc_tb/dut/dct_idx_cnt}
-# add wave -noreg {/jpeg_enc_tb/dut/DCY}
-# add wave -noreg {/jpeg_enc_tb/dut/DCU}
-# add wave -noreg {/jpeg_enc_tb/dut/DCV}
-# add wave -noreg {/jpeg_enc_tb/dut/diff_DC}
-# add wave -noreg {/jpeg_enc_tb/dut/zzdu_ram_we}
-# add wave -noreg {/jpeg_enc_tb/dut/zzdu_ram_ar}
-# add wave -noreg {/jpeg_enc_tb/dut/dcht_bc_rom_a}
-# add wave -noreg {/jpeg_enc_tb/dut/dcht_bb_rom_a}
-# add wave -noreg {/jpeg_enc_tb/dut/acht_bc_rom_a}
-# add wave -noreg {/jpeg_enc_tb/dut/acht_bb_rom_a}
-# add wave -noreg {/jpeg_enc_tb/dut/img_x}
-# add wave -noreg {/jpeg_enc_tb/dut/img_col}
-# add wave -noreg {/jpeg_enc_tb/dut/img_y}
-# add wave -noreg {/jpeg_enc_tb/dut/img_row}
-# add wave -noreg {/jpeg_enc_tb/dut/img_col_p}
-# add wave -noreg {/jpeg_enc_tb/dut/img_col_p_fl1}
-# add wave -noreg {/jpeg_enc_tb/dut/img_col_p_fl2}
-# add wave -noreg {/jpeg_enc_tb/dut/col_cnt}
-# add wave -noreg {/jpeg_enc_tb/dut/row_cnt}
-# add wave -noreg {/jpeg_enc_tb/dut/col_cnt_fl1}
-# add wave -noreg {/jpeg_enc_tb/dut/row_cnt_fl1}
-# add wave -noreg {/jpeg_enc_tb/dut/col_cnt_fl2}
-# add wave -noreg {/jpeg_enc_tb/dut/row_cnt_fl2}
-# add wave -noreg {/jpeg_enc_tb/dut/load_du_done_fl}
-# add wave -noreg {/jpeg_enc_tb/dut/qz_cnt}
-# add wave -noreg {/jpeg_enc_tb/dut/c_state}
-# add wave -noreg {/jpeg_enc_tb/dut/n_state}
-# add wave -noreg {/jpeg_enc_tb/dut/b_state}
-# add wave -noreg {/jpeg_enc_tb/dut/fb_addr_reg}
-# add wave -noreg {/jpeg_enc_tb/dut/wb_bit_cnt}
-# add wave -noreg {/jpeg_enc_tb/dut/wb_bc_tmp}
-# add wave -noreg {/jpeg_enc_tb/dut/wb_bit_buf}
-# add wave -noreg {/jpeg_enc_tb/dut/wb_bb_tmp}
-# add wave -noreg {/jpeg_enc_tb/dut/wb_c}
-# add wave -noreg {/jpeg_enc_tb/dut/cb_bb_mask}
-# add wave -noreg {/jpeg_enc_tb/dut/cb_bit_buf}
-# add wave -noreg {/jpeg_enc_tb/dut/cb_bb_tmp}
-# add wave -noreg {/jpeg_enc_tb/dut/cb_bit_cnt}
-# add wave -noreg {/jpeg_enc_tb/dut/end0pos}
-# add wave -noreg {/jpeg_enc_tb/dut/du_ac0}
-# add wave -noreg {/jpeg_enc_tb/dut/ac_idx}
-# add wave -noreg {/jpeg_enc_tb/dut/ac0_idx}
-# add wave -noreg {/jpeg_enc_tb/dut/ac0_cnt}
-# add wave -noreg {/jpeg_enc_tb/dut/last_du}
-# add wave -noreg {/jpeg_enc_tb/dut/last_du_p}
-# add wave -noreg {/jpeg_enc_tb/dut/header_tx_done}
-# add wave -noreg {/jpeg_enc_tb/dut/inc_img_col_p}
-# add wave -noreg {/jpeg_enc_tb/dut/rst_img_col_p}
-# add wave -noreg {/jpeg_enc_tb/dut/col_max}
-# add wave -noreg {/jpeg_enc_tb/dut/row_max}
-# add wave -noreg {/jpeg_enc_tb/dut/inc_row_cnt}
-# add wave -noreg {/jpeg_enc_tb/dut/load_du_done}
-# add wave -noreg {/jpeg_enc_tb/dut/dct_done}
-# add wave -noreg {/jpeg_enc_tb/dut/qz_done}
-# add wave -noreg {/jpeg_enc_tb/dut/diff_dc_zero}
-# add wave -noreg {/jpeg_enc_tb/dut/diff_dc_neg}
-# add wave -noreg {/jpeg_enc_tb/dut/bit_cnt_gte_8}
-# add wave -noreg {/jpeg_enc_tb/dut/byte_out_eq_255}
-# add wave -noreg {/jpeg_enc_tb/dut/check_next_element}
-# add wave -noreg {/jpeg_enc_tb/dut/e0p_zero}
-# add wave -noreg {/jpeg_enc_tb/dut/inc_ac0_idx}
-# add wave -noreg {/jpeg_enc_tb/dut/inc_ac0_cnt}
-# add wave -noreg {/jpeg_enc_tb/dut/ac0_cnt_gte_16}
-# add wave -noreg {/jpeg_enc_tb/dut/e0p_ne_63}
-# add wave -noreg {/jpeg_enc_tb/dut/du_ac_neg}
-# add wave -noreg {/jpeg_enc_tb/dut/last_comp}
-# add wave -noreg {/jpeg_enc_tb/dut/du_ram_do}
-# add wave -noreg {/jpeg_enc_tb/dut/fdtbl_rom_d}
-# add wave -noreg {/jpeg_enc_tb/dut/zzidx_rom_d}
-# add wave -noreg {/jpeg_enc_tb/dut/zzdu_ram_do}
-# add wave -noreg {/jpeg_enc_tb/dut/dcht_bc_rom_d}
-# add wave -noreg {/jpeg_enc_tb/dut/acht_bc_rom_d}
-# add wave -noreg {/jpeg_enc_tb/dut/dcht_bb_rom_d}
-# add wave -noreg {/jpeg_enc_tb/dut/acht_bb_rom_d}
-# add wave -noreg {/jpeg_enc_tb/dut/start_dct}
-# add wave -noreg {/jpeg_enc_tb/dut/du_ram_a_dct}
-# add wave -noreg {/jpeg_enc_tb/dut/dctdu_ram_aw}
-# add wave -noreg {/jpeg_enc_tb/dut/dctdu_ram_ar_dct}
-# add wave -noreg {/jpeg_enc_tb/dut/dctdu_ram_ar}
-# add wave -noreg {/jpeg_enc_tb/dut/dctdu_ram_we}
-# add wave -noreg {/jpeg_enc_tb/dut/dctdu_ram_di}
-# add wave -noreg {/jpeg_enc_tb/dut/dctdu_ram_do}
-# add wave -noreg {/jpeg_enc_tb/dut/clk}
-# add wave -noreg {/jpeg_enc_tb/dut/reset_n}
-# add wave -noreg {/jpeg_enc_tb/dut/conv_en}
-# add wave -noreg {/jpeg_enc_tb/dut/fb_data}
-# add wave -noreg {/jpeg_enc_tb/dut/fb_addr}
-# add wave -noreg {/jpeg_enc_tb/dut/img_out}
-# add wave -noreg {/jpeg_enc_tb/dut/img_valid}
-# add wave -noreg {/jpeg_enc_tb/dut/img_done}
-# 102 signal(s) traced.
-run 5000 us
-# KERNEL: stopped at time: 5 ms
-endsim
-# VSIM: Simulation has finished.
-alog -O2 -sve -msg 5 -sv2k12 -work jpeg_enc_synrtl $dsn/src/jpeg_enc.v
-# Pass 1. Scanning modules hierarchy.
-# Info: VCP2113 Module \$root found in current working library.
-# Info: VCP2113 Module jpeg_enc_mem found in current working library.
-# Info: VCP2113 Module jpeg_enc_dct found in current working library.
-# Pass 2. Processing instantiations.
-# Pass 3. Processing behavioral statements.
-# Parameters in case labels, will not check for overlapping labels (e:/upwork/gnarly_grey/received/jpeg_encoder/rtl_conversion/sim/jpeg_enc_synrtl/jpeg_enc_synrtl/jpeg_enc_synrtl/src/jpeg_enc.v, ln 298).
-# Parameters in case labels, will not check for overlapping labels (e:/upwork/gnarly_grey/received/jpeg_encoder/rtl_conversion/sim/jpeg_enc_synrtl/jpeg_enc_synrtl/jpeg_enc_synrtl/src/jpeg_enc.v, ln 474).
-# Parameters in case labels, will not check for overlapping labels (e:/upwork/gnarly_grey/received/jpeg_encoder/rtl_conversion/sim/jpeg_enc_synrtl/jpeg_enc_synrtl/jpeg_enc_synrtl/src/jpeg_enc.v, ln 988).
-# Parameters in case labels, will not check for overlapping labels (e:/upwork/gnarly_grey/received/jpeg_encoder/rtl_conversion/sim/jpeg_enc_synrtl/jpeg_enc_synrtl/jpeg_enc_synrtl/src/jpeg_enc.v, ln 1009).
-# Parameters in case labels, will not check for overlapping labels (e:/upwork/gnarly_grey/received/jpeg_encoder/rtl_conversion/sim/jpeg_enc_synrtl/jpeg_enc_synrtl/jpeg_enc_synrtl/src/jpeg_enc.v, ln 1052).
-# Parameters in case labels, will not check for overlapping labels (e:/upwork/gnarly_grey/received/jpeg_encoder/rtl_conversion/sim/jpeg_enc_synrtl/jpeg_enc_synrtl/jpeg_enc_synrtl/src/jpeg_enc.v, ln 1102).
-# Parameters in case labels, will not check for overlapping labels (e:/upwork/gnarly_grey/received/jpeg_encoder/rtl_conversion/sim/jpeg_enc_synrtl/jpeg_enc_synrtl/jpeg_enc_synrtl/src/jpeg_enc.v, ln 1257).
-# Parameters in case labels, will not check for overlapping labels (e:/upwork/gnarly_grey/received/jpeg_encoder/rtl_conversion/sim/jpeg_enc_synrtl/jpeg_enc_synrtl/jpeg_enc_synrtl/src/jpeg_enc.v, ln 1368).
-# Parameters in case labels, will not check for overlapping labels (e:/upwork/gnarly_grey/received/jpeg_encoder/rtl_conversion/sim/jpeg_enc_synrtl/jpeg_enc_synrtl/jpeg_enc_synrtl/src/jpeg_enc.v, ln 1396).
-# Parameters in case labels, will not check for overlapping labels (e:/upwork/gnarly_grey/received/jpeg_encoder/rtl_conversion/sim/jpeg_enc_synrtl/jpeg_enc_synrtl/jpeg_enc_synrtl/src/jpeg_enc.v, ln 1429).
-# Parameters in case labels, will not check for overlapping labels (e:/upwork/gnarly_grey/received/jpeg_encoder/rtl_conversion/sim/jpeg_enc_synrtl/jpeg_enc_synrtl/jpeg_enc_synrtl/src/jpeg_enc.v, ln 1483).
-# Parameters in case labels, will not check for overlapping labels (e:/upwork/gnarly_grey/received/jpeg_encoder/rtl_conversion/sim/jpeg_enc_synrtl/jpeg_enc_synrtl/jpeg_enc_synrtl/src/jpeg_enc.v, ln 1505).
-# Running Optimizer.
-# ELB/DAG code generating.
-# Info: VCP2113 Module \$root found in current working library.
-# $root top modules: jpeg_enc_tb.
-# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
-# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# done
-# ELBREAD: Elaboration process.
-# ELBREAD: Warning: Module 'jpeg_enc_mem' does not have a `timescale directive, but previous modules do.
-# ELBREAD: Warning: Module 'jpeg_enc_dct' does not have a `timescale directive, but previous modules do.
-# ELBREAD: Elaboration time 0.0 [s].
-asim -O5 +access +r jpeg_enc_tb
-# ELBREAD: Elaboration process.
-# ELBREAD: Warning: Module 'jpeg_enc_mem' does not have a `timescale directive, but previous modules do.
-# ELBREAD: Warning: Module 'jpeg_enc_dct' does not have a `timescale directive, but previous modules do.
-# ELBREAD: Elaboration time 0.0 [s].
-# VSIM: Stack memory: 32MB
-# VSIM: Retval memory: 32MB
-# 
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# KERNEL: Time resolution set to 1ns.
-# ELAB2: Elaboration final pass...
-# KERNEL: PLI/VHPI kernel's engine initialization done.
-# PLI: Loading library 'D:\APPS\lscc\diamond\3.10_x64\active-hdl\bin\systf.dll'
-# ELAB2: Create instances ...
-# ELAB2: Create instances complete.
-# SLP: Started
-# SLP: Elaboration phase ...
-# SLP: Elaboration phase ... done : 0.0 [s]
-# SLP: Generation phase ...
-# SLP: Generation phase ... done : 1.1 [s]
-# SLP: Finished : 1.2 [s]
+# SLP: Finished : 1.3 [s]
 # SLP: 0 primitives and 98 (100.00%) other processes in SLP
 # SLP: 196 (93.33%) signals in SLP and 13 (6.19%) interface signals
 # ELAB2: Elaboration final pass complete - time: 1.4 [s].
@@ -406,373 +169,5 @@ asim -O5 +access +r jpeg_enc_tb
 # KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
 # KERNEL: SLP simulation initialization done - time: 0.0 [s].
 # KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 10336 kB (elbread=1280 elab2=8903 kernel=152 sdf=0)
-# KERNEL: ASDB file was created in location e:\upwork\gnarly_grey\received\jpeg_encoder\rtl_conversion\sim\jpeg_enc_synrtl\jpeg_enc_synrtl\jpeg_enc_synrtl\src\wave.asdb
-#  09:52, 26 March 2018
-#  Simulation has been initialized
-# Waveform file 'untitled.awc' connected to 'e:/upwork/gnarly_grey/received/jpeg_encoder/rtl_conversion/sim/jpeg_enc_synrtl/jpeg_enc_synrtl/jpeg_enc_synrtl/src/wave.asdb'.
-# add wave -noreg {/jpeg_enc_tb/dut/img_out_reg}
-# add wave -noreg {/jpeg_enc_tb/dut/img_valid_reg}
-# add wave -noreg {/jpeg_enc_tb/dut/img_valid_reg_fl}
-# add wave -noreg {/jpeg_enc_tb/dut/img_done_reg}
-# add wave -noreg {/jpeg_enc_tb/dut/byte_count}
-# add wave -noreg {/jpeg_enc_tb/dut/header_rom_d}
-# add wave -noreg {/jpeg_enc_tb/dut/du_ram_we}
-# add wave -noreg {/jpeg_enc_tb/dut/du_ram_aw}
-# add wave -noreg {/jpeg_enc_tb/dut/QNT_DU}
-# add wave -noreg {/jpeg_enc_tb/dut/dct_comp_sel}
-# add wave -noreg {/jpeg_enc_tb/dut/dct_comp_idx}
-# add wave -noreg {/jpeg_enc_tb/dut/dct_idx_cnt}
-# add wave -noreg {/jpeg_enc_tb/dut/DCY}
-# add wave -noreg {/jpeg_enc_tb/dut/DCU}
-# add wave -noreg {/jpeg_enc_tb/dut/DCV}
-# add wave -noreg {/jpeg_enc_tb/dut/diff_DC}
-# add wave -noreg {/jpeg_enc_tb/dut/zzdu_ram_we}
-# add wave -noreg {/jpeg_enc_tb/dut/zzdu_ram_ar}
-# add wave -noreg {/jpeg_enc_tb/dut/dcht_bc_rom_a}
-# add wave -noreg {/jpeg_enc_tb/dut/dcht_bb_rom_a}
-# add wave -noreg {/jpeg_enc_tb/dut/acht_bc_rom_a}
-# add wave -noreg {/jpeg_enc_tb/dut/acht_bb_rom_a}
-# add wave -noreg {/jpeg_enc_tb/dut/img_x}
-# add wave -noreg {/jpeg_enc_tb/dut/img_col}
-# add wave -noreg {/jpeg_enc_tb/dut/img_y}
-# add wave -noreg {/jpeg_enc_tb/dut/img_row}
-# add wave -noreg {/jpeg_enc_tb/dut/img_col_p}
-# add wave -noreg {/jpeg_enc_tb/dut/img_col_p_fl1}
-# add wave -noreg {/jpeg_enc_tb/dut/img_col_p_fl2}
-# add wave -noreg {/jpeg_enc_tb/dut/col_cnt}
-# add wave -noreg {/jpeg_enc_tb/dut/row_cnt}
-# add wave -noreg {/jpeg_enc_tb/dut/col_cnt_fl1}
-# add wave -noreg {/jpeg_enc_tb/dut/row_cnt_fl1}
-# add wave -noreg {/jpeg_enc_tb/dut/col_cnt_fl2}
-# add wave -noreg {/jpeg_enc_tb/dut/row_cnt_fl2}
-# add wave -noreg {/jpeg_enc_tb/dut/load_du_done_fl}
-# add wave -noreg {/jpeg_enc_tb/dut/qz_cnt}
-# add wave -noreg {/jpeg_enc_tb/dut/c_state}
-# add wave -noreg {/jpeg_enc_tb/dut/n_state}
-# add wave -noreg {/jpeg_enc_tb/dut/b_state}
-# add wave -noreg {/jpeg_enc_tb/dut/fb_addr_reg}
-# add wave -noreg {/jpeg_enc_tb/dut/wb_bit_cnt}
-# add wave -noreg {/jpeg_enc_tb/dut/wb_bc_tmp}
-# add wave -noreg {/jpeg_enc_tb/dut/wb_bit_buf}
-# add wave -noreg {/jpeg_enc_tb/dut/wb_bb_tmp}
-# add wave -noreg {/jpeg_enc_tb/dut/wb_c}
-# add wave -noreg {/jpeg_enc_tb/dut/cb_bb_mask}
-# add wave -noreg {/jpeg_enc_tb/dut/cb_bit_buf}
-# add wave -noreg {/jpeg_enc_tb/dut/cb_bb_tmp}
-# add wave -noreg {/jpeg_enc_tb/dut/cb_bit_cnt}
-# add wave -noreg {/jpeg_enc_tb/dut/end0pos}
-# add wave -noreg {/jpeg_enc_tb/dut/du_ac0}
-# add wave -noreg {/jpeg_enc_tb/dut/ac_idx}
-# add wave -noreg {/jpeg_enc_tb/dut/ac0_idx}
-# add wave -noreg {/jpeg_enc_tb/dut/ac0_cnt}
-# add wave -noreg {/jpeg_enc_tb/dut/last_du}
-# add wave -noreg {/jpeg_enc_tb/dut/last_du_p}
-# add wave -noreg {/jpeg_enc_tb/dut/header_tx_done}
-# add wave -noreg {/jpeg_enc_tb/dut/inc_img_col_p}
-# add wave -noreg {/jpeg_enc_tb/dut/rst_img_col_p}
-# add wave -noreg {/jpeg_enc_tb/dut/col_max}
-# add wave -noreg {/jpeg_enc_tb/dut/row_max}
-# add wave -noreg {/jpeg_enc_tb/dut/inc_row_cnt}
-# add wave -noreg {/jpeg_enc_tb/dut/load_du_done}
-# add wave -noreg {/jpeg_enc_tb/dut/dct_done}
-# add wave -noreg {/jpeg_enc_tb/dut/qz_done}
-# add wave -noreg {/jpeg_enc_tb/dut/diff_dc_zero}
-# add wave -noreg {/jpeg_enc_tb/dut/diff_dc_neg}
-# add wave -noreg {/jpeg_enc_tb/dut/bit_cnt_gte_8}
-# add wave -noreg {/jpeg_enc_tb/dut/byte_out_eq_255}
-# add wave -noreg {/jpeg_enc_tb/dut/check_next_element}
-# add wave -noreg {/jpeg_enc_tb/dut/e0p_zero}
-# add wave -noreg {/jpeg_enc_tb/dut/inc_ac0_idx}
-# add wave -noreg {/jpeg_enc_tb/dut/inc_ac0_cnt}
-# add wave -noreg {/jpeg_enc_tb/dut/ac0_cnt_gte_16}
-# add wave -noreg {/jpeg_enc_tb/dut/e0p_ne_63}
-# add wave -noreg {/jpeg_enc_tb/dut/du_ac_neg}
-# add wave -noreg {/jpeg_enc_tb/dut/last_comp}
-# add wave -noreg {/jpeg_enc_tb/dut/du_ram_do}
-# add wave -noreg {/jpeg_enc_tb/dut/fdtbl_rom_d}
-# add wave -noreg {/jpeg_enc_tb/dut/zzidx_rom_d}
-# add wave -noreg {/jpeg_enc_tb/dut/zzdu_ram_do}
-# add wave -noreg {/jpeg_enc_tb/dut/dcht_bc_rom_d}
-# add wave -noreg {/jpeg_enc_tb/dut/acht_bc_rom_d}
-# add wave -noreg {/jpeg_enc_tb/dut/dcht_bb_rom_d}
-# add wave -noreg {/jpeg_enc_tb/dut/acht_bb_rom_d}
-# add wave -noreg {/jpeg_enc_tb/dut/start_dct}
-# add wave -noreg {/jpeg_enc_tb/dut/du_ram_a_dct}
-# add wave -noreg {/jpeg_enc_tb/dut/dctdu_ram_aw}
-# add wave -noreg {/jpeg_enc_tb/dut/dctdu_ram_ar_dct}
-# add wave -noreg {/jpeg_enc_tb/dut/dctdu_ram_ar}
-# add wave -noreg {/jpeg_enc_tb/dut/dctdu_ram_we}
-# add wave -noreg {/jpeg_enc_tb/dut/dctdu_ram_di}
-# add wave -noreg {/jpeg_enc_tb/dut/dctdu_ram_do}
-# add wave -noreg {/jpeg_enc_tb/dut/clk}
-# add wave -noreg {/jpeg_enc_tb/dut/reset_n}
-# add wave -noreg {/jpeg_enc_tb/dut/conv_en}
-# add wave -noreg {/jpeg_enc_tb/dut/fb_data}
-# add wave -noreg {/jpeg_enc_tb/dut/fb_addr}
-# add wave -noreg {/jpeg_enc_tb/dut/img_out}
-# add wave -noreg {/jpeg_enc_tb/dut/img_valid}
-# add wave -noreg {/jpeg_enc_tb/dut/img_done}
-# 102 signal(s) traced.
-run 15 us
-# KERNEL: stopped at time: 15 us
-run 15 us
-# KERNEL: stopped at time: 30 us
-endsim
-# VSIM: Simulation has finished.
-# ELBREAD: Elaboration process.
-# ELBREAD: Warning: Module 'jpeg_enc_mem' does not have a `timescale directive, but previous modules do.
-# ELBREAD: Warning: Module 'jpeg_enc_dct' does not have a `timescale directive, but previous modules do.
-# ELBREAD: Elaboration time 0.0 [s].
-asim -O5 +access +r jpeg_enc_tb
-# ELBREAD: Elaboration process.
-# ELBREAD: Warning: Module 'jpeg_enc_mem' does not have a `timescale directive, but previous modules do.
-# ELBREAD: Warning: Module 'jpeg_enc_dct' does not have a `timescale directive, but previous modules do.
-# ELBREAD: Elaboration time 0.0 [s].
-# VSIM: Stack memory: 32MB
-# VSIM: Retval memory: 32MB
-# 
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# KERNEL: Time resolution set to 1ns.
-# ELAB2: Elaboration final pass...
-# KERNEL: PLI/VHPI kernel's engine initialization done.
-# PLI: Loading library 'D:\APPS\lscc\diamond\3.10_x64\active-hdl\bin\systf.dll'
-# ELAB2: Create instances ...
-# ELAB2: Create instances complete.
-# SLP: Started
-# SLP: Finished. Using existing simulator library
-# SLP: 0 primitives and 98 (100.00%) other processes in SLP
-# SLP: 196 (93.33%) signals in SLP and 13 (6.19%) interface signals
-# ELAB2: Elaboration final pass complete - time: 0.1 [s].
-# KERNEL: SLP loading done - time: 0.0 [s].
-# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
-# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
-# KERNEL: SLP simulation initialization done - time: 0.0 [s].
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 10336 kB (elbread=1280 elab2=8903 kernel=152 sdf=0)
-# KERNEL: ASDB file was created in location e:\upwork\gnarly_grey\received\jpeg_encoder\rtl_conversion\sim\jpeg_enc_synrtl\jpeg_enc_synrtl\jpeg_enc_synrtl\src\wave.asdb
-#  09:53, 26 March 2018
-#  Simulation has been initialized
-# Waveform file 'untitled.awc' connected to 'e:/upwork/gnarly_grey/received/jpeg_encoder/rtl_conversion/sim/jpeg_enc_synrtl/jpeg_enc_synrtl/jpeg_enc_synrtl/src/wave.asdb'.
-run 765000 us
-# KERNEL: Conversion Done
-# RUNTIME: Info: RUNTIME_0068 jpeg_enc_tb.v (118): $finish called.
-# KERNEL: Time: 764880110 ns,  Iteration: 0,  Instance: /jpeg_enc_tb,  Process: @ALWAYS#68,105,111_2@.
-# KERNEL: stopped at time: 764880110 ns
-# VSIM: Simulation has finished. There are no more test vectors to simulate.
-endsim
-# VSIM: Simulation has finished.
-alog -O2 -sve -msg 5 -sv2k12 -work jpeg_enc_synrtl $dsn/src/jpeg_enc_dct.v
-# Pass 1. Scanning modules hierarchy.
-# Info: VCP2113 Module \$root found in current working library.
-# Pass 2. Processing instantiations.
-# Pass 3. Processing behavioral statements.
-# Parameters in case labels, will not check for overlapping labels (e:/upwork/gnarly_grey/received/jpeg_encoder/rtl_conversion/sim/jpeg_enc_synrtl/jpeg_enc_synrtl/jpeg_enc_synrtl/src/jpeg_enc_dct.v, ln 76).
-# Parameters in case labels, will not check for overlapping labels (e:/upwork/gnarly_grey/received/jpeg_encoder/rtl_conversion/sim/jpeg_enc_synrtl/jpeg_enc_synrtl/jpeg_enc_synrtl/src/jpeg_enc_dct.v, ln 122).
-# Parameters in case labels, will not check for overlapping labels (e:/upwork/gnarly_grey/received/jpeg_encoder/rtl_conversion/sim/jpeg_enc_synrtl/jpeg_enc_synrtl/jpeg_enc_synrtl/src/jpeg_enc_dct.v, ln 134).
-# Parameters in case labels, will not check for overlapping labels (e:/upwork/gnarly_grey/received/jpeg_encoder/rtl_conversion/sim/jpeg_enc_synrtl/jpeg_enc_synrtl/jpeg_enc_synrtl/src/jpeg_enc_dct.v, ln 164).
-# Parameters in case labels, will not check for overlapping labels (e:/upwork/gnarly_grey/received/jpeg_encoder/rtl_conversion/sim/jpeg_enc_synrtl/jpeg_enc_synrtl/jpeg_enc_synrtl/src/jpeg_enc_dct.v, ln 223).
-# Parameters in case labels, will not check for overlapping labels (e:/upwork/gnarly_grey/received/jpeg_encoder/rtl_conversion/sim/jpeg_enc_synrtl/jpeg_enc_synrtl/jpeg_enc_synrtl/src/jpeg_enc_dct.v, ln 287).
-# Parameters in case labels, will not check for overlapping labels (e:/upwork/gnarly_grey/received/jpeg_encoder/rtl_conversion/sim/jpeg_enc_synrtl/jpeg_enc_synrtl/jpeg_enc_synrtl/src/jpeg_enc_dct.v, ln 334).
-# Parameters in case labels, will not check for overlapping labels (e:/upwork/gnarly_grey/received/jpeg_encoder/rtl_conversion/sim/jpeg_enc_synrtl/jpeg_enc_synrtl/jpeg_enc_synrtl/src/jpeg_enc_dct.v, ln 363).
-# Running Optimizer.
-# ELB/DAG code generating.
-# Info: VCP2113 Module \$root found in current working library.
-# $root top modules: jpeg_enc_tb.
-# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
-# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# done
-# ELBREAD: Elaboration process.
-# ELBREAD: Warning: Module 'jpeg_enc_mem' does not have a `timescale directive, but previous modules do.
-# ELBREAD: Warning: Module 'jpeg_enc_dct' does not have a `timescale directive, but previous modules do.
-# ELBREAD: Elaboration time 0.0 [s].
-asim -O5 +access +r jpeg_enc_tb
-# ELBREAD: Elaboration process.
-# ELBREAD: Warning: Module 'jpeg_enc_mem' does not have a `timescale directive, but previous modules do.
-# ELBREAD: Warning: Module 'jpeg_enc_dct' does not have a `timescale directive, but previous modules do.
-# ELBREAD: Elaboration time 0.0 [s].
-# VSIM: Stack memory: 32MB
-# VSIM: Retval memory: 32MB
-# 
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# KERNEL: Time resolution set to 1ns.
-# ELAB2: Elaboration final pass...
-# KERNEL: PLI/VHPI kernel's engine initialization done.
-# PLI: Loading library 'D:\APPS\lscc\diamond\3.10_x64\active-hdl\bin\systf.dll'
-# ELAB2: Create instances ...
-# ELAB2: Create instances complete.
-# SLP: Started
-# SLP: Elaboration phase ...
-# SLP: Elaboration phase ... done : 0.0 [s]
-# SLP: Generation phase ...
-# SLP: Generation phase ... done : 1.4 [s]
-# SLP: Finished : 1.4 [s]
-# SLP: 0 primitives and 98 (100.00%) other processes in SLP
-# SLP: 196 (93.33%) signals in SLP and 13 (6.19%) interface signals
-# ELAB2: Elaboration final pass complete - time: 1.5 [s].
-# KERNEL: SLP loading done - time: 0.0 [s].
-# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
-# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
-# KERNEL: SLP simulation initialization done - time: 0.0 [s].
-# KERNEL: Kernel process initialization done.
 # Allocation: Simulator allocated 10335 kB (elbread=1280 elab2=8902 kernel=152 sdf=0)
-# KERNEL: ASDB file was created in location e:\upwork\gnarly_grey\received\jpeg_encoder\rtl_conversion\sim\jpeg_enc_synrtl\jpeg_enc_synrtl\jpeg_enc_synrtl\src\wave.asdb
-#  10:15, 26 March 2018
-#  Simulation has been initialized
-# Waveform file 'untitled.awc' connected to 'e:/upwork/gnarly_grey/received/jpeg_encoder/rtl_conversion/sim/jpeg_enc_synrtl/jpeg_enc_synrtl/jpeg_enc_synrtl/src/wave.asdb'.
-# add wave -noreg {/jpeg_enc_tb/dut/img_out_reg}
-# add wave -noreg {/jpeg_enc_tb/dut/img_valid_reg}
-# add wave -noreg {/jpeg_enc_tb/dut/img_valid_reg_fl}
-# add wave -noreg {/jpeg_enc_tb/dut/img_done_reg}
-# add wave -noreg {/jpeg_enc_tb/dut/byte_count}
-# add wave -noreg {/jpeg_enc_tb/dut/header_rom_d}
-# add wave -noreg {/jpeg_enc_tb/dut/du_ram_we}
-# add wave -noreg {/jpeg_enc_tb/dut/du_ram_aw}
-# add wave -noreg {/jpeg_enc_tb/dut/QNT_DU}
-# add wave -noreg {/jpeg_enc_tb/dut/dct_comp_sel}
-# add wave -noreg {/jpeg_enc_tb/dut/dct_comp_idx}
-# add wave -noreg {/jpeg_enc_tb/dut/dct_idx_cnt}
-# add wave -noreg {/jpeg_enc_tb/dut/DCY}
-# add wave -noreg {/jpeg_enc_tb/dut/DCU}
-# add wave -noreg {/jpeg_enc_tb/dut/DCV}
-# add wave -noreg {/jpeg_enc_tb/dut/diff_DC}
-# add wave -noreg {/jpeg_enc_tb/dut/zzdu_ram_we}
-# add wave -noreg {/jpeg_enc_tb/dut/zzdu_ram_ar}
-# add wave -noreg {/jpeg_enc_tb/dut/dcht_bc_rom_a}
-# add wave -noreg {/jpeg_enc_tb/dut/dcht_bb_rom_a}
-# add wave -noreg {/jpeg_enc_tb/dut/acht_bc_rom_a}
-# add wave -noreg {/jpeg_enc_tb/dut/acht_bb_rom_a}
-# add wave -noreg {/jpeg_enc_tb/dut/img_x}
-# add wave -noreg {/jpeg_enc_tb/dut/img_col}
-# add wave -noreg {/jpeg_enc_tb/dut/img_y}
-# add wave -noreg {/jpeg_enc_tb/dut/img_row}
-# add wave -noreg {/jpeg_enc_tb/dut/img_col_p}
-# add wave -noreg {/jpeg_enc_tb/dut/img_col_p_fl1}
-# add wave -noreg {/jpeg_enc_tb/dut/img_col_p_fl2}
-# add wave -noreg {/jpeg_enc_tb/dut/col_cnt}
-# add wave -noreg {/jpeg_enc_tb/dut/row_cnt}
-# add wave -noreg {/jpeg_enc_tb/dut/col_cnt_fl1}
-# add wave -noreg {/jpeg_enc_tb/dut/row_cnt_fl1}
-# add wave -noreg {/jpeg_enc_tb/dut/col_cnt_fl2}
-# add wave -noreg {/jpeg_enc_tb/dut/row_cnt_fl2}
-# add wave -noreg {/jpeg_enc_tb/dut/load_du_done_fl}
-# add wave -noreg {/jpeg_enc_tb/dut/qz_cnt}
-# add wave -noreg {/jpeg_enc_tb/dut/c_state}
-# add wave -noreg {/jpeg_enc_tb/dut/n_state}
-# add wave -noreg {/jpeg_enc_tb/dut/b_state}
-# add wave -noreg {/jpeg_enc_tb/dut/fb_addr_reg}
-# add wave -noreg {/jpeg_enc_tb/dut/wb_bit_cnt}
-# add wave -noreg {/jpeg_enc_tb/dut/wb_bc_tmp}
-# add wave -noreg {/jpeg_enc_tb/dut/wb_bit_buf}
-# add wave -noreg {/jpeg_enc_tb/dut/wb_bb_tmp}
-# add wave -noreg {/jpeg_enc_tb/dut/wb_c}
-# add wave -noreg {/jpeg_enc_tb/dut/cb_bb_mask}
-# add wave -noreg {/jpeg_enc_tb/dut/cb_bit_buf}
-# add wave -noreg {/jpeg_enc_tb/dut/cb_bb_tmp}
-# add wave -noreg {/jpeg_enc_tb/dut/cb_bit_cnt}
-# add wave -noreg {/jpeg_enc_tb/dut/end0pos}
-# add wave -noreg {/jpeg_enc_tb/dut/du_ac0}
-# add wave -noreg {/jpeg_enc_tb/dut/ac_idx}
-# add wave -noreg {/jpeg_enc_tb/dut/ac0_idx}
-# add wave -noreg {/jpeg_enc_tb/dut/ac0_cnt}
-# add wave -noreg {/jpeg_enc_tb/dut/last_du}
-# add wave -noreg {/jpeg_enc_tb/dut/last_du_p}
-# add wave -noreg {/jpeg_enc_tb/dut/header_tx_done}
-# add wave -noreg {/jpeg_enc_tb/dut/inc_img_col_p}
-# add wave -noreg {/jpeg_enc_tb/dut/rst_img_col_p}
-# add wave -noreg {/jpeg_enc_tb/dut/col_max}
-# add wave -noreg {/jpeg_enc_tb/dut/row_max}
-# add wave -noreg {/jpeg_enc_tb/dut/inc_row_cnt}
-# add wave -noreg {/jpeg_enc_tb/dut/load_du_done}
-# add wave -noreg {/jpeg_enc_tb/dut/dct_done}
-# add wave -noreg {/jpeg_enc_tb/dut/qz_done}
-# add wave -noreg {/jpeg_enc_tb/dut/diff_dc_zero}
-# add wave -noreg {/jpeg_enc_tb/dut/diff_dc_neg}
-# add wave -noreg {/jpeg_enc_tb/dut/bit_cnt_gte_8}
-# add wave -noreg {/jpeg_enc_tb/dut/byte_out_eq_255}
-# add wave -noreg {/jpeg_enc_tb/dut/check_next_element}
-# add wave -noreg {/jpeg_enc_tb/dut/e0p_zero}
-# add wave -noreg {/jpeg_enc_tb/dut/inc_ac0_idx}
-# add wave -noreg {/jpeg_enc_tb/dut/inc_ac0_cnt}
-# add wave -noreg {/jpeg_enc_tb/dut/ac0_cnt_gte_16}
-# add wave -noreg {/jpeg_enc_tb/dut/e0p_ne_63}
-# add wave -noreg {/jpeg_enc_tb/dut/du_ac_neg}
-# add wave -noreg {/jpeg_enc_tb/dut/last_comp}
-# add wave -noreg {/jpeg_enc_tb/dut/du_ram_do}
-# add wave -noreg {/jpeg_enc_tb/dut/fdtbl_rom_d}
-# add wave -noreg {/jpeg_enc_tb/dut/zzidx_rom_d}
-# add wave -noreg {/jpeg_enc_tb/dut/zzdu_ram_do}
-# add wave -noreg {/jpeg_enc_tb/dut/dcht_bc_rom_d}
-# add wave -noreg {/jpeg_enc_tb/dut/acht_bc_rom_d}
-# add wave -noreg {/jpeg_enc_tb/dut/dcht_bb_rom_d}
-# add wave -noreg {/jpeg_enc_tb/dut/acht_bb_rom_d}
-# add wave -noreg {/jpeg_enc_tb/dut/start_dct}
-# add wave -noreg {/jpeg_enc_tb/dut/du_ram_a_dct}
-# add wave -noreg {/jpeg_enc_tb/dut/dctdu_ram_aw}
-# add wave -noreg {/jpeg_enc_tb/dut/dctdu_ram_ar_dct}
-# add wave -noreg {/jpeg_enc_tb/dut/dctdu_ram_ar}
-# add wave -noreg {/jpeg_enc_tb/dut/dctdu_ram_we}
-# add wave -noreg {/jpeg_enc_tb/dut/dctdu_ram_di}
-# add wave -noreg {/jpeg_enc_tb/dut/dctdu_ram_do}
-# add wave -noreg {/jpeg_enc_tb/dut/clk}
-# add wave -noreg {/jpeg_enc_tb/dut/reset_n}
-# add wave -noreg {/jpeg_enc_tb/dut/conv_en}
-# add wave -noreg {/jpeg_enc_tb/dut/fb_data}
-# add wave -noreg {/jpeg_enc_tb/dut/fb_addr}
-# add wave -noreg {/jpeg_enc_tb/dut/img_out}
-# add wave -noreg {/jpeg_enc_tb/dut/img_valid}
-# add wave -noreg {/jpeg_enc_tb/dut/img_done}
-# 102 signal(s) traced.
-# add wave -noreg {/jpeg_enc_tb/dut/dct/c_state}
-# add wave -noreg {/jpeg_enc_tb/dut/dct/n_state}
-# add wave -noreg {/jpeg_enc_tb/dut/dct/du_idx}
-# add wave -noreg {/jpeg_enc_tb/dut/dct/dctdu_w_idx}
-# add wave -noreg {/jpeg_enc_tb/dut/dct/dctdu_w_idx_fl}
-# add wave -noreg {/jpeg_enc_tb/dut/dct/dctdu_r_idx}
-# add wave -noreg {/jpeg_enc_tb/dut/dct/dctdu_w_en}
-# add wave -noreg {/jpeg_enc_tb/dut/dct/dctdu_w_d}
-# add wave -noreg {/jpeg_enc_tb/dut/dct/tmp_du_w_idx}
-# add wave -noreg {/jpeg_enc_tb/dut/dct/vertical_scan}
-# add wave -noreg {/jpeg_enc_tb/dut/dct/vertical_scan_fl}
-# add wave -noreg {/jpeg_enc_tb/dut/dct/e_conv_reg}
-# add wave -noreg {/jpeg_enc_tb/dut/dct/tmp_du}
-# add wave -noreg {/jpeg_enc_tb/dut/dct/tmp0}
-# add wave -noreg {/jpeg_enc_tb/dut/dct/tmp1}
-# add wave -noreg {/jpeg_enc_tb/dut/dct/tmp2}
-# add wave -noreg {/jpeg_enc_tb/dut/dct/tmp3}
-# add wave -noreg {/jpeg_enc_tb/dut/dct/tmp4}
-# add wave -noreg {/jpeg_enc_tb/dut/dct/tmp5}
-# add wave -noreg {/jpeg_enc_tb/dut/dct/tmp6}
-# add wave -noreg {/jpeg_enc_tb/dut/dct/tmp7}
-# add wave -noreg {/jpeg_enc_tb/dut/dct/tmp10}
-# add wave -noreg {/jpeg_enc_tb/dut/dct/tmp11}
-# add wave -noreg {/jpeg_enc_tb/dut/dct/tmp12}
-# add wave -noreg {/jpeg_enc_tb/dut/dct/tmp13}
-# add wave -noreg {/jpeg_enc_tb/dut/dct/tmp20}
-# add wave -noreg {/jpeg_enc_tb/dut/dct/tmp21}
-# add wave -noreg {/jpeg_enc_tb/dut/dct/tmp22}
-# add wave -noreg {/jpeg_enc_tb/dut/dct/last_du_element}
-# add wave -noreg {/jpeg_enc_tb/dut/dct/last_dctdu_element}
-# add wave -noreg {/jpeg_enc_tb/dut/dct/change_scan}
-# add wave -noreg {/jpeg_enc_tb/dut/dct/clk}
-# add wave -noreg {/jpeg_enc_tb/dut/dct/reset_n}
-# add wave -noreg {/jpeg_enc_tb/dut/dct/s_conv}
-# add wave -noreg {/jpeg_enc_tb/dut/dct/du_ram_a}
-# add wave -noreg {/jpeg_enc_tb/dut/dct/du_ram_d}
-# add wave -noreg {/jpeg_enc_tb/dut/dct/dctdu_ram_aw}
-# add wave -noreg {/jpeg_enc_tb/dut/dct/dctdu_ram_we}
-# add wave -noreg {/jpeg_enc_tb/dut/dct/dctdu_ram_do}
-# add wave -noreg {/jpeg_enc_tb/dut/dct/dctdu_ram_ar}
-# add wave -noreg {/jpeg_enc_tb/dut/dct/dctdu_ram_di}
-# add wave -noreg {/jpeg_enc_tb/dut/dct/e_conv}
-# 42 signal(s) traced.
-run 765000 us
-# KERNEL: stopped at time: 765 ms
-run 10000 us
-# KERNEL: Conversion Done
-# RUNTIME: Info: RUNTIME_0068 jpeg_enc_tb.v (118): $finish called.
-# KERNEL: Time: 767206550 ns,  Iteration: 0,  Instance: /jpeg_enc_tb,  Process: @ALWAYS#68,105,111_2@.
-# KERNEL: stopped at time: 767206550 ns
-# VSIM: Simulation has finished. There are no more test vectors to simulate.
+# KERNEL: ASDB file was created in
