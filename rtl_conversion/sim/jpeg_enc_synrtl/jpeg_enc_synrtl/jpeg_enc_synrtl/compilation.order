@@ -1,0 +1,4 @@
+.\src\jpeg_enc_tb.v
+.\src\jpeg_enc.v
+.\src\jpeg_enc_mem.v
+.\src\jpeg_enc_dct.v
