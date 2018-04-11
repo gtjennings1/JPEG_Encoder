@@ -1,7 +1,7 @@
 #--  Synopsys, Inc.
 #--  Version L-2016.09L+ice40
-#--  Project file E:\upwork\gnarly_grey\received\jpeg_encoder\rtl_conversion\syn\jpeg_enc_rtl_conv\project\jpeg_enc_rtl_conv\jpeg_enc_rtl_conv_syn.prj
-#--  Written on Thu Mar 15 15:45:49 2018
+#--  Project file E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_rtl_conv\project\jpeg_enc_rtl_conv\jpeg_enc_rtl_conv_syn.prj
+#--  Written on Wed Apr 04 11:22:26 2018
 
 
 #project files
@@ -18,12 +18,12 @@ add_file -include "../../src/yacht_bb_rom_data.h"
 add_file -include "../../src/yacht_bc_rom_data.h"
 add_file -include "../../src/ydcht_bb_rom_data.h"
 add_file -include "../../src/ydcht_bc_rom_data.h"
+add_file -verilog "../../src/jpeg_enc.v"
+add_file -verilog "../../src/jpeg_enc_mem.v"
+add_file -verilog "../../src/jpeg_enc_dct.v"
 
 
 
-add_file -verilog -lib work "../../src/jpeg_enc.v" 
-add_file -verilog -lib work "../../src/jpeg_enc_mem.v" 
-add_file -verilog -lib work "../../src/jpeg_enc_dct.v" 
 #implementation: "jpeg_enc_rtl_conv_Implmnt"
 impl -add jpeg_enc_rtl_conv_Implmnt -type fpga
 
@@ -37,7 +37,7 @@ set_option -project_relative_includes 1
 set_option -technology SBTiCE40UP
 set_option -part iCE40UP5K
 set_option -package SG48
-set_option -speed_grade 
+set_option -speed_grade ""
 set_option -part_companion ""
 
 #compilation/mapping options
@@ -47,7 +47,7 @@ set_option -top_module "jpeg_enc"
 set_option -distributed_compile 0
 
 # mapper_without_write_options
-set_option -frequency auto
+set_option -frequency 12.000000
 set_option -resolve_multiple_driver 1
 set_option -srs_instrumentation 1
 
@@ -83,5 +83,4 @@ set_option -write_apr_constraint 1
 
 #set result format/file last
 project -result_file "jpeg_enc_rtl_conv_Implmnt/jpeg_enc_rtl_conv.edf"
-impl -active jpeg_enc_rtl_conv_Implmnt
-project -run synthesis -clean
+impl -active "jpeg_enc_rtl_conv_Implmnt"

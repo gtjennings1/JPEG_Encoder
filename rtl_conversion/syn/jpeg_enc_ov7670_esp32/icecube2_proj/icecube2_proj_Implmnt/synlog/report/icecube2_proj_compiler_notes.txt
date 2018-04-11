@@ -1,0 +1,198 @@
+@N|Running in 64-bit mode
+@N|Running in 64-bit mode
+@N: CG364 :"D:\APPS\lscc\iCEcube2.2017.08\synpbase\lib\generic\sb_ice40.v":4020:7:4020:14|Synthesizing module SB_HFOSC in library work.
+@N: CG364 :"D:\APPS\lscc\iCEcube2.2017.08\synpbase\lib\generic\sb_ice40.v":4382:7:4382:19|Synthesizing module SB_SPRAM256KA in library work.
+@N: CG364 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\up_spram_ice.v":25:7:25:14|Synthesizing module up_spram in library work.
+@N: CG364 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\OV7670_Registers.v":12:7:12:22|Synthesizing module OV7670_Registers in library work.
+@N: CG364 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\I2C_Interface.v":14:7:14:19|Synthesizing module I2C_Interface in library work.
+@N: CG364 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\OV7670_Controller.v":18:7:18:23|Synthesizing module OV7670_Controller in library work.
+@N: CG364 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\sc_fifo.v":3:7:3:13|Synthesizing module sc_fifo in library work.
+@N: CL134 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\sc_fifo.v":107:2:107:7|Found RAM fifo, depth=512, width=8
+@N: CG364 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":7:7:7:17|Synthesizing module yuyv_to_yuv in library work.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":148:37:148:44|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":164:24:164:30|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":165:24:165:28|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":166:24:166:30|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":167:24:167:28|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":197:40:197:46|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":198:40:198:44|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":199:40:199:46|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":200:40:200:44|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":215:22:215:28|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":226:22:226:28|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":245:32:245:34|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":261:33:261:36|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":274:23:274:28|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":296:37:296:42|Removing redundant assignment.
+@N: CG364 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":1:7:1:18|Synthesizing module jpeg_enc_mem in library work.
+@N: CL134 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":194:2:194:7|Found RAM dctdu_ram, depth=64, width=18
+@N: CL134 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":140:2:140:7|Found RAM zzdu_ram, depth=64, width=15
+@N: CL134 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":118:2:118:7|Found RAM du_ram, depth=192, width=8
+@N: CG364 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":1:7:1:18|Synthesizing module jpeg_enc_dct in library work.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":125:37:125:42|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":137:43:137:54|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":156:26:156:35|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":157:26:157:35|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":158:26:158:35|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":159:26:159:35|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":160:26:160:35|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":161:26:161:35|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":162:26:162:35|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":163:26:163:35|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":187:44:187:53|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":188:44:188:53|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":189:44:189:53|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":190:44:190:53|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":191:44:191:53|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":192:44:192:53|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":193:44:193:53|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":194:44:194:53|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":215:21:215:24|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":216:21:216:24|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":217:21:217:24|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":218:21:218:24|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":219:21:219:24|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":220:21:220:24|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":221:21:221:24|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":222:21:222:24|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":253:39:253:42|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":254:39:254:42|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":255:39:255:42|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":256:39:256:42|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":257:39:257:42|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":258:39:258:42|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":259:39:259:42|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":260:39:260:42|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":280:22:280:26|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":281:22:281:26|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":282:22:282:26|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":283:22:283:26|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":284:22:284:26|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":285:22:285:26|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":286:22:286:26|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":309:40:309:44|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":310:40:310:44|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":311:40:311:44|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":312:40:312:44|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":313:40:313:44|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":314:40:314:44|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":315:40:315:44|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":331:28:331:38|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":333:28:333:36|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":342:46:342:56|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":344:46:344:54|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":365:65:365:77|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":366:44:366:56|Removing redundant assignment.
+@N: CG364 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":12:7:12:14|Synthesizing module jpeg_enc in library work.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":480:28:480:38|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":510:46:510:56|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":539:24:539:28|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":540:24:540:30|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":541:24:541:28|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":542:24:542:30|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":572:38:572:42|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":573:38:573:44|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":574:38:574:42|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":575:38:575:44|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":605:22:605:28|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":617:22:617:28|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":703:27:703:38|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":984:21:984:26|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":997:23:997:28|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1005:51:1005:56|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1009:37:1009:42|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1042:34:1042:40|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1045:22:1045:28|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1059:30:1059:42|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1060:30:1060:42|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1061:30:1061:42|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1062:30:1062:42|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1086:48:1086:60|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1087:48:1087:60|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1088:48:1088:60|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1089:48:1089:60|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1108:27:1108:36|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1109:27:1109:36|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1110:21:1110:24|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1111:26:1111:34|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1112:26:1112:34|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1242:43:1242:52|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1243:43:1243:52|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1244:37:1244:40|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1245:42:1245:50|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1246:42:1246:50|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1264:27:1264:36|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1265:27:1265:36|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1266:26:1266:34|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1267:27:1267:36|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1363:43:1363:52|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1364:43:1364:52|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1365:42:1365:50|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1366:43:1366:52|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1390:38:1390:44|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1405:24:1405:30|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1419:40:1419:46|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1437:24:1437:30|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1438:24:1438:29|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1439:24:1439:30|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1468:40:1468:46|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1469:40:1469:45|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1470:40:1470:46|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1485:21:1485:26|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1497:55:1497:61|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1498:36:1498:42|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1513:20:1513:22|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1514:20:1514:22|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1515:20:1515:22|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1530:36:1530:38|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1531:36:1531:38|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1532:36:1532:38|Removing redundant assignment.
+@N: CG364 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\jpeg_data_writer.v":7:7:7:22|Synthesizing module jpeg_data_writer in library work.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\jpeg_data_writer.v":52:37:52:44|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\jpeg_data_writer.v":68:36:68:42|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\jpeg_data_writer.v":84:36:84:42|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\jpeg_data_writer.v":99:24:99:30|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\jpeg_data_writer.v":100:24:100:28|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\jpeg_data_writer.v":101:24:101:30|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\jpeg_data_writer.v":102:24:102:28|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\jpeg_data_writer.v":130:40:130:46|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\jpeg_data_writer.v":131:40:131:44|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\jpeg_data_writer.v":132:40:132:46|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\jpeg_data_writer.v":133:40:133:44|Removing redundant assignment.
+@N: CG364 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\jpeg_data_to_spi.v":7:7:7:22|Synthesizing module jpeg_data_to_spi in library work.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\jpeg_data_to_spi.v":115:40:115:50|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\jpeg_data_to_spi.v":128:36:128:42|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\jpeg_data_to_spi.v":140:27:140:38|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\jpeg_data_to_spi.v":151:37:151:44|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\jpeg_data_to_spi.v":167:36:167:42|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\jpeg_data_to_spi.v":183:36:183:42|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\jpeg_data_to_spi.v":198:24:198:30|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\jpeg_data_to_spi.v":199:24:199:28|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\jpeg_data_to_spi.v":200:24:200:30|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\jpeg_data_to_spi.v":201:24:201:28|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\jpeg_data_to_spi.v":229:40:229:46|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\jpeg_data_to_spi.v":230:40:230:44|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\jpeg_data_to_spi.v":231:40:231:46|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\jpeg_data_to_spi.v":232:40:232:44|Removing redundant assignment.
+@N: CG364 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\spi_slave.v":23:7:23:15|Synthesizing module spi_slave in library work.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\spi_slave.v":112:21:112:27|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\spi_slave.v":113:27:113:39|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\spi_slave.v":142:28:142:43|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\spi_slave.v":156:26:156:39|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\spi_slave.v":170:23:170:33|Removing redundant assignment.
+@N: CG364 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\top_ice.v":23:7:23:9|Synthesizing module top in library work.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\top_ice.v":125:80:125:88|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\top_ice.v":129:23:129:31|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\top_ice.v":140:28:140:43|Removing redundant assignment.
+@N: CL189 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\top_ice.v":110:2:110:7|Register bit pixel_cnt[17] is always 0.
+@N: CL201 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\top_ice.v":143:2:143:7|Trying to extract state machine for register c_state.
+@N: CL159 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\spi_slave.v":28:18:28:21|Input mosi is unused.
+@N: CL201 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\jpeg_data_to_spi.v":59:2:59:7|Trying to extract state machine for register c_state.
+@N: CL201 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":294:2:294:7|Trying to extract state machine for register c_state.
+@N: CL201 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":66:2:66:7|Trying to extract state machine for register c_state.
+@N: CL201 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":92:2:92:7|Trying to extract state machine for register c_state.
+@N: CL189 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\I2C_Interface.v":51:4:51:9|Register bit data_sr[0] is always 1.
+@N: CL159 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\up_spram_ice.v":26:18:26:24|Input reset_n is unused.
+@N: CL159 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\up_spram_ice.v":28:18:28:23|Input wr_clk is unused.
+@N|Running in 64-bit mode
+

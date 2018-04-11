@@ -1,0 +1,25 @@
+
+
+@S |Clock Optimization Summary
+
+
+#### START OF CLOCK OPTIMIZATION REPORT #####[
+
+1 non-gated/non-generated clock tree(s) driving 1306 clock pin(s) of sequential element(s)
+1 gated/generated clock tree(s) driving 83 clock pin(s) of sequential element(s)
+0 instances converted, 83 sequential instances remain driven by gated/generated clocks
+
+============================ Non-Gated/Non-Generated Clocks ============================
+Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance 
+----------------------------------------------------------------------------------------
+@K:CKID0002       pclk_ibuf_gb_io     SB_GB_IO               1306       pix_per_line[10]
+========================================================================================
+========================================================================================================== Gated/Generated Clocks ==========================================================================================================
+Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance                       Explanation                                                                                                                   
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+@K:CKID0001       u_SB_HFOSC          SB_HFOSC               83         u_OV7670_Controller.I2C.sioc_temp     Gating structure creates improper gating logic. See the Gated Clocks description in the user guide for conversion requirements
+============================================================================================================================================================================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######]
+

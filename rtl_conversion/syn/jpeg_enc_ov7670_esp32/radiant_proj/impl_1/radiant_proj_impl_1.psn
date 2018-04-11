@@ -1,0 +1,17 @@
+POSTSYN: Post Synthesis Process Radiant (64-bit) 1.0.0.350.6
+Command Line: postsyn -a iCE40UP -p iCE40UP5K -t SG48 -sp High-Performance_1.2V -oc Industrial -top -w -o radiant_proj_impl_1.udb -gui -msgset E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/syn/jpeg_enc_ov7670_esp32/radiant_proj/promote.xml radiant_proj_impl_1.vm 
+   Architecture:     iCE40UP
+   Device:           iCE40UP5K
+   Package:          SG48
+   Performance:      High-Performance_1.2V
+Reading input file 'radiant_proj_impl_1.vm' ...
+
+Loading device for application udb from file 'itpa08.nph' in environment: D:/APPS/lscc/radiant/1.0/ispfpga.
+Starting design annotation....
+
+
+Writing output file 'radiant_proj_impl_1.udb'.
+POSTSYN finished successfully.
+Total CPU Time: 5 secs 
+Total REAL Time: 6 secs 
+Peak Memory Usage: 143 MB

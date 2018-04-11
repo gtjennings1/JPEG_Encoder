@@ -1,0 +1,7 @@
+../../src/jpeg_enc/header_rom_data.h
+../../src/jpeg_enc/fdtbl_rom.mem
+../../src/jpeg_enc/zzidx_rom_data.h
+../../src/jpeg_enc/dcht_bc_rom.mem
+../../src/jpeg_enc/dcht_bb_rom.mem
+../../src/jpeg_enc/acht_bc_rom.mem
+../../src/jpeg_enc/acht_bb_rom.mem

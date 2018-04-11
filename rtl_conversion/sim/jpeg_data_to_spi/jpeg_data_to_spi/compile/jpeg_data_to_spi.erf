@@ -1,0 +1,25 @@
+MESSAGE "Pass 1. Scanning modules hierarchy."
+MESSAGE_SP VCP2113 "Module \$root found in current working library."
+BEGINPROGRESS Compiling...
+UPDATEPROGRESS 35
+MESSAGE "Pass 2. Processing instantiations."
+UPDATEPROGRESS 45
+MESSAGE "Pass 3. Processing behavioral statements."
+UPDATEPROGRESS 80
+MESSAGE "Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_data_to_spi/jpeg_data_to_spi/src/jpeg_data_to_spi.v, ln 69)."
+MESSAGE "Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_data_to_spi/jpeg_data_to_spi/src/jpeg_data_to_spi.v, ln 112)."
+MESSAGE "Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_data_to_spi/jpeg_data_to_spi/src/jpeg_data_to_spi.v, ln 124)."
+MESSAGE "Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_data_to_spi/jpeg_data_to_spi/src/jpeg_data_to_spi.v, ln 148)."
+MESSAGE "Running Optimizer."
+MESSAGE "ELB/DAG code generating."
+MESSAGE_SP VCP2113 "Module \$root found in current working library."
+UPDATEPROGRESS 84
+UPDATEPROGRESS 88
+UPDATEPROGRESS 92
+UPDATEPROGRESS 96
+MESSAGE "$root top modules: tb_jpeg_data_to_spi."
+UPDATEPROGRESS 100
+ENDPROGRESS Compiling...
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time: 0[s]."
+WARNING ALOG: "The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available."
+MESSAGE "done"

@@ -1,0 +1,5 @@
+DRC: Design Rule Check Radiant (64-bit) 1.0.0.350.6
+Wed Apr 11 14:51:23 2018
+
+WARNING - Top module port 'mosi' does not connect to anything.
+WARNING - The clock port [pclk] is assigned to a non clock dedicated pin [18], which might affect the clock performance. Use dedicated clock resources for the port.

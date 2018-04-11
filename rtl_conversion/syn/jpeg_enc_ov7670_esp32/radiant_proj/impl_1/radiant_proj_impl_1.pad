@@ -1,0 +1,140 @@
+PAD Specification File
+***************************
+
+PART TYPE:        iCE40UP5K
+Performance Grade:      High-Performance_1.2V
+PACKAGE:          SG48
+Package Status:                     Preliminary    Version 1.5
+
+Wed Apr 11 15:29:14 2018
+
+Pinout by Port Name:
++-------------+----------+--------------+-------+--------------------+
+| Port Name   | Pin/Bank | Buffer Type  | Site  | Properties         |
++-------------+----------+--------------+-------+--------------------+
+| cam_pwrdn   | 37/0     | LVCMOS33_OUT | PR14A | DRIVE:8mA PULL:NA  |
+| cam_reset_n | 4/2      | LVCMOS33_OUT | PL10A | DRIVE:8mA PULL:NA  |
+| href        | 25/0     | LVCMOS33_IN  | PR20B | PULL:NA            |
+| img_rdy     | 2/2      | LVCMOS33_OUT | PL9A  | DRIVE:8mA PULL:NA  |
+| img_req     | 3/2      | LVCMOS33_IN  | PL10B | PULL:NA            |
+| miso        | 45/2     | LVCMOS33_OUT | PL8B  | DRIVE:8mA PULL:NA  |
+| pclk        | 18/1     | LVCMOS33_IN  | PL23B | PULL:NA            |
+| pdata[0]    | 31/0     | LVCMOS33_IN  | PR17B | PULL:NA            |
+| pdata[1]    | 44/2     | LVCMOS33_IN  | PL7B  | PULL:NA            |
+| pdata[2]    | 35/0     | LVCMOS33_IN  | PR13B | PULL:NA            |
+| pdata[3]    | 6/1      | LVCMOS33_IN  | PL14B | PULL:NA            |
+| pdata[4]    | 32/0     | LVCMOS33_IN  | PR17A | PULL:NA            |
+| pdata[5]    | 9/1      | LVCMOS33_IN  | PL16A | PULL:NA            |
+| pdata[6]    | 27/0     | LVCMOS33_IN  | PR19B | PULL:NA            |
+| pdata[7]    | 11/1     | LVCMOS33_IN  | PL18A | PULL:NA            |
+| sclk        | 47/2     | LVCMOS33_IN  | PL7A  | PULL:NA            |
+| sioc        | 13/1     | LVCMOS33_OUT | PL20A | DRIVE:8mA PULL:NA  |
+| siod        | 23/0     | LVCMOS33_OUT | PR20A | DRIVE:8mA PULL:NA  |
+| ssel        | 46/2     | LVCMOS33_IN  | PL6A  | PULL:NA            |
+| vsync       | 19/1     | LVCMOS33_IN  | PL22B | PULL:NA            |
+| xclk        | 26/0     | LVCMOS33_OUT | PR19A | DRIVE:8mA PULL:NA  |
++-------------+----------+--------------+-------+--------------------+
+
+Vccio by Bank:
++------+-------+
+| Bank | Vccio |
++------+-------+
+| 0    | 3.3V  |
+| 1    | 3.3V  |
+| 2    | 3.3V  |
++------+-------+
+
+Pinout by Pin Number:
++----------+---------------------+------------+--------------+-------+------------------+
+| Pin/Bank | Pin Info            | Preference | Buffer Type  | Site  | Dual Function    |
++----------+---------------------+------------+--------------+-------+------------------+
+| 2/2      | img_rdy             | LOCATED    | LVCMOS33_OUT | PL9A  |                  |
+| 3/2      | img_req             | LOCATED    | LVCMOS33_IN  | PL10B |                  |
+| 4/2      | cam_reset_n         | LOCATED    | LVCMOS33_OUT | PL10A |                  |
+| 6/1      | pdata[3]            | LOCATED    | LVCMOS33_IN  | PL14B |                  |
+| 9/1      | pdata[5]            | LOCATED    | LVCMOS33_IN  | PL16A |                  |
+| 10/1     |     unused, PULL:UP |            |              | PL17A |                  |
+| 11/1     | pdata[7]            | LOCATED    | LVCMOS33_IN  | PL18A |                  |
+| 12/1     |     unused, PULL:UP |            |              | PL19A |                  |
+| 13/1     | sioc                | LOCATED    | LVCMOS33_OUT | PL20A |                  |
+| 14/1     |     unused, PULL:UP |            |              | PL24A | SPI_SO           |
+| 15/1     |     unused, PULL:UP |            |              | PL25A | SPISCK           |
+| 16/1     |     unused, PULL:UP |            |              | PL25B | SPI_SS           |
+| 17/1     |     unused, PULL:UP |            |              | PL24B | SPI_SI           |
+| 18/1     | pclk                | LOCATED    | LVCMOS33_IN  | PL23B |                  |
+| 19/1     | vsync               | LOCATED    | LVCMOS33_IN  | PL22B |                  |
+| 20/1     |     unused, PULL:UP |            |              | PL20B | PCLKT1_0         |
+| 21/1     |     unused, PULL:UP |            |              | PL19B |                  |
+| 23/0     | siod                | LOCATED    | LVCMOS33_OUT | PR20A |                  |
+| 25/0     | href                | LOCATED    | LVCMOS33_IN  | PR20B |                  |
+| 26/0     | xclk                | LOCATED    | LVCMOS33_OUT | PR19A |                  |
+| 27/0     | pdata[6]            | LOCATED    | LVCMOS33_IN  | PR19B |                  |
+| 28/0     |     unused, PULL:UP |            |              | PR18A |                  |
+| 31/0     | pdata[0]            | LOCATED    | LVCMOS33_IN  | PR17B |                  |
+| 32/0     | pdata[4]            | LOCATED    | LVCMOS33_IN  | PR17A |                  |
+| 34/0     |     unused, PULL:UP |            |              | PR14B |                  |
+| 35/0     | pdata[2]            | LOCATED    | LVCMOS33_IN  | PR13B | GPLL_IN/PCLKT0_1 |
+| 36/0     |     unused, PULL:UP |            |              | PR10B |                  |
+| 37/0     | cam_pwrdn           | LOCATED    | LVCMOS33_OUT | PR14A | PCLKT0_0         |
+| 38/0     |     unused, PULL:UP |            |              | PR9B  |                  |
+| 39/0     |                     |            |              | PR5A  | RGB0             |
+| 40/0     |                     |            |              | PR6A  | RGB1             |
+| 41/0     |                     |            |              | PR7A  | RGB2             |
+| 42/0     |     unused, PULL:UP |            |              | PR9A  |                  |
+| 43/0     |     unused, PULL:UP |            |              | PR10A |                  |
+| 44/2     | pdata[1]            | LOCATED    | LVCMOS33_IN  | PL7B  | PCLKT2_0         |
+| 45/2     | miso                | LOCATED    | LVCMOS33_OUT | PL8B  |                  |
+| 46/2     | ssel                | LOCATED    | LVCMOS33_IN  | PL6A  |                  |
+| 47/2     | sclk                | LOCATED    | LVCMOS33_IN  | PL7A  |                  |
+| 48/2     |     unused, PULL:UP |            |              | PL8A  |                  |
+| PL6B/2   |     unused, PULL:UP |            |              | PL6B  |                  |
+| PL9B/2   |     unused, PULL:UP |            |              | PL9B  |                  |
+| PL13A/1  |     unused, PULL:UP |            |              | PL13A |                  |
+| PL13B/1  |     unused, PULL:UP |            |              | PL13B | PCLKT1_2         |
+| PL14A/1  |     unused, PULL:UP |            |              | PL14A | PCLKT1_1         |
+| PL15A/1  |     unused, PULL:UP |            |              | PL15A |                  |
+| PL15B/1  |     unused, PULL:UP |            |              | PL15B |                  |
+| PL16B/1  |     unused, PULL:UP |            |              | PL16B |                  |
+| PL17B/1  |     unused, PULL:UP |            |              | PL17B |                  |
+| PL18B/1  |     unused, PULL:UP |            |              | PL18B |                  |
+| PL21A/1  |     unused, PULL:UP |            |              | PL21A |                  |
+| PL21B/1  |     unused, PULL:UP |            |              | PL21B |                  |
+| PL22A/1  |     unused, PULL:UP |            |              | PL22A |                  |
+| PL23A/1  |     unused, PULL:UP |            |              | PL23A |                  |
+| PR13A/0  |     unused, PULL:UP |            |              | PR13A |                  |
+| PR18B/0  |     unused, PULL:UP |            |              | PR18B |                  |
+| PR22A/0  |     unused, PULL:UP |            |              | PR22A |                  |
++----------+---------------------+------------+--------------+-------+------------------+
+
+
+Locate Preferences for each Pin: 
+
+ldc_set_location -site {37} [ get_ports {cam_pwrdn} ]
+ldc_set_location -site {4} [ get_ports {cam_reset_n} ]
+ldc_set_location -site {25} [ get_ports {href} ]
+ldc_set_location -site {2} [ get_ports {img_rdy} ]
+ldc_set_location -site {3} [ get_ports {img_req} ]
+ldc_set_location -site {45} [ get_ports {miso} ]
+ldc_set_location -site {18} [ get_ports {pclk} ]
+ldc_set_location -site {31} [ get_ports {pdata[0]} ]
+ldc_set_location -site {44} [ get_ports {pdata[1]} ]
+ldc_set_location -site {35} [ get_ports {pdata[2]} ]
+ldc_set_location -site {6} [ get_ports {pdata[3]} ]
+ldc_set_location -site {32} [ get_ports {pdata[4]} ]
+ldc_set_location -site {9} [ get_ports {pdata[5]} ]
+ldc_set_location -site {27} [ get_ports {pdata[6]} ]
+ldc_set_location -site {11} [ get_ports {pdata[7]} ]
+ldc_set_location -site {47} [ get_ports {sclk} ]
+ldc_set_location -site {13} [ get_ports {sioc} ]
+ldc_set_location -site {23} [ get_ports {siod} ]
+ldc_set_location -site {46} [ get_ports {ssel} ]
+ldc_set_location -site {19} [ get_ports {vsync} ]
+ldc_set_location -site {26} [ get_ports {xclk} ]
+
+
+
+
+
+Copyright 2015 Lattice Semiconductor Corporation, All Rights Reserved
+Wed Apr 11 15:29:14 2018
+

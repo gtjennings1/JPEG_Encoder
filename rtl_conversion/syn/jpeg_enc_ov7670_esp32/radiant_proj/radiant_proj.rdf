@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RadiantProject version="4.0" title="radiant_proj" device="iCE40UP5K-SG48I" performance_grade="High-Performance_1.2V" default_implementation="impl_1">
+    <Options/>
+    <Implementation title="impl_1" dir="impl_1" description="impl_1" synthesis="synplify" default_strategy="Strategy1">
+        <Options def_top="top"/>
+        <Source name="../src/glue_logic/jpeg_data_to_spi.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../src/glue_logic/jpeg_data_writer.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../src/glue_logic/sc_fifo.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../src/glue_logic/yuyv_to_yuv.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../src/jpeg_enc/jpeg_enc.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../src/jpeg_enc/jpeg_enc_dct.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../src/jpeg_enc/jpeg_enc_mem.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../src/ov7670_esp32/I2C_Interface.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../src/ov7670_esp32/OV7670_Controller.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../src/ov7670_esp32/OV7670_Registers.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../src/ov7670_esp32/spi_slave.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../src/ov7670_esp32/top.v" type="Verilog" type_short="Verilog">
+            <Options top_module="top"/>
+        </Source>
+        <Source name="../src/ov7670_esp32/up_spram.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="constraints.pdc" type="Physical Constraints File" type_short="PDC">
+            <Options/>
+        </Source>
+    </Implementation>
+    <Strategy name="Strategy1" file="radiant_proj1.sty"/>
+</RadiantProject>

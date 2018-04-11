@@ -1,0 +1,376 @@
+# Design: Design jpeg_data_to_spi already active.
+# 
+alog -O2 -sve -msg 5 -sv2k12 -work jpeg_data_to_spi $dsn/src/tb_jpeg_data_to_spi.v $dsn/src/jpeg_data_to_spi.v
+# Pass 1. Scanning modules hierarchy.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_data_to_spi/jpeg_data_to_spi/src/jpeg_data_to_spi.v, ln 69).
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_data_to_spi/jpeg_data_to_spi/src/jpeg_data_to_spi.v, ln 112).
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_data_to_spi/jpeg_data_to_spi/src/jpeg_data_to_spi.v, ln 124).
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_data_to_spi/jpeg_data_to_spi/src/jpeg_data_to_spi.v, ln 148).
+# Running Optimizer.
+# ELB/DAG code generating.
+# Unit top modules: tb_jpeg_data_to_spi.
+# $root top modules: tb_jpeg_data_to_spi.
+# Compile success 0 Errors 0 Warnings  Analysis time: 1[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+# DESIGN: Default Design Language: VERILOG
+# DESIGN: Default BDE Language: VERILOG
+# DESIGN: Flow Manager: Not Defined
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.2 [s].
+asim -O5 +access +r tb_jpeg_data_to_spi
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ns.
+# ELAB2: Elaboration final pass...
+# KERNEL: PLI/VHPI kernel's engine initialization done.
+# PLI: Loading library 'D:\APPS\lscc\diamond\3.10_x64\active-hdl\bin\systf.dll'
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.2 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 3.1 [s]
+# SLP: Finished : 3.3 [s]
+# SLP: 0 primitives and 23 (100.00%) other processes in SLP
+# SLP: 42 (95.45%) signals in SLP and 2 (4.55%) interface signals
+# ELAB2: Elaboration final pass complete - time: 4.7 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5809 kB (elbread=1280 elab2=4382 kernel=146 sdf=0)
+# KERNEL: ASDB file was created in location E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\sim\jpeg_data_to_spi\jpeg_data_to_spi\src\wave.asdb
+#  10:15, 10 April 2018
+#  Simulation has been initialized
+endsim
+# VSIM: Simulation has finished.
+alog -O2 -sve -msg 5 -sv2k12 -work jpeg_data_to_spi $dsn/src/tb_jpeg_data_to_spi.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module jpeg_data_to_spi found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: tb_jpeg_data_to_spi.
+# $root top modules: tb_jpeg_data_to_spi.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r tb_jpeg_data_to_spi
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ns.
+# ELAB2: Elaboration final pass...
+# KERNEL: PLI/VHPI kernel's engine initialization done.
+# PLI: Loading library 'D:\APPS\lscc\diamond\3.10_x64\active-hdl\bin\systf.dll'
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.1 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 1.0 [s]
+# SLP: Finished : 1.2 [s]
+# SLP: 0 primitives and 23 (100.00%) other processes in SLP
+# SLP: 42 (95.45%) signals in SLP and 2 (4.55%) interface signals
+# ELAB2: Elaboration final pass complete - time: 1.2 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5809 kB (elbread=1280 elab2=4383 kernel=146 sdf=0)
+# KERNEL: ASDB file was created in location E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\sim\jpeg_data_to_spi\jpeg_data_to_spi\src\wave.asdb
+#  10:17, 10 April 2018
+#  Simulation has been initialized
+# add wave -noreg {/tb_jpeg_data_to_spi/dut/c_state}
+# add wave -noreg {/tb_jpeg_data_to_spi/dut/n_state}
+# add wave -noreg {/tb_jpeg_data_to_spi/dut/hd_addr_reg}
+# add wave -noreg {/tb_jpeg_data_to_spi/dut/je_addr_reg}
+# add wave -noreg {/tb_jpeg_data_to_spi/dut/eoi_reg}
+# add wave -noreg {/tb_jpeg_data_to_spi/dut/spi_data_reg}
+# add wave -noreg {/tb_jpeg_data_to_spi/dut/addr_lsb}
+# add wave -noreg {/tb_jpeg_data_to_spi/dut/col_cnt}
+# add wave -noreg {/tb_jpeg_data_to_spi/dut/row_cnt}
+# add wave -noreg {/tb_jpeg_data_to_spi/dut/col_idx}
+# add wave -noreg {/tb_jpeg_data_to_spi/dut/col_x}
+# add wave -noreg {/tb_jpeg_data_to_spi/dut/row_idx}
+# add wave -noreg {/tb_jpeg_data_to_spi/dut/row_y}
+# add wave -noreg {/tb_jpeg_data_to_spi/dut/col_max}
+# add wave -noreg {/tb_jpeg_data_to_spi/dut/row_max}
+# add wave -noreg {/tb_jpeg_data_to_spi/dut/chg_col}
+# add wave -noreg {/tb_jpeg_data_to_spi/dut/chg_row}
+# add wave -noreg {/tb_jpeg_data_to_spi/dut/chg_blk}
+# add wave -noreg {/tb_jpeg_data_to_spi/dut/rst_rcb}
+# add wave -noreg {/tb_jpeg_data_to_spi/dut/header_done}
+# add wave -noreg {/tb_jpeg_data_to_spi/dut/eoi}
+# add wave -noreg {/tb_jpeg_data_to_spi/dut/clk}
+# add wave -noreg {/tb_jpeg_data_to_spi/dut/reset_n}
+# add wave -noreg {/tb_jpeg_data_to_spi/dut/je_done}
+# add wave -noreg {/tb_jpeg_data_to_spi/dut/hd_addr}
+# add wave -noreg {/tb_jpeg_data_to_spi/dut/hd_data}
+# add wave -noreg {/tb_jpeg_data_to_spi/dut/je_addr}
+# add wave -noreg {/tb_jpeg_data_to_spi/dut/je_data}
+# add wave -noreg {/tb_jpeg_data_to_spi/dut/spi_rd}
+# add wave -noreg {/tb_jpeg_data_to_spi/dut/spi_data}
+# 30 signal(s) traced.
+# Waveform file 'untitled.awc' connected to 'E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_data_to_spi/jpeg_data_to_spi/src/wave.asdb'.
+# add wave -noreg {/tb_jpeg_data_to_spi/clk}
+# add wave -noreg {/tb_jpeg_data_to_spi/reset_n}
+# add wave -noreg {/tb_jpeg_data_to_spi/je_done}
+# add wave -noreg {/tb_jpeg_data_to_spi/spi_rd}
+# add wave -noreg {/tb_jpeg_data_to_spi/hd_data}
+# add wave -noreg {/tb_jpeg_data_to_spi/je_data}
+# add wave -noreg {/tb_jpeg_data_to_spi/je_addr}
+# add wave -noreg {/tb_jpeg_data_to_spi/hd_addr}
+# add wave -noreg {/tb_jpeg_data_to_spi/spi_data}
+# add wave -noreg {/tb_jpeg_data_to_spi/header_rom}
+# add wave -noreg {/tb_jpeg_data_to_spi/je_mem}
+# add wave -noreg {/tb_jpeg_data_to_spi/idx}
+# add wave -noreg {/tb_jpeg_data_to_spi/spi_can_rd}
+# add wave -noreg {/tb_jpeg_data_to_spi/spi_rd_cnt}
+# 14 signal(s) traced.
+run 1 us
+# KERNEL: stopped at time: 1 us
+run 99 us
+# KERNEL: stopped at time: 100 us
+endsim
+# VSIM: Simulation has finished.
+alog -O2 -sve -msg 5 -sv2k12 -work jpeg_data_to_spi $dsn/src/tb_jpeg_data_to_spi.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module jpeg_data_to_spi found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: tb_jpeg_data_to_spi.
+# $root top modules: tb_jpeg_data_to_spi.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r tb_jpeg_data_to_spi
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ns.
+# ELAB2: Elaboration final pass...
+# KERNEL: PLI/VHPI kernel's engine initialization done.
+# PLI: Loading library 'D:\APPS\lscc\diamond\3.10_x64\active-hdl\bin\systf.dll'
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.0 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 1.0 [s]
+# SLP: Finished : 1.1 [s]
+# SLP: 0 primitives and 23 (100.00%) other processes in SLP
+# SLP: 42 (95.45%) signals in SLP and 2 (4.55%) interface signals
+# ELAB2: Elaboration final pass complete - time: 1.2 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5809 kB (elbread=1280 elab2=4383 kernel=146 sdf=0)
+# KERNEL: ASDB file was created in location E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\sim\jpeg_data_to_spi\jpeg_data_to_spi\src\wave.asdb
+#  10:22, 10 April 2018
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_data_to_spi/jpeg_data_to_spi/src/wave.asdb'.
+# add wave -noreg {/tb_jpeg_data_to_spi/dut/c_state}
+# add wave -noreg {/tb_jpeg_data_to_spi/dut/n_state}
+# add wave -noreg {/tb_jpeg_data_to_spi/dut/hd_addr_reg}
+# add wave -noreg {/tb_jpeg_data_to_spi/dut/je_addr_reg}
+# add wave -noreg {/tb_jpeg_data_to_spi/dut/eoi_reg}
+# add wave -noreg {/tb_jpeg_data_to_spi/dut/spi_data_reg}
+# add wave -noreg {/tb_jpeg_data_to_spi/dut/addr_lsb}
+# add wave -noreg {/tb_jpeg_data_to_spi/dut/col_cnt}
+# add wave -noreg {/tb_jpeg_data_to_spi/dut/row_cnt}
+# add wave -noreg {/tb_jpeg_data_to_spi/dut/col_idx}
+# add wave -noreg {/tb_jpeg_data_to_spi/dut/col_x}
+# add wave -noreg {/tb_jpeg_data_to_spi/dut/row_idx}
+# add wave -noreg {/tb_jpeg_data_to_spi/dut/row_y}
+# add wave -noreg {/tb_jpeg_data_to_spi/dut/col_max}
+# add wave -noreg {/tb_jpeg_data_to_spi/dut/row_max}
+# add wave -noreg {/tb_jpeg_data_to_spi/dut/chg_col}
+# add wave -noreg {/tb_jpeg_data_to_spi/dut/chg_row}
+# add wave -noreg {/tb_jpeg_data_to_spi/dut/chg_blk}
+# add wave -noreg {/tb_jpeg_data_to_spi/dut/rst_rcb}
+# add wave -noreg {/tb_jpeg_data_to_spi/dut/header_done}
+# add wave -noreg {/tb_jpeg_data_to_spi/dut/eoi}
+# add wave -noreg {/tb_jpeg_data_to_spi/dut/clk}
+# add wave -noreg {/tb_jpeg_data_to_spi/dut/reset_n}
+# add wave -noreg {/tb_jpeg_data_to_spi/dut/je_done}
+# add wave -noreg {/tb_jpeg_data_to_spi/dut/hd_addr}
+# add wave -noreg {/tb_jpeg_data_to_spi/dut/hd_data}
+# add wave -noreg {/tb_jpeg_data_to_spi/dut/je_addr}
+# add wave -noreg {/tb_jpeg_data_to_spi/dut/je_data}
+# add wave -noreg {/tb_jpeg_data_to_spi/dut/spi_rd}
+# add wave -noreg {/tb_jpeg_data_to_spi/dut/spi_data}
+# 30 signal(s) traced.
+# add wave -noreg {/tb_jpeg_data_to_spi/clk}
+# add wave -noreg {/tb_jpeg_data_to_spi/reset_n}
+# add wave -noreg {/tb_jpeg_data_to_spi/je_done}
+# add wave -noreg {/tb_jpeg_data_to_spi/spi_rd}
+# add wave -noreg {/tb_jpeg_data_to_spi/hd_data}
+# add wave -noreg {/tb_jpeg_data_to_spi/je_data}
+# add wave -noreg {/tb_jpeg_data_to_spi/je_addr}
+# add wave -noreg {/tb_jpeg_data_to_spi/hd_addr}
+# add wave -noreg {/tb_jpeg_data_to_spi/spi_data}
+# add wave -noreg {/tb_jpeg_data_to_spi/header_rom}
+# add wave -noreg {/tb_jpeg_data_to_spi/je_mem}
+# add wave -noreg {/tb_jpeg_data_to_spi/idx}
+# add wave -noreg {/tb_jpeg_data_to_spi/spi_can_rd}
+# add wave -noreg {/tb_jpeg_data_to_spi/spi_rd_cnt}
+# 14 signal(s) traced.
+run 100 us
+# KERNEL: stopped at time: 100 us
+endsim
+# VSIM: Simulation has finished.
+alog -O2 -sve -msg 5 -sv2k12 -work jpeg_data_to_spi $dsn/src/jpeg_data_to_spi.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_data_to_spi/jpeg_data_to_spi/src/jpeg_data_to_spi.v, ln 69).
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_data_to_spi/jpeg_data_to_spi/src/jpeg_data_to_spi.v, ln 112).
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_data_to_spi/jpeg_data_to_spi/src/jpeg_data_to_spi.v, ln 124).
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_data_to_spi/jpeg_data_to_spi/src/jpeg_data_to_spi.v, ln 148).
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# $root top modules: tb_jpeg_data_to_spi.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r tb_jpeg_data_to_spi
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ns.
+# ELAB2: Elaboration final pass...
+# KERNEL: PLI/VHPI kernel's engine initialization done.
+# PLI: Loading library 'D:\APPS\lscc\diamond\3.10_x64\active-hdl\bin\systf.dll'
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.0 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 1.0 [s]
+# SLP: Finished : 1.1 [s]
+# SLP: 0 primitives and 23 (100.00%) other processes in SLP
+# SLP: 42 (95.45%) signals in SLP and 2 (4.55%) interface signals
+# ELAB2: Elaboration final pass complete - time: 1.1 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5809 kB (elbread=1280 elab2=4382 kernel=146 sdf=0)
+# KERNEL: ASDB file was created in location E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\sim\jpeg_data_to_spi\jpeg_data_to_spi\src\wave.asdb
+#  10:31, 10 April 2018
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_data_to_spi/jpeg_data_to_spi/src/wave.asdb'.
+# add wave -noreg {/tb_jpeg_data_to_spi/dut/c_state}
+# add wave -noreg {/tb_jpeg_data_to_spi/dut/n_state}
+# add wave -noreg {/tb_jpeg_data_to_spi/dut/hd_addr_reg}
+# add wave -noreg {/tb_jpeg_data_to_spi/dut/je_addr_reg}
+# add wave -noreg {/tb_jpeg_data_to_spi/dut/eoi_reg}
+# add wave -noreg {/tb_jpeg_data_to_spi/dut/spi_data_reg}
+# add wave -noreg {/tb_jpeg_data_to_spi/dut/addr_lsb}
+# add wave -noreg {/tb_jpeg_data_to_spi/dut/col_cnt}
+# add wave -noreg {/tb_jpeg_data_to_spi/dut/row_cnt}
+# add wave -noreg {/tb_jpeg_data_to_spi/dut/col_idx}
+# add wave -noreg {/tb_jpeg_data_to_spi/dut/col_x}
+# add wave -noreg {/tb_jpeg_data_to_spi/dut/row_idx}
+# add wave -noreg {/tb_jpeg_data_to_spi/dut/row_y}
+# add wave -noreg {/tb_jpeg_data_to_spi/dut/col_max}
+# add wave -noreg {/tb_jpeg_data_to_spi/dut/row_max}
+# add wave -noreg {/tb_jpeg_data_to_spi/dut/chg_col}
+# add wave -noreg {/tb_jpeg_data_to_spi/dut/chg_row}
+# add wave -noreg {/tb_jpeg_data_to_spi/dut/chg_blk}
+# add wave -noreg {/tb_jpeg_data_to_spi/dut/rst_rcb}
+# add wave -noreg {/tb_jpeg_data_to_spi/dut/header_done}
+# add wave -noreg {/tb_jpeg_data_to_spi/dut/eoi}
+# add wave -noreg {/tb_jpeg_data_to_spi/dut/clk}
+# add wave -noreg {/tb_jpeg_data_to_spi/dut/reset_n}
+# add wave -noreg {/tb_jpeg_data_to_spi/dut/je_done}
+# add wave -noreg {/tb_jpeg_data_to_spi/dut/hd_addr}
+# add wave -noreg {/tb_jpeg_data_to_spi/dut/hd_data}
+# add wave -noreg {/tb_jpeg_data_to_spi/dut/je_addr}
+# add wave -noreg {/tb_jpeg_data_to_spi/dut/je_data}
+# add wave -noreg {/tb_jpeg_data_to_spi/dut/spi_rd}
+# add wave -noreg {/tb_jpeg_data_to_spi/dut/spi_data}
+# 30 signal(s) traced.
+run 100 us
+# KERNEL: stopped at time: 100 us
+run 100 us
+# KERNEL: stopped at time: 200 us
+run 100 us
+# KERNEL: stopped at time: 300 us
+run 100 us
+# KERNEL: stopped at time: 400 us
+run 100 us
+# KERNEL: stopped at time: 500 us
+run 100 us
+# KERNEL: stopped at time: 600 us
+run 100 us
+# KERNEL: stopped at time: 700 us
+run 100 us
+# KERNEL: stopped at time: 800 us
+run 100 us
+# KERNEL: stopped at time: 900 us
+run 100 us
+# KERNEL: stopped at time: 1 ms
+run 100 us
+# KERNEL: stopped at time: 1100 us
+run 100 us
+# KERNEL: stopped at time: 1200 us
+run 100 us
+# KERNEL: stopped at time: 1300 us
+run 100 us
+# KERNEL: stopped at time: 1400 us
+run 100 us
+# KERNEL: stopped at time: 1500 us
+run 100 us
+# KERNEL: stopped at time: 1600 us
+run 100 us
+# KERNEL: stopped at time: 1700 us
+run 100 us
+# KERNEL: stopped at time: 1800 us
+endsim
+# VSIM: Simulation has finished.

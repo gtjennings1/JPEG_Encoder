@@ -1,0 +1,5 @@
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
+@N: BN225 |Writing default property annotation file E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\radiant_proj\impl_1\radiant_proj_impl_1.sap.
+@N: MO225 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":66:2:66:7|There are no possible illegal states for state machine c_state[15:0] (in view: work.jpeg_enc_dct(verilog)); safe FSM implementation is not required.
+@N: MO225 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":294:2:294:7|There are no possible illegal states for state machine c_state[63:0] (in view: work.jpeg_enc(verilog)); safe FSM implementation is not required.

@@ -1,0 +1,3 @@
+i<>.\src\yuyv_to_yuv.v
+i<>.\src\tb_yuyv_to_yuv.v
+i<>.\src\sc_fifo.v

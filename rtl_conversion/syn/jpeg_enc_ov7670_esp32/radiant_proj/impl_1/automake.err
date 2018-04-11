@@ -1,0 +1,3 @@
+@E: CG1167 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\top.v":197:11:197:30|Module SB_HFOSC is undefined, hence parameters cannot be found
+@E::Errors while synthesizing top module top.
+ERROR - Design doesn't fit into device specified, refer to the Map report for more details.ERROR - Design doesn't fit into device specified, refer to the Map report for more details.

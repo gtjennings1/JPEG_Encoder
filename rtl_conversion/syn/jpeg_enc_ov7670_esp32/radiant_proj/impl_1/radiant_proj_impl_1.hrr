@@ -1,0 +1,122 @@
+---------------------------------------------------
+Report for cell top
+   Instance path: top
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	    3969.00        100.0
+                                 IOBUF	         21        100.0
+                                PFUREG	       1311        100.0
+                                   EBR	         11        100.0
+                                   DSP	          8        100.0
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                     OV7670_Controller	          1         4.2
+                      jpeg_data_to_spi	          1         3.6
+                      jpeg_data_writer	          1         1.9
+                              jpeg_enc	          1        66.2
+                             spi_slave	          1         0.5
+                              up_spram	          1         2.6
+                           yuyv_to_yuv	          1         4.3
+---------------------------------------------------
+Report for cell up_spram
+   Instance path: top/cam_buf
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	     105.00         2.6
+---------------------------------------------------
+Report for cell yuyv_to_yuv
+   Instance path: top/yty
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	     169.00         4.3
+                                PFUREG	        129         9.8
+                                   EBR	          1         9.1
+                                   DSP	          1        12.5
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                               sc_fifo	          1         1.0
+---------------------------------------------------
+Report for cell sc_fifo
+   Instance path: top/yty/yuv_fifo
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	      39.00         1.0
+                                PFUREG	         28         2.1
+                                   EBR	          1         9.1
+---------------------------------------------------
+Report for cell jpeg_enc
+   Instance path: top/je
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	    2627.00        66.2
+                                PFUREG	        852        65.0
+                                   EBR	         10        90.9
+                                   DSP	          5        62.5
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                          jpeg_enc_dct	          1        33.2
+                          jpeg_enc_mem	          1         3.7
+---------------------------------------------------
+Report for cell jpeg_enc_mem
+   Instance path: top/je/ram_rom
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	     145.00         3.7
+                                PFUREG	         69         5.3
+                                   EBR	         10        90.9
+---------------------------------------------------
+Report for cell jpeg_enc_dct
+   Instance path: top/je/dct
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	    1319.00        33.2
+                                PFUREG	        461        35.2
+                                   DSP	          5        62.5
+---------------------------------------------------
+Report for cell jpeg_data_writer
+   Instance path: top/jedw
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	      76.00         1.9
+                                PFUREG	         61         4.7
+                                   DSP	          1        12.5
+---------------------------------------------------
+Report for cell jpeg_data_to_spi
+   Instance path: top/jdts
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	     142.00         3.6
+                                PFUREG	         89         6.8
+                                   DSP	          1        12.5
+---------------------------------------------------
+Report for cell spi_slave
+   Instance path: top/esp32_spi
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	      18.00         0.5
+                                PFUREG	         15         1.1
+---------------------------------------------------
+Report for cell OV7670_Controller
+   Instance path: top/u_OV7670_Controller
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	     166.00         4.2
+                                PFUREG	        117         8.9
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                         I2C_Interface	          1         1.4
+                      OV7670_Registers	          1         2.7
+---------------------------------------------------
+Report for cell OV7670_Registers
+   Instance path: top/u_OV7670_Controller/LUT
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	     109.00         2.7
+                                PFUREG	         42         3.2
+---------------------------------------------------
+Report for cell I2C_Interface
+   Instance path: top/u_OV7670_Controller/I2C
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	      57.00         1.4
+                                PFUREG	         75         5.7

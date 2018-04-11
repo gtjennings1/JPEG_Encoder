@@ -1,0 +1,15 @@
+@N: CD630 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\radiant_proj\impl_1\syntmp\gentmp1860a12956":4:7:4:9|Synthesizing work.top.gen.
+@N: CD630 :"syng0a12956":281:7:281:10|Synthesizing work.sdiv.cell_level.
+@W: CD326 :"syng0a12956":319:2:319:6|Port divide_by_0 of entity work.dw_div is unconnected. If a port needs to remain unconnected, use the keyword open.
+@N: CD630 :"syng0a12956":29:7:29:12|Synthesizing work.dw_div.rtl.
+@W: CG296 :"syng0a12956":161:0:161:6|Incomplete sensitivity list; assuming completeness. Make sure all referenced variables in message CG290 are included in the sensitivity list.
+@W: CG290 :"syng0a12956":168:16:168:22|Referenced variable temp2_0 is not in sensitivity list.
+@W: CG290 :"syng0a12956":172:31:172:35|Referenced variable temp1 is not in sensitivity list.
+@W: CD434 :"syng0a12956":228:23:228:26|Signal quot in the sensitivity list is not used in the process. Make sure all variables in the sensitivity list are referenced in the process.
+@W: CG296 :"syng0a12956":228:0:228:6|Incomplete sensitivity list; assuming completeness. Make sure all referenced variables in message CG290 are included in the sensitivity list.
+@W: CG290 :"syng0a12956":238:16:238:22|Referenced variable temp3_1 is not in sensitivity list.
+@W: CG290 :"syng0a12956":237:16:237:22|Referenced variable temp2_0 is not in sensitivity list.
+@W: CG290 :"syng0a12956":242:12:242:16|Referenced variable temp1 is not in sensitivity list.
+Post processing for work.dw_div.rtl
+Post processing for work.sdiv.cell_level
+Post processing for work.top.gen

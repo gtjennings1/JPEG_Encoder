@@ -1,0 +1,281 @@
+
+Lattice Place and Route Report for Design "radiant_proj_impl_1_map.udb"
+Wed Apr 11 15:27:16 2018
+
+PAR: Place And Route Radiant (64-bit) 1.0.0.350.6.
+Command Line: par -w -t 1 -exp parPathBased=ON radiant_proj_impl_1_map.udb \
+	radiant_proj_impl_1_par.dir/5_1.udb 
+
+Loading radiant_proj_impl_1_map.udb ...
+Loading device for application udb from file 'itpa08.nph' in environment: D:/APPS/lscc/radiant/1.0/ispfpga.
+Design:  top
+Family:  iCE40UP
+Device:  iCE40UP5K
+Package: SG48
+Performance Grade:   High-Performance_1.2V
+WARNING - par: instance mosi does not exist
+
+WARNING - par: the located object is not specified
+
+
+WARNING: udb::Constraint "create_clock -name {u_HSOSC.osc_inst/CLKHF} -period 41.6667 [get_pins u_HSOSC.osc_inst/CLKHF]" does not have corresponding tmConstraint. Please check if the resource objects of the constraint are valid carefully!
+WARNING - par: Top module port 'mosi' does not connect to anything.
+WARNING - par: Top module port 'mosi' does not connect to anything.
+WARNING - par: Top module port 'mosi' does not connect to anything.
+WARNING - par: Top module port 'mosi' does not connect to anything.
+Number of Signals: 6242
+Number of Connections: 16812
+Device utilization summary:
+
+   SLICE (est.)    2054/2640         77% used
+     LUT           3971/5280         75% used
+     REG           1311/5280         24% used
+   PIO               21/56           37% used
+                     21/36           58% bonded
+   IOLOGIC            0/56            0% used
+   DSP                8/8           100% used
+   I2C                0/2             0% used
+   HFOSC              1/1           100% used
+   LFOSC              0/1             0% used
+   LEDDA_IP           0/1             0% used
+   RGBA_DRV           0/1             0% used
+   FILTER             0/2             0% used
+   SRAM               4/4           100% used
+   WARMBOOT           0/1             0% used
+   SPI                0/2             0% used
+   EBR               11/30           36% used
+   PLL                0/1             0% used
+   RGBOUTBUF          0/3             0% used
+   I3C                2/2           100% used
+   OPENDRAIN          0/3             0% used
+
+Pin Constraint Summary:
+   21 out of 21 pins locked (100% locked).
+Finished Placer Phase 0 (HIER).  CPU time: 13 secs , REAL time: 14 secs 
+
+
+.................
+Finished Placer Phase 0 (AP).  CPU time: 29 secs , REAL time: 31 secs 
+
+Starting Placer Phase 1. REAL time: 31 secs 
+..  ..
+....................
+
+Placer score = 31513486.
+
+Device SLICE utilization summary after final SLICE packing:
+   SLICE           2030/2640         76% used
+
+Finished Placer Phase 1.  CPU time: 1 mins 49 secs , REAL time: 1 mins 53 secs 
+
+Starting Placer Phase 2.
+.
+
+Placer score =  15176891
+Finished Placer Phase 2.  CPU time: 1 mins 52 secs , REAL time: 1 mins 56 secs 
+
+
+------------------ Clock Report ------------------
+
+Global Clocks :
+  PRIMARY "clk_24m" from comp "u_HSOSC.osc_inst" on site "HFOSC_R1C32", clk load = 63, ce load = 0, sr load = 0
+  PRIMARY "pclk_c" from comp "pclk" on PIO site "18 (PL23B)", clk load = 667, ce load = 0, sr load = 0
+
+  PRIMARY  : 2 out of 8 (25%)
+
+--------------- End of Clock Report ---------------
+
+
+I/O Usage Summary (final):
+   21 out of 56 (37.5%) PIO sites used.
+   21 out of 36 (58.3%) bonded PIO sites used.
+   Number of PIO comps: 21; differential: 0
+   Number of Vref pins used: 0
+
+I/O Bank Usage Summary:
++----------+---------------+------------+------------+------------+
+| I/O Bank | Usage         | Bank Vccio | Bank Vref1 | Bank Vref2 |
++----------+---------------+------------+------------+------------+
+| 0        | 8 / 14 ( 57%) | 3.3V       |            |            |
+| 1        | 6 / 14 ( 42%) | 3.3V       |            |            |
+| 2        | 7 / 8 ( 87%)  | 3.3V       |            |            |
++----------+---------------+------------+------------+------------+
+
+Total Placer CPU time: 1 mins 52 secs , REAL time: 1 mins 56 secs 
+
+Writing design to file radiant_proj_impl_1_par.dir/5_1.udb ...
+
+WARNING - par: Top module port 'mosi' does not connect to anything.
+WARNING - par: The clock port [pclk] is assigned to a non clock dedicated pin [18], which might affect the clock performance. Use dedicated clock resources for the port.
+
+Start NBR router at 15:29:14 04/11/18
+
+*****************************************************************
+Info: NBR allows conflicts(one node used by more than one signal)
+      in the earlier iterations. In each iteration, it tries to  
+      solve the conflicts while keeping the critical connections 
+      routed as short as possible. The routing process is said to
+      be completed when no conflicts exist and all connections   
+      are routed.                                                
+Note: NBR uses a different method to calculate timing slacks. The
+      worst slack and total negative slack may not be the same as
+      that in timing report. You should always run the timing    
+      tool to verify your design.                                
+*****************************************************************
+
+Starting routing resource preassignment
+WARNING - par: The driver of primary clock signal pclk_c is placed in a location (18.PADDI) that cannot drive the primary clock tree with dedicated routing resources. Some general routing resources may be used and this clock may suffer from excessive skew or delay.
+Preassignment Summary:
+--------------------------------------------------------------------------------
+2086 connections routed with dedicated routing resources
+2 global clock signals routed
+2149 connections routed (of 15903 total) (13.51%)
+---------------------------------------------------------
+Clock routing summary:
+Primary clocks (2 used out of 8 available):
+#4  Signal "clk_24m"
+       Clock   loads: 63    out of    63 routed (100.00%)
+       Data    loads: 0     out of     1 routed (  0.00%)
+#7  Signal "pclk_c"
+       Clock   loads: 0     out of   667 routed (  0.00%)
+
+WARNING - par: The following clock signals are routed with generic routing resources and may suffer from excessive delay and/or skew:
+   "pclk_c" (667 clock loads, 667 total loads)
+
+---------------------------------------------------------
+--------------------------------------------------------------------------------
+Completed routing resource preassignment
+
+Start NBR section for initial routing at 15:29:18 04/11/18
+Level 1, iteration 1
+17(0.01%) conflicts; 12485(78.51%) untouched conns; 146284757 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -139.270ns/-146284.758ns; real time: 6 secs 
+Level 2, iteration 1
+11(0.00%) conflicts; 12302(77.36%) untouched conns; 147440640 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -139.653ns/-147440.641ns; real time: 6 secs 
+Level 3, iteration 1
+0(0.00%) conflict; 12282(77.23%) untouched conns; 148525171 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -140.594ns/-148525.172ns; real time: 7 secs 
+Level 4, iteration 1
+616(0.23%) conflicts; 0(0.00%) untouched conn; 149404758 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -140.594ns/-149404.759ns; real time: 20 secs 
+
+Info: Initial congestion level at 75% usage is 5
+Info: Initial congestion area  at 75% usage is 86 (11.10%)
+
+Start NBR section for normal routing at 15:29:34 04/11/18
+Level 1, iteration 1
+22(0.01%) conflicts; 880(5.53%) untouched conns; 146371084 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -137.811ns/-146371.084ns; real time: 23 secs 
+Level 4, iteration 1
+135(0.05%) conflicts; 0(0.00%) untouched conn; 145791901 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -137.122ns/-145791.901ns; real time: 31 secs 
+Level 4, iteration 2
+62(0.02%) conflicts; 0(0.00%) untouched conn; 145631767 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -136.897ns/-145631.767ns; real time: 34 secs 
+Level 4, iteration 3
+39(0.01%) conflicts; 0(0.00%) untouched conn; 145644943 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -136.897ns/-145644.943ns; real time: 36 secs 
+Level 4, iteration 4
+23(0.01%) conflicts; 0(0.00%) untouched conn; 145644943 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -136.897ns/-145644.943ns; real time: 37 secs 
+Level 4, iteration 5
+10(0.00%) conflicts; 0(0.00%) untouched conn; 145644830 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -136.897ns/-145644.830ns; real time: 38 secs 
+Level 4, iteration 6
+4(0.00%) conflicts; 0(0.00%) untouched conn; 145644830 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -136.897ns/-145644.830ns; real time: 38 secs 
+Level 4, iteration 7
+1(0.00%) conflict; 0(0.00%) untouched conn; 145644023 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -136.897ns/-145644.023ns; real time: 38 secs 
+Level 4, iteration 8
+1(0.00%) conflict; 0(0.00%) untouched conn; 145644023 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -136.897ns/-145644.023ns; real time: 38 secs 
+Level 4, iteration 9
+0(0.00%) conflict; 0(0.00%) untouched conn; 145644023 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -136.897ns/-145644.023ns; real time: 39 secs 
+
+Start NBR section for performance tuning (iteration 1) at 15:29:53 04/11/18
+Level 4, iteration 1
+3(0.00%) conflicts; 0(0.00%) untouched conn; 144879754 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -136.116ns/-144879.755ns; real time: 39 secs 
+Level 4, iteration 2
+2(0.00%) conflicts; 0(0.00%) untouched conn; 145189333 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -136.394ns/-145189.333ns; real time: 39 secs 
+Level 4, iteration 3
+1(0.00%) conflict; 0(0.00%) untouched conn; 145189333 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -136.394ns/-145189.333ns; real time: 40 secs 
+Level 4, iteration 4
+0(0.00%) conflict; 0(0.00%) untouched conn; 145189333 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -136.394ns/-145189.333ns; real time: 40 secs 
+
+Start NBR section for performance tuning (iteration 2) at 15:29:54 04/11/18
+Level 4, iteration 1
+1(0.00%) conflict; 0(0.00%) untouched conn; 145197760 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -136.500ns/-145197.761ns; real time: 40 secs 
+
+Start NBR section for re-routing at 15:30:05 04/11/18
+Level 4, iteration 1
+0(0.00%) conflict; 0(0.00%) untouched conn; 145503445 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -136.778ns/-145503.445ns; real time: 51 secs 
+
+Start NBR section for post-routing at 15:30:05 04/11/18
+
+End NBR router with 0 unrouted connection
+
+NBR Summary
+-----------
+  Number of unrouted connections : 0 (0.00%)
+  Number of connections with timing violations : 1271 (7.99%)
+  Estimated worst slack<setup> : -136.778ns
+  Timing score<setup> : 2019027
+-----------
+Notes: The timing info is calculated for SETUP only.
+
+
+---------------------------------------------------------
+Clock routing summary:
+Primary clocks (2 used out of 8 available):
+#4  Signal "clk_24m"
+       Clock   loads: 63    out of    63 routed (100.00%)
+       Data    loads: 1     out of     1 routed (100.00%)
+#7  Signal "pclk_c"
+       Clock   loads: 667   out of   667 routed (100.00%)
+
+WARNING - par: The following clock signals are routed with generic routing resources and may suffer from excessive delay and/or skew:
+   "pclk_c" (667 clock loads, 667 total loads)
+
+---------------------------------------------------------
+Total CPU time 1 mins 48 secs 
+Total REAL time: 1 mins 53 secs 
+Completely routed.
+End of route.  15903 routed (100.00%); 0 unrouted.
+WARNING - par: Top module port 'mosi' does not connect to anything.
+WARNING - par: The clock port [pclk] is assigned to a non clock dedicated pin [18], which might affect the clock performance. Use dedicated clock resources for the port.
+
+Writing design to file radiant_proj_impl_1_par.dir/5_1.udb ...
+
+
+All signals are completely routed.
+
+
+PAR_SUMMARY::Run status = Success
+PAR_SUMMARY::Number of unrouted conns = 0
+PAR_SUMMARY::Worst  slack<setup/<ns>> = -136.778
+PAR_SUMMARY::Timing score<setup/<ns>> = 2019.027
+PAR_SUMMARY::Worst  slack<hold /<ns>> = 2.596
+PAR_SUMMARY::Timing score<hold /<ns>> = 2019.027
+PAR_SUMMARY::Number of errors = 0
+
+Total CPU  Time: 3 mins 45 secs 
+Total REAL Time: 3 mins 54 secs 
+Peak Memory Usage: 348 MB
+
+
+par done!
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2018 Lattice Semiconductor Corporation,  All rights reserved.

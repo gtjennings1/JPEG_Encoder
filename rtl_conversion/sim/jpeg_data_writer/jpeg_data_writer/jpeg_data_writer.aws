@@ -1,0 +1,12 @@
+[Version]
+Version=10.3
+[Designs]
+jpeg_data_writer=.\jpeg_data_writer.adf
+[Browser]
+sort=order
+mode=none
+[Order]
+order=1
+macro=
+[Expand]
+jpeg_data_writer=1

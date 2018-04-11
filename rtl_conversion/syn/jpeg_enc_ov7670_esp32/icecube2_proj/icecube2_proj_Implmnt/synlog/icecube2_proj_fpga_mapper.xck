@@ -1,0 +1,2 @@
+CKID0001:@|S:u_SB_HFOSC@|E:u_OV7670_Controller.I2C.sioc_temp@|F:@syn_sample_clock_path==CKID0001@|M:ClockId0001 
+CKID0002:@|S:pclk_ibuf_gb_io@|E:pix_per_line[10]@|F:@syn_sample_clock_path==CKID0002@|M:ClockId0002 

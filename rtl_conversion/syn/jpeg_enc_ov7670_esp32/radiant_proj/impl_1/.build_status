@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BuildStatus>
+    <Strategy name="Strategy1">
+        <Milestone name="Export" build_result="0" build_time="0">
+            <Task name="Bitgen" build_result="0" update_result="3" update_time="0"/>
+            <Task name="TimingSimFileVlg" build_result="0" update_result="3" update_time="0"/>
+        </Milestone>
+        <Milestone name="Map" build_result="2" build_time="1523440286">
+            <Task name="Map" build_result="2" update_result="0" update_time="1523440286"/>
+            <Task name="MapTrace" build_result="2" update_result="0" update_time="1523440303"/>
+        </Milestone>
+        <Milestone name="PAR" build_result="2" build_time="1523440870">
+            <Task name="PAR" build_result="2" update_result="0" update_time="1523440870"/>
+            <Task name="PARTrace" build_result="2" update_result="0" update_time="1523440900"/>
+            <Task name="IOTiming" build_result="0" update_result="3" update_time="0"/>
+        </Milestone>
+        <Milestone name="Synthesis" build_result="2" build_time="1523437981">
+            <Task name="Synplify_Synthesis" build_result="2" update_result="0" update_time="1523437981"/>
+        </Milestone>
+        <Report name="radiant_proj_impl_1.tw1.html" last_build_time="1523440302" last_build_size="882756"/>
+        <Report name="radiant_proj_impl_1.twr.html" last_build_time="1523440900" last_build_size="837377"/>
+        <Report name="radiant_proj_impl_1.udb::log" last_build_time="1523437980" last_build_size="2171607"/>
+        <Report name="radiant_proj_impl_1.udb::phy_par" last_build_time="1523440869" last_build_size="4794811"/>
+        <Report name="radiant_proj_impl_1_map.udb" last_build_time="1523440285" last_build_size="4316724"/>
+    </Strategy>
+</BuildStatus>

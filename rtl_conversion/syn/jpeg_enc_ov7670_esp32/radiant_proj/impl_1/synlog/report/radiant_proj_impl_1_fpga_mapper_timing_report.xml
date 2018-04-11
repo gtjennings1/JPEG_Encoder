@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- *************************************************************************************
+FILE DESCRIPTION
+Max Top 5 critical clocks will be reported. For rest user needs to refer to Detailed report
+*******************************************************************************************-->
+<report_table display_priority="2" name="Timing Summary">
+<report_link name="Detailed report">
+<data>E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\radiant_proj\impl_1\synlog\radiant_proj_impl_1_fpga_mapper.srr</data>
+<title>START OF TIMING REPORT</title>
+</report_link>
+<row>
+<data tcl_name="clock_name">Clock Name</data>
+<data tcl_name="req_freq">Req Freq</data>
+<data tcl_name="est_freq">Est Freq</data>
+<data tcl_name="slack">Slack</data>
+</row>
+<row>
+<data>top|clk_24m</data>
+<data>133.9 MHz</data>
+<data>113.9 MHz</data>
+<data>-1.317</data>
+</row>
+<row>
+<data>top|pclk</data>
+<data>24.9 MHz</data>
+<data>NA</data>
+<data>NA</data>
+</row>
+<row>
+<data>System</data>
+<data>64.1 MHz</data>
+<data>54.5 MHz</data>
+<data>-2.753</data>
+</row>
+</report_table>

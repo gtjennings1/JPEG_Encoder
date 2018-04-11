@@ -1,0 +1,179 @@
+# Wed Apr 11 14:56:00 2018
+
+Synopsys Lattice Technology Pre-mapping, Version maplat, Build 1612R, Built Dec  5 2016 10:31:39
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+Product Version L-2016.09L+ice40
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
+
+@A: MF827 |No constraint file specified.
+@L: E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\icecube2_proj\icecube2_proj_Implmnt\icecube2_proj_scck.rpt 
+Printing clock  summary report in "E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\icecube2_proj\icecube2_proj_Implmnt\icecube2_proj_scck.rpt" file 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 105MB peak: 108MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 105MB peak: 108MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 106MB peak: 108MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 106MB peak: 109MB)
+
+@W: BN132 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1048:2:1048:7|Removing sequential instance je.dcht_bc_rom_a[4:0] because it is equivalent to instance je.dcht_bb_rom_a[4:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1048:2:1048:7|Removing sequential instance je.acht_bc_rom_a[8:0] because it is equivalent to instance je.acht_bb_rom_a[8:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+ICG Latch Removal Summary:
+Number of ICG latches removed:	0
+Number of ICG latches not removed:	0
+syn_allowed_resources : blockrams=30  set on top level netlist top
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 136MB peak: 137MB)
+
+
+
+Clock Summary
+*****************
+
+Start           Requested     Requested     Clock        Clock                     Clock
+Clock           Frequency     Period        Type         Group                     Load 
+----------------------------------------------------------------------------------------
+System          1.0 MHz       1000.000      system       system_clkgroup           0    
+top|clk_24m     24.0 MHz      41.660        inferred     Autoconstr_clkgroup_1     97   
+top|pclk        82.1 MHz      12.177        inferred     Autoconstr_clkgroup_0     1375 
+========================================================================================
+
+@W: MT529 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\sc_fifo.v":87:0:87:5|Found inferred clock top|pclk which controls 1375 sequential elements including yty.yuv_fifo.write_pointer[8:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+@W: MT529 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\ov7670_registers.v":41:4:41:9|Found inferred clock top|clk_24m which controls 97 sequential elements including u_OV7670_Controller.LUT.address[7:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+
+Finished Pre Mapping Phase.
+@N: BN225 |Writing default property annotation file E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\icecube2_proj\icecube2_proj_Implmnt\icecube2_proj.sap.
+
+Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 136MB peak: 137MB)
+
+Encoding state machine c_state[14:0] (in view: work.yuyv_to_yuv(verilog))
+original code -> new code
+   0000 -> 0000
+   0001 -> 0001
+   0010 -> 0010
+   0011 -> 0011
+   0100 -> 0100
+   0101 -> 0101
+   0110 -> 0110
+   0111 -> 0111
+   1000 -> 1000
+   1001 -> 1001
+   1010 -> 1010
+   1011 -> 1011
+   1100 -> 1100
+   1101 -> 1101
+   1110 -> 1110
+Encoding state machine c_state[15:0] (in view: work.jpeg_enc_dct(verilog))
+original code -> new code
+   000000 -> 0000
+   000001 -> 0001
+   000010 -> 0010
+   000011 -> 0011
+   000100 -> 0100
+   000101 -> 0101
+   000110 -> 0110
+   000111 -> 0111
+   001000 -> 1000
+   001001 -> 1001
+   001010 -> 1010
+   001011 -> 1011
+   001100 -> 1100
+   001101 -> 1101
+   001110 -> 1110
+   001111 -> 1111
+@N: MO225 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":66:2:66:7|There are no possible illegal states for state machine c_state[15:0] (in view: work.jpeg_enc_dct(verilog)); safe FSM implementation is not required.
+Encoding state machine c_state[63:0] (in view: work.jpeg_enc(verilog))
+original code -> new code
+   00000000 -> 000000
+   00000001 -> 000001
+   00000010 -> 000010
+   00000011 -> 000011
+   00000100 -> 000100
+   00000101 -> 000101
+   00000110 -> 000110
+   00000111 -> 000111
+   00001000 -> 001000
+   00001001 -> 001001
+   00001010 -> 001010
+   00001011 -> 001011
+   00001100 -> 001100
+   00001101 -> 001101
+   00001110 -> 001110
+   00001111 -> 001111
+   00010000 -> 010000
+   00010001 -> 010001
+   00010010 -> 010010
+   00010011 -> 010011
+   00010100 -> 010100
+   00010101 -> 010101
+   00010110 -> 010110
+   00010111 -> 010111
+   00011000 -> 011000
+   00011001 -> 011001
+   00011010 -> 011010
+   00011011 -> 011011
+   00011100 -> 011100
+   00011101 -> 011101
+   00011110 -> 011110
+   00011111 -> 011111
+   00100000 -> 100000
+   00100001 -> 100001
+   00100010 -> 100010
+   00100011 -> 100011
+   00100100 -> 100100
+   00100101 -> 100101
+   00100110 -> 100110
+   00100111 -> 100111
+   00101000 -> 101000
+   00101001 -> 101001
+   00101010 -> 101010
+   00101011 -> 101011
+   00101100 -> 101100
+   00101101 -> 101101
+   00101110 -> 101110
+   00101111 -> 101111
+   00110000 -> 110000
+   00110001 -> 110001
+   00110010 -> 110010
+   00110011 -> 110011
+   00110100 -> 110100
+   00110101 -> 110101
+   00110110 -> 110110
+   00110111 -> 110111
+   00111000 -> 111000
+   00111001 -> 111001
+   00111010 -> 111010
+   00111011 -> 111011
+   00111100 -> 111100
+   00111101 -> 111101
+   00111110 -> 111110
+   00111111 -> 111111
+@N: MO225 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":294:2:294:7|There are no possible illegal states for state machine c_state[63:0] (in view: work.jpeg_enc(verilog)); safe FSM implementation is not required.
+Encoding state machine c_state[5:0] (in view: work.jpeg_data_to_spi(verilog))
+original code -> new code
+   000 -> 000
+   001 -> 001
+   010 -> 010
+   011 -> 011
+   100 -> 100
+   101 -> 101
+None
+None
+
+Finished constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 54MB peak: 141MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Wed Apr 11 14:56:01 2018
+
+###########################################################]

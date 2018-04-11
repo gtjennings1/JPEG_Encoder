@@ -1,0 +1,23 @@
+@P:  Worst Slack : -10.775
+@P:  top|clk_24m - Estimated Frequency : 88.5 MHz
+@P:  top|clk_24m - Requested Frequency : 24.0 MHz
+@P:  top|clk_24m - Estimated Period : 11.300
+@P:  top|clk_24m - Requested Period : 41.660
+@P:  top|clk_24m - Slack : 30.360
+@P:  top|pclk - Estimated Frequency : 13.9 MHz
+@P:  top|pclk - Requested Frequency : 16.4 MHz
+@P:  top|pclk - Estimated Period : 71.830
+@P:  top|pclk - Requested Period : 61.056
+@P:  top|pclk - Slack : -10.775
+@P:  System - Estimated Frequency : 1.1 MHz
+@P:  System - Requested Frequency : 1.0 MHz
+@P:  System - Estimated Period : 946.766
+@P:  System - Requested Period : 1000.000
+@P:  System - Slack : 53.234
+@P: top Part : ice40up5ksg48
+@P: top I/O primitives : 21
+@P: top I/O Register bits : 0
+@P: top Register bits (Non I/O) : 1372 (25%)
+@P: top Block Rams : 12 of 30 (40%)
+@P: top Total Luts : 3878 (73%)
+@P:  CPU Time : 0h:00m:15s

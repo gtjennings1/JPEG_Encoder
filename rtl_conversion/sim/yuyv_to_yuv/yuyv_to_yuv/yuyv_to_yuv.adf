@@ -1,0 +1,45 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=3
+Current Config=compile
+[Configurations]
+compile=yuyv_to_yuv
+[Library]
+yuyv_to_yuv=.\yuyv_to_yuv\yuyv_to_yuv.lib
+[Settings]
+AccessRead=1
+AccessReadWrite=0
+AccessACCB=0
+AccessACCR=0
+AccessReadWriteSLP=0
+AccessReadTopLevel=0
+DisableC=1
+ENABLE_ADV_DATAFLOW=0
+FLOW_TYPE=HDL
+LANGUAGE=VERILOG
+REFRESH_FLOW=1
+FLOWTOOLS=NONE
+FAMILY=SiliconBlue iCE40
+[LocalVerilogSets]
+EnableSLP=1
+EnableDebug=0
+[LocalVhdlSets]
+CompileWithDebug=0
+[$LibMap$]
+yuyv_to_yuv=.
+Active_lib=
+[Files]
+/yuyv_to_yuv.v=-1
+/tb_yuyv_to_yuv.v=-1
+/sc_fifo.v=-1
+[Files.Data]
+.\src\yuyv_to_yuv.v=Verilog Source Code
+.\src\tb_yuyv_to_yuv.v=Verilog Source Code
+.\src\sc_fifo.v=Verilog Source Code
+[SpecTracer]
+WindowVisible=0
+[HierarchyViewer]
+HierarchyInformation=
+ShowHide=ShowTopLevel
+Selected=

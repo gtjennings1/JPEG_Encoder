@@ -4,7 +4,7 @@ Version=Lattice Semiconductor Corporation iCEcube - Release: 2017.08.27940 - Bui
 ProjectName=jpeg_enc_rtl_conv
 Vendor=SiliconBlue
 Synthesis=synplify
-ProjectVFiles=../../src/jpeg_enc.v=work,../../src/jpeg_enc_mem.v=work,../../src/jpeg_enc_dct.v=work
+ProjectVFiles=../../src/jpeg_enc.v,../../src/jpeg_enc_mem.v,../../src/jpeg_enc_dct.v
 ProjectCFiles=
 CurImplementation=jpeg_enc_rtl_conv_Implmnt
 Implementations=jpeg_enc_rtl_conv_Implmnt

@@ -1,0 +1,2 @@
+CKID0001:@|S:u_HSOSC@|E:u_OV7670_Controller.I2C.busy_sr_ess[1]@|F:@syn_sample_clock_path==CKID0001@|M:ClockId0001 
+CKID0002:@|S:pclk@|E:q_href@|F:@syn_sample_clock_path==CKID0002@|M:ClockId0002 

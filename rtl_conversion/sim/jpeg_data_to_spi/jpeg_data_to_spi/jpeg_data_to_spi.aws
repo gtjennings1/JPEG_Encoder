@@ -1,0 +1,12 @@
+[Version]
+Version=10.3
+[Designs]
+jpeg_data_to_spi=.\jpeg_data_to_spi.adf
+[Browser]
+sort=order
+mode=none
+[Order]
+order=1
+macro=
+[Expand]
+jpeg_data_to_spi=1

@@ -1,0 +1,170 @@
+#OPTIONS:"|-mixedhdl|-modhint|E:\\upwork\\gnarly_grey\\GitHub\\JPEG_Encoder\\rtl_conversion\\syn\\jpeg_enc_ov7670_esp32\\radiant_proj\\impl_1\\synwork\\_verilog_hintfile|-top|top|-layerid|0|-orig_srs|E:\\upwork\\gnarly_grey\\GitHub\\JPEG_Encoder\\rtl_conversion\\syn\\jpeg_enc_ov7670_esp32\\radiant_proj\\impl_1\\synwork\\radiant_proj_impl_1_comp.srs|-prodtype|synplify_pro|-primux|-fixsmult|-infer_seqShift|-ice|-sdff_counter|-nram|-divnmod|-nostructver|-I|E:\\upwork\\gnarly_grey\\GitHub\\JPEG_Encoder\\rtl_conversion\\syn\\jpeg_enc_ov7670_esp32\\radiant_proj|-I|E:\\upwork\\gnarly_grey\\GitHub\\JPEG_Encoder\\rtl_conversion\\syn\\jpeg_enc_ov7670_esp32\\radiant_proj\\impl_1\\|-I|D:\\APPS\\lscc\\radiant\\1.0\\synpbase\\lib|-v2001|-devicelib|D:\\APPS\\lscc\\radiant\\1.0\\synpbase\\lib\\generic\\ice40up.v|-encrypt|-pro|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-D_MULTIPLE_FILE_COMPILATION_UNIT_|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work"
+#CUR:"D:\\APPS\\lscc\\radiant\\1.0\\synpbase\\bin64\\c_ver.exe":1513353474
+#CUR:"E:\\upwork\\gnarly_grey\\GitHub\\JPEG_Encoder\\rtl_conversion\\syn\\jpeg_enc_ov7670_esp32\\radiant_proj\\impl_1\\synwork\\_verilog_hintfile":1523426234
+#CUR:"D:\\APPS\\lscc\\radiant\\1.0\\synpbase\\lib\\generic\\ice40up.v":1513353490
+#CUR:"D:\\APPS\\lscc\\radiant\\1.0\\synpbase\\lib\\vlog\\hypermods.v":1513353510
+#CUR:"D:\\APPS\\lscc\\radiant\\1.0\\synpbase\\lib\\vlog\\umr_capim.v":1513353510
+#CUR:"D:\\APPS\\lscc\\radiant\\1.0\\synpbase\\lib\\vlog\\scemi_objects.v":1513353510
+#CUR:"D:\\APPS\\lscc\\radiant\\1.0\\synpbase\\lib\\vlog\\scemi_pipes.svh":1513353510
+#CUR:"D:\\APPS\\lscc\\radiant\\1.0\\ip\\pmi\\pmi.v":1517537440
+#CUR:"D:\\APPS\\lscc\\radiant\\1.0\\ip\\pmi\\pmi_add.v":1510103546
+#CUR:"D:\\APPS\\lscc\\radiant\\1.0\\ip\\pmi\\../common/adder/rtl/lscc_adder.v":1509782142
+#CUR:"D:\\APPS\\lscc\\radiant\\1.0\\ip\\pmi\\pmi_complex_mult.v":1510103546
+#CUR:"D:\\APPS\\lscc\\radiant\\1.0\\ip\\pmi\\../common/complex_mult/rtl/lscc_complex_mult.v":1509782143
+#CUR:"D:\\APPS\\lscc\\radiant\\1.0\\ip\\pmi\\pmi_dsp.v":1515569773
+#CUR:"D:\\APPS\\lscc\\radiant\\1.0\\ip\\pmi\\pmi_mac.v":1510103547
+#CUR:"D:\\APPS\\lscc\\radiant\\1.0\\ip\\pmi\\../common/mult_accumulate/rtl/lscc_mult_accumulate.v":1510017480
+#CUR:"D:\\APPS\\lscc\\radiant\\1.0\\ip\\pmi\\pmi_multaddsub.v":1510103546
+#CUR:"D:\\APPS\\lscc\\radiant\\1.0\\ip\\pmi\\../common/mult_add_sub/rtl/lscc_mult_add_sub.v":1509782144
+#CUR:"D:\\APPS\\lscc\\radiant\\1.0\\ip\\pmi\\pmi_mult.v":1510103546
+#CUR:"D:\\APPS\\lscc\\radiant\\1.0\\ip\\pmi\\../common/multiplier/rtl/lscc_multiplier.v":1509782145
+#CUR:"D:\\APPS\\lscc\\radiant\\1.0\\ip\\pmi\\pmi_ram_dp.v":1509782147
+#CUR:"D:\\APPS\\lscc\\radiant\\1.0\\ip\\pmi\\../common/ram_dp/rtl/lscc_ram_dp.v":1510192101
+#CUR:"D:\\APPS\\lscc\\radiant\\1.0\\ip\\pmi\\pmi_ram_dq.v":1509782148
+#CUR:"D:\\APPS\\lscc\\radiant\\1.0\\ip\\pmi\\../common/ram_dq/rtl/lscc_ram_dq.v":1510192101
+#CUR:"D:\\APPS\\lscc\\radiant\\1.0\\ip\\pmi\\pmi_sub.v":1510103546
+#CUR:"D:\\APPS\\lscc\\radiant\\1.0\\ip\\pmi\\../common/subtractor/rtl/lscc_subtractor.v":1509782146
+#CUR:"E:\\upwork\\gnarly_grey\\GitHub\\JPEG_Encoder\\rtl_conversion\\syn\\jpeg_enc_ov7670_esp32\\src\\glue_logic\\jpeg_data_to_spi.v":1523336486
+#CUR:"E:\\upwork\\gnarly_grey\\GitHub\\JPEG_Encoder\\rtl_conversion\\syn\\jpeg_enc_ov7670_esp32\\src\\glue_logic\\jpeg_data_writer.v":1523098184
+#CUR:"E:\\upwork\\gnarly_grey\\GitHub\\JPEG_Encoder\\rtl_conversion\\syn\\jpeg_enc_ov7670_esp32\\src\\glue_logic\\sc_fifo.v":1523437771
+#CUR:"E:\\upwork\\gnarly_grey\\GitHub\\JPEG_Encoder\\rtl_conversion\\syn\\jpeg_enc_ov7670_esp32\\src\\glue_logic\\yuyv_to_yuv.v":1523012102
+#CUR:"E:\\upwork\\gnarly_grey\\GitHub\\JPEG_Encoder\\rtl_conversion\\syn\\jpeg_enc_ov7670_esp32\\src\\jpeg_enc\\jpeg_enc.v":1523425717
+#CUR:"E:\\upwork\\gnarly_grey\\GitHub\\JPEG_Encoder\\rtl_conversion\\syn\\jpeg_enc_ov7670_esp32\\src\\jpeg_enc\\jpeg_enc_dct.v":1522237274
+#CUR:"E:\\upwork\\gnarly_grey\\GitHub\\JPEG_Encoder\\rtl_conversion\\syn\\jpeg_enc_ov7670_esp32\\src\\jpeg_enc\\jpeg_enc_mem.v":1523425216
+#CUR:"E:\\upwork\\gnarly_grey\\GitHub\\JPEG_Encoder\\rtl_conversion\\syn\\jpeg_enc_ov7670_esp32\\src\\ov7670_esp32\\I2C_Interface.v":1513866168
+#CUR:"E:\\upwork\\gnarly_grey\\GitHub\\JPEG_Encoder\\rtl_conversion\\syn\\jpeg_enc_ov7670_esp32\\src\\ov7670_esp32\\OV7670_Controller.v":1513866168
+#CUR:"E:\\upwork\\gnarly_grey\\GitHub\\JPEG_Encoder\\rtl_conversion\\syn\\jpeg_enc_ov7670_esp32\\src\\ov7670_esp32\\OV7670_Registers.v":1513866168
+#CUR:"E:\\upwork\\gnarly_grey\\GitHub\\JPEG_Encoder\\rtl_conversion\\syn\\jpeg_enc_ov7670_esp32\\src\\ov7670_esp32\\spi_slave.v":1523426021
+#CUR:"E:\\upwork\\gnarly_grey\\GitHub\\JPEG_Encoder\\rtl_conversion\\syn\\jpeg_enc_ov7670_esp32\\src\\ov7670_esp32\\top.v":1523428279
+#CUR:"E:\\upwork\\gnarly_grey\\GitHub\\JPEG_Encoder\\rtl_conversion\\syn\\jpeg_enc_ov7670_esp32\\src\\ov7670_esp32\\up_spram.v":1523428242
+#numinternalfiles:5
+#defaultlanguage:verilog
+0			"D:\APPS\lscc\radiant\1.0\ip\pmi\pmi.v" verilog
+1		*	"D:\APPS\lscc\radiant\1.0\ip\pmi\pmi_add.v" verilog
+2		*	"D:\APPS\lscc\radiant\1.0\ip\pmi\../common/adder/rtl\lscc_adder.v" verilog
+3		*	"D:\APPS\lscc\radiant\1.0\ip\pmi\pmi_complex_mult.v" verilog
+4		*	"D:\APPS\lscc\radiant\1.0\ip\pmi\../common/complex_mult/rtl\lscc_complex_mult.v" verilog
+5		*	"D:\APPS\lscc\radiant\1.0\ip\pmi\pmi_dsp.v" verilog
+6		*	"D:\APPS\lscc\radiant\1.0\ip\pmi\pmi_mac.v" verilog
+7		*	"D:\APPS\lscc\radiant\1.0\ip\pmi\../common/mult_accumulate/rtl\lscc_mult_accumulate.v" verilog
+8		*	"D:\APPS\lscc\radiant\1.0\ip\pmi\pmi_multaddsub.v" verilog
+9		*	"D:\APPS\lscc\radiant\1.0\ip\pmi\../common/mult_add_sub/rtl\lscc_mult_add_sub.v" verilog
+10		*	"D:\APPS\lscc\radiant\1.0\ip\pmi\pmi_mult.v" verilog
+11		*	"D:\APPS\lscc\radiant\1.0\ip\pmi\../common/multiplier/rtl\lscc_multiplier.v" verilog
+12		*	"D:\APPS\lscc\radiant\1.0\ip\pmi\pmi_ram_dp.v" verilog
+13		*	"D:\APPS\lscc\radiant\1.0\ip\pmi\../common/ram_dp/rtl\lscc_ram_dp.v" verilog
+14		*	"D:\APPS\lscc\radiant\1.0\ip\pmi\pmi_ram_dq.v" verilog
+15		*	"D:\APPS\lscc\radiant\1.0\ip\pmi\../common/ram_dq/rtl\lscc_ram_dq.v" verilog
+16		*	"D:\APPS\lscc\radiant\1.0\ip\pmi\pmi_sub.v" verilog
+17		*	"D:\APPS\lscc\radiant\1.0\ip\pmi\../common/subtractor/rtl\lscc_subtractor.v" verilog
+18			"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\jpeg_data_to_spi.v" verilog
+19			"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\jpeg_data_writer.v" verilog
+20			"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\sc_fifo.v" verilog
+21			"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v" verilog
+22			"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v" verilog
+23			"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v" verilog
+24			"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v" verilog
+25			"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\I2C_Interface.v" verilog
+26			"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\OV7670_Controller.v" verilog
+27			"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\OV7670_Registers.v" verilog
+28			"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\spi_slave.v" verilog
+29			"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\top.v" verilog
+30			"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\up_spram.v" verilog
+#Dependency Lists(Uses List)
+0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17
+1 0 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17
+2 0 1 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17
+3 0 1 2 4 5 6 7 8 9 10 11 12 13 14 15 16 17
+4 0 1 2 3 5 6 7 8 9 10 11 12 13 14 15 16 17
+5 0 1 2 3 4 6 7 8 9 10 11 12 13 14 15 16 17
+6 0 1 2 3 4 5 7 8 9 10 11 12 13 14 15 16 17
+7 0 1 2 3 4 5 6 8 9 10 11 12 13 14 15 16 17
+8 0 1 2 3 4 5 6 7 9 10 11 12 13 14 15 16 17
+9 1 2 3 4 5 6 7 8 10 11 12 13 14 15 16 17 0
+10 0 1 2 3 4 5 6 7 8 9 11 12 13 14 15 16 17
+11 1 2 3 4 5 6 7 8 9 10 12 13 14 15 16 17 0
+12 0 1 2 3 4 5 6 7 8 9 10 11 13 14 15 16 17
+13 0 1 2 3 4 5 6 7 8 9 10 11 12 14 15 16 17
+14 0 1 2 3 4 5 6 7 8 9 10 11 12 13 15 16 17
+15 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 16 17
+16 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 17
+17 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16
+18 -1
+19 -1
+20 -1
+21 20
+22 24 23
+23 -1
+24 -1
+25 -1
+26 27 25
+27 -1
+28 -1
+29 30 26 21 22 19 18 28
+30 -1
+#Dependency Lists(Users Of)
+0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17
+1 0 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17
+2 0 1 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17
+3 0 1 2 4 5 6 7 8 9 10 11 12 13 14 15 16 17
+4 0 1 2 3 5 6 7 8 9 10 11 12 13 14 15 16 17
+5 0 1 2 3 4 6 7 8 9 10 11 12 13 14 15 16 17
+6 0 1 2 3 4 5 7 8 9 10 11 12 13 14 15 16 17
+7 0 1 2 3 4 5 6 8 9 10 11 12 13 14 15 16 17
+8 0 1 2 3 4 5 6 7 9 10 11 12 13 14 15 16 17
+9 0 1 2 3 4 5 6 7 8 10 11 12 13 14 15 16 17
+10 0 1 2 3 4 5 6 7 8 9 11 12 13 14 15 16 17
+11 0 1 2 3 4 5 6 7 8 9 10 12 13 14 15 16 17
+12 0 1 2 3 4 5 6 7 8 9 10 11 13 14 15 16 17
+13 0 1 2 3 4 5 6 7 8 9 10 11 12 14 15 16 17
+14 0 1 2 3 4 5 6 7 8 9 10 11 12 13 15 16 17
+15 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 16 17
+16 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 17
+17 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16
+18 29
+19 29
+20 21
+21 29
+22 29
+23 22
+24 22
+25 26
+26 29
+27 26
+28 29
+29 -1
+30 29
+#Design Unit to File Association
+module work lscc_adder 2
+module work pmi_add 1
+module work lscc_mult_add_sub 4
+module work lscc_complex_mult 4
+module work lscc_multiplier 4
+module work lscc_multiplier_lut 4
+module work lscc_multiplier_dsp 4
+module work pmi_complex_mult 3
+module work pmi_dsp 5
+module work lscc_mult_accumulate 7
+module work pmi_mac 6
+module work pmi_multaddsub 8
+module work pmi_mult 10
+module work lscc_ram_dp 13
+module work pmi_ram_dp 12
+module work lscc_ram_dq 15
+module work pmi_ram_dq 14
+module work lscc_subtractor 17
+module work pmi_sub 16
+module work jpeg_data_to_spi 18
+module work jpeg_data_writer 19
+module work sc_fifo 20
+module work yuyv_to_yuv 21
+module work jpeg_enc_mem 24
+module work jpeg_enc_dct 23
+module work jpeg_enc 22
+module work I2C_Interface 25
+module work OV7670_Registers 27
+module work OV7670_Controller 26
+module work spi_slave 28
+module work up_spram 30
+module work top 29
+#Unbound instances to file Association.
