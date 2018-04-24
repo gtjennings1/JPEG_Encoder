@@ -51,7 +51,7 @@ module top (
   
   //wire   [16:0]   mem_rd_addr;
   //wire   [7:0]    mem_rd_data;
-  wire            reset_n = 1'b1;
+  wire            reset_n = 1'b1; 
   
   //considering two bytes per pixel, taking only one byte out of two by having condition (pixel_cnt[0] == 1'b0)
   
@@ -62,6 +62,10 @@ module top (
   reg    [15:0]   pix_per_line;
   
   reg    [3:0]    c_state, n_state;
+  
+  reg    [31:0]   cb_yuyv;
+  reg             cb_data;
+  
   wire            pixel_wr = q_href && (!pixel_wr_disable);// && (pixel_cnt[0]==0);
   
   parameter       WAIT0  = 0;
@@ -85,12 +89,17 @@ module top (
   wire            je_rd, je_valid, je_done, jedw_wr, esp32_spi_rd;
   
   wire            mem_wr    = je_wr ? jedw_wr : pixel_wr;
-  wire   [7:0]    mem_dataw = je_wr ? jedw_data : q_pdata;
+  wire   [7:0]    mem_dataw = je_wr ? jedw_data : q_pdata;//cb_data;//
   wire   [16:0]   mem_addrw = je_wr ? jedw_addr : pixel_cnt[16:0];
   
   wire   [16:0]   mem_addrr = yty_rd ? yty_addr : jdts_addr;
   
   assign          img_rdy = (c_state == WAIT4);
+  
+  parameter       RED_VYUY   = 32'hFF4C544C;//32'h4C544CFF;
+  parameter       GREEN_VYUY = 32'h15962B96;//32'h962B9615;
+  parameter       BLUE_VYUY  = 32'h6B1DFF1D;//32'h1DFF1D6B;
+  parameter       WHITE_VYUY = 32'h80FF80FF;//32'hFF80FF80;
   
   always @(posedge pclk)
     begin
@@ -105,7 +114,38 @@ module top (
     begin
       pix_per_line <= href ? pix_per_line+1 : 0;
     end
-
+  
+  always @ (posedge pclk or negedge reset_n)
+    begin
+      if (!reset_n)
+        cb_yuyv <= #1 RED_VYUY;
+      else
+      if (pix_per_line < 16'd160)
+        cb_yuyv <= #1 RED_VYUY;
+      else
+      if (pix_per_line < 16'd320)
+        cb_yuyv <= #1 GREEN_VYUY;
+      else
+      if (pix_per_line < 16'd480)
+        cb_yuyv <= #1 BLUE_VYUY;
+      else
+        cb_yuyv <= #1 WHITE_VYUY;      
+    end
+  
+  always @ (posedge pclk)
+    begin
+      if (href)
+        case (pix_per_line[1:0])
+          2'b00   : cb_data <= #1 cb_yuyv[7:0];
+          2'b01   : cb_data <= #1 cb_yuyv[15:8];
+          2'b10   : cb_data <= #1 cb_yuyv[23:16];
+          2'b11   : cb_data <= #1 cb_yuyv[31:24];
+          default : cb_data <= #1 cb_data;
+        endcase
+      else
+        cb_data <= #1 cb_data;      
+    end
+  
   //Manage address for writing in DPRAM through pixel counter
   always @ (posedge pclk)
     begin
@@ -230,6 +270,8 @@ module top (
     
     .addr      (yty_addr),
     .data      (mem_datar),
+    
+    .mem_wr    (mem_wr),
     
     .ready     (yty_ready),
     

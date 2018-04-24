@@ -1,0 +1,10 @@
+i<>.\src\tb_jpeg_enc_w_gluelogic.v
+i<>.\src\jpeg_data_to_spi.v
+i<>.\src\jpeg_data_writer.v
+i<>.\src\sc_fifo.v
+i<>.\src\yuyv_to_yuv.v
+i<>.\src\header_rom_data.h
+i<>.\src\jpeg_enc.v
+i<>.\src\jpeg_enc_dct.v
+i<>.\src\jpeg_enc_mem.v
+i<>.\src\zzidx_rom_data.h

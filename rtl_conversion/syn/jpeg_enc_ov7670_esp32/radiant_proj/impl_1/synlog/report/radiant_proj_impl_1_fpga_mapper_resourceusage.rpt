@@ -3,10 +3,10 @@ Resource Usage Report for top
 
 Mapping to part: ice40up5ksg48high-performance_1.2v
 Cell usage:
-CCU2_B          464 uses
-FD1P3DZ         1156 uses
-FD1P3IZ         107 uses
-FD1P3JZ         48 uses
+CCU2_B          543 uses
+FD1P3DZ         1206 uses
+FD1P3IZ         175 uses
+FD1P3JZ         42 uses
 GND             12 uses
 HSOSC           1 use
 INV             73 uses
@@ -14,7 +14,7 @@ PDP4K           11 uses
 SP256K          4 uses
 VCC             12 uses
 MAC16           8 uses
-LUT4            2751 uses
+LUT4            3296 uses
 
 I/O ports: 22
 I/O primitives: 21
@@ -23,15 +23,15 @@ OB             6 uses
 OBZ_B          1 use
 
 I/O Register bits:                  0
-Register bits not including I/Os:   1311 of 5280 (24%)
+Register bits not including I/Os:   1423 of 5280 (26%)
 
 RAM/ROM usage summary
 Block Rams : 11 of 30 (36%)
 
 
 @S |Mapping Summary:
-Total  LUTs: 2751 (52%)
+Total  LUTs: 3296 (62%)
 
 Distribution of All Consumed LUTs = LUT4 
-Distribution of All Consumed Luts 2751 = 2751 
+Distribution of All Consumed Luts 3296 = 3296 
 

@@ -62,7 +62,7 @@ set_option -maxfan 1000
 set_option -rw_check_on_ram 0
 set_option -disable_io_insertion 0
 set_option -pipe 1
-set_option -retiming 0
+set_option -retiming 1
 set_option -update_models_cp 0
 set_option -fix_gated_and_generated_clocks 0
 set_option -run_prop_extract 1

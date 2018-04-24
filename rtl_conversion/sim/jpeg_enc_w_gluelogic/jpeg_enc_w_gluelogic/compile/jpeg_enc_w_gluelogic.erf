@@ -1,0 +1,43 @@
+MESSAGE "Pass 1. Scanning modules hierarchy."
+MESSAGE_SP VCP2113 "Module \$root found in current working library."
+BEGINPROGRESS Compiling...
+UPDATEPROGRESS 35
+MESSAGE_SP VCP2113 "Module jpeg_enc_mem found in current working library."
+MESSAGE_SP VCP2113 "Module jpeg_enc_dct found in current working library."
+MESSAGE "Pass 2. Processing instantiations."
+UPDATEPROGRESS 45
+MESSAGE "Pass 3. Processing behavioral statements."
+UPDATEPROGRESS 49
+UPDATEPROGRESS 53
+UPDATEPROGRESS 58
+UPDATEPROGRESS 62
+UPDATEPROGRESS 66
+UPDATEPROGRESS 71
+UPDATEPROGRESS 80
+MESSAGE "Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/jpeg_enc.v, ln 314)."
+MESSAGE "Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/jpeg_enc.v, ln 492)."
+MESSAGE "Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/jpeg_enc.v, ln 1008)."
+MESSAGE "Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/jpeg_enc.v, ln 1029)."
+MESSAGE "Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/jpeg_enc.v, ln 1072)."
+MESSAGE "Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/jpeg_enc.v, ln 1122)."
+MESSAGE "Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/jpeg_enc.v, ln 1277)."
+MESSAGE "Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/jpeg_enc.v, ln 1388)."
+MESSAGE "Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/jpeg_enc.v, ln 1416)."
+MESSAGE "Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/jpeg_enc.v, ln 1449)."
+MESSAGE "Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/jpeg_enc.v, ln 1503)."
+MESSAGE "Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/jpeg_enc.v, ln 1525)."
+MESSAGE "Running Optimizer."
+MESSAGE "ELB/DAG code generating."
+MESSAGE_SP VCP2113 "Module \$root found in current working library."
+UPDATEPROGRESS 82
+UPDATEPROGRESS 85
+UPDATEPROGRESS 88
+UPDATEPROGRESS 91
+UPDATEPROGRESS 94
+UPDATEPROGRESS 97
+MESSAGE "$root top modules: tb_jpeg_enc_w_gluelogic."
+UPDATEPROGRESS 100
+ENDPROGRESS Compiling...
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time: 0[s]."
+WARNING ALOG: "The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available."
+MESSAGE "done"

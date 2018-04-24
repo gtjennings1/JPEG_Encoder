@@ -1,0 +1,1603 @@
+# Waveform file 'E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/test.awc' connected to 'E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/wave.asdb'.
+alog -O2 -sve -msg 5 -sv2k12 -work jpeg_enc_w_gluelogic $dsn/src/jpeg_enc_mem.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: jpeg_enc_mem.
+# $root top modules: tb_jpeg_enc_w_gluelogic jpeg_enc_mem.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+alog -O2 -sve -msg 5 -sv2k12 -work jpeg_enc_w_gluelogic $dsn/src/jpeg_enc_dct.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/jpeg_enc_dct.v, ln 76).
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/jpeg_enc_dct.v, ln 122).
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/jpeg_enc_dct.v, ln 134).
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/jpeg_enc_dct.v, ln 164).
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/jpeg_enc_dct.v, ln 223).
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/jpeg_enc_dct.v, ln 287).
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/jpeg_enc_dct.v, ln 334).
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/jpeg_enc_dct.v, ln 363).
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: jpeg_enc_dct.
+# $root top modules: tb_jpeg_enc_w_gluelogic jpeg_enc_mem jpeg_enc_dct.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+alog -O2 -sve -msg 5 -sv2k12 -work jpeg_enc_w_gluelogic $dsn/src/jpeg_enc.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module jpeg_enc_mem found in current working library.
+# Info: VCP2113 Module jpeg_enc_dct found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/jpeg_enc.v, ln 305).
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/jpeg_enc.v, ln 483).
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/jpeg_enc.v, ln 999).
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/jpeg_enc.v, ln 1020).
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/jpeg_enc.v, ln 1063).
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/jpeg_enc.v, ln 1113).
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/jpeg_enc.v, ln 1268).
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/jpeg_enc.v, ln 1379).
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/jpeg_enc.v, ln 1407).
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/jpeg_enc.v, ln 1440).
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/jpeg_enc.v, ln 1494).
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/jpeg_enc.v, ln 1516).
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# $root top modules: tb_jpeg_enc_w_gluelogic.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+alog -O2 -sve -msg 5 -sv2k12 -work jpeg_enc_w_gluelogic $dsn/src/yuyv_to_yuv.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Error: VCP2000 yuyv_to_yuv.v : (123, 27): Syntax error. Unexpected token: else[_ELSE]. Expected tokens: '#' , ''' , '(' , ';' , '@' ... .
+# Info: VCP2113 Module sc_fifo found in current working library.
+# Compile failure 1 Errors 0 Warnings  Analysis time: 1[s].
+alog -O2 -sve -msg 5 -sv2k12 -work jpeg_enc_w_gluelogic $dsn/src/yuyv_to_yuv.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module sc_fifo found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/yuyv_to_yuv.v, ln 107).
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/yuyv_to_yuv.v, ln 177).
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/yuyv_to_yuv.v, ln 282).
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/yuyv_to_yuv.v, ln 294).
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/yuyv_to_yuv.v, ln 321).
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# $root top modules: tb_jpeg_enc_w_gluelogic.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+alog -O2 -sve -msg 5 -sv2k12 -work jpeg_enc_w_gluelogic $dsn/src/sc_fifo.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# $root top modules: tb_jpeg_enc_w_gluelogic.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+alog -O2 -sve -msg 5 -sv2k12 -work jpeg_enc_w_gluelogic $dsn/src/jpeg_data_writer.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# $root top modules: tb_jpeg_enc_w_gluelogic.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+alog -O2 -sve -msg 5 -sv2k12 -work jpeg_enc_w_gluelogic $dsn/src/jpeg_data_writer.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# $root top modules: tb_jpeg_enc_w_gluelogic.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+alog -O2 -sve -msg 5 -sv2k12 -work jpeg_enc_w_gluelogic $dsn/src/jpeg_data_to_spi.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/jpeg_data_to_spi.v, ln 69).
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/jpeg_data_to_spi.v, ln 112).
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/jpeg_data_to_spi.v, ln 124).
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/jpeg_data_to_spi.v, ln 148).
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# $root top modules: tb_jpeg_enc_w_gluelogic.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+alog -O2 -sve -msg 5 -sv2k12 -work jpeg_enc_w_gluelogic $dsn/src/tb_jpeg_enc_w_gluelogic.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module yuyv_to_yuv found in current working library.
+# Info: VCP2113 Module jpeg_enc found in current working library.
+# Info: VCP2113 Module jpeg_data_writer found in current working library.
+# Info: VCP2113 Module jpeg_data_to_spi found in current working library.
+# Pass 2. Processing instantiations.
+# Info: VCP2876 tb_jpeg_enc_w_gluelogic.v : (55, 26): Implicit net declaration, symbol yty_ready has not been declared in module tb_jpeg_enc_w_gluelogic.
+# Pass 3. Processing behavioral statements.
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/tb_jpeg_enc_w_gluelogic.v, ln 157).
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: tb_jpeg_enc_w_gluelogic.
+# $root top modules: tb_jpeg_enc_w_gluelogic.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 'jpeg_enc_mem' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'jpeg_enc_dct' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.1 [s].
+asim -O5 +access +r tb_jpeg_enc_w_gluelogic
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 'jpeg_enc_mem' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'jpeg_enc_dct' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ns.
+# ELAB2: Elaboration final pass...
+# KERNEL: PLI/VHPI kernel's engine initialization done.
+# PLI: Loading library 'D:\APPS\lscc\diamond\3.10_x64\active-hdl\bin\systf.dll'
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.0 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 7.4 [s]
+# SLP: Finished : 7.5 [s]
+# SLP: 0 primitives and 154 (100.00%) other processes in SLP
+# SLP: 321 (95.54%) signals in SLP and 14 (4.17%) interface signals
+# ELAB2: Elaboration final pass complete - time: 8.1 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6069 kB (elbread=1280 elab2=4632 kernel=156 sdf=0)
+# KERNEL: ASDB file was created in location E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\sim\jpeg_enc_w_gluelogic\jpeg_enc_w_gluelogic\src\wave.asdb
+#  09:56, 14 April 2018
+#  Simulation has been initialized
+# Waveform file 'E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/test.awc' connected to 'E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/wave.asdb'.
+open -awc {E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\sim\jpeg_enc_w_gluelogic\jpeg_enc_w_gluelogic\src\test.awc}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/spram}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/pclk}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/reset_n}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/pixel_wr_disable}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/img_req}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/spi_rd_cnt}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/c_state}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/n_state}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/mem_datar}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/yty_req}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/yty_rd}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je_wr}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je_en}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/jedw_addr}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/yty_addr}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/jdts_addr}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/jedw_data}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je_data}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/yty_data}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/esp32_spi_data}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/hd_data}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/hd_addr}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je_rd}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je_valid}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je_done}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/jedw_wr}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/mem_wr}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/mem_dataw}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/mem_addrw}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/mem_addrr}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/img_rdy}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/esp32_spi_rd}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/file_in}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/r}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/yty_ready}
+# 35 signal(s) traced.
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/yty/c_state}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/yty/n_state}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/yty/img_col}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/yty/img_x}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/yty/img_row}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/yty/img_y}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/yty/addr_reg}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/yty/col_cnt}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/yty/row_cnt}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/yty/addr_lsb}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/yty/last_blk}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/yty/img_req_reg}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/yty/yuyv}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/yty/ff_wr}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/yty/ff_din}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/yty/eof}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/yty/reset}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/yty/fifo_level}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/yty/fetch_memory}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/yty/col_max}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/yty/row_max}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/yty/addr_inc}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/yty/row_chg}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/yty/blk_chg}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/yty/img_req_pe}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/yty/clk}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/yty/reset_n}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/yty/img_req}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/yty/addr}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/yty/data}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/yty/mem_wr}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/yty/ready}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/yty/je_rd}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/yty/je_data}
+# 34 signal(s) traced.
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/img_out_reg}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/img_valid_reg}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/img_valid_reg_fl}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/img_done_reg}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/byte_count}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/header_rom_d}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/du_ram_we}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/du_ram_aw}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/QNT_DU}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/dct_comp_sel}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/dct_comp_idx}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/dct_idx_cnt}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/DCY}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/DCU}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/DCV}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/diff_DC}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/zzdu_ram_we}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/zzdu_ram_ar}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/dcht_bc_rom_a}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/dcht_bb_rom_a}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/acht_bc_rom_a}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/acht_bb_rom_a}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/img_x}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/img_col}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/img_y}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/img_row}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/img_col_p}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/img_col_p_fl1}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/img_col_p_fl2}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/col_cnt}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/row_cnt}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/col_cnt_fl1}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/row_cnt_fl1}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/col_cnt_fl2}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/row_cnt_fl2}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/load_du_done_fl}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/qz_cnt}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/c_state}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/n_state}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/b_state}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/fb_addr_reg}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/wb_bit_cnt}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/wb_bc_tmp}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/wb_bit_buf}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/wb_bb_tmp}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/wb_c}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/cb_bb_mask}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/cb_bit_buf}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/cb_bb_tmp}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/cb_bit_cnt}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/end0pos}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/du_ac0}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/ac_idx}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/ac0_idx}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/ac0_cnt}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/last_du}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/last_du_p}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/header_tx_done}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/zzdu_ram_do}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/inc_img_col_p}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/rst_img_col_p}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/col_max}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/row_max}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/inc_row_cnt}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/load_du_done}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/dct_done}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/qz_done}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/diff_dc_zero}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/diff_dc_neg}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/bit_cnt_gte_8}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/byte_out_eq_255}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/check_next_element}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/e0p_zero}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/inc_ac0_idx}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/inc_ac0_cnt}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/ac0_cnt_gte_16}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/e0p_ne_63}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/du_ac_neg}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/last_comp}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/du_ram_do}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/fdtbl_rom_d}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/zzidx_rom_d}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/dcht_bc_rom_d}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/acht_bc_rom_d}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/dcht_bb_rom_d}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/acht_bb_rom_d}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/start_dct}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/du_ram_a_dct}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/dctdu_ram_aw}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/dctdu_ram_ar_dct}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/dctdu_ram_ar}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/dctdu_ram_we}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/dctdu_ram_di}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/dctdu_ram_do}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/clk}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/reset_n}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/conv_en}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/fb_data}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/fb_rd}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/img_out}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/hd_addr}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/hd_data}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/img_valid}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/img_done}
+# 104 signal(s) traced.
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/jedw/addr_lsb}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/jedw/col_cnt}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/jedw/row_cnt}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/jedw/col_idx}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/jedw/col_x}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/jedw/row_idx}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/jedw/row_y}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/jedw/addr_reg}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/jedw/data_reg}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/jedw/we_reg}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/jedw/col_max}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/jedw/row_max}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/jedw/chg_col}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/jedw/chg_row}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/jedw/chg_blk}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/jedw/clk}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/jedw/reset_n}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/jedw/je_valid}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/jedw/je_data}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/jedw/je_done}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/jedw/addr}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/jedw/data}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/jedw/we}
+# 23 signal(s) traced.
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/jdts/c_state}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/jdts/n_state}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/jdts/hd_addr_reg}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/jdts/je_addr_reg}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/jdts/eoi_reg}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/jdts/spi_data_reg}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/jdts/addr_lsb}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/jdts/col_cnt}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/jdts/row_cnt}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/jdts/col_idx}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/jdts/col_x}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/jdts/row_idx}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/jdts/row_y}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/jdts/col_max}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/jdts/row_max}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/jdts/chg_col}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/jdts/chg_row}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/jdts/chg_blk}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/jdts/rst_rcb}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/jdts/header_done}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/jdts/eoi}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/jdts/clk}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/jdts/reset_n}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/jdts/je_done}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/jdts/hd_addr}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/jdts/hd_data}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/jdts/je_addr}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/jdts/je_data}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/jdts/spi_rd}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/jdts/spi_data}
+# 30 signal(s) traced.
+# Adding file E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\sim\jpeg_enc_w_gluelogic\jpeg_enc_w_gluelogic\src\test.awc ... Done
+run
+endsim
+# KERNEL: stopped at time: 9635286 ns
+# VSIM: Simulation has finished.
+alog -O2 -sve -msg 5 -sv2k12 -work jpeg_enc_w_gluelogic $dsn/src/yuyv_to_yuv.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module sc_fifo found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/yuyv_to_yuv.v, ln 107).
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/yuyv_to_yuv.v, ln 177).
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/yuyv_to_yuv.v, ln 282).
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/yuyv_to_yuv.v, ln 294).
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/yuyv_to_yuv.v, ln 321).
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# $root top modules: tb_jpeg_enc_w_gluelogic.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 'jpeg_enc_mem' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'jpeg_enc_dct' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r tb_jpeg_enc_w_gluelogic
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 'jpeg_enc_mem' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'jpeg_enc_dct' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ns.
+# ELAB2: Elaboration final pass...
+# KERNEL: PLI/VHPI kernel's engine initialization done.
+# PLI: Loading library 'D:\APPS\lscc\diamond\3.10_x64\active-hdl\bin\systf.dll'
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.0 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.8 [s]
+# SLP: Finished : 0.9 [s]
+# SLP: 0 primitives and 154 (100.00%) other processes in SLP
+# SLP: 321 (95.54%) signals in SLP and 14 (4.17%) interface signals
+# ELAB2: Elaboration final pass complete - time: 1.0 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6069 kB (elbread=1280 elab2=4632 kernel=156 sdf=0)
+# KERNEL: ASDB file was created in location E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\sim\jpeg_enc_w_gluelogic\jpeg_enc_w_gluelogic\src\wave.asdb
+#  10:06, 14 April 2018
+#  Simulation has been initialized
+# Waveform file 'E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/test.awc' connected to 'E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/wave.asdb'.
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/spram}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/pclk}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/reset_n}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/pixel_wr_disable}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/img_req}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/spi_rd_cnt}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/c_state}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/n_state}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/mem_datar}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/yty_req}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/yty_rd}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je_wr}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je_en}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/jedw_addr}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/yty_addr}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/jdts_addr}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/jedw_data}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je_data}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/yty_data}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/esp32_spi_data}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/hd_data}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/hd_addr}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je_rd}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je_valid}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je_done}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/jedw_wr}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/mem_wr}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/mem_dataw}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/mem_addrw}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/mem_addrr}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/img_rdy}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/esp32_spi_rd}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/file_in}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/r}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/yty_ready}
+# 35 signal(s) traced.
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/yty/c_state}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/yty/n_state}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/yty/img_col}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/yty/img_x}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/yty/img_row}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/yty/img_y}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/yty/addr_reg}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/yty/col_cnt}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/yty/row_cnt}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/yty/addr_lsb}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/yty/last_blk}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/yty/img_req_reg}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/yty/yuyv}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/yty/ff_wr}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/yty/ff_din}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/yty/eof}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/yty/reset}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/yty/fifo_level}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/yty/fetch_memory}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/yty/col_max}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/yty/row_max}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/yty/addr_inc}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/yty/row_chg}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/yty/blk_chg}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/yty/img_req_pe}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/yty/clk}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/yty/reset_n}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/yty/img_req}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/yty/addr}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/yty/data}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/yty/mem_wr}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/yty/ready}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/yty/je_rd}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/yty/je_data}
+# 34 signal(s) traced.
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/img_out_reg}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/img_valid_reg}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/img_valid_reg_fl}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/img_done_reg}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/byte_count}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/header_rom_d}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/du_ram_we}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/du_ram_aw}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/QNT_DU}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/dct_comp_sel}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/dct_comp_idx}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/dct_idx_cnt}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/DCY}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/DCU}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/DCV}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/diff_DC}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/zzdu_ram_we}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/zzdu_ram_ar}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/dcht_bc_rom_a}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/dcht_bb_rom_a}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/acht_bc_rom_a}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/acht_bb_rom_a}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/img_x}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/img_col}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/img_y}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/img_row}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/img_col_p}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/img_col_p_fl1}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/img_col_p_fl2}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/col_cnt}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/row_cnt}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/col_cnt_fl1}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/row_cnt_fl1}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/col_cnt_fl2}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/row_cnt_fl2}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/load_du_done_fl}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/qz_cnt}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/c_state}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/n_state}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/b_state}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/fb_addr_reg}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/wb_bit_cnt}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/wb_bc_tmp}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/wb_bit_buf}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/wb_bb_tmp}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/wb_c}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/cb_bb_mask}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/cb_bit_buf}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/cb_bb_tmp}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/cb_bit_cnt}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/end0pos}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/du_ac0}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/ac_idx}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/ac0_idx}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/ac0_cnt}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/last_du}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/last_du_p}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/header_tx_done}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/zzdu_ram_do}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/inc_img_col_p}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/rst_img_col_p}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/col_max}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/row_max}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/inc_row_cnt}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/load_du_done}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/dct_done}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/qz_done}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/diff_dc_zero}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/diff_dc_neg}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/bit_cnt_gte_8}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/byte_out_eq_255}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/check_next_element}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/e0p_zero}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/inc_ac0_idx}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/inc_ac0_cnt}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/ac0_cnt_gte_16}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/e0p_ne_63}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/du_ac_neg}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/last_comp}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/du_ram_do}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/fdtbl_rom_d}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/zzidx_rom_d}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/dcht_bc_rom_d}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/acht_bc_rom_d}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/dcht_bb_rom_d}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/acht_bb_rom_d}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/start_dct}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/du_ram_a_dct}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/dctdu_ram_aw}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/dctdu_ram_ar_dct}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/dctdu_ram_ar}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/dctdu_ram_we}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/dctdu_ram_di}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/dctdu_ram_do}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/clk}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/reset_n}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/conv_en}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/fb_data}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/fb_rd}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/img_out}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/hd_addr}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/hd_data}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/img_valid}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/je/img_done}
+# 104 signal(s) traced.
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/jedw/addr_lsb}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/jedw/col_cnt}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/jedw/row_cnt}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/jedw/col_idx}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/jedw/col_x}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/jedw/row_idx}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/jedw/row_y}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/jedw/addr_reg}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/jedw/data_reg}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/jedw/we_reg}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/jedw/col_max}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/jedw/row_max}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/jedw/chg_col}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/jedw/chg_row}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/jedw/chg_blk}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/jedw/clk}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/jedw/reset_n}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/jedw/je_valid}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/jedw/je_data}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/jedw/je_done}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/jedw/addr}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/jedw/data}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/jedw/we}
+# 23 signal(s) traced.
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/jdts/c_state}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/jdts/n_state}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/jdts/hd_addr_reg}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/jdts/je_addr_reg}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/jdts/eoi_reg}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/jdts/spi_data_reg}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/jdts/addr_lsb}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/jdts/col_cnt}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/jdts/row_cnt}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/jdts/col_idx}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/jdts/col_x}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/jdts/row_idx}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/jdts/row_y}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/jdts/col_max}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/jdts/row_max}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/jdts/chg_col}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/jdts/chg_row}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/jdts/chg_blk}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/jdts/rst_rcb}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/jdts/header_done}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/jdts/eoi}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/jdts/clk}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/jdts/reset_n}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/jdts/je_done}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/jdts/hd_addr}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/jdts/hd_data}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/jdts/je_addr}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/jdts/je_data}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/jdts/spi_rd}
+# add wave -noreg {/tb_jpeg_enc_w_gluelogic/jdts/spi_data}
+# 30 signal(s) traced.
+# Format saved to file: E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/wave.do
+# Adding file E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\sim\jpeg_enc_w_gluelogic\jpeg_enc_w_gluelogic\src\wave.do ... Done
+run 15 us
+# KERNEL: stopped at time: 15 us
+endsim
+# VSIM: Simulation has finished.
+alog -O2 -sve -msg 5 -sv2k12 -work jpeg_enc_w_gluelogic $dsn/src/yuyv_to_yuv.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module sc_fifo found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/yuyv_to_yuv.v, ln 107).
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/yuyv_to_yuv.v, ln 177).
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/yuyv_to_yuv.v, ln 282).
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/yuyv_to_yuv.v, ln 294).
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/yuyv_to_yuv.v, ln 321).
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# $root top modules: tb_jpeg_enc_w_gluelogic.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 'jpeg_enc_mem' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'jpeg_enc_dct' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r tb_jpeg_enc_w_gluelogic
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 'jpeg_enc_mem' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'jpeg_enc_dct' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ns.
+# ELAB2: Elaboration final pass...
+# KERNEL: PLI/VHPI kernel's engine initialization done.
+# PLI: Loading library 'D:\APPS\lscc\diamond\3.10_x64\active-hdl\bin\systf.dll'
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.0 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.8 [s]
+# SLP: Finished : 0.9 [s]
+# SLP: 0 primitives and 154 (100.00%) other processes in SLP
+# SLP: 321 (95.54%) signals in SLP and 14 (4.17%) interface signals
+# ELAB2: Elaboration final pass complete - time: 1.0 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6069 kB (elbread=1280 elab2=4632 kernel=156 sdf=0)
+# KERNEL: ASDB file was created in location E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\sim\jpeg_enc_w_gluelogic\jpeg_enc_w_gluelogic\src\wave.asdb
+#  10:15, 14 April 2018
+#  Simulation has been initialized
+# Waveform file 'E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/test.awc' connected to 'E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/wave.asdb'.
+open -do {E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\sim\jpeg_enc_w_gluelogic\jpeg_enc_w_gluelogic\src\wave.do}
+runscript {E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\sim\jpeg_enc_w_gluelogic\jpeg_enc_w_gluelogic\src\wave.do}
+onerror { resume }
+transcript off
+# 35 signal(s) traced.
+# 34 signal(s) traced.
+# 104 signal(s) traced.
+# 23 signal(s) traced.
+# 30 signal(s) traced.
+run 15 us
+# KERNEL: stopped at time: 15 us
+run 15 us
+# KERNEL: stopped at time: 30 us
+run 15 us
+# KERNEL: stopped at time: 45 us
+# WAVEFORM: 3 signal(s) removed.
+endsim
+# VSIM: Simulation has finished.
+alog -O2 -sve -msg 5 -sv2k12 -work jpeg_enc_w_gluelogic $dsn/src/jpeg_enc.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module jpeg_enc_mem found in current working library.
+# Info: VCP2113 Module jpeg_enc_dct found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/jpeg_enc.v, ln 314).
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/jpeg_enc.v, ln 492).
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/jpeg_enc.v, ln 1008).
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/jpeg_enc.v, ln 1029).
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/jpeg_enc.v, ln 1072).
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/jpeg_enc.v, ln 1122).
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/jpeg_enc.v, ln 1277).
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/jpeg_enc.v, ln 1388).
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/jpeg_enc.v, ln 1416).
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/jpeg_enc.v, ln 1449).
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/jpeg_enc.v, ln 1503).
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/jpeg_enc.v, ln 1525).
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# $root top modules: tb_jpeg_enc_w_gluelogic.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 'jpeg_enc_mem' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'jpeg_enc_dct' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r tb_jpeg_enc_w_gluelogic
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 'jpeg_enc_mem' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'jpeg_enc_dct' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ns.
+# ELAB2: Elaboration final pass...
+# KERNEL: PLI/VHPI kernel's engine initialization done.
+# PLI: Loading library 'D:\APPS\lscc\diamond\3.10_x64\active-hdl\bin\systf.dll'
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.0 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.9 [s]
+# SLP: Finished : 1.0 [s]
+# SLP: 0 primitives and 136 (100.00%) other processes in SLP
+# SLP: 322 (95.55%) signals in SLP and 14 (4.15%) interface signals
+# ELAB2: Elaboration final pass complete - time: 1.0 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6065 kB (elbread=1280 elab2=4628 kernel=156 sdf=0)
+# KERNEL: ASDB file was created in location E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\sim\jpeg_enc_w_gluelogic\jpeg_enc_w_gluelogic\src\wave.asdb
+#  11:11, 14 April 2018
+#  Simulation has been initialized
+# Waveform file 'E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/test.awc' connected to 'E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/wave.asdb'.
+runscript {E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\sim\jpeg_enc_w_gluelogic\jpeg_enc_w_gluelogic\src\wave.do}
+onerror { resume }
+transcript off
+# 35 signal(s) traced.
+# 34 signal(s) traced.
+# 105 signal(s) traced.
+# 23 signal(s) traced.
+# 30 signal(s) traced.
+run 15 us
+# KERNEL: stopped at time: 15 us
+endsim
+# VSIM: Simulation has finished.
+alog -O2 -sve -msg 5 -sv2k12 -work jpeg_enc_w_gluelogic $dsn/src/jpeg_enc.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module jpeg_enc_mem found in current working library.
+# Info: VCP2113 Module jpeg_enc_dct found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/jpeg_enc.v, ln 314).
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/jpeg_enc.v, ln 492).
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/jpeg_enc.v, ln 1008).
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/jpeg_enc.v, ln 1029).
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/jpeg_enc.v, ln 1072).
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/jpeg_enc.v, ln 1122).
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/jpeg_enc.v, ln 1277).
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/jpeg_enc.v, ln 1388).
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/jpeg_enc.v, ln 1416).
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/jpeg_enc.v, ln 1449).
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/jpeg_enc.v, ln 1503).
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/jpeg_enc.v, ln 1525).
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# $root top modules: tb_jpeg_enc_w_gluelogic.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 'jpeg_enc_mem' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'jpeg_enc_dct' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r tb_jpeg_enc_w_gluelogic
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 'jpeg_enc_mem' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'jpeg_enc_dct' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ns.
+# ELAB2: Elaboration final pass...
+# KERNEL: PLI/VHPI kernel's engine initialization done.
+# PLI: Loading library 'D:\APPS\lscc\diamond\3.10_x64\active-hdl\bin\systf.dll'
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.0 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.6 [s]
+# SLP: Finished : 0.7 [s]
+# SLP: 0 primitives and 136 (100.00%) other processes in SLP
+# SLP: 322 (95.55%) signals in SLP and 14 (4.15%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.7 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6064 kB (elbread=1280 elab2=4628 kernel=156 sdf=0)
+# KERNEL: ASDB file was created in location E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\sim\jpeg_enc_w_gluelogic\jpeg_enc_w_gluelogic\src\wave.asdb
+#  11:16, 14 April 2018
+#  Simulation has been initialized
+# Waveform file 'E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/test.awc' connected to 'E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/wave.asdb'.
+runscript {E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\sim\jpeg_enc_w_gluelogic\jpeg_enc_w_gluelogic\src\wave.do}
+onerror { resume }
+transcript off
+# 35 signal(s) traced.
+# 34 signal(s) traced.
+# 105 signal(s) traced.
+# 23 signal(s) traced.
+# 30 signal(s) traced.
+run 15 us
+# KERNEL: stopped at time: 15 us
+run 15 us
+# KERNEL: stopped at time: 30 us
+run 15 us
+# KERNEL: stopped at time: 45 us
+run 15 us
+# KERNEL: stopped at time: 60 us
+run 39870 us
+# KERNEL: stopped at time: 39930 us
+run 2400 us
+# KERNEL: stopped at time: 42330 us
+run 80 us
+# KERNEL: stopped at time: 42410 us
+run 80 us
+# KERNEL: stopped at time: 42490 us
+run 5 us
+# KERNEL: stopped at time: 42495 us
+run 5 us
+# KERNEL: stopped at time: 42500 us
+run 5 us
+# KERNEL: stopped at time: 42505 us
+run 5 us
+# KERNEL: stopped at time: 42510 us
+run 5 us
+# KERNEL: stopped at time: 42515 us
+run 5 us
+# KERNEL: stopped at time: 42520 us
+run 5 us
+# KERNEL: stopped at time: 42525 us
+run 5 us
+# KERNEL: stopped at time: 42530 us
+run 5 us
+# KERNEL: stopped at time: 42535 us
+run 5 us
+# KERNEL: stopped at time: 42540 us
+run 5 us
+# KERNEL: stopped at time: 42545 us
+run 5 us
+# KERNEL: stopped at time: 42550 us
+run 5 us
+# KERNEL: stopped at time: 42555 us
+run 5 us
+# KERNEL: stopped at time: 42560 us
+run 5 us
+# KERNEL: stopped at time: 42565 us
+run 5 us
+# KERNEL: stopped at time: 42570 us
+run 5 us
+# KERNEL: stopped at time: 42575 us
+run 5 us
+# KERNEL: stopped at time: 42580 us
+run 5 us
+# KERNEL: stopped at time: 42585 us
+run 5 us
+# KERNEL: stopped at time: 42590 us
+run 50 us
+# KERNEL: stopped at time: 42640 us
+run 500 us
+# KERNEL: stopped at time: 43140 us
+run 500 us
+# KERNEL: stopped at time: 43640 us
+run 500 us
+# KERNEL: stopped at time: 44140 us
+run 500 us
+# KERNEL: stopped at time: 44640 us
+run 500 us
+# KERNEL: stopped at time: 45140 us
+run 500 us
+# KERNEL: stopped at time: 45640 us
+run 500 us
+# KERNEL: stopped at time: 46140 us
+run 500 us
+# KERNEL: stopped at time: 46640 us
+run 500 us
+# KERNEL: stopped at time: 47140 us
+run 500 us
+# KERNEL: stopped at time: 47640 us
+endsim
+# VSIM: Simulation has finished.
+alog -O2 -sve -msg 5 -sv2k12 -work jpeg_enc_w_gluelogic $dsn/src/tb_jpeg_enc_w_gluelogic.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module yuyv_to_yuv found in current working library.
+# Info: VCP2113 Module jpeg_enc found in current working library.
+# Info: VCP2113 Module jpeg_data_writer found in current working library.
+# Info: VCP2113 Module jpeg_data_to_spi found in current working library.
+# Pass 2. Processing instantiations.
+# Info: VCP2876 tb_jpeg_enc_w_gluelogic.v : (60, 26): Implicit net declaration, symbol yty_ready has not been declared in module tb_jpeg_enc_w_gluelogic.
+# Pass 3. Processing behavioral statements.
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/tb_jpeg_enc_w_gluelogic.v, ln 169).
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: tb_jpeg_enc_w_gluelogic.
+# $root top modules: tb_jpeg_enc_w_gluelogic.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 'jpeg_enc_mem' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'jpeg_enc_dct' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r tb_jpeg_enc_w_gluelogic
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 'jpeg_enc_mem' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'jpeg_enc_dct' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ns.
+# ELAB2: Elaboration final pass...
+# KERNEL: PLI/VHPI kernel's engine initialization done.
+# PLI: Loading library 'D:\APPS\lscc\diamond\3.10_x64\active-hdl\bin\systf.dll'
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.0 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.9 [s]
+# SLP: Finished : 0.9 [s]
+# SLP: 0 primitives and 136 (100.00%) other processes in SLP
+# SLP: 324 (95.58%) signals in SLP and 14 (4.13%) interface signals
+# ELAB2: Elaboration final pass complete - time: 1.0 [s].
+# KERNEL: SLP loading done - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6066 kB (elbread=1280 elab2=4629 kernel=156 sdf=0)
+# KERNEL: ASDB file was created in location E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\sim\jpeg_enc_w_gluelogic\jpeg_enc_w_gluelogic\src\wave.asdb
+#  12:04, 14 April 2018
+#  Simulation has been initialized
+# Waveform file 'E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/test.awc' connected to 'E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/wave.asdb'.
+runscript {E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\sim\jpeg_enc_w_gluelogic\jpeg_enc_w_gluelogic\src\wave.do}
+onerror { resume }
+transcript off
+# 35 signal(s) traced.
+# 34 signal(s) traced.
+# 105 signal(s) traced.
+# 23 signal(s) traced.
+# 30 signal(s) traced.
+# 2 signal(s) traced.
+# Format saved to file: E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/wave.do
+# Adding file E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\sim\jpeg_enc_w_gluelogic\jpeg_enc_w_gluelogic\src\wave.do ... Done
+run 47600 us
+alog -O2 -sve -msg 5 -sv2k12 -work jpeg_enc_w_gluelogic $dsn/src/tb_jpeg_enc_w_gluelogic.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module yuyv_to_yuv found in current working library.
+# Info: VCP2113 Module jpeg_enc found in current working library.
+# Info: VCP2113 Module jpeg_data_writer found in current working library.
+# Info: VCP2113 Module jpeg_data_to_spi found in current working library.
+# Pass 2. Processing instantiations.
+# Info: VCP2876 tb_jpeg_enc_w_gluelogic.v : (60, 26): Implicit net declaration, symbol yty_ready has not been declared in module tb_jpeg_enc_w_gluelogic.
+# Pass 3. Processing behavioral statements.
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/tb_jpeg_enc_w_gluelogic.v, ln 169).
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: tb_jpeg_enc_w_gluelogic.
+# $root top modules: tb_jpeg_enc_w_gluelogic.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 'jpeg_enc_mem' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'jpeg_enc_dct' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ns.
+# ELAB2: Elaboration final pass...
+# KERNEL: PLI/VHPI kernel's engine initialization done.
+# PLI: Loading library 'D:\APPS\lscc\diamond\3.10_x64\active-hdl\bin\systf.dll'
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.0 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.6 [s]
+# SLP: Finished : 0.7 [s]
+# SLP: 0 primitives and 136 (100.00%) other processes in SLP
+# SLP: 324 (95.58%) signals in SLP and 14 (4.13%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.7 [s].
+# KERNEL: SLP loading done - time: 0.3 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6066 kB (elbread=1280 elab2=4629 kernel=156 sdf=0)
+# KERNEL: ASDB file was created in location E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\sim\jpeg_enc_w_gluelogic\jpeg_enc_w_gluelogic\src\wave.asdb
+#  12:06, 14 April 2018
+#  Simulation has been initialized
+# Waveform file 'E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/test.awc' connected to 'E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/wave.asdb'.
+run
+# KERNEL: Conversion Done
+# RUNTIME: Info: RUNTIME_0068 tb_jpeg_enc_w_gluelogic.v (240): $finish called.
+# KERNEL: Time: 47531025 ns,  Iteration: 0,  Instance: /tb_jpeg_enc_w_gluelogic,  Process: @ALWAYS#146,219,234_8@.
+# KERNEL: stopped at time: 47531025 ns
+# VSIM: Simulation has finished. There are no more test vectors to simulate.
+endsim
+# VSIM: Simulation has finished.
+alog -O2 -sve -msg 5 -sv2k12 -work jpeg_enc_w_gluelogic $dsn/src/tb_jpeg_enc_w_gluelogic.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module yuyv_to_yuv found in current working library.
+# Info: VCP2113 Module jpeg_enc found in current working library.
+# Info: VCP2113 Module jpeg_data_writer found in current working library.
+# Info: VCP2113 Module jpeg_data_to_spi found in current working library.
+# Pass 2. Processing instantiations.
+# Info: VCP2876 tb_jpeg_enc_w_gluelogic.v : (60, 26): Implicit net declaration, symbol yty_ready has not been declared in module tb_jpeg_enc_w_gluelogic.
+# Pass 3. Processing behavioral statements.
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/tb_jpeg_enc_w_gluelogic.v, ln 169).
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: tb_jpeg_enc_w_gluelogic.
+# $root top modules: tb_jpeg_enc_w_gluelogic.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+alog -O2 -sve -msg 5 -sv2k12 -work jpeg_enc_w_gluelogic $dsn/src/jpeg_data_to_spi.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/jpeg_data_to_spi.v, ln 69).
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/jpeg_data_to_spi.v, ln 112).
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/jpeg_data_to_spi.v, ln 124).
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/jpeg_data_to_spi.v, ln 148).
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# $root top modules: tb_jpeg_enc_w_gluelogic.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 'jpeg_enc_mem' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'jpeg_enc_dct' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r tb_jpeg_enc_w_gluelogic
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 'jpeg_enc_mem' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'jpeg_enc_dct' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ns.
+# ELAB2: Elaboration final pass...
+# KERNEL: PLI/VHPI kernel's engine initialization done.
+# PLI: Loading library 'D:\APPS\lscc\diamond\3.10_x64\active-hdl\bin\systf.dll'
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.0 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.6 [s]
+# SLP: Finished : 0.6 [s]
+# SLP: 0 primitives and 136 (100.00%) other processes in SLP
+# SLP: 324 (95.58%) signals in SLP and 14 (4.13%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.8 [s].
+# KERNEL: SLP loading done - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6066 kB (elbread=1280 elab2=4629 kernel=156 sdf=0)
+# KERNEL: ASDB file was created in location E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\sim\jpeg_enc_w_gluelogic\jpeg_enc_w_gluelogic\src\wave.asdb
+#  14:02, 14 April 2018
+#  Simulation has been initialized
+# Waveform file 'E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/test.awc' connected to 'E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/wave.asdb'.
+runscript {E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\sim\jpeg_enc_w_gluelogic\jpeg_enc_w_gluelogic\src\wave.do}
+onerror { resume }
+transcript off
+# 37 signal(s) traced.
+# 34 signal(s) traced.
+# 105 signal(s) traced.
+# 23 signal(s) traced.
+# 30 signal(s) traced.
+run 47600 us
+# KERNEL: Conversion Done
+# RUNTIME: Info: RUNTIME_0068 tb_jpeg_enc_w_gluelogic.v (240): $finish called.
+# KERNEL: Time: 44656435 ns,  Iteration: 0,  Instance: /tb_jpeg_enc_w_gluelogic,  Process: @ALWAYS#146,219,234_8@.
+# KERNEL: stopped at time: 44656435 ns
+# VSIM: Simulation has finished. There are no more test vectors to simulate.
+endsim
+# VSIM: Simulation has finished.
+alog -O2 -sve -msg 5 -sv2k12 -work jpeg_enc_w_gluelogic $dsn/src/tb_jpeg_enc_w_gluelogic.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module yuyv_to_yuv found in current working library.
+# Info: VCP2113 Module jpeg_enc found in current working library.
+# Info: VCP2113 Module jpeg_data_writer found in current working library.
+# Info: VCP2113 Module jpeg_data_to_spi found in current working library.
+# Pass 2. Processing instantiations.
+# Info: VCP2876 tb_jpeg_enc_w_gluelogic.v : (60, 26): Implicit net declaration, symbol yty_ready has not been declared in module tb_jpeg_enc_w_gluelogic.
+# Pass 3. Processing behavioral statements.
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/tb_jpeg_enc_w_gluelogic.v, ln 169).
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: tb_jpeg_enc_w_gluelogic.
+# $root top modules: tb_jpeg_enc_w_gluelogic.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+alog -O2 -sve -msg 5 -sv2k12 -work jpeg_enc_w_gluelogic $dsn/src/yuyv_to_yuv.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module sc_fifo found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/yuyv_to_yuv.v, ln 107).
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/yuyv_to_yuv.v, ln 177).
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/yuyv_to_yuv.v, ln 282).
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/yuyv_to_yuv.v, ln 294).
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/yuyv_to_yuv.v, ln 321).
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# $root top modules: tb_jpeg_enc_w_gluelogic.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 'jpeg_enc_mem' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'jpeg_enc_dct' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r tb_jpeg_enc_w_gluelogic
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 'jpeg_enc_mem' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'jpeg_enc_dct' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ns.
+# ELAB2: Elaboration final pass...
+# KERNEL: PLI/VHPI kernel's engine initialization done.
+# PLI: Loading library 'D:\APPS\lscc\diamond\3.10_x64\active-hdl\bin\systf.dll'
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.1 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.9 [s]
+# SLP: Finished : 1.1 [s]
+# SLP: 0 primitives and 136 (100.00%) other processes in SLP
+# SLP: 324 (95.58%) signals in SLP and 14 (4.13%) interface signals
+# ELAB2: Elaboration final pass complete - time: 1.2 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6066 kB (elbread=1280 elab2=4629 kernel=156 sdf=0)
+# KERNEL: ASDB file was created in location E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\sim\jpeg_enc_w_gluelogic\jpeg_enc_w_gluelogic\src\wave.asdb
+#  14:15, 14 April 2018
+#  Simulation has been initialized
+# Waveform file 'E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/test.awc' connected to 'E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/wave.asdb'.
+run 47600 us
+# KERNEL: Conversion Done
+# RUNTIME: Info: RUNTIME_0068 tb_jpeg_enc_w_gluelogic.v (240): $finish called.
+# KERNEL: Time: 44656435 ns,  Iteration: 0,  Instance: /tb_jpeg_enc_w_gluelogic,  Process: @ALWAYS#146,219,234_8@.
+# KERNEL: stopped at time: 44656435 ns
+# VSIM: Simulation has finished. There are no more test vectors to simulate.
+endsim
+# VSIM: Simulation has finished.
+alog -O2 -sve -msg 5 -sv2k12 -work jpeg_enc_w_gluelogic $dsn/src/jpeg_enc_dct.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/jpeg_enc_dct.v, ln 76).
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/jpeg_enc_dct.v, ln 122).
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/jpeg_enc_dct.v, ln 134).
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/jpeg_enc_dct.v, ln 164).
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/jpeg_enc_dct.v, ln 223).
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/jpeg_enc_dct.v, ln 287).
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/jpeg_enc_dct.v, ln 334).
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/jpeg_enc_dct.v, ln 363).
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: jpeg_enc_dct.
+# $root top modules: tb_jpeg_enc_w_gluelogic jpeg_enc_dct.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+alog -O2 -sve -msg 5 -sv2k12 -work jpeg_enc_w_gluelogic $dsn/src/yuyv_to_yuv.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module sc_fifo found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/yuyv_to_yuv.v, ln 107).
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/yuyv_to_yuv.v, ln 177).
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/yuyv_to_yuv.v, ln 282).
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/yuyv_to_yuv.v, ln 294).
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/yuyv_to_yuv.v, ln 321).
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# $root top modules: tb_jpeg_enc_w_gluelogic jpeg_enc_dct.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 'jpeg_enc_mem' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'jpeg_enc_dct' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r tb_jpeg_enc_w_gluelogic
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 'jpeg_enc_mem' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'jpeg_enc_dct' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ns.
+# ELAB2: Elaboration final pass...
+# KERNEL: PLI/VHPI kernel's engine initialization done.
+# PLI: Loading library 'D:\APPS\lscc\diamond\3.10_x64\active-hdl\bin\systf.dll'
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.0 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.7 [s]
+# SLP: Finished : 0.8 [s]
+# SLP: 0 primitives and 136 (100.00%) other processes in SLP
+# SLP: 324 (95.58%) signals in SLP and 14 (4.13%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.8 [s].
+# KERNEL: SLP loading done - time: 0.2 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6066 kB (elbread=1280 elab2=4629 kernel=156 sdf=0)
+# KERNEL: ASDB file was created in location E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\sim\jpeg_enc_w_gluelogic\jpeg_enc_w_gluelogic\src\wave.asdb
+#  14:31, 14 April 2018
+#  Simulation has been initialized
+# Waveform file 'E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/test.awc' connected to 'E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/wave.asdb'.
+runscript {E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\sim\jpeg_enc_w_gluelogic\jpeg_enc_w_gluelogic\src\wave.do}
+onerror { resume }
+transcript off
+# 37 signal(s) traced.
+# 34 signal(s) traced.
+# 105 signal(s) traced.
+# 23 signal(s) traced.
+# 30 signal(s) traced.
+run 47600 us
+# KERNEL: Conversion Done
+# RUNTIME: Info: RUNTIME_0068 tb_jpeg_enc_w_gluelogic.v (240): $finish called.
+# KERNEL: Time: 36032245 ns,  Iteration: 0,  Instance: /tb_jpeg_enc_w_gluelogic,  Process: @ALWAYS#146,219,234_8@.
+# KERNEL: stopped at time: 36032245 ns
+# VSIM: Simulation has finished. There are no more test vectors to simulate.
+endsim
+# VSIM: Simulation has finished.
+alog -O2 -sve -msg 5 -sv2k12 -work jpeg_enc_w_gluelogic $dsn/src/yuyv_to_yuv.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module sc_fifo found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/yuyv_to_yuv.v, ln 107).
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/yuyv_to_yuv.v, ln 177).
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/yuyv_to_yuv.v, ln 282).
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/yuyv_to_yuv.v, ln 294).
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/yuyv_to_yuv.v, ln 321).
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# $root top modules: tb_jpeg_enc_w_gluelogic jpeg_enc_dct.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+alog -O2 -sve -msg 5 -sv2k12 -work jpeg_enc_w_gluelogic $dsn/src/jpeg_enc_dct.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/jpeg_enc_dct.v, ln 76).
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/jpeg_enc_dct.v, ln 122).
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/jpeg_enc_dct.v, ln 134).
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/jpeg_enc_dct.v, ln 164).
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/jpeg_enc_dct.v, ln 223).
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/jpeg_enc_dct.v, ln 287).
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/jpeg_enc_dct.v, ln 334).
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/jpeg_enc_dct.v, ln 363).
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: jpeg_enc_dct.
+# $root top modules: tb_jpeg_enc_w_gluelogic jpeg_enc_dct.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 'jpeg_enc_mem' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'jpeg_enc_dct' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r tb_jpeg_enc_w_gluelogic
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 'jpeg_enc_mem' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'jpeg_enc_dct' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ns.
+# ELAB2: Elaboration final pass...
+# KERNEL: PLI/VHPI kernel's engine initialization done.
+# PLI: Loading library 'D:\APPS\lscc\diamond\3.10_x64\active-hdl\bin\systf.dll'
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.1 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 1.0 [s]
+# SLP: Finished : 1.1 [s]
+# SLP: 0 primitives and 136 (100.00%) other processes in SLP
+# SLP: 324 (95.58%) signals in SLP and 14 (4.13%) interface signals
+# ELAB2: Elaboration final pass complete - time: 1.1 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6066 kB (elbread=1280 elab2=4629 kernel=156 sdf=0)
+# KERNEL: ASDB file was created in location E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\sim\jpeg_enc_w_gluelogic\jpeg_enc_w_gluelogic\src\wave.asdb
+#  15:30, 14 April 2018
+#  Simulation has been initialized
+# Waveform file 'E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/test.awc' connected to 'E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/wave.asdb'.
+runscript {E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\sim\jpeg_enc_w_gluelogic\jpeg_enc_w_gluelogic\src\wave.do}
+onerror { resume }
+transcript off
+# 37 signal(s) traced.
+# 34 signal(s) traced.
+# 105 signal(s) traced.
+# 23 signal(s) traced.
+# 30 signal(s) traced.
+run 47600 us
+# KERNEL: Conversion Done
+# RUNTIME: Info: RUNTIME_0068 tb_jpeg_enc_w_gluelogic.v (240): $finish called.
+# KERNEL: Time: 36024355 ns,  Iteration: 0,  Instance: /tb_jpeg_enc_w_gluelogic,  Process: @ALWAYS#146,219,234_8@.
+# KERNEL: stopped at time: 36024355 ns
+# VSIM: Simulation has finished. There are no more test vectors to simulate.
+endsim
+# VSIM: Simulation has finished.
+alog -O2 -sve -msg 5 -sv2k12 -work jpeg_enc_w_gluelogic $dsn/src/jpeg_enc.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module jpeg_enc_mem found in current working library.
+# Info: VCP2113 Module jpeg_enc_dct found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/jpeg_enc.v, ln 314).
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/jpeg_enc.v, ln 492).
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/jpeg_enc.v, ln 1008).
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/jpeg_enc.v, ln 1029).
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/jpeg_enc.v, ln 1072).
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/jpeg_enc.v, ln 1122).
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/jpeg_enc.v, ln 1277).
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/jpeg_enc.v, ln 1388).
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/jpeg_enc.v, ln 1416).
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/jpeg_enc.v, ln 1449).
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/jpeg_enc.v, ln 1503).
+# Parameters in case labels, will not check for overlapping labels (E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/jpeg_enc.v, ln 1525).
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# $root top modules: tb_jpeg_enc_w_gluelogic.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 'jpeg_enc_mem' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'jpeg_enc_dct' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r tb_jpeg_enc_w_gluelogic
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 'jpeg_enc_mem' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'jpeg_enc_dct' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ns.
+# ELAB2: Elaboration final pass...
+# KERNEL: PLI/VHPI kernel's engine initialization done.
+# PLI: Loading library 'D:\APPS\lscc\diamond\3.10_x64\active-hdl\bin\systf.dll'
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.0 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.6 [s]
+# SLP: Finished : 0.7 [s]
+# SLP: 0 primitives and 136 (100.00%) other processes in SLP
+# SLP: 324 (95.58%) signals in SLP and 14 (4.13%) interface signals
+# ELAB2: Elaboration final pass complete - time: 1.1 [s].
+# KERNEL: SLP loading done - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6066 kB (elbread=1280 elab2=4629 kernel=156 sdf=0)
+# KERNEL: ASDB file was created in location E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\sim\jpeg_enc_w_gluelogic\jpeg_enc_w_gluelogic\src\wave.asdb
+#  16:33, 14 April 2018
+#  Simulation has been initialized
+# Waveform file 'E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/test.awc' connected to 'E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/sim/jpeg_enc_w_gluelogic/jpeg_enc_w_gluelogic/src/wave.asdb'.
+runscript {E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\sim\jpeg_enc_w_gluelogic\jpeg_enc_w_gluelogic\src\wave.do}
+onerror { resume }
+transcript off
+# 37 signal(s) traced.
+# 34 signal(s) traced.
+# 105 signal(s) traced.
+# 23 signal(s) traced.
+# 30 signal(s) traced.
+run 47600 us
+# KERNEL: Conversion Done
+# RUNTIME: Info: RUNTIME_0068 tb_jpeg_enc_w_gluelogic.v (240): $finish called.
+# KERNEL: Time: 36026495 ns,  Iteration: 0,  Instance: /tb_jpeg_enc_w_gluelogic,  Process: @ALWAYS#146,219,234_8@.
+# KERNEL: stopped at time: 36026495 ns
+# VSIM: Simulation has finished. There are no more test vectors to simulate.
+endsim
+# VSIM: Simulation has finished.

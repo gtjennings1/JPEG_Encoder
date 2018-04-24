@@ -8,7 +8,9 @@
 //  LUT containing all the registers address and values 
 //                            
 //////////////////////////////////////////////////////////////////////////////////
-
+//`define VGA_YUV 
+`define QVGA_YUV
+//`define QVGA_RGB444 //-- not working
 module OV7670_Registers (
     input clk, 
     input resend, 
@@ -49,11 +51,31 @@ module OV7670_Registers (
         case (address) 
             0 : sreg <= 16'h12_80;          // COM7     RESET
             1 : sreg <= 16'h12_80;          // COM7     RESET
+        `ifdef QVGA_RGB444
+            2 : sreg <= 16'h12_04;          // COM7     Size & NON-YUV output
+        `else         
             2 : sreg <= 16'h12_00;          // COM7     Size & YUV output
+        `endif    
             3 : sreg <= 16'h11_00;          // CLKRC    Use internal clock
+        `ifdef VGA_YUV
             4 : sreg <= 16'h0C_00;          // COM3     Default
-            5 : sreg <= 16'h3E_00;          // COM14    SDCW and scaling PCLK, manual scaling enable, PCLK divider          
+        `else      
+            4 : sreg <= 16'h0C_04;          // COM3     Scale Enable
+        `endif  
+        `ifdef VGA_YUV
+            5 : sreg <= 16'h3E_00;          // COM14    SDCW and scaling PCLK, manual scaling enable, PCLK divider
+        `else
+          `ifdef QVGA_YUV     
+            5 : sreg <= 16'h3E_19;          // COM14    SDCW and scaling PCLK, manual scaling enable, PCLK divider          
+          `else  
+            5 : sreg <= 16'h3E_19;          // COM14    SDCW and scaling PCLK, manual scaling enable, PCLK divider          
+          `endif
+        `endif            
+        `ifdef QVGA_RGB444
+            6 : sreg <= 16'h8C_03;          // RGB444   Disable RGB 444 format          
+        `else            
             6 : sreg <= 16'h8C_00;          // RGB444   Disable RGB 444 format
+        `endif            
             7 : sreg <= 16'h04_00;          // COM1     Disable CCIR 656
             8 : sreg <= 16'h40_00;          // COM15    Disable RGB 565 (effective only after disable RGB 444 format)
             9 : sreg <= 16'h3A_04;          // TSLB     Disable auto-reset window
@@ -89,11 +111,20 @@ module OV7670_Registers (
             39 : sreg <= 16'h4D_40;         // RSVD     reserve
             40 : sreg <= 16'h4E_20;         // RSVD     reserve
             41 : sreg <= 16'h69_00;         // GFIX     Fix gain control (default)
-            42 : sreg <= 16'h6B_4A;         // DBLV     set PLL control to 4x and bypass internal regulator
+            //42 : sreg <= 16'h6B_4A;         // DBLV     set PLL control to 4x and bypass internal regulator
+            42 : sreg <= 16'h6B_0A;         // DBLV     set PLL control to 4x and bypass internal regulator
             43 : sreg <= 16'h70_3A;          // SCALING_XSC
             44 : sreg <= 16'h71_35;          // SCALING_YSC
             45 : sreg <= 16'h72_11;          // SCALING_DCWCTR
+        `ifdef VGA_YUV    
             46 : sreg <= 16'h73_F0;          // SCALING_PCLK_DIV
+        `else
+          `ifdef QVGA_YUV             
+            46 : sreg <= 16'h73_F1;          // SCALING_PCLK_DIV by 2
+          `else  
+            46 : sreg <= 16'h73_F9;          // SCALING_PCLK_DIV by 2
+          `endif  
+        `endif  
             47 : sreg <= 16'h74_10;         // REG74    default
             48 : sreg <= 16'h8D_4F;         // RSVD     reserve
             49 : sreg <= 16'h8E_00;         // RSVD     reserve
@@ -108,6 +139,7 @@ module OV7670_Registers (
             58 : sreg <= 16'hB2_0E;         // RSVD     reserve
             59 : sreg <= 16'hB3_82;         // RSVD     reserve
             60 : sreg <= 16'hB8_0A;         // RSVD     reserve
+            61 : sreg <= 16'h3B_0A;
             default : sreg <= 16'hFF_FF;    // End configuration
         endcase  
             

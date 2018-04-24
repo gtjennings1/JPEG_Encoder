@@ -16,7 +16,7 @@ set_option -vlog_std v2001
 set_option -frequency auto
 set_option -maxfan 1000
 set_option -auto_constrain_io 0
-set_option -retiming false; set_option -pipe true
+set_option -retiming true; set_option -pipe true
 set_option -force_gsr false
 set_option -compiler_compatible 0
 

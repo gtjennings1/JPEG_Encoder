@@ -1,0 +1,179 @@
+<config>
+    <version>
+        2.0
+    </version>
+    <comment>
+    </comment>
+    <databases>
+        <database id="">*virtual*</database>
+        <database id="34f64bb263d0f782d15ac8f94d050000">wave.asdb</database>
+    </databases>
+    <signallists>
+        <signallist id="0">
+                AAABRgAU4AAAAAAQAQASAwEHAQwHAAAdDwEDAT8SdgAAEgk3GQv5DQEAAB9IAgAVDzJuAQfAAyHnAQkB        EhAIARIQDwUWAAA6DxlyDAQfAQAABSEDCf8BegUDAWAGDAcBAA8DPhkDAQe6ARIQs1AGADsAAHsBDwEd        CQM5BAAQDckDC3AQMBAAAAH5BgoaNgwUAAB7DR8FAwwEPAAQBAwEHQv7AQkfAAA/GgZnORvyDgAAEj4L        EHsIGwMAAAEHMGsSAQAAeBZ9DQBdAQdMAAAjD/kHAAALGwYKMxF/BwAACRsJAS3zBwEAAwMJHwk9CQOh        BBIQwACgBBIQHwQMeg4ZCwAALgmwCAlAA/8BAQMJBxI5NwVwBAAEOAUSEAQcC3YTOQ8AAAQcCv4JGwEP        AOANCj8ADAENGXIXAcQFEhARAAAA
+|
+        </signallist>
+    </signallists>
+    <propertybases>
+        <propertybase id="0">
+            <propclass name="radix">
+            </propclass>
+            <propclass name="mode">
+            </propclass>
+            <propclass name="notation">
+                <property first="269615298" last="269615298">
+                2
+                </property>
+                <property first="269615331" last="269615331">
+                2
+                </property>
+                <property first="269615523" last="269615523">
+                2
+                </property>
+                <property first="269615589" last="269615589">
+                2
+                </property>
+                <property first="269615591" last="269615591">
+                2
+                </property>
+                <property first="269615604" last="269615604">
+                2
+                </property>
+                <property first="269615620" last="269615620">
+                2
+                </property>
+                <property first="269615636" last="269615636">
+                2
+                </property>
+                <property first="269615652" last="269615652">
+                2
+                </property>
+                <property first="269615670" last="269615670">
+                2
+                </property>
+                <property first="269615672" last="269615672">
+                2
+                </property>
+                <property first="269615686" last="269615686">
+                2
+                </property>
+                <property first="269615688" last="269615688">
+                2
+                </property>
+                <property first="269615702" last="269615702">
+                2
+                </property>
+                <property first="269615704" last="269615704">
+                2
+                </property>
+                <property first="269615718" last="269615718">
+                2
+                </property>
+                <property first="269615720" last="269615720">
+                2
+                </property>
+                <property first="269615973" last="269615973">
+                2
+                </property>
+                <property first="269616016" last="269616016">
+                2
+                </property>
+                <property first="269616039" last="269616039">
+                2
+                </property>
+                <property first="269616041" last="269616041">
+                2
+                </property>
+                <property first="269616061" last="269616061">
+                2
+                </property>
+                <property first="269616082" last="269616082">
+                2
+                </property>
+                <property first="269616084" last="269616084">
+                2
+                </property>
+                <property first="269616127" last="269616127">
+                2
+                </property>
+                <property first="269616129" last="269616129">
+                2
+                </property>
+            </propclass>
+            <propclass name="reverse">
+            </propclass>
+            <propclass name="bold">
+            </propclass>
+            <propclass name="row_height">
+            </propclass>
+            <propclass name="color">
+            </propclass>
+            <propclass name="compared">
+            </propclass>
+            <propclass name="analog_bounds">
+            </propclass>
+            <propclass name="fixedpoint">
+            </propclass>
+            <propclass name="floating_encoding">
+            </propclass>
+            <propclass name="floating_notation">
+            </propclass>
+            <propclass name="floating_precision">
+            </propclass>
+            <propclass name="rounding_method">
+            </propclass>
+            <propclass name="aliasname">
+            </propclass>
+        </propertybase>
+    </propertybases>
+    <prefbases>
+    </prefbases>
+    <bookmarkbases>
+        <bookmarks id="0">
+        </bookmarks>
+    </bookmarkbases>
+    <cursorbases>
+        <cursors id="0">
+            <cursor value="0" label="Cursor 1" locked="0" />
+        </cursors>
+    </cursorbases>
+    <measurementbases>
+    </measurementbases>
+    <commentbases>
+        <comments id="0">
+        </comments>
+    </commentbases>
+    <views>
+        <view signallist="0" propertybase="0" prefbase="-1" type="1" bookmarks="0" cursors="0" measurements="-1" comments="-1" />
+    </views>
+    <virtualsources>
+        <virtualnamedrows>
+            <virtualnamedrow id="1" name="YTY"/>
+            <virtualnamedrow id="2" name="JE"/>
+            <virtualnamedrow id="3" name="JEDW"/>
+            <virtualnamedrow id="4" name="JDTS"/>
+            <virtualnamedrow id="5" name="YTY"/>
+            <virtualnamedrow id="6" name="JE"/>
+            <virtualnamedrow id="7" name="JEDW"/>
+            <virtualnamedrow id="8" name="JDTS"/>
+            <virtualnamedrow id="9" name="YTY"/>
+            <virtualnamedrow id="10" name="JE"/>
+            <virtualnamedrow id="11" name="JEDW"/>
+            <virtualnamedrow id="12" name="JDTS"/>
+            <virtualnamedrow id="13" name="YTY"/>
+            <virtualnamedrow id="14" name="JE"/>
+            <virtualnamedrow id="15" name="JEDW"/>
+            <virtualnamedrow id="16" name="JDTS"/>
+        </virtualnamedrows>
+        <virtualbuses>
+        </virtualbuses>
+        <virtualalias>
+        </virtualalias>
+        <virtualbusalias>
+        </virtualbusalias>
+        <virtualanalogalias>
+        </virtualanalogalias>
+        <virtualanalogbusalias>
+        </virtualanalogbusalias>
+        </virtualsources>
+</config>

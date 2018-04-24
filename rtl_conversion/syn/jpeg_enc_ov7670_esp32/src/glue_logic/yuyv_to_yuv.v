@@ -13,6 +13,8 @@ module yuyv_to_yuv (
   output [16:0] addr,
   input  [7:0]  data,
   
+  input         mem_wr,
+  
   output        ready,
   
   input         je_rd,
@@ -59,7 +61,10 @@ module yuyv_to_yuv (
   
   wire           col_max = (img_col == (`WIDTH-1));
   wire           row_max = (img_row == (`HEIGHT-1));
-  wire           row_chg = (&col_cnt) && (addr_lsb);
+  
+  wire           addr_inc = addr_lsb && (!mem_wr);
+  
+  wire           row_chg = (&col_cnt) && (addr_inc);
   wire           blk_chg = (&row_cnt) && row_chg;
   wire           img_req_pe = (img_req_reg[0] && (!img_req_reg[1]));
   
@@ -97,7 +102,7 @@ module yuyv_to_yuv (
         c_state <= #1 n_state;      
     end
   
-  always @ (c_state, img_req_pe, fetch_memory, eof)
+  always @ (c_state, img_req_pe, fetch_memory, eof, mem_wr)
     begin
       case (c_state)
         IDLE      : begin
@@ -112,12 +117,42 @@ module yuyv_to_yuv (
                       else
                         n_state <= #1 CHECK_FF;                      
                     end
-        FETCH_Y0  : n_state <= #1 FETCH_U01;
-        FETCH_U01 : n_state <= #1 FETCH_Y1;
-        FETCH_Y1  : n_state <= #1 FETCH_V01;
-        FETCH_V01 : n_state <= #1 CHECK_EOF;
-        CHECK_EOF : n_state <= #1 WAIT_1C;
-        WAIT_1C   : n_state <= #1 WRITE_Y0;
+        FETCH_Y0  : begin
+                      if (mem_wr)
+                        n_state <= #1 FETCH_Y0;
+                      else  
+                        n_state <= #1 FETCH_U01;
+                    end  
+        FETCH_U01 : begin
+                      if (mem_wr)
+                        n_state <= #1 FETCH_U01;
+                      else  
+                        n_state <= #1 FETCH_Y1;
+                    end  
+        FETCH_Y1  : begin
+                      if (mem_wr)
+                        n_state <= #1 FETCH_Y1;
+                      else  
+                        n_state <= #1 FETCH_V01;
+                    end  
+        FETCH_V01 : begin
+                      if (mem_wr)
+                        n_state <= #1 FETCH_V01;
+                      else  
+                        n_state <= #1 CHECK_EOF;
+                    end  
+        CHECK_EOF : begin
+                      if (mem_wr)
+                        n_state <= #1 CHECK_EOF;
+                      else  
+                        n_state <= #1 WAIT_1C;
+                    end  
+        WAIT_1C   : begin
+                      if (mem_wr)
+                        n_state <= #1 WAIT_1C;
+                      else  
+                        n_state <= #1 WRITE_Y0;
+                    end  
         WRITE_Y0  : n_state <= #1 WRITE_U0;
         WRITE_U0  : n_state <= #1 WRITE_V0;
         WRITE_V0  : n_state <= #1 WRITE_Y1;
@@ -144,7 +179,12 @@ module yuyv_to_yuv (
           FETCH_Y0,
           FETCH_U01,
           FETCH_Y1,
-          FETCH_V01 : addr_lsb <= #1 !addr_lsb;
+          FETCH_V01 : begin
+                        if (mem_wr)
+                          addr_lsb <= #1 addr_lsb;
+                        else  
+                          addr_lsb <= #1 !addr_lsb;
+                      end  
           default   : addr_lsb <= #1 addr_lsb;
         endcase        
     end
@@ -166,7 +206,7 @@ module yuyv_to_yuv (
           img_row <= #1 img_row;
           img_y   <= #1 img_y;
           last_blk<= #1 1'b0;          
-          case ({row_max, col_max, blk_chg, row_chg, addr_lsb})
+          case ({row_max, col_max, blk_chg, row_chg, addr_inc})
             5'h01,
             5'h11     : img_col <= #1 img_col + 9'h001;
             5'h03,
@@ -209,7 +249,7 @@ module yuyv_to_yuv (
       if (!reset_n)
         col_cnt <= #1 3'h0;
       else
-      if (addr_lsb)
+      if (addr_inc)
         col_cnt <= #1 col_cnt + 3'h1;
       else
         col_cnt <= #1 col_cnt;      
@@ -257,7 +297,12 @@ module yuyv_to_yuv (
           FETCH_Y1,
           FETCH_V01,
           CHECK_EOF,
-          WAIT_1C   : yuyv <= #1 {data, yuyv[31:8]};
+          WAIT_1C   : begin
+                        if (mem_wr)
+                          yuyv <= #1 yuyv;
+                        else  
+                          yuyv <= #1 {!data[7], data[6:0], yuyv[31:8]};
+                      end  
           default   : yuyv <= #1 yuyv;
         endcase        
     end
@@ -276,21 +321,21 @@ module yuyv_to_yuv (
           case (c_state)
             IDLE      : ff_din <= #1 8'h00;
             WRITE_Y0  : begin
-                         ff_din <= #1 yuyv[7:0];
+                         ff_din <= #1 yuyv[7:0];//yuyv[15:8];//
                          ff_wr  <= #1 1'b1; 
                         end
             WRITE_U0,
             WRITE_U1  : begin
-                         ff_din <= #1 yuyv[15:8];
+                         ff_din <= #1 yuyv[15:8];//yuyv[7:0];//
                          ff_wr  <= #1 1'b1;             
                         end
             WRITE_Y1  : begin
-                         ff_din <= #1 yuyv[23:16];
+                         ff_din <= #1 yuyv[23:16];//yuyv[31:24];//
                          ff_wr  <= #1 1'b1;                           
                         end
             WRITE_V0,
             WRITE_V1  : begin
-                         ff_din <= #1 yuyv[31:24];
+                         ff_din <= #1 yuyv[31:24];//yuyv[23:16];//
                          ff_wr  <= #1 1'b1;
                         end            
             default   : ff_din <= #1 ff_din;

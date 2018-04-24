@@ -1,6 +1,6 @@
 
 #Begin clock constraint
-define_clock -name {top|pclk} {p:top|pclk} -period 402402.000 -clockgroup Autoconstr_clkgroup_0 -rise 0.000 -fall 201201.000 -route 0.000 
+define_clock -name {top|pclk} {p:top|pclk} -period 104712.000 -clockgroup Autoconstr_clkgroup_0 -rise 0.000 -fall 52356.000 -route 0.000 
 #End clock constraint
 
 #Begin clock constraint

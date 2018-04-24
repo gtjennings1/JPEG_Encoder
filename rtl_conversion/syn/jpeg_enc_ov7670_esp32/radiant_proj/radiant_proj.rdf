@@ -45,6 +45,9 @@
         <Source name="constraints.pdc" type="Physical Constraints File" type_short="PDC">
             <Options/>
         </Source>
+        <Source name="source/impl_1.xcf" type="Programming Project File" type_short="Programming">
+            <Options/>
+        </Source>
     </Implementation>
     <Strategy name="Strategy1" file="radiant_proj1.sty"/>
 </RadiantProject>

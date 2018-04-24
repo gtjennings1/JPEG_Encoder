@@ -6,19 +6,19 @@
 #### START OF CLOCK OPTIMIZATION REPORT #####[
 
 Clock optimization not enabled
-1 non-gated/non-generated clock tree(s) driving 1210 clock pin(s) of sequential element(s)
-1 gated/generated clock tree(s) driving 117 clock pin(s) of sequential element(s)
-0 instances converted, 117 sequential instances remain driven by gated/generated clocks
+1 non-gated/non-generated clock tree(s) driving 1299 clock pin(s) of sequential element(s)
+1 gated/generated clock tree(s) driving 140 clock pin(s) of sequential element(s)
+0 instances converted, 140 sequential instances remain driven by gated/generated clocks
 
 =========================== Non-Gated/Non-Generated Clocks ============================
 Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance
 ---------------------------------------------------------------------------------------
-@K:CKID0002       pclk                port                   1210       q_href         
+@K:CKID0002       pclk                port                   1299       q_href         
 =======================================================================================
 ============================================================================================================ Gated/Generated Clocks =============================================================================================================
 Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance                            Explanation                                                                                                                   
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-@K:CKID0001       u_HSOSC             HSOSC                  117        u_OV7670_Controller.I2C.busy_sr_ess[1]     Gating structure creates improper gating logic. See the Gated Clocks description in the user guide for conversion requirements
+@K:CKID0001       u_HSOSC             HSOSC                  140        u_OV7670_Controller.I2C.busy_sr_ess[1]     Gating structure creates improper gating logic. See the Gated Clocks description in the user guide for conversion requirements
 =================================================================================================================================================================================================================================================
 
 

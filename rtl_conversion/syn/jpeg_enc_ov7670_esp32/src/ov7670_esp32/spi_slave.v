@@ -47,6 +47,8 @@ module spi_slave (
   
   reg    [16:0]   rd_addr_reg;
   
+  //reg    [7:0]    test_cnt;
+  
   wire            sclk_rising_edge = (sclk_reg == 2'b01);
   wire            sclk_falling_edge = (sclk_reg == 2'b10);
   wire            mosi_data = mosi_reg[1];
@@ -54,7 +56,18 @@ module spi_slave (
   assign          miso = data_to_send_buf[7];
   //assign          mem_addr = rd_addr_reg;
   assign          mem_rd = mem_rd_reg;
-  
+  /*
+  always @ (posedge clk or negedge reset_n)
+    begin
+      if (!reset_n)
+        test_cnt <= #1 8'h00;
+      else
+      if (mem_rd)
+        test_cnt <= #1 test_cnt + 8'h01;
+      else
+        test_cnt <= #1 test_cnt;      
+    end
+  */
   always @ (posedge clk or negedge reset_n)
     begin
       if (!reset_n)
@@ -131,7 +144,7 @@ module spi_slave (
         data_to_send_buf <= 8'h00;
       else
       if (ssel)
-        data_to_send_buf <= 8'h00;
+        data_to_send_buf <= data_to_send;
       else
       if ((bit_cnt == 3'h0) && sclk_falling_edge)
         data_to_send_buf <= data_to_send;
@@ -170,6 +183,6 @@ module spi_slave (
         rd_addr_reg <= rd_addr_reg;      
     end  
 
-  assign          data_to_send = mem_data;
+  assign          data_to_send = mem_data;// + test_cnt;
   
 endmodule  

@@ -3,7 +3,7 @@
 #OS: Windows 8 6.2
 #Hostname: KV-DL5480
 
-# Wed Apr 11 14:42:20 2018
+# Mon Apr 23 15:05:21 2018
 
 #Implementation: impl_1
 
@@ -25,7 +25,7 @@ At c_vhdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memor
 
 
 Process completed successfully.
-# Wed Apr 11 14:42:20 2018
+# Mon Apr 23 15:05:23 2018
 
 ###########################################################]
 Synopsys Verilog Compiler, version comp2017q2p1, Build 338R, built Nov 10 2017
@@ -90,7 +90,7 @@ At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory
 
 
 Process completed successfully.
-# Wed Apr 11 14:42:20 2018
+# Mon Apr 23 15:05:24 2018
 
 ###########################################################]
 @I::"D:\APPS\lscc\radiant\1.0\synpbase\lib\generic\ice40up.v" (library work)
@@ -146,33 +146,33 @@ Process completed successfully.
 @I::"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\top.v" (library work)
 @I::"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\up_spram.v" (library work)
 Verilog syntax check successful!
-
-Compiler output is up to date.  No re-compile necessary
-
+File E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\spi_slave.v changed - recompiling
 @N: CG364 :"D:\APPS\lscc\radiant\1.0\synpbase\lib\generic\ice40up.v":795:7:795:11|Synthesizing module HSOSC in library work.
 @N: CG364 :"D:\APPS\lscc\radiant\1.0\synpbase\lib\generic\ice40up.v":753:7:753:12|Synthesizing module SP256K in library work.
 @N: CG364 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\up_spram.v":25:7:25:14|Synthesizing module up_spram in library work.
-@N: CG364 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\OV7670_Registers.v":12:7:12:22|Synthesizing module OV7670_Registers in library work.
+@N: CG364 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\OV7670_Registers.v":14:7:14:22|Synthesizing module OV7670_Registers in library work.
 @N: CG364 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\I2C_Interface.v":14:7:14:19|Synthesizing module I2C_Interface in library work.
 @N: CG364 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\OV7670_Controller.v":18:7:18:23|Synthesizing module OV7670_Controller in library work.
 @N: CG364 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\sc_fifo.v":3:7:3:13|Synthesizing module sc_fifo in library work.
 @N: CL134 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\sc_fifo.v":107:2:107:7|Found RAM fifo, depth=512, width=8
 @N: CG364 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":7:7:7:17|Synthesizing module yuyv_to_yuv in library work.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":148:37:148:44|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":164:24:164:30|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":165:24:165:28|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":166:24:166:30|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":167:24:167:28|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":197:40:197:46|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":198:40:198:44|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":199:40:199:46|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":200:40:200:44|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":215:22:215:28|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":226:22:226:28|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":245:32:245:34|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":261:33:261:36|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":274:23:274:28|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":296:37:296:42|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":184:41:184:48|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":188:37:188:44|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":204:24:204:30|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":205:24:205:28|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":206:24:206:30|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":207:24:207:28|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":237:40:237:46|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":238:40:238:44|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":239:40:239:46|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":240:40:240:44|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":255:22:255:28|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":266:22:266:28|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":285:32:285:34|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":302:37:302:40|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":306:33:306:36|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":319:23:319:28|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":341:37:341:42|Removing redundant assignment.
 @N: CG364 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":1:7:1:18|Synthesizing module jpeg_enc_mem in library work.
 @W: CG532 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":98:2:98:8|Within an initial block, only Verilog force statements and memory $readmemh/$readmemb initialization statements are recognized, and all other content is ignored.
 @N: CL134 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":194:2:194:7|Found RAM dctdu_ram, depth=64, width=18
@@ -241,72 +241,74 @@ Compiler output is up to date.  No re-compile necessary
 @N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":366:44:366:56|Removing redundant assignment.
 @W: CG133 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":42:47:42:57|Object dctdu_r_idx is declared but not assigned. Either assign a value or remove the declaration.
 @N: CG364 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":12:7:12:14|Synthesizing module jpeg_enc in library work.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":480:28:480:38|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":510:46:510:56|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":539:24:539:28|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":540:24:540:30|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":541:24:541:28|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":542:24:542:30|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":572:38:572:42|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":573:38:573:44|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":574:38:574:42|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":575:38:575:44|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":605:22:605:28|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":617:22:617:28|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":703:27:703:38|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":984:21:984:26|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":997:23:997:28|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1005:51:1005:56|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1009:37:1009:42|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1042:34:1042:40|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1045:22:1045:28|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1059:30:1059:42|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1060:30:1060:42|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1061:30:1061:42|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1062:30:1062:42|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1086:48:1086:60|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1087:48:1087:60|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1088:48:1088:60|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1089:48:1089:60|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1108:27:1108:36|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1109:27:1109:36|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1110:21:1110:24|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1111:26:1111:34|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":489:28:489:38|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":519:46:519:56|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":548:24:548:28|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":549:24:549:30|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":550:24:550:28|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":551:24:551:30|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":581:38:581:42|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":582:38:582:44|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":583:38:583:42|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":584:38:584:44|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":614:22:614:28|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":626:22:626:28|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":712:27:712:38|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":993:21:993:26|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1006:23:1006:28|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1014:51:1014:56|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1018:37:1018:42|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1051:34:1051:40|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1054:22:1054:28|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1068:30:1068:42|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1069:30:1069:42|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1070:30:1070:42|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1071:30:1071:42|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1095:48:1095:60|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1096:48:1096:60|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1097:48:1097:60|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1098:48:1098:60|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1117:27:1117:36|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1118:27:1118:36|Removing redundant assignment.
 
 Only the first 100 messages of id 'CG179' are reported. To see all messages use 'report_messages -log E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\radiant_proj\impl_1\synlog\radiant_proj_impl_1_compiler.srr -id CG179' in the Tcl shell. To see all messages in future runs, use the command 'message_override -limit {CG179} -count unlimited' in the Tcl shell.
 @W: CG360 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":33:18:33:29|Removing wire header_rom_d, as there is no assignment to it.
 @W: CG133 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":36:18:36:26|Object du_ram_aw is declared but not assigned. Either assign a value or remove the declaration.
 @W: CG133 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":58:18:58:28|Object dct_idx_cnt is declared but not assigned. Either assign a value or remove the declaration.
-@W: CL169 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1096:2:1096:7|Pruning unused register wb_c[7:0]. Make sure that there are no unused intermediate registers.
-@W: CL169 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":518:2:518:7|Pruning unused register fb_addr_reg[21:0]. Make sure that there are no unused intermediate registers.
-@W: CL169 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":285:2:285:7|Pruning unused register img_valid_reg_fl. Make sure that there are no unused intermediate registers.
-@W: CL265 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1253:2:1253:7|Removing unused bit 0 of cb_bb_tmp[12:0]. Either assign all bits or reduce the width of the signal.
-@W: CL207 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":468:2:468:7|All reachable assignments to byte_count[9:0] assign 0, register removed by optimization.
-@W: CL190 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1253:2:1253:7|Optimizing register bit cb_bit_cnt[4] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1373:2:1373:7|Optimizing register bit b_state[6] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1373:2:1373:7|Optimizing register bit b_state[7] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL279 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1373:2:1373:7|Pruning register bits 7 to 6 of b_state[7:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
-@W: CL260 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1253:2:1253:7|Pruning register bit 4 of cb_bit_cnt[4:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL169 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1105:2:1105:7|Pruning unused register wb_c[7:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":527:2:527:7|Pruning unused register fb_addr_reg[21:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":294:2:294:7|Pruning unused register img_valid_reg_fl. Make sure that there are no unused intermediate registers.
+@W: CL265 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1262:2:1262:7|Removing unused bit 0 of cb_bb_tmp[12:0]. Either assign all bits or reduce the width of the signal.
+@W: CL265 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":286:2:286:7|Removing unused bit 1 of fb_rd_reg[1:0]. Either assign all bits or reduce the width of the signal.
+@W: CL207 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":477:2:477:7|All reachable assignments to byte_count[9:0] assign 0, register removed by optimization.
+@W: CL190 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1262:2:1262:7|Optimizing register bit cb_bit_cnt[4] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1382:2:1382:7|Optimizing register bit b_state[6] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1382:2:1382:7|Optimizing register bit b_state[7] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL279 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1382:2:1382:7|Pruning register bits 7 to 6 of b_state[7:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL260 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1262:2:1262:7|Pruning register bit 4 of cb_bit_cnt[4:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
 @N: CG364 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\jpeg_data_writer.v":7:7:7:22|Synthesizing module jpeg_data_writer in library work.
 @N: CG364 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\jpeg_data_to_spi.v":7:7:7:22|Synthesizing module jpeg_data_to_spi in library work.
+@W: CL169 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\jpeg_data_to_spi.v":132:2:132:7|Pruning unused register spi_data_reg[7:0]. Make sure that there are no unused intermediate registers.
 @N: CG364 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\spi_slave.v":23:7:23:15|Synthesizing module spi_slave in library work.
-@W: CL169 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\spi_slave.v":159:2:159:7|Pruning unused register rd_addr_reg[16:0]. Make sure that there are no unused intermediate registers.
-@W: CL169 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\spi_slave.v":145:2:145:7|Pruning unused register addr_data_flag. Make sure that there are no unused intermediate registers.
-@W: CL169 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\spi_slave.v":91:2:91:7|Pruning unused register data_received[7:0]. Make sure that there are no unused intermediate registers.
-@W: CL169 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\spi_slave.v":80:2:80:7|Pruning unused register mosi_reg[1:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\spi_slave.v":172:2:172:7|Pruning unused register rd_addr_reg[16:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\spi_slave.v":158:2:158:7|Pruning unused register addr_data_flag. Make sure that there are no unused intermediate registers.
+@W: CL169 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\spi_slave.v":104:2:104:7|Pruning unused register data_received[7:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\spi_slave.v":93:2:93:7|Pruning unused register mosi_reg[1:0]. Make sure that there are no unused intermediate registers.
 @N: CG364 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\top.v":23:7:23:9|Synthesizing module top in library work.
-@N: CL189 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\top.v":110:2:110:7|Register bit pixel_cnt[17] is always 0.
-@W: CL260 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\top.v":110:2:110:7|Pruning register bit 17 of pixel_cnt[17:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
-@N: CL201 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\top.v":143:2:143:7|Trying to extract state machine for register c_state.
+@W: CL169 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\top.v":135:2:135:7|Pruning unused register cb_data. Make sure that there are no unused intermediate registers.
+@W: CL169 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\top.v":118:2:118:7|Pruning unused register cb_yuyv[31:0]. Make sure that there are no unused intermediate registers.
+@N: CL189 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\top.v":150:2:150:7|Register bit pixel_cnt[17] is always 0.
+@W: CL260 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\top.v":150:2:150:7|Pruning register bit 17 of pixel_cnt[17:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@N: CL201 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\top.v":183:2:183:7|Trying to extract state machine for register c_state.
 @N: CL159 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\spi_slave.v":28:18:28:21|Input mosi is unused.
-@W: CL190 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\jpeg_data_to_spi.v":187:2:187:7|Optimizing register bit row_y[0] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\jpeg_data_to_spi.v":187:2:187:7|Optimizing register bit row_y[1] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\jpeg_data_to_spi.v":187:2:187:7|Optimizing register bit row_y[2] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\jpeg_data_to_spi.v":187:2:187:7|Optimizing register bit col_x[0] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\jpeg_data_to_spi.v":187:2:187:7|Optimizing register bit col_x[1] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\jpeg_data_to_spi.v":187:2:187:7|Optimizing register bit col_x[2] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL279 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\jpeg_data_to_spi.v":187:2:187:7|Pruning register bits 2 to 0 of col_x[8:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
-@W: CL279 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\jpeg_data_to_spi.v":187:2:187:7|Pruning register bits 2 to 0 of row_y[7:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL190 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\jpeg_data_to_spi.v":189:2:189:7|Optimizing register bit row_y[0] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\jpeg_data_to_spi.v":189:2:189:7|Optimizing register bit row_y[1] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\jpeg_data_to_spi.v":189:2:189:7|Optimizing register bit row_y[2] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\jpeg_data_to_spi.v":189:2:189:7|Optimizing register bit col_x[0] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\jpeg_data_to_spi.v":189:2:189:7|Optimizing register bit col_x[1] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\jpeg_data_to_spi.v":189:2:189:7|Optimizing register bit col_x[2] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL279 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\jpeg_data_to_spi.v":189:2:189:7|Pruning register bits 2 to 0 of col_x[8:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\jpeg_data_to_spi.v":189:2:189:7|Pruning register bits 2 to 0 of row_y[7:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
 @N: CL201 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\jpeg_data_to_spi.v":59:2:59:7|Trying to extract state machine for register c_state.
 Extracted state machine for register c_state
 State machine has 6 reachable states with original encodings of:
@@ -324,15 +326,15 @@ State machine has 6 reachable states with original encodings of:
 @W: CL190 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\jpeg_data_writer.v":88:2:88:7|Optimizing register bit col_x[2] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: CL279 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\jpeg_data_writer.v":88:2:88:7|Pruning register bits 2 to 0 of col_x[8:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
 @W: CL279 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\jpeg_data_writer.v":88:2:88:7|Pruning register bits 2 to 0 of row_y[7:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
-@W: CL190 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":527:2:527:7|Optimizing register bit img_y[0] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":527:2:527:7|Optimizing register bit img_y[1] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":527:2:527:7|Optimizing register bit img_y[2] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":527:2:527:7|Optimizing register bit img_x[0] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":527:2:527:7|Optimizing register bit img_x[1] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":527:2:527:7|Optimizing register bit img_x[2] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL279 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":527:2:527:7|Pruning register bits 2 to 0 of img_x[10:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
-@W: CL279 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":527:2:527:7|Pruning register bits 2 to 0 of img_y[9:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
-@N: CL201 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":294:2:294:7|Trying to extract state machine for register c_state.
+@W: CL190 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":536:2:536:7|Optimizing register bit img_y[0] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":536:2:536:7|Optimizing register bit img_y[1] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":536:2:536:7|Optimizing register bit img_y[2] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":536:2:536:7|Optimizing register bit img_x[0] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":536:2:536:7|Optimizing register bit img_x[1] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":536:2:536:7|Optimizing register bit img_x[2] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL279 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":536:2:536:7|Pruning register bits 2 to 0 of img_x[10:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":536:2:536:7|Pruning register bits 2 to 0 of img_y[9:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@N: CL201 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":303:2:303:7|Trying to extract state machine for register c_state.
 Extracted state machine for register c_state
 State machine has 64 reachable states with original encodings of:
    00000000
@@ -418,15 +420,15 @@ State machine has 16 reachable states with original encodings of:
    001101
    001110
    001111
-@W: CL190 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":152:2:152:7|Optimizing register bit img_y[0] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":152:2:152:7|Optimizing register bit img_y[1] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":152:2:152:7|Optimizing register bit img_y[2] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":152:2:152:7|Optimizing register bit img_x[0] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":152:2:152:7|Optimizing register bit img_x[1] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":152:2:152:7|Optimizing register bit img_x[2] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL279 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":152:2:152:7|Pruning register bits 2 to 0 of img_x[8:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
-@W: CL279 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":152:2:152:7|Pruning register bits 2 to 0 of img_y[7:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
-@N: CL201 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":92:2:92:7|Trying to extract state machine for register c_state.
+@W: CL190 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":192:2:192:7|Optimizing register bit img_y[0] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":192:2:192:7|Optimizing register bit img_y[1] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":192:2:192:7|Optimizing register bit img_y[2] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":192:2:192:7|Optimizing register bit img_x[0] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":192:2:192:7|Optimizing register bit img_x[1] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":192:2:192:7|Optimizing register bit img_x[2] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL279 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":192:2:192:7|Pruning register bits 2 to 0 of img_x[8:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":192:2:192:7|Pruning register bits 2 to 0 of img_y[7:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@N: CL201 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":97:2:97:7|Trying to extract state machine for register c_state.
 Extracted state machine for register c_state
 State machine has 15 reachable states with original encodings of:
    0000
@@ -449,11 +451,11 @@ State machine has 15 reachable states with original encodings of:
 @N: CL159 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\up_spram.v":26:18:26:24|Input reset_n is unused.
 @N: CL159 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\up_spram.v":28:18:28:23|Input wr_clk is unused.
 
-At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 71MB peak: 72MB)
+At c_ver Exit (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:01s; Memory used current: 88MB peak: 101MB)
 
 
 Process completed successfully.
-# Wed Apr 11 14:42:21 2018
+# Mon Apr 23 15:05:29 2018
 
 ###########################################################]
 Synopsys Netlist Linker, version comp2017q2p1, Build 338R, built Nov 10 2017
@@ -464,17 +466,17 @@ At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Wed Apr 11 14:42:21 2018
+# Mon Apr 23 15:05:30 2018
 
 ###########################################################]
 @END
 
-At c_hdl Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 4MB)
+At c_hdl Exit (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:02s; Memory used current: 3MB peak: 4MB)
 
-Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+Process took 0h:00m:07s realtime, 0h:00m:02s cputime
 
 Process completed successfully.
-# Wed Apr 11 14:42:21 2018
+# Mon Apr 23 15:05:30 2018
 
 ###########################################################]
 Synopsys Netlist Linker, version comp2017q2p1, Build 338R, built Nov 10 2017
@@ -486,12 +488,10 @@ At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Wed Apr 11 14:42:23 2018
+# Mon Apr 23 15:05:32 2018
 
 ###########################################################]
-Pre-mapping Report
-
-# Wed Apr 11 14:42:23 2018
+# Mon Apr 23 15:05:32 2018
 
 Synopsys Lattice Technology Pre-mapping, Version maplat, Build 1868R, Built Nov 13 2017 02:40:05
 Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
@@ -516,8 +516,8 @@ Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00
 
 Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 106MB peak: 109MB)
 
-@W: BN132 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1048:2:1048:7|Removing sequential instance je.dcht_bc_rom_a[4:0] because it is equivalent to instance je.dcht_bb_rom_a[4:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1048:2:1048:7|Removing sequential instance je.acht_bc_rom_a[8:0] because it is equivalent to instance je.acht_bb_rom_a[8:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1057:2:1057:7|Removing sequential instance je.dcht_bc_rom_a[4:0] because it is equivalent to instance je.dcht_bb_rom_a[4:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1057:2:1057:7|Removing sequential instance je.acht_bc_rom_a[8:0] because it is equivalent to instance je.acht_bb_rom_a[8:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
 syn_allowed_resources : blockrams=30  set on top level netlist top
 
 Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 138MB peak: 139MB)
@@ -532,13 +532,13 @@ Level     Clock           Frequency     Period        Type         Group        
 --------------------------------------------------------------------------------------------------
 0 -       System          1.0 MHz       1000.000      system       system_clkgroup           0    
                                                                                                   
-0 -       top|pclk        82.1 MHz      12.177        inferred     Autoconstr_clkgroup_0     1375 
+0 -       top|pclk        82.1 MHz      12.177        inferred     Autoconstr_clkgroup_0     1368 
                                                                                                   
 0 -       top|clk_24m     139.8 MHz     7.152         inferred     Autoconstr_clkgroup_1     97   
 ==================================================================================================
 
-@W: MT530 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\sc_fifo.v":87:0:87:5|Found inferred clock top|pclk which controls 1375 sequential elements including yty.yuv_fifo.write_pointer[8:0]. This clock has no specified timing constraint which may adversely impact design performance. 
-@W: MT530 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\ov7670_registers.v":41:4:41:9|Found inferred clock top|clk_24m which controls 97 sequential elements including u_OV7670_Controller.LUT.address[7:0]. This clock has no specified timing constraint which may adversely impact design performance. 
+@W: MT530 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\sc_fifo.v":87:0:87:5|Found inferred clock top|pclk which controls 1368 sequential elements including yty.yuv_fifo.write_pointer[8:0]. This clock has no specified timing constraint which may adversely impact design performance. 
+@W: MT530 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\ov7670_registers.v":43:4:43:9|Found inferred clock top|clk_24m which controls 97 sequential elements including u_OV7670_Controller.LUT.address[7:0]. This clock has no specified timing constraint which may adversely impact design performance. 
 
 Finished Pre Mapping Phase.
 @N: BN225 |Writing default property annotation file E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\radiant_proj\impl_1\radiant_proj_impl_1.sap.
@@ -647,7 +647,7 @@ original code -> new code
    00111101 -> 111101
    00111110 -> 111110
    00111111 -> 111111
-@N: MO225 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":294:2:294:7|There are no possible illegal states for state machine c_state[63:0] (in view: work.jpeg_enc(verilog)); safe FSM implementation is not required.
+@N: MO225 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":303:2:303:7|There are no possible illegal states for state machine c_state[63:0] (in view: work.jpeg_enc(verilog)); safe FSM implementation is not required.
 Encoding state machine c_state[5:0] (in view: work.jpeg_data_to_spi(verilog))
 original code -> new code
    000 -> 000
@@ -669,12 +669,12 @@ Pre-mapping successful!
 At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 54MB peak: 141MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Wed Apr 11 14:42:25 2018
+# Mon Apr 23 15:05:33 2018
 
 ###########################################################]
 Map & Optimize Report
 
-# Wed Apr 11 14:42:25 2018
+# Mon Apr 23 15:05:34 2018
 
 Synopsys Lattice Technology Mapper, Version maplat, Build 1868R, Built Nov 13 2017 02:40:05
 Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
@@ -704,9 +704,9 @@ Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapse
 Available hyper_sources - for debug and ip models
 	None Found
 
-@W: BN132 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":152:2:152:7|Removing sequential instance yty.img_row_rep[7:0] because it is equivalent to instance yty.img_row[7:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":192:2:192:7|Removing sequential instance yty.img_row_rep[7:0] because it is equivalent to instance yty.img_row[7:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: BN132 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\jpeg_data_writer.v":88:2:88:7|Removing sequential instance jedw.row_idx_rep[7:0] because it is equivalent to instance jedw.row_idx[7:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\jpeg_data_to_spi.v":187:2:187:7|Removing sequential instance jdts.row_idx_rep[7:0] because it is equivalent to instance jdts.row_idx[7:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\jpeg_data_to_spi.v":189:2:189:7|Removing sequential instance jdts.row_idx_rep[7:0] because it is equivalent to instance jdts.row_idx[7:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @N: MT206 |Auto Constrain mode is enabled
 @W: FA239 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":175:31:175:57|ROM dcht_bb_rom_data_2[15:5] (in view: work.jpeg_enc_mem(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
 @W: FA239 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":167:31:167:57|ROM dcht_bc_rom_data_2[4:1] (in view: work.jpeg_enc_mem(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
@@ -714,13 +714,13 @@ Available hyper_sources - for debug and ip models
 @N: MO106 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":175:31:175:57|Found ROM .delname. (in view: work.jpeg_enc_mem(verilog)) with 32 words by 11 bits.
 @W: FA239 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":167:31:167:57|ROM dcht_bc_rom_data_2[4:1] (in view: work.jpeg_enc_mem(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
 @N: MO106 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":167:31:167:57|Found ROM .delname. (in view: work.jpeg_enc_mem(verilog)) with 32 words by 4 bits.
-@N: MF236 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1002:92:1002:104|Generating a type sdiv divider 
-@W: FX1039 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\ov7670_registers.v":41:4:41:9|User-specified initial value defined for instance u_OV7670_Controller.LUT.address[7:0] is being ignored. 
-@W: FX1039 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\i2c_interface.v":51:4:51:9|User-specified initial value defined for instance u_OV7670_Controller.I2C.divider[7:0] is being ignored. 
+@N: MF236 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1011:92:1011:104|Generating a type sdiv divider 
+@W: FX1039 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\ov7670_registers.v":43:4:43:9|User-specified initial value defined for instance u_OV7670_Controller.LUT.address[7:0] is being ignored. 
 @W: FX1039 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\i2c_interface.v":51:4:51:9|User-specified initial value defined for instance u_OV7670_Controller.I2C.data_sr[31:1] is being ignored. 
+@W: FX1039 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\i2c_interface.v":51:4:51:9|User-specified initial value defined for instance u_OV7670_Controller.I2C.divider[7:0] is being ignored. 
 @W: FX1039 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\i2c_interface.v":51:4:51:9|User-specified initial value defined for instance u_OV7670_Controller.I2C.busy_sr[31:0] is being ignored. 
 
-Finished RTL optimizations (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 140MB peak: 142MB)
+Finished RTL optimizations (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 143MB peak: 145MB)
 
 Encoding state machine c_state[14:0] (in view: work.yuyv_to_yuv(verilog))
 original code -> new code
@@ -740,8 +740,8 @@ original code -> new code
    1101 -> 1101
    1110 -> 1110
 @W: FX107 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\sc_fifo.v":107:2:107:7|RAM yuv_fifo.fifo[7:0] (in view: work.yuyv_to_yuv(verilog)) does not have a read/write conflict check. Possible simulation mismatch. To resolve a read/write conflict, either set syn_ramstyle = rw_check, or enable the "Read Write Check on RAM" Implementation Option. For more information, search for "read/write conflict check" in Online Help.
-@N: MO231 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":152:2:152:7|Found counter in view:work.yuyv_to_yuv(verilog) instance img_row[7:0] 
-@N: MO231 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":152:2:152:7|Found counter in view:work.yuyv_to_yuv(verilog) instance img_col[8:0] 
+@N: MO231 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":192:2:192:7|Found counter in view:work.yuyv_to_yuv(verilog) instance img_row[7:0] 
+@N: MO231 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":192:2:192:7|Found counter in view:work.yuyv_to_yuv(verilog) instance img_col[8:0] 
 @N: MO231 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\sc_fifo.v":87:0:87:5|Found counter in view:work.yuyv_to_yuv(verilog) instance yuv_fifo.write_pointer[8:0] 
 @N: MO230 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\sc_fifo.v":59:0:59:5|Found up-down counter in view:work.yuyv_to_yuv(verilog) instance yuv_fifo.cnt[9:0]  
 @N: MO231 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\sc_fifo.v":75:0:75:5|Found counter in view:work.yuyv_to_yuv(verilog) instance yuv_fifo.read_pointer[8:0] 
@@ -811,14 +811,14 @@ original code -> new code
    00111101 -> 111101
    00111110 -> 111110
    00111111 -> 111111
-@N: MO225 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":294:2:294:7|There are no possible illegal states for state machine c_state[63:0] (in view: work.jpeg_enc(verilog)); safe FSM implementation is not required.
-@N: MO231 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1427:2:1427:7|Found counter in view:work.jpeg_enc(verilog) instance ac0_idx[6:0] 
-@N: MO231 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":527:2:527:7|Found counter in view:work.jpeg_enc(verilog) instance img_row[9:0] 
-@N: MO231 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1427:2:1427:7|Found counter in view:work.jpeg_enc(verilog) instance ac0_cnt[5:0] 
-@N: MO231 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":527:2:527:7|Found counter in view:work.jpeg_enc(verilog) instance img_col[10:0] 
-@N: MO231 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1396:2:1396:7|Found counter in view:work.jpeg_enc(verilog) instance end0pos[5:0] 
-@N: MO231 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":976:2:976:7|Found counter in view:work.jpeg_enc(verilog) instance qz_cnt[5:0] 
-@W: BN132 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1253:2:1253:7|Removing instance je.cb_bit_cnt[3] because it is equivalent to instance je.cb_bb_mask[7]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@N: MO225 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":303:2:303:7|There are no possible illegal states for state machine c_state[63:0] (in view: work.jpeg_enc(verilog)); safe FSM implementation is not required.
+@N: MO231 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1436:2:1436:7|Found counter in view:work.jpeg_enc(verilog) instance ac0_idx[6:0] 
+@N: MO231 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":536:2:536:7|Found counter in view:work.jpeg_enc(verilog) instance img_row[9:0] 
+@N: MO231 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1436:2:1436:7|Found counter in view:work.jpeg_enc(verilog) instance ac0_cnt[5:0] 
+@N: MO231 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":536:2:536:7|Found counter in view:work.jpeg_enc(verilog) instance img_col[10:0] 
+@N: MO231 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1405:2:1405:7|Found counter in view:work.jpeg_enc(verilog) instance end0pos[5:0] 
+@N: MO231 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":985:2:985:7|Found counter in view:work.jpeg_enc(verilog) instance qz_cnt[5:0] 
+@W: BN132 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1262:2:1262:7|Removing instance je.cb_bit_cnt[3] because it is equivalent to instance je.cb_bb_mask[7]. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: FX107 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":194:2:194:7|RAM dctdu_ram[17:0] (in view: work.jpeg_enc_mem(verilog)) does not have a read/write conflict check. Possible simulation mismatch. To resolve a read/write conflict, either set syn_ramstyle = rw_check, or enable the "Read Write Check on RAM" Implementation Option. For more information, search for "read/write conflict check" in Online Help.
 @W: FX107 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":140:2:140:7|RAM zzdu_ram[14:0] (in view: work.jpeg_enc_mem(verilog)) does not have a read/write conflict check. Possible simulation mismatch. To resolve a read/write conflict, either set syn_ramstyle = rw_check, or enable the "Read Write Check on RAM" Implementation Option. For more information, search for "read/write conflict check" in Online Help.
 @W: FX107 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":118:2:118:7|RAM du_ram[7:0] (in view: work.jpeg_enc_mem(verilog)) does not have a read/write conflict check. Possible simulation mismatch. To resolve a read/write conflict, either set syn_ramstyle = rw_check, or enable the "Read Write Check on RAM" Implementation Option. For more information, search for "read/write conflict check" in Online Help.
@@ -856,54 +856,54 @@ original code -> new code
    011 -> 011
    100 -> 100
    101 -> 101
-@N: MO231 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\jpeg_data_to_spi.v":187:2:187:7|Found counter in view:work.jpeg_data_to_spi(verilog) instance row_idx[7:0] 
-@N: MO231 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\jpeg_data_to_spi.v":187:2:187:7|Found counter in view:work.jpeg_data_to_spi(verilog) instance col_idx[8:0] 
+@N: MO231 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\jpeg_data_to_spi.v":189:2:189:7|Found counter in view:work.jpeg_data_to_spi(verilog) instance row_idx[7:0] 
+@N: MO231 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\jpeg_data_to_spi.v":189:2:189:7|Found counter in view:work.jpeg_data_to_spi(verilog) instance col_idx[8:0] 
 @N: MO231 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\jpeg_data_to_spi.v":107:2:107:7|Found counter in view:work.jpeg_data_to_spi(verilog) instance hd_addr_reg[9:0] 
-@N: MO231 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\ov7670_registers.v":41:4:41:9|Found counter in view:work.OV7670_Registers(verilog) instance address[7:0] 
+@N: MO231 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\ov7670_registers.v":43:4:43:9|Found counter in view:work.OV7670_Registers(verilog) instance address[7:0] 
 
-Starting factoring (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 150MB peak: 154MB)
+Starting factoring (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 151MB peak: 154MB)
 
 @W: BN132 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":162:2:162:7|Removing instance je.ram_rom.dcht_bc_rom_data[3] because it is equivalent to instance je.ram_rom.dcht_bb_rom_data[7]. To keep the instance, apply constraint syn_preserve=1 on the instance.
 
-Finished factoring (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:04s; Memory used current: 169MB peak: 171MB)
+Finished factoring (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:04s; Memory used current: 166MB peak: 172MB)
 
-@W: BN132 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":266:2:266:7|Removing sequential instance je.dct.tmp22_rep[17:15] because it is equivalent to instance je.dct.tmp22[17:15]. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: BN132 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":200:2:200:7|Removing sequential instance je.dct.tmp5_rep[17:15] because it is equivalent to instance je.dct.tmp5[17:15]. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: BN132 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":200:2:200:7|Removing sequential instance je.dct.tmp1_rep[17:15] because it is equivalent to instance je.dct.tmp1[17:15]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":266:2:266:7|Removing sequential instance je.dct.tmp21_rep[17:15] because it is equivalent to instance je.dct.tmp21[17:15]. To keep the instance, apply constraint syn_preserve=1 on the instance.
 
-Starting gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 161MB peak: 171MB)
-
-
-Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 161MB peak: 171MB)
+Starting gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 160MB peak: 172MB)
 
 
-Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:05s; Memory used current: 159MB peak: 171MB)
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 160MB peak: 172MB)
 
 
-Starting Early Timing Optimization (Real Time elapsed 0h:00m:09s; CPU Time elapsed 0h:00m:08s; Memory used current: 161MB peak: 171MB)
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:06s; Memory used current: 159MB peak: 172MB)
 
 
-Finished Early Timing Optimization (Real Time elapsed 0h:00m:12s; CPU Time elapsed 0h:00m:12s; Memory used current: 162MB peak: 171MB)
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:09s; CPU Time elapsed 0h:00m:08s; Memory used current: 161MB peak: 172MB)
 
 
-Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:13s; CPU Time elapsed 0h:00m:12s; Memory used current: 160MB peak: 171MB)
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:12s; CPU Time elapsed 0h:00m:12s; Memory used current: 162MB peak: 172MB)
 
-@N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":115:30:115:54|Initial value je.ram_rom.header_rom_data_2_0_0.INIT_00 = 6003244406620625060320642152704143365230246424420424153110645173.
-@N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":115:30:115:54|Initial value je.ram_rom.header_rom_data_2_0_0.INIT_01 = 2471241624100277027042524215402225642442341517330264024242416024.
-@N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":115:30:115:54|Initial value je.ram_rom.header_rom_data_2_0_0.INIT_02 = 2531305621414362432443030745146225252502205502734360421742110477.
-@N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":115:30:115:54|Initial value je.ram_rom.header_rom_data_2_0_0.INIT_03 = 3161604260145332176516531615143230753142714052365320164607500537.
-@N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":115:30:115:54|Initial value je.ram_rom.header_rom_data_2_0_0.INIT_04 = 7115532207650743070505220075206160426114422216751653171404231174.
-@N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":115:30:115:54|Initial value je.ram_rom.header_rom_data_2_0_0.INIT_05 = 0321030247450122012420752007214003230324025656000122417074646153.
-@N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":115:30:115:54|Initial value je.ram_rom.header_rom_data_2_0_0.INIT_06 = 0122012001022120210221000322032013031211112301203021210321011223.
-@N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":115:30:115:54|Initial value je.ram_rom.header_rom_data_2_0_0.INIT_07 = 2102210003220320030203000122012001022120210221000322032003020300.
-@N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":115:30:115:54|Initial value je.ram_rom.header_rom_data_2_0_0.INIT_08 = 0100010001000102010201020102010201020102010201020122010001022120.
-@N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":115:30:115:54|Initial value je.ram_rom.header_rom_data_2_0_0.INIT_09 = 0011100220232020200231110322032003020300012201200102010001000100.
-@N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":115:30:115:54|Initial value je.ram_rom.header_rom_data_2_0_0.INIT_0A = 0001032211310003000102110201020302320200002302010211002001020020.
-@N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":115:30:115:54|Initial value je.ram_rom.header_rom_data_2_0_0.INIT_0B = 0022000200020222000200030021022100030003020303010003002200200012.
-@N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":115:30:115:54|Initial value je.ram_rom.header_rom_data_2_0_0.INIT_0C = 0202000010311032102330020113011201030102003102102001000200200020.
-@N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":115:30:115:54|Initial value je.ram_rom.header_rom_data_2_0_0.INIT_0D = 0223132120212002200003220102030301030211030002302031001300210030.
-@N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":115:30:115:54|Initial value je.ram_rom.header_rom_data_2_0_0.INIT_0E = 2012211102230221021303100023202120032010032302210302202020132010.
-@N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":115:30:115:54|Initial value je.ram_rom.header_rom_data_2_0_0.INIT_0F = 2102200002230230030302010023203020133000022302210203021001222021.
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:13s; CPU Time elapsed 0h:00m:12s; Memory used current: 160MB peak: 172MB)
+
+@N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":115:30:115:54|Initial value je.ram_rom.header_rom_data_2_0_0.INIT_00 = 1774533371157152717457135625073634412547531353357353624667132604.
+@N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":115:30:115:54|Initial value je.ram_rom.header_rom_data_2_0_0.INIT_01 = 5306536153677500750735253562375552135335436260447513753535361753.
+@N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":115:30:115:54|Initial value je.ram_rom.header_rom_data_2_0_0.INIT_02 = 5246472156363415345334747032631552525275572275043417356035667300.
+@N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":115:30:115:54|Initial value je.ram_rom.header_rom_data_2_0_0.INIT_03 = 4616173517632445601261246162634547024635063725412457613170277240.
+@N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":115:30:115:54|Initial value je.ram_rom.header_rom_data_2_0_0.INIT_04 = 0662245570127034707272557702571617351663355561026124606373546603.
+@N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":115:30:115:54|Initial value je.ram_rom.header_rom_data_2_0_0.INIT_05 = 3012747530327655765357025770563774547453752121777655360703131624.
+@N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":115:30:115:54|Initial value je.ram_rom.header_rom_data_2_0_0.INIT_06 = 3211321332311213123112333011301320302122221032130312123012322110.
+@N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":115:30:115:54|Initial value je.ram_rom.header_rom_data_2_0_0.INIT_07 = 1231123330113013303130333211321332311213123112333011301330313033.
+@N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":115:30:115:54|Initial value je.ram_rom.header_rom_data_2_0_0.INIT_08 = 3233323332333231323132313231323132313231323132313211323332311213.
+@N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":115:30:115:54|Initial value je.ram_rom.header_rom_data_2_0_0.INIT_09 = 3333233113101313133102223011301330313033321132133231323332333233.
+@N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":115:30:115:54|Initial value je.ram_rom.header_rom_data_2_0_0.INIT_0A = 3332301122023330333231223132313031013133331031323122331333302313.
+@N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":115:30:115:54|Initial value je.ram_rom.header_rom_data_2_0_0.INIT_0B = 3311333133313111333133303312311233303330313030323330331133133321.
+@N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":115:30:115:54|Initial value je.ram_rom.header_rom_data_2_0_0.INIT_0C = 3131333323022301231003313220322132303231330231231332333133133313.
+@N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":115:30:115:54|Initial value je.ram_rom.header_rom_data_2_0_0.INIT_0D = 3110201213121331133330113231303032303122303331031302332033123303.
+@N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":115:30:115:54|Initial value je.ram_rom.header_rom_data_2_0_0.INIT_0E = 1321122231103112312030233310131213301323301031123031131313201323.
+@N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":115:30:115:54|Initial value je.ram_rom.header_rom_data_2_0_0.INIT_0F = 1231133331103103303031323310130313200333311031123130312332111312.
 @N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":115:30:115:54|Initial value je.ram_rom.header_rom_data_2_0_1.INIT_00 = 4020402040204020402040024102054605460546044504443554177717651573.
 @N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":115:30:115:54|Initial value je.ram_rom.header_rom_data_2_0_1.INIT_01 = 4240424042404240424042044204420450264026512751374026402640224020.
 @N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":115:30:115:54|Initial value je.ram_rom.header_rom_data_2_0_1.INIT_02 = 4620462046204264426442644264426442464246424642464242424242424242.
@@ -914,7 +914,7 @@ Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:13s; CP
 @N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":115:30:115:54|Initial value je.ram_rom.header_rom_data_2_0_1.INIT_07 = 2223222322232223222322232223222322232221222122212221222122212221.
 @N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":115:30:115:54|Initial value je.ram_rom.header_rom_data_2_0_1.INIT_08 = 0001000100010001000100010001000100010001000100010001000100012223.
 @N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":115:30:115:54|Initial value je.ram_rom.header_rom_data_2_0_1.INIT_09 = 0000000200010000110011110001000100010001000100010001000100010001.
-@N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":115:30:115:54|Initial value je.ram_rom.header_rom_data_2_0_1.INIT_0A = 0000132211110000000100000000000100000000000100000000000000000000.
+@N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":115:30:115:54|Initial value je.ram_rom.header_rom_data_2_0_1.INIT_0A = 0000132211110000000100000000000100000000000100000000010000001100.
 @N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":115:30:115:54|Initial value je.ram_rom.header_rom_data_2_0_1.INIT_0B = 0002022202200000020202000002000000220020000000000002000000001010.
 @N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":115:30:115:54|Initial value je.ram_rom.header_rom_data_2_0_1.INIT_0C = 0002222302020022002000002200202220202002020000020000200000220020.
 @N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":115:30:115:54|Initial value je.ram_rom.header_rom_data_2_0_1.INIT_0D = 0020013100020002000200022222002022200022002000020000220202220220.
@@ -976,7 +976,7 @@ Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:13s; CP
 @N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":159:29:159:51|Initial value je.ram_rom.zzidx_rom_data_2_0_0.INIT_03 = 003F003E003A00390031003000240023003D003B00380032002F002500220015.
 @N: FX211 |Packed ROM je.ram_rom.zzidx_rom_data_2_0[5:0] (6 input, 6 output) to Block SelectRAM 
 @N: MO106 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":137:29:137:51|Found ROM .delname. (in view: work.top(verilog)) with 128 words by 8 bits.
-@N: MO106 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\ov7670_registers.v":49:8:49:11|Found ROM .delname. (in view: work.top(verilog)) with 61 words by 16 bits.
+@N: MO106 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\ov7670_registers.v":51:8:51:11|Found ROM .delname. (in view: work.top(verilog)) with 62 words by 16 bits.
 @N: BN362 :|Removing sequential instance je.ram_rom.zzidx_rom_data_2_0_0_OLD_0[0] (in view: work.top(verilog)) because it does not drive other instances.
 @N: BN362 :|Removing sequential instance je.ram_rom.zzidx_rom_data_2_0_0_OLD_0[1] (in view: work.top(verilog)) because it does not drive other instances.
 @N: BN362 :|Removing sequential instance je.ram_rom.zzidx_rom_data_2_0_0_OLD_0[2] (in view: work.top(verilog)) because it does not drive other instances.
@@ -1043,7 +1043,7 @@ Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:13s; CP
 @N: BN362 :|Removing sequential instance je.ram_rom.zzidx_rom_data_2_0_0_OLD[7] (in view: work.top(verilog)) because it does not drive other instances.
 @N: BN362 :|Removing sequential instance je.ram_rom.zzidx_rom_data_2_0_0_OLD[6] (in view: work.top(verilog)) because it does not drive other instances.
 
-Finished preparing to map (Real Time elapsed 0h:00m:15s; CPU Time elapsed 0h:00m:14s; Memory used current: 163MB peak: 171MB)
+Finished preparing to map (Real Time elapsed 0h:00m:14s; CPU Time elapsed 0h:00m:14s; Memory used current: 162MB peak: 172MB)
 
 @N: BN362 :|Removing sequential instance je.ram_rom.zzidx_rom_data_2_0_0_OLD[0] (in view: work.top(verilog)) because it does not drive other instances.
 @N: BN362 :|Removing sequential instance je.ram_rom.zzidx_rom_data_2_0_0_OLD[1] (in view: work.top(verilog)) because it does not drive other instances.
@@ -1060,46 +1060,249 @@ Finished preparing to map (Real Time elapsed 0h:00m:15s; CPU Time elapsed 0h:00m
 @N: BN362 :|Removing sequential instance je.ram_rom.header_rom_data_2_0_0_OLD[2] (in view: work.top(verilog)) because it does not drive other instances.
 @N: BN362 :|Removing sequential instance je.ram_rom.header_rom_data_2_0_0_OLD[3] (in view: work.top(verilog)) because it does not drive other instances.
 
-Finished technology mapping (Real Time elapsed 0h:00m:17s; CPU Time elapsed 0h:00m:16s; Memory used current: 227MB peak: 231MB)
+Finished technology mapping (Real Time elapsed 0h:00m:16s; CPU Time elapsed 0h:00m:15s; Memory used current: 227MB peak: 231MB)
 
 Pass		 CPU time		Worst Slack		Luts / Registers
 ------------------------------------------------------------
-   1		0h:00m:16s		   -23.72ns		3232 /      1287
-   2		0h:00m:16s		   -23.72ns		3149 /      1287
-   3		0h:00m:16s		    -2.05ns		3145 /      1287
-@N: FX271 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\i2c_interface.v":61:19:61:41|Replicating instance u_OV7670_Controller.I2C.taken_temp_0_sqmuxa_1 (in view: work.top(verilog)) with 33 loads 1 time to improve timing.
-@N: FX271 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\i2c_interface.v":51:4:51:9|Replicating instance u_OV7670_Controller.I2C.divider[0] (in view: work.top(verilog)) with 35 loads 2 times to improve timing.
-@N: FX271 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\ov7670_registers.v":41:4:41:9|Replicating instance u_OV7670_Controller.LUT.address[0] (in view: work.top(verilog)) with 49 loads 3 times to improve timing.
-@N: FX271 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\ov7670_registers.v":41:4:41:9|Replicating instance u_OV7670_Controller.LUT.address[2] (in view: work.top(verilog)) with 52 loads 3 times to improve timing.
-@N: FX271 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\ov7670_registers.v":41:4:41:9|Replicating instance u_OV7670_Controller.LUT.address[1] (in view: work.top(verilog)) with 47 loads 3 times to improve timing.
-@N: FX271 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\ov7670_registers.v":41:4:41:9|Replicating instance u_OV7670_Controller.LUT.address[4] (in view: work.top(verilog)) with 45 loads 3 times to improve timing.
-@N: FX271 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\ov7670_registers.v":41:4:41:9|Replicating instance u_OV7670_Controller.LUT.address[5] (in view: work.top(verilog)) with 41 loads 3 times to improve timing.
-@N: FX271 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\ov7670_registers.v":41:4:41:9|Replicating instance u_OV7670_Controller.LUT.address[3] (in view: work.top(verilog)) with 40 loads 3 times to improve timing.
-@N: FX271 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":137:29:137:51|Replicating instance je.ram_rom.fdtbl_rom_data_2_0_dreg[0] (in view: work.top(verilog)) with 49 loads 2 times to improve timing.
-@N: FX271 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":137:29:137:51|Replicating instance je.ram_rom.fdtbl_rom_data_2_0_dreg[7] (in view: work.top(verilog)) with 29 loads 2 times to improve timing.
+   1		0h:00m:16s		   -10.90ns		3503 /      1337
+   2		0h:00m:16s		    -9.09ns		3408 /      1396
+   3		0h:00m:16s		    -9.00ns		3402 /      1396
+   4		0h:00m:16s		    -9.00ns		3401 /      1396
+@N: FX271 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\top.v":282:11:282:12|Replicating instance je.QNT_DU_ret_116[0] (in view: work.top(verilog)) with 19 loads 1 time to improve timing.
 Timing driven replication report
-Added 24 Registers via timing driven replication
-Added 7 LUTs via timing driven replication
+Added 1 Registers via timing driven replication
+Added 0 LUTs via timing driven replication
 
-   4		0h:00m:18s		    -1.30ns		3163 /      1311
+   5		0h:00m:17s		   -13.14ns		3410 /      1423
+   6		0h:00m:17s		   -13.14ns		3411 /      1423
+   7		0h:00m:17s		   -13.14ns		3413 /      1423
 
 
-   5		0h:00m:19s		    -1.30ns		3160 /      1311
-@A: BN291 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\spi_slave.v":128:2:128:7|Boundary register esp32_spi.data_to_send_buf[7] (in view: work.top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
-@A: BN291 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\spi_slave.v":128:2:128:7|Boundary register esp32_spi.data_to_send_buf[6] (in view: work.top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
-@A: BN291 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\spi_slave.v":128:2:128:7|Boundary register esp32_spi.data_to_send_buf[5] (in view: work.top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
-@A: BN291 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\spi_slave.v":128:2:128:7|Boundary register esp32_spi.data_to_send_buf[4] (in view: work.top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
-@A: BN291 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\spi_slave.v":128:2:128:7|Boundary register esp32_spi.data_to_send_buf[3] (in view: work.top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
-@A: BN291 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\spi_slave.v":128:2:128:7|Boundary register esp32_spi.data_to_send_buf[2] (in view: work.top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
-@A: BN291 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\spi_slave.v":128:2:128:7|Boundary register esp32_spi.data_to_send_buf[1] (in view: work.top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
-@A: BN291 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\spi_slave.v":128:2:128:7|Boundary register esp32_spi.data_to_send_buf[0] (in view: work.top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
-@A: BN291 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\top.v":135:2:135:7|Boundary register pixel_wr_disable (in view: work.top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+   8		0h:00m:18s		    -8.58ns		3503 /      1423
+   9		0h:00m:18s		    -8.58ns		3504 /      1423
+@N: MF322 |Retiming summary: 30 registers retimed to 173 
 
-Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:23s; CPU Time elapsed 0h:00m:21s; Memory used current: 230MB peak: 232MB)
+		#####  BEGIN RETIMING REPORT  #####
 
-@W: MT453 |clock period is too long for clock top|clk_24m, changing period from 402402.0 to 20000.0 ns, rise from 0.0 ns to 0.0 ns, and fall from 201201.0 ns to 10000.0 ns. 
+Retiming summary : 30 registers retimed to 173
 
-Finished restoring hierarchy (Real Time elapsed 0h:00m:23s; CPU Time elapsed 0h:00m:22s; Memory used current: 231MB peak: 232MB)
+Original and Pipelined registers replaced by retiming :
+		je.QNT_DU[0]
+		je.QNT_DU[1]
+		je.QNT_DU[2]
+		je.QNT_DU[3]
+		je.QNT_DU[4]
+		je.QNT_DU[5]
+		je.QNT_DU[6]
+		je.QNT_DU[7]
+		je.QNT_DU[8]
+		je.QNT_DU[9]
+		je.QNT_DU[10]
+		je.QNT_DU[11]
+		je.QNT_DU[12]
+		je.QNT_DU[13]
+		je.QNT_DU[14]
+		je.ram_rom.fdtbl_rom_data_2_0_dreg[7]
+		u_OV7670_Controller.LUT.sreg[0]
+		u_OV7670_Controller.LUT.sreg[1]
+		u_OV7670_Controller.LUT.sreg[2]
+		u_OV7670_Controller.LUT.sreg[3]
+		u_OV7670_Controller.LUT.sreg[4]
+		u_OV7670_Controller.LUT.sreg[5]
+		u_OV7670_Controller.LUT.sreg[6]
+		u_OV7670_Controller.LUT.sreg[7]
+		u_OV7670_Controller.LUT.sreg[8]
+		u_OV7670_Controller.LUT.sreg[9]
+		u_OV7670_Controller.LUT.sreg[10]
+		u_OV7670_Controller.LUT.sreg[11]
+		u_OV7670_Controller.LUT.sreg[12]
+		u_OV7670_Controller.LUT.sreg[13]
+
+New registers created by retiming :
+		je.QNT_DU_ret
+		je.QNT_DU_ret_0
+		je.QNT_DU_ret_1
+		je.QNT_DU_ret_2
+		je.QNT_DU_ret_3
+		je.QNT_DU_ret_4
+		je.QNT_DU_ret_5
+		je.QNT_DU_ret_6
+		je.QNT_DU_ret_7
+		je.QNT_DU_ret_8
+		je.QNT_DU_ret_9
+		je.QNT_DU_ret_10
+		je.QNT_DU_ret_11
+		je.QNT_DU_ret_12[1]
+		je.QNT_DU_ret_12[2]
+		je.QNT_DU_ret_12[3]
+		je.QNT_DU_ret_12[4]
+		je.QNT_DU_ret_12[5]
+		je.QNT_DU_ret_12[6]
+		je.QNT_DU_ret_12[7]
+		je.QNT_DU_ret_15
+		je.QNT_DU_ret_73[1]
+		je.QNT_DU_ret_73[2]
+		je.QNT_DU_ret_73[3]
+		je.QNT_DU_ret_73[4]
+		je.QNT_DU_ret_73[5]
+		je.QNT_DU_ret_73[6]
+		je.QNT_DU_ret_73[7]
+		je.QNT_DU_ret_73[8]
+		je.QNT_DU_ret_73[9]
+		je.QNT_DU_ret_73[10]
+		je.QNT_DU_ret_73[11]
+		je.QNT_DU_ret_73[12]
+		je.QNT_DU_ret_73[13]
+		je.QNT_DU_ret_73[14]
+		je.QNT_DU_ret_73[15]
+		je.QNT_DU_ret_73[16]
+		je.QNT_DU_ret_73[17]
+		je.QNT_DU_ret_77[0]
+		je.QNT_DU_ret_77[1]
+		je.QNT_DU_ret_77[2]
+		je.QNT_DU_ret_77[3]
+		je.QNT_DU_ret_101
+		je.QNT_DU_ret_104
+		je.QNT_DU_ret_116[0]
+		je.QNT_DU_ret_116[1]
+		je.QNT_DU_ret_116[2]
+		je.QNT_DU_ret_116[3]
+		je.QNT_DU_ret_116[4]
+		je.QNT_DU_ret_116[5]
+		je.QNT_DU_ret_116[6]
+		je.QNT_DU_ret_116[7]
+		je.QNT_DU_ret_116_fast[0]
+		je.QNT_DU_ret_126
+		je.QNT_DU_ret_133
+		je.QNT_DU_ret_136
+		je.QNT_DU_ret_139
+		je.QNT_DU_ret_142
+		je.QNT_DU_ret_145
+		je.QNT_DU_ret_416
+		je.QNT_DU_ret_416[0]
+		je.QNT_DU_ret_416[1]
+		je.QNT_DU_ret_416[2]
+		je.ram_rom.QNT_DU_ret_425
+		je.un5_QNT_DU.QNT_DU_ret
+		je.un5_QNT_DU.QNT_DU_ret_1
+		je.un5_QNT_DU.QNT_DU_ret_3
+		je.un5_QNT_DU.QNT_DU_ret_5
+		je.un5_QNT_DU.QNT_DU_ret_8
+		je.un5_QNT_DU.QNT_DU_ret_10
+		je.un5_QNT_DU.QNT_DU_ret_12
+		je.un5_QNT_DU.QNT_DU_ret_14
+		je.un5_QNT_DU.QNT_DU_ret_15
+		je.un5_QNT_DU.QNT_DU_ret_16
+		je.un5_QNT_DU.QNT_DU_ret_17
+		je.un5_QNT_DU.QNT_DU_ret_18
+		je.un5_QNT_DU.QNT_DU_ret_19
+		je.un5_QNT_DU.QNT_DU_ret_20
+		je.un5_QNT_DU.QNT_DU_ret_21
+		je.un5_QNT_DU.QNT_DU_ret_22
+		je.un5_QNT_DU.QNT_DU_ret_23
+		je.un5_QNT_DU.QNT_DU_ret_24
+		je.un5_QNT_DU.QNT_DU_ret_25
+		je.un5_QNT_DU.QNT_DU_ret_26
+		je.un5_QNT_DU.QNT_DU_ret_77
+		je.un5_QNT_DU.QNT_DU_ret_415
+		je.un5_QNT_DU.QNT_DU_ret_416
+		je.un5_QNT_DU.QNT_DU_ret_425
+		je.un5_QNT_DU.QNT_DU_ret_426
+		je.un5_QNT_DU.QNT_DU_ret_427
+		je.un5_QNT_DU.QNT_DU_ret_428
+		je.un5_QNT_DU.QNT_DU_ret_429
+		je.un5_QNT_DU.QNT_DU_ret_430
+		je.un5_QNT_DU.QNT_DU_ret_431
+		je.un5_QNT_DU.QNT_DU_ret_432
+		je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret
+		je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_0
+		je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_2
+		je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_3
+		je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_4
+		je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_5
+		je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_7
+		je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_8
+		je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_9
+		je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_10
+		je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_11
+		je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_12
+		je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_14
+		je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_15
+		je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_16
+		je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_17
+		je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_18
+		je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_21
+		je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_22
+		je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_23
+		je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_24
+		u_OV7670_Controller.LUT.sreg_3_15_0_.address_ret
+		u_OV7670_Controller.LUT.sreg_3_15_0_.sreg_ret
+		u_OV7670_Controller.LUT.sreg_3_15_0_.sreg_ret_1
+		u_OV7670_Controller.LUT.sreg_3_15_0_.sreg_ret_2
+		u_OV7670_Controller.LUT.sreg_3_15_0_.sreg_ret_3
+		u_OV7670_Controller.LUT.sreg_3_15_0_.sreg_ret_4
+		u_OV7670_Controller.LUT.sreg_3_15_0_.sreg_ret_5
+		u_OV7670_Controller.LUT.sreg_3_15_0_.sreg_ret_6
+		u_OV7670_Controller.LUT.sreg_3_15_0_.sreg_ret_7
+		u_OV7670_Controller.LUT.sreg_3_15_0_.sreg_ret_8
+		u_OV7670_Controller.LUT.sreg_3_15_0_.sreg_ret_9
+		u_OV7670_Controller.LUT.sreg_3_15_0_.sreg_ret_10
+		u_OV7670_Controller.LUT.sreg_3_15_0_.sreg_ret_11
+		u_OV7670_Controller.LUT.sreg_3_15_0_.sreg_ret_12
+		u_OV7670_Controller.LUT.sreg_3_15_0_.sreg_ret_13
+		u_OV7670_Controller.LUT.sreg_3_15_0_.sreg_ret_14
+		u_OV7670_Controller.LUT.sreg_3_15_0_.sreg_ret_15
+		u_OV7670_Controller.LUT.sreg_3_15_0_.sreg_ret_16
+		u_OV7670_Controller.LUT.sreg_3_15_0_.sreg_ret_17
+		u_OV7670_Controller.LUT.sreg_3_15_0_.sreg_ret_18
+		u_OV7670_Controller.LUT.sreg_3_15_0_.sreg_ret_19
+		u_OV7670_Controller.LUT.sreg_3_15_0_.sreg_ret_20
+		u_OV7670_Controller.LUT.sreg_3_15_0_.sreg_ret_21
+		u_OV7670_Controller.LUT.sreg_3_15_0_.sreg_ret_22
+		u_OV7670_Controller.LUT.sreg_3_15_0_.sreg_ret_23
+		u_OV7670_Controller.LUT.sreg_3_15_0_.sreg_ret_24
+		u_OV7670_Controller.LUT.sreg_3_15_0_.sreg_ret_25
+		u_OV7670_Controller.LUT.sreg_3_15_0_.sreg_ret_26
+		u_OV7670_Controller.LUT.sreg_3_15_0_.sreg_ret_27
+		u_OV7670_Controller.LUT.sreg_ret
+		u_OV7670_Controller.LUT.sreg_ret_1
+		u_OV7670_Controller.LUT.sreg_ret_2
+		u_OV7670_Controller.LUT.sreg_ret_3
+		u_OV7670_Controller.LUT.sreg_ret_4
+		u_OV7670_Controller.LUT.sreg_ret_5
+		u_OV7670_Controller.LUT.sreg_ret_6
+		u_OV7670_Controller.LUT.sreg_ret_7
+		u_OV7670_Controller.LUT.sreg_ret_8
+		u_OV7670_Controller.LUT.sreg_ret_9
+		u_OV7670_Controller.LUT.sreg_ret_10
+		u_OV7670_Controller.LUT.sreg_ret_11
+		u_OV7670_Controller.LUT.sreg_ret_12
+		u_OV7670_Controller.LUT.sreg_ret_13
+		u_OV7670_Controller.LUT.sreg_ret_14
+		u_OV7670_Controller.LUT.sreg_ret_15
+		u_OV7670_Controller.LUT.sreg_ret_16
+		u_OV7670_Controller.LUT.sreg_ret_17
+		u_OV7670_Controller.LUT.sreg_ret_18
+		u_OV7670_Controller.LUT.sreg_ret_19
+		u_OV7670_Controller.LUT.sreg_ret_20
+		u_OV7670_Controller.LUT.sreg_ret_21
+		u_OV7670_Controller.LUT.sreg_ret_22
+		u_OV7670_Controller.LUT.sreg_ret_23
+		u_OV7670_Controller.LUT.sreg_ret_24
+		u_OV7670_Controller.LUT.sreg_ret_25
+		u_OV7670_Controller.LUT.sreg_ret_26
+		u_OV7670_Controller.LUT.sreg_ret_27
+
+
+		#####   END RETIMING REPORT  #####
+
+@A: BN291 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\top.v":175:2:175:7|Boundary register pixel_wr_disable (in view: work.top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:21s; CPU Time elapsed 0h:00m:20s; Memory used current: 227MB peak: 231MB)
+
+@W: MT453 |clock period is too long for clock top|clk_24m, changing period from 104712.0 to 20000.0 ns, rise from 0.0 ns to 0.0 ns, and fall from 52356.0 ns to 10000.0 ns. 
+
+Finished restoring hierarchy (Real Time elapsed 0h:00m:21s; CPU Time elapsed 0h:00m:21s; Memory used current: 229MB peak: 231MB)
 
 
 
@@ -1109,57 +1312,57 @@ Finished restoring hierarchy (Real Time elapsed 0h:00m:23s; CPU Time elapsed 0h:
 #### START OF CLOCK OPTIMIZATION REPORT #####[
 
 Clock optimization not enabled
-1 non-gated/non-generated clock tree(s) driving 1210 clock pin(s) of sequential element(s)
-1 gated/generated clock tree(s) driving 117 clock pin(s) of sequential element(s)
-0 instances converted, 117 sequential instances remain driven by gated/generated clocks
+1 non-gated/non-generated clock tree(s) driving 1299 clock pin(s) of sequential element(s)
+1 gated/generated clock tree(s) driving 140 clock pin(s) of sequential element(s)
+0 instances converted, 140 sequential instances remain driven by gated/generated clocks
 
 =========================== Non-Gated/Non-Generated Clocks ============================
 Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance
 ---------------------------------------------------------------------------------------
-@K:CKID0002       pclk                port                   1210       q_href         
+@K:CKID0002       pclk                port                   1299       q_href         
 =======================================================================================
 ============================================================================================================ Gated/Generated Clocks =============================================================================================================
 Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance                            Explanation                                                                                                                   
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-@K:CKID0001       u_HSOSC             HSOSC                  117        u_OV7670_Controller.I2C.busy_sr_ess[1]     Gating structure creates improper gating logic. See the Gated Clocks description in the user guide for conversion requirements
+@K:CKID0001       u_HSOSC             HSOSC                  140        u_OV7670_Controller.I2C.busy_sr_ess[1]     Gating structure creates improper gating logic. See the Gated Clocks description in the user guide for conversion requirements
 =================================================================================================================================================================================================================================================
 
 
 ##### END OF CLOCK OPTIMIZATION REPORT ######]
 
 
-Start Writing Netlists (Real Time elapsed 0h:00m:24s; CPU Time elapsed 0h:00m:22s; Memory used current: 197MB peak: 232MB)
+Start Writing Netlists (Real Time elapsed 0h:00m:22s; CPU Time elapsed 0h:00m:21s; Memory used current: 194MB peak: 231MB)
 
 Writing Analyst data base E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\radiant_proj\impl_1\synwork\radiant_proj_impl_1_m.srm
 
-Finished Writing Netlist Databases (Real Time elapsed 0h:00m:24s; CPU Time elapsed 0h:00m:23s; Memory used current: 229MB peak: 232MB)
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:22s; CPU Time elapsed 0h:00m:21s; Memory used current: 229MB peak: 232MB)
 
 Writing constraint files
 
-Finished Writing constraint files (Real Time elapsed 0h:00m:25s; CPU Time elapsed 0h:00m:23s; Memory used current: 229MB peak: 232MB)
+Finished Writing constraint files (Real Time elapsed 0h:00m:23s; CPU Time elapsed 0h:00m:22s; Memory used current: 229MB peak: 232MB)
 
 Writing Verilog Simulation files
 Writing XDC file E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\radiant_proj\impl_1\radiant_proj_impl_1.xdc
 
-Finished Writing Verilog Simulation files (Real Time elapsed 0h:00m:26s; CPU Time elapsed 0h:00m:24s; Memory used current: 225MB peak: 232MB)
+Finished Writing Verilog Simulation files (Real Time elapsed 0h:00m:23s; CPU Time elapsed 0h:00m:22s; Memory used current: 224MB peak: 232MB)
 
 
-Start final timing analysis (Real Time elapsed 0h:00m:26s; CPU Time elapsed 0h:00m:24s; Memory used current: 224MB peak: 232MB)
+Start final timing analysis (Real Time elapsed 0h:00m:23s; CPU Time elapsed 0h:00m:22s; Memory used current: 223MB peak: 232MB)
 
-@W: MT246 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\top.v":193:9:193:15|Blackbox HSOSC is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) 
+@W: MT246 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\top.v":233:9:233:15|Blackbox HSOSC is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) 
 @W: MT246 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":299:40:299:48|Blackbox MAC16 is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) 
 @W: MT246 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\up_spram.v":105:9:105:16|Blackbox SP256K is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) 
-@W: MT420 |Found inferred clock top|pclk with period 40.24ns. Please declare a user-defined clock on object "p:pclk"
+@W: MT420 |Found inferred clock top|pclk with period 10.47ns. Please declare a user-defined clock on object "p:pclk"
 @W: MT420 |Found inferred clock top|clk_24m with period 7.47ns. Please declare a user-defined clock on object "n:clk_24m"
 
 
 ##### START OF TIMING REPORT #####[
-# Timing Report written on Wed Apr 11 14:42:52 2018
+# Timing Report written on Mon Apr 23 15:05:58 2018
 #
 
 
 Top view:               top
-Requested Frequency:    24.9 MHz
+Requested Frequency:    95.5 MHz
 Wire load mode:         top
 Paths requested:        5
 Constraint File(s):    
@@ -1173,14 +1376,14 @@ Performance Summary
 *******************
 
 
-Worst slack in design: -2.753
+Worst slack in design: -3.719
 
                    Requested     Estimated     Requested     Estimated                Clock        Clock                
 Starting Clock     Frequency     Frequency     Period        Period        Slack      Type         Group                
 ------------------------------------------------------------------------------------------------------------------------
 top|clk_24m        133.9 MHz     113.9 MHz     7.466         8.783         -1.317     inferred     Autoconstr_clkgroup_1
-top|pclk           24.9 MHz      NA            40.240        NA            NA         inferred     Autoconstr_clkgroup_0
-System             64.1 MHz      54.5 MHz      15.603        18.357        -2.753     system       system_clkgroup      
+top|pclk           95.5 MHz      NA            10.471        NA            NA         inferred     Autoconstr_clkgroup_0
+System             47.4 MHz      40.3 MHz      21.076        24.795        -3.719     system       system_clkgroup      
 ========================================================================================================================
 Estimated period and frequency reported as NA means no slack depends directly on the clock waveform
 
@@ -1195,8 +1398,8 @@ Clocks                    |    rise  to  rise    |    fall  to  fall   |    rise
 -----------------------------------------------------------------------------------------------------------------
 Starting     Ending       |  constraint  slack   |  constraint  slack  |  constraint  slack  |  constraint  slack
 -----------------------------------------------------------------------------------------------------------------
-System       System       |  15.603      -2.754  |  No paths    -      |  No paths    -      |  No paths    -    
-System       top|clk_24m  |  7.466       7.311   |  No paths    -      |  No paths    -      |  No paths    -    
+System       System       |  21.076      -3.719  |  No paths    -      |  No paths    -      |  No paths    -    
+System       top|clk_24m  |  7.466       5.142   |  No paths    -      |  No paths    -      |  No paths    -    
 top|clk_24m  System       |  7.466       2.480   |  No paths    -      |  No paths    -      |  No paths    -    
 top|clk_24m  top|clk_24m  |  7.466       -1.318  |  No paths    -      |  No paths    -      |  No paths    -    
 =================================================================================================================
@@ -1221,41 +1424,41 @@ Detailed Report for Clock: top|clk_24m
 Starting Points with Worst Slack
 ********************************
 
-                                            Starting                                                Arrival           
-Instance                                    Reference       Type        Pin     Net                 Time        Slack 
-                                            Clock                                                                     
-----------------------------------------------------------------------------------------------------------------------
-u_OV7670_Controller.LUT.address_3_rep2      top|clk_24m     FD1P3DZ     Q       address_3_rep2      0.796       -1.317
-u_OV7670_Controller.I2C.busy_sr_ess[2]      top|clk_24m     FD1P3JZ     Q       busy_sr[2]          0.796       -1.317
-u_OV7670_Controller.LUT.address_0_rep2      top|clk_24m     FD1P3DZ     Q       address_0_rep2      0.796       -1.245
-u_OV7670_Controller.LUT.address_fast[0]     top|clk_24m     FD1P3DZ     Q       address_fast[0]     0.796       -1.245
-u_OV7670_Controller.LUT.address_fast[1]     top|clk_24m     FD1P3DZ     Q       address_fast[1]     0.796       -1.245
-u_OV7670_Controller.I2C.busy_sr_ess[29]     top|clk_24m     FD1P3JZ     Q       busy_sr[29]         0.796       -1.245
-u_OV7670_Controller.I2C.divider[1]          top|clk_24m     FD1P3DZ     Q       divider[1]          0.796       -1.245
-u_OV7670_Controller.LUT.address_0_rep1      top|clk_24m     FD1P3DZ     Q       address_0_rep1      0.796       -1.224
-u_OV7670_Controller.LUT.address_fast[2]     top|clk_24m     FD1P3DZ     Q       address_fast[2]     0.796       -1.224
-u_OV7670_Controller.LUT.address[3]          top|clk_24m     FD1P3DZ     Q       address[3]          0.796       -1.214
-======================================================================================================================
+                                            Starting                                            Arrival           
+Instance                                    Reference       Type        Pin     Net             Time        Slack 
+                                            Clock                                                                 
+------------------------------------------------------------------------------------------------------------------
+u_OV7670_Controller.I2C.busy_sr_ess[2]      top|clk_24m     FD1P3JZ     Q       busy_sr[2]      0.796       -1.317
+u_OV7670_Controller.I2C.busy_sr_ess[29]     top|clk_24m     FD1P3JZ     Q       busy_sr[29]     0.796       -1.245
+u_OV7670_Controller.I2C.divider[2]          top|clk_24m     FD1P3DZ     Q       divider[2]      0.796       -1.245
+u_OV7670_Controller.LUT.address[0]          top|clk_24m     FD1P3DZ     Q       address[0]      0.796       -1.214
+u_OV7670_Controller.I2C.busy_sr_ess[30]     top|clk_24m     FD1P3JZ     Q       busy_sr[30]     0.796       -1.214
+u_OV7670_Controller.I2C.divider[1]          top|clk_24m     FD1P3DZ     Q       divider[1]      0.796       -1.214
+u_OV7670_Controller.I2C.divider[5]          top|clk_24m     FD1P3DZ     Q       divider[5]      0.796       -1.214
+u_OV7670_Controller.I2C.divider[3]          top|clk_24m     FD1P3DZ     Q       divider[3]      0.796       -1.173
+u_OV7670_Controller.LUT.address[3]          top|clk_24m     FD1P3DZ     Q       address[3]      0.796       -1.142
+u_OV7670_Controller.I2C.divider[4]          top|clk_24m     FD1P3DZ     Q       divider[4]      0.796       -1.142
+==================================================================================================================
 
 
 Ending Points with Worst Slack
 ******************************
 
-                                           Starting                                                   Required           
-Instance                                   Reference       Type        Pin     Net                    Time         Slack 
-                                           Clock                                                                         
--------------------------------------------------------------------------------------------------------------------------
-u_OV7670_Controller.I2C.sioc_temp          top|clk_24m     FD1P3DZ     D       sioc_temp              7.311        -1.317
-u_OV7670_Controller.LUT.sreg[3]            top|clk_24m     FD1P3JZ     D       sregs_13_i             7.311        -1.317
-u_OV7670_Controller.LUT.sreg[6]            top|clk_24m     FD1P3JZ     D       sregs_0_i              7.311        -1.317
-u_OV7670_Controller.I2C.busy_sr_ess[1]     top|clk_24m     FD1P3JZ     SP      busy_sr_0_sqmuxa_0     7.311        -1.245
-u_OV7670_Controller.I2C.busy_sr_ess[2]     top|clk_24m     FD1P3JZ     SP      busy_sr_0_sqmuxa_0     7.311        -1.245
-u_OV7670_Controller.I2C.busy_sr_ess[3]     top|clk_24m     FD1P3JZ     SP      busy_sr_0_sqmuxa_0     7.311        -1.245
-u_OV7670_Controller.I2C.busy_sr_ess[4]     top|clk_24m     FD1P3JZ     SP      busy_sr_0_sqmuxa_0     7.311        -1.245
-u_OV7670_Controller.I2C.busy_sr_ess[5]     top|clk_24m     FD1P3JZ     SP      busy_sr_0_sqmuxa_0     7.311        -1.245
-u_OV7670_Controller.I2C.busy_sr_ess[6]     top|clk_24m     FD1P3JZ     SP      busy_sr_0_sqmuxa_0     7.311        -1.245
-u_OV7670_Controller.I2C.busy_sr_ess[7]     top|clk_24m     FD1P3JZ     SP      busy_sr_0_sqmuxa_0     7.311        -1.245
-=========================================================================================================================
+                                           Starting                                          Required           
+Instance                                   Reference       Type        Pin     Net           Time         Slack 
+                                           Clock                                                                
+----------------------------------------------------------------------------------------------------------------
+u_OV7670_Controller.I2C.sioc_temp          top|clk_24m     FD1P3DZ     D       sioc_temp     7.311        -1.317
+u_OV7670_Controller.I2C.busy_sr_ess[1]     top|clk_24m     FD1P3JZ     SP      un1_N_8_0     7.311        -1.245
+u_OV7670_Controller.I2C.busy_sr_ess[2]     top|clk_24m     FD1P3JZ     SP      un1_N_8_0     7.311        -1.245
+u_OV7670_Controller.I2C.busy_sr_ess[3]     top|clk_24m     FD1P3JZ     SP      un1_N_8_0     7.311        -1.245
+u_OV7670_Controller.I2C.busy_sr_ess[4]     top|clk_24m     FD1P3JZ     SP      un1_N_8_0     7.311        -1.245
+u_OV7670_Controller.I2C.busy_sr_ess[5]     top|clk_24m     FD1P3JZ     SP      un1_N_8_0     7.311        -1.245
+u_OV7670_Controller.I2C.busy_sr_ess[6]     top|clk_24m     FD1P3JZ     SP      un1_N_8_0     7.311        -1.245
+u_OV7670_Controller.I2C.busy_sr_ess[7]     top|clk_24m     FD1P3JZ     SP      un1_N_8_0     7.311        -1.245
+u_OV7670_Controller.I2C.busy_sr_ess[8]     top|clk_24m     FD1P3JZ     SP      un1_N_8_0     7.311        -1.245
+u_OV7670_Controller.I2C.busy_sr_ess[9]     top|clk_24m     FD1P3JZ     SP      un1_N_8_0     7.311        -1.245
+================================================================================================================
 
 
 
@@ -1264,42 +1467,6 @@ Worst Path Information
 
 
 Path information for path number 1: 
-      Requested Period:                      7.466
-    - Setup time:                            0.155
-    + Clock delay at ending point:           0.000 (ideal)
-    = Required time:                         7.311
-
-    - Propagation time:                      8.628
-    - Clock delay at starting point:         0.000 (ideal)
-    = Slack (non-critical) :                 -1.317
-
-    Number of logic level(s):                3
-    Starting point:                          u_OV7670_Controller.LUT.address_3_rep2 / Q
-    Ending point:                            u_OV7670_Controller.LUT.sreg[3] / D
-    The start point is clocked by            top|clk_24m [rising] on pin CK
-    The end   point is clocked by            top|clk_24m [rising] on pin CK
-
-Instance / Net                                         Pin      Pin               Arrival     No. of    
-Name                                       Type        Name     Dir     Delay     Time        Fan Out(s)
---------------------------------------------------------------------------------------------------------
-u_OV7670_Controller.LUT.address_3_rep2     FD1P3DZ     Q        Out     0.796     0.796       -         
-address_3_rep2                             Net         -        -       1.599     -           9         
-u_OV7670_Controller.LUT.sreg_RNO_2[3]      LUT4        A        In      -         2.395       -         
-u_OV7670_Controller.LUT.sreg_RNO_2[3]      LUT4        Z        Out     0.661     3.056       -         
-m8_3_1                                     Net         -        -       1.371     -           1         
-u_OV7670_Controller.LUT.sreg_RNO_0[3]      LUT4        A        In      -         4.427       -         
-u_OV7670_Controller.LUT.sreg_RNO_0[3]      LUT4        Z        Out     0.661     5.089       -         
-N_9_1                                      Net         -        -       1.371     -           1         
-u_OV7670_Controller.LUT.sreg_RNO[3]        LUT4        A        In      -         6.460       -         
-u_OV7670_Controller.LUT.sreg_RNO[3]        LUT4        Z        Out     0.661     7.121       -         
-sregs_13_i                                 Net         -        -       1.507     -           1         
-u_OV7670_Controller.LUT.sreg[3]            FD1P3JZ     D        In      -         8.628       -         
-========================================================================================================
-Total path delay (propagation time + setup) of 8.783 is 2.935(33.4%) logic and 5.848(66.6%) route.
-Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
-
-
-Path information for path number 2: 
       Requested Period:                      7.466
     - Setup time:                            0.155
     + Clock delay at ending point:           0.000 (ideal)
@@ -1322,10 +1489,10 @@ u_OV7670_Controller.I2C.busy_sr_ess[2]      FD1P3JZ     Q        Out     0.796  
 busy_sr[2]                                  Net         -        -       1.599     -           3         
 u_OV7670_Controller.I2C.sioc_temp_RNO_3     LUT4        A        In      -         2.395       -         
 u_OV7670_Controller.I2C.sioc_temp_RNO_3     LUT4        Z        Out     0.661     3.056       -         
-N_6_0                                       Net         -        -       1.371     -           1         
+N_34_0                                      Net         -        -       1.371     -           1         
 u_OV7670_Controller.I2C.sioc_temp_RNO_0     LUT4        A        In      -         4.427       -         
 u_OV7670_Controller.I2C.sioc_temp_RNO_0     LUT4        Z        Out     0.661     5.089       -         
-N_7                                         Net         -        -       1.371     -           1         
+N_35                                        Net         -        -       1.371     -           1         
 u_OV7670_Controller.I2C.sioc_temp_RNO       LUT4        A        In      -         6.460       -         
 u_OV7670_Controller.I2C.sioc_temp_RNO       LUT4        Z        Out     0.661     7.121       -         
 sioc_temp                                   Net         -        -       1.507     -           1         
@@ -1335,39 +1502,75 @@ Total path delay (propagation time + setup) of 8.783 is 2.935(33.4%) logic and 5
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
 
+Path information for path number 2: 
+      Requested Period:                      7.466
+    - Setup time:                            0.155
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         7.311
+
+    - Propagation time:                      8.556
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -1.245
+
+    Number of logic level(s):                3
+    Starting point:                          u_OV7670_Controller.I2C.busy_sr_ess[29] / Q
+    Ending point:                            u_OV7670_Controller.I2C.sioc_temp / D
+    The start point is clocked by            top|clk_24m [rising] on pin CK
+    The end   point is clocked by            top|clk_24m [rising] on pin CK
+
+Instance / Net                                          Pin      Pin               Arrival     No. of    
+Name                                        Type        Name     Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------------------------------
+u_OV7670_Controller.I2C.busy_sr_ess[29]     FD1P3JZ     Q        Out     0.796     0.796       -         
+busy_sr[29]                                 Net         -        -       1.599     -           4         
+u_OV7670_Controller.I2C.sioc_temp_RNO_3     LUT4        B        In      -         2.395       -         
+u_OV7670_Controller.I2C.sioc_temp_RNO_3     LUT4        Z        Out     0.589     2.984       -         
+N_34_0                                      Net         -        -       1.371     -           1         
+u_OV7670_Controller.I2C.sioc_temp_RNO_0     LUT4        A        In      -         4.355       -         
+u_OV7670_Controller.I2C.sioc_temp_RNO_0     LUT4        Z        Out     0.661     5.017       -         
+N_35                                        Net         -        -       1.371     -           1         
+u_OV7670_Controller.I2C.sioc_temp_RNO       LUT4        A        In      -         6.388       -         
+u_OV7670_Controller.I2C.sioc_temp_RNO       LUT4        Z        Out     0.661     7.049       -         
+sioc_temp                                   Net         -        -       1.507     -           1         
+u_OV7670_Controller.I2C.sioc_temp           FD1P3DZ     D        In      -         8.556       -         
+=========================================================================================================
+Total path delay (propagation time + setup) of 8.711 is 2.863(32.9%) logic and 5.848(67.1%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
 Path information for path number 3: 
       Requested Period:                      7.466
     - Setup time:                            0.155
     + Clock delay at ending point:           0.000 (ideal)
     = Required time:                         7.311
 
-    - Propagation time:                      8.628
+    - Propagation time:                      8.556
     - Clock delay at starting point:         0.000 (ideal)
-    = Slack (non-critical) :                 -1.317
+    = Slack (non-critical) :                 -1.245
 
     Number of logic level(s):                3
-    Starting point:                          u_OV7670_Controller.LUT.address_3_rep2 / Q
-    Ending point:                            u_OV7670_Controller.LUT.sreg[6] / D
+    Starting point:                          u_OV7670_Controller.I2C.divider[2] / Q
+    Ending point:                            u_OV7670_Controller.I2C.busy_sr_ess[1] / SP
     The start point is clocked by            top|clk_24m [rising] on pin CK
     The end   point is clocked by            top|clk_24m [rising] on pin CK
 
-Instance / Net                                         Pin      Pin               Arrival     No. of    
-Name                                       Type        Name     Dir     Delay     Time        Fan Out(s)
---------------------------------------------------------------------------------------------------------
-u_OV7670_Controller.LUT.address_3_rep2     FD1P3DZ     Q        Out     0.796     0.796       -         
-address_3_rep2                             Net         -        -       1.599     -           9         
-u_OV7670_Controller.LUT.sreg_RNO_2[6]      LUT4        A        In      -         2.395       -         
-u_OV7670_Controller.LUT.sreg_RNO_2[6]      LUT4        Z        Out     0.661     3.056       -         
-m8_1_1                                     Net         -        -       1.371     -           1         
-u_OV7670_Controller.LUT.sreg_RNO_0[6]      LUT4        A        In      -         4.427       -         
-u_OV7670_Controller.LUT.sreg_RNO_0[6]      LUT4        Z        Out     0.661     5.089       -         
-N_9_0_0                                    Net         -        -       1.371     -           1         
-u_OV7670_Controller.LUT.sreg_RNO[6]        LUT4        A        In      -         6.460       -         
-u_OV7670_Controller.LUT.sreg_RNO[6]        LUT4        Z        Out     0.661     7.121       -         
-sregs_0_i                                  Net         -        -       1.507     -           1         
-u_OV7670_Controller.LUT.sreg[6]            FD1P3JZ     D        In      -         8.628       -         
-========================================================================================================
-Total path delay (propagation time + setup) of 8.783 is 2.935(33.4%) logic and 5.848(66.6%) route.
+Instance / Net                                              Pin      Pin               Arrival     No. of    
+Name                                            Type        Name     Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------------------------------
+u_OV7670_Controller.I2C.divider[2]              FD1P3DZ     Q        Out     0.796     0.796       -         
+divider[2]                                      Net         -        -       1.599     -           5         
+u_OV7670_Controller.I2C.divider_RNIKFP71[4]     LUT4        A        In      -         2.395       -         
+u_OV7670_Controller.I2C.divider_RNIKFP71[4]     LUT4        Z        Out     0.661     3.056       -         
+divider_RNIKFP71[4]                             Net         -        -       1.371     -           1         
+u_OV7670_Controller.I2C.divider_RNIHTKK3[1]     LUT4        A        In      -         4.427       -         
+u_OV7670_Controller.I2C.divider_RNIHTKK3[1]     LUT4        Z        Out     0.661     5.089       -         
+un1_N_8                                         Net         -        -       1.371     -           4         
+u_OV7670_Controller.I2C.divider_RNI1BHS7[1]     LUT4        B        In      -         6.460       -         
+u_OV7670_Controller.I2C.divider_RNI1BHS7[1]     LUT4        Z        Out     0.589     7.049       -         
+un1_N_8_0                                       Net         -        -       1.507     -           30        
+u_OV7670_Controller.I2C.busy_sr_ess[1]          FD1P3JZ     SP       In      -         8.556       -         
+=============================================================================================================
+Total path delay (propagation time + setup) of 8.711 is 2.863(32.9%) logic and 5.848(67.1%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
 
@@ -1382,27 +1585,27 @@ Path information for path number 4:
     = Slack (non-critical) :                 -1.245
 
     Number of logic level(s):                3
-    Starting point:                          u_OV7670_Controller.LUT.address_0_rep2 / Q
-    Ending point:                            u_OV7670_Controller.LUT.sreg[12] / D
+    Starting point:                          u_OV7670_Controller.I2C.divider[2] / Q
+    Ending point:                            u_OV7670_Controller.I2C.busy_sr_ess[2] / SP
     The start point is clocked by            top|clk_24m [rising] on pin CK
     The end   point is clocked by            top|clk_24m [rising] on pin CK
 
-Instance / Net                                         Pin      Pin               Arrival     No. of    
-Name                                       Type        Name     Dir     Delay     Time        Fan Out(s)
---------------------------------------------------------------------------------------------------------
-u_OV7670_Controller.LUT.address_0_rep2     FD1P3DZ     Q        Out     0.796     0.796       -         
-address_0_rep2                             Net         -        -       1.599     -           12        
-u_OV7670_Controller.LUT.sreg_RNO_4[12]     LUT4        A        In      -         2.395       -         
-u_OV7670_Controller.LUT.sreg_RNO_4[12]     LUT4        Z        Out     0.661     3.056       -         
-m19_1                                      Net         -        -       1.371     -           1         
-u_OV7670_Controller.LUT.sreg_RNO_1[12]     LUT4        A        In      -         4.427       -         
-u_OV7670_Controller.LUT.sreg_RNO_1[12]     LUT4        Z        Out     0.661     5.089       -         
-N_20                                       Net         -        -       1.371     -           1         
-u_OV7670_Controller.LUT.sreg_RNO[12]       LUT4        B        In      -         6.460       -         
-u_OV7670_Controller.LUT.sreg_RNO[12]       LUT4        Z        Out     0.589     7.049       -         
-sregs_6_i                                  Net         -        -       1.507     -           1         
-u_OV7670_Controller.LUT.sreg[12]           FD1P3JZ     D        In      -         8.556       -         
-========================================================================================================
+Instance / Net                                              Pin      Pin               Arrival     No. of    
+Name                                            Type        Name     Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------------------------------
+u_OV7670_Controller.I2C.divider[2]              FD1P3DZ     Q        Out     0.796     0.796       -         
+divider[2]                                      Net         -        -       1.599     -           5         
+u_OV7670_Controller.I2C.divider_RNIKFP71[4]     LUT4        A        In      -         2.395       -         
+u_OV7670_Controller.I2C.divider_RNIKFP71[4]     LUT4        Z        Out     0.661     3.056       -         
+divider_RNIKFP71[4]                             Net         -        -       1.371     -           1         
+u_OV7670_Controller.I2C.divider_RNIHTKK3[1]     LUT4        A        In      -         4.427       -         
+u_OV7670_Controller.I2C.divider_RNIHTKK3[1]     LUT4        Z        Out     0.661     5.089       -         
+un1_N_8                                         Net         -        -       1.371     -           4         
+u_OV7670_Controller.I2C.divider_RNI1BHS7[1]     LUT4        B        In      -         6.460       -         
+u_OV7670_Controller.I2C.divider_RNI1BHS7[1]     LUT4        Z        Out     0.589     7.049       -         
+un1_N_8_0                                       Net         -        -       1.507     -           30        
+u_OV7670_Controller.I2C.busy_sr_ess[2]          FD1P3JZ     SP       In      -         8.556       -         
+=============================================================================================================
 Total path delay (propagation time + setup) of 8.711 is 2.863(32.9%) logic and 5.848(67.1%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
@@ -1418,27 +1621,27 @@ Path information for path number 5:
     = Slack (non-critical) :                 -1.245
 
     Number of logic level(s):                3
-    Starting point:                          u_OV7670_Controller.LUT.address_fast[0] / Q
-    Ending point:                            u_OV7670_Controller.LUT.sreg[3] / D
+    Starting point:                          u_OV7670_Controller.I2C.divider[2] / Q
+    Ending point:                            u_OV7670_Controller.I2C.busy_sr_ess[3] / SP
     The start point is clocked by            top|clk_24m [rising] on pin CK
     The end   point is clocked by            top|clk_24m [rising] on pin CK
 
-Instance / Net                                          Pin      Pin               Arrival     No. of    
-Name                                        Type        Name     Dir     Delay     Time        Fan Out(s)
----------------------------------------------------------------------------------------------------------
-u_OV7670_Controller.LUT.address_fast[0]     FD1P3DZ     Q        Out     0.796     0.796       -         
-address_fast[0]                             Net         -        -       1.599     -           9         
-u_OV7670_Controller.LUT.sreg_RNO_2[3]       LUT4        B        In      -         2.395       -         
-u_OV7670_Controller.LUT.sreg_RNO_2[3]       LUT4        Z        Out     0.589     2.984       -         
-m8_3_1                                      Net         -        -       1.371     -           1         
-u_OV7670_Controller.LUT.sreg_RNO_0[3]       LUT4        A        In      -         4.355       -         
-u_OV7670_Controller.LUT.sreg_RNO_0[3]       LUT4        Z        Out     0.661     5.017       -         
-N_9_1                                       Net         -        -       1.371     -           1         
-u_OV7670_Controller.LUT.sreg_RNO[3]         LUT4        A        In      -         6.388       -         
-u_OV7670_Controller.LUT.sreg_RNO[3]         LUT4        Z        Out     0.661     7.049       -         
-sregs_13_i                                  Net         -        -       1.507     -           1         
-u_OV7670_Controller.LUT.sreg[3]             FD1P3JZ     D        In      -         8.556       -         
-=========================================================================================================
+Instance / Net                                              Pin      Pin               Arrival     No. of    
+Name                                            Type        Name     Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------------------------------
+u_OV7670_Controller.I2C.divider[2]              FD1P3DZ     Q        Out     0.796     0.796       -         
+divider[2]                                      Net         -        -       1.599     -           5         
+u_OV7670_Controller.I2C.divider_RNIKFP71[4]     LUT4        A        In      -         2.395       -         
+u_OV7670_Controller.I2C.divider_RNIKFP71[4]     LUT4        Z        Out     0.661     3.056       -         
+divider_RNIKFP71[4]                             Net         -        -       1.371     -           1         
+u_OV7670_Controller.I2C.divider_RNIHTKK3[1]     LUT4        A        In      -         4.427       -         
+u_OV7670_Controller.I2C.divider_RNIHTKK3[1]     LUT4        Z        Out     0.661     5.089       -         
+un1_N_8                                         Net         -        -       1.371     -           4         
+u_OV7670_Controller.I2C.divider_RNI1BHS7[1]     LUT4        B        In      -         6.460       -         
+u_OV7670_Controller.I2C.divider_RNI1BHS7[1]     LUT4        Z        Out     0.589     7.049       -         
+un1_N_8_0                                       Net         -        -       1.507     -           30        
+u_OV7670_Controller.I2C.busy_sr_ess[3]          FD1P3JZ     SP       In      -         8.556       -         
+=============================================================================================================
 Total path delay (propagation time + setup) of 8.711 is 2.863(32.9%) logic and 5.848(67.1%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
@@ -1454,41 +1657,41 @@ Detailed Report for Clock: System
 Starting Points with Worst Slack
 ********************************
 
-                    Starting                                         Arrival           
-Instance            Reference     Type        Pin     Net            Time        Slack 
-                    Clock                                                              
----------------------------------------------------------------------------------------
-jedw.col_idx[4]     System        FD1P3DZ     Q       col_idx[4]     0.796       -2.753
-jedw.col_idx[5]     System        FD1P3DZ     Q       col_idx[5]     0.796       -2.681
-jedw.col_idx[0]     System        FD1P3DZ     Q       col_idx[0]     0.796       -2.660
-je.end0pos[0]       System        FD1P3DZ     Q       end0pos[0]     0.796       -2.660
-jedw.col_idx[7]     System        FD1P3DZ     Q       col_idx[7]     0.796       -2.650
-jedw.col_idx[1]     System        FD1P3DZ     Q       col_idx[1]     0.796       -2.588
-je.end0pos[1]       System        FD1P3DZ     Q       end0pos[1]     0.796       -2.588
-jedw.col_idx[2]     System        FD1P3DZ     Q       col_idx[2]     0.796       -2.557
-je.end0pos[2]       System        FD1P3DZ     Q       end0pos[2]     0.796       -2.557
-jedw.col_idx[3]     System        FD1P3DZ     Q       col_idx[3]     0.796       -2.464
-=======================================================================================
+                                                 Starting                                                      Arrival           
+Instance                                         Reference     Type        Pin     Net                         Time        Slack 
+                                                 Clock                                                                           
+---------------------------------------------------------------------------------------------------------------------------------
+je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_16     System        FD1P3DZ     Q       mult1_inf_abs0[6]           0.796       -3.719
+je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_15     System        FD1P3DZ     Q       mult1_inf_abs0[7]           0.796       -3.647
+je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_7      System        FD1P3DZ     Q       mult1_un3_sum_ac0_9_0_0     0.796       -3.616
+je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_3      System        FD1P3DZ     Q       mult1_inf_abs0[1]           0.796       -1.615
+je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_4      System        FD1P3DZ     Q       mult1_inf_abs0[2]           0.796       -1.583
+je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_8      System        FD1P3DZ     Q       mult1_inf_abs0[3]           0.796       -1.490
+je.ram_rom.fdtbl_rom_data_2_0_dreg[0]            System        FD1P3DZ     Q       fdtbl_rom_d[0]              0.796       0.315 
+je.ac0_idx[0]                                    System        FD1P3DZ     Q       ac0_idx[0]                  0.796       0.811 
+je.ac0_idx[1]                                    System        FD1P3DZ     Q       ac0_idx[1]                  0.796       0.883 
+je.end0pos[0]                                    System        FD1P3DZ     Q       end0pos[0]                  0.796       0.914 
+=================================================================================================================================
 
 
 Ending Points with Worst Slack
 ******************************
 
-                    Starting                                            Required           
-Instance            Reference     Type        Pin     Net               Time         Slack 
-                    Clock                                                                  
--------------------------------------------------------------------------------------------
-jedw.col_idx[3]     System        FD1P3DZ     D       col_idx_lm[3]     15.448       -2.753
-jedw.col_idx[4]     System        FD1P3DZ     D       col_idx_lm[4]     15.448       -2.753
-jedw.col_idx[5]     System        FD1P3DZ     D       col_idx_lm[5]     15.448       -2.753
-jedw.col_idx[6]     System        FD1P3DZ     D       col_idx_lm[6]     15.448       -2.753
-jedw.col_idx[7]     System        FD1P3DZ     D       col_idx_lm[7]     15.448       -2.753
-jedw.col_idx[8]     System        FD1P3DZ     D       col_idx_lm[8]     15.448       -2.753
-jedw.row_idx[3]     System        FD1P3DZ     D       row_idx_lm[3]     15.448       -2.753
-jedw.row_idx[4]     System        FD1P3DZ     D       row_idx_lm[4]     15.448       -2.753
-jedw.row_idx[5]     System        FD1P3DZ     D       row_idx_lm[5]     15.448       -2.753
-jedw.row_idx[6]     System        FD1P3DZ     D       row_idx_lm[6]     15.448       -2.753
-===========================================================================================
+                                                            Starting                                                                        Required           
+Instance                                                    Reference     Type        Pin     Net                                           Time         Slack 
+                                                            Clock                                                                                              
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+je.QNT_DU_ret_416[0]                                        System        FD1P3DZ     D       mult1_un59_sum[0]                             20.921       -3.719
+je.QNT_DU_ret_416[1]                                        System        FD1P3DZ     D       mult1_un59_sum[1]                             20.921       -3.719
+je.QNT_DU_ret_416[2]                                        System        FD1P3DZ     D       mult1_un59_sum[2]                             20.921       -3.719
+je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_3_RNIPK99JQ       System        CCU2_B      B0      fdtbl_rom_data_2_0_dreg_ret_3_RNIMOUN8P2      21.076       -2.130
+je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_3_RNIPK99JQ       System        CCU2_B      B1      fdtbl_rom_data_2_0_dreg_ret_4_RNIMO6BCR3      21.076       -2.130
+je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_8_RNIVKF5FJ       System        CCU2_B      B0      fdtbl_rom_data_2_0_dreg_ret_8_RNIV3I7GR2      21.076       -2.130
+je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_8_RNIVKF5FJ       System        CCU2_B      B1      fdtbl_rom_data_2_0_dreg_ret_10_RNI3B1BIJ1     21.076       -2.130
+je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_11_RNI3GB94K1     System        CCU2_B      B0      fdtbl_rom_data_2_0_dreg_ret_11_RNI4B1BIJ1     21.076       -2.130
+je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_11_RNI3GB94K1     System        CCU2_B      B1      fdtbl_rom_data_2_0_dreg_ret_16_RNIABEH2D2     21.076       -2.130
+je.QNT_DU_ret_3                                             System        FD1P3DZ     D       mult1_un52_sum[8]                             20.921       -1.759
+===============================================================================================================================================================
 
 
 
@@ -1497,267 +1700,312 @@ Worst Path Information
 
 
 Path information for path number 1: 
-      Requested Period:                      15.603
+      Requested Period:                      21.076
     - Setup time:                            0.155
     + Clock delay at ending point:           0.000 (ideal)
     + Estimated clock delay at ending point: 0.000
-    = Required time:                         15.448
+    = Required time:                         20.921
 
-    - Propagation time:                      18.202
+    - Propagation time:                      24.640
     - Clock delay at starting point:         0.000 (ideal)
     - Estimated clock delay at start point:  -0.000
-    = Slack (critical) :                     -2.753
+    = Slack (critical) :                     -3.719
 
-    Number of logic level(s):                8
-    Starting point:                          jedw.col_idx[4] / Q
-    Ending point:                            jedw.col_idx[3] / D
+    Number of logic level(s):                11
+    Starting point:                          je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_16 / Q
+    Ending point:                            je.QNT_DU_ret_416[0] / D
     The start point is clocked by            System [rising] on pin CK
     The end   point is clocked by            System [rising] on pin CK
 
-Instance / Net                             Pin      Pin               Arrival     No. of    
-Name                           Type        Name     Dir     Delay     Time        Fan Out(s)
---------------------------------------------------------------------------------------------
-jedw.col_idx[4]                FD1P3DZ     Q        Out     0.796     0.796       -         
-col_idx[4]                     Net         -        -       1.599     -           3         
-jedw.col_idx_RNIMDHH[4]        LUT4        A        In      -         2.395       -         
-jedw.col_idx_RNIMDHH[4]        LUT4        Z        Out     0.661     3.056       -         
-col_max_4                      Net         -        -       1.371     -           1         
-jedw.col_idx_RNIMSJK1[6]       LUT4        C        In      -         4.427       -         
-jedw.col_idx_RNIMSJK1[6]       LUT4        Z        Out     0.558     4.986       -         
-col_max                        Net         -        -       1.371     -           8         
-jedw.col_cnt_RNIVM0T2[2]       LUT4        D        In      -         6.356       -         
-jedw.col_cnt_RNIVM0T2[2]       LUT4        Z        Out     0.424     6.780       -         
-N_158_1                        Net         -        -       1.371     -           2         
-jedw.addr_lsb_RNIOMQ83         LUT4        A        In      -         8.151       -         
-jedw.addr_lsb_RNIOMQ83         LUT4        Z        Out     0.661     8.813       -         
-chg_row                        Net         -        -       1.371     -           9         
-jedw.row_cnt_RNI77G39[2]       LUT4        B        In      -         10.184      -         
-jedw.row_cnt_RNI77G39[2]       LUT4        Z        Out     0.589     10.773      -         
-N_473                          Net         -        -       1.371     -           3         
-jedw.col_idx_RNIPPQ6B_0[6]     LUT4        A        In      -         12.144      -         
-jedw.col_idx_RNIPPQ6B_0[6]     LUT4        Z        Out     0.661     12.806      -         
-col_idx15                      Net         -        -       1.371     -           11        
-jedw.col_idx_RNO_0[3]          LUT4        B        In      -         14.177      -         
-jedw.col_idx_RNO_0[3]          LUT4        Z        Out     0.558     14.735      -         
-col_idx_5_0[3]                 Net         -        -       1.371     -           1         
-jedw.col_idx_RNO[3]            LUT4        B        In      -         16.106      -         
-jedw.col_idx_RNO[3]            LUT4        Z        Out     0.589     16.695      -         
-col_idx_lm[3]                  Net         -        -       1.507     -           1         
-jedw.col_idx[3]                FD1P3DZ     D        In      -         18.202      -         
-============================================================================================
-Total path delay (propagation time + setup) of 18.357 is 5.654(30.8%) logic and 12.703(69.2%) route.
+Instance / Net                                                            Pin      Pin               Arrival     No. of    
+Name                                                          Type        Name     Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------------------------------------------------
+je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_16                  FD1P3DZ     Q        Out     0.796     0.796       -         
+mult1_inf_abs0[6]                                             Net         -        -       1.599     -           16        
+je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_7_RNIVAVQ           LUT4        A        In      -         2.395       -         
+je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_7_RNIVAVQ           LUT4        Z        Out     0.661     3.056       -         
+fdtbl_rom_data_2_0_dreg_ret_7_RNIVAVQ                         Net         -        -       1.371     -           1         
+je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_4_RNIPU661          LUT4        A        In      -         4.427       -         
+je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_4_RNIPU661          LUT4        Z        Out     0.661     5.089       -         
+fdtbl_rom_data_2_0_dreg_ret_4_RNIPU661                        Net         -        -       1.371     -           1         
+je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_4_RNICS4C9          LUT4        C        In      -         6.460       -         
+je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_4_RNICS4C9          LUT4        Z        Out     0.558     7.018       -         
+mult1_un3_sum_ac0_13                                          Net         -        -       1.371     -           31        
+je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_11_RNI78OM78        LUT4        A        In      -         8.389       -         
+je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_11_RNI78OM78        LUT4        Z        Out     0.661     9.050       -         
+mult1_un10_sum[8]                                             Net         -        -       1.371     -           29        
+je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_11_RNINVN7SA2_0     LUT4        A        In      -         10.421      -         
+je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_11_RNINVN7SA2_0     LUT4        Z        Out     0.661     11.083      -         
+mult1_un17_sum[8]                                             Net         -        -       1.371     -           32        
+je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_15_RNISENK7J1_0     LUT4        A        In      -         12.454      -         
+je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_15_RNISENK7J1_0     LUT4        Z        Out     0.661     13.116      -         
+mult1_un24_sum[8]                                             Net         -        -       1.371     -           29        
+je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_14_RNIMFTEIA3_0     LUT4        A        In      -         14.486      -         
+je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_14_RNIMFTEIA3_0     LUT4        Z        Out     0.661     15.148      -         
+mult1_un31_sum[8]                                             Net         -        -       1.371     -           35        
+je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_15_RNIELU1OT2_0     LUT4        A        In      -         16.519      -         
+je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_15_RNIELU1OT2_0     LUT4        Z        Out     0.661     17.180      -         
+fdtbl_rom_data_2_0_dreg_ret_15_RNIELU1OT2_0                   Net         -        -       1.371     -           1         
+je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_14_RNI3RMG0C1       LUT4        B        In      -         18.552      -         
+je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_14_RNI3RMG0C1       LUT4        Z        Out     0.589     19.141      -         
+mult1_un45_sum[8]                                             Net         -        -       1.371     -           25        
+je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_15_RNI7PO90V_0      LUT4        A        In      -         20.512      -         
+je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_15_RNI7PO90V_0      LUT4        Z        Out     0.661     21.173      -         
+fdtbl_rom_data_2_0_dreg_ret_15_RNI7PO90V_0                    Net         -        -       1.371     -           1         
+je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_15_RNI5ASUH03       LUT4        B        In      -         22.544      -         
+je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_15_RNI5ASUH03       LUT4        Z        Out     0.589     23.133      -         
+mult1_un59_sum[0]                                             Net         -        -       1.507     -           1         
+je.QNT_DU_ret_416[0]                                          FD1P3DZ     D        In      -         24.640      -         
+===========================================================================================================================
+Total path delay (propagation time + setup) of 24.795 is 7.979(32.2%) logic and 16.816(67.8%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
 
 Path information for path number 2: 
-      Requested Period:                      15.603
+      Requested Period:                      21.076
     - Setup time:                            0.155
     + Clock delay at ending point:           0.000 (ideal)
     + Estimated clock delay at ending point: 0.000
-    = Required time:                         15.448
+    = Required time:                         20.921
 
-    - Propagation time:                      18.202
+    - Propagation time:                      24.640
     - Clock delay at starting point:         0.000 (ideal)
     - Estimated clock delay at start point:  -0.000
-    = Slack (critical) :                     -2.753
+    = Slack (critical) :                     -3.719
 
-    Number of logic level(s):                8
-    Starting point:                          jedw.col_idx[4] / Q
-    Ending point:                            jedw.col_idx[8] / D
+    Number of logic level(s):                11
+    Starting point:                          je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_16 / Q
+    Ending point:                            je.QNT_DU_ret_416[1] / D
     The start point is clocked by            System [rising] on pin CK
     The end   point is clocked by            System [rising] on pin CK
 
-Instance / Net                             Pin      Pin               Arrival     No. of    
-Name                           Type        Name     Dir     Delay     Time        Fan Out(s)
---------------------------------------------------------------------------------------------
-jedw.col_idx[4]                FD1P3DZ     Q        Out     0.796     0.796       -         
-col_idx[4]                     Net         -        -       1.599     -           3         
-jedw.col_idx_RNIMDHH[4]        LUT4        A        In      -         2.395       -         
-jedw.col_idx_RNIMDHH[4]        LUT4        Z        Out     0.661     3.056       -         
-col_max_4                      Net         -        -       1.371     -           1         
-jedw.col_idx_RNIMSJK1[6]       LUT4        C        In      -         4.427       -         
-jedw.col_idx_RNIMSJK1[6]       LUT4        Z        Out     0.558     4.986       -         
-col_max                        Net         -        -       1.371     -           8         
-jedw.col_cnt_RNIVM0T2[2]       LUT4        D        In      -         6.356       -         
-jedw.col_cnt_RNIVM0T2[2]       LUT4        Z        Out     0.424     6.780       -         
-N_158_1                        Net         -        -       1.371     -           2         
-jedw.addr_lsb_RNIOMQ83         LUT4        A        In      -         8.151       -         
-jedw.addr_lsb_RNIOMQ83         LUT4        Z        Out     0.661     8.813       -         
-chg_row                        Net         -        -       1.371     -           9         
-jedw.row_cnt_RNI77G39[2]       LUT4        B        In      -         10.184      -         
-jedw.row_cnt_RNI77G39[2]       LUT4        Z        Out     0.589     10.773      -         
-N_473                          Net         -        -       1.371     -           3         
-jedw.col_idx_RNIPPQ6B_0[6]     LUT4        A        In      -         12.144      -         
-jedw.col_idx_RNIPPQ6B_0[6]     LUT4        Z        Out     0.661     12.806      -         
-col_idx15                      Net         -        -       1.371     -           11        
-jedw.col_idx_RNO_0[8]          LUT4        B        In      -         14.177      -         
-jedw.col_idx_RNO_0[8]          LUT4        Z        Out     0.558     14.735      -         
-col_idx_5_0[8]                 Net         -        -       1.371     -           1         
-jedw.col_idx_RNO[8]            LUT4        B        In      -         16.106      -         
-jedw.col_idx_RNO[8]            LUT4        Z        Out     0.589     16.695      -         
-col_idx_lm[8]                  Net         -        -       1.507     -           1         
-jedw.col_idx[8]                FD1P3DZ     D        In      -         18.202      -         
-============================================================================================
-Total path delay (propagation time + setup) of 18.357 is 5.654(30.8%) logic and 12.703(69.2%) route.
+Instance / Net                                                            Pin      Pin               Arrival     No. of    
+Name                                                          Type        Name     Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------------------------------------------------
+je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_16                  FD1P3DZ     Q        Out     0.796     0.796       -         
+mult1_inf_abs0[6]                                             Net         -        -       1.599     -           16        
+je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_7_RNIVAVQ           LUT4        A        In      -         2.395       -         
+je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_7_RNIVAVQ           LUT4        Z        Out     0.661     3.056       -         
+fdtbl_rom_data_2_0_dreg_ret_7_RNIVAVQ                         Net         -        -       1.371     -           1         
+je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_4_RNIPU661          LUT4        A        In      -         4.427       -         
+je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_4_RNIPU661          LUT4        Z        Out     0.661     5.089       -         
+fdtbl_rom_data_2_0_dreg_ret_4_RNIPU661                        Net         -        -       1.371     -           1         
+je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_4_RNICS4C9          LUT4        C        In      -         6.460       -         
+je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_4_RNICS4C9          LUT4        Z        Out     0.558     7.018       -         
+mult1_un3_sum_ac0_13                                          Net         -        -       1.371     -           31        
+je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_11_RNI78OM78        LUT4        A        In      -         8.389       -         
+je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_11_RNI78OM78        LUT4        Z        Out     0.661     9.050       -         
+mult1_un10_sum[8]                                             Net         -        -       1.371     -           29        
+je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_11_RNINVN7SA2_0     LUT4        A        In      -         10.421      -         
+je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_11_RNINVN7SA2_0     LUT4        Z        Out     0.661     11.083      -         
+mult1_un17_sum[8]                                             Net         -        -       1.371     -           32        
+je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_15_RNISENK7J1_0     LUT4        A        In      -         12.454      -         
+je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_15_RNISENK7J1_0     LUT4        Z        Out     0.661     13.116      -         
+mult1_un24_sum[8]                                             Net         -        -       1.371     -           29        
+je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_14_RNIMFTEIA3_0     LUT4        A        In      -         14.486      -         
+je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_14_RNIMFTEIA3_0     LUT4        Z        Out     0.661     15.148      -         
+mult1_un31_sum[8]                                             Net         -        -       1.371     -           35        
+je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_15_RNIELU1OT2_0     LUT4        A        In      -         16.519      -         
+je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_15_RNIELU1OT2_0     LUT4        Z        Out     0.661     17.180      -         
+fdtbl_rom_data_2_0_dreg_ret_15_RNIELU1OT2_0                   Net         -        -       1.371     -           1         
+je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_14_RNI3RMG0C1       LUT4        B        In      -         18.552      -         
+je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_14_RNI3RMG0C1       LUT4        Z        Out     0.589     19.141      -         
+mult1_un45_sum[8]                                             Net         -        -       1.371     -           25        
+je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_21_RNIO53NB82_0     LUT4        A        In      -         20.512      -         
+je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_21_RNIO53NB82_0     LUT4        Z        Out     0.661     21.173      -         
+fdtbl_rom_data_2_0_dreg_ret_21_RNIO53NB82_0                   Net         -        -       1.371     -           1         
+je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_21_RNI73HP8J1       LUT4        B        In      -         22.544      -         
+je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_21_RNI73HP8J1       LUT4        Z        Out     0.589     23.133      -         
+mult1_un59_sum[1]                                             Net         -        -       1.507     -           1         
+je.QNT_DU_ret_416[1]                                          FD1P3DZ     D        In      -         24.640      -         
+===========================================================================================================================
+Total path delay (propagation time + setup) of 24.795 is 7.979(32.2%) logic and 16.816(67.8%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
 
 Path information for path number 3: 
-      Requested Period:                      15.603
+      Requested Period:                      21.076
     - Setup time:                            0.155
     + Clock delay at ending point:           0.000 (ideal)
     + Estimated clock delay at ending point: 0.000
-    = Required time:                         15.448
+    = Required time:                         20.921
 
-    - Propagation time:                      18.202
+    - Propagation time:                      24.640
     - Clock delay at starting point:         0.000 (ideal)
     - Estimated clock delay at start point:  -0.000
-    = Slack (critical) :                     -2.753
+    = Slack (critical) :                     -3.719
 
-    Number of logic level(s):                8
-    Starting point:                          jedw.col_idx[4] / Q
-    Ending point:                            jedw.col_idx[7] / D
+    Number of logic level(s):                11
+    Starting point:                          je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_16 / Q
+    Ending point:                            je.QNT_DU_ret_416[2] / D
     The start point is clocked by            System [rising] on pin CK
     The end   point is clocked by            System [rising] on pin CK
 
-Instance / Net                             Pin      Pin               Arrival     No. of    
-Name                           Type        Name     Dir     Delay     Time        Fan Out(s)
---------------------------------------------------------------------------------------------
-jedw.col_idx[4]                FD1P3DZ     Q        Out     0.796     0.796       -         
-col_idx[4]                     Net         -        -       1.599     -           3         
-jedw.col_idx_RNIMDHH[4]        LUT4        A        In      -         2.395       -         
-jedw.col_idx_RNIMDHH[4]        LUT4        Z        Out     0.661     3.056       -         
-col_max_4                      Net         -        -       1.371     -           1         
-jedw.col_idx_RNIMSJK1[6]       LUT4        C        In      -         4.427       -         
-jedw.col_idx_RNIMSJK1[6]       LUT4        Z        Out     0.558     4.986       -         
-col_max                        Net         -        -       1.371     -           8         
-jedw.col_cnt_RNIVM0T2[2]       LUT4        D        In      -         6.356       -         
-jedw.col_cnt_RNIVM0T2[2]       LUT4        Z        Out     0.424     6.780       -         
-N_158_1                        Net         -        -       1.371     -           2         
-jedw.addr_lsb_RNIOMQ83         LUT4        A        In      -         8.151       -         
-jedw.addr_lsb_RNIOMQ83         LUT4        Z        Out     0.661     8.813       -         
-chg_row                        Net         -        -       1.371     -           9         
-jedw.row_cnt_RNI77G39[2]       LUT4        B        In      -         10.184      -         
-jedw.row_cnt_RNI77G39[2]       LUT4        Z        Out     0.589     10.773      -         
-N_473                          Net         -        -       1.371     -           3         
-jedw.col_idx_RNIPPQ6B_0[6]     LUT4        A        In      -         12.144      -         
-jedw.col_idx_RNIPPQ6B_0[6]     LUT4        Z        Out     0.661     12.806      -         
-col_idx15                      Net         -        -       1.371     -           11        
-jedw.col_idx_RNO_0[7]          LUT4        B        In      -         14.177      -         
-jedw.col_idx_RNO_0[7]          LUT4        Z        Out     0.558     14.735      -         
-col_idx_5_0[7]                 Net         -        -       1.371     -           1         
-jedw.col_idx_RNO[7]            LUT4        B        In      -         16.106      -         
-jedw.col_idx_RNO[7]            LUT4        Z        Out     0.589     16.695      -         
-col_idx_lm[7]                  Net         -        -       1.507     -           1         
-jedw.col_idx[7]                FD1P3DZ     D        In      -         18.202      -         
-============================================================================================
-Total path delay (propagation time + setup) of 18.357 is 5.654(30.8%) logic and 12.703(69.2%) route.
+Instance / Net                                                            Pin      Pin               Arrival     No. of    
+Name                                                          Type        Name     Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------------------------------------------------
+je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_16                  FD1P3DZ     Q        Out     0.796     0.796       -         
+mult1_inf_abs0[6]                                             Net         -        -       1.599     -           16        
+je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_7_RNIVAVQ           LUT4        A        In      -         2.395       -         
+je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_7_RNIVAVQ           LUT4        Z        Out     0.661     3.056       -         
+fdtbl_rom_data_2_0_dreg_ret_7_RNIVAVQ                         Net         -        -       1.371     -           1         
+je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_4_RNIPU661          LUT4        A        In      -         4.427       -         
+je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_4_RNIPU661          LUT4        Z        Out     0.661     5.089       -         
+fdtbl_rom_data_2_0_dreg_ret_4_RNIPU661                        Net         -        -       1.371     -           1         
+je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_4_RNICS4C9          LUT4        C        In      -         6.460       -         
+je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_4_RNICS4C9          LUT4        Z        Out     0.558     7.018       -         
+mult1_un3_sum_ac0_13                                          Net         -        -       1.371     -           31        
+je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_11_RNI78OM78        LUT4        A        In      -         8.389       -         
+je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_11_RNI78OM78        LUT4        Z        Out     0.661     9.050       -         
+mult1_un10_sum[8]                                             Net         -        -       1.371     -           29        
+je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_11_RNINVN7SA2_0     LUT4        A        In      -         10.421      -         
+je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_11_RNINVN7SA2_0     LUT4        Z        Out     0.661     11.083      -         
+mult1_un17_sum[8]                                             Net         -        -       1.371     -           32        
+je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_15_RNISENK7J1_0     LUT4        A        In      -         12.454      -         
+je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_15_RNISENK7J1_0     LUT4        Z        Out     0.661     13.116      -         
+mult1_un24_sum[8]                                             Net         -        -       1.371     -           29        
+je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_14_RNIMFTEIA3_0     LUT4        A        In      -         14.486      -         
+je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_14_RNIMFTEIA3_0     LUT4        Z        Out     0.661     15.148      -         
+mult1_un31_sum[8]                                             Net         -        -       1.371     -           35        
+je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_15_RNIELU1OT2_0     LUT4        A        In      -         16.519      -         
+je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_15_RNIELU1OT2_0     LUT4        Z        Out     0.661     17.180      -         
+fdtbl_rom_data_2_0_dreg_ret_15_RNIELU1OT2_0                   Net         -        -       1.371     -           1         
+je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_14_RNI3RMG0C1       LUT4        B        In      -         18.552      -         
+je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_14_RNI3RMG0C1       LUT4        Z        Out     0.589     19.141      -         
+mult1_un45_sum[8]                                             Net         -        -       1.371     -           25        
+je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_21_RNIM84P9G2_0     LUT4        A        In      -         20.512      -         
+je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_21_RNIM84P9G2_0     LUT4        Z        Out     0.661     21.173      -         
+fdtbl_rom_data_2_0_dreg_ret_21_RNIM84P9G2_0                   Net         -        -       1.371     -           1         
+je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_21_RNI56IR6R1       LUT4        B        In      -         22.544      -         
+je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_21_RNI56IR6R1       LUT4        Z        Out     0.589     23.133      -         
+mult1_un59_sum[2]                                             Net         -        -       1.507     -           1         
+je.QNT_DU_ret_416[2]                                          FD1P3DZ     D        In      -         24.640      -         
+===========================================================================================================================
+Total path delay (propagation time + setup) of 24.795 is 7.979(32.2%) logic and 16.816(67.8%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
 
 Path information for path number 4: 
-      Requested Period:                      15.603
+      Requested Period:                      21.076
     - Setup time:                            0.155
     + Clock delay at ending point:           0.000 (ideal)
     + Estimated clock delay at ending point: 0.000
-    = Required time:                         15.448
+    = Required time:                         20.921
 
-    - Propagation time:                      18.202
+    - Propagation time:                      24.609
     - Clock delay at starting point:         0.000 (ideal)
     - Estimated clock delay at start point:  -0.000
-    = Slack (critical) :                     -2.753
+    = Slack (non-critical) :                 -3.688
 
-    Number of logic level(s):                8
-    Starting point:                          jedw.col_idx[4] / Q
-    Ending point:                            jedw.col_idx[6] / D
+    Number of logic level(s):                11
+    Starting point:                          je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_16 / Q
+    Ending point:                            je.QNT_DU_ret_416[0] / D
     The start point is clocked by            System [rising] on pin CK
     The end   point is clocked by            System [rising] on pin CK
 
-Instance / Net                             Pin      Pin               Arrival     No. of    
-Name                           Type        Name     Dir     Delay     Time        Fan Out(s)
---------------------------------------------------------------------------------------------
-jedw.col_idx[4]                FD1P3DZ     Q        Out     0.796     0.796       -         
-col_idx[4]                     Net         -        -       1.599     -           3         
-jedw.col_idx_RNIMDHH[4]        LUT4        A        In      -         2.395       -         
-jedw.col_idx_RNIMDHH[4]        LUT4        Z        Out     0.661     3.056       -         
-col_max_4                      Net         -        -       1.371     -           1         
-jedw.col_idx_RNIMSJK1[6]       LUT4        C        In      -         4.427       -         
-jedw.col_idx_RNIMSJK1[6]       LUT4        Z        Out     0.558     4.986       -         
-col_max                        Net         -        -       1.371     -           8         
-jedw.col_cnt_RNIVM0T2[2]       LUT4        D        In      -         6.356       -         
-jedw.col_cnt_RNIVM0T2[2]       LUT4        Z        Out     0.424     6.780       -         
-N_158_1                        Net         -        -       1.371     -           2         
-jedw.addr_lsb_RNIOMQ83         LUT4        A        In      -         8.151       -         
-jedw.addr_lsb_RNIOMQ83         LUT4        Z        Out     0.661     8.813       -         
-chg_row                        Net         -        -       1.371     -           9         
-jedw.row_cnt_RNI77G39[2]       LUT4        B        In      -         10.184      -         
-jedw.row_cnt_RNI77G39[2]       LUT4        Z        Out     0.589     10.773      -         
-N_473                          Net         -        -       1.371     -           3         
-jedw.col_idx_RNIPPQ6B_0[6]     LUT4        A        In      -         12.144      -         
-jedw.col_idx_RNIPPQ6B_0[6]     LUT4        Z        Out     0.661     12.806      -         
-col_idx15                      Net         -        -       1.371     -           11        
-jedw.col_idx_RNO_0[6]          LUT4        B        In      -         14.177      -         
-jedw.col_idx_RNO_0[6]          LUT4        Z        Out     0.558     14.735      -         
-col_idx_5_0[6]                 Net         -        -       1.371     -           1         
-jedw.col_idx_RNO[6]            LUT4        B        In      -         16.106      -         
-jedw.col_idx_RNO[6]            LUT4        Z        Out     0.589     16.695      -         
-col_idx_lm[6]                  Net         -        -       1.507     -           1         
-jedw.col_idx[6]                FD1P3DZ     D        In      -         18.202      -         
-============================================================================================
-Total path delay (propagation time + setup) of 18.357 is 5.654(30.8%) logic and 12.703(69.2%) route.
+Instance / Net                                                            Pin      Pin               Arrival     No. of    
+Name                                                          Type        Name     Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------------------------------------------------
+je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_16                  FD1P3DZ     Q        Out     0.796     0.796       -         
+mult1_inf_abs0[6]                                             Net         -        -       1.599     -           16        
+je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_7_RNIVAVQ           LUT4        A        In      -         2.395       -         
+je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_7_RNIVAVQ           LUT4        Z        Out     0.661     3.056       -         
+fdtbl_rom_data_2_0_dreg_ret_7_RNIVAVQ                         Net         -        -       1.371     -           1         
+je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_4_RNIPU661          LUT4        A        In      -         4.427       -         
+je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_4_RNIPU661          LUT4        Z        Out     0.661     5.089       -         
+fdtbl_rom_data_2_0_dreg_ret_4_RNIPU661                        Net         -        -       1.371     -           1         
+je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_4_RNICS4C9          LUT4        C        In      -         6.460       -         
+je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_4_RNICS4C9          LUT4        Z        Out     0.558     7.018       -         
+mult1_un3_sum_ac0_13                                          Net         -        -       1.371     -           31        
+je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_11_RNI78OM78        LUT4        A        In      -         8.389       -         
+je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_11_RNI78OM78        LUT4        Z        Out     0.661     9.050       -         
+mult1_un10_sum[8]                                             Net         -        -       1.371     -           29        
+je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_11_RNINVN7SA2_0     LUT4        A        In      -         10.421      -         
+je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_11_RNINVN7SA2_0     LUT4        Z        Out     0.661     11.083      -         
+mult1_un17_sum[8]                                             Net         -        -       1.371     -           32        
+je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_15_RNISENK7J1_0     LUT4        A        In      -         12.454      -         
+je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_15_RNISENK7J1_0     LUT4        Z        Out     0.661     13.116      -         
+mult1_un24_sum[8]                                             Net         -        -       1.371     -           29        
+je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_14_RNIMFTEIA3_0     LUT4        A        In      -         14.486      -         
+je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_14_RNIMFTEIA3_0     LUT4        Z        Out     0.661     15.148      -         
+mult1_un31_sum[8]                                             Net         -        -       1.371     -           35        
+je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_15_RNIELU1OT2       LUT4        A        In      -         16.519      -         
+je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_15_RNIELU1OT2       LUT4        Z        Out     0.661     17.180      -         
+fdtbl_rom_data_2_0_dreg_ret_15_RNIELU1OT2                     Net         -        -       1.371     -           1         
+je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_14_RNI3RMG0C1       LUT4        C        In      -         18.552      -         
+je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_14_RNI3RMG0C1       LUT4        Z        Out     0.558     19.110      -         
+mult1_un45_sum[8]                                             Net         -        -       1.371     -           25        
+je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_15_RNI7PO90V_0      LUT4        A        In      -         20.481      -         
+je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_15_RNI7PO90V_0      LUT4        Z        Out     0.661     21.142      -         
+fdtbl_rom_data_2_0_dreg_ret_15_RNI7PO90V_0                    Net         -        -       1.371     -           1         
+je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_15_RNI5ASUH03       LUT4        B        In      -         22.513      -         
+je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_15_RNI5ASUH03       LUT4        Z        Out     0.589     23.102      -         
+mult1_un59_sum[0]                                             Net         -        -       1.507     -           1         
+je.QNT_DU_ret_416[0]                                          FD1P3DZ     D        In      -         24.609      -         
+===========================================================================================================================
+Total path delay (propagation time + setup) of 24.764 is 7.948(32.1%) logic and 16.816(67.9%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
 
 Path information for path number 5: 
-      Requested Period:                      15.603
+      Requested Period:                      21.076
     - Setup time:                            0.155
     + Clock delay at ending point:           0.000 (ideal)
     + Estimated clock delay at ending point: 0.000
-    = Required time:                         15.448
+    = Required time:                         20.921
 
-    - Propagation time:                      18.202
+    - Propagation time:                      24.609
     - Clock delay at starting point:         0.000 (ideal)
     - Estimated clock delay at start point:  -0.000
-    = Slack (critical) :                     -2.753
+    = Slack (non-critical) :                 -3.688
 
-    Number of logic level(s):                8
-    Starting point:                          jedw.col_idx[4] / Q
-    Ending point:                            jedw.col_idx[5] / D
+    Number of logic level(s):                11
+    Starting point:                          je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_16 / Q
+    Ending point:                            je.QNT_DU_ret_416[1] / D
     The start point is clocked by            System [rising] on pin CK
     The end   point is clocked by            System [rising] on pin CK
 
-Instance / Net                             Pin      Pin               Arrival     No. of    
-Name                           Type        Name     Dir     Delay     Time        Fan Out(s)
---------------------------------------------------------------------------------------------
-jedw.col_idx[4]                FD1P3DZ     Q        Out     0.796     0.796       -         
-col_idx[4]                     Net         -        -       1.599     -           3         
-jedw.col_idx_RNIMDHH[4]        LUT4        A        In      -         2.395       -         
-jedw.col_idx_RNIMDHH[4]        LUT4        Z        Out     0.661     3.056       -         
-col_max_4                      Net         -        -       1.371     -           1         
-jedw.col_idx_RNIMSJK1[6]       LUT4        C        In      -         4.427       -         
-jedw.col_idx_RNIMSJK1[6]       LUT4        Z        Out     0.558     4.986       -         
-col_max                        Net         -        -       1.371     -           8         
-jedw.col_cnt_RNIVM0T2[2]       LUT4        D        In      -         6.356       -         
-jedw.col_cnt_RNIVM0T2[2]       LUT4        Z        Out     0.424     6.780       -         
-N_158_1                        Net         -        -       1.371     -           2         
-jedw.addr_lsb_RNIOMQ83         LUT4        A        In      -         8.151       -         
-jedw.addr_lsb_RNIOMQ83         LUT4        Z        Out     0.661     8.813       -         
-chg_row                        Net         -        -       1.371     -           9         
-jedw.row_cnt_RNI77G39[2]       LUT4        B        In      -         10.184      -         
-jedw.row_cnt_RNI77G39[2]       LUT4        Z        Out     0.589     10.773      -         
-N_473                          Net         -        -       1.371     -           3         
-jedw.col_idx_RNIPPQ6B_0[6]     LUT4        A        In      -         12.144      -         
-jedw.col_idx_RNIPPQ6B_0[6]     LUT4        Z        Out     0.661     12.806      -         
-col_idx15                      Net         -        -       1.371     -           11        
-jedw.col_idx_RNO_0[5]          LUT4        B        In      -         14.177      -         
-jedw.col_idx_RNO_0[5]          LUT4        Z        Out     0.558     14.735      -         
-col_idx_5_0[5]                 Net         -        -       1.371     -           1         
-jedw.col_idx_RNO[5]            LUT4        B        In      -         16.106      -         
-jedw.col_idx_RNO[5]            LUT4        Z        Out     0.589     16.695      -         
-col_idx_lm[5]                  Net         -        -       1.507     -           1         
-jedw.col_idx[5]                FD1P3DZ     D        In      -         18.202      -         
-============================================================================================
-Total path delay (propagation time + setup) of 18.357 is 5.654(30.8%) logic and 12.703(69.2%) route.
+Instance / Net                                                            Pin      Pin               Arrival     No. of    
+Name                                                          Type        Name     Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------------------------------------------------
+je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_16                  FD1P3DZ     Q        Out     0.796     0.796       -         
+mult1_inf_abs0[6]                                             Net         -        -       1.599     -           16        
+je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_7_RNIVAVQ           LUT4        A        In      -         2.395       -         
+je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_7_RNIVAVQ           LUT4        Z        Out     0.661     3.056       -         
+fdtbl_rom_data_2_0_dreg_ret_7_RNIVAVQ                         Net         -        -       1.371     -           1         
+je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_4_RNIPU661          LUT4        A        In      -         4.427       -         
+je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_4_RNIPU661          LUT4        Z        Out     0.661     5.089       -         
+fdtbl_rom_data_2_0_dreg_ret_4_RNIPU661                        Net         -        -       1.371     -           1         
+je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_4_RNICS4C9          LUT4        C        In      -         6.460       -         
+je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_4_RNICS4C9          LUT4        Z        Out     0.558     7.018       -         
+mult1_un3_sum_ac0_13                                          Net         -        -       1.371     -           31        
+je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_11_RNI78OM78        LUT4        A        In      -         8.389       -         
+je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_11_RNI78OM78        LUT4        Z        Out     0.661     9.050       -         
+mult1_un10_sum[8]                                             Net         -        -       1.371     -           29        
+je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_11_RNINVN7SA2_0     LUT4        A        In      -         10.421      -         
+je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_11_RNINVN7SA2_0     LUT4        Z        Out     0.661     11.083      -         
+mult1_un17_sum[8]                                             Net         -        -       1.371     -           32        
+je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_15_RNISENK7J1_0     LUT4        A        In      -         12.454      -         
+je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_15_RNISENK7J1_0     LUT4        Z        Out     0.661     13.116      -         
+mult1_un24_sum[8]                                             Net         -        -       1.371     -           29        
+je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_14_RNIMFTEIA3_0     LUT4        A        In      -         14.486      -         
+je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_14_RNIMFTEIA3_0     LUT4        Z        Out     0.661     15.148      -         
+mult1_un31_sum[8]                                             Net         -        -       1.371     -           35        
+je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_15_RNIELU1OT2_0     LUT4        A        In      -         16.519      -         
+je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_15_RNIELU1OT2_0     LUT4        Z        Out     0.661     17.180      -         
+fdtbl_rom_data_2_0_dreg_ret_15_RNIELU1OT2_0                   Net         -        -       1.371     -           1         
+je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_14_RNI3RMG0C1       LUT4        B        In      -         18.552      -         
+je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_14_RNI3RMG0C1       LUT4        Z        Out     0.589     19.141      -         
+mult1_un45_sum[8]                                             Net         -        -       1.371     -           25        
+je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_21_RNIO53NB82       LUT4        A        In      -         20.512      -         
+je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_21_RNIO53NB82       LUT4        Z        Out     0.661     21.173      -         
+fdtbl_rom_data_2_0_dreg_ret_21_RNIO53NB82                     Net         -        -       1.371     -           1         
+je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_21_RNI73HP8J1       LUT4        C        In      -         22.544      -         
+je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_21_RNI73HP8J1       LUT4        Z        Out     0.558     23.102      -         
+mult1_un59_sum[1]                                             Net         -        -       1.507     -           1         
+je.QNT_DU_ret_416[1]                                          FD1P3DZ     D        In      -         24.609      -         
+===========================================================================================================================
+Total path delay (propagation time + setup) of 24.764 is 7.948(32.1%) logic and 16.816(67.9%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
 
@@ -1767,20 +2015,20 @@ Path delay compensated for clock skew. Clock skew is added to clock-to-out value
 Timing exceptions that could not be applied
 None
 
-Finished final timing analysis (Real Time elapsed 0h:00m:26s; CPU Time elapsed 0h:00m:24s; Memory used current: 225MB peak: 232MB)
+Finished final timing analysis (Real Time elapsed 0h:00m:23s; CPU Time elapsed 0h:00m:23s; Memory used current: 223MB peak: 232MB)
 
 
-Finished timing report (Real Time elapsed 0h:00m:26s; CPU Time elapsed 0h:00m:24s; Memory used current: 225MB peak: 232MB)
+Finished timing report (Real Time elapsed 0h:00m:23s; CPU Time elapsed 0h:00m:23s; Memory used current: 223MB peak: 232MB)
 
 ---------------------------------------
 Resource Usage Report for top 
 
 Mapping to part: ice40up5ksg48high-performance_1.2v
 Cell usage:
-CCU2_B          464 uses
-FD1P3DZ         1156 uses
-FD1P3IZ         107 uses
-FD1P3JZ         48 uses
+CCU2_B          543 uses
+FD1P3DZ         1206 uses
+FD1P3IZ         175 uses
+FD1P3JZ         42 uses
 GND             12 uses
 HSOSC           1 use
 INV             73 uses
@@ -1788,7 +2036,7 @@ PDP4K           11 uses
 SP256K          4 uses
 VCC             12 uses
 MAC16           8 uses
-LUT4            2751 uses
+LUT4            3296 uses
 
 I/O ports: 22
 I/O primitives: 21
@@ -1797,26 +2045,26 @@ OB             6 uses
 OBZ_B          1 use
 
 I/O Register bits:                  0
-Register bits not including I/Os:   1311 of 5280 (24%)
+Register bits not including I/Os:   1423 of 5280 (26%)
 
 RAM/ROM usage summary
 Block Rams : 11 of 30 (36%)
 
 Total load per clock:
    top|pclk: 1
-   top|clk_24m: 118
+   top|clk_24m: 141
 
 @S |Mapping Summary:
-Total  LUTs: 2751 (52%)
+Total  LUTs: 3296 (62%)
 
 Distribution of All Consumed LUTs = LUT4 
-Distribution of All Consumed Luts 2751 = 2751 
+Distribution of All Consumed Luts 3296 = 3296 
 
 Mapper successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:27s; CPU Time elapsed 0h:00m:24s; Memory used current: 41MB peak: 232MB)
+At Mapper Exit (Real Time elapsed 0h:00m:24s; CPU Time elapsed 0h:00m:23s; Memory used current: 40MB peak: 232MB)
 
-Process took 0h:00m:27s realtime, 0h:00m:24s cputime
-# Wed Apr 11 14:42:52 2018
+Process took 0h:00m:24s realtime, 0h:00m:23s cputime
+# Mon Apr 23 15:05:58 2018
 
 ###########################################################]

@@ -54,7 +54,7 @@ module jpeg_data_to_spi (
   
   assign          hd_addr = hd_addr_reg;
   assign          je_addr = je_addr_reg;
-  assign          spi_data = spi_data_reg;
+  assign          spi_data = eoi_reg[7:0];//spi_data_reg;
   
   always @ (posedge clk or negedge reset_n)
     begin
@@ -134,8 +134,10 @@ module jpeg_data_to_spi (
       if (!reset_n)
         spi_data_reg <= #1 8'h00;
       else
-      if (spi_rd)
-        spi_data_reg <= #1 eoi_reg[7:0];
+      if (c_state == RD_HDR)
+        spi_data_reg <= #1 hd_data;
+      //if (spi_rd)
+      //  spi_data_reg <= #1 eoi_reg[7:0];
       else
         spi_data_reg <= #1 spi_data_reg;      
     end
@@ -194,32 +196,40 @@ module jpeg_data_to_spi (
           row_y   <= #1 8'h00;
         end
       else
+      if (rst_rcb)
+        begin
+          col_idx <= #1 9'h000;
+          col_x   <= #1 9'h000;
+          row_idx <= #1 8'h00;
+          row_y   <= #1 8'h00;        
+        end
+      else  
         begin
           col_idx <= #1 col_idx;
           col_x   <= #1 col_x;
           row_idx <= #1 row_idx;
           row_y   <= #1 row_y; 
-          case ({rst_rcb, row_max, col_max, chg_blk, chg_row, chg_col})
-            6'h01     : col_idx <= #1 col_idx + 9'h001;
-            6'h03,
-            6'h0B     : begin
+          case ({/*rst_rcb, */row_max, col_max, chg_blk, chg_row, chg_col})
+            5'h01     : col_idx <= #1 col_idx + 9'h001;
+            5'h03,
+            5'h0B     : begin
                           col_idx <= #1 col_x;
                           row_idx <= #1 row_idx + 8'h01;
                         end
-            6'h07     : begin
+            5'h07     : begin
                           col_idx <= #1 col_x + 9'h008;
                           col_x   <= #1 col_x + 9'h008;
                           row_idx <= #1 row_y;
                         end
-            6'h0F     : begin
+            5'h0F     : begin
                           col_idx <= #1 9'h000;
                           col_x   <= #1 9'h000;
                           row_idx <= #1 row_y + 8'h08;
                           row_y   <= #1 row_y + 8'h08;
                         end
-            6'h1F,
-            6'h20,
-            6'h3F     : begin
+            //6'h1F,
+            //6'h20,
+            5'h1F     : begin
                           col_idx <= #1 9'h000;
                           col_x   <= #1 9'h000;
                           row_idx <= #1 8'h00;
