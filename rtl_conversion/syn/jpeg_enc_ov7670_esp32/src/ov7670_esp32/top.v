@@ -62,9 +62,11 @@ module top (
   reg    [15:0]   pix_per_line;
   
   reg    [3:0]    c_state, n_state;
-  
+  /*
   reg    [31:0]   cb_yuyv;
   reg             cb_data;
+  */
+  reg    [16:0]   jpeg_size;
   
   wire            pixel_wr = q_href && (!pixel_wr_disable);// && (pixel_cnt[0]==0);
   
@@ -95,12 +97,12 @@ module top (
   wire   [16:0]   mem_addrr = yty_rd ? yty_addr : jdts_addr;
   
   assign          img_rdy = (c_state == WAIT4);
-  
+  /*
   parameter       RED_VYUY   = 32'hFF4C544C;//32'h4C544CFF;
   parameter       GREEN_VYUY = 32'h15962B96;//32'h962B9615;
   parameter       BLUE_VYUY  = 32'h6B1DFF1D;//32'h1DFF1D6B;
   parameter       WHITE_VYUY = 32'h80FF80FF;//32'hFF80FF80;
-  
+  */
   always @(posedge pclk)
     begin
       q_pdata <= pdata;
@@ -114,7 +116,7 @@ module top (
     begin
       pix_per_line <= href ? pix_per_line+1 : 0;
     end
-  
+  /*
   always @ (posedge pclk or negedge reset_n)
     begin
       if (!reset_n)
@@ -145,7 +147,7 @@ module top (
       else
         cb_data <= #1 cb_data;      
     end
-  
+  */
   //Manage address for writing in DPRAM through pixel counter
   always @ (posedge pclk)
     begin
@@ -228,6 +230,23 @@ module top (
         default   : n_state <= #1 WAIT0;
       endcase
     end    
+  
+  always @ (posedge pclk or negedge reset_n)
+    begin
+      if (!reset_n)
+        jpeg_size <= #1 17'h00000;
+      else
+        case (c_state)
+          JE_EN   : jpeg_size <= #1 17'h00000;
+          WAIT3   : begin
+                      if (je_valid)
+                        jpeg_size <= #1 jpeg_size + 17'h00001;
+                      else
+                        jpeg_size <= #1 jpeg_size;                      
+                    end
+          default : jpeg_size <= #1 jpeg_size;          
+        endcase        
+    end
   
 //SB_HFOSC  u_SB_HFOSC (
   HSOSC  u_HSOSC (
@@ -313,6 +332,8 @@ module top (
     .reset_n   (reset_n),
     
     .je_done   (je_done),
+    
+    .jpeg_size (jpeg_size),
     
     .hd_addr   (hd_addr),
     .hd_data   (hd_data),

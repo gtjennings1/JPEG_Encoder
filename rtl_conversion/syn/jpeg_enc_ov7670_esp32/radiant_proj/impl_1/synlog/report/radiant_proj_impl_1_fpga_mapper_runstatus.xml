@@ -34,13 +34,13 @@ The file contains the job information from mapper to be displayed as part of the
 <data>0h:00m:23s</data>
 </info>
 <info name="Real Time">
-<data>0h:00m:24s</data>
+<data>0h:00m:26s</data>
 </info>
 <info name="Peak Memory">
-<data>232MB</data>
+<data>235MB</data>
 </info>
 <info name="Date &amp; Time">
-<data type="timestamp">1524476158</data>
+<data type="timestamp">1525079017</data>
 </info>
 </job_info>
 </job_run_status>

@@ -154,10 +154,10 @@
 @N: CG364 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\jpeg_data_to_spi.v":7:7:7:22|Synthesizing module jpeg_data_to_spi in library work.
 @N: CG364 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\spi_slave.v":23:7:23:15|Synthesizing module spi_slave in library work.
 @N: CG364 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\top.v":23:7:23:9|Synthesizing module top in library work.
-@N: CL189 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\top.v":150:2:150:7|Register bit pixel_cnt[17] is always 0.
-@N: CL201 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\top.v":183:2:183:7|Trying to extract state machine for register c_state.
+@N: CL189 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\top.v":152:2:152:7|Register bit pixel_cnt[17] is always 0.
+@N: CL201 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\top.v":185:2:185:7|Trying to extract state machine for register c_state.
 @N: CL159 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\spi_slave.v":28:18:28:21|Input mosi is unused.
-@N: CL201 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\jpeg_data_to_spi.v":59:2:59:7|Trying to extract state machine for register c_state.
+@N: CL201 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\jpeg_data_to_spi.v":67:2:67:7|Trying to extract state machine for register c_state.
 @N: CL201 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":303:2:303:7|Trying to extract state machine for register c_state.
 @N: CL201 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":66:2:66:7|Trying to extract state machine for register c_state.
 @N: CL201 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":97:2:97:7|Trying to extract state machine for register c_state.

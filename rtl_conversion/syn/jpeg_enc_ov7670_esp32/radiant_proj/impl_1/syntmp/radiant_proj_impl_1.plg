@@ -5,9 +5,9 @@
 @P:  top|clk_24m - Requested Period : 7.466
 @P:  top|clk_24m - Slack : -1.317
 @P:  top|pclk - Estimated Frequency : NA
-@P:  top|pclk - Requested Frequency : 95.5 MHz
+@P:  top|pclk - Requested Frequency : 95.2 MHz
 @P:  top|pclk - Estimated Period : NA
-@P:  top|pclk - Requested Period : 10.471
+@P:  top|pclk - Requested Period : 10.501
 @P:  top|pclk - Slack : NA
 @P:  System - Estimated Frequency : 40.3 MHz
 @P:  System - Requested Frequency : 47.4 MHz
@@ -17,7 +17,7 @@
 @P: top Part : ice40up5ksg48high-performance_1.2v
 @P: top I/O primitives : 21
 @P: top I/O Register bits : 0
-@P: top Register bits (Non I/O) : 1423 (26%)
+@P: top Register bits (Non I/O) : 1442 (27%)
 @P: top Block Rams : 11 of 30 (36%)
-@P: top Total Luts : 3296 of 5280 (62%)
+@P: top Total Luts : 3303 of 5280 (62%)
 @P:  CPU Time : 0h:00m:23s

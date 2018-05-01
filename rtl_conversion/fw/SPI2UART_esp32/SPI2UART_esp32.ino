@@ -37,7 +37,7 @@ SS    05     46
 int i = 0;
 int j = 0;
 byte pixdata, pixdata_p;
-int address;
+int address, jpeg_size;
   
 void setup(void)
 {
@@ -58,6 +58,19 @@ void setup(void)
   while (!digitalRead(IMG_RDY)){}
 
   digitalWrite(CSPIN, LOW);
+  pixdata = SPI.transfer(0xFF);
+  jpeg_size = pixdata;
+  jpeg_size <<= 8;
+  pixdata = SPI.transfer(0xFF);
+  jpeg_size |= pixdata;
+  jpeg_size <<= 8;
+  pixdata = SPI.transfer(0xFF);
+  jpeg_size |= pixdata;
+  
+  jpeg_size = (jpeg_size & 0x1FFFF) + 607;   
+  Serial.print("JPEG Size: ");
+  Serial.print(jpeg_size);
+  Serial.print("\n"); 
   pixdata = 0x00;
   
   do {

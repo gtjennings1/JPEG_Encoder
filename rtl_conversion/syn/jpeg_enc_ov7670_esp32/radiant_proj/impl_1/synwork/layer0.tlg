@@ -139,36 +139,40 @@ Only the first 100 messages of id 'CG179' are reported. To see all messages use 
 @W: CL260 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1262:2:1262:7|Pruning register bit 4 of cb_bit_cnt[4:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
 @N: CG364 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\jpeg_data_writer.v":7:7:7:22|Synthesizing module jpeg_data_writer in library work.
 @N: CG364 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\jpeg_data_to_spi.v":7:7:7:22|Synthesizing module jpeg_data_to_spi in library work.
-@W: CL169 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\jpeg_data_to_spi.v":132:2:132:7|Pruning unused register spi_data_reg[7:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\jpeg_data_to_spi.v":170:2:170:7|Pruning unused register spi_data_reg[7:0]. Make sure that there are no unused intermediate registers.
 @N: CG364 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\spi_slave.v":23:7:23:15|Synthesizing module spi_slave in library work.
 @W: CL169 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\spi_slave.v":172:2:172:7|Pruning unused register rd_addr_reg[16:0]. Make sure that there are no unused intermediate registers.
 @W: CL169 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\spi_slave.v":158:2:158:7|Pruning unused register addr_data_flag. Make sure that there are no unused intermediate registers.
 @W: CL169 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\spi_slave.v":104:2:104:7|Pruning unused register data_received[7:0]. Make sure that there are no unused intermediate registers.
 @W: CL169 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\spi_slave.v":93:2:93:7|Pruning unused register mosi_reg[1:0]. Make sure that there are no unused intermediate registers.
 @N: CG364 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\top.v":23:7:23:9|Synthesizing module top in library work.
-@W: CL169 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\top.v":135:2:135:7|Pruning unused register cb_data. Make sure that there are no unused intermediate registers.
-@W: CL169 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\top.v":118:2:118:7|Pruning unused register cb_yuyv[31:0]. Make sure that there are no unused intermediate registers.
-@N: CL189 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\top.v":150:2:150:7|Register bit pixel_cnt[17] is always 0.
-@W: CL260 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\top.v":150:2:150:7|Pruning register bit 17 of pixel_cnt[17:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
-@N: CL201 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\top.v":183:2:183:7|Trying to extract state machine for register c_state.
+@N: CL189 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\top.v":152:2:152:7|Register bit pixel_cnt[17] is always 0.
+@W: CL260 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\top.v":152:2:152:7|Pruning register bit 17 of pixel_cnt[17:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@N: CL201 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\top.v":185:2:185:7|Trying to extract state machine for register c_state.
 @N: CL159 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\spi_slave.v":28:18:28:21|Input mosi is unused.
-@W: CL190 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\jpeg_data_to_spi.v":189:2:189:7|Optimizing register bit row_y[0] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\jpeg_data_to_spi.v":189:2:189:7|Optimizing register bit row_y[1] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\jpeg_data_to_spi.v":189:2:189:7|Optimizing register bit row_y[2] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\jpeg_data_to_spi.v":189:2:189:7|Optimizing register bit col_x[0] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\jpeg_data_to_spi.v":189:2:189:7|Optimizing register bit col_x[1] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\jpeg_data_to_spi.v":189:2:189:7|Optimizing register bit col_x[2] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL279 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\jpeg_data_to_spi.v":189:2:189:7|Pruning register bits 2 to 0 of col_x[8:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
-@W: CL279 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\jpeg_data_to_spi.v":189:2:189:7|Pruning register bits 2 to 0 of row_y[7:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
-@N: CL201 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\jpeg_data_to_spi.v":59:2:59:7|Trying to extract state machine for register c_state.
+@W: CL190 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\jpeg_data_to_spi.v":227:2:227:7|Optimizing register bit row_y[0] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\jpeg_data_to_spi.v":227:2:227:7|Optimizing register bit row_y[1] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\jpeg_data_to_spi.v":227:2:227:7|Optimizing register bit row_y[2] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\jpeg_data_to_spi.v":227:2:227:7|Optimizing register bit col_x[0] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\jpeg_data_to_spi.v":227:2:227:7|Optimizing register bit col_x[1] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\jpeg_data_to_spi.v":227:2:227:7|Optimizing register bit col_x[2] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL279 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\jpeg_data_to_spi.v":227:2:227:7|Pruning register bits 2 to 0 of col_x[8:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\jpeg_data_to_spi.v":227:2:227:7|Pruning register bits 2 to 0 of row_y[7:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@N: CL201 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\jpeg_data_to_spi.v":67:2:67:7|Trying to extract state machine for register c_state.
 Extracted state machine for register c_state
-State machine has 6 reachable states with original encodings of:
-   000
-   001
-   010
-   011
-   100
-   101
+State machine has 12 reachable states with original encodings of:
+   0000
+   0001
+   0010
+   0011
+   0100
+   0101
+   0110
+   0111
+   1000
+   1001
+   1010
+   1011
 @W: CL190 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\jpeg_data_writer.v":88:2:88:7|Optimizing register bit row_y[0] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: CL190 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\jpeg_data_writer.v":88:2:88:7|Optimizing register bit row_y[1] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: CL190 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\jpeg_data_writer.v":88:2:88:7|Optimizing register bit row_y[2] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.

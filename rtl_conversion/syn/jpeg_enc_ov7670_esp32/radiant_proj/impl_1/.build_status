@@ -1,30 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <BuildStatus>
     <Strategy name="Strategy1">
-        <Milestone name="Export" build_result="2" build_time="1524476568">
-            <Task name="Bitgen" build_result="2" update_result="0" update_time="1524476568"/>
-            <Task name="TimingSimFileVlg" build_result="2" update_result="0" update_time="1524476587"/>
+        <Milestone name="Export" build_result="2" build_time="1525079379">
+            <Task name="Bitgen" build_result="2" update_result="0" update_time="1525079379"/>
+            <Task name="TimingSimFileVlg" build_result="2" update_result="0" update_time="1525079398"/>
         </Milestone>
-        <Milestone name="Map" build_result="2" build_time="1524476170">
-            <Task name="Map" build_result="2" update_result="0" update_time="1524476170"/>
-            <Task name="MapTrace" build_result="2" update_result="0" update_time="1524476184"/>
+        <Milestone name="Map" build_result="2" build_time="1525079027">
+            <Task name="Map" build_result="2" update_result="0" update_time="1525079027"/>
+            <Task name="MapTrace" build_result="2" update_result="0" update_time="1525079041"/>
         </Milestone>
-        <Milestone name="PAR" build_result="2" build_time="1524476532">
-            <Task name="PAR" build_result="2" update_result="0" update_time="1524476532"/>
-            <Task name="PARTrace" build_result="2" update_result="0" update_time="1524476564"/>
+        <Milestone name="PAR" build_result="2" build_time="1525079335">
+            <Task name="PAR" build_result="2" update_result="0" update_time="1525079335"/>
+            <Task name="PARTrace" build_result="2" update_result="0" update_time="1525079376"/>
             <Task name="IOTiming" build_result="0" update_result="3" update_time="0"/>
         </Milestone>
-        <Milestone name="Synthesis" build_result="2" build_time="1524476166">
-            <Task name="Synplify_Synthesis" build_result="2" update_result="0" update_time="1524476166"/>
+        <Milestone name="Synthesis" build_result="2" build_time="1525079023">
+            <Task name="Synplify_Synthesis" build_result="2" update_result="0" update_time="1525079023"/>
         </Milestone>
-        <Report name="radiant_proj_impl_1.bgn" last_build_time="1524476568" last_build_size="972"/>
-        <Report name="radiant_proj_impl_1.bin" last_build_time="1524476568" last_build_size="104156"/>
-        <Report name="radiant_proj_impl_1.tw1.html" last_build_time="1524476183" last_build_size="403205"/>
-        <Report name="radiant_proj_impl_1.twr.html" last_build_time="1524476564" last_build_size="315113"/>
-        <Report name="radiant_proj_impl_1.udb::log" last_build_time="1524476165" last_build_size="2537126"/>
-        <Report name="radiant_proj_impl_1.udb::phy_par" last_build_time="1524476532" last_build_size="5681851"/>
-        <Report name="radiant_proj_impl_1_map.udb" last_build_time="1524476170" last_build_size="5101068"/>
-        <Report name="radiant_proj_impl_1_vo.sdf" last_build_time="1524476586" last_build_size="3034248"/>
-        <Report name="radiant_proj_impl_1_vo.vo" last_build_time="1524476586" last_build_size="3385026"/>
+        <Report name="radiant_proj_impl_1.bgn" last_build_time="1525079379" last_build_size="972"/>
+        <Report name="radiant_proj_impl_1.bin" last_build_time="1525079379" last_build_size="104156"/>
+        <Report name="radiant_proj_impl_1.tw1.html" last_build_time="1525079041" last_build_size="410585"/>
+        <Report name="radiant_proj_impl_1.twr.html" last_build_time="1525079375" last_build_size="330597"/>
+        <Report name="radiant_proj_impl_1.udb::log" last_build_time="1525079023" last_build_size="2551377"/>
+        <Report name="radiant_proj_impl_1.udb::phy_par" last_build_time="1525079334" last_build_size="5703257"/>
+        <Report name="radiant_proj_impl_1_map.udb" last_build_time="1525079027" last_build_size="5128895"/>
+        <Report name="radiant_proj_impl_1_vo.sdf" last_build_time="1525079398" last_build_size="3052360"/>
+        <Report name="radiant_proj_impl_1_vo.vo" last_build_time="1525079397" last_build_size="3407973"/>
     </Strategy>
 </BuildStatus>

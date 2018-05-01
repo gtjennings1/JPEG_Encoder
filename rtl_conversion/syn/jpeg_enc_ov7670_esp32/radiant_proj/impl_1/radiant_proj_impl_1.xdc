@@ -1,7 +1,7 @@
 
 #1001 : automatically generated
 
-create_clock -name {top|pclk} [get_ports {pclk}] -period {10.471} -waveform {0.000 5.236}
+create_clock -name {top|pclk} [get_ports {pclk}] -period {10.501} -waveform {0.000 5.250}
 
 
 #1002 : automatically generated

@@ -6,14 +6,14 @@
 #### START OF CLOCK OPTIMIZATION REPORT #####[
 
 Clock optimization not enabled
-1 non-gated/non-generated clock tree(s) driving 1299 clock pin(s) of sequential element(s)
+1 non-gated/non-generated clock tree(s) driving 1318 clock pin(s) of sequential element(s)
 1 gated/generated clock tree(s) driving 140 clock pin(s) of sequential element(s)
 0 instances converted, 140 sequential instances remain driven by gated/generated clocks
 
 =========================== Non-Gated/Non-Generated Clocks ============================
 Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance
 ---------------------------------------------------------------------------------------
-@K:CKID0002       pclk                port                   1299       q_href         
+@K:CKID0002       pclk                port                   1318       q_href         
 =======================================================================================
 ============================================================================================================ Gated/Generated Clocks =============================================================================================================
 Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance                            Explanation                                                                                                                   

@@ -43,10 +43,10 @@ int main(int argc, char** argv)
         printf("%s <binary image file name> <jpeg output file name> <image width> <image height> <components> <jpeg quality>", argv[0]);
         exit(1);
     }
-    const char *hex_image = argc == 7 ? argv[1] : nullptr;
-    const char *filename  = argc == 7 ? argv[2] : "default.jpg";
-    int width             = argc == 7 ? atoi(argv[3]) : 1024;
-    int height            = argc == 7 ? atoi(argv[4]) : 768;
+    const char *hex_image = argc == 7 ? argv[1] : "default_320x200.uyvy"//nullptr;
+    const char *filename  = argc == 7 ? argv[2] : "default_320x200.jpg";
+    int width             = argc == 7 ? atoi(argv[3]) : 320;//1024;
+    int height            = argc == 7 ? atoi(argv[4]) : 200;//768;
     int comp              = argc == 7 ? atoi(argv[5]) : 3;
     int quality           = argc == 7 ? atoi(argv[6]) : 90;
     printf("input file name %s, output file name %s, image width %d, height %d, components %d, jpeg quality %d\n", hex_image ? hex_image : "built-in", filename, width, height, comp, quality);
@@ -68,16 +68,27 @@ int main(int argc, char** argv)
     {
         std::fread(buffer, sizeof(uint8_t), filesize, fp);
     }
-    double *yuv_image = new double [3 * width * height];
-    bool result = convert_rgb_to_yuv(buffer, width, height, comp, yuv_image);
+    //double *yuv_image = new double [3 * width * height];
+    //bool result = convert_rgb_to_yuv(buffer, width, height, comp, yuv_image);
 
 	char *yuv_char = new char[3 * width * height];
-	for (int i = 0; i < 3 * width * height; i++)
+	//for (int i = 0; i < 3 * width * height; i++)
+	int j = 0;
+    int k = 0;
+	for (int i = 0; i < (width * height)/2; i++)	
 	{
 		//if (i%3 == 0)
-			yuv_char[i] = (char)yuv_image[i];
+			//yuv_char[i] = (char)yuv_image[i];
 		//else
 		//	yuv_char[i] = 0;
+	    k = i*4;
+	    yuv_char[j++] = 0x80 ^ buffer[k];
+		yuv_char[j++] = 0x80 ^ buffer[k+1];
+		yuv_char[j++] = 0x80 ^ buffer[k+3];
+	    yuv_char[j++] = 0x80 ^ buffer[k+2];
+		yuv_char[j++] = 0x80 ^ buffer[k+1];
+		yuv_char[j++] = 0x80 ^ buffer[k+3];		
+		
 	}
 		
     if (result)

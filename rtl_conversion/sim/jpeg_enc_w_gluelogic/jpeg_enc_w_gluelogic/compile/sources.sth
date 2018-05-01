@@ -1,10 +1,10 @@
 [Files List]
 D:\APPS\lscc\diamond\3.10_x64\active-hdl\vlib\std/src/standard.vhd=S
-E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\sim\jpeg_enc_w_gluelogic\jpeg_enc_w_gluelogic/src/jpeg_enc_dct.v=S
-E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\sim\jpeg_enc_w_gluelogic\jpeg_enc_w_gluelogic/src/jpeg_enc_mem.v=S
-E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\sim\jpeg_enc_w_gluelogic\jpeg_enc_w_gluelogic/src/sc_fifo.v=S
-E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\sim\jpeg_enc_w_gluelogic\jpeg_enc_w_gluelogic/src/jpeg_data_to_spi.v=S
-E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\sim\jpeg_enc_w_gluelogic\jpeg_enc_w_gluelogic/src/jpeg_data_writer.v=S
-E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\sim\jpeg_enc_w_gluelogic\jpeg_enc_w_gluelogic/src/jpeg_enc.v=S
-E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\sim\jpeg_enc_w_gluelogic\jpeg_enc_w_gluelogic/src/yuyv_to_yuv.v=S
-E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\sim\jpeg_enc_w_gluelogic\jpeg_enc_w_gluelogic/src/tb_jpeg_enc_w_gluelogic.v=S
+e:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\sim\jpeg_enc_w_gluelogic\jpeg_enc_w_gluelogic/src/jpeg_enc_dct.v=S
+e:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\sim\jpeg_enc_w_gluelogic\jpeg_enc_w_gluelogic/src/jpeg_enc_mem.v=S
+e:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\sim\jpeg_enc_w_gluelogic\jpeg_enc_w_gluelogic/src/sc_fifo.v=S
+e:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\sim\jpeg_enc_w_gluelogic\jpeg_enc_w_gluelogic/src/jpeg_data_to_spi.v=S
+e:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\sim\jpeg_enc_w_gluelogic\jpeg_enc_w_gluelogic/src/jpeg_data_writer.v=S
+e:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\sim\jpeg_enc_w_gluelogic\jpeg_enc_w_gluelogic/src/jpeg_enc.v=S
+e:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\sim\jpeg_enc_w_gluelogic\jpeg_enc_w_gluelogic/src/yuyv_to_yuv.v=S
+e:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\sim\jpeg_enc_w_gluelogic\jpeg_enc_w_gluelogic/src/tb_jpeg_enc_w_gluelogic.v=S

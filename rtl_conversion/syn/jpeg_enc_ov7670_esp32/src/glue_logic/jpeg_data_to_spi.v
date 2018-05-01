@@ -10,6 +10,8 @@ module jpeg_data_to_spi (
   
   input           je_done,
   
+  input  [16:0]   jpeg_size,
+  
   output [9:0]    hd_addr,
   input  [7:0]    hd_data,
   
@@ -24,13 +26,19 @@ module jpeg_data_to_spi (
   parameter       EOI_MARKER  = 16'hFFD9;
   
   parameter       IDLE      = 0;
-  parameter       RD_HDR    = 1;
-  parameter       W_SPI_RD1 = 2;
-  parameter       RD_JED    = 3;
-  parameter       W_SPI_RD2 = 4;
-  parameter       EOF       = 5;
+  parameter       JPG_SZ1   = 1;
+  parameter       W_JPG_SZ1 = 2;
+  parameter       JPG_SZ2   = 3;
+  parameter       W_JPG_SZ2 = 4;
+  parameter       JPG_SZ3   = 5;
+  parameter       W_JPG_SZ3 = 6;
+  parameter       RD_HDR    = 7;
+  parameter       W_SPI_RD1 = 8;
+  parameter       RD_JED    = 9;
+  parameter       W_SPI_RD2 = 10;
+  parameter       EOF       = 11;
   
-  reg    [2:0]    c_state, n_state;
+  reg    [3:0]    c_state, n_state;
   reg    [9:0]    hd_addr_reg;
   reg    [16:0]   je_addr_reg;
   reg    [15:0]   eoi_reg;
@@ -69,10 +77,37 @@ module jpeg_data_to_spi (
       case (c_state)
         IDLE      : begin
                       if (je_done)
-                        n_state <= #1 RD_HDR;
+                        n_state <= #1 JPG_SZ1;//RD_HDR;
                       else
                         n_state <= #1 IDLE;                      
                     end
+        JPG_SZ1   : begin
+                      n_state <= #1 W_JPG_SZ1;
+                    end   
+        W_JPG_SZ1 : begin
+                      if (spi_rd)
+                        n_state <= #1 JPG_SZ2;
+                      else
+                        n_state <= #1 W_JPG_SZ1;                      
+                    end
+        JPG_SZ2   : begin
+                      n_state <= #1 W_JPG_SZ2;                    
+                    end
+        W_JPG_SZ2 : begin
+                      if (spi_rd)
+                        n_state <= #1 JPG_SZ3;
+                      else
+                        n_state <= #1 W_JPG_SZ2;                       
+                    end
+        JPG_SZ3   : begin
+                      n_state <= #1 W_JPG_SZ3;
+                    end        
+        W_JPG_SZ3 : begin
+                      if (spi_rd)
+                        n_state <= #1 RD_HDR;
+                      else
+                        n_state <= #1 W_JPG_SZ3;                      
+                    end        
         RD_HDR    : begin
                       n_state <= #1 W_SPI_RD1;
                     end
@@ -123,8 +158,11 @@ module jpeg_data_to_spi (
       else
         case (c_state)
           IDLE      : eoi_reg <= #1 16'h0000;
-          RD_HDR    : eoi_reg <= {eoi_reg[7:0], hd_data};
-          RD_JED    : eoi_reg <= {eoi_reg[7:0], je_data};
+          JPG_SZ1   : eoi_reg <= #1 {eoi_reg[7:0], 7'h00, jpeg_size[16]};
+          JPG_SZ2   : eoi_reg <= #1 {eoi_reg[7:0], jpeg_size[15:8]};
+          JPG_SZ3   : eoi_reg <= #1 {eoi_reg[7:0], jpeg_size[7:0]};
+          RD_HDR    : eoi_reg <= #1 {eoi_reg[7:0], hd_data};
+          RD_JED    : eoi_reg <= #1 {eoi_reg[7:0], je_data};
           default   : eoi_reg <= #1 eoi_reg;
         endcase        
     end

@@ -201,18 +201,30 @@ fsm_state_encoding {28662663} 001111 {1111}
 
 fsm_registers {28662663} {c_state[3]}  {c_state[2]}  {c_state[1]}  {c_state[0]} 
 
-fsm_encoding {23592591} sequential
+fsm_encoding {23672671} sequential
 
-fsm_state_encoding {23592591} 000 {000}
+fsm_state_encoding {23672671} 0000 {0000}
 
-fsm_state_encoding {23592591} 001 {001}
+fsm_state_encoding {23672671} 0001 {0001}
 
-fsm_state_encoding {23592591} 010 {010}
+fsm_state_encoding {23672671} 0010 {0010}
 
-fsm_state_encoding {23592591} 011 {011}
+fsm_state_encoding {23672671} 0011 {0011}
 
-fsm_state_encoding {23592591} 100 {100}
+fsm_state_encoding {23672671} 0100 {0100}
 
-fsm_state_encoding {23592591} 101 {101}
+fsm_state_encoding {23672671} 0101 {0101}
 
-fsm_registers {23592591} {c_state[2]}  {c_state[1]}  {c_state[0]} 
+fsm_state_encoding {23672671} 0110 {0110}
+
+fsm_state_encoding {23672671} 0111 {0111}
+
+fsm_state_encoding {23672671} 1000 {1000}
+
+fsm_state_encoding {23672671} 1001 {1001}
+
+fsm_state_encoding {23672671} 1010 {1010}
+
+fsm_state_encoding {23672671} 1011 {1011}
+
+fsm_registers {23672671} {c_state[3]}  {c_state[2]}  {c_state[1]}  {c_state[0]} 

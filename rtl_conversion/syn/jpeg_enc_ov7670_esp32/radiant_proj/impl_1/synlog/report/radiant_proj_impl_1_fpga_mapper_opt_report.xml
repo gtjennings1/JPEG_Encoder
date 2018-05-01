@@ -5,7 +5,7 @@ The file contains the optimization information from mapper to be displayed as pa
 *******************************************************************************************-->
 <report_table display_priority="3" name="Optimizations Summary">
 <parameter tooltip="Retiming summary: Registers Before / After retiming" name="Retiming">
-<data>30 / 173</data>
+<data>30 / 174</data>
 <report_link name="more">
 <data>E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\radiant_proj\impl_1\synlog\report\radiant_proj_impl_1_fpga_mapper_retiming.rpt</data>
 <title>START OF CLOCK OPTIMIZATION REPORT</title>
