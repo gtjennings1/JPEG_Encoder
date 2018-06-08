@@ -47,7 +47,7 @@ Target Device:        iCE40UP5KSG48
 Target Performance:   High-Performance_1.2V
 
 Mapper:    version Radiant (64-bit) 1.0.0.350.6
-Mapped on: Mon Apr 30 14:33:44 2018
+Mapped on: Fri Jun 08 11:33:54 2018
 
 
 <A name="mrp_di"></A><B><U><big>Design Information</big></U></B>
@@ -57,20 +57,20 @@ Command line:   map radiant_proj_impl_1_syn.udb E:/upwork/gnarly_grey/GitHub/JPE
      .pdc -o radiant_proj_impl_1.udb -gui
 
 <A name="mrp_ds"></A><B><U><big>Design Summary</big></U></B>
-   Number of slice registers: 1442 out of  5280 (27%)
+   Number of slice registers: 1504 out of  5280 (28%)
    Number of I/O registers:      0 out of   117 (0%)
-   Number of LUT4s:           4781 out of  5280 (91%)
-      Number of logic LUT4s:             3360
-      Number of inserted feedthru LUT4s: 249
-      Number of replicated LUT4s:         68
-      Number of ripple logic:            552 (1104 LUT4s)
-   Number of IO sites used:   21 out of 39 (54%)
-      Number of IO sites used for general PIOs: 21
+   Number of LUT4s:           4875 out of  5280 (92%)
+      Number of logic LUT4s:             3431
+      Number of inserted feedthru LUT4s: 293
+      Number of replicated LUT4s:         61
+      Number of ripple logic:            545 (1090 LUT4s)
+   Number of IO sites used:   22 out of 39 (56%)
+      Number of IO sites used for general PIOs: 22
       Number of IO sites used for I3Cs: 0 out of 2 (0%)
-      Number of IO sites used for PIOs+I3Cs: 21 out of 36 (58%)
+      Number of IO sites used for PIOs+I3Cs: 22 out of 36 (61%)
       (note: If I3C is not used, its site can be used as general PIO)
       Number of IO sites used for OD+RGB IO buffers: 0 out of 3 (0%)
-   Number of DSPs:             8 out of 8 (100%)
+   Number of DSPs:             3 out of 8 (37%)
    Number of I2Cs:             0 out of 2 (0%)
    Number of High Speed OSCs:  1 out of 1 (100%)
    Number of Low Speed OSCs:   0 out of 1 (0%)
@@ -80,106 +80,112 @@ Command line:   map radiant_proj_impl_1_syn.udb E:/upwork/gnarly_grey/GitHub/JPE
    Number of SRAMs:            4 out of 4 (100%)
    Number of WARMBOOTs:        0 out of 1 (0%)
    Number of SPIs:             0 out of 2 (0%)
-   Number of EBRs:             11 out of 30 (36%)
+   Number of EBRs:             13 out of 30 (43%)
    Number of PLLs:             0 out of 1 (0%)
    Number of Clocks:  2
-      Net pclk_c: 1207 loads, 1207 rising, 0 falling (Driver: Port pclk)
+      Net pclk_c: 1233 loads, 1233 rising, 0 falling (Driver: Port pclk)
       Net clk_24m: 138 loads, 138 rising, 0 falling (Driver: Pin
      u_HSOSC.osc_inst/CLKHF)
-   Number of Clock Enables:  63
+   Number of Clock Enables:  68
       Net q_vsync: 1 loads, 1 SLICEs
-      Net cam_buf/w_addr[16]: 8 loads, 0 SLICEs
-      Net cam_buf/w_addr_i[16]: 8 loads, 0 SLICEs
+      Net cam_buf/w_addr_1dup[0]: 8 loads, 0 SLICEs
+      Net cam_buf/w_addr_1_i[0]: 8 loads, 0 SLICEs
       Net cam_buf/wr_ram[2]: 1 loads, 0 SLICEs
       Net cam_buf/wr_ram[1]: 1 loads, 0 SLICEs
       Net cam_buf/wr_ram[0]: 1 loads, 0 SLICEs
       Net cam_buf/wr_ram[3]: 1 loads, 0 SLICEs
-      Net VCC: 25 loads, 0 SLICEs
-      Net yty/ff_wr: 5 loads, 5 SLICEs
+      Net VCC: 24 loads, 0 SLICEs
       Net yty/img_cole_0_i: 9 loads, 9 SLICEs
       Net yty/img_rowe_0_i: 8 loads, 8 SLICEs
-      Net yty/c_state[1]: 1 loads, 1 SLICEs
-      Net yty/N_110_0_0: 8 loads, 8 SLICEs
+      Net yty/ff_wr: 5 loads, 5 SLICEs
+      Net yty/un1_c_state_17_0_i_0: 8 loads, 8 SLICEs
+      Net yty/N_72_0_0: 31 loads, 31 SLICEs
 
-      Net yty/N_114_0_0: 7 loads, 7 SLICEs
       Net je_rd: 5 loads, 5 SLICEs
       Net yty/ff_wr_RNI79NE: 6 loads, 6 SLICEs
-      Net yty/yuv_fifo/cnt_RNIHBEN[0]: 2 loads, 0 SLICEs
-      Net je/N_93: 24 loads, 24 SLICEs
-      Net je/QNT_DU_0_sqmuxa: 91 loads, 91 SLICEs
+      Net jedw_wr: 4 loads, 4 SLICEs
+      Net G_11: 5 loads, 5 SLICEs
+      Net yty/yuv_fifo/cnt_RNIHBEN[1]: 2 loads, 0 SLICEs
+      Net je/c_state_d[12]: 91 loads, 91 SLICEs
       Net je/zzdu_ram_we: 2 loads, 0 SLICEs
       Net je/img_cole_0_i: 11 loads, 11 SLICEs
       Net je/img_rowe_0_i: 10 loads, 10 SLICEs
-      Net je/N_222: 8 loads, 8 SLICEs
+      Net je/img_valid_reg_2_0_i: 8 loads, 8 SLICEs
       Net je/du_ram_we: 2 loads, 0 SLICEs
-      Net je/N_86: 13 loads, 13 SLICEs
-      Net je/un1_c_state_18_0_a3_0_a3: 14 loads, 14 SLICEs
+      Net je/un1_c_state_22_0_i: 13 loads, 13 SLICEs
+      Net je/c_state_RNIVIPB[2]: 14 loads, 14 SLICEs
       Net je/c_state_d[42]: 8 loads, 8 SLICEs
-      Net je/N_233: 15 loads, 15 SLICEs
-      Net je/un1_DCY13_4_0_i_i: 15 loads, 15 SLICEs
-      Net je/N_218: 24 loads, 24 SLICEs
-      Net je/N_438: 16 loads, 16 SLICEs
-      Net je/N_214_0_0: 6 loads, 6 SLICEs
-      Net je/N_35_0: 1 loads, 1 SLICEs
+      Net je/un1_c_state_14_0_i: 24 loads, 24 SLICEs
+      Net je/un1_DCY13_1_0_i: 15 loads, 15 SLICEs
+      Net je/un1_DCY13_4_0_i: 15 loads, 15 SLICEs
+      Net je/un1_c_state_36_0_i: 24 loads, 24 SLICEs
+      Net je/un1_c_state_17_0_i: 16 loads, 16 SLICEs
+      Net je/c_state_d[13]: 4 loads, 4 SLICEs
+      Net je/N_34_0: 1 loads, 1 SLICEs
       Net je/c_state_d[17]: 3 loads, 3 SLICEs
-      Net je/N_220_0_0: 1 loads, 1 SLICEs
-      Net je/N_224: 6 loads, 0 SLICEs
+      Net je/un1_last_du11_0: 1 loads, 1 SLICEs
+      Net je/un1_c_state_33_0_0: 2 loads, 2 SLICEs
+      Net je/un1_c_state_27_0_i: 6 loads, 0 SLICEs
       Net je/ram_rom/acht_bb_rom_data_2_0_0_sr_en: 21 loads, 21 SLICEs
       Net je/dctdu_ram_we: 4 loads, 0 SLICEs
-      Net je/dct/N_27: 22 loads, 22 SLICEs
-      Net je/dct/un1_c_state_5_0_0: 40 loads, 40 SLICEs
-      Net je/dct/un1_c_state_6_0_i: 64 loads, 64 SLICEs
-      Net je/dct/un17_0_a2: 27 loads, 27 SLICEs
-      Net je/dct/N_5950_0: 54 loads, 54 SLICEs
-      Net je/dct/N_5951_0: 19 loads, 19 SLICEs
-      Net je/dct/un1_tmp_du[7]11_6_0: 18 loads, 18 SLICEs
-      Net je/dct/un1_tmp_du[7]11_7_0: 18 loads, 18 SLICEs
-      Net je/dct/un1_tmp_du[7]11_9_0: 18 loads, 18 SLICEs
+      Net je/dct/dctdu_w_idx5_0_i: 22 loads, 22 SLICEs
+      Net je/dct/N_126_0: 40 loads, 40 SLICEs
+      Net je/dct/N_29_0: 38 loads, 38 SLICEs
+      Net je/dct/N_101_0: 19 loads, 19 SLICEs
+      Net je/dct/c_state_RNIOKM31_0[0]: 27 loads, 27 SLICEs
       Net je/dct/un1_tmp_du[7]11_8_0: 18 loads, 18 SLICEs
       Net je/dct/un1_tmp_du[7]11_11_0: 18 loads, 18 SLICEs
-      Net je/dct/un1_tmp_du[7]11_13_0: 18 loads, 18 SLICEs
+      Net je/dct/N_23: 48 loads, 48 SLICEs
       Net je/dct/un1_tmp_du[7]11_12_0: 18 loads, 18 SLICEs
+      Net je/dct/un1_tmp_du[7]11_13_0: 18 loads, 18 SLICEs
       Net je/dct/un1_tmp_du[7]11_10_0: 18 loads, 18 SLICEs
-      Net je/dct/N_38_0: 4 loads, 4 SLICEs
-      Net jedw/N_46: 9 loads, 9 SLICEs
-      Net jedw/N_4: 8 loads, 8 SLICEs
+      Net je/dct/un1_tmp_du[7]11_9_0: 18 loads, 18 SLICEs
+      Net je/dct/un1_tmp_du[7]11_6_0: 18 loads, 18 SLICEs
+      Net je/dct/un1_tmp_du[7]11_7_0: 18 loads, 18 SLICEs
+      Net je/dct/c_state_0[2]: 4 loads, 4 SLICEs
+      Net jedw/col_idxe_0_i: 9 loads, 9 SLICEs
+      Net jedw/row_idxe_0_i: 8 loads, 8 SLICEs
+      Net jed_fifo/cnt_RNILUJK2[0]: 4 loads, 0 SLICEs
       Net jdts/hd_addr_rege_0_i: 10 loads, 10 SLICEs
       Net jdts/col_idxe_0_i: 9 loads, 9 SLICEs
-      Net jdts/col_idx_4_sqmuxa_i: 8 loads, 8 SLICEs
+      Net jdts/row_idxe_0_i: 8 loads, 8 SLICEs
       Net jdts/un1_col_idx22_1_0_i: 16 loads, 16 SLICEs
-      Net esp32_spi/un1_sclk_reg8_i: 8 loads, 8 SLICEs
+      Net esp32_spi/byte_received: 17 loads, 17 SLICEs
+      Net esp32_spi/sclk_reg_RNIDL56[1]: 8 loads, 8 SLICEs
+      Net esp32_spi/N_18_0: 8 loads, 8 SLICEs
       Net u_OV7670_Controller/taken: 7 loads, 7 SLICEs
       Net u_OV7670_Controller/I2C/un1_N_4: 31 loads, 31 SLICEs
-      Net u_OV7670_Controller/I2C/un1_N_8_0: 31 loads, 31 SLICEs
-   Number of LSRs:  11
+      Net u_OV7670_Controller/I2C/un1_N_8_0_0: 30 loads, 30 SLICEs
+   Number of LSRs:  12
       Net q_vsync: 9 loads, 9 SLICEs
+
       Net je_en: 9 loads, 9 SLICEs
       Net href_c_i: 9 loads, 9 SLICEs
-      Net yty/c_state_RNI39SK2_0[0]: 32 loads, 32 SLICEs
-      Net yty/c_state_RNINBKK1[3]: 8 loads, 8 SLICEs
-      Net je/c_state_RNIAODS[1]: 15 loads, 15 SLICEs
-
-      Net je/N_39_1: 8 loads, 8 SLICEs
-      Net je/N_431: 15 loads, 15 SLICEs
+      Net mem_wr: 8 loads, 8 SLICEs
+      Net yty/c_state_RNI35SQ1[2]: 32 loads, 32 SLICEs
+      Net yty/c_state_RNI2A3F1_1[3]: 8 loads, 8 SLICEs
+      Net je/c_state_539_d: 30 loads, 30 SLICEs
+      Net je/N_44_1: 8 loads, 8 SLICEs
+      Pin ssel: 16 loads, 16 SLICEs (Net: ssel_c)
       Net u_OV7670_Controller/LUT/address[6]: 58 loads, 58 SLICEs
       Net u_OV7670_Controller/I2C/un1_N_4: 1 loads, 1 SLICEs
-      Net u_OV7670_Controller/I2C/taken_temp_0_sqmuxa_1: 32 loads, 32 SLICEs
+      Net u_OV7670_Controller/I2C/taken_temp_0_sqmuxa_1: 31 loads, 31 SLICEs
    Top 10 highest fanout non-clock nets:
-      Net je/dct/un9_o3[2]: 252 loads
-      Net je/dct/c_state[1]: 184 loads
-      Net je/c_state[1]: 156 loads
-      Net je/c_state[0]: 149 loads
-      Net je/dct/un17_0_a2: 135 loads
-      Net je/c_state[4]: 133 loads
-      Net VCC: 117 loads
-      Net je/dct/c_state[3]: 94 loads
-      Net je/QNT_DU_0_sqmuxa: 91 loads
-      Net je/c_state[2]: 87 loads
+      Net je/dct/N_21_0: 327 loads
+      Net je/dct/N_141_0: 215 loads
+      Net je/c_state[1]: 174 loads
+      Net je/c_state[0]: 152 loads
+      Net je/c_state[4]: 150 loads
+      Net je/dct/c_state[1]: 114 loads
+      Net je/dct/c_state[3]: 99 loads
+      Net VCC: 99 loads
+      Net je/c_state_d[12]: 91 loads
+      Net je/c_state[2]: 89 loads
 
 
 
 
-   Number of warnings:  4
+   Number of warnings:  2
    Number of errors:    0
 
    Number of errors:    0
@@ -188,11 +194,9 @@ Command line:   map radiant_proj_impl_1_syn.udb E:/upwork/gnarly_grey/GitHub/JPE
 
 <A name="mrp_dwe"></A><B><U><big>Design Errors/Warnings</big></U></B>
 
-WARNING - map: Top module port 'mosi' does not connect to anything.
 WARNING - map: The clock port [pclk] is assigned to a non clock dedicated pin
      [18], which might affect the clock performance. Use dedicated clock
      resources for the port.
-WARNING - map: Top module port 'mosi' does not connect to anything.
 WARNING - map: The clock port [pclk] is assigned to a non clock dedicated pin
      [18], which might affect the clock performance. Use dedicated clock
      resources for the port.
@@ -216,11 +220,13 @@ WARNING - map: The clock port [pclk] is assigned to a non clock dedicated pin
 | cam_pwrdn           | OUTPUT    | LVCMOS33  |
 +---------------------+-----------+-----------+
 | cam_reset_n         | OUTPUT    | LVCMOS33  |
+
 +---------------------+-----------+-----------+
 | xclk                | OUTPUT    | LVCMOS33  |
 +---------------------+-----------+-----------+
 | ssel                | INPUT     | LVCMOS33  |
-
++---------------------+-----------+-----------+
+| mosi                | INPUT     | LVCMOS33  |
 +---------------------+-----------+-----------+
 | sclk                | INPUT     | LVCMOS33  |
 +---------------------+-----------+-----------+
@@ -261,12 +267,19 @@ Signal u_OV7670_Controller/LUT/address_s_0[7].COUT undriven or does not drive
      anything - clipped.
 Signal u_OV7670_Controller/LUT/address_s_0[7].S1 undriven or does not drive
      anything - clipped.
+Signal esp32_spi/rd_addr_reg_cry_0[0].S0 undriven or does not drive anything -
+     clipped.
+Signal esp32_spi/rd_addr_reg_cry_0[0].CIN undriven or does not drive anything -
+     clipped.
+Signal esp32_spi/rd_addr_reg_cry_0[15].COUT undriven or does not drive anything
+     - clipped.
 Signal jdts/hd_addr_reg_cry_0[0].S0 undriven or does not drive anything -
      clipped.
 Signal jdts/hd_addr_reg_cry_0[0].CIN undriven or does not drive anything -
      clipped.
 Signal jdts/hd_addr_reg_s_0[9].COUT undriven or does not drive anything -
      clipped.
+
 Signal jdts/hd_addr_reg_s_0[9].S1 undriven or does not drive anything - clipped.
 Signal jdts/col_idx_cry_0[0].S0 undriven or does not drive anything - clipped.
 Signal jdts/col_idx_cry_0[0].CIN undriven or does not drive anything - clipped.
@@ -279,7 +292,6 @@ Signal jdts/un6_row_idx_cry_1_0.S0 undriven or does not drive anything -
      clipped.
 Signal jdts/un6_row_idx_cry_1_0.CIN undriven or does not drive anything -
      clipped.
-
 Signal jdts/un6_row_idx_s_4_0.COUT undriven or does not drive anything -
      clipped.
 Signal jdts/un6_row_idx_s_4_0.S1 undriven or does not drive anything - clipped.
@@ -289,12 +301,43 @@ Signal jdts/un7_col_idx_cry_1_0.CIN undriven or does not drive anything -
      clipped.
 Signal jdts/un7_col_idx_cry_4_0.COUT undriven or does not drive anything -
      clipped.
+Signal jed_fifo/fifo_fifo_0_1.DO[9] undriven or does not drive anything -
+     clipped.
+Signal jed_fifo/fifo_fifo_0_1.DO[10] undriven or does not drive anything -
+     clipped.
+Signal jed_fifo/fifo_fifo_0_1.DO[11] undriven or does not drive anything -
+     clipped.
+Signal jed_fifo/fifo_fifo_0_1.DO[12] undriven or does not drive anything -
+     clipped.
+Signal jed_fifo/fifo_fifo_0_1.DO[13] undriven or does not drive anything -
+     clipped.
+Signal jed_fifo/fifo_fifo_0_1.DO[14] undriven or does not drive anything -
+     clipped.
+Signal jed_fifo/fifo_fifo_0_1.DO[15] undriven or does not drive anything -
+     clipped.
+Signal jed_fifo/read_pointer_cry_0[0].S0 undriven or does not drive anything -
+     clipped.
+Signal jed_fifo/read_pointer_cry_0[0].CIN undriven or does not drive anything -
+     clipped.
+Signal jed_fifo/read_pointer_cry_0[5].COUT undriven or does not drive anything -
+     clipped.
+Signal jed_fifo/write_pointer_cry_0[0].S0 undriven or does not drive anything -
+     clipped.
+Signal jed_fifo/write_pointer_cry_0[0].CIN undriven or does not drive anything -
+     clipped.
+Signal jed_fifo/write_pointer_cry_0[5].COUT undriven or does not drive anything
+     - clipped.
+Signal jed_fifo/cnt_cry_0[0].S0 undriven or does not drive anything - clipped.
+Signal jed_fifo/cnt_cry_0[0].CIN undriven or does not drive anything - clipped.
+Signal jed_fifo/cnt_s_0[7].COUT undriven or does not drive anything - clipped.
+Signal jed_fifo/cnt_s_0[7].S1 undriven or does not drive anything - clipped.
 Signal jedw/col_idx_cry_0[0].S0 undriven or does not drive anything - clipped.
 Signal jedw/col_idx_cry_0[0].CIN undriven or does not drive anything - clipped.
 Signal jedw/col_idx_cry_0[7].COUT undriven or does not drive anything - clipped.
 Signal jedw/row_idx_cry_0[0].S0 undriven or does not drive anything - clipped.
 Signal jedw/row_idx_cry_0[0].CIN undriven or does not drive anything - clipped.
 Signal jedw/row_idx_s_0[7].COUT undriven or does not drive anything - clipped.
+
 Signal jedw/row_idx_s_0[7].S1 undriven or does not drive anything - clipped.
 Signal jedw/un6_row_idx_cry_1_0.S0 undriven or does not drive anything -
      clipped.
@@ -329,25 +372,88 @@ Signal je/dct/un78_tmp_du_s_17_0.COUT undriven or does not drive anything -
      clipped.
 Signal je/dct/un78_tmp_du_s_17_0.S1 undriven or does not drive anything -
      clipped.
-Signal je/dct/un1_tmp11_cry_0_0.S0 undriven or does not drive anything -
-     clipped.
-Signal je/dct/un1_tmp11_cry_0_0.CIN undriven or does not drive anything -
-     clipped.
-Signal je/dct/un1_tmp11_s_17_0.COUT undriven or does not drive anything -
-     clipped.
-Signal je/dct/un1_tmp11_s_17_0.S1 undriven or does not drive anything - clipped.
-Signal je/dct/un1_tmp10_cry_0_0.S0 undriven or does not drive anything -
-
-     clipped.
-Signal je/dct/un1_tmp10_cry_0_0.CIN undriven or does not drive anything -
-     clipped.
-Signal je/dct/un1_tmp10_s_17_0.COUT undriven or does not drive anything -
-     clipped.
-Signal je/dct/un1_tmp10_s_17_0.S1 undriven or does not drive anything - clipped.
 Signal je/dct/un81_tmp_du_cry_16_0.COUT undriven or does not drive anything -
      clipped.
 Signal je/dct/un1_tmp6_cry_16_0.COUT undriven or does not drive anything -
      clipped.
+Signal je/dct/un1_tmp_du[4]_1_cry_0_0_0.S0 undriven or does not drive anything -
+     clipped.
+Signal je/dct/un1_tmp_du[4]_1_cry_0_0_0.CIN undriven or does not drive anything
+     - clipped.
+Signal je/dct/un1_tmp_du[4]_1_s_17_0.COUT undriven or does not drive anything -
+     clipped.
+Signal je/dct/un1_tmp_du[4]_1_s_17_0.S1 undriven or does not drive anything -
+     clipped.
+Signal je/dct/un1_tmp_du[6]_1_cry_0_0.S0 undriven or does not drive anything -
+     clipped.
+Signal je/dct/un1_tmp_du[6]_1_cry_0_0.CIN undriven or does not drive anything -
+     clipped.
+Signal je/dct/un1_tmp_du[6]_1_s_17_0.COUT undriven or does not drive anything -
+     clipped.
+Signal je/dct/un1_tmp_du[6]_1_s_17_0.S1 undriven or does not drive anything -
+     clipped.
+Signal je/dct/un1_tmp2_5_cry_0_0.S0 undriven or does not drive anything -
+     clipped.
+Signal je/dct/un1_tmp2_5_cry_0_0.CIN undriven or does not drive anything -
+
+     clipped.
+Signal je/dct/un1_tmp2_5_s_17_0.COUT undriven or does not drive anything -
+     clipped.
+Signal je/dct/un1_tmp2_5_s_17_0.S1 undriven or does not drive anything -
+     clipped.
+Signal je/dct/un1_tmp2_4_cry_0_0_0.S0 undriven or does not drive anything -
+     clipped.
+Signal je/dct/un1_tmp2_4_cry_0_0_0.CIN undriven or does not drive anything -
+     clipped.
+Signal je/dct/un1_tmp2_4_s_17_0.COUT undriven or does not drive anything -
+     clipped.
+Signal je/dct/un1_tmp2_4_s_17_0.S1 undriven or does not drive anything -
+     clipped.
+Signal je/dct/un1_tmp3_3_cry_0_0_0.S0 undriven or does not drive anything -
+     clipped.
+Signal je/dct/un1_tmp3_3_cry_0_0_0.CIN undriven or does not drive anything -
+     clipped.
+Signal je/dct/un1_tmp3_3_s_17_0.COUT undriven or does not drive anything -
+     clipped.
+Signal je/dct/un1_tmp3_3_s_17_0.S1 undriven or does not drive anything -
+     clipped.
+Signal je/dct/un1_tmp13_1_cry_0_0.S0 undriven or does not drive anything -
+     clipped.
+Signal je/dct/un1_tmp13_1_cry_0_0.CIN undriven or does not drive anything -
+     clipped.
+Signal je/dct/un1_tmp13_1_s_17_0.COUT undriven or does not drive anything -
+     clipped.
+Signal je/dct/un1_tmp13_1_s_17_0.S1 undriven or does not drive anything -
+     clipped.
+Signal je/dct/un1_tmp3_2_cry_0_0.S0 undriven or does not drive anything -
+     clipped.
+Signal je/dct/un1_tmp3_2_cry_0_0.CIN undriven or does not drive anything -
+     clipped.
+Signal je/dct/un1_tmp3_2_s_17_0.COUT undriven or does not drive anything -
+     clipped.
+Signal je/dct/un1_tmp3_2_s_17_0.S1 undriven or does not drive anything -
+     clipped.
+Signal je/dct/un1_tmp4_2_cry_0_0.S0 undriven or does not drive anything -
+     clipped.
+Signal je/dct/un1_tmp4_2_cry_0_0.CIN undriven or does not drive anything -
+     clipped.
+Signal je/dct/un1_tmp4_2_s_17_0.COUT undriven or does not drive anything -
+     clipped.
+Signal je/dct/un1_tmp4_2_s_17_0.S1 undriven or does not drive anything -
+     clipped.
+Signal je/dct/un1_tmp2_3_cry_0_0.S0 undriven or does not drive anything -
+     clipped.
+Signal je/dct/un1_tmp2_3_cry_0_0.CIN undriven or does not drive anything -
+     clipped.
+Signal je/dct/un1_tmp2_3_s_17_0.COUT undriven or does not drive anything -
+     clipped.
+Signal je/dct/un1_tmp2_3_s_17_0.S1 undriven or does not drive anything -
+     clipped.
+Signal je/dct/un1_tmp7_1_cry_16_0.COUT undriven or does not drive anything -
+     clipped.
+Signal je/dct/un1_tmp_du[2]_1_cry_16_0.COUT undriven or does not drive anything
+     - clipped.
+
 Signal je/dct/un3_tmp6_2_cry_0_0.S0 undriven or does not drive anything -
      clipped.
 Signal je/dct/un3_tmp6_2_cry_0_0.CIN undriven or does not drive anything -
@@ -358,102 +464,14 @@ Signal je/dct/un3_tmp6_2_s_17_0.S1 undriven or does not drive anything -
      clipped.
 Signal je/dct/un1_tmp12_cry_16_0.COUT undriven or does not drive anything -
      clipped.
-Signal je/dct/un1_tmp21_add_1_cry_0_0.S0 undriven or does not drive anything -
+Signal je/dct/un1_tmp_du[3]_2_cry_0_0_0.S0 undriven or does not drive anything -
      clipped.
-Signal je/dct/un1_tmp21_add_1_cry_0_0.CIN undriven or does not drive anything -
-     clipped.
-Signal je/dct/un1_tmp21_add_1_cry_1_0.COUT undriven or does not drive anything -
-     clipped.
-Signal je/dct/un1_tmp1_add_1_cry_0_0.S0 undriven or does not drive anything -
-     clipped.
-Signal je/dct/un1_tmp1_add_1_cry_0_0.CIN undriven or does not drive anything -
-     clipped.
-Signal je/dct/un1_tmp1_add_1_cry_1_0.COUT undriven or does not drive anything -
-     clipped.
-Signal je/dct/un1_tmp5_add_1_cry_0_0.S0 undriven or does not drive anything -
-     clipped.
-Signal je/dct/un1_tmp5_add_1_cry_0_0.CIN undriven or does not drive anything -
-     clipped.
-Signal je/dct/un1_tmp5_add_1_cry_1_0.COUT undriven or does not drive anything -
-     clipped.
-Signal je/dct/un1_tmp_du[6]_1_cry_0_0.S0 undriven or does not drive anything -
-     clipped.
-Signal je/dct/un1_tmp_du[6]_1_cry_0_0.CIN undriven or does not drive anything -
-     clipped.
-Signal je/dct/un1_tmp_du[6]_1_s_17_0.COUT undriven or does not drive anything -
-     clipped.
-Signal je/dct/un1_tmp_du[6]_1_s_17_0.S1 undriven or does not drive anything -
-     clipped.
-Signal je/dct/un1_tmp5_3_cry_16_0.COUT undriven or does not drive anything -
-     clipped.
-Signal je/dct/un1_tmp22_2_cry_0_0.S0 undriven or does not drive anything -
-     clipped.
-Signal je/dct/un1_tmp22_2_cry_0_0.CIN undriven or does not drive anything -
-     clipped.
-Signal je/dct/un1_tmp22_2_s_17_0.COUT undriven or does not drive anything -
-     clipped.
-Signal je/dct/un1_tmp22_2_s_17_0.S1 undriven or does not drive anything -
-     clipped.
-Signal je/dct/un1_tmp2_3_cry_0_0.S0 undriven or does not drive anything -
-
-     clipped.
-Signal je/dct/un1_tmp2_3_cry_0_0.CIN undriven or does not drive anything -
-     clipped.
-Signal je/dct/un1_tmp2_3_s_17_0.COUT undriven or does not drive anything -
-     clipped.
-Signal je/dct/un1_tmp2_3_s_17_0.S1 undriven or does not drive anything -
-     clipped.
-Signal je/dct/un1_tmp13_3_cry_0_0.S0 undriven or does not drive anything -
-     clipped.
-Signal je/dct/un1_tmp13_3_cry_0_0.CIN undriven or does not drive anything -
-     clipped.
-Signal je/dct/un1_tmp13_3_s_17_0.COUT undriven or does not drive anything -
-     clipped.
-Signal je/dct/un1_tmp13_3_s_17_0.S1 undriven or does not drive anything -
-     clipped.
-Signal je/dct/un1_tmp3_1_cry_0_0.S0 undriven or does not drive anything -
-     clipped.
-Signal je/dct/un1_tmp3_1_cry_0_0.CIN undriven or does not drive anything -
-     clipped.
-Signal je/dct/un1_tmp3_1_s_17_0.COUT undriven or does not drive anything -
-     clipped.
-Signal je/dct/un1_tmp3_1_s_17_0.S1 undriven or does not drive anything -
-     clipped.
-Signal je/dct/un1_tmp4_1_cry_0_0.S0 undriven or does not drive anything -
-     clipped.
-Signal je/dct/un1_tmp4_1_cry_0_0.CIN undriven or does not drive anything -
-     clipped.
-Signal je/dct/un1_tmp4_1_s_17_0.COUT undriven or does not drive anything -
-     clipped.
-Signal je/dct/un1_tmp4_1_s_17_0.S1 undriven or does not drive anything -
-     clipped.
-Signal je/dct/un1_tmp2_2_cry_0_0.S0 undriven or does not drive anything -
-     clipped.
-Signal je/dct/un1_tmp2_2_cry_0_0.CIN undriven or does not drive anything -
-     clipped.
-Signal je/dct/un1_tmp2_2_s_17_0.COUT undriven or does not drive anything -
-     clipped.
-Signal je/dct/un1_tmp2_2_s_17_0.S1 undriven or does not drive anything -
-     clipped.
-Signal je/dct/un1_tmp7_1_cry_16_0.COUT undriven or does not drive anything -
-     clipped.
-Signal je/dct/un1_tmp_du[2]_1_cry_16_0.COUT undriven or does not drive anything
+Signal je/dct/un1_tmp_du[3]_2_cry_0_0_0.CIN undriven or does not drive anything
      - clipped.
-Signal je/dct/un1_tmp21_1_0_cry_2_0.S0 undriven or does not drive anything -
+Signal je/dct/un1_tmp_du[3]_2_s_17_0.COUT undriven or does not drive anything -
      clipped.
-Signal je/dct/un1_tmp21_1_0_cry_2_0.CIN undriven or does not drive anything -
+Signal je/dct/un1_tmp_du[3]_2_s_17_0.S1 undriven or does not drive anything -
      clipped.
-Signal je/dct/un1_tmp1_1_0_cry_2_0.S0 undriven or does not drive anything -
-     clipped.
-Signal je/dct/un1_tmp1_1_0_cry_2_0.CIN undriven or does not drive anything -
-     clipped.
-Signal je/dct/un1_tmp22_1_0_cry_2_0.S0 undriven or does not drive anything -
-     clipped.
-Signal je/dct/un1_tmp22_1_0_cry_2_0.CIN undriven or does not drive anything -
-     clipped.
-Signal je/dct/un1_tmp22_1_0_cry_15_0.COUT undriven or does not drive anything -
-     clipped.
-
 Signal je/ram_rom/dctdu_ram_dctdu_ram_0_1.DO[2] undriven or does not drive
      anything - clipped.
 Signal je/ram_rom/dctdu_ram_dctdu_ram_0_1.DO[3] undriven or does not drive
@@ -493,6 +511,7 @@ Signal je/ram_rom/du_ram_du_ram_0_0.DO[10] undriven or does not drive anything -
 Signal je/ram_rom/du_ram_du_ram_0_0.DO[11] undriven or does not drive anything -
      clipped.
 Signal je/ram_rom/du_ram_du_ram_0_0.DO[12] undriven or does not drive anything -
+
      clipped.
 Signal je/ram_rom/du_ram_du_ram_0_0.DO[13] undriven or does not drive anything -
      clipped.
@@ -511,7 +530,6 @@ Signal je/ram_rom/zzidx_rom_data_2_0_0.DO[9] undriven or does not drive anything
 Signal je/ram_rom/zzidx_rom_data_2_0_0.DO[10] undriven or does not drive
      anything - clipped.
 Signal je/ram_rom/zzidx_rom_data_2_0_0.DO[11] undriven or does not drive
-
      anything - clipped.
 Signal je/ram_rom/zzidx_rom_data_2_0_0.DO[12] undriven or does not drive
      anything - clipped.
@@ -551,6 +569,7 @@ Signal je/ram_rom/acht_bb_rom_data_2_0_1_cZ.DO[5] undriven or does not drive
      anything - clipped.
 Signal je/ram_rom/acht_bb_rom_data_2_0_1_cZ.DO[7] undriven or does not drive
      anything - clipped.
+
 Signal je/ram_rom/acht_bb_rom_data_2_0_1_cZ.DO[9] undriven or does not drive
      anything - clipped.
 Signal je/ram_rom/acht_bb_rom_data_2_0_1_cZ.DO[11] undriven or does not drive
@@ -569,7 +588,6 @@ Signal je/ram_rom/acht_bb_rom_data_2_0_0_cZ.DO[7] undriven or does not drive
      anything - clipped.
 Signal je/ram_rom/acht_bb_rom_data_2_0_0_cZ.DO[9] undriven or does not drive
      anything - clipped.
-
 Signal je/ram_rom/acht_bb_rom_data_2_0_0_cZ.DO[11] undriven or does not drive
      anything - clipped.
 Signal je/ram_rom/acht_bb_rom_data_2_0_0_cZ.DO[13] undriven or does not drive
@@ -609,6 +627,7 @@ Signal je/ram_rom/header_rom_data_2_0_0_cZ.DO[3] undriven or does not drive
 Signal je/ram_rom/header_rom_data_2_0_0_cZ.DO[4] undriven or does not drive
      anything - clipped.
 Signal je/ram_rom/header_rom_data_2_0_0_cZ.DO[6] undriven or does not drive
+
      anything - clipped.
 Signal je/ram_rom/header_rom_data_2_0_0_cZ.DO[7] undriven or does not drive
      anything - clipped.
@@ -627,7 +646,6 @@ Signal je/ram_rom/header_rom_data_2_0_0_cZ.DO[15] undriven or does not drive
 Signal je/qz_cnt_cry_0[0].S0 undriven or does not drive anything - clipped.
 Signal je/qz_cnt_cry_0[0].CIN undriven or does not drive anything - clipped.
 Signal je/qz_cnt_s_0[5].COUT undriven or does not drive anything - clipped.
-
 Signal je/qz_cnt_s_0[5].S1 undriven or does not drive anything - clipped.
 Signal je/end0pos_cry_0[0].S0 undriven or does not drive anything - clipped.
 Signal je/end0pos_cry_0[0].CIN undriven or does not drive anything - clipped.
@@ -647,15 +665,6 @@ Signal je/img_row_s_0[9].S1 undriven or does not drive anything - clipped.
 Signal je/ac0_idx_cry_0[0].S0 undriven or does not drive anything - clipped.
 Signal je/ac0_idx_cry_0[0].CIN undriven or does not drive anything - clipped.
 Signal je/ac0_idx_cry_0[5].COUT undriven or does not drive anything - clipped.
-Signal je/un5_img_row_cry_1_0.S0 undriven or does not drive anything - clipped.
-Signal je/un5_img_row_cry_1_0.CIN undriven or does not drive anything - clipped.
-Signal je/un5_img_row_s_6_0.COUT undriven or does not drive anything - clipped.
-Signal je/un5_img_row_s_6_0.S1 undriven or does not drive anything - clipped.
-Signal je/un1_du_ac0_2_cry_0_0.S0 undriven or does not drive anything - clipped.
-Signal je/un1_du_ac0_2_cry_0_0.CIN undriven or does not drive anything -
-     clipped.
-Signal je/un1_du_ac0_2_cry_11_0.COUT undriven or does not drive anything -
-     clipped.
 Signal je/un5_img_col_cry_1_0.S0 undriven or does not drive anything - clipped.
 Signal je/un5_img_col_cry_1_0.CIN undriven or does not drive anything - clipped.
 Signal je/un5_img_col_cry_6_0.COUT undriven or does not drive anything -
@@ -666,7 +675,17 @@ Signal je/un1_wb_bc_tmp_cry_0_0.CIN undriven or does not drive anything -
      clipped.
 Signal je/un1_wb_bc_tmp_cry_3_0.COUT undriven or does not drive anything -
      clipped.
+Signal je/un5_img_row_cry_1_0.S0 undriven or does not drive anything - clipped.
+Signal je/un5_img_row_cry_1_0.CIN undriven or does not drive anything - clipped.
+Signal je/un5_img_row_s_6_0.COUT undriven or does not drive anything - clipped.
+Signal je/un5_img_row_s_6_0.S1 undriven or does not drive anything - clipped.
+Signal je/un1_du_ac0_2_cry_0_0.S0 undriven or does not drive anything - clipped.
+Signal je/un1_du_ac0_2_cry_0_0.CIN undriven or does not drive anything -
+     clipped.
+Signal je/un1_du_ac0_2_cry_11_0.COUT undriven or does not drive anything -
+     clipped.
 Signal je/un5_QNT_DU.QNT_DU_ret_415_RNIPG5B.S0 undriven or does not drive
+
      anything - clipped.
 Signal je/un5_QNT_DU.QNT_DU_ret_415_RNIPG5B.CIN undriven or does not drive
      anything - clipped.
@@ -678,14 +697,13 @@ Signal je/un1_wb_bit_cnt_cry_0_0.CIN undriven or does not drive anything -
      clipped.
 Signal je/un1_wb_bit_cnt_cry_3_0.COUT undriven or does not drive anything -
      clipped.
-Signal je/un1_c_state_37_cry_0_0.S1 undriven or does not drive anything -
+Signal je/un1_c_state_37_cry_0_0_0.S1 undriven or does not drive anything -
      clipped.
-Signal je/un1_c_state_37_cry_0_0.S0 undriven or does not drive anything -
+Signal je/un1_c_state_37_cry_0_0_0.S0 undriven or does not drive anything -
      clipped.
-Signal je/un1_c_state_37_cry_0_0.CIN undriven or does not drive anything -
+Signal je/un1_c_state_37_cry_0_0_0.CIN undriven or does not drive anything -
      clipped.
-Signal je/un1_c_state_37_cry_11_0.COUT undriven or does not drive anything -
-
+Signal je/un1_c_state_37_cry_11_0_0.COUT undriven or does not drive anything -
      clipped.
 Signal je/un1_zzdu_ram_do_s_14_0.COUT undriven or does not drive anything -
      clipped.
@@ -693,36 +711,6 @@ Signal je/un1_zzdu_ram_do_s_14_0.S1 undriven or does not drive anything -
      clipped.
 Signal je/un5_QNT_DU.if_generate_plus.mult1_inf_abs1_a_0_cry_16_0.COUT undriven
      or does not drive anything - clipped.
-Signal je/un5_QNT_DU.if_generate_plus.mult1_un17_sum_1_cry_0_0.S0 undriven or
-     does not drive anything - clipped.
-Signal je/un5_QNT_DU.if_generate_plus.mult1_un17_sum_1_cry_0_0.CIN undriven or
-     does not drive anything - clipped.
-Signal je/un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_14_RNISOH9N62.COUT undriven or
-     does not drive anything - clipped.
-Signal je/un5_QNT_DU.if_generate_plus.mult1_un17_sum_0_cry_0_0.S0 undriven or
-     does not drive anything - clipped.
-Signal je/un5_QNT_DU.if_generate_plus.mult1_un17_sum_0_cry_0_0.CIN undriven or
-     does not drive anything - clipped.
-Signal je/un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_18_RNII7LN711.COUT undriven or
-     does not drive anything - clipped.
-Signal je/un5_QNT_DU.if_generate_plus.mult1_un31_sum_1_cry_0_0.S0 undriven or
-     does not drive anything - clipped.
-Signal je/un5_QNT_DU.if_generate_plus.mult1_un31_sum_1_cry_0_0.CIN undriven or
-     does not drive anything - clipped.
-Signal je/un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_14_RNI2D1UBI1.COUT undriven or
-     does not drive anything - clipped.
-Signal je/un5_QNT_DU.if_generate_plus.mult1_un31_sum_0_cry_0_0.S0 undriven or
-     does not drive anything - clipped.
-Signal je/un5_QNT_DU.if_generate_plus.mult1_un31_sum_0_cry_0_0.CIN undriven or
-     does not drive anything - clipped.
-Signal je/un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_18_RNI0NC3462.COUT undriven or
-     does not drive anything - clipped.
-Signal je/un5_QNT_DU.if_generate_plus.mult1_un45_sum_1_cry_0_0.S0 undriven or
-     does not drive anything - clipped.
-Signal je/un5_QNT_DU.if_generate_plus.mult1_un45_sum_1_cry_0_0.CIN undriven or
-     does not drive anything - clipped.
-Signal je/un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_14_RNI3IOBMD2.COUT undriven or
-     does not drive anything - clipped.
 Signal je/un5_QNT_DU.if_generate_plus.mult1_un45_sum_0_cry_0_0.S0 undriven or
      does not drive anything - clipped.
 Signal je/un5_QNT_DU.if_generate_plus.mult1_un45_sum_0_cry_0_0.CIN undriven or
@@ -741,9 +729,57 @@ Signal je/un5_QNT_DU.if_generate_plus.mult1_un59_sum_0_cry_0_0.CIN undriven or
      does not drive anything - clipped.
 Signal je/un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_18_RNIU240TA3.COUT undriven or
      does not drive anything - clipped.
+Signal je/un5_QNT_DU.if_generate_plus.mult1_un17_sum_1_cry_0_0.S0 undriven or
+     does not drive anything - clipped.
+Signal je/un5_QNT_DU.if_generate_plus.mult1_un17_sum_1_cry_0_0.CIN undriven or
+     does not drive anything - clipped.
+Signal je/un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_14_RNISOH9N62.COUT undriven or
+     does not drive anything - clipped.
+Signal je/un5_QNT_DU.if_generate_plus.mult1_un17_sum_0_cry_0_0.S0 undriven or
+     does not drive anything - clipped.
+Signal je/un5_QNT_DU.if_generate_plus.mult1_un17_sum_0_cry_0_0.CIN undriven or
+     does not drive anything - clipped.
+Signal je/un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_18_RNII7LN711.COUT undriven or
+     does not drive anything - clipped.
+Signal je/un5_QNT_DU.if_generate_plus.mult1_un31_sum_1_cry_0_0.S0 undriven or
+     does not drive anything - clipped.
+
+Signal je/un5_QNT_DU.if_generate_plus.mult1_un31_sum_1_cry_0_0.CIN undriven or
+     does not drive anything - clipped.
+Signal je/un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_14_RNI2D1UBI1.COUT undriven or
+     does not drive anything - clipped.
+Signal je/un5_QNT_DU.if_generate_plus.mult1_un31_sum_0_cry_0_0.S0 undriven or
+     does not drive anything - clipped.
+Signal je/un5_QNT_DU.if_generate_plus.mult1_un31_sum_0_cry_0_0.CIN undriven or
+     does not drive anything - clipped.
+Signal je/un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_18_RNI0NC3462.COUT undriven or
+     does not drive anything - clipped.
+Signal je/un5_QNT_DU.if_generate_plus.mult1_un45_sum_1_cry_0_0.S0 undriven or
+     does not drive anything - clipped.
+Signal je/un5_QNT_DU.if_generate_plus.mult1_un45_sum_1_cry_0_0.CIN undriven or
+     does not drive anything - clipped.
+Signal je/un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_14_RNI3IOBMD2.COUT undriven or
+     does not drive anything - clipped.
+Signal je/un5_QNT_DU.QNT_DU_ret_9_RNIBB54.S0 undriven or does not drive anything
+     - clipped.
+Signal je/un5_QNT_DU.QNT_DU_ret_9_RNIBB54.CIN undriven or does not drive
+     anything - clipped.
+Signal je/un5_QNT_DU.QNT_DU_ret_3_RNISPMUS3.COUT undriven or does not drive
+     anything - clipped.
+Signal je/un5_QNT_DU.QNT_DU_ret_9_RNIBB54_0.S0 undriven or does not drive
+     anything - clipped.
+Signal je/un5_QNT_DU.QNT_DU_ret_9_RNIBB54_0.CIN undriven or does not drive
+     anything - clipped.
+Signal je/un5_QNT_DU.QNT_DU_ret_3_RNIGAKDU3.COUT undriven or does not drive
+     anything - clipped.
+Signal je/un5_QNT_DU.QNT_DU_ret_10_RNIJUB9.S0 undriven or does not drive
+     anything - clipped.
+Signal je/un5_QNT_DU.QNT_DU_ret_10_RNIJUB9.CIN undriven or does not drive
+     anything - clipped.
+Signal je/un5_QNT_DU.QNT_DU_ret_3_RNI4KPN603.COUT undriven or does not drive
+     anything - clipped.
 Signal je/un5_QNT_DU.QNT_DU_ret_10_RNIJUB9_0.S0 undriven or does not drive
      anything - clipped.
-
 Signal je/un5_QNT_DU.QNT_DU_ret_10_RNIJUB9_0.CIN undriven or does not drive
      anything - clipped.
 Signal je/un5_QNT_DU.QNT_DU_ret_3_RNIO4N6803.COUT undriven or does not drive
@@ -765,6 +801,7 @@ Signal je/un5_QNT_DU.if_generate_plus.mult1_un101_sum_1_cry_0_0.S0 undriven or
 Signal je/un5_QNT_DU.if_generate_plus.mult1_un101_sum_1_cry_0_0.CIN undriven or
      does not drive anything - clipped.
 Signal je/un5_QNT_DU.QNT_DU_ret_RNIGCNN7C.COUT undriven or does not drive
+
      anything - clipped.
 Signal je/un5_QNT_DU.if_generate_plus.mult1_un101_sum_0_cry_0_0.S0 undriven or
      does not drive anything - clipped.
@@ -801,7 +838,6 @@ Signal je/un5_QNT_DU.if_generate_plus.mult1_un122_sum_1_cry_0_0.S1 undriven or
 Signal je/un5_QNT_DU.if_generate_plus.mult1_un122_sum_1_cry_0_0.S0 undriven or
      does not drive anything - clipped.
 Signal je/un5_QNT_DU.if_generate_plus.mult1_un122_sum_1_cry_0_0.CIN undriven or
-
      does not drive anything - clipped.
 Signal je/un5_QNT_DU.QNT_DU_ret_RNIEP01DV1.S1 undriven or does not drive
      anything - clipped.
@@ -823,6 +859,7 @@ Signal je/un5_QNT_DU.if_generate_plus.mult1_un122_sum_0_cry_0_0.S1 undriven or
      does not drive anything - clipped.
 Signal je/un5_QNT_DU.if_generate_plus.mult1_un122_sum_0_cry_0_0.S0 undriven or
      does not drive anything - clipped.
+
 Signal je/un5_QNT_DU.if_generate_plus.mult1_un122_sum_0_cry_0_0.CIN undriven or
      does not drive anything - clipped.
 Signal je/un5_QNT_DU.QNT_DU_ret_RNISBSBDV1.S1 undriven or does not drive
@@ -859,7 +896,6 @@ Signal je/un5_QNT_DU.if_generate_plus.mult1_un10_sum_0_cry_0_0.CIN undriven or
      does not drive anything - clipped.
 Signal je/un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_16_RNIQDUS53.COUT undriven or
      does not drive anything - clipped.
-
 Signal je/un5_QNT_DU.if_generate_plus.mult1_un52_sum_1_cry_0_0.S0 undriven or
      does not drive anything - clipped.
 Signal je/un5_QNT_DU.if_generate_plus.mult1_un52_sum_1_cry_0_0.CIN undriven or
@@ -881,6 +917,7 @@ Signal je/un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_18_RNIOF82BD1.COUT undriven or
 Signal je/un5_QNT_DU.if_generate_plus.mult1_un38_sum_0_cry_0_0.S0 undriven or
      does not drive anything - clipped.
 Signal je/un5_QNT_DU.if_generate_plus.mult1_un38_sum_0_cry_0_0.CIN undriven or
+
      does not drive anything - clipped.
 Signal je/un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_17_RNIINFRKB.COUT undriven or
      does not drive anything - clipped.
@@ -907,25 +944,6 @@ Signal je/un5_QNT_DU.QNT_DU_ret_12_RNI268F.S0 undriven or does not drive
 Signal je/un5_QNT_DU.QNT_DU_ret_12_RNI268F.CIN undriven or does not drive
      anything - clipped.
 Signal je/un5_QNT_DU.QNT_DU_ret_3_RNIVLVUF.COUT undriven or does not drive
-     anything - clipped.
-Signal je/un5_QNT_DU.QNT_DU_ret_9_RNIBB54.S0 undriven or does not drive anything
-     - clipped.
-Signal je/un5_QNT_DU.QNT_DU_ret_9_RNIBB54.CIN undriven or does not drive
-     anything - clipped.
-Signal je/un5_QNT_DU.QNT_DU_ret_3_RNISPMUS3.COUT undriven or does not drive
-     anything - clipped.
-Signal je/un5_QNT_DU.QNT_DU_ret_9_RNIBB54_0.S0 undriven or does not drive
-     anything - clipped.
-Signal je/un5_QNT_DU.QNT_DU_ret_9_RNIBB54_0.CIN undriven or does not drive
-
-     anything - clipped.
-Signal je/un5_QNT_DU.QNT_DU_ret_3_RNIGAKDU3.COUT undriven or does not drive
-     anything - clipped.
-Signal je/un5_QNT_DU.QNT_DU_ret_10_RNIJUB9.S0 undriven or does not drive
-     anything - clipped.
-Signal je/un5_QNT_DU.QNT_DU_ret_10_RNIJUB9.CIN undriven or does not drive
-     anything - clipped.
-Signal je/un5_QNT_DU.QNT_DU_ret_3_RNI4KPN603.COUT undriven or does not drive
      anything - clipped.
 Signal je/un5_QNT_DU.I_9_0_0.S1 undriven or does not drive anything - clipped.
 Signal je/un5_QNT_DU.I_9_0_0.S0 undriven or does not drive anything - clipped.
@@ -957,6 +975,7 @@ Signal yty/yuv_fifo/read_pointer_cry_0[0].S0 undriven or does not drive anything
      - clipped.
 Signal yty/yuv_fifo/read_pointer_cry_0[0].CIN undriven or does not drive
      anything - clipped.
+
 Signal yty/yuv_fifo/read_pointer_cry_0[7].COUT undriven or does not drive
      anything - clipped.
 Signal yty/yuv_fifo/cnt_cry_0[0].S0 undriven or does not drive anything -
@@ -975,7 +994,6 @@ Signal yty/yuv_fifo/write_pointer_cry_0[7].COUT undriven or does not drive
 Signal yty/img_col_cry_0[7].COUT undriven or does not drive anything - clipped.
 Signal yty/img_row_cry_0[0].S0 undriven or does not drive anything - clipped.
 Signal yty/img_row_cry_0[0].CIN undriven or does not drive anything - clipped.
-
 Signal yty/img_row_s_0[7].COUT undriven or does not drive anything - clipped.
 Signal yty/img_row_s_0[7].S1 undriven or does not drive anything - clipped.
 Signal yty/un6_img_row_cry_1_0.S0 undriven or does not drive anything - clipped.
@@ -1016,6 +1034,8 @@ OSC 1:                                 Pin/Node Value
 
 
 
+
+
 <A name="mrp_asic"></A><B><U><big>ASIC Components</big></U></B>
 ---------------
 
@@ -1035,7 +1055,6 @@ Instance Name: je.ram_rom.header_rom_data_2_0_0_cZ.ebr_inst
          Type: EBR
 Instance Name: je.ram_rom.header_rom_data_2_0_1_cZ.ebr_inst
          Type: EBR
-
 Instance Name: je.ram_rom.acht_bb_rom_data_2_0_0_cZ.ebr_inst
          Type: EBR
 Instance Name: je.ram_rom.acht_bb_rom_data_2_0_1_cZ.ebr_inst
@@ -1052,18 +1071,12 @@ Instance Name: je.ram_rom.dctdu_ram_dctdu_ram_0_0.ebr_inst
          Type: EBR
 Instance Name: je.ram_rom.dctdu_ram_dctdu_ram_0_1.ebr_inst
          Type: EBR
-Instance Name: je.dct.un1_tmp5_2_mulonly_0[5:0]
-         Type: DSP
-Instance Name: je.dct.un1_tmp21_2_mulonly_0[6:0]
-         Type: DSP
-Instance Name: je.dct.un1_tmp22_2_mulonly_0[6:0]
-         Type: DSP
-Instance Name: je.dct.un1_tmp1_2_mulonly_0[6:0]
-         Type: DSP
-Instance Name: je.dct.un1_tmp5_1_mulonly_0[18:0]
-         Type: DSP
 Instance Name: jedw.un4_addr_reg_muladd_0[9:0]
          Type: DSP
+Instance Name: jed_fifo.fifo_fifo_0_0.ebr_inst
+         Type: EBR
+Instance Name: jed_fifo.fifo_fifo_0_1.ebr_inst
+         Type: EBR
 Instance Name: jdts.un4_je_addr_reg_muladd_0[9:0]
          Type: DSP
 Instance Name: u_HSOSC.osc_inst
@@ -1077,17 +1090,6 @@ Instance Name: u_HSOSC.osc_inst
    Total CPU Time: 2 secs
    Total REAL Time: 3 secs
    Peak Memory Usage: 153 MB
-
-
-
-
-
-
-
-
-
-
-
 
 
 

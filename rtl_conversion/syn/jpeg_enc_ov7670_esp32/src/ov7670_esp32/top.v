@@ -59,14 +59,15 @@ module top (
   
   reg    [7:0]    q_pdata;
   reg             q_vsync, q_href;
-  reg    [15:0]   pix_per_line;
+  reg    [15:0]   pix_per_line, pix_per_line_fl, pix_per_line_fl2;
   
   reg    [3:0]    c_state, n_state;
-  /*
+  
   reg    [31:0]   cb_yuyv;
-  reg             cb_data;
-  */
+  reg    [7:0]    cb_data;
+  
   reg    [16:0]   jpeg_size;
+  reg    [2:0]    je_done_fl;
   
   wire            pixel_wr = q_href && (!pixel_wr_disable);// && (pixel_cnt[0]==0);
   
@@ -79,6 +80,7 @@ module top (
   parameter       WAIT3  = 6;
   parameter       SPI_RD = 7;
   parameter       WAIT4  = 8;
+  parameter       RAW_RD = 9;
   
   wire            yty_req = (c_state == YTY_RD);
   wire            yty_rd  = ((c_state == WAIT2) || (c_state == JE_EN) || (c_state == WAIT3));
@@ -90,19 +92,37 @@ module top (
   wire   [9:0]    hd_addr;
   wire            je_rd, je_valid, je_done, jedw_wr, esp32_spi_rd;
   
-  wire            mem_wr    = je_wr ? jedw_wr : pixel_wr;
-  wire   [7:0]    mem_dataw = je_wr ? jedw_data : q_pdata;//cb_data;//
-  wire   [16:0]   mem_addrw = je_wr ? jedw_addr : pixel_cnt[16:0];
+  wire            jedf_empty, yty_mem_rd, mem_wr_acc;
+  wire   [31:0]   jedf_do;
   
-  wire   [16:0]   mem_addrr = yty_rd ? yty_addr : jdts_addr;
+  //wire            jedf_mem_wr = ((!jedf_empty) && (!yty_mem_rd));
+  reg             jedf_mem_wr;
+  
+  // wire            mem_wr    = je_wr ? jedw_wr : pixel_wr;
+  // wire   [7:0]    mem_dataw = je_wr ? jedw_data : cb_data;//q_pdata;//
+  // wire   [16:0]   mem_addrw = je_wr ? jedw_addr : pixel_cnt[16:0];
+  wire            mem_wr    = je_wr ? jedf_mem_wr : pixel_wr;
+  wire   [7:0]    mem_dataw = je_wr ? jedf_do[7:0] : q_pdata;//cb_data;// 
+  wire   [16:0]   mem_addrw = je_wr ? jedf_do[24:8] : pixel_cnt[16:0];
+  
+  
+  
   
   assign          img_rdy = (c_state == WAIT4);
-  /*
-  parameter       RED_VYUY   = 32'hFF4C544C;//32'h4C544CFF;
-  parameter       GREEN_VYUY = 32'h15962B96;//32'h962B9615;
-  parameter       BLUE_VYUY  = 32'h6B1DFF1D;//32'h1DFF1D6B;
-  parameter       WHITE_VYUY = 32'h80FF80FF;//32'hFF80FF80;
-  */
+  
+  parameter       RED_VYUY   = 32'hF0525A52;//32'h4C544CFF;
+  parameter       GREEN_VYUY = 32'h22913691;//32'h15962B96;//32'h962B9615;
+  parameter       BLUE_VYUY  = 32'h6E29F029;//32'h6B1DFF1D;//32'h1DFF1D6B;
+  parameter       WHITE_VYUY = 32'h80EB80EB;//32'h80FF80FF;//32'hFF80FF80;
+  
+  parameter       RAW_RD_END = 320*200*2;
+  wire   [16:0]   spi_mem_addr;
+  wire            raw_rd_done = (spi_mem_addr == RAW_RD_END);
+  wire            raw_rd = (c_state == RAW_RD);
+  
+  wire   [16:0]   mem_addrr = raw_rd ? spi_mem_addr : yty_rd ? yty_addr : jdts_addr;
+  wire   [7:0]    spi_mem_data = raw_rd ? mem_datar : esp32_spi_data;
+  
   always @(posedge pclk)
     begin
       q_pdata <= pdata;
@@ -115,20 +135,22 @@ module top (
   always @ (posedge pclk)
     begin
       pix_per_line <= href ? pix_per_line+1 : 0;
+      //pix_per_line_fl <= #1 pix_per_line;
+      //pix_per_line_fl2 <= #1 pix_per_line_fl;
     end
-  /*
+  
   always @ (posedge pclk or negedge reset_n)
     begin
       if (!reset_n)
         cb_yuyv <= #1 RED_VYUY;
       else
-      if (pix_per_line < 16'd160)
+      if (pix_per_line < 16'd159)
         cb_yuyv <= #1 RED_VYUY;
       else
-      if (pix_per_line < 16'd320)
+      if (pix_per_line < 16'd319)
         cb_yuyv <= #1 GREEN_VYUY;
       else
-      if (pix_per_line < 16'd480)
+      if (pix_per_line < 16'd479)
         cb_yuyv <= #1 BLUE_VYUY;
       else
         cb_yuyv <= #1 WHITE_VYUY;      
@@ -147,7 +169,7 @@ module top (
       else
         cb_data <= #1 cb_data;      
     end
-  */
+  
   //Manage address for writing in DPRAM through pixel counter
   always @ (posedge pclk)
     begin
@@ -190,7 +212,7 @@ module top (
         c_state <= #1 n_state;      
     end
     
-  always @ (c_state, img_req, pixel_wr_disable, yty_ready, je_done)
+  always @ (c_state, img_req, pixel_wr_disable, yty_ready, je_done_fl[2], raw_rd_done)
     begin
       case (c_state)
         WAIT0     : begin
@@ -202,10 +224,16 @@ module top (
         JE_REQ    : n_state <= #1 WAIT1;
         WAIT1     : begin
                       if (pixel_wr_disable)
-                        n_state <= #1 YTY_RD;
+                        n_state <= #1 YTY_RD;//RAW_RD;//
                       else
                         n_state <= #1 WAIT1;                      
                     end
+        RAW_RD    : begin
+                      if (raw_rd_done)
+                        n_state <= #1 YTY_RD;
+                      else
+                        n_state <= #1 RAW_RD;                      
+                    end        
         YTY_RD    : n_state <= #1 WAIT2;
         WAIT2     : begin
                       if (yty_ready)
@@ -215,7 +243,7 @@ module top (
                     end
         JE_EN     : n_state <= #1 WAIT3;
         WAIT3     : begin
-                      if (je_done)
+                      if (je_done_fl[2])
                         n_state <= #1 SPI_RD;
                       else
                         n_state <= #1 WAIT3;                        
@@ -248,6 +276,22 @@ module top (
         endcase        
     end
   
+  always @ (posedge pclk or negedge reset_n)
+    begin
+      if (!reset_n)
+        jedf_mem_wr <= #1 1'b0;
+      else
+        jedf_mem_wr <= #1 ((!jedf_empty) && (mem_wr_acc) && (!jedf_mem_wr));
+    end
+
+  always @ (posedge pclk or negedge reset_n)
+    begin
+      if (!reset_n)
+        je_done_fl <= #1 2'h0;
+      else
+        je_done_fl <= #1 {je_done_fl[1:0], je_done};      
+    end    
+    
 //SB_HFOSC  u_SB_HFOSC (
   HSOSC  u_HSOSC (
     .CLKHFPU  (1'b1), 
@@ -290,7 +334,10 @@ module top (
     .addr      (yty_addr),
     .data      (mem_datar),
     
-    .mem_wr    (mem_wr),
+    .mem_wr    (jedf_mem_wr),
+    //.jedf_empty(jedf_empty && (!jedf_mem_wr)),
+    .mem_rd    (yty_mem_rd),
+    .mem_wr_acc(mem_wr_acc),
     
     .ready     (yty_ready),
     
@@ -326,6 +373,21 @@ module top (
     .data      (jedw_data),
     .we        (jedw_wr)
   );
+  
+  sc_fifo_32 jed_fifo (
+    .data_in        ({7'h00,jedw_addr,jedw_data}), 
+    .data_out       (jedf_do), 
+    .clk            (pclk), 
+    .reset          (!reset_n), 
+    .write          (jedw_wr), 
+    .read           (jedf_mem_wr), 
+    .clear          (1'b0),
+    .almost_full    (), 
+    .full           (), 
+    .almost_empty   (),   
+    .empty          (jedf_empty), 
+    .cnt            ()
+  );
     
   jpeg_data_to_spi jdts (
     .clk       (pclk),
@@ -354,8 +416,9 @@ module top (
     .ssel     (ssel),
     .miso     (miso),
 
+    .mem_addr (spi_mem_addr),
     .mem_rd   (esp32_spi_rd),
-    .mem_data (esp32_spi_data)  
+    .mem_data (spi_mem_data)  
   );
   
 endmodule  

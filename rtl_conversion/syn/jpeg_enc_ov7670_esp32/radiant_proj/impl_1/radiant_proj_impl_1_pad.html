@@ -48,7 +48,7 @@ Performance Grade:      High-Performance_1.2V
 PACKAGE:          SG48
 Package Status:                     Preliminary    Version 1.5
 
-Mon Apr 30 14:36:02 2018
+Fri Jun 08 11:35:43 2018
 
 Pinout by Port Name:
 +-------------+----------+--------------+-------+--------------------+
@@ -60,6 +60,7 @@ Pinout by Port Name:
 | img_rdy     | 48/2     | LVCMOS33_OUT | PL8A  | DRIVE:8mA PULL:NA  |
 | img_req     | 3/2      | LVCMOS33_IN  | PL10B | PULL:NA            |
 | miso        | 2/2      | LVCMOS33_OUT | PL9A  | DRIVE:8mA PULL:NA  |
+| mosi        | 45/2     | LVCMOS33_IN  | PL8B  | PULL:100K          |
 | pclk        | 18/1     | LVCMOS33_IN  | PL23B | PULL:NA            |
 | pdata[0]    | 31/0     | LVCMOS33_IN  | PR17B | PULL:NA            |
 | pdata[1]    | 44/2     | LVCMOS33_IN  | PL7B  | PULL:NA            |
@@ -125,7 +126,7 @@ Vccio by Bank:
 | 42/0     |     unused, PULL:UP |            |              | PR9A  |                  |
 | 43/0     |     unused, PULL:UP |            |              | PR10A |                  |
 | 44/2     | pdata[1]            | LOCATED    | LVCMOS33_IN  | PL7B  | PCLKT2_0         |
-| 45/2     |     unused, PULL:UP |            |              | PL8B  |                  |
+| 45/2     | mosi                | LOCATED    | LVCMOS33_IN  | PL8B  |                  |
 | 46/2     | ssel                | LOCATED    | LVCMOS33_IN  | PL6A  |                  |
 | 47/2     | sclk                | LOCATED    | LVCMOS33_IN  | PL7A  |                  |
 | 48/2     | img_rdy             | LOCATED    | LVCMOS33_OUT | PL8A  |                  |
@@ -157,6 +158,7 @@ ldc_set_location -site {25} [ get_ports {href} ]
 ldc_set_location -site {48} [ get_ports {img_rdy} ]
 ldc_set_location -site {3} [ get_ports {img_req} ]
 ldc_set_location -site {2} [ get_ports {miso} ]
+ldc_set_location -site {45} [ get_ports {mosi} ]
 ldc_set_location -site {18} [ get_ports {pclk} ]
 ldc_set_location -site {31} [ get_ports {pdata[0]} ]
 ldc_set_location -site {44} [ get_ports {pdata[1]} ]
@@ -178,7 +180,7 @@ ldc_set_location -site {26} [ get_ports {xclk} ]
 
 
 Copyright 2015 Lattice Semiconductor Corporation, All Rights Reserved
-Mon Apr 30 14:36:02 2018
+Fri Jun 08 11:35:43 2018
 
 
 

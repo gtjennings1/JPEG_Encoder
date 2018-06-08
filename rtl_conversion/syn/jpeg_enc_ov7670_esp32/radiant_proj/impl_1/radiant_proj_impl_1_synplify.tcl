@@ -31,8 +31,8 @@ set_option -write_apr_constraint 1
 
 #synplifyPro options
 set_option -fix_gated_and_generated_clocks 0
-set_option -update_models_cp 0
-set_option -resolve_multiple_driver 0
+set_option -update_models_cp 1
+set_option -resolve_multiple_driver 1
 
 #-- set any command lines input by customer
 
@@ -53,6 +53,7 @@ add_file -verilog {E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/syn/
 add_file -verilog {E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/syn/jpeg_enc_ov7670_esp32/src/ov7670_esp32/spi_slave.v}
 add_file -verilog {E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/syn/jpeg_enc_ov7670_esp32/src/ov7670_esp32/top.v}
 add_file -verilog {E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/syn/jpeg_enc_ov7670_esp32/src/ov7670_esp32/up_spram.v}
+add_file -verilog {E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/syn/jpeg_enc_ov7670_esp32/src/glue_logic/sc_fifo_32.v}
 set_option -include_path {E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/syn/jpeg_enc_ov7670_esp32/radiant_proj}
 #-- top module name
 set_option -top_module top

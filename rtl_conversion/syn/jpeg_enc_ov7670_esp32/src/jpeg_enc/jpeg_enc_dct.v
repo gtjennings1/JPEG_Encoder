@@ -1,3 +1,4 @@
+//`define UNSIGNED_SHIFT
 module jpeg_enc_dct (
   input           clk,
   input           reset_n,
@@ -29,11 +30,15 @@ module jpeg_enc_dct (
   parameter       DCT_CAL_P5 = 8;
   parameter       DCT_CAL_P6 = 9;
   parameter       DCT_CAL_P7 = 10;
-  parameter       SV_DCTDU_S = 11;
-  parameter       SV_DCTDU_R = 12;
-  parameter       SV_DCTDU_E = 13;
-  parameter       SCAN_CHECK = 14;
-  parameter       EXIT       = 15;
+`ifdef UNSIGNED_SHIFT  
+  parameter       DCT_CAL_P8 = 11;
+  parameter       DCT_CAL_P9 = 12;
+`endif  
+  parameter       SV_DCTDU_S = 13;
+  parameter       SV_DCTDU_R = 14;
+  parameter       SV_DCTDU_E = 15;
+  parameter       SCAN_CHECK = 16;
+  parameter       EXIT       = 17;
   
   
   reg    [5:0]    c_state, n_state;
@@ -55,7 +60,7 @@ module jpeg_enc_dct (
   wire            last_du_element = (&du_idx[2:0]);
   wire            last_dctdu_element = (&dctdu_w_idx[2:0]);
   wire            change_scan = !(|du_idx);
-  
+ 
   assign          du_ram_a = du_idx;
   assign          dctdu_ram_ar = {du_idx[2:0], du_idx[5:3]};
   assign          dctdu_ram_aw = vertical_scan ? {dctdu_w_idx_fl[2:0], dctdu_w_idx_fl[5:3]} : dctdu_w_idx_fl;
@@ -93,8 +98,14 @@ module jpeg_enc_dct (
         DCT_CAL_P3  : n_state <= #1 DCT_CAL_P4;
         DCT_CAL_P4  : n_state <= #1 DCT_CAL_P5;
         DCT_CAL_P5  : n_state <= #1 DCT_CAL_P6;
-        DCT_CAL_P6  : n_state <= #1 DCT_CAL_P7;
+        DCT_CAL_P6  : n_state <= #1 DCT_CAL_P7;        
+`ifdef UNSIGNED_SHIFT        
+        DCT_CAL_P7  : n_state <= #1 DCT_CAL_P8;
+        DCT_CAL_P8  : n_state <= #1 DCT_CAL_P9;
+        DCT_CAL_P9  : n_state <= #1 SV_DCTDU_S;
+`else
         DCT_CAL_P7  : n_state <= #1 SV_DCTDU_S;
+`endif        
         SV_DCTDU_S  : n_state <= #1 SV_DCTDU_R;
         SV_DCTDU_R  : begin
                         if (last_dctdu_element)
@@ -173,16 +184,29 @@ module jpeg_enc_dct (
                             tmp_du[0] <= #1 tmp10 + tmp11;
                             tmp_du[4] <= #1 tmp10 - tmp11;
                           end
+`ifdef UNSIGNED_SHIFT            
+            DCT_CAL_P8  : begin
+                            tmp_du[2] <= #1 (tmp0[17]) ? 19'h40000-tmp10 : tmp10;
+                            tmp_du[6] <= #1 (tmp7[17]) ? 19'h40000-tmp11 : tmp11;
+                          end
+            DCT_CAL_P9  : begin
+                            tmp_du[5] <= #1 (tmp1[17]) ? 19'h40000-tmp13 : tmp13;
+                            tmp_du[3] <= #1 (tmp2[17]) ? 19'h40000-tmp20 : tmp20;
+                            tmp_du[1] <= #1 (tmp3[17]) ? 19'h40000-tmp21 : tmp21;
+                            tmp_du[7] <= #1 (tmp4[17]) ? 19'h40000-tmp22 : tmp22;
+                          end
+`else
             DCT_CAL_P6  : begin
-                            tmp_du[2] <= #1 tmp0 >>> 3;//4;/// 10;
-                            tmp_du[6] <= #1 tmp7 >>> 3;//4;/// 10;
+                            tmp_du[2] <= #1 (tmp0 >>> 3);//tmp0/8;//(tmp0_gt_n8) ? 18'h00000 : (tmp0 >>> 3);//4;/// 10;
+                            tmp_du[6] <= #1 (tmp7 >>> 3);//tmp7/8;//(tmp7_gt_n8) ? 18'h00000 : (tmp7 >>> 3);//4;/// 10;
                           end       
             DCT_CAL_P7  : begin
-                            tmp_du[5] <= #1 tmp1 >>> 3;//4;/// 10;
-                            tmp_du[3] <= #1 tmp2 >>> 3;//4;/// 10;
-                            tmp_du[1] <= #1 tmp3 >>> 3;//4;/// 10;
-                            tmp_du[7] <= #1 tmp4 >>> 3;//4;/// 10;
+                            tmp_du[5] <= #1 (tmp1 >>> 3);//tmp1/8;//(tmp1_gt_n8) ? 18'h00000 : (tmp1 >>> 3);//4;/// 10;
+                            tmp_du[3] <= #1 (tmp2 >>> 3);//tmp2/8;//(tmp2_gt_n8) ? 18'h00000 : (tmp2 >>> 3);//4;/// 10;
+                            tmp_du[1] <= #1 (tmp3 >>> 3);//tmp3/8;//(tmp3_gt_n8) ? 18'h00000 : (tmp3 >>> 3);//4;/// 10;
+                            tmp_du[7] <= #1 (tmp4 >>> 3);//tmp4/8;//(tmp4_gt_n8) ? 18'h00000 : (tmp4 >>> 3);//4;/// 10;
                           end
+`endif                          
             default     : begin
                             tmp_du[0] <= #1 tmp_du[0];
                             tmp_du[1] <= #1 tmp_du[1];
@@ -234,8 +258,10 @@ module jpeg_enc_dct (
             DCT_CAL_P3  : begin
                             tmp1 <= #1 tmp12 + tmp13; //z1
                             tmp2 <= #1 tmp20 << 2;//* 4;//8;//5;     //z2
-                            tmp3 <= #1 tmp21 * 5;//11;//7;     //z3
-                            tmp4 <= #1 tmp22 * 10;//20;//13;    //z4
+                            //tmp3 <= #1 tmp21 * 5;//11;//7;     //z3
+                            tmp3 <= #1 {tmp21[15:0], 2'b00} + tmp21;
+                            //tmp4 <= #1 tmp22 * 10;//20;//13;    //z4
+                            tmp4 <= #1 {tmp22[14:0], 3'b000} + {tmp22[16:0], 1'b0};
                             tmp5 <= #1 tmp20 - tmp22; //z5
                             tmp6 <= #1 tmp13 << 3;//4;//* 10;    //du2/6: (tmp13 * 10)                            
                           end
@@ -295,8 +321,10 @@ module jpeg_enc_dct (
                             tmp22 <= #1 tmp6 + tmp7;           
                           end
             DCT_CAL_P4  : begin
-                            tmp10 <= #1 tmp1 * 5;//11;//7;    //z1
-                            tmp11 <= #1 tmp5 * 3;//6;//3;    //z5
+                            //tmp10 <= #1 tmp1 * 5;//11;//7;    //z1
+                            tmp10 <= #1 {tmp1[15:0], 2'b00} + tmp1;
+                            //tmp11 <= #1 tmp5 * 3;//6;//3;    //z5
+                            tmp11 <= #1 {tmp5[16:0], 1'b0} + tmp5;
                             tmp12 <= #1 tmp7 << 3;//4;//* 10;   //z11/z13: (tmp7 * 10)           
                           end 
             DCT_CAL_P5  : begin
@@ -305,6 +333,26 @@ module jpeg_enc_dct (
                             tmp21 <= #1 tmp2 + tmp11; //z2
                             tmp22 <= #1 tmp4 + tmp11; //z4                            
                           end 
+`ifdef UNSIGNED_SHIFT                          
+            DCT_CAL_P6  : begin
+                            tmp10 <= #1 (tmp0[17]) ? 19'h40000-tmp0 : tmp0;
+                            tmp11 <= #1 (tmp7[17]) ? 19'h40000-tmp7 : tmp7;
+                          end         
+            DCT_CAL_P7  : begin
+                            tmp13 <= #1 (tmp1[17]) ? 19'h40000-tmp1 : tmp1;
+                            tmp20 <= #1 (tmp2[17]) ? 19'h40000-tmp2 : tmp2;
+                            tmp21 <= #1 (tmp3[17]) ? 19'h40000-tmp3 : tmp3;
+                            tmp22 <= #1 (tmp4[17]) ? 19'h40000-tmp4 : tmp4;
+                            tmp10 <= #1 tmp10 >> 3;
+                            tmp11 <= #1 tmp11 >> 3;
+                          end
+            DCT_CAL_P8  : begin
+                            tmp13 <= #1 tmp13 >> 3;
+                            tmp20 <= #1 tmp20 >> 3;
+                            tmp21 <= #1 tmp21 >> 3;
+                            tmp22 <= #1 tmp22 >> 3;
+                          end
+`endif                          
             default     : begin
                             tmp10 <= #1 tmp10;
                             tmp11 <= #1 tmp11;

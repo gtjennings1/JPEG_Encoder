@@ -1,4 +1,4 @@
-# Mon Apr 30 14:33:07 2018
+# Fri Jun  8 11:33:21 2018
 
 Synopsys Lattice Technology Pre-mapping, Version maplat, Build 1868R, Built Nov 13 2017 02:40:05
 Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
@@ -12,22 +12,23 @@ Printing clock  summary report in "E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl
 @N: MF248 |Running in 64-bit mode.
 @N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
 
-Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 102MB peak: 105MB)
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 103MB peak: 106MB)
 
 
-Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 102MB peak: 105MB)
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 103MB peak: 106MB)
 
 
-Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 106MB peak: 107MB)
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 107MB peak: 107MB)
 
 
-Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 106MB peak: 109MB)
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 107MB peak: 109MB)
 
-@W: BN132 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1057:2:1057:7|Removing sequential instance je.dcht_bc_rom_a[4:0] because it is equivalent to instance je.dcht_bb_rom_a[4:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1057:2:1057:7|Removing sequential instance je.acht_bc_rom_a[8:0] because it is equivalent to instance je.acht_bb_rom_a[8:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1086:2:1086:7|Removing sequential instance je.dcht_bc_rom_a[4:0] because it is equivalent to instance je.dcht_bb_rom_a[4:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1086:2:1086:7|Removing sequential instance je.acht_bc_rom_a[8:0] because it is equivalent to instance je.acht_bb_rom_a[8:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@N: BN362 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":221:2:221:7|Removing sequential instance mem_rd_acc (in view: work.yuyv_to_yuv(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
 syn_allowed_resources : blockrams=30  set on top level netlist top
 
-Finished netlist restructuring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 138MB peak: 139MB)
+Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 138MB peak: 140MB)
 
 
 
@@ -39,18 +40,18 @@ Level     Clock           Frequency     Period        Type         Group        
 --------------------------------------------------------------------------------------------------
 0 -       System          1.0 MHz       1000.000      system       system_clkgroup           0    
                                                                                                   
-0 -       top|pclk        82.1 MHz      12.177        inferred     Autoconstr_clkgroup_0     1391 
+0 -       top|pclk        82.1 MHz      12.177        inferred     Autoconstr_clkgroup_0     1510 
                                                                                                   
 0 -       top|clk_24m     139.8 MHz     7.152         inferred     Autoconstr_clkgroup_1     97   
 ==================================================================================================
 
-@W: MT530 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\sc_fifo.v":87:0:87:5|Found inferred clock top|pclk which controls 1391 sequential elements including yty.yuv_fifo.write_pointer[8:0]. This clock has no specified timing constraint which may adversely impact design performance. 
+@W: MT530 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\up_spram.v":72:2:72:7|Found inferred clock top|pclk which controls 1510 sequential elements including cam_buf.rd_data_reg[7:0]. This clock has no specified timing constraint which may adversely impact design performance. 
 @W: MT530 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\ov7670_registers.v":43:4:43:9|Found inferred clock top|clk_24m which controls 97 sequential elements including u_OV7670_Controller.LUT.address[7:0]. This clock has no specified timing constraint which may adversely impact design performance. 
 
 Finished Pre Mapping Phase.
 @N: BN225 |Writing default property annotation file E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\radiant_proj\impl_1\radiant_proj_impl_1.sap.
 
-Starting constraint checker (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:00s; Memory used current: 136MB peak: 139MB)
+Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 136MB peak: 140MB)
 
 Encoding state machine c_state[14:0] (in view: work.yuyv_to_yuv(verilog))
 original code -> new code
@@ -82,12 +83,12 @@ original code -> new code
    001000 -> 1000
    001001 -> 1001
    001010 -> 1010
-   001011 -> 1011
-   001100 -> 1100
-   001101 -> 1101
-   001110 -> 1110
-   001111 -> 1111
-@N: MO225 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":66:2:66:7|There are no possible illegal states for state machine c_state[15:0] (in view: work.jpeg_enc_dct(verilog)); safe FSM implementation is not required.
+   001101 -> 1011
+   001110 -> 1100
+   001111 -> 1101
+   010000 -> 1110
+   010001 -> 1111
+@N: MO225 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":71:2:71:7|There are no possible illegal states for state machine c_state[15:0] (in view: work.jpeg_enc_dct(verilog)); safe FSM implementation is not required.
 Encoding state machine c_state[63:0] (in view: work.jpeg_enc(verilog))
 original code -> new code
    00000000 -> 000000
@@ -154,7 +155,7 @@ original code -> new code
    00111101 -> 111101
    00111110 -> 111110
    00111111 -> 111111
-@N: MO225 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":303:2:303:7|There are no possible illegal states for state machine c_state[63:0] (in view: work.jpeg_enc(verilog)); safe FSM implementation is not required.
+@N: MO225 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":311:2:311:7|There are no possible illegal states for state machine c_state[63:0] (in view: work.jpeg_enc(verilog)); safe FSM implementation is not required.
 Encoding state machine c_state[11:0] (in view: work.jpeg_data_to_spi(verilog))
 original code -> new code
    0000 -> 0000
@@ -170,18 +171,25 @@ original code -> new code
    1010 -> 1010
    1011 -> 1011
 
-Finished constraint checker preprocessing (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 139MB)
+Finished constraint checker preprocessing (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 140MB)
 
+@N: BN362 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\sc_fifo_32.v":117:2:117:7|Removing sequential instance data_out[25] (in view: work.sc_fifo_32(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\sc_fifo_32.v":117:2:117:7|Removing sequential instance data_out[26] (in view: work.sc_fifo_32(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\sc_fifo_32.v":117:2:117:7|Removing sequential instance data_out[27] (in view: work.sc_fifo_32(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\sc_fifo_32.v":117:2:117:7|Removing sequential instance data_out[28] (in view: work.sc_fifo_32(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\sc_fifo_32.v":117:2:117:7|Removing sequential instance data_out[29] (in view: work.sc_fifo_32(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\sc_fifo_32.v":117:2:117:7|Removing sequential instance data_out[30] (in view: work.sc_fifo_32(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\sc_fifo_32.v":117:2:117:7|Removing sequential instance data_out[31] (in view: work.sc_fifo_32(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
 None
 None
 
-Finished constraint checker (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+Finished constraint checker (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 142MB)
 
 Pre-mapping successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:00s; Memory used current: 55MB peak: 141MB)
+At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 55MB peak: 142MB)
 
-Process took 0h:00m:02s realtime, 0h:00m:01s cputime
-# Mon Apr 30 14:33:09 2018
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Fri Jun  8 11:33:22 2018
 
 ###########################################################]

@@ -29,7 +29,7 @@ module spi_slave (
   input           ssel,
   output          miso,
   
-  //output [16:0]   mem_addr,
+  output [16:0]   mem_addr,
   output          mem_rd,
   input  [7:0]    mem_data  
   );
@@ -54,7 +54,7 @@ module spi_slave (
   wire            mosi_data = mosi_reg[1];
   
   assign          miso = data_to_send_buf[7];
-  //assign          mem_addr = rd_addr_reg;
+  assign          mem_addr = rd_addr_reg;
   assign          mem_rd = mem_rd_reg;
   /*
   always @ (posedge clk or negedge reset_n)

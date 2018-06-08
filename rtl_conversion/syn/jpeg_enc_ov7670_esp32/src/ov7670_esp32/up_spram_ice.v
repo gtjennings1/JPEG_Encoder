@@ -42,6 +42,9 @@ module up_spram (
   wire   [3:0]    w_mask;
   assign          w_mask = w_addr[16] ? 4'b1100 : 4'b0011;
   wire   [3:0]    wr_ram;
+
+  reg    [7:0]    rd_data_reg;  
+  
   assign          wr_ram[0] = ~w_addr[15] & ~w_addr[14] & wr_en;
   assign          wr_ram[1] = ~w_addr[15] &  w_addr[14] & wr_en;
   assign          wr_ram[2] =  w_addr[15] & ~w_addr[14] & wr_en;
@@ -56,7 +59,10 @@ module up_spram (
                               (w_addr[16:14]==3'd6) ? ram_rdata2[15:8] : 
                               (w_addr[16:14]==3'd7) ? ram_rdata3[15:8] : 0; 
                                                   
-  assign          rd_data = ram_rdata[7:0];
+  assign          rd_data = rd_data_reg;//ram_rdata[7:0];
+  
+  always @ (rd_clk)
+    rd_data_reg <= #1 ram_rdata[7:0];  
     
   //RAM instantiations
   SB_SPRAM256KA u_spram0 (

@@ -1,6 +1,6 @@
 Lattice Timing Report -  Setup  and Hold, Version Radiant (64-bit) 1.0.0.350.6
 
-Mon Apr 30 14:33:50 2018
+Fri Jun 08 11:33:59 2018
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -44,10 +44,10 @@ Performance:     High-Performance_1.2V
             3.4.2  Start/End Points Without Timing Constraints
     4  DETAILED REPORT
         4.1  Setup Detailed Report
-            4.1.1  Setup Path Details For Constraint: create_clock -name {pclk} -period 41.6666666666667 [get_ports pclk]
+            4.1.1  Setup Path Details For Constraint: create_clock -name {pclk} -period 166.666666666667 [get_ports pclk]
             4.1.2  Setup Path Details For Constraint: create_clock -name {u_HSOSC.osc_inst/CLKHF} -period 41.6667 [get_pins {u_HSOSC.osc_inst/CLKHF }] 
         4.2  Hold Detailed Report
-            4.2.1  Hold Path Details For Constraint: create_clock -name {pclk} -period 41.6666666666667 [get_ports pclk]
+            4.2.1  Hold Path Details For Constraint: create_clock -name {pclk} -period 166.666666666667 [get_ports pclk]
             4.2.2  Hold Path Details For Constraint: create_clock -name {u_HSOSC.osc_inst/CLKHF} -period 41.6667 [get_pins {u_HSOSC.osc_inst/CLKHF }] 
 
 =====================================================================
@@ -60,7 +60,7 @@ Performance:     High-Performance_1.2V
 
 1.1  SDC Constraints
 =====================
-create_clock -name {pclk} -period 41.6666666666667 [get_ports pclk]
+create_clock -name {pclk} -period 166.666666666667 [get_ports pclk]
 create_clock -name {u_HSOSC.osc_inst/CLKHF} -period 41.6667 [get_pins {u_HSOSC.osc_inst/CLKHF }] 
 
 1.2  Combinational Loop
@@ -73,14 +73,14 @@ None
 
 2.1 Clock "pclk"
 =======================
-create_clock -name {pclk} -period 41.6666666666667 [get_ports pclk]
+create_clock -name {pclk} -period 166.666666666667 [get_ports pclk]
 
 Single Clock Domain
 -------------------------------------------------------------------------------------------------------
                Clock pclk               |                    |       Period       |     Frequency      
 -------------------------------------------------------------------------------------------------------
- From pclk                              |             Target |          41.666 ns |         24.000 MHz 
-                                        | Actual (all paths) |          69.224 ns |         14.446 MHz 
+ From pclk                              |             Target |         166.666 ns |          6.000 MHz 
+                                        | Actual (all paths) |          69.225 ns |         14.446 MHz 
 -------------------------------------------------------------------------------------------------------
 
 Clock Domain Crossing
@@ -118,15 +118,15 @@ Clock Domain Crossing
 
 3.1.1  Constraint Coverage
 ---------------------------
-Constraint Coverage: 98.2319%
+Constraint Coverage: 98.4598%
 
 3.1.2  Timing Errors
 ---------------------
-Timing Errors: 41 endpoints (setup), 0 endpoints (hold)
+Timing Errors: 0 endpoints (setup), 0 endpoints (hold)
 
 3.1.3  Total Timing Score
 --------------------------
-Total Negative Slack: 867.811 ns (setup), 0.000 ns (hold)
+Total Negative Slack: 0.000 ns (setup), 0.000 ns (hold)
 
 3.2  Setup Summary Report
 ==========================
@@ -138,12 +138,12 @@ Total Negative Slack: 867.811 ns (setup), 0.000 ns (hold)
              SDC Constraint             |   Target    |    Slack    | Levels |   Period    |  Frequency  |  Items Scored  |  Timing Error  
 -------------------------------------------------------------------------------------------------------------------------------------------
                                         |             |             |        |             |             |                |                
-create_clock -name {pclk} -period 41.66                                                                                                    
-66666666667 [get_ports pclk]            |   41.666 ns |  -27.558 ns |   66   |   69.225 ns |  14.446 MHz |      2402      |       41       
+create_clock -name {pclk} -period 166.6                                                                                                    
+66666666667 [get_ports pclk]            |  166.666 ns |   97.441 ns |   66   |   69.225 ns |  14.446 MHz |      2553      |        0       
                                         |             |             |        |             |             |                |                
 create_clock -name {u_HSOSC.osc_inst/CL                                                                                                    
 KHF} -period 41.6667 [get_pins {u_HSOSC                                                                                                    
-.osc_inst/CLKHF }]                      |   41.667 ns |   20.837 ns |    0   |   20.830 ns |  48.008 MHz |       300      |        0       
+.osc_inst/CLKHF }]                      |   41.667 ns |   20.837 ns |    0   |   20.830 ns |  48.008 MHz |       298      |        0       
 -------------------------------------------------------------------------------------------------------------------------------------------
 
 3.2.2  Setup Critical Endpoint Summary 
@@ -151,19 +151,29 @@ KHF} -period 41.6667 [get_pins {u_HSOSC
 -------------------------------------------------------
           Listing 10 End Points          |    Slack    
 -------------------------------------------------------
-je/QNT_DU_ret_12_Z.ff_inst/D             |  -27.558 ns 
-je/QNT_DU_ret_19_Z.ff_inst/D             |  -27.558 ns 
-je/un5_QNT_DU.QNT_DU_ret_2_Z.ff_inst/D   |  -27.558 ns 
-je/un5_QNT_DU.QNT_DU_ret_4_Z.ff_inst/D   |  -27.558 ns 
-je/un5_QNT_DU.QNT_DU_ret_6_Z.ff_inst/D   |  -27.558 ns 
-je/un5_QNT_DU.QNT_DU_ret_8_Z.ff_inst/D   |  -27.558 ns 
-je/QNT_DU_ret_3_Z.ff_inst/D              |  -27.558 ns 
-je/QNT_DU_ret_8_Z.ff_inst/D              |  -27.558 ns 
-je/QNT_DU_ret_17_Z.ff_inst/D             |  -27.363 ns 
-je/QNT_DU_ret_16_Z.ff_inst/D             |  -26.166 ns 
+u_OV7670_Controller/LUT/address_Z[7].ff_inst/D              
+                                         |   31.347 ns 
+u_OV7670_Controller/LUT/address_Z[6].ff_inst/D              
+                                         |   32.263 ns 
+u_OV7670_Controller/LUT/address_Z[5].ff_inst/D              
+                                         |   33.179 ns 
+u_OV7670_Controller/LUT/sreg_3_15_0_.address_ret_Z.ff_inst/D              
+                                         |   33.896 ns 
+u_OV7670_Controller/LUT/address_Z[3].ff_inst/D              
+                                         |   33.896 ns 
+u_OV7670_Controller/LUT/address_Z[4].ff_inst/D              
+                                         |   34.095 ns 
+u_OV7670_Controller/I2C/busy_sr_ess_Z[30].ff_inst/SP              
+                                         |   34.332 ns 
+u_OV7670_Controller/I2C/busy_sr_ess_Z[29].ff_inst/SP              
+                                         |   34.332 ns 
+u_OV7670_Controller/I2C/busy_sr_ess_Z[28].ff_inst/SP              
+                                         |   34.332 ns 
+u_OV7670_Controller/I2C/busy_sr_ess_Z[27].ff_inst/SP              
+                                         |   34.332 ns 
 -------------------------------------------------------
                                          |             
-Setup # of endpoints with negative slack:|          41 
+Setup # of endpoints with negative slack:|           0 
                                          |             
 -------------------------------------------------------
 
@@ -177,12 +187,12 @@ Setup # of endpoints with negative slack:|          41
              SDC Constraint             |   Target    |    Slack    | Levels |   Period    |  Frequency  |  Items Scored  |  Timing Error  
 -------------------------------------------------------------------------------------------------------------------------------------------
                                         |             |             |        |             |             |                |                
-create_clock -name {pclk} -period 41.66                                                                                                    
-66666666667 [get_ports pclk]            |    0.000 ns |    1.613 ns |    1   |        ---- |        ---- |      2402      |        0       
+create_clock -name {pclk} -period 166.6                                                                                                    
+66666666667 [get_ports pclk]            |    0.000 ns |    1.613 ns |    1   |        ---- |        ---- |      2553      |        0       
                                         |             |             |        |             |             |                |                
 create_clock -name {u_HSOSC.osc_inst/CL                                                                                                    
 KHF} -period 41.6667 [get_pins {u_HSOSC                                                                                                    
-.osc_inst/CLKHF }]                      |    0.000 ns |    2.280 ns |    1   |        ---- |        ---- |       300      |        0       
+.osc_inst/CLKHF }]                      |    0.000 ns |    2.280 ns |    1   |        ---- |        ---- |       298      |        0       
 -------------------------------------------------------------------------------------------------------------------------------------------
 
 3.3.2  Hold Critical Endpoint Summary 
@@ -227,16 +237,16 @@ Clocked but unconstrained timing start points
 -------------------------------------------------------------------
         Listing 10 Start Points         |           Type           
 -------------------------------------------------------------------
+cam_buf/u_spram0.vfb_b_inst/DATAOUT0    |    No arrival or required
+cam_buf/u_spram0.vfb_b_inst/DATAOUT8    |    No arrival or required
+cam_buf/u_spram1.vfb_b_inst/DATAOUT0    |    No arrival or required
+cam_buf/u_spram1.vfb_b_inst/DATAOUT8    |    No arrival or required
 cam_buf/u_spram0.vfb_b_inst/DATAOUT1    |    No arrival or required
 cam_buf/u_spram0.vfb_b_inst/DATAOUT9    |    No arrival or required
-cam_buf/u_spram2.vfb_b_inst/DATAOUT1    |    No arrival or required
-cam_buf/u_spram2.vfb_b_inst/DATAOUT9    |    No arrival or required
+cam_buf/u_spram1.vfb_b_inst/DATAOUT1    |    No arrival or required
+cam_buf/u_spram1.vfb_b_inst/DATAOUT9    |    No arrival or required
 cam_buf/u_spram0.vfb_b_inst/DATAOUT2    |    No arrival or required
 cam_buf/u_spram0.vfb_b_inst/DATAOUT10   |    No arrival or required
-cam_buf/u_spram2.vfb_b_inst/DATAOUT2    |    No arrival or required
-cam_buf/u_spram2.vfb_b_inst/DATAOUT10   |    No arrival or required
-cam_buf/u_spram0.vfb_b_inst/DATAOUT3    |    No arrival or required
-cam_buf/u_spram0.vfb_b_inst/DATAOUT11   |    No arrival or required
 -------------------------------------------------------------------
                                         |                          
 Number of unconstrained timing start po |                          
@@ -269,7 +279,7 @@ je/ram_rom/zzidx_rom_data_2_0_0.ebr_inst/RADDR5
 -------------------------------------------------------------------
                                         |                          
 Number of unconstrained timing end poin |                          
-ts                                      |                        99
+ts                                      |                       116
                                         |                          
 -------------------------------------------------------------------
 
@@ -290,6 +300,7 @@ create_generated_clock,
      Listing 10 Start or End Points     |           Type           
 -------------------------------------------------------------------
 ssel                                    |                     input
+mosi                                    |                     input
 sclk                                    |                     input
 img_req                                 |                     input
 pdata[7]                                |                     input
@@ -298,7 +309,6 @@ pdata[5]                                |                     input
 pdata[4]                                |                     input
 pdata[3]                                |                     input
 pdata[2]                                |                     input
-pdata[1]                                |                     input
 -------------------------------------------------------------------
                                         |                          
 Number of I/O ports without constraint  |                        21
@@ -317,17 +327,17 @@ There is no instance satisfying reporting criteria
 
 4.1  Setup Detailed Report
 ===========================
-4.1.1  Setup path details for constraint: create_clock -name {pclk} -period 41.6666666666667 [get_ports pclk]
+4.1.1  Setup path details for constraint: create_clock -name {pclk} -period 166.666666666667 [get_ports pclk]
 ----------------------------------------------------------------------
-2402 endpoints scored, 41 timing errors detected.
+2553 endpoints scored, 0 timing errors detected.
 
 Minimum Pulse Width Report
 --------------------------
 MPW Cell         : SRAM
 MPW Pin          : CLOCK
 MPW Period       : 0.418 ns
-Clock Period     : 41.6667 ns
-Period margin    : 41.2487 ns  (Passed)
+Clock Period     : 166.667 ns
+Period margin    : 166.249 ns  (Passed)
 --------------------------
 
  +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -343,16 +353,16 @@ Destination Clock: pclk
 Logic Level      : 66
 Delay Ratio      : 65.8% (route), 34.2% (logic)
 Clock Skew       : 0.000 ns
-Setup Constraint : 41.666 ns 
-Path Slack       : -27.558 ns  (Failed)
+Setup Constraint : 166.666 ns 
+Path Slack       : 97.441 ns  (Passed)
 
-  Destination Clock Arrival Time (pclk:R#2)    41.666
+  Destination Clock Arrival Time (pclk:R#2)   166.666
 + Destination Clock Source Latency              0.000
 - Destination Clock Uncertainty                 0.000
 + Destination Clock Path Delay                  2.040
 - Setup Time                                    0.199
 -------------------------------------------   -------
-End-of-path required time( ns )                43.507
+End-of-path required time( ns )               168.507
 
   Source Clock Arrival Time (pclk:R#1)    0.000
 + Source Clock Source Latency             0.000
@@ -367,7 +377,7 @@ Name                                      Cell/Site Name  Delay Name            
 ----------------------------------------  --------------  --------------------  -----  ------------  ------  
 pclk                                      top             CLOCK LATENCY         0.000         0.000  1       
 pclk                                                      NET DELAY             0.000         0.000  1       
-pclk_ibuf.bb_inst/B->pclk_ibuf.bb_inst/O  PIO             IOPAD_TO_PADDI_DELAY  0.510         0.510  1207    
+pclk_ibuf.bb_inst/B->pclk_ibuf.bb_inst/O  PIO             IOPAD_TO_PADDI_DELAY  0.510         0.510  1233    
 pclk_c                                                    NET DELAY             1.530         2.040  1       
 
 
@@ -491,7 +501,7 @@ je/mult1_un17_sum[8]                                      NET DELAY            1
 je/un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_2_RNIKH8RJG3/B->je/un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_2_RNIKH8RJG3/Z
                                           SLICE           B0_TO_F0_DELAY       0.477        37.197  1       
 je/mult1_un31_sum_1_axb_1                                 NET DELAY            0.500        37.697  1       
-SLICE_2629/D0->SLICE_2629/F0              SLICE           D0_TO_F0_DELAY       0.477        38.174  1       
+SLICE_2605/D0->SLICE_2605/F0              SLICE           D0_TO_F0_DELAY       0.477        38.174  1       
 je/fdtbl_rom_data_2_0_dreg_ret_2_RNIA4O04B
                                                           NET DELAY            0.500        38.674  1       
 je/un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_2_RNI9OE8PT1.fa22_inst/B0->je/un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_2_RNI9OE8PT1.fa22_inst/CO0
@@ -610,7 +620,7 @@ Name                                      Cell/Site Name  Delay Name            
 ----------------------------------------  --------------  --------------------  -----  ------------  ------  
 pclk                                      top             CLOCK LATENCY         0.000         0.000  1       
 pclk                                                      NET DELAY             0.000         0.000  1       
-pclk_ibuf.bb_inst/B->pclk_ibuf.bb_inst/O  PIO             IOPAD_TO_PADDI_DELAY  0.510         0.510  1207    
+pclk_ibuf.bb_inst/B->pclk_ibuf.bb_inst/O  PIO             IOPAD_TO_PADDI_DELAY  0.510         0.510  1233    
 pclk_c                                                    NET DELAY             1.530         2.040  1       
 
 
@@ -625,16 +635,16 @@ Destination Clock: pclk
 Logic Level      : 66
 Delay Ratio      : 65.8% (route), 34.2% (logic)
 Clock Skew       : 0.000 ns
-Setup Constraint : 41.666 ns 
-Path Slack       : -27.558 ns  (Failed)
+Setup Constraint : 166.666 ns 
+Path Slack       : 97.441 ns  (Passed)
 
-  Destination Clock Arrival Time (pclk:R#2)    41.666
+  Destination Clock Arrival Time (pclk:R#2)   166.666
 + Destination Clock Source Latency              0.000
 - Destination Clock Uncertainty                 0.000
 + Destination Clock Path Delay                  2.040
 - Setup Time                                    0.199
 -------------------------------------------   -------
-End-of-path required time( ns )                43.507
+End-of-path required time( ns )               168.507
 
   Source Clock Arrival Time (pclk:R#1)    0.000
 + Source Clock Source Latency             0.000
@@ -649,7 +659,7 @@ Name                                      Cell/Site Name  Delay Name            
 ----------------------------------------  --------------  --------------------  -----  ------------  ------  
 pclk                                      top             CLOCK LATENCY         0.000         0.000  1       
 pclk                                                      NET DELAY             0.000         0.000  1       
-pclk_ibuf.bb_inst/B->pclk_ibuf.bb_inst/O  PIO             IOPAD_TO_PADDI_DELAY  0.510         0.510  1207    
+pclk_ibuf.bb_inst/B->pclk_ibuf.bb_inst/O  PIO             IOPAD_TO_PADDI_DELAY  0.510         0.510  1233    
 pclk_c                                                    NET DELAY             1.530         2.040  1       
 
 
@@ -773,7 +783,7 @@ je/mult1_un17_sum[8]                                      NET DELAY            1
 je/un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_2_RNIKH8RJG3/B->je/un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_2_RNIKH8RJG3/Z
                                           SLICE           B0_TO_F0_DELAY       0.477        37.197  1       
 je/mult1_un31_sum_1_axb_1                                 NET DELAY            0.500        37.697  1       
-SLICE_2629/D0->SLICE_2629/F0              SLICE           D0_TO_F0_DELAY       0.477        38.174  1       
+SLICE_2605/D0->SLICE_2605/F0              SLICE           D0_TO_F0_DELAY       0.477        38.174  1       
 je/fdtbl_rom_data_2_0_dreg_ret_2_RNIA4O04B
                                                           NET DELAY            0.500        38.674  1       
 je/un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_2_RNI9OE8PT1.fa22_inst/B0->je/un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_2_RNI9OE8PT1.fa22_inst/CO0
@@ -882,8 +892,8 @@ je/un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_18_RNIDV224H_0/D->je/un5_QNT_DU.fdtbl_
                                           SLICE           D0_TO_F0_DELAY       0.477        69.174  8       
 je/fdtbl_rom_data_2_0_dreg_ret_18_RNIDV224H_0
                                                           NET DELAY            0.915        70.089  1       
-SLICE_708/B0->SLICE_708/F0                SLICE           B0_TO_F0_DELAY       0.477        70.566  1       
-je/mult1_un59_sum[8]$n30                                  NET DELAY            0.500        71.066  1       
+SLICE_712/B0->SLICE_712/F0                SLICE           B0_TO_F0_DELAY       0.477        70.566  1       
+je/mult1_un59_sum[8]$n23                                  NET DELAY            0.500        71.066  1       
 
 
 Destination Clock Path
@@ -891,7 +901,7 @@ Name                                      Cell/Site Name  Delay Name            
 ----------------------------------------  --------------  --------------------  -----  ------------  ------  
 pclk                                      top             CLOCK LATENCY         0.000         0.000  1       
 pclk                                                      NET DELAY             0.000         0.000  1       
-pclk_ibuf.bb_inst/B->pclk_ibuf.bb_inst/O  PIO             IOPAD_TO_PADDI_DELAY  0.510         0.510  1207    
+pclk_ibuf.bb_inst/B->pclk_ibuf.bb_inst/O  PIO             IOPAD_TO_PADDI_DELAY  0.510         0.510  1233    
 pclk_c                                                    NET DELAY             1.530         2.040  1       
 
 
@@ -906,16 +916,16 @@ Destination Clock: pclk
 Logic Level      : 66
 Delay Ratio      : 65.8% (route), 34.2% (logic)
 Clock Skew       : 0.000 ns
-Setup Constraint : 41.666 ns 
-Path Slack       : -27.558 ns  (Failed)
+Setup Constraint : 166.666 ns 
+Path Slack       : 97.441 ns  (Passed)
 
-  Destination Clock Arrival Time (pclk:R#2)    41.666
+  Destination Clock Arrival Time (pclk:R#2)   166.666
 + Destination Clock Source Latency              0.000
 - Destination Clock Uncertainty                 0.000
 + Destination Clock Path Delay                  2.040
 - Setup Time                                    0.199
 -------------------------------------------   -------
-End-of-path required time( ns )                43.507
+End-of-path required time( ns )               168.507
 
   Source Clock Arrival Time (pclk:R#1)    0.000
 + Source Clock Source Latency             0.000
@@ -930,7 +940,7 @@ Name                                      Cell/Site Name  Delay Name            
 ----------------------------------------  --------------  --------------------  -----  ------------  ------  
 pclk                                      top             CLOCK LATENCY         0.000         0.000  1       
 pclk                                                      NET DELAY             0.000         0.000  1       
-pclk_ibuf.bb_inst/B->pclk_ibuf.bb_inst/O  PIO             IOPAD_TO_PADDI_DELAY  0.510         0.510  1207    
+pclk_ibuf.bb_inst/B->pclk_ibuf.bb_inst/O  PIO             IOPAD_TO_PADDI_DELAY  0.510         0.510  1233    
 pclk_c                                                    NET DELAY             1.530         2.040  1       
 
 
@@ -1054,7 +1064,7 @@ je/mult1_un17_sum[8]                                      NET DELAY            1
 je/un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_2_RNIKH8RJG3/B->je/un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_2_RNIKH8RJG3/Z
                                           SLICE           B0_TO_F0_DELAY       0.477        37.197  1       
 je/mult1_un31_sum_1_axb_1                                 NET DELAY            0.500        37.697  1       
-SLICE_2629/D0->SLICE_2629/F0              SLICE           D0_TO_F0_DELAY       0.477        38.174  1       
+SLICE_2605/D0->SLICE_2605/F0              SLICE           D0_TO_F0_DELAY       0.477        38.174  1       
 je/fdtbl_rom_data_2_0_dreg_ret_2_RNIA4O04B
                                                           NET DELAY            0.500        38.674  1       
 je/un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_2_RNI9OE8PT1.fa22_inst/B0->je/un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_2_RNI9OE8PT1.fa22_inst/CO0
@@ -1163,8 +1173,8 @@ je/un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_18_RNIDV224H/D->je/un5_QNT_DU.fdtbl_ro
                                           SLICE           D0_TO_F0_DELAY       0.477        69.174  8       
 je/fdtbl_rom_data_2_0_dreg_ret_18_RNIDV224H
                                                           NET DELAY            0.915        70.089  1       
-SLICE_711/C0->SLICE_711/F0                SLICE           C0_TO_F0_DELAY       0.477        70.566  1       
-je/mult1_un59_sum[8]$n29                                  NET DELAY            0.500        71.066  1       
+SLICE_715/C0->SLICE_715/F0                SLICE           C0_TO_F0_DELAY       0.477        70.566  1       
+je/mult1_un59_sum[8]$n22                                  NET DELAY            0.500        71.066  1       
 
 
 Destination Clock Path
@@ -1172,7 +1182,7 @@ Name                                      Cell/Site Name  Delay Name            
 ----------------------------------------  --------------  --------------------  -----  ------------  ------  
 pclk                                      top             CLOCK LATENCY         0.000         0.000  1       
 pclk                                                      NET DELAY             0.000         0.000  1       
-pclk_ibuf.bb_inst/B->pclk_ibuf.bb_inst/O  PIO             IOPAD_TO_PADDI_DELAY  0.510         0.510  1207    
+pclk_ibuf.bb_inst/B->pclk_ibuf.bb_inst/O  PIO             IOPAD_TO_PADDI_DELAY  0.510         0.510  1233    
 pclk_c                                                    NET DELAY             1.530         2.040  1       
 
 
@@ -1187,16 +1197,16 @@ Destination Clock: pclk
 Logic Level      : 66
 Delay Ratio      : 65.8% (route), 34.2% (logic)
 Clock Skew       : 0.000 ns
-Setup Constraint : 41.666 ns 
-Path Slack       : -27.558 ns  (Failed)
+Setup Constraint : 166.666 ns 
+Path Slack       : 97.441 ns  (Passed)
 
-  Destination Clock Arrival Time (pclk:R#2)    41.666
+  Destination Clock Arrival Time (pclk:R#2)   166.666
 + Destination Clock Source Latency              0.000
 - Destination Clock Uncertainty                 0.000
 + Destination Clock Path Delay                  2.040
 - Setup Time                                    0.199
 -------------------------------------------   -------
-End-of-path required time( ns )                43.507
+End-of-path required time( ns )               168.507
 
   Source Clock Arrival Time (pclk:R#1)    0.000
 + Source Clock Source Latency             0.000
@@ -1211,7 +1221,7 @@ Name                                      Cell/Site Name  Delay Name            
 ----------------------------------------  --------------  --------------------  -----  ------------  ------  
 pclk                                      top             CLOCK LATENCY         0.000         0.000  1       
 pclk                                                      NET DELAY             0.000         0.000  1       
-pclk_ibuf.bb_inst/B->pclk_ibuf.bb_inst/O  PIO             IOPAD_TO_PADDI_DELAY  0.510         0.510  1207    
+pclk_ibuf.bb_inst/B->pclk_ibuf.bb_inst/O  PIO             IOPAD_TO_PADDI_DELAY  0.510         0.510  1233    
 pclk_c                                                    NET DELAY             1.530         2.040  1       
 
 
@@ -1335,7 +1345,7 @@ je/mult1_un17_sum[8]                                      NET DELAY            1
 je/un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_2_RNIKH8RJG3/B->je/un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_2_RNIKH8RJG3/Z
                                           SLICE           B0_TO_F0_DELAY       0.477        37.197  1       
 je/mult1_un31_sum_1_axb_1                                 NET DELAY            0.500        37.697  1       
-SLICE_2629/D0->SLICE_2629/F0              SLICE           D0_TO_F0_DELAY       0.477        38.174  1       
+SLICE_2605/D0->SLICE_2605/F0              SLICE           D0_TO_F0_DELAY       0.477        38.174  1       
 je/fdtbl_rom_data_2_0_dreg_ret_2_RNIA4O04B
                                                           NET DELAY            0.500        38.674  1       
 je/un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_2_RNI9OE8PT1.fa22_inst/B0->je/un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_2_RNI9OE8PT1.fa22_inst/CO0
@@ -1444,8 +1454,8 @@ je/un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_18_RNIDV224H/D->je/un5_QNT_DU.fdtbl_ro
                                           SLICE           D0_TO_F0_DELAY       0.477        69.174  8       
 je/fdtbl_rom_data_2_0_dreg_ret_18_RNIDV224H
                                                           NET DELAY            0.915        70.089  1       
-SLICE_717/C0->SLICE_717/F0                SLICE           C0_TO_F0_DELAY       0.477        70.566  1       
-je/mult1_un59_sum[8]$n28                                  NET DELAY            0.500        71.066  1       
+SLICE_721/C0->SLICE_721/F0                SLICE           C0_TO_F0_DELAY       0.477        70.566  1       
+je/mult1_un59_sum[8]$n21                                  NET DELAY            0.500        71.066  1       
 
 
 Destination Clock Path
@@ -1453,7 +1463,7 @@ Name                                      Cell/Site Name  Delay Name            
 ----------------------------------------  --------------  --------------------  -----  ------------  ------  
 pclk                                      top             CLOCK LATENCY         0.000         0.000  1       
 pclk                                                      NET DELAY             0.000         0.000  1       
-pclk_ibuf.bb_inst/B->pclk_ibuf.bb_inst/O  PIO             IOPAD_TO_PADDI_DELAY  0.510         0.510  1207    
+pclk_ibuf.bb_inst/B->pclk_ibuf.bb_inst/O  PIO             IOPAD_TO_PADDI_DELAY  0.510         0.510  1233    
 pclk_c                                                    NET DELAY             1.530         2.040  1       
 
 
@@ -1468,16 +1478,16 @@ Destination Clock: pclk
 Logic Level      : 66
 Delay Ratio      : 65.8% (route), 34.2% (logic)
 Clock Skew       : 0.000 ns
-Setup Constraint : 41.666 ns 
-Path Slack       : -27.558 ns  (Failed)
+Setup Constraint : 166.666 ns 
+Path Slack       : 97.441 ns  (Passed)
 
-  Destination Clock Arrival Time (pclk:R#2)    41.666
+  Destination Clock Arrival Time (pclk:R#2)   166.666
 + Destination Clock Source Latency              0.000
 - Destination Clock Uncertainty                 0.000
 + Destination Clock Path Delay                  2.040
 - Setup Time                                    0.199
 -------------------------------------------   -------
-End-of-path required time( ns )                43.507
+End-of-path required time( ns )               168.507
 
   Source Clock Arrival Time (pclk:R#1)    0.000
 + Source Clock Source Latency             0.000
@@ -1492,7 +1502,7 @@ Name                                      Cell/Site Name  Delay Name            
 ----------------------------------------  --------------  --------------------  -----  ------------  ------  
 pclk                                      top             CLOCK LATENCY         0.000         0.000  1       
 pclk                                                      NET DELAY             0.000         0.000  1       
-pclk_ibuf.bb_inst/B->pclk_ibuf.bb_inst/O  PIO             IOPAD_TO_PADDI_DELAY  0.510         0.510  1207    
+pclk_ibuf.bb_inst/B->pclk_ibuf.bb_inst/O  PIO             IOPAD_TO_PADDI_DELAY  0.510         0.510  1233    
 pclk_c                                                    NET DELAY             1.530         2.040  1       
 
 
@@ -1616,7 +1626,7 @@ je/mult1_un17_sum[8]                                      NET DELAY            1
 je/un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_2_RNIKH8RJG3/B->je/un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_2_RNIKH8RJG3/Z
                                           SLICE           B0_TO_F0_DELAY       0.477        37.197  1       
 je/mult1_un31_sum_1_axb_1                                 NET DELAY            0.500        37.697  1       
-SLICE_2629/D0->SLICE_2629/F0              SLICE           D0_TO_F0_DELAY       0.477        38.174  1       
+SLICE_2605/D0->SLICE_2605/F0              SLICE           D0_TO_F0_DELAY       0.477        38.174  1       
 je/fdtbl_rom_data_2_0_dreg_ret_2_RNIA4O04B
                                                           NET DELAY            0.500        38.674  1       
 je/un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_2_RNI9OE8PT1.fa22_inst/B0->je/un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_2_RNI9OE8PT1.fa22_inst/CO0
@@ -1725,8 +1735,8 @@ je/un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_18_RNIDV224H_0/D->je/un5_QNT_DU.fdtbl_
                                           SLICE           D0_TO_F0_DELAY       0.477        69.174  8       
 je/fdtbl_rom_data_2_0_dreg_ret_18_RNIDV224H_0
                                                           NET DELAY            0.915        70.089  1       
-SLICE_720/B0->SLICE_720/F0                SLICE           B0_TO_F0_DELAY       0.477        70.566  1       
-je/mult1_un59_sum[8]$n27                                  NET DELAY            0.500        71.066  1       
+SLICE_724/B0->SLICE_724/F0                SLICE           B0_TO_F0_DELAY       0.477        70.566  1       
+je/mult1_un59_sum[8]$n20                                  NET DELAY            0.500        71.066  1       
 
 
 Destination Clock Path
@@ -1734,7 +1744,7 @@ Name                                      Cell/Site Name  Delay Name            
 ----------------------------------------  --------------  --------------------  -----  ------------  ------  
 pclk                                      top             CLOCK LATENCY         0.000         0.000  1       
 pclk                                                      NET DELAY             0.000         0.000  1       
-pclk_ibuf.bb_inst/B->pclk_ibuf.bb_inst/O  PIO             IOPAD_TO_PADDI_DELAY  0.510         0.510  1207    
+pclk_ibuf.bb_inst/B->pclk_ibuf.bb_inst/O  PIO             IOPAD_TO_PADDI_DELAY  0.510         0.510  1233    
 pclk_c                                                    NET DELAY             1.530         2.040  1       
 
 
@@ -1749,16 +1759,16 @@ Destination Clock: pclk
 Logic Level      : 66
 Delay Ratio      : 65.8% (route), 34.2% (logic)
 Clock Skew       : 0.000 ns
-Setup Constraint : 41.666 ns 
-Path Slack       : -27.558 ns  (Failed)
+Setup Constraint : 166.666 ns 
+Path Slack       : 97.441 ns  (Passed)
 
-  Destination Clock Arrival Time (pclk:R#2)    41.666
+  Destination Clock Arrival Time (pclk:R#2)   166.666
 + Destination Clock Source Latency              0.000
 - Destination Clock Uncertainty                 0.000
 + Destination Clock Path Delay                  2.040
 - Setup Time                                    0.199
 -------------------------------------------   -------
-End-of-path required time( ns )                43.507
+End-of-path required time( ns )               168.507
 
   Source Clock Arrival Time (pclk:R#1)    0.000
 + Source Clock Source Latency             0.000
@@ -1773,7 +1783,7 @@ Name                                      Cell/Site Name  Delay Name            
 ----------------------------------------  --------------  --------------------  -----  ------------  ------  
 pclk                                      top             CLOCK LATENCY         0.000         0.000  1       
 pclk                                                      NET DELAY             0.000         0.000  1       
-pclk_ibuf.bb_inst/B->pclk_ibuf.bb_inst/O  PIO             IOPAD_TO_PADDI_DELAY  0.510         0.510  1207    
+pclk_ibuf.bb_inst/B->pclk_ibuf.bb_inst/O  PIO             IOPAD_TO_PADDI_DELAY  0.510         0.510  1233    
 pclk_c                                                    NET DELAY             1.530         2.040  1       
 
 
@@ -1897,7 +1907,7 @@ je/mult1_un17_sum[8]                                      NET DELAY            1
 je/un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_2_RNIKH8RJG3/B->je/un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_2_RNIKH8RJG3/Z
                                           SLICE           B0_TO_F0_DELAY       0.477        37.197  1       
 je/mult1_un31_sum_1_axb_1                                 NET DELAY            0.500        37.697  1       
-SLICE_2629/D0->SLICE_2629/F0              SLICE           D0_TO_F0_DELAY       0.477        38.174  1       
+SLICE_2605/D0->SLICE_2605/F0              SLICE           D0_TO_F0_DELAY       0.477        38.174  1       
 je/fdtbl_rom_data_2_0_dreg_ret_2_RNIA4O04B
                                                           NET DELAY            0.500        38.674  1       
 je/un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_2_RNI9OE8PT1.fa22_inst/B0->je/un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_2_RNI9OE8PT1.fa22_inst/CO0
@@ -2006,8 +2016,8 @@ je/un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_18_RNIDV224H/D->je/un5_QNT_DU.fdtbl_ro
                                           SLICE           D0_TO_F0_DELAY       0.477        69.174  8       
 je/fdtbl_rom_data_2_0_dreg_ret_18_RNIDV224H
                                                           NET DELAY            0.915        70.089  1       
-SLICE_723/C0->SLICE_723/F0                SLICE           C0_TO_F0_DELAY       0.477        70.566  1       
-je/mult1_un59_sum[8]$n26                                  NET DELAY            0.500        71.066  1       
+SLICE_727/C0->SLICE_727/F0                SLICE           C0_TO_F0_DELAY       0.477        70.566  1       
+je/mult1_un59_sum[8]$n19                                  NET DELAY            0.500        71.066  1       
 
 
 Destination Clock Path
@@ -2015,7 +2025,7 @@ Name                                      Cell/Site Name  Delay Name            
 ----------------------------------------  --------------  --------------------  -----  ------------  ------  
 pclk                                      top             CLOCK LATENCY         0.000         0.000  1       
 pclk                                                      NET DELAY             0.000         0.000  1       
-pclk_ibuf.bb_inst/B->pclk_ibuf.bb_inst/O  PIO             IOPAD_TO_PADDI_DELAY  0.510         0.510  1207    
+pclk_ibuf.bb_inst/B->pclk_ibuf.bb_inst/O  PIO             IOPAD_TO_PADDI_DELAY  0.510         0.510  1233    
 pclk_c                                                    NET DELAY             1.530         2.040  1       
 
 
@@ -2030,16 +2040,16 @@ Destination Clock: pclk
 Logic Level      : 66
 Delay Ratio      : 65.8% (route), 34.2% (logic)
 Clock Skew       : 0.000 ns
-Setup Constraint : 41.666 ns 
-Path Slack       : -27.558 ns  (Failed)
+Setup Constraint : 166.666 ns 
+Path Slack       : 97.441 ns  (Passed)
 
-  Destination Clock Arrival Time (pclk:R#2)    41.666
+  Destination Clock Arrival Time (pclk:R#2)   166.666
 + Destination Clock Source Latency              0.000
 - Destination Clock Uncertainty                 0.000
 + Destination Clock Path Delay                  2.040
 - Setup Time                                    0.199
 -------------------------------------------   -------
-End-of-path required time( ns )                43.507
+End-of-path required time( ns )               168.507
 
   Source Clock Arrival Time (pclk:R#1)    0.000
 + Source Clock Source Latency             0.000
@@ -2054,7 +2064,7 @@ Name                                      Cell/Site Name  Delay Name            
 ----------------------------------------  --------------  --------------------  -----  ------------  ------  
 pclk                                      top             CLOCK LATENCY         0.000         0.000  1       
 pclk                                                      NET DELAY             0.000         0.000  1       
-pclk_ibuf.bb_inst/B->pclk_ibuf.bb_inst/O  PIO             IOPAD_TO_PADDI_DELAY  0.510         0.510  1207    
+pclk_ibuf.bb_inst/B->pclk_ibuf.bb_inst/O  PIO             IOPAD_TO_PADDI_DELAY  0.510         0.510  1233    
 pclk_c                                                    NET DELAY             1.530         2.040  1       
 
 
@@ -2178,7 +2188,7 @@ je/mult1_un17_sum[8]                                      NET DELAY            1
 je/un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_2_RNIKH8RJG3/B->je/un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_2_RNIKH8RJG3/Z
                                           SLICE           B0_TO_F0_DELAY       0.477        37.197  1       
 je/mult1_un31_sum_1_axb_1                                 NET DELAY            0.500        37.697  1       
-SLICE_2629/D0->SLICE_2629/F0              SLICE           D0_TO_F0_DELAY       0.477        38.174  1       
+SLICE_2605/D0->SLICE_2605/F0              SLICE           D0_TO_F0_DELAY       0.477        38.174  1       
 je/fdtbl_rom_data_2_0_dreg_ret_2_RNIA4O04B
                                                           NET DELAY            0.500        38.674  1       
 je/un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_2_RNI9OE8PT1.fa22_inst/B0->je/un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_2_RNI9OE8PT1.fa22_inst/CO0
@@ -2287,8 +2297,8 @@ je/un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_18_RNIDV224H_0/D->je/un5_QNT_DU.fdtbl_
                                           SLICE           D0_TO_F0_DELAY       0.477        69.174  8       
 je/fdtbl_rom_data_2_0_dreg_ret_18_RNIDV224H_0
                                                           NET DELAY            0.915        70.089  1       
-SLICE_726/B0->SLICE_726/F0                SLICE           B0_TO_F0_DELAY       0.477        70.566  1       
-je/mult1_un59_sum[8]$n25                                  NET DELAY            0.500        71.066  1       
+SLICE_730/B0->SLICE_730/F0                SLICE           B0_TO_F0_DELAY       0.477        70.566  1       
+je/mult1_un59_sum[8]$n18                                  NET DELAY            0.500        71.066  1       
 
 
 Destination Clock Path
@@ -2296,7 +2306,7 @@ Name                                      Cell/Site Name  Delay Name            
 ----------------------------------------  --------------  --------------------  -----  ------------  ------  
 pclk                                      top             CLOCK LATENCY         0.000         0.000  1       
 pclk                                                      NET DELAY             0.000         0.000  1       
-pclk_ibuf.bb_inst/B->pclk_ibuf.bb_inst/O  PIO             IOPAD_TO_PADDI_DELAY  0.510         0.510  1207    
+pclk_ibuf.bb_inst/B->pclk_ibuf.bb_inst/O  PIO             IOPAD_TO_PADDI_DELAY  0.510         0.510  1233    
 pclk_c                                                    NET DELAY             1.530         2.040  1       
 
 
@@ -2311,16 +2321,16 @@ Destination Clock: pclk
 Logic Level      : 66
 Delay Ratio      : 65.8% (route), 34.2% (logic)
 Clock Skew       : 0.000 ns
-Setup Constraint : 41.666 ns 
-Path Slack       : -27.558 ns  (Failed)
+Setup Constraint : 166.666 ns 
+Path Slack       : 97.441 ns  (Passed)
 
-  Destination Clock Arrival Time (pclk:R#2)    41.666
+  Destination Clock Arrival Time (pclk:R#2)   166.666
 + Destination Clock Source Latency              0.000
 - Destination Clock Uncertainty                 0.000
 + Destination Clock Path Delay                  2.040
 - Setup Time                                    0.199
 -------------------------------------------   -------
-End-of-path required time( ns )                43.507
+End-of-path required time( ns )               168.507
 
   Source Clock Arrival Time (pclk:R#1)    0.000
 + Source Clock Source Latency             0.000
@@ -2335,7 +2345,7 @@ Name                                      Cell/Site Name  Delay Name            
 ----------------------------------------  --------------  --------------------  -----  ------------  ------  
 pclk                                      top             CLOCK LATENCY         0.000         0.000  1       
 pclk                                                      NET DELAY             0.000         0.000  1       
-pclk_ibuf.bb_inst/B->pclk_ibuf.bb_inst/O  PIO             IOPAD_TO_PADDI_DELAY  0.510         0.510  1207    
+pclk_ibuf.bb_inst/B->pclk_ibuf.bb_inst/O  PIO             IOPAD_TO_PADDI_DELAY  0.510         0.510  1233    
 pclk_c                                                    NET DELAY             1.530         2.040  1       
 
 
@@ -2459,7 +2469,7 @@ je/mult1_un17_sum[8]                                      NET DELAY            1
 je/un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_2_RNIKH8RJG3/B->je/un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_2_RNIKH8RJG3/Z
                                           SLICE           B0_TO_F0_DELAY       0.477        37.197  1       
 je/mult1_un31_sum_1_axb_1                                 NET DELAY            0.500        37.697  1       
-SLICE_2629/D0->SLICE_2629/F0              SLICE           D0_TO_F0_DELAY       0.477        38.174  1       
+SLICE_2605/D0->SLICE_2605/F0              SLICE           D0_TO_F0_DELAY       0.477        38.174  1       
 je/fdtbl_rom_data_2_0_dreg_ret_2_RNIA4O04B
                                                           NET DELAY            0.500        38.674  1       
 je/un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_2_RNI9OE8PT1.fa22_inst/B0->je/un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_2_RNI9OE8PT1.fa22_inst/CO0
@@ -2568,8 +2578,8 @@ je/un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_18_RNIDV224H/D->je/un5_QNT_DU.fdtbl_ro
                                           SLICE           D0_TO_F0_DELAY       0.477        69.174  8       
 je/fdtbl_rom_data_2_0_dreg_ret_18_RNIDV224H
                                                           NET DELAY            0.915        70.089  1       
-SLICE_838/C0->SLICE_838/F0                SLICE           C0_TO_F0_DELAY       0.477        70.566  1       
-je/mult1_un59_sum[8]$n24                                  NET DELAY            0.500        71.066  1       
+SLICE_842/C0->SLICE_842/F0                SLICE           C0_TO_F0_DELAY       0.477        70.566  1       
+je/mult1_un59_sum[8]$n17                                  NET DELAY            0.500        71.066  1       
 
 
 Destination Clock Path
@@ -2577,7 +2587,7 @@ Name                                      Cell/Site Name  Delay Name            
 ----------------------------------------  --------------  --------------------  -----  ------------  ------  
 pclk                                      top             CLOCK LATENCY         0.000         0.000  1       
 pclk                                                      NET DELAY             0.000         0.000  1       
-pclk_ibuf.bb_inst/B->pclk_ibuf.bb_inst/O  PIO             IOPAD_TO_PADDI_DELAY  0.510         0.510  1207    
+pclk_ibuf.bb_inst/B->pclk_ibuf.bb_inst/O  PIO             IOPAD_TO_PADDI_DELAY  0.510         0.510  1233    
 pclk_c                                                    NET DELAY             1.530         2.040  1       
 
 
@@ -2592,16 +2602,16 @@ Destination Clock: pclk
 Logic Level      : 66
 Delay Ratio      : 65.7% (route), 34.3% (logic)
 Clock Skew       : 0.000 ns
-Setup Constraint : 41.666 ns 
-Path Slack       : -27.363 ns  (Failed)
+Setup Constraint : 166.666 ns 
+Path Slack       : 97.636 ns  (Passed)
 
-  Destination Clock Arrival Time (pclk:R#2)    41.666
+  Destination Clock Arrival Time (pclk:R#2)   166.666
 + Destination Clock Source Latency              0.000
 - Destination Clock Uncertainty                 0.000
 + Destination Clock Path Delay                  2.040
 - Setup Time                                    0.199
 -------------------------------------------   -------
-End-of-path required time( ns )                43.507
+End-of-path required time( ns )               168.507
 
   Source Clock Arrival Time (pclk:R#1)    0.000
 + Source Clock Source Latency             0.000
@@ -2616,7 +2626,7 @@ Name                                      Cell/Site Name  Delay Name            
 ----------------------------------------  --------------  --------------------  -----  ------------  ------  
 pclk                                      top             CLOCK LATENCY         0.000         0.000  1       
 pclk                                                      NET DELAY             0.000         0.000  1       
-pclk_ibuf.bb_inst/B->pclk_ibuf.bb_inst/O  PIO             IOPAD_TO_PADDI_DELAY  0.510         0.510  1207    
+pclk_ibuf.bb_inst/B->pclk_ibuf.bb_inst/O  PIO             IOPAD_TO_PADDI_DELAY  0.510         0.510  1233    
 pclk_c                                                    NET DELAY             1.530         2.040  1       
 
 
@@ -2740,7 +2750,7 @@ je/mult1_un17_sum[8]                                      NET DELAY            1
 je/un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_2_RNIKH8RJG3/B->je/un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_2_RNIKH8RJG3/Z
                                           SLICE           B0_TO_F0_DELAY       0.477        37.197  1       
 je/mult1_un31_sum_1_axb_1                                 NET DELAY            0.500        37.697  1       
-SLICE_2629/D0->SLICE_2629/F0              SLICE           D0_TO_F0_DELAY       0.477        38.174  1       
+SLICE_2605/D0->SLICE_2605/F0              SLICE           D0_TO_F0_DELAY       0.477        38.174  1       
 je/fdtbl_rom_data_2_0_dreg_ret_2_RNIA4O04B
                                                           NET DELAY            0.500        38.674  1       
 je/un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_2_RNI9OE8PT1.fa22_inst/B0->je/un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_2_RNI9OE8PT1.fa22_inst/CO0
@@ -2816,7 +2826,7 @@ je/mult1_un45_sum[8]                                      NET DELAY            1
 je/un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_2_RNIITLGDE/B->je/un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_2_RNIITLGDE/Z
                                           SLICE           B0_TO_F0_DELAY       0.477        60.509  1       
 je/mult1_un59_sum_1_axb_1                                 NET DELAY            0.500        61.009  1       
-SLICE_2589/D0->SLICE_2589/F0              SLICE           D0_TO_F0_DELAY       0.477        61.486  1       
+SLICE_2565/D0->SLICE_2565/F0              SLICE           D0_TO_F0_DELAY       0.477        61.486  1       
 je/fdtbl_rom_data_2_0_dreg_ret_2_RNI5CS38T
                                                           NET DELAY            0.500        61.986  1       
 je/un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_2_RNIB097SN1.fa22_inst/B0->je/un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_2_RNIB097SN1.fa22_inst/CO0
@@ -2847,8 +2857,8 @@ je/un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_7_RNI86CA1B1.CO0
 je/un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_7_RNI86CA1B1.fa22_inst/D1->je/un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_7_RNI86CA1B1.fa22_inst/S1
                                           SLICE           D1_TO_F1_DELAY       0.477        68.955  9       
 je/mult1_un59_sum1[8]                                     NET DELAY            0.939        69.894  1       
-SLICE_701/A0->SLICE_701/F0                SLICE           A0_TO_F0_DELAY       0.477        70.371  1       
-je/mult1_un59_sum1[8]/sig_031/FeedThruLUT
+SLICE_705/A0->SLICE_705/F0                SLICE           A0_TO_F0_DELAY       0.477        70.371  1       
+je/mult1_un59_sum1[8]/sig_065/FeedThruLUT
                                                           NET DELAY            0.500        70.871  1       
 
 
@@ -2857,7 +2867,7 @@ Name                                      Cell/Site Name  Delay Name            
 ----------------------------------------  --------------  --------------------  -----  ------------  ------  
 pclk                                      top             CLOCK LATENCY         0.000         0.000  1       
 pclk                                                      NET DELAY             0.000         0.000  1       
-pclk_ibuf.bb_inst/B->pclk_ibuf.bb_inst/O  PIO             IOPAD_TO_PADDI_DELAY  0.510         0.510  1207    
+pclk_ibuf.bb_inst/B->pclk_ibuf.bb_inst/O  PIO             IOPAD_TO_PADDI_DELAY  0.510         0.510  1233    
 pclk_c                                                    NET DELAY             1.530         2.040  1       
 
 
@@ -2872,16 +2882,16 @@ Destination Clock: pclk
 Logic Level      : 65
 Delay Ratio      : 65.8% (route), 34.2% (logic)
 Clock Skew       : 0.000 ns
-Setup Constraint : 41.666 ns 
-Path Slack       : -26.166 ns  (Failed)
+Setup Constraint : 166.666 ns 
+Path Slack       : 98.833 ns  (Passed)
 
-  Destination Clock Arrival Time (pclk:R#2)    41.666
+  Destination Clock Arrival Time (pclk:R#2)   166.666
 + Destination Clock Source Latency              0.000
 - Destination Clock Uncertainty                 0.000
 + Destination Clock Path Delay                  2.040
 - Setup Time                                    0.199
 -------------------------------------------   -------
-End-of-path required time( ns )                43.507
+End-of-path required time( ns )               168.507
 
   Source Clock Arrival Time (pclk:R#1)    0.000
 + Source Clock Source Latency             0.000
@@ -2896,7 +2906,7 @@ Name                                      Cell/Site Name  Delay Name            
 ----------------------------------------  --------------  --------------------  -----  ------------  ------  
 pclk                                      top             CLOCK LATENCY         0.000         0.000  1       
 pclk                                                      NET DELAY             0.000         0.000  1       
-pclk_ibuf.bb_inst/B->pclk_ibuf.bb_inst/O  PIO             IOPAD_TO_PADDI_DELAY  0.510         0.510  1207    
+pclk_ibuf.bb_inst/B->pclk_ibuf.bb_inst/O  PIO             IOPAD_TO_PADDI_DELAY  0.510         0.510  1233    
 pclk_c                                                    NET DELAY             1.530         2.040  1       
 
 
@@ -3020,7 +3030,7 @@ je/mult1_un17_sum[8]                                      NET DELAY            1
 je/un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_2_RNIKH8RJG3/B->je/un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_2_RNIKH8RJG3/Z
                                           SLICE           B0_TO_F0_DELAY       0.477        37.197  1       
 je/mult1_un31_sum_1_axb_1                                 NET DELAY            0.500        37.697  1       
-SLICE_2629/D0->SLICE_2629/F0              SLICE           D0_TO_F0_DELAY       0.477        38.174  1       
+SLICE_2605/D0->SLICE_2605/F0              SLICE           D0_TO_F0_DELAY       0.477        38.174  1       
 je/fdtbl_rom_data_2_0_dreg_ret_2_RNIA4O04B
                                                           NET DELAY            0.500        38.674  1       
 je/un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_2_RNI9OE8PT1.fa22_inst/B0->je/un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_2_RNI9OE8PT1.fa22_inst/CO0
@@ -3125,8 +3135,8 @@ je/un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_18_RNIU240TA3.CO0
 je/un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_18_RNIU240TA3.fa22_inst/D1->je/un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_18_RNIU240TA3.fa22_inst/S1
                                           SLICE           D1_TO_F1_DELAY       0.477        67.978  3       
 je/mult1_un59_sum0[8]                                     NET DELAY            0.719        68.697  1       
-SLICE_702/A0->SLICE_702/F0                SLICE           A0_TO_F0_DELAY       0.477        69.174  1       
-je/mult1_un59_sum0[8]/sig_032/FeedThruLUT
+SLICE_706/A0->SLICE_706/F0                SLICE           A0_TO_F0_DELAY       0.477        69.174  1       
+je/mult1_un59_sum0[8]/sig_066/FeedThruLUT
                                                           NET DELAY            0.500        69.674  1       
 
 
@@ -3135,7 +3145,7 @@ Name                                      Cell/Site Name  Delay Name            
 ----------------------------------------  --------------  --------------------  -----  ------------  ------  
 pclk                                      top             CLOCK LATENCY         0.000         0.000  1       
 pclk                                                      NET DELAY             0.000         0.000  1       
-pclk_ibuf.bb_inst/B->pclk_ibuf.bb_inst/O  PIO             IOPAD_TO_PADDI_DELAY  0.510         0.510  1207    
+pclk_ibuf.bb_inst/B->pclk_ibuf.bb_inst/O  PIO             IOPAD_TO_PADDI_DELAY  0.510         0.510  1233    
 pclk_c                                                    NET DELAY             1.530         2.040  1       
 
 
@@ -3146,7 +3156,7 @@ pclk_c                                                    NET DELAY             
 
 4.1.2  Setup path details for constraint: create_clock -name {u_HSOSC.osc_inst/CLKHF} -period 41.6667 [get_pins {u_HSOSC.osc_inst/CLKHF }] 
 ----------------------------------------------------------------------
-300 endpoints scored, 0 timing errors detected.
+298 endpoints scored, 0 timing errors detected.
 
 Minimum Pulse Width Report
 --------------------------
@@ -3442,8 +3452,8 @@ u_OV7670_Controller/LUT/address_cry[2]                    NET DELAY            0
 u_OV7670_Controller/LUT/address_cry_0[3].fa22_inst/D0->u_OV7670_Controller/LUT/address_cry_0[3].fa22_inst/S0
                                           SLICE           D0_TO_F0_DELAY       0.477         7.459  2       
 u_OV7670_Controller/LUT/address_s[3]                      NET DELAY            0.638         8.097  1       
-SLICE_1656/A0->SLICE_1656/F0              SLICE           A0_TO_F0_DELAY       0.477         8.574  1       
-u_OV7670_Controller/LUT/address_s[3]/sig_215/FeedThruLUT
+SLICE_1618/A0->SLICE_1618/F0              SLICE           A0_TO_F0_DELAY       0.477         8.574  1       
+u_OV7670_Controller/LUT/address_s[3]/sig_260/FeedThruLUT
                                                           NET DELAY            0.500         9.074  1       
 
 
@@ -3596,14 +3606,14 @@ clk_24m                                                   NET DELAY      1.502  
  ++++Path 7  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 Path Begin       : u_OV7670_Controller/I2C/divider_Z[0].ff_inst/Q
-Path End         : u_OV7670_Controller/I2C/busy_sr_ess_Z[31].ff_inst/SP
+Path End         : u_OV7670_Controller/I2C/busy_sr_ess_Z[30].ff_inst/SP
 Source Clock     : u_HSOSC.osc_inst/CLKHF
 Destination Clock: u_HSOSC.osc_inst/CLKHF
 Logic Level      : 4
-Delay Ratio      : 60.4% (route), 39.6% (logic)
+Delay Ratio      : 60.5% (route), 39.5% (logic)
 Clock Skew       : 0.000 ns
 Setup Constraint : 41.666 ns 
-Path Slack       : 34.336 ns  (Passed)
+Path Slack       : 34.331 ns  (Passed)
 
   Destination Clock Arrival Time (u_HSOSC.osc_inst/CLKHF:R#2)    41.666
 + Destination Clock Source Latency                                0.000
@@ -3616,9 +3626,9 @@ End-of-path required time( ns )                                  42.969
   Source Clock Arrival Time (u_HSOSC.osc_inst/CLKHF:R#1)   0.000
 + Source Clock Source Latency                              0.000
 + Source Clock Path Delay                                  1.502
-+ Data Path Delay                                          7.131
++ Data Path Delay                                          7.136
 --------------------------------------------------------   -----
-End-of-path arrival time( ns )                             8.633
+End-of-path arrival time( ns )                             8.638
 
  
 Source Clock Path
@@ -3632,19 +3642,19 @@ Data path
 Name                                      Cell/Site Name  Delay Name       Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  ---------------  -----  ------------  ------  
 u_OV7670_Controller/I2C/divider_Z[0].ff_inst/CK->u_OV7670_Controller/I2C/divider_Z[0].ff_inst/Q
-                                          SLICE           CLK_TO_Q0_DELAY  1.391         2.893  34      
-u_OV7670_Controller/I2C/divider[0]                        NET DELAY        1.205         4.098  1       
-u_OV7670_Controller/I2C/divider_RNIMHP71[5]/A->u_OV7670_Controller/I2C/divider_RNIMHP71[5]/Z
-                                          SLICE           A0_TO_F0_DELAY   0.477         4.575  3       
+                                          SLICE           CLK_TO_Q0_DELAY  1.391         2.893  36      
+u_OV7670_Controller/I2C/divider[0]                        NET DELAY        1.216         4.109  1       
+u_OV7670_Controller/I2C/divider_RNILGP71[4]/A->u_OV7670_Controller/I2C/divider_RNILGP71[4]/Z
+                                          SLICE           A0_TO_F0_DELAY   0.477         4.586  3       
 u_OV7670_Controller/I2C/taken_temp_0_sqmuxa_1_6
-                                                          NET DELAY        0.719         5.294  1       
-u_OV7670_Controller/I2C/busy_sr_ess_RNIQ0N64[31]/C->u_OV7670_Controller/I2C/busy_sr_ess_RNIQ0N64[31]/Z
-                                          SLICE           C0_TO_F0_DELAY   0.477         5.771  33      
+                                                          NET DELAY        0.719         5.305  1       
+u_OV7670_Controller/I2C/divider_RNIGDS74[2]/C->u_OV7670_Controller/I2C/divider_RNIGDS74[2]/Z
+                                          SLICE           C0_TO_F0_DELAY   0.477         5.782  33      
 u_OV7670_Controller/I2C/taken_temp_0_sqmuxa_1
-                                                          NET DELAY        1.199         6.970  1       
-u_OV7670_Controller/I2C/busy_sr_ess_RNILH6Q7_0[31]/B->u_OV7670_Controller/I2C/busy_sr_ess_RNILH6Q7_0[31]/Z
-                                          SLICE           B0_TO_F0_DELAY   0.477         7.447  31      
-u_OV7670_Controller/I2C/un1_N_8_0                         NET DELAY        1.186         8.633  1       
+                                                          NET DELAY        1.199         6.981  1       
+u_OV7670_Controller/I2C/divider_RNI1BHS7[6]/B->u_OV7670_Controller/I2C/divider_RNI1BHS7[6]/Z
+                                          SLICE           B0_TO_F0_DELAY   0.477         7.458  30      
+u_OV7670_Controller/I2C/un1_N_8_0_0                       NET DELAY        1.180         8.638  1       
 
 
 Destination Clock Path
@@ -3659,14 +3669,14 @@ clk_24m                                                   NET DELAY      1.502  
  ++++Path 8  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 Path Begin       : u_OV7670_Controller/I2C/divider_Z[0].ff_inst/Q
-Path End         : u_OV7670_Controller/I2C/busy_sr_ess_Z[30].ff_inst/SP
+Path End         : u_OV7670_Controller/I2C/busy_sr_ess_Z[29].ff_inst/SP
 Source Clock     : u_HSOSC.osc_inst/CLKHF
 Destination Clock: u_HSOSC.osc_inst/CLKHF
 Logic Level      : 4
-Delay Ratio      : 60.4% (route), 39.6% (logic)
+Delay Ratio      : 60.5% (route), 39.5% (logic)
 Clock Skew       : 0.000 ns
 Setup Constraint : 41.666 ns 
-Path Slack       : 34.336 ns  (Passed)
+Path Slack       : 34.331 ns  (Passed)
 
   Destination Clock Arrival Time (u_HSOSC.osc_inst/CLKHF:R#2)    41.666
 + Destination Clock Source Latency                                0.000
@@ -3679,9 +3689,9 @@ End-of-path required time( ns )                                  42.969
   Source Clock Arrival Time (u_HSOSC.osc_inst/CLKHF:R#1)   0.000
 + Source Clock Source Latency                              0.000
 + Source Clock Path Delay                                  1.502
-+ Data Path Delay                                          7.131
++ Data Path Delay                                          7.136
 --------------------------------------------------------   -----
-End-of-path arrival time( ns )                             8.633
+End-of-path arrival time( ns )                             8.638
 
  
 Source Clock Path
@@ -3695,19 +3705,19 @@ Data path
 Name                                      Cell/Site Name  Delay Name       Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  ---------------  -----  ------------  ------  
 u_OV7670_Controller/I2C/divider_Z[0].ff_inst/CK->u_OV7670_Controller/I2C/divider_Z[0].ff_inst/Q
-                                          SLICE           CLK_TO_Q0_DELAY  1.391         2.893  34      
-u_OV7670_Controller/I2C/divider[0]                        NET DELAY        1.205         4.098  1       
-u_OV7670_Controller/I2C/divider_RNIMHP71[5]/A->u_OV7670_Controller/I2C/divider_RNIMHP71[5]/Z
-                                          SLICE           A0_TO_F0_DELAY   0.477         4.575  3       
+                                          SLICE           CLK_TO_Q0_DELAY  1.391         2.893  36      
+u_OV7670_Controller/I2C/divider[0]                        NET DELAY        1.216         4.109  1       
+u_OV7670_Controller/I2C/divider_RNILGP71[4]/A->u_OV7670_Controller/I2C/divider_RNILGP71[4]/Z
+                                          SLICE           A0_TO_F0_DELAY   0.477         4.586  3       
 u_OV7670_Controller/I2C/taken_temp_0_sqmuxa_1_6
-                                                          NET DELAY        0.719         5.294  1       
-u_OV7670_Controller/I2C/busy_sr_ess_RNIQ0N64[31]/C->u_OV7670_Controller/I2C/busy_sr_ess_RNIQ0N64[31]/Z
-                                          SLICE           C0_TO_F0_DELAY   0.477         5.771  33      
+                                                          NET DELAY        0.719         5.305  1       
+u_OV7670_Controller/I2C/divider_RNIGDS74[2]/C->u_OV7670_Controller/I2C/divider_RNIGDS74[2]/Z
+                                          SLICE           C0_TO_F0_DELAY   0.477         5.782  33      
 u_OV7670_Controller/I2C/taken_temp_0_sqmuxa_1
-                                                          NET DELAY        1.199         6.970  1       
-u_OV7670_Controller/I2C/busy_sr_ess_RNILH6Q7_0[31]/B->u_OV7670_Controller/I2C/busy_sr_ess_RNILH6Q7_0[31]/Z
-                                          SLICE           B0_TO_F0_DELAY   0.477         7.447  31      
-u_OV7670_Controller/I2C/un1_N_8_0                         NET DELAY        1.186         8.633  1       
+                                                          NET DELAY        1.199         6.981  1       
+u_OV7670_Controller/I2C/divider_RNI1BHS7[6]/B->u_OV7670_Controller/I2C/divider_RNI1BHS7[6]/Z
+                                          SLICE           B0_TO_F0_DELAY   0.477         7.458  30      
+u_OV7670_Controller/I2C/un1_N_8_0_0                       NET DELAY        1.180         8.638  1       
 
 
 Destination Clock Path
@@ -3722,14 +3732,14 @@ clk_24m                                                   NET DELAY      1.502  
  ++++Path 9  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 Path Begin       : u_OV7670_Controller/I2C/divider_Z[0].ff_inst/Q
-Path End         : u_OV7670_Controller/I2C/busy_sr_ess_Z[29].ff_inst/SP
+Path End         : u_OV7670_Controller/I2C/busy_sr_ess_Z[28].ff_inst/SP
 Source Clock     : u_HSOSC.osc_inst/CLKHF
 Destination Clock: u_HSOSC.osc_inst/CLKHF
 Logic Level      : 4
-Delay Ratio      : 60.4% (route), 39.6% (logic)
+Delay Ratio      : 60.5% (route), 39.5% (logic)
 Clock Skew       : 0.000 ns
 Setup Constraint : 41.666 ns 
-Path Slack       : 34.336 ns  (Passed)
+Path Slack       : 34.331 ns  (Passed)
 
   Destination Clock Arrival Time (u_HSOSC.osc_inst/CLKHF:R#2)    41.666
 + Destination Clock Source Latency                                0.000
@@ -3742,9 +3752,9 @@ End-of-path required time( ns )                                  42.969
   Source Clock Arrival Time (u_HSOSC.osc_inst/CLKHF:R#1)   0.000
 + Source Clock Source Latency                              0.000
 + Source Clock Path Delay                                  1.502
-+ Data Path Delay                                          7.131
++ Data Path Delay                                          7.136
 --------------------------------------------------------   -----
-End-of-path arrival time( ns )                             8.633
+End-of-path arrival time( ns )                             8.638
 
  
 Source Clock Path
@@ -3758,19 +3768,19 @@ Data path
 Name                                      Cell/Site Name  Delay Name       Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  ---------------  -----  ------------  ------  
 u_OV7670_Controller/I2C/divider_Z[0].ff_inst/CK->u_OV7670_Controller/I2C/divider_Z[0].ff_inst/Q
-                                          SLICE           CLK_TO_Q0_DELAY  1.391         2.893  34      
-u_OV7670_Controller/I2C/divider[0]                        NET DELAY        1.205         4.098  1       
-u_OV7670_Controller/I2C/divider_RNIMHP71[5]/A->u_OV7670_Controller/I2C/divider_RNIMHP71[5]/Z
-                                          SLICE           A0_TO_F0_DELAY   0.477         4.575  3       
+                                          SLICE           CLK_TO_Q0_DELAY  1.391         2.893  36      
+u_OV7670_Controller/I2C/divider[0]                        NET DELAY        1.216         4.109  1       
+u_OV7670_Controller/I2C/divider_RNILGP71[4]/A->u_OV7670_Controller/I2C/divider_RNILGP71[4]/Z
+                                          SLICE           A0_TO_F0_DELAY   0.477         4.586  3       
 u_OV7670_Controller/I2C/taken_temp_0_sqmuxa_1_6
-                                                          NET DELAY        0.719         5.294  1       
-u_OV7670_Controller/I2C/busy_sr_ess_RNIQ0N64[31]/C->u_OV7670_Controller/I2C/busy_sr_ess_RNIQ0N64[31]/Z
-                                          SLICE           C0_TO_F0_DELAY   0.477         5.771  33      
+                                                          NET DELAY        0.719         5.305  1       
+u_OV7670_Controller/I2C/divider_RNIGDS74[2]/C->u_OV7670_Controller/I2C/divider_RNIGDS74[2]/Z
+                                          SLICE           C0_TO_F0_DELAY   0.477         5.782  33      
 u_OV7670_Controller/I2C/taken_temp_0_sqmuxa_1
-                                                          NET DELAY        1.199         6.970  1       
-u_OV7670_Controller/I2C/busy_sr_ess_RNILH6Q7_0[31]/B->u_OV7670_Controller/I2C/busy_sr_ess_RNILH6Q7_0[31]/Z
-                                          SLICE           B0_TO_F0_DELAY   0.477         7.447  31      
-u_OV7670_Controller/I2C/un1_N_8_0                         NET DELAY        1.186         8.633  1       
+                                                          NET DELAY        1.199         6.981  1       
+u_OV7670_Controller/I2C/divider_RNI1BHS7[6]/B->u_OV7670_Controller/I2C/divider_RNI1BHS7[6]/Z
+                                          SLICE           B0_TO_F0_DELAY   0.477         7.458  30      
+u_OV7670_Controller/I2C/un1_N_8_0_0                       NET DELAY        1.180         8.638  1       
 
 
 Destination Clock Path
@@ -3785,14 +3795,14 @@ clk_24m                                                   NET DELAY      1.502  
  ++++Path 10  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 Path Begin       : u_OV7670_Controller/I2C/divider_Z[0].ff_inst/Q
-Path End         : u_OV7670_Controller/I2C/busy_sr_ess_Z[28].ff_inst/SP
+Path End         : u_OV7670_Controller/I2C/busy_sr_ess_Z[27].ff_inst/SP
 Source Clock     : u_HSOSC.osc_inst/CLKHF
 Destination Clock: u_HSOSC.osc_inst/CLKHF
 Logic Level      : 4
-Delay Ratio      : 60.4% (route), 39.6% (logic)
+Delay Ratio      : 60.5% (route), 39.5% (logic)
 Clock Skew       : 0.000 ns
 Setup Constraint : 41.666 ns 
-Path Slack       : 34.336 ns  (Passed)
+Path Slack       : 34.331 ns  (Passed)
 
   Destination Clock Arrival Time (u_HSOSC.osc_inst/CLKHF:R#2)    41.666
 + Destination Clock Source Latency                                0.000
@@ -3805,9 +3815,9 @@ End-of-path required time( ns )                                  42.969
   Source Clock Arrival Time (u_HSOSC.osc_inst/CLKHF:R#1)   0.000
 + Source Clock Source Latency                              0.000
 + Source Clock Path Delay                                  1.502
-+ Data Path Delay                                          7.131
++ Data Path Delay                                          7.136
 --------------------------------------------------------   -----
-End-of-path arrival time( ns )                             8.633
+End-of-path arrival time( ns )                             8.638
 
  
 Source Clock Path
@@ -3821,19 +3831,19 @@ Data path
 Name                                      Cell/Site Name  Delay Name       Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  ---------------  -----  ------------  ------  
 u_OV7670_Controller/I2C/divider_Z[0].ff_inst/CK->u_OV7670_Controller/I2C/divider_Z[0].ff_inst/Q
-                                          SLICE           CLK_TO_Q0_DELAY  1.391         2.893  34      
-u_OV7670_Controller/I2C/divider[0]                        NET DELAY        1.205         4.098  1       
-u_OV7670_Controller/I2C/divider_RNIMHP71[5]/A->u_OV7670_Controller/I2C/divider_RNIMHP71[5]/Z
-                                          SLICE           A0_TO_F0_DELAY   0.477         4.575  3       
+                                          SLICE           CLK_TO_Q0_DELAY  1.391         2.893  36      
+u_OV7670_Controller/I2C/divider[0]                        NET DELAY        1.216         4.109  1       
+u_OV7670_Controller/I2C/divider_RNILGP71[4]/A->u_OV7670_Controller/I2C/divider_RNILGP71[4]/Z
+                                          SLICE           A0_TO_F0_DELAY   0.477         4.586  3       
 u_OV7670_Controller/I2C/taken_temp_0_sqmuxa_1_6
-                                                          NET DELAY        0.719         5.294  1       
-u_OV7670_Controller/I2C/busy_sr_ess_RNIQ0N64[31]/C->u_OV7670_Controller/I2C/busy_sr_ess_RNIQ0N64[31]/Z
-                                          SLICE           C0_TO_F0_DELAY   0.477         5.771  33      
+                                                          NET DELAY        0.719         5.305  1       
+u_OV7670_Controller/I2C/divider_RNIGDS74[2]/C->u_OV7670_Controller/I2C/divider_RNIGDS74[2]/Z
+                                          SLICE           C0_TO_F0_DELAY   0.477         5.782  33      
 u_OV7670_Controller/I2C/taken_temp_0_sqmuxa_1
-                                                          NET DELAY        1.199         6.970  1       
-u_OV7670_Controller/I2C/busy_sr_ess_RNILH6Q7_0[31]/B->u_OV7670_Controller/I2C/busy_sr_ess_RNILH6Q7_0[31]/Z
-                                          SLICE           B0_TO_F0_DELAY   0.477         7.447  31      
-u_OV7670_Controller/I2C/un1_N_8_0                         NET DELAY        1.186         8.633  1       
+                                                          NET DELAY        1.199         6.981  1       
+u_OV7670_Controller/I2C/divider_RNI1BHS7[6]/B->u_OV7670_Controller/I2C/divider_RNI1BHS7[6]/Z
+                                          SLICE           B0_TO_F0_DELAY   0.477         7.458  30      
+u_OV7670_Controller/I2C/un1_N_8_0_0                       NET DELAY        1.180         8.638  1       
 
 
 Destination Clock Path
@@ -3850,9 +3860,9 @@ clk_24m                                                   NET DELAY      1.502  
 
 4.2  Hold Detailed Report
 ==========================
-4.2.1  Hold path details for constraint: create_clock -name {pclk} -period 41.6666666666667 [get_ports pclk]
+4.2.1  Hold path details for constraint: create_clock -name {pclk} -period 166.666666666667 [get_ports pclk]
 ----------------------------------------------------------------------
-2402 endpoints scored, 0 timing errors detected.
+2553 endpoints scored, 0 timing errors detected.
 
  +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
                     Detailed Report for timing paths 
@@ -3891,7 +3901,7 @@ Name                                      Cell/Site Name  Delay Name            
 ----------------------------------------  --------------  --------------------  -----  ------------  ------  
 pclk                                      top             CLOCK LATENCY         0.000         0.000  1       
 pclk                                                      NET DELAY             0.000         0.000  1       
-pclk_ibuf.bb_inst/B->pclk_ibuf.bb_inst/O  PIO             IOPAD_TO_PADDI_DELAY  0.510         0.510  1207    
+pclk_ibuf.bb_inst/B->pclk_ibuf.bb_inst/O  PIO             IOPAD_TO_PADDI_DELAY  0.510         0.510  1233    
 pclk_c                                                    NET DELAY             1.530         2.040  1       
 
 
@@ -3908,7 +3918,7 @@ Name                                      Cell/Site Name  Delay Name            
 ----------------------------------------  --------------  --------------------  -----  ------------  ------  
 pclk                                      top             CLOCK LATENCY         0.000         0.000  1       
 pclk                                                      NET DELAY             0.000         0.000  1       
-pclk_ibuf.bb_inst/B->pclk_ibuf.bb_inst/O  PIO             IOPAD_TO_PADDI_DELAY  0.510         0.510  1207    
+pclk_ibuf.bb_inst/B->pclk_ibuf.bb_inst/O  PIO             IOPAD_TO_PADDI_DELAY  0.510         0.510  1233    
 pclk_c                                                    NET DELAY             1.530         2.040  1       
 
 
@@ -3947,7 +3957,7 @@ Name                                      Cell/Site Name  Delay Name            
 ----------------------------------------  --------------  --------------------  -----  ------------  ------  
 pclk                                      top             CLOCK LATENCY         0.000         0.000  1       
 pclk                                                      NET DELAY             0.000         0.000  1       
-pclk_ibuf.bb_inst/B->pclk_ibuf.bb_inst/O  PIO             IOPAD_TO_PADDI_DELAY  0.510         0.510  1207    
+pclk_ibuf.bb_inst/B->pclk_ibuf.bb_inst/O  PIO             IOPAD_TO_PADDI_DELAY  0.510         0.510  1233    
 pclk_c                                                    NET DELAY             1.530         2.040  1       
 
 
@@ -3964,7 +3974,7 @@ Name                                      Cell/Site Name  Delay Name            
 ----------------------------------------  --------------  --------------------  -----  ------------  ------  
 pclk                                      top             CLOCK LATENCY         0.000         0.000  1       
 pclk                                                      NET DELAY             0.000         0.000  1       
-pclk_ibuf.bb_inst/B->pclk_ibuf.bb_inst/O  PIO             IOPAD_TO_PADDI_DELAY  0.510         0.510  1207    
+pclk_ibuf.bb_inst/B->pclk_ibuf.bb_inst/O  PIO             IOPAD_TO_PADDI_DELAY  0.510         0.510  1233    
 pclk_c                                                    NET DELAY             1.530         2.040  1       
 
 
@@ -4003,7 +4013,7 @@ Name                                      Cell/Site Name  Delay Name            
 ----------------------------------------  --------------  --------------------  -----  ------------  ------  
 pclk                                      top             CLOCK LATENCY         0.000         0.000  1       
 pclk                                                      NET DELAY             0.000         0.000  1       
-pclk_ibuf.bb_inst/B->pclk_ibuf.bb_inst/O  PIO             IOPAD_TO_PADDI_DELAY  0.510         0.510  1207    
+pclk_ibuf.bb_inst/B->pclk_ibuf.bb_inst/O  PIO             IOPAD_TO_PADDI_DELAY  0.510         0.510  1233    
 pclk_c                                                    NET DELAY             1.530         2.040  1       
 
 
@@ -4020,7 +4030,7 @@ Name                                      Cell/Site Name  Delay Name            
 ----------------------------------------  --------------  --------------------  -----  ------------  ------  
 pclk                                      top             CLOCK LATENCY         0.000         0.000  1       
 pclk                                                      NET DELAY             0.000         0.000  1       
-pclk_ibuf.bb_inst/B->pclk_ibuf.bb_inst/O  PIO             IOPAD_TO_PADDI_DELAY  0.510         0.510  1207    
+pclk_ibuf.bb_inst/B->pclk_ibuf.bb_inst/O  PIO             IOPAD_TO_PADDI_DELAY  0.510         0.510  1233    
 pclk_c                                                    NET DELAY             1.530         2.040  1       
 
 
@@ -4059,7 +4069,7 @@ Name                                      Cell/Site Name  Delay Name            
 ----------------------------------------  --------------  --------------------  -----  ------------  ------  
 pclk                                      top             CLOCK LATENCY         0.000         0.000  1       
 pclk                                                      NET DELAY             0.000         0.000  1       
-pclk_ibuf.bb_inst/B->pclk_ibuf.bb_inst/O  PIO             IOPAD_TO_PADDI_DELAY  0.510         0.510  1207    
+pclk_ibuf.bb_inst/B->pclk_ibuf.bb_inst/O  PIO             IOPAD_TO_PADDI_DELAY  0.510         0.510  1233    
 pclk_c                                                    NET DELAY             1.530         2.040  1       
 
 
@@ -4076,7 +4086,7 @@ Name                                      Cell/Site Name  Delay Name            
 ----------------------------------------  --------------  --------------------  -----  ------------  ------  
 pclk                                      top             CLOCK LATENCY         0.000         0.000  1       
 pclk                                                      NET DELAY             0.000         0.000  1       
-pclk_ibuf.bb_inst/B->pclk_ibuf.bb_inst/O  PIO             IOPAD_TO_PADDI_DELAY  0.510         0.510  1207    
+pclk_ibuf.bb_inst/B->pclk_ibuf.bb_inst/O  PIO             IOPAD_TO_PADDI_DELAY  0.510         0.510  1233    
 pclk_c                                                    NET DELAY             1.530         2.040  1       
 
 
@@ -4115,7 +4125,7 @@ Name                                      Cell/Site Name  Delay Name            
 ----------------------------------------  --------------  --------------------  -----  ------------  ------  
 pclk                                      top             CLOCK LATENCY         0.000         0.000  1       
 pclk                                                      NET DELAY             0.000         0.000  1       
-pclk_ibuf.bb_inst/B->pclk_ibuf.bb_inst/O  PIO             IOPAD_TO_PADDI_DELAY  0.510         0.510  1207    
+pclk_ibuf.bb_inst/B->pclk_ibuf.bb_inst/O  PIO             IOPAD_TO_PADDI_DELAY  0.510         0.510  1233    
 pclk_c                                                    NET DELAY             1.530         2.040  1       
 
 
@@ -4132,7 +4142,7 @@ Name                                      Cell/Site Name  Delay Name            
 ----------------------------------------  --------------  --------------------  -----  ------------  ------  
 pclk                                      top             CLOCK LATENCY         0.000         0.000  1       
 pclk                                                      NET DELAY             0.000         0.000  1       
-pclk_ibuf.bb_inst/B->pclk_ibuf.bb_inst/O  PIO             IOPAD_TO_PADDI_DELAY  0.510         0.510  1207    
+pclk_ibuf.bb_inst/B->pclk_ibuf.bb_inst/O  PIO             IOPAD_TO_PADDI_DELAY  0.510         0.510  1233    
 pclk_c                                                    NET DELAY             1.530         2.040  1       
 
 
@@ -4171,7 +4181,7 @@ Name                                      Cell/Site Name  Delay Name            
 ----------------------------------------  --------------  --------------------  -----  ------------  ------  
 pclk                                      top             CLOCK LATENCY         0.000         0.000  1       
 pclk                                                      NET DELAY             0.000         0.000  1       
-pclk_ibuf.bb_inst/B->pclk_ibuf.bb_inst/O  PIO             IOPAD_TO_PADDI_DELAY  0.510         0.510  1207    
+pclk_ibuf.bb_inst/B->pclk_ibuf.bb_inst/O  PIO             IOPAD_TO_PADDI_DELAY  0.510         0.510  1233    
 pclk_c                                                    NET DELAY             1.530         2.040  1       
 
 
@@ -4188,7 +4198,7 @@ Name                                      Cell/Site Name  Delay Name            
 ----------------------------------------  --------------  --------------------  -----  ------------  ------  
 pclk                                      top             CLOCK LATENCY         0.000         0.000  1       
 pclk                                                      NET DELAY             0.000         0.000  1       
-pclk_ibuf.bb_inst/B->pclk_ibuf.bb_inst/O  PIO             IOPAD_TO_PADDI_DELAY  0.510         0.510  1207    
+pclk_ibuf.bb_inst/B->pclk_ibuf.bb_inst/O  PIO             IOPAD_TO_PADDI_DELAY  0.510         0.510  1233    
 pclk_c                                                    NET DELAY             1.530         2.040  1       
 
 
@@ -4227,7 +4237,7 @@ Name                                      Cell/Site Name  Delay Name            
 ----------------------------------------  --------------  --------------------  -----  ------------  ------  
 pclk                                      top             CLOCK LATENCY         0.000         0.000  1       
 pclk                                                      NET DELAY             0.000         0.000  1       
-pclk_ibuf.bb_inst/B->pclk_ibuf.bb_inst/O  PIO             IOPAD_TO_PADDI_DELAY  0.510         0.510  1207    
+pclk_ibuf.bb_inst/B->pclk_ibuf.bb_inst/O  PIO             IOPAD_TO_PADDI_DELAY  0.510         0.510  1233    
 pclk_c                                                    NET DELAY             1.530         2.040  1       
 
 
@@ -4244,7 +4254,7 @@ Name                                      Cell/Site Name  Delay Name            
 ----------------------------------------  --------------  --------------------  -----  ------------  ------  
 pclk                                      top             CLOCK LATENCY         0.000         0.000  1       
 pclk                                                      NET DELAY             0.000         0.000  1       
-pclk_ibuf.bb_inst/B->pclk_ibuf.bb_inst/O  PIO             IOPAD_TO_PADDI_DELAY  0.510         0.510  1207    
+pclk_ibuf.bb_inst/B->pclk_ibuf.bb_inst/O  PIO             IOPAD_TO_PADDI_DELAY  0.510         0.510  1233    
 pclk_c                                                    NET DELAY             1.530         2.040  1       
 
 
@@ -4283,7 +4293,7 @@ Name                                      Cell/Site Name  Delay Name            
 ----------------------------------------  --------------  --------------------  -----  ------------  ------  
 pclk                                      top             CLOCK LATENCY         0.000         0.000  1       
 pclk                                                      NET DELAY             0.000         0.000  1       
-pclk_ibuf.bb_inst/B->pclk_ibuf.bb_inst/O  PIO             IOPAD_TO_PADDI_DELAY  0.510         0.510  1207    
+pclk_ibuf.bb_inst/B->pclk_ibuf.bb_inst/O  PIO             IOPAD_TO_PADDI_DELAY  0.510         0.510  1233    
 pclk_c                                                    NET DELAY             1.530         2.040  1       
 
 
@@ -4300,7 +4310,7 @@ Name                                      Cell/Site Name  Delay Name            
 ----------------------------------------  --------------  --------------------  -----  ------------  ------  
 pclk                                      top             CLOCK LATENCY         0.000         0.000  1       
 pclk                                                      NET DELAY             0.000         0.000  1       
-pclk_ibuf.bb_inst/B->pclk_ibuf.bb_inst/O  PIO             IOPAD_TO_PADDI_DELAY  0.510         0.510  1207    
+pclk_ibuf.bb_inst/B->pclk_ibuf.bb_inst/O  PIO             IOPAD_TO_PADDI_DELAY  0.510         0.510  1233    
 pclk_c                                                    NET DELAY             1.530         2.040  1       
 
 
@@ -4339,7 +4349,7 @@ Name                                      Cell/Site Name  Delay Name            
 ----------------------------------------  --------------  --------------------  -----  ------------  ------  
 pclk                                      top             CLOCK LATENCY         0.000         0.000  1       
 pclk                                                      NET DELAY             0.000         0.000  1       
-pclk_ibuf.bb_inst/B->pclk_ibuf.bb_inst/O  PIO             IOPAD_TO_PADDI_DELAY  0.510         0.510  1207    
+pclk_ibuf.bb_inst/B->pclk_ibuf.bb_inst/O  PIO             IOPAD_TO_PADDI_DELAY  0.510         0.510  1233    
 pclk_c                                                    NET DELAY             1.530         2.040  1       
 
 
@@ -4356,7 +4366,7 @@ Name                                      Cell/Site Name  Delay Name            
 ----------------------------------------  --------------  --------------------  -----  ------------  ------  
 pclk                                      top             CLOCK LATENCY         0.000         0.000  1       
 pclk                                                      NET DELAY             0.000         0.000  1       
-pclk_ibuf.bb_inst/B->pclk_ibuf.bb_inst/O  PIO             IOPAD_TO_PADDI_DELAY  0.510         0.510  1207    
+pclk_ibuf.bb_inst/B->pclk_ibuf.bb_inst/O  PIO             IOPAD_TO_PADDI_DELAY  0.510         0.510  1233    
 pclk_c                                                    NET DELAY             1.530         2.040  1       
 
 
@@ -4395,7 +4405,7 @@ Name                                      Cell/Site Name  Delay Name            
 ----------------------------------------  --------------  --------------------  -----  ------------  ------  
 pclk                                      top             CLOCK LATENCY         0.000         0.000  1       
 pclk                                                      NET DELAY             0.000         0.000  1       
-pclk_ibuf.bb_inst/B->pclk_ibuf.bb_inst/O  PIO             IOPAD_TO_PADDI_DELAY  0.510         0.510  1207    
+pclk_ibuf.bb_inst/B->pclk_ibuf.bb_inst/O  PIO             IOPAD_TO_PADDI_DELAY  0.510         0.510  1233    
 pclk_c                                                    NET DELAY             1.530         2.040  1       
 
 
@@ -4412,7 +4422,7 @@ Name                                      Cell/Site Name  Delay Name            
 ----------------------------------------  --------------  --------------------  -----  ------------  ------  
 pclk                                      top             CLOCK LATENCY         0.000         0.000  1       
 pclk                                                      NET DELAY             0.000         0.000  1       
-pclk_ibuf.bb_inst/B->pclk_ibuf.bb_inst/O  PIO             IOPAD_TO_PADDI_DELAY  0.510         0.510  1207    
+pclk_ibuf.bb_inst/B->pclk_ibuf.bb_inst/O  PIO             IOPAD_TO_PADDI_DELAY  0.510         0.510  1233    
 pclk_c                                                    NET DELAY             1.530         2.040  1       
 
 
@@ -4423,7 +4433,7 @@ pclk_c                                                    NET DELAY             
 
 4.2.2  Hold path details for constraint: create_clock -name {u_HSOSC.osc_inst/CLKHF} -period 41.6667 [get_pins {u_HSOSC.osc_inst/CLKHF }] 
 ----------------------------------------------------------------------
-300 endpoints scored, 0 timing errors detected.
+298 endpoints scored, 0 timing errors detected.
 
  +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
                     Detailed Report for timing paths 
@@ -4834,8 +4844,8 @@ Name                                      Cell/Site Name  Delay Name       Delay
 u_OV7670_Controller/I2C/busy_sr_ess_Z[3].ff_inst/CK->u_OV7670_Controller/I2C/busy_sr_ess_Z[3].ff_inst/Q
                                           SLICE           CLK_TO_Q0_DELAY  1.391         2.893  1       
 u_OV7670_Controller/I2C/busy_sr[3]                        NET DELAY        0.500         3.393  1       
-SLICE_1727/A0->SLICE_1727/F0              SLICE           A0_TO_F0_DELAY   0.450         3.843  1       
-u_OV7670_Controller/I2C/busy_sr[3]/sig_245/FeedThruLUT
+SLICE_1689/A0->SLICE_1689/F0              SLICE           A0_TO_F0_DELAY   0.450         3.843  1       
+u_OV7670_Controller/I2C/busy_sr[3]/sig_289/FeedThruLUT
                                                           NET DELAY        0.500         4.343  1       
 
 
@@ -4889,8 +4899,8 @@ Name                                      Cell/Site Name  Delay Name       Delay
 u_OV7670_Controller/I2C/busy_sr_ess_Z[4].ff_inst/CK->u_OV7670_Controller/I2C/busy_sr_ess_Z[4].ff_inst/Q
                                           SLICE           CLK_TO_Q0_DELAY  1.391         2.893  1       
 u_OV7670_Controller/I2C/busy_sr[4]                        NET DELAY        0.500         3.393  1       
-SLICE_1726/A0->SLICE_1726/F0              SLICE           A0_TO_F0_DELAY   0.450         3.843  1       
-u_OV7670_Controller/I2C/busy_sr[4]/sig_244/FeedThruLUT
+SLICE_1688/A0->SLICE_1688/F0              SLICE           A0_TO_F0_DELAY   0.450         3.843  1       
+u_OV7670_Controller/I2C/busy_sr[4]/sig_288/FeedThruLUT
                                                           NET DELAY        0.500         4.343  1       
 
 
@@ -4944,8 +4954,8 @@ Name                                      Cell/Site Name  Delay Name       Delay
 u_OV7670_Controller/I2C/busy_sr_ess_Z[5].ff_inst/CK->u_OV7670_Controller/I2C/busy_sr_ess_Z[5].ff_inst/Q
                                           SLICE           CLK_TO_Q0_DELAY  1.391         2.893  1       
 u_OV7670_Controller/I2C/busy_sr[5]                        NET DELAY        0.500         3.393  1       
-SLICE_1725/A0->SLICE_1725/F0              SLICE           A0_TO_F0_DELAY   0.450         3.843  1       
-u_OV7670_Controller/I2C/busy_sr[5]/sig_243/FeedThruLUT
+SLICE_1687/A0->SLICE_1687/F0              SLICE           A0_TO_F0_DELAY   0.450         3.843  1       
+u_OV7670_Controller/I2C/busy_sr[5]/sig_287/FeedThruLUT
                                                           NET DELAY        0.500         4.343  1       
 
 

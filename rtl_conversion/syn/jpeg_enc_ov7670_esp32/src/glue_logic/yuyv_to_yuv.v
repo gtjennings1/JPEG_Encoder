@@ -14,6 +14,9 @@ module yuyv_to_yuv (
   input  [7:0]  data,
   
   input         mem_wr,
+  //input         jedf_empty,
+  output        mem_rd,
+  output        mem_wr_acc,
   
   output        ready,
   
@@ -40,7 +43,7 @@ module yuyv_to_yuv (
   
   
   reg    [3:0]   c_state, n_state;
-  reg    [8:0]   img_col, img_x;
+  reg    [8:0]   img_col, img_x, img_col_fl0, img_col_fl1, img_col_fl2, img_col_fl3;
   reg    [7:0]   img_row, img_y;
   reg    [16:0]  addr_reg;
   
@@ -53,16 +56,20 @@ module yuyv_to_yuv (
   reg    [7:0]   ff_din;
   
   reg            eof;
+  reg    [23:0]  const_color;
+  // reg    [1:0]   mem_wr_fl;
+  
+  reg            mem_rd_acc;
   
   wire           reset = !reset_n;
   wire   [9:0]   fifo_level;
-  wire           fetch_memory = (fifo_level < (512-6));
+  wire           fetch_memory = ((fifo_level < (512-10)) && (!mem_wr));/* && jedf_empty*/
   //wire           block_available = (fifo_level > (191));
   
   wire           col_max = (img_col == (`WIDTH-1));
   wire           row_max = (img_row == (`HEIGHT-1));
   
-  wire           addr_inc = addr_lsb && (!mem_wr);
+  wire           addr_inc = addr_lsb;// && (!mem_wr);
   
   wire           row_chg = (&col_cnt) && (addr_inc);
   wire           blk_chg = (&row_cnt) && row_chg;
@@ -70,6 +77,9 @@ module yuyv_to_yuv (
   
   assign         addr = addr_reg;
   assign         ready = blk_chg;//block_available;
+  assign         mem_rd = mem_rd_acc;
+  assign         mem_wr_acc = (ff_wr || (c_state == IDLE));
+  //assign         je_data = const_color[23:16];
   
   sc_fifo yuv_fifo (
     .data_in        (ff_din), 
@@ -85,6 +95,25 @@ module yuyv_to_yuv (
     .empty          (), 
     .cnt            (fifo_level)
   );
+  
+  // always @ (posedge clk or negedge reset_n)
+    // begin
+      // if (!reset_n)
+        // mem_wr_fl <= #1 2'b00;
+      // else
+        // mem_wr_fl <= #1 {mem_wr_fl[0], mem_wr};        
+    // end
+  
+  always @ (posedge clk or negedge reset_n)
+    begin
+      if (!reset_n)
+        const_color <= #1 24'h7FD4CC;
+      else
+      if (je_rd)
+        const_color <= #1 {const_color[7:0], const_color[23:8]};
+      else
+        const_color <= #1 24'h7FD4CC;//const_color;      
+    end
   
   always @ (posedge clk or negedge reset_n)
     begin
@@ -102,7 +131,7 @@ module yuyv_to_yuv (
         c_state <= #1 n_state;      
     end
   
-  always @ (c_state, img_req_pe, fetch_memory, eof, mem_wr)
+  always @ (c_state, img_req_pe, fetch_memory, eof /*, mem_wr*/)
     begin
       case (c_state)
         IDLE      : begin
@@ -118,39 +147,39 @@ module yuyv_to_yuv (
                         n_state <= #1 CHECK_FF;                      
                     end
         FETCH_Y0  : begin
-                      if (mem_wr)
-                        n_state <= #1 FETCH_Y0;
-                      else  
+                      // if (mem_wr)
+                        // n_state <= #1 FETCH_Y0;
+                      // else  
                         n_state <= #1 FETCH_U01;
                     end  
         FETCH_U01 : begin
-                      if (mem_wr)
-                        n_state <= #1 FETCH_U01;
-                      else  
+                      // if (mem_wr)
+                        // n_state <= #1 FETCH_U01;
+                      // else  
                         n_state <= #1 FETCH_Y1;
                     end  
         FETCH_Y1  : begin
-                      if (mem_wr)
-                        n_state <= #1 FETCH_Y1;
-                      else  
+                      // if (mem_wr)
+                        // n_state <= #1 FETCH_Y1;
+                      // else  
                         n_state <= #1 FETCH_V01;
                     end  
         FETCH_V01 : begin
-                      if (mem_wr)
-                        n_state <= #1 FETCH_V01;
-                      else  
+                      // if (mem_wr)
+                        // n_state <= #1 FETCH_V01;
+                      // else  
                         n_state <= #1 CHECK_EOF;
                     end  
         CHECK_EOF : begin
-                      if (mem_wr)
-                        n_state <= #1 CHECK_EOF;
-                      else  
+                      // if (mem_wr)
+                        // n_state <= #1 CHECK_EOF;
+                      // else  
                         n_state <= #1 WAIT_1C;
                     end  
         WAIT_1C   : begin
-                      if (mem_wr)
-                        n_state <= #1 WAIT_1C;
-                      else  
+                      // if (mem_wr)
+                        // n_state <= #1 WAIT_1C;
+                      // else  
                         n_state <= #1 WRITE_Y0;
                     end  
         WRITE_Y0  : n_state <= #1 WRITE_U0;
@@ -180,12 +209,28 @@ module yuyv_to_yuv (
           FETCH_U01,
           FETCH_Y1,
           FETCH_V01 : begin
-                        if (mem_wr)
-                          addr_lsb <= #1 addr_lsb;
-                        else  
+                        // if (mem_wr)
+                          // addr_lsb <= #1 addr_lsb;
+                        // else  
                           addr_lsb <= #1 !addr_lsb;
                       end  
           default   : addr_lsb <= #1 addr_lsb;
+        endcase        
+    end
+  
+  always @ (posedge clk or negedge reset_n)
+    begin
+      if (!reset_n)
+        mem_rd_acc <= #1 1'b0;
+      else
+        case (c_state)
+          FETCH_Y0,
+          FETCH_U01,
+          FETCH_Y1,
+          FETCH_V01,
+          CHECK_EOF,
+          WAIT_1C   : mem_rd_acc <= #1 1'b1;
+          default   : mem_rd_acc <= #1 1'b0;
         endcase        
     end
   
@@ -270,7 +315,10 @@ module yuyv_to_yuv (
     begin
       if (!reset_n)
         addr_reg <= #1 17'h00000;
-      else
+      // else
+      // if (mem_wr)
+        // addr_reg <= #1 addr_reg;
+      else  
         addr_reg <= #1 ({(img_row*`WIDTH),1'b0}) + ({img_col,addr_lsb});   
     end
   
@@ -289,6 +337,24 @@ module yuyv_to_yuv (
   always @ (posedge clk or negedge reset_n)
     begin
       if (!reset_n)
+        begin
+          img_col_fl0 <= #1 9'h000;
+          img_col_fl1 <= #1 9'h000;
+          img_col_fl2 <= #1 9'h000;
+          img_col_fl3 <= #1 9'h000;        
+        end
+      else
+        begin
+          img_col_fl0 <= #1 img_col;
+          img_col_fl1 <= #1 img_col_fl0;
+          img_col_fl2 <= #1 img_col_fl1;
+          img_col_fl3 <= #1 img_col_fl2;
+        end        
+    end
+  
+  always @ (posedge clk or negedge reset_n)
+    begin
+      if (!reset_n)
         yuyv <= #1 32'h00000000;
       else
         case (c_state)
@@ -298,10 +364,24 @@ module yuyv_to_yuv (
           FETCH_V01,
           CHECK_EOF,
           WAIT_1C   : begin
-                        if (mem_wr)
-                          yuyv <= #1 yuyv;
-                        else  
-                          yuyv <= #1 {!data[7], data[6:0], yuyv[31:8]};
+                        
+                        //if (mem_wr)
+                        // if (mem_wr_fl[0])
+                          // yuyv <= #1 yuyv;
+                        // else  
+                          yuyv <= #1 {!data[7], data[6:0], yuyv[31:8]};//32'h7FCCD4CC;//
+                        /*                     
+                        if (img_col_fl3 < 9'd80)
+                          yuyv <= #1 32'h70D2DAD2;//32'hF0525A52;
+                        else
+                        if (img_col_fl3 < 9'd160)
+                          yuyv <= #1 32'hA211B611;//32'h22913691;
+                        else
+                        if (img_col_fl3 < 9'd240) 
+                          yuyv <= #1 32'hEEA970A9;//32'h6E29F029;
+                        else
+                          yuyv <= #1 32'h006B006B;//32'h80EB80EB;
+                        */                          
                       end  
           default   : yuyv <= #1 yuyv;
         endcase        

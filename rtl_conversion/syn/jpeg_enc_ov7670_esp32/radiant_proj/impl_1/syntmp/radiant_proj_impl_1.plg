@@ -15,9 +15,9 @@
 @P:  System - Requested Period : 21.076
 @P:  System - Slack : -3.719
 @P: top Part : ice40up5ksg48high-performance_1.2v
-@P: top I/O primitives : 21
+@P: top I/O primitives : 22
 @P: top I/O Register bits : 0
-@P: top Register bits (Non I/O) : 1442 (27%)
-@P: top Block Rams : 11 of 30 (36%)
-@P: top Total Luts : 3303 of 5280 (62%)
-@P:  CPU Time : 0h:00m:23s
+@P: top Register bits (Non I/O) : 1504 (28%)
+@P: top Block Rams : 13 of 30 (43%)
+@P: top Total Luts : 3389 of 5280 (64%)
+@P:  CPU Time : 0h:00m:24s

@@ -9,6 +9,8 @@
 `define QUAL2   ((`QUAL1 < 1) ? 1 : (`QUAL1 > 100) ? 100 : `QUAL1)
 `define QUAL3   ((`QUAL2 < 50) ? 5000/`QUAL2 : 200 - `QUAL2*2)
 
+//`define QUANT_MULT
+
 module jpeg_enc (
   input           clk,
   input           reset_n,
@@ -42,6 +44,9 @@ module jpeg_enc (
   //reg signed   [17:0]   DCT_DU [63:0];
   //reg signed   [14:0]   ZIG_DU [63:0];
   reg signed   [14:0]   QNT_DU;
+`ifdef QUANT_MULT  
+  reg signed   [25:0]   QNT_DU_pre;
+`endif  
   //reg signed   [13:0]   DCT_UDU [63:0];
   //reg signed   [13:0]   DCT_VDU [63:0]; 
 
@@ -161,6 +166,9 @@ module jpeg_enc (
   parameter       READ_HTAC = 58;
   parameter       CB_NSTATE2= 59;
   parameter       READ_HTAC2= 60;
+`ifdef QUANT_MULT  
+  parameter       PRE_ZIGZAG= 61;
+`endif  
   
   parameter HEADER_SIZE = 607;
   
@@ -357,8 +365,13 @@ module jpeg_enc (
                       else
                         n_state <= #1 DCT_P7;//COMP_SEL;                      
                     end
-      PRE_QUANT   : n_state <= #1 QUANTIZE;              
+      PRE_QUANT   : n_state <= #1 QUANTIZE;
+`ifdef QUANT_MULT      
+      QUANTIZE    : n_state <= #1 PRE_ZIGZAG;
+      PRE_ZIGZAG  : n_state <= #1 ZIGZAG;
+`else
       QUANTIZE    : n_state <= #1 ZIGZAG;
+`endif      
       ZIGZAG      : begin
                       if (qz_done)
                         n_state <= #1 DIFF_DC;
@@ -998,22 +1011,38 @@ module jpeg_enc (
     begin
       if (!reset_n)
         begin
+`ifdef QUANT_MULT        
+          QNT_DU_pre <= #1 26'h0000000;
+`endif          
           QNT_DU <= #1 15'h0000;
           zzdu_ram_we <= #1 1'b0;
         end
       else
         begin
+`ifdef QUANT_MULT        
+          QNT_DU_pre <= #1 QNT_DU_pre;
+`endif          
           QNT_DU <= #1 QNT_DU;
           zzdu_ram_we <= #1 1'b0;          
           case (c_state)
+`ifdef QUANT_MULT          
             QUANTIZE  : begin
-                          case (dct_comp_sel)
-                            2'h0    : QNT_DU <= #1 /*DCT_DU[qz_cnt]*/$signed(dctdu_ram_do) / fdtbl_rom_d;//$signed(fdtbl_Y[qz_cnt]);
-                            2'h1,
-                            2'h2    : QNT_DU <= #1 /*DCT_DU[qz_cnt]*/$signed(dctdu_ram_do) / fdtbl_rom_d;//$signed(fdtbl_UV[qz_cnt]);
-                            default : QNT_DU <= #1 QNT_DU;
-                          endcase
-                        end  
+                          QNT_DU_pre <= $signed(dctdu_ram_do) * fdtbl_rom_d;//$signed(dctdu_ram_do);//
+                          // case (dct_comp_sel)
+                            // 2'h0    : QNT_DU <= #1 /*DCT_DU[qz_cnt]*/$signed(dctdu_ram_do) / fdtbl_rom_d;//$signed(fdtbl_Y[qz_cnt]);
+                            // 2'h1,
+                            // 2'h2    : QNT_DU <= #1 /*DCT_DU[qz_cnt]*/$signed(dctdu_ram_do) / fdtbl_rom_d;//$signed(fdtbl_UV[qz_cnt]);
+                            // default : QNT_DU <= #1 QNT_DU;
+                          // endcase
+                        end
+            PRE_ZIGZAG: begin
+                          QNT_DU <= QNT_DU_pre[25:11];//QNT_DU_pre[21:7];//
+                        end
+`else
+            QUANTIZE  : begin
+                          QNT_DU <= #1 $signed(dctdu_ram_do) / fdtbl_rom_d;
+                        end
+`endif                        
             ZIGZAG    : zzdu_ram_we <= #1 1'b1;//ZIG_DU[zigzag_idx[qz_cnt]] <= #1 QNT_DU;
             default   : QNT_DU <= #1 QNT_DU;
           endcase

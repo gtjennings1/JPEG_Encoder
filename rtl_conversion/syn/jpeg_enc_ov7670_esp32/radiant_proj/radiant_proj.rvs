@@ -1,0 +1,28 @@
+<Project Date="2018-05-31" ModBy="Inserter" Name="E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/syn/jpeg_enc_ov7670_esp32/radiant_proj/radiant_proj.rvl">
+    <Core Name="top_LA0">
+        <Setting>
+            <Capture SamplesPerTrig="1" NumTrigsCap=""/>
+            <Event CntEnableRun="" EventCnt=""/>
+            <TrigSetting PostTrgSamples="" AND_ALL="" TURadix="0" PreTrgSamples=""/>
+        </Setting>
+        <Dataset Name="Base">
+            <Trace>
+                <Bus Radix="0" Name="je/ram_rom/du_ram_di">
+                    <Sig Name="je/ram_rom/du_ram_di:0"/>
+                    <Sig Name="je/ram_rom/du_ram_di:1"/>
+                    <Sig Name="je/ram_rom/du_ram_di:2"/>
+                    <Sig Name="je/ram_rom/du_ram_di:3"/>
+                    <Sig Name="je/ram_rom/du_ram_di:4"/>
+                    <Sig Name="je/ram_rom/du_ram_di:5"/>
+                    <Sig Name="je/ram_rom/du_ram_di:6"/>
+                    <Sig Name="je/ram_rom/du_ram_di:7"/>
+                </Bus>
+            </Trace>
+            <Trigger>
+                <TU Index="1" Value="0000" ID="1" Operator="0" Radix="2" Name="TU1"/>
+                <TU Index="2" Value="0024" ID="2" Operator="0" Radix="2" Name="TU2"/>
+                <TE Index="1" ID="1" Expression="TU1 &amp; TU2" Enable="1" Name="TE1"/>
+            </Trigger>
+        </Dataset>
+    </Core>
+</Project>

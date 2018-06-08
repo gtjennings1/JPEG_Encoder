@@ -3,7 +3,7 @@
 #OS: Windows 8 6.2
 #Hostname: KV-DL5480
 
-# Mon Apr 30 14:32:55 2018
+# Fri Jun  8 11:33:14 2018
 
 #Implementation: impl_1
 
@@ -25,7 +25,7 @@ At c_vhdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memor
 
 
 Process completed successfully.
-# Mon Apr 30 14:32:57 2018
+# Fri Jun  8 11:33:14 2018
 
 ###########################################################]
 Synopsys Verilog Compiler, version comp2017q2p1, Build 338R, built Nov 10 2017
@@ -84,13 +84,14 @@ Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated
 @I::"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\spi_slave.v" (library work)
 @I::"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\top.v" (library work)
 @I::"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\up_spram.v" (library work)
+@I::"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\sc_fifo_32.v" (library work)
 Verilog syntax check successful!
 
 At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 70MB peak: 72MB)
 
 
 Process completed successfully.
-# Mon Apr 30 14:32:58 2018
+# Fri Jun  8 11:33:14 2018
 
 ###########################################################]
 @I::"D:\APPS\lscc\radiant\1.0\synpbase\lib\generic\ice40up.v" (library work)
@@ -145,35 +146,39 @@ Process completed successfully.
 @I::"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\spi_slave.v" (library work)
 @I::"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\top.v" (library work)
 @I::"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\up_spram.v" (library work)
+@I::"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\sc_fifo_32.v" (library work)
 Verilog syntax check successful!
-File E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\jpeg_data_to_spi.v changed - recompiling
 File E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\top.v changed - recompiling
 @N: CG364 :"D:\APPS\lscc\radiant\1.0\synpbase\lib\generic\ice40up.v":795:7:795:11|Synthesizing module HSOSC in library work.
 @N: CG364 :"D:\APPS\lscc\radiant\1.0\synpbase\lib\generic\ice40up.v":753:7:753:12|Synthesizing module SP256K in library work.
 @N: CG364 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\up_spram.v":25:7:25:14|Synthesizing module up_spram in library work.
+@W: CG360 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\up_spram.v":38:18:38:26|Removing wire ram_rdata, as there is no assignment to it.
 @N: CG364 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\OV7670_Registers.v":14:7:14:22|Synthesizing module OV7670_Registers in library work.
 @N: CG364 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\I2C_Interface.v":14:7:14:19|Synthesizing module I2C_Interface in library work.
 @N: CG364 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\OV7670_Controller.v":18:7:18:23|Synthesizing module OV7670_Controller in library work.
 @N: CG364 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\sc_fifo.v":3:7:3:13|Synthesizing module sc_fifo in library work.
 @N: CL134 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\sc_fifo.v":107:2:107:7|Found RAM fifo, depth=512, width=8
 @N: CG364 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":7:7:7:17|Synthesizing module yuyv_to_yuv in library work.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":184:41:184:48|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":188:37:188:44|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":204:24:204:30|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":205:24:205:28|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":206:24:206:30|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":207:24:207:28|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":237:40:237:46|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":238:40:238:44|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":239:40:239:46|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":240:40:240:44|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":255:22:255:28|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":266:22:266:28|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":285:32:285:34|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":302:37:302:40|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":306:33:306:36|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":319:23:319:28|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":341:37:341:42|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":217:37:217:44|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":249:24:249:30|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":250:24:250:28|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":251:24:251:30|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":252:24:252:28|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":282:40:282:46|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":283:40:283:44|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":284:40:284:46|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":285:40:285:44|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":300:22:300:28|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":311:22:311:28|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":333:32:333:34|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":386:33:386:36|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":399:23:399:28|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":421:37:421:42|Removing redundant assignment.
+@W: CL169 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":337:2:337:7|Pruning unused register img_col_fl0[8:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":337:2:337:7|Pruning unused register img_col_fl1[8:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":337:2:337:7|Pruning unused register img_col_fl2[8:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":337:2:337:7|Pruning unused register img_col_fl3[8:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":107:2:107:7|Pruning unused register const_color[23:0]. Make sure that there are no unused intermediate registers.
 @N: CG364 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":1:7:1:18|Synthesizing module jpeg_enc_mem in library work.
 @W: CG532 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":98:2:98:8|Within an initial block, only Verilog force statements and memory $readmemh/$readmemb initialization statements are recognized, and all other content is ignored.
 @N: CL134 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":194:2:194:7|Found RAM dctdu_ram, depth=64, width=18
@@ -185,121 +190,124 @@ File E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov767
 @W: CL208 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":170:2:170:7|All reachable assignments to bit 14 of dcht_bb_rom_data[15:0] assign 0, register removed by optimization.
 @W: CL208 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":170:2:170:7|All reachable assignments to bit 15 of dcht_bb_rom_data[15:0] assign 0, register removed by optimization.
 @W: CL208 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":162:2:162:7|All reachable assignments to bit 4 of dcht_bc_rom_data[4:0] assign 0, register removed by optimization.
-@N: CG364 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":1:7:1:18|Synthesizing module jpeg_enc_dct in library work.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":125:37:125:42|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":137:43:137:54|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":156:26:156:35|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":157:26:157:35|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":158:26:158:35|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":159:26:159:35|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":160:26:160:35|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":161:26:161:35|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":162:26:162:35|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":163:26:163:35|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":187:44:187:53|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":188:44:188:53|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":189:44:189:53|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":190:44:190:53|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":191:44:191:53|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":192:44:192:53|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":193:44:193:53|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":194:44:194:53|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":215:21:215:24|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":216:21:216:24|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":217:21:217:24|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":218:21:218:24|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":219:21:219:24|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":220:21:220:24|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":221:21:221:24|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":222:21:222:24|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":253:39:253:42|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":254:39:254:42|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":255:39:255:42|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":256:39:256:42|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":257:39:257:42|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":258:39:258:42|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":259:39:259:42|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":260:39:260:42|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":280:22:280:26|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":281:22:281:26|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":282:22:282:26|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":283:22:283:26|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":284:22:284:26|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":285:22:285:26|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":286:22:286:26|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":309:40:309:44|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":310:40:310:44|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":311:40:311:44|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":312:40:312:44|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":313:40:313:44|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":314:40:314:44|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":315:40:315:44|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":331:28:331:38|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":333:28:333:36|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":342:46:342:56|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":344:46:344:54|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":365:65:365:77|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":366:44:366:56|Removing redundant assignment.
-@W: CG133 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":42:47:42:57|Object dctdu_r_idx is declared but not assigned. Either assign a value or remove the declaration.
-@N: CG364 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":12:7:12:14|Synthesizing module jpeg_enc in library work.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":489:28:489:38|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":519:46:519:56|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":548:24:548:28|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":549:24:549:30|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":550:24:550:28|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":551:24:551:30|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":581:38:581:42|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":582:38:582:44|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":583:38:583:42|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":584:38:584:44|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":614:22:614:28|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":626:22:626:28|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":712:27:712:38|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":993:21:993:26|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1006:23:1006:28|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1014:51:1014:56|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1018:37:1018:42|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1051:34:1051:40|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1054:22:1054:28|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1068:30:1068:42|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1069:30:1069:42|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1070:30:1070:42|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1071:30:1071:42|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1095:48:1095:60|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1096:48:1096:60|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1097:48:1097:60|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1098:48:1098:60|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1117:27:1117:36|Removing redundant assignment.
-@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1118:27:1118:36|Removing redundant assignment.
+@N: CG364 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":2:7:2:18|Synthesizing module jpeg_enc_dct in library work.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":136:37:136:42|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":148:43:148:54|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":167:26:167:35|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":168:26:168:35|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":169:26:169:35|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":170:26:170:35|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":171:26:171:35|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":172:26:172:35|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":173:26:173:35|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":174:26:174:35|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":211:44:211:53|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":212:44:212:53|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":213:44:213:53|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":214:44:214:53|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":215:44:215:53|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":216:44:216:53|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":217:44:217:53|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":218:44:218:53|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":239:21:239:24|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":240:21:240:24|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":241:21:241:24|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":242:21:242:24|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":243:21:243:24|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":244:21:244:24|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":245:21:245:24|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":246:21:246:24|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":279:39:279:42|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":280:39:280:42|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":281:39:281:42|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":282:39:282:42|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":283:39:283:42|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":284:39:284:42|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":285:39:285:42|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":286:39:286:42|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":306:22:306:26|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":307:22:307:26|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":308:22:308:26|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":309:22:309:26|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":310:22:310:26|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":311:22:311:26|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":312:22:312:26|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":357:40:357:44|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":358:40:358:44|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":359:40:359:44|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":360:40:360:44|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":361:40:361:44|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":362:40:362:44|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":363:40:363:44|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":379:28:379:38|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":381:28:381:36|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":390:46:390:56|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":392:46:392:54|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":413:65:413:77|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":414:44:414:56|Removing redundant assignment.
+@W: CG133 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":47:47:47:57|Object dctdu_r_idx is declared but not assigned. Either assign a value or remove the declaration.
+@N: CG364 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":14:7:14:14|Synthesizing module jpeg_enc in library work.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":502:28:502:38|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":532:46:532:56|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":561:24:561:28|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":562:24:562:30|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":563:24:563:28|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":564:24:564:30|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":594:38:594:42|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":595:38:595:44|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":596:38:596:42|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":597:38:597:44|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":627:22:627:28|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":639:22:639:28|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":725:27:725:38|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1006:21:1006:26|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1025:23:1025:28|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1047:37:1047:42|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1080:34:1080:40|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1083:22:1083:28|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1097:30:1097:42|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1098:30:1098:42|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1099:30:1099:42|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1100:30:1100:42|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1124:48:1124:60|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1125:48:1125:60|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1126:48:1126:60|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1127:48:1127:60|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1146:27:1146:36|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1147:27:1147:36|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1148:21:1148:24|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1149:26:1149:34|Removing redundant assignment.
+@N: CG179 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1150:26:1150:34|Removing redundant assignment.
 
 Only the first 100 messages of id 'CG179' are reported. To see all messages use 'report_messages -log E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\radiant_proj\impl_1\synlog\radiant_proj_impl_1_compiler.srr -id CG179' in the Tcl shell. To see all messages in future runs, use the command 'message_override -limit {CG179} -count unlimited' in the Tcl shell.
-@W: CG360 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":33:18:33:29|Removing wire header_rom_d, as there is no assignment to it.
-@W: CG133 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":36:18:36:26|Object du_ram_aw is declared but not assigned. Either assign a value or remove the declaration.
-@W: CG133 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":58:18:58:28|Object dct_idx_cnt is declared but not assigned. Either assign a value or remove the declaration.
-@W: CL169 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1105:2:1105:7|Pruning unused register wb_c[7:0]. Make sure that there are no unused intermediate registers.
-@W: CL169 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":527:2:527:7|Pruning unused register fb_addr_reg[21:0]. Make sure that there are no unused intermediate registers.
-@W: CL169 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":294:2:294:7|Pruning unused register img_valid_reg_fl. Make sure that there are no unused intermediate registers.
-@W: CL265 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1262:2:1262:7|Removing unused bit 0 of cb_bb_tmp[12:0]. Either assign all bits or reduce the width of the signal.
-@W: CL265 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":286:2:286:7|Removing unused bit 1 of fb_rd_reg[1:0]. Either assign all bits or reduce the width of the signal.
-@W: CL207 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":477:2:477:7|All reachable assignments to byte_count[9:0] assign 0, register removed by optimization.
-@W: CL190 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1262:2:1262:7|Optimizing register bit cb_bit_cnt[4] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1382:2:1382:7|Optimizing register bit b_state[6] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1382:2:1382:7|Optimizing register bit b_state[7] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL279 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1382:2:1382:7|Pruning register bits 7 to 6 of b_state[7:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
-@W: CL260 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1262:2:1262:7|Pruning register bit 4 of cb_bit_cnt[4:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CG360 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":35:18:35:29|Removing wire header_rom_d, as there is no assignment to it.
+@W: CG133 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":38:18:38:26|Object du_ram_aw is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":63:18:63:28|Object dct_idx_cnt is declared but not assigned. Either assign a value or remove the declaration.
+@W: CL169 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1134:2:1134:7|Pruning unused register wb_c[7:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":540:2:540:7|Pruning unused register fb_addr_reg[21:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":302:2:302:7|Pruning unused register img_valid_reg_fl. Make sure that there are no unused intermediate registers.
+@W: CL265 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1291:2:1291:7|Removing unused bit 0 of cb_bb_tmp[12:0]. Either assign all bits or reduce the width of the signal.
+@W: CL265 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":294:2:294:7|Removing unused bit 1 of fb_rd_reg[1:0]. Either assign all bits or reduce the width of the signal.
+@W: CL207 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":490:2:490:7|All reachable assignments to byte_count[9:0] assign 0, register removed by optimization.
+@W: CL190 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1291:2:1291:7|Optimizing register bit cb_bit_cnt[4] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1411:2:1411:7|Optimizing register bit b_state[6] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1411:2:1411:7|Optimizing register bit b_state[7] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL279 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1411:2:1411:7|Pruning register bits 7 to 6 of b_state[7:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL260 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1291:2:1291:7|Pruning register bit 4 of cb_bit_cnt[4:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
 @N: CG364 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\jpeg_data_writer.v":7:7:7:22|Synthesizing module jpeg_data_writer in library work.
+@N: CG364 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\sc_fifo_32.v":3:7:3:16|Synthesizing module sc_fifo_32 in library work.
+@N: CL134 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\sc_fifo_32.v":107:2:107:7|Found RAM fifo, depth=128, width=32
 @N: CG364 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\jpeg_data_to_spi.v":7:7:7:22|Synthesizing module jpeg_data_to_spi in library work.
 @W: CL169 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\jpeg_data_to_spi.v":170:2:170:7|Pruning unused register spi_data_reg[7:0]. Make sure that there are no unused intermediate registers.
 @N: CG364 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\spi_slave.v":23:7:23:15|Synthesizing module spi_slave in library work.
-@W: CL169 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\spi_slave.v":172:2:172:7|Pruning unused register rd_addr_reg[16:0]. Make sure that there are no unused intermediate registers.
-@W: CL169 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\spi_slave.v":158:2:158:7|Pruning unused register addr_data_flag. Make sure that there are no unused intermediate registers.
-@W: CL169 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\spi_slave.v":104:2:104:7|Pruning unused register data_received[7:0]. Make sure that there are no unused intermediate registers.
-@W: CL169 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\spi_slave.v":93:2:93:7|Pruning unused register mosi_reg[1:0]. Make sure that there are no unused intermediate registers.
 @N: CG364 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\top.v":23:7:23:9|Synthesizing module top in library work.
-@N: CL189 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\top.v":152:2:152:7|Register bit pixel_cnt[17] is always 0.
-@W: CL260 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\top.v":152:2:152:7|Pruning register bit 17 of pixel_cnt[17:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
-@N: CL201 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\top.v":185:2:185:7|Trying to extract state machine for register c_state.
-@N: CL159 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\spi_slave.v":28:18:28:21|Input mosi is unused.
+@W: CG133 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\top.v":62:32:62:46|Object pix_per_line_fl is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\top.v":62:49:62:64|Object pix_per_line_fl2 is declared but not assigned. Either assign a value or remove the declaration.
+@W: CL169 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\top.v":159:2:159:7|Pruning unused register cb_data[7:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\top.v":142:2:142:7|Pruning unused register cb_yuyv[31:0]. Make sure that there are no unused intermediate registers.
+@N: CL189 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\top.v":174:2:174:7|Register bit pixel_cnt[17] is always 0.
+@W: CL260 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\top.v":174:2:174:7|Pruning register bit 17 of pixel_cnt[17:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@N: CL201 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\top.v":207:2:207:7|Trying to extract state machine for register c_state.
 @W: CL190 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\jpeg_data_to_spi.v":227:2:227:7|Optimizing register bit row_y[0] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: CL190 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\jpeg_data_to_spi.v":227:2:227:7|Optimizing register bit row_y[1] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: CL190 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\jpeg_data_to_spi.v":227:2:227:7|Optimizing register bit row_y[2] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
@@ -331,15 +339,15 @@ State machine has 12 reachable states with original encodings of:
 @W: CL190 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\jpeg_data_writer.v":88:2:88:7|Optimizing register bit col_x[2] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: CL279 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\jpeg_data_writer.v":88:2:88:7|Pruning register bits 2 to 0 of col_x[8:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
 @W: CL279 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\jpeg_data_writer.v":88:2:88:7|Pruning register bits 2 to 0 of row_y[7:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
-@W: CL190 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":536:2:536:7|Optimizing register bit img_y[0] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":536:2:536:7|Optimizing register bit img_y[1] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":536:2:536:7|Optimizing register bit img_y[2] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":536:2:536:7|Optimizing register bit img_x[0] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":536:2:536:7|Optimizing register bit img_x[1] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":536:2:536:7|Optimizing register bit img_x[2] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL279 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":536:2:536:7|Pruning register bits 2 to 0 of img_x[10:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
-@W: CL279 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":536:2:536:7|Pruning register bits 2 to 0 of img_y[9:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
-@N: CL201 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":303:2:303:7|Trying to extract state machine for register c_state.
+@W: CL190 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":549:2:549:7|Optimizing register bit img_y[0] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":549:2:549:7|Optimizing register bit img_y[1] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":549:2:549:7|Optimizing register bit img_y[2] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":549:2:549:7|Optimizing register bit img_x[0] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":549:2:549:7|Optimizing register bit img_x[1] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":549:2:549:7|Optimizing register bit img_x[2] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL279 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":549:2:549:7|Pruning register bits 2 to 0 of img_x[10:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":549:2:549:7|Pruning register bits 2 to 0 of img_y[9:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@N: CL201 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":311:2:311:7|Trying to extract state machine for register c_state.
 Extracted state machine for register c_state
 State machine has 64 reachable states with original encodings of:
    00000000
@@ -406,7 +414,7 @@ State machine has 64 reachable states with original encodings of:
    00111101
    00111110
    00111111
-@N: CL201 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":66:2:66:7|Trying to extract state machine for register c_state.
+@N: CL201 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":71:2:71:7|Trying to extract state machine for register c_state.
 Extracted state machine for register c_state
 State machine has 16 reachable states with original encodings of:
    000000
@@ -420,20 +428,20 @@ State machine has 16 reachable states with original encodings of:
    001000
    001001
    001010
-   001011
-   001100
    001101
    001110
    001111
-@W: CL190 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":192:2:192:7|Optimizing register bit img_y[0] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":192:2:192:7|Optimizing register bit img_y[1] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":192:2:192:7|Optimizing register bit img_y[2] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":192:2:192:7|Optimizing register bit img_x[0] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":192:2:192:7|Optimizing register bit img_x[1] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":192:2:192:7|Optimizing register bit img_x[2] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL279 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":192:2:192:7|Pruning register bits 2 to 0 of img_x[8:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
-@W: CL279 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":192:2:192:7|Pruning register bits 2 to 0 of img_y[7:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
-@N: CL201 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":97:2:97:7|Trying to extract state machine for register c_state.
+   010000
+   010001
+@W: CL190 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":237:2:237:7|Optimizing register bit img_y[0] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":237:2:237:7|Optimizing register bit img_y[1] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":237:2:237:7|Optimizing register bit img_y[2] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":237:2:237:7|Optimizing register bit img_x[0] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":237:2:237:7|Optimizing register bit img_x[1] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":237:2:237:7|Optimizing register bit img_x[2] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL279 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":237:2:237:7|Pruning register bits 2 to 0 of img_x[8:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":237:2:237:7|Pruning register bits 2 to 0 of img_y[7:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@N: CL201 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":126:2:126:7|Trying to extract state machine for register c_state.
 Extracted state machine for register c_state
 State machine has 15 reachable states with original encodings of:
    0000
@@ -453,14 +461,13 @@ State machine has 15 reachable states with original encodings of:
    1110
 @N: CL189 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\I2C_Interface.v":51:4:51:9|Register bit data_sr[0] is always 1.
 @W: CL260 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\I2C_Interface.v":51:4:51:9|Pruning register bit 0 of data_sr[31:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
-@N: CL159 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\up_spram.v":26:18:26:24|Input reset_n is unused.
 @N: CL159 :"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\up_spram.v":28:18:28:23|Input wr_clk is unused.
 
-At c_ver Exit (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:02s; Memory used current: 88MB peak: 101MB)
+At c_ver Exit (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 87MB peak: 101MB)
 
 
 Process completed successfully.
-# Mon Apr 30 14:33:03 2018
+# Fri Jun  8 11:33:18 2018
 
 ###########################################################]
 Synopsys Netlist Linker, version comp2017q2p1, Build 338R, built Nov 10 2017
@@ -471,32 +478,32 @@ At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Mon Apr 30 14:33:04 2018
+# Fri Jun  8 11:33:19 2018
 
 ###########################################################]
 @END
 
-At c_hdl Exit (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:02s; Memory used current: 3MB peak: 4MB)
+At c_hdl Exit (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:02s; Memory used current: 3MB peak: 4MB)
 
-Process took 0h:00m:07s realtime, 0h:00m:02s cputime
+Process took 0h:00m:04s realtime, 0h:00m:02s cputime
 
 Process completed successfully.
-# Mon Apr 30 14:33:04 2018
+# Fri Jun  8 11:33:19 2018
 
 ###########################################################]
 Synopsys Netlist Linker, version comp2017q2p1, Build 338R, built Nov 10 2017
 @N|Running in 64-bit mode
 File E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\radiant_proj\impl_1\synwork\radiant_proj_impl_1_comp.srs changed - recompiling
 
-At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 70MB peak: 71MB)
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 71MB peak: 72MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Mon Apr 30 14:33:06 2018
+# Fri Jun  8 11:33:20 2018
 
 ###########################################################]
-# Mon Apr 30 14:33:07 2018
+# Fri Jun  8 11:33:21 2018
 
 Synopsys Lattice Technology Pre-mapping, Version maplat, Build 1868R, Built Nov 13 2017 02:40:05
 Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
@@ -510,22 +517,23 @@ Printing clock  summary report in "E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl
 @N: MF248 |Running in 64-bit mode.
 @N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
 
-Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 102MB peak: 105MB)
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 103MB peak: 106MB)
 
 
-Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 102MB peak: 105MB)
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 103MB peak: 106MB)
 
 
-Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 106MB peak: 107MB)
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 107MB peak: 107MB)
 
 
-Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 106MB peak: 109MB)
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 107MB peak: 109MB)
 
-@W: BN132 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1057:2:1057:7|Removing sequential instance je.dcht_bc_rom_a[4:0] because it is equivalent to instance je.dcht_bb_rom_a[4:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1057:2:1057:7|Removing sequential instance je.acht_bc_rom_a[8:0] because it is equivalent to instance je.acht_bb_rom_a[8:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1086:2:1086:7|Removing sequential instance je.dcht_bc_rom_a[4:0] because it is equivalent to instance je.dcht_bb_rom_a[4:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1086:2:1086:7|Removing sequential instance je.acht_bc_rom_a[8:0] because it is equivalent to instance je.acht_bb_rom_a[8:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@N: BN362 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":221:2:221:7|Removing sequential instance mem_rd_acc (in view: work.yuyv_to_yuv(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
 syn_allowed_resources : blockrams=30  set on top level netlist top
 
-Finished netlist restructuring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 138MB peak: 139MB)
+Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 138MB peak: 140MB)
 
 
 
@@ -537,18 +545,18 @@ Level     Clock           Frequency     Period        Type         Group        
 --------------------------------------------------------------------------------------------------
 0 -       System          1.0 MHz       1000.000      system       system_clkgroup           0    
                                                                                                   
-0 -       top|pclk        82.1 MHz      12.177        inferred     Autoconstr_clkgroup_0     1391 
+0 -       top|pclk        82.1 MHz      12.177        inferred     Autoconstr_clkgroup_0     1510 
                                                                                                   
 0 -       top|clk_24m     139.8 MHz     7.152         inferred     Autoconstr_clkgroup_1     97   
 ==================================================================================================
 
-@W: MT530 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\sc_fifo.v":87:0:87:5|Found inferred clock top|pclk which controls 1391 sequential elements including yty.yuv_fifo.write_pointer[8:0]. This clock has no specified timing constraint which may adversely impact design performance. 
+@W: MT530 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\up_spram.v":72:2:72:7|Found inferred clock top|pclk which controls 1510 sequential elements including cam_buf.rd_data_reg[7:0]. This clock has no specified timing constraint which may adversely impact design performance. 
 @W: MT530 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\ov7670_registers.v":43:4:43:9|Found inferred clock top|clk_24m which controls 97 sequential elements including u_OV7670_Controller.LUT.address[7:0]. This clock has no specified timing constraint which may adversely impact design performance. 
 
 Finished Pre Mapping Phase.
 @N: BN225 |Writing default property annotation file E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\radiant_proj\impl_1\radiant_proj_impl_1.sap.
 
-Starting constraint checker (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:00s; Memory used current: 136MB peak: 139MB)
+Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 136MB peak: 140MB)
 
 Encoding state machine c_state[14:0] (in view: work.yuyv_to_yuv(verilog))
 original code -> new code
@@ -580,12 +588,12 @@ original code -> new code
    001000 -> 1000
    001001 -> 1001
    001010 -> 1010
-   001011 -> 1011
-   001100 -> 1100
-   001101 -> 1101
-   001110 -> 1110
-   001111 -> 1111
-@N: MO225 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":66:2:66:7|There are no possible illegal states for state machine c_state[15:0] (in view: work.jpeg_enc_dct(verilog)); safe FSM implementation is not required.
+   001101 -> 1011
+   001110 -> 1100
+   001111 -> 1101
+   010000 -> 1110
+   010001 -> 1111
+@N: MO225 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":71:2:71:7|There are no possible illegal states for state machine c_state[15:0] (in view: work.jpeg_enc_dct(verilog)); safe FSM implementation is not required.
 Encoding state machine c_state[63:0] (in view: work.jpeg_enc(verilog))
 original code -> new code
    00000000 -> 000000
@@ -652,7 +660,7 @@ original code -> new code
    00111101 -> 111101
    00111110 -> 111110
    00111111 -> 111111
-@N: MO225 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":303:2:303:7|There are no possible illegal states for state machine c_state[63:0] (in view: work.jpeg_enc(verilog)); safe FSM implementation is not required.
+@N: MO225 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":311:2:311:7|There are no possible illegal states for state machine c_state[63:0] (in view: work.jpeg_enc(verilog)); safe FSM implementation is not required.
 Encoding state machine c_state[11:0] (in view: work.jpeg_data_to_spi(verilog))
 original code -> new code
    0000 -> 0000
@@ -668,24 +676,31 @@ original code -> new code
    1010 -> 1010
    1011 -> 1011
 
-Finished constraint checker preprocessing (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 139MB)
+Finished constraint checker preprocessing (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 140MB)
 
+@N: BN362 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\sc_fifo_32.v":117:2:117:7|Removing sequential instance data_out[25] (in view: work.sc_fifo_32(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\sc_fifo_32.v":117:2:117:7|Removing sequential instance data_out[26] (in view: work.sc_fifo_32(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\sc_fifo_32.v":117:2:117:7|Removing sequential instance data_out[27] (in view: work.sc_fifo_32(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\sc_fifo_32.v":117:2:117:7|Removing sequential instance data_out[28] (in view: work.sc_fifo_32(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\sc_fifo_32.v":117:2:117:7|Removing sequential instance data_out[29] (in view: work.sc_fifo_32(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\sc_fifo_32.v":117:2:117:7|Removing sequential instance data_out[30] (in view: work.sc_fifo_32(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\sc_fifo_32.v":117:2:117:7|Removing sequential instance data_out[31] (in view: work.sc_fifo_32(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
 None
 None
 
-Finished constraint checker (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+Finished constraint checker (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 142MB)
 
 Pre-mapping successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:00s; Memory used current: 55MB peak: 141MB)
+At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 55MB peak: 142MB)
 
-Process took 0h:00m:02s realtime, 0h:00m:01s cputime
-# Mon Apr 30 14:33:09 2018
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Fri Jun  8 11:33:22 2018
 
 ###########################################################]
 Map & Optimize Report
 
-# Mon Apr 30 14:33:10 2018
+# Fri Jun  8 11:33:22 2018
 
 Synopsys Lattice Technology Mapper, Version maplat, Build 1868R, Built Nov 13 2017 02:40:05
 Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
@@ -709,13 +724,13 @@ Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h
 
 
 
-Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 134MB peak: 136MB)
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 135MB peak: 137MB)
 
 
 Available hyper_sources - for debug and ip models
 	None Found
 
-@W: BN132 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":192:2:192:7|Removing sequential instance yty.img_row_rep[7:0] because it is equivalent to instance yty.img_row[7:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":237:2:237:7|Removing sequential instance yty.img_row_rep[7:0] because it is equivalent to instance yty.img_row[7:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: BN132 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\jpeg_data_writer.v":88:2:88:7|Removing sequential instance jedw.row_idx_rep[7:0] because it is equivalent to instance jedw.row_idx[7:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: BN132 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\jpeg_data_to_spi.v":227:2:227:7|Removing sequential instance jdts.row_idx_rep[7:0] because it is equivalent to instance jdts.row_idx[7:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @N: MT206 |Auto Constrain mode is enabled
@@ -725,14 +740,25 @@ Available hyper_sources - for debug and ip models
 @N: MO106 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":175:31:175:57|Found ROM .delname. (in view: work.jpeg_enc_mem(verilog)) with 32 words by 11 bits.
 @W: FA239 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":167:31:167:57|ROM dcht_bc_rom_data_2[4:1] (in view: work.jpeg_enc_mem(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
 @N: MO106 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":167:31:167:57|Found ROM .delname. (in view: work.jpeg_enc_mem(verilog)) with 32 words by 4 bits.
-@N: MF236 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1011:92:1011:104|Generating a type sdiv divider 
+@N: MF236 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1043:62:1043:74|Generating a type sdiv divider 
 @W: FX1039 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\ov7670_registers.v":43:4:43:9|User-specified initial value defined for instance u_OV7670_Controller.LUT.address[7:0] is being ignored. 
-@W: FX1039 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\i2c_interface.v":51:4:51:9|User-specified initial value defined for instance u_OV7670_Controller.I2C.data_sr[31:1] is being ignored. 
-@W: FX1039 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\i2c_interface.v":51:4:51:9|User-specified initial value defined for instance u_OV7670_Controller.I2C.divider[7:0] is being ignored. 
 @W: FX1039 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\i2c_interface.v":51:4:51:9|User-specified initial value defined for instance u_OV7670_Controller.I2C.busy_sr[31:0] is being ignored. 
+@W: FX1039 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\i2c_interface.v":51:4:51:9|User-specified initial value defined for instance u_OV7670_Controller.I2C.divider[7:0] is being ignored. 
+@W: FX1039 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\i2c_interface.v":51:4:51:9|User-specified initial value defined for instance u_OV7670_Controller.I2C.data_sr[31:1] is being ignored. 
 
-Finished RTL optimizations (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 143MB peak: 145MB)
+Finished RTL optimizations (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 143MB peak: 145MB)
 
+@N: BN362 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\sc_fifo_32.v":117:2:117:7|Removing sequential instance jed_fifo.data_out[25] (in view: work.top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\sc_fifo_32.v":117:2:117:7|Removing sequential instance jed_fifo.data_out[26] (in view: work.top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\sc_fifo_32.v":117:2:117:7|Removing sequential instance jed_fifo.data_out[27] (in view: work.top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\sc_fifo_32.v":117:2:117:7|Removing sequential instance jed_fifo.data_out[28] (in view: work.top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\sc_fifo_32.v":117:2:117:7|Removing sequential instance jed_fifo.data_out[29] (in view: work.top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\sc_fifo_32.v":117:2:117:7|Removing sequential instance jed_fifo.data_out[30] (in view: work.top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\sc_fifo_32.v":117:2:117:7|Removing sequential instance jed_fifo.data_out[31] (in view: work.top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@W: FX107 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\sc_fifo_32.v":107:2:107:7|RAM jed_fifo.fifo[24:0] (in view: work.top(verilog)) does not have a read/write conflict check. Possible simulation mismatch. To resolve a read/write conflict, either set syn_ramstyle = rw_check, or enable the "Read Write Check on RAM" Implementation Option. For more information, search for "read/write conflict check" in Online Help.
+@N: MO230 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\sc_fifo_32.v":59:0:59:5|Found up-down counter in view:work.top(verilog) instance jed_fifo.cnt[7:0]  
+@N: MO231 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\sc_fifo_32.v":87:0:87:5|Found counter in view:work.top(verilog) instance jed_fifo.write_pointer[6:0] 
+@N: MO231 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\sc_fifo_32.v":75:0:75:5|Found counter in view:work.top(verilog) instance jed_fifo.read_pointer[6:0] 
 Encoding state machine c_state[14:0] (in view: work.yuyv_to_yuv(verilog))
 original code -> new code
    0000 -> 0000
@@ -751,8 +777,8 @@ original code -> new code
    1101 -> 1101
    1110 -> 1110
 @W: FX107 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\sc_fifo.v":107:2:107:7|RAM yuv_fifo.fifo[7:0] (in view: work.yuyv_to_yuv(verilog)) does not have a read/write conflict check. Possible simulation mismatch. To resolve a read/write conflict, either set syn_ramstyle = rw_check, or enable the "Read Write Check on RAM" Implementation Option. For more information, search for "read/write conflict check" in Online Help.
-@N: MO231 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":192:2:192:7|Found counter in view:work.yuyv_to_yuv(verilog) instance img_row[7:0] 
-@N: MO231 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":192:2:192:7|Found counter in view:work.yuyv_to_yuv(verilog) instance img_col[8:0] 
+@N: MO231 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":237:2:237:7|Found counter in view:work.yuyv_to_yuv(verilog) instance img_row[7:0] 
+@N: MO231 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\yuyv_to_yuv.v":237:2:237:7|Found counter in view:work.yuyv_to_yuv(verilog) instance img_col[8:0] 
 @N: MO231 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\sc_fifo.v":87:0:87:5|Found counter in view:work.yuyv_to_yuv(verilog) instance yuv_fifo.write_pointer[8:0] 
 @N: MO230 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\sc_fifo.v":59:0:59:5|Found up-down counter in view:work.yuyv_to_yuv(verilog) instance yuv_fifo.cnt[9:0]  
 @N: MO231 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\sc_fifo.v":75:0:75:5|Found counter in view:work.yuyv_to_yuv(verilog) instance yuv_fifo.read_pointer[8:0] 
@@ -822,14 +848,14 @@ original code -> new code
    00111101 -> 111101
    00111110 -> 111110
    00111111 -> 111111
-@N: MO225 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":303:2:303:7|There are no possible illegal states for state machine c_state[63:0] (in view: work.jpeg_enc(verilog)); safe FSM implementation is not required.
-@N: MO231 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1436:2:1436:7|Found counter in view:work.jpeg_enc(verilog) instance ac0_idx[6:0] 
-@N: MO231 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":536:2:536:7|Found counter in view:work.jpeg_enc(verilog) instance img_row[9:0] 
-@N: MO231 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1436:2:1436:7|Found counter in view:work.jpeg_enc(verilog) instance ac0_cnt[5:0] 
-@N: MO231 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":536:2:536:7|Found counter in view:work.jpeg_enc(verilog) instance img_col[10:0] 
-@N: MO231 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1405:2:1405:7|Found counter in view:work.jpeg_enc(verilog) instance end0pos[5:0] 
-@N: MO231 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":985:2:985:7|Found counter in view:work.jpeg_enc(verilog) instance qz_cnt[5:0] 
-@W: BN132 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1262:2:1262:7|Removing instance je.cb_bit_cnt[3] because it is equivalent to instance je.cb_bb_mask[7]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@N: MO225 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":311:2:311:7|There are no possible illegal states for state machine c_state[63:0] (in view: work.jpeg_enc(verilog)); safe FSM implementation is not required.
+@N: MO231 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1465:2:1465:7|Found counter in view:work.jpeg_enc(verilog) instance ac0_idx[6:0] 
+@N: MO231 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":549:2:549:7|Found counter in view:work.jpeg_enc(verilog) instance img_row[9:0] 
+@N: MO231 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1465:2:1465:7|Found counter in view:work.jpeg_enc(verilog) instance ac0_cnt[5:0] 
+@N: MO231 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":549:2:549:7|Found counter in view:work.jpeg_enc(verilog) instance img_col[10:0] 
+@N: MO231 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1434:2:1434:7|Found counter in view:work.jpeg_enc(verilog) instance end0pos[5:0] 
+@N: MO231 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":998:2:998:7|Found counter in view:work.jpeg_enc(verilog) instance qz_cnt[5:0] 
+@W: BN132 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc.v":1291:2:1291:7|Removing instance je.cb_bit_cnt[3] because it is equivalent to instance je.cb_bb_mask[7]. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: FX107 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":194:2:194:7|RAM dctdu_ram[17:0] (in view: work.jpeg_enc_mem(verilog)) does not have a read/write conflict check. Possible simulation mismatch. To resolve a read/write conflict, either set syn_ramstyle = rw_check, or enable the "Read Write Check on RAM" Implementation Option. For more information, search for "read/write conflict check" in Online Help.
 @W: FX107 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":140:2:140:7|RAM zzdu_ram[14:0] (in view: work.jpeg_enc_mem(verilog)) does not have a read/write conflict check. Possible simulation mismatch. To resolve a read/write conflict, either set syn_ramstyle = rw_check, or enable the "Read Write Check on RAM" Implementation Option. For more information, search for "read/write conflict check" in Online Help.
 @W: FX107 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":118:2:118:7|RAM du_ram[7:0] (in view: work.jpeg_enc_mem(verilog)) does not have a read/write conflict check. Possible simulation mismatch. To resolve a read/write conflict, either set syn_ramstyle = rw_check, or enable the "Read Write Check on RAM" Implementation Option. For more information, search for "read/write conflict check" in Online Help.
@@ -849,14 +875,14 @@ original code -> new code
    001000 -> 1000
    001001 -> 1001
    001010 -> 1010
-   001011 -> 1011
-   001100 -> 1100
-   001101 -> 1101
-   001110 -> 1110
-   001111 -> 1111
-@N: MO225 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":66:2:66:7|There are no possible illegal states for state machine c_state[15:0] (in view: work.jpeg_enc_dct(verilog)); safe FSM implementation is not required.
-@N: MO231 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":321:2:321:7|Found counter in view:work.jpeg_enc_dct(verilog) instance dctdu_w_idx[5:0] 
-@N: MO231 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":117:2:117:7|Found counter in view:work.jpeg_enc_dct(verilog) instance du_idx[5:0] 
+   001101 -> 1011
+   001110 -> 1100
+   001111 -> 1101
+   010000 -> 1110
+   010001 -> 1111
+@N: MO225 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":71:2:71:7|There are no possible illegal states for state machine c_state[15:0] (in view: work.jpeg_enc_dct(verilog)); safe FSM implementation is not required.
+@N: MO231 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":369:2:369:7|Found counter in view:work.jpeg_enc_dct(verilog) instance dctdu_w_idx[5:0] 
+@N: MO231 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":128:2:128:7|Found counter in view:work.jpeg_enc_dct(verilog) instance du_idx[5:0] 
 @N: MO231 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\jpeg_data_writer.v":88:2:88:7|Found counter in view:work.jpeg_data_writer(verilog) instance row_idx[7:0] 
 @N: MO231 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\jpeg_data_writer.v":88:2:88:7|Found counter in view:work.jpeg_data_writer(verilog) instance col_idx[8:0] 
 Encoding state machine c_state[11:0] (in view: work.jpeg_data_to_spi(verilog))
@@ -876,34 +902,32 @@ original code -> new code
 @N: MO231 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\jpeg_data_to_spi.v":227:2:227:7|Found counter in view:work.jpeg_data_to_spi(verilog) instance row_idx[7:0] 
 @N: MO231 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\jpeg_data_to_spi.v":227:2:227:7|Found counter in view:work.jpeg_data_to_spi(verilog) instance col_idx[8:0] 
 @N: MO231 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\jpeg_data_to_spi.v":142:2:142:7|Found counter in view:work.jpeg_data_to_spi(verilog) instance hd_addr_reg[9:0] 
+@N: MO231 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\spi_slave.v":172:2:172:7|Found counter in view:work.spi_slave(verilog) instance rd_addr_reg[16:0] 
 @N: MO231 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\ov7670_registers.v":43:4:43:9|Found counter in view:work.OV7670_Registers(verilog) instance address[7:0] 
 
-Starting factoring (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:03s; Memory used current: 151MB peak: 154MB)
+Starting factoring (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 150MB peak: 153MB)
 
 @W: BN132 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":162:2:162:7|Removing instance je.ram_rom.dcht_bc_rom_data[3] because it is equivalent to instance je.ram_rom.dcht_bb_rom_data[7]. To keep the instance, apply constraint syn_preserve=1 on the instance.
 
-Finished factoring (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:05s; Memory used current: 167MB peak: 172MB)
-
-@W: BN132 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":266:2:266:7|Removing sequential instance je.dct.tmp22_rep[17:15] because it is equivalent to instance je.dct.tmp22[17:15]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":200:2:200:7|Removing sequential instance je.dct.tmp5_rep[17:15] because it is equivalent to instance je.dct.tmp5[17:15]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":200:2:200:7|Removing sequential instance je.dct.tmp1_rep[17:15] because it is equivalent to instance je.dct.tmp1[17:15]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-
-Starting gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:05s; Memory used current: 160MB peak: 172MB)
+Finished factoring (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:07s; Memory used current: 178MB peak: 188MB)
 
 
-Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:05s; Memory used current: 160MB peak: 172MB)
+Starting gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:08s; CPU Time elapsed 0h:00m:07s; Memory used current: 166MB peak: 188MB)
 
 
-Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:06s; Memory used current: 159MB peak: 172MB)
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:08s; CPU Time elapsed 0h:00m:07s; Memory used current: 166MB peak: 188MB)
 
 
-Starting Early Timing Optimization (Real Time elapsed 0h:00m:10s; CPU Time elapsed 0h:00m:08s; Memory used current: 160MB peak: 172MB)
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:08s; CPU Time elapsed 0h:00m:08s; Memory used current: 160MB peak: 188MB)
 
 
-Finished Early Timing Optimization (Real Time elapsed 0h:00m:13s; CPU Time elapsed 0h:00m:12s; Memory used current: 161MB peak: 172MB)
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:10s; Memory used current: 162MB peak: 188MB)
 
 
-Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:14s; CPU Time elapsed 0h:00m:12s; Memory used current: 159MB peak: 172MB)
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:14s; CPU Time elapsed 0h:00m:13s; Memory used current: 162MB peak: 188MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:14s; CPU Time elapsed 0h:00m:13s; Memory used current: 161MB peak: 188MB)
 
 @N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":115:30:115:54|Initial value je.ram_rom.header_rom_data_2_0_0.INIT_00 = 6003244406620625060320642152704143365230246424420424153110645173.
 @N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":115:30:115:54|Initial value je.ram_rom.header_rom_data_2_0_0.INIT_01 = 2471241624100277027042524215402225642442341517330264024242416024.
@@ -938,54 +962,54 @@ Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:14s; CP
 @N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":115:30:115:54|Initial value je.ram_rom.header_rom_data_2_0_1.INIT_0E = 0210020003100301020102000300003300320023002200230022002000200020.
 @N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":115:30:115:54|Initial value je.ram_rom.header_rom_data_2_0_1.INIT_0F = 0230133113210321022113201231030202120202121212031202021302030311.
 @N: FX211 |Packed ROM je.ram_rom.header_rom_data_2_0[7:0] (10 input, 8 output) to Block SelectRAM 
-@N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":191:31:191:57|Initial value je.ram_rom.acht_bb_rom_data_2_0_0.INIT_00 = 000000000000000000006A507244E0C90095003E24332831901A480D040C2024.
-@N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":191:31:191:57|Initial value je.ram_rom.acht_bb_rom_data_2_0_0.INIT_01 = 000000000000000000001700BB00A7008B00C650F0CFE4C3586A2C3694300000.
-@N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":191:31:191:57|Initial value je.ram_rom.acht_bb_rom_data_2_0_0.INIT_02 = 00000000000000000000A300DF00D3006F0063001A55D0F0FCCC5CC090330000.
-@N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":191:31:191:57|Initial value je.ram_rom.acht_bb_rom_data_2_0_0.INIT_03 = 00000000000000000000DB00C7006B0037001B000700FE5088E4A8C234390000.
-@N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":191:31:191:57|Initial value je.ram_rom.acht_bb_rom_data_2_0_0.INIT_04 = 00000000000000000000DB00C7006B0037001B000700AB00F70050C9383C0000.
-@N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":191:31:191:57|Initial value je.ram_rom.acht_bb_rom_data_2_0_0.INIT_05 = 00000000000000000000DB00C7006B0037001B000700AB00F700ACCE343E0000.
-@N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":191:31:191:57|Initial value je.ram_rom.acht_bb_rom_data_2_0_0.INIT_06 = 00000000000000000000DB00C7006B0037001B000700AB00F700F4E52C3F0000.
-@N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":191:31:191:57|Initial value je.ram_rom.acht_bb_rom_data_2_0_0.INIT_07 = 00000000000000000000DB00C7006B0037001B000700AB00F700A8E530950000.
-@N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":191:31:191:57|Initial value je.ram_rom.acht_bb_rom_data_2_0_0.INIT_08 = 00000000000000000000DF00D3006F0063001F001300AF00A30055AA04C20000.
-@N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":191:31:191:57|Initial value je.ram_rom.acht_bb_rom_data_2_0_0.INIT_09 = 00000000000000000000A300DF00D3006F0063001F001300AF00A3005CC30000.
-@N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":191:31:191:57|Initial value je.ram_rom.acht_bb_rom_data_2_0_0.INIT_0A = 00000000000000000000AF00A300DF00D3006F0063001F001300AF0020C30000.
-@N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":191:31:191:57|Initial value je.ram_rom.acht_bb_rom_data_2_0_0.INIT_0B = 000000000000000000001300AF00A300DF00D3006F0063001F0013000CC90000.
-@N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":191:31:191:57|Initial value je.ram_rom.acht_bb_rom_data_2_0_0.INIT_0C = 000000000000000000001F001300AF00A300DF00D3006F0063001F0030C90000.
-@N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":191:31:191:57|Initial value je.ram_rom.acht_bb_rom_data_2_0_0.INIT_0D = 0000000000000000000063001F001300AF00A300DF00D3006F00630004CF0000.
-@N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":191:31:191:57|Initial value je.ram_rom.acht_bb_rom_data_2_0_0.INIT_0E = 00000000000000000000C7006B0037001B000700AB00F700DB00C7002A540000.
-@N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":191:31:191:57|Initial value je.ram_rom.acht_bb_rom_data_2_0_0.INIT_0F = 00000000000000000000F300CF00C3003F0033000F000300FF00F3009E5518CE.
-@N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":191:31:191:57|Initial value je.ram_rom.acht_bb_rom_data_2_0_1.INIT_00 = 00000000000000000000FF54BF542FFC02FF00BF000F00070001000000000002.
-@N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":191:31:191:57|Initial value je.ram_rom.acht_bb_rom_data_2_0_1.INIT_01 = 00000000000000000000FF03FF01FF01FF01FF54FFFC0FFC01FE001F00030000.
-@N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":191:31:191:57|Initial value je.ram_rom.acht_bb_rom_data_2_0_1.INIT_02 = 00000000000000000000FF06FF03FF03FF03FF03FF42FFFC3FFC03FE000F0000.
-@N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":191:31:191:57|Initial value je.ram_rom.acht_bb_rom_data_2_0_1.INIT_03 = 00000000000000000000FF0CFF0CFF0CFF0CFF0CFF0CFF56BFFD0BFD002F0000.
-@N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":191:31:191:57|Initial value je.ram_rom.acht_bb_rom_data_2_0_1.INIT_04 = 00000000000000000000FF0FFF0FFF0FFF0FFF0FFF0FFF0DFF0C2FFE003F0000.
-@N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":191:31:191:57|Initial value je.ram_rom.acht_bb_rom_data_2_0_1.INIT_05 = 00000000000000000000FF30FF30FF30FF30FF30FF30FF1AFF0FBFFD00BF0000.
-@N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":191:31:191:57|Initial value je.ram_rom.acht_bb_rom_data_2_0_1.INIT_06 = 00000000000000000000FF33FF33FF33FF33FF33FF33FF31FF30FFFC00FF0000.
-@N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":191:31:191:57|Initial value je.ram_rom.acht_bb_rom_data_2_0_1.INIT_07 = 00000000000000000000FF3CFF3CFF3CFF3CFF3CFF3CFF36FF33FFFD02FF0000.
-@N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":191:31:191:57|Initial value je.ram_rom.acht_bb_rom_data_2_0_1.INIT_08 = 00000000000000000000FF3FFF3FFF3FFF3FFF3FFF3FFF3DFF3DFF940BFF0000.
-@N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":191:31:191:57|Initial value je.ram_rom.acht_bb_rom_data_2_0_1.INIT_09 = 00000000000000000000FFC1FFC0FFC0FFC0FFC0FFC0FFC0FF6AFF6A0FFE0000.
-@N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":191:31:191:57|Initial value je.ram_rom.acht_bb_rom_data_2_0_1.INIT_0A = 00000000000000000000FFC6FFC6FFC3FFC3FFC3FFC3FFC3FFC3FFC10FFF0000.
-@N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":191:31:191:57|Initial value je.ram_rom.acht_bb_rom_data_2_0_1.INIT_0B = 00000000000000000000FFCFFFCDFFCDFFCCFFCCFFCCFFCCFFCCFFCC2FFF0000.
-@N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":191:31:191:57|Initial value je.ram_rom.acht_bb_rom_data_2_0_1.INIT_0C = 00000000000000000000FFF0FFF0FFDAFFDAFFCFFFCFFFCFFFCFFFCF2FFF0000.
-@N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":191:31:191:57|Initial value je.ram_rom.acht_bb_rom_data_2_0_1.INIT_0D = 00000000000000000000FFF3FFF3FFF3FFF1FFF1FFF0FFF0FFF0FFF0FFFF0000.
-@N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":191:31:191:57|Initial value je.ram_rom.acht_bb_rom_data_2_0_1.INIT_0E = 00000000000000000000FFFCFFFCFFFCFFFCFFFCFFF6FFF3FFF3FFF3FFF20000.
-@N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":191:31:191:57|Initial value je.ram_rom.acht_bb_rom_data_2_0_1.INIT_0F = 00000000000000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFCFFFCFFE8BFFF.
-@N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":191:31:191:57|Initial value je.ram_rom.acht_bb_rom_data_2_0_2.INIT_00 = 0000000000000000000002AB02AA000000000000000000000000000000000000.
-@N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":191:31:191:57|Initial value je.ram_rom.acht_bb_rom_data_2_0_2.INIT_01 = 0000000000000000000003FF03FF03FF03FF02AB000000000000000000000000.
-@N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":191:31:191:57|Initial value je.ram_rom.acht_bb_rom_data_2_0_2.INIT_02 = 0000000000000000000003FF03FF03FF03FF03FF02FF00030000000000000000.
-@N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":191:31:191:57|Initial value je.ram_rom.acht_bb_rom_data_2_0_2.INIT_03 = 0000000000000000000003FF03FF03FF03FF03FF03FF02AB0002000000000000.
-@N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":191:31:191:57|Initial value je.ram_rom.acht_bb_rom_data_2_0_2.INIT_04 = 0000000000000000000003FF03FF03FF03FF03FF03FF03FF03FF000000000000.
-@N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":191:31:191:57|Initial value je.ram_rom.acht_bb_rom_data_2_0_2.INIT_05 = 0000000000000000000003FF03FF03FF03FF03FF03FF03FF03FF000000000000.
-@N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":191:31:191:57|Initial value je.ram_rom.acht_bb_rom_data_2_0_2.INIT_06 = 0000000000000000000003FF03FF03FF03FF03FF03FF03FF03FF000200000000.
-@N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":191:31:191:57|Initial value je.ram_rom.acht_bb_rom_data_2_0_2.INIT_07 = 0000000000000000000003FF03FF03FF03FF03FF03FF03FF03FF000200000000.
-@N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":191:31:191:57|Initial value je.ram_rom.acht_bb_rom_data_2_0_2.INIT_08 = 0000000000000000000003FF03FF03FF03FF03FF03FF03FF03FF01FF00000000.
-@N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":191:31:191:57|Initial value je.ram_rom.acht_bb_rom_data_2_0_2.INIT_09 = 0000000000000000000003FF03FF03FF03FF03FF03FF03FF03FF03FF00000000.
-@N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":191:31:191:57|Initial value je.ram_rom.acht_bb_rom_data_2_0_2.INIT_0A = 0000000000000000000003FF03FF03FF03FF03FF03FF03FF03FF03FF00000000.
-@N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":191:31:191:57|Initial value je.ram_rom.acht_bb_rom_data_2_0_2.INIT_0B = 0000000000000000000003FF03FF03FF03FF03FF03FF03FF03FF03FF00000000.
-@N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":191:31:191:57|Initial value je.ram_rom.acht_bb_rom_data_2_0_2.INIT_0C = 0000000000000000000003FF03FF03FF03FF03FF03FF03FF03FF03FF00000000.
-@N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":191:31:191:57|Initial value je.ram_rom.acht_bb_rom_data_2_0_2.INIT_0D = 0000000000000000000003FF03FF03FF03FF03FF03FF03FF03FF03FF00000000.
-@N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":191:31:191:57|Initial value je.ram_rom.acht_bb_rom_data_2_0_2.INIT_0E = 0000000000000000000003FF03FF03FF03FF03FF03FF03FF03FF03FF02BF0000.
-@N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":191:31:191:57|Initial value je.ram_rom.acht_bb_rom_data_2_0_2.INIT_0F = 0000000000000000000003FF03FF03FF03FF03FF03FF03FF03FF03FF02FF0000.
+@N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":191:31:191:57|Initial value je.ram_rom.acht_bb_rom_data_2_0_0.INIT_00 = 3C003C003C003C003C0056504E44DCC93C953C3E18331431AC1A740D380C1C24.
+@N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":191:31:191:57|Initial value je.ram_rom.acht_bb_rom_data_2_0_0.INIT_01 = 3C003C003C003C003C002B0087009B00B700FA50CCCFD8C3646A1036A8303C00.
+@N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":191:31:191:57|Initial value je.ram_rom.acht_bb_rom_data_2_0_0.INIT_02 = 3C003C003C003C003C009F00E300EF0053005F002655ECF0C0CC60C0AC333C00.
+@N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":191:31:191:57|Initial value je.ram_rom.acht_bb_rom_data_2_0_0.INIT_03 = 3C003C003C003C003C00E700FB0057000B0027003B00C250B4E494C208393C00.
+@N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":191:31:191:57|Initial value je.ram_rom.acht_bb_rom_data_2_0_0.INIT_04 = 3C003C003C003C003C00E700FB0057000B0027003B009700CB006CC9043C3C00.
+@N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":191:31:191:57|Initial value je.ram_rom.acht_bb_rom_data_2_0_0.INIT_05 = 3C003C003C003C003C00E700FB0057000B0027003B009700CB0090CE083E3C00.
+@N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":191:31:191:57|Initial value je.ram_rom.acht_bb_rom_data_2_0_0.INIT_06 = 3C003C003C003C003C00E700FB0057000B0027003B009700CB00C8E5103F3C00.
+@N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":191:31:191:57|Initial value je.ram_rom.acht_bb_rom_data_2_0_0.INIT_07 = 3C003C003C003C003C00E700FB0057000B0027003B009700CB0094E50C953C00.
+@N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":191:31:191:57|Initial value je.ram_rom.acht_bb_rom_data_2_0_0.INIT_08 = 3C003C003C003C003C00E300EF0053005F0023002F0093009F0069AA38C23C00.
+@N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":191:31:191:57|Initial value je.ram_rom.acht_bb_rom_data_2_0_0.INIT_09 = 3C003C003C003C003C009F00E300EF0053005F0023002F0093009F0060C33C00.
+@N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":191:31:191:57|Initial value je.ram_rom.acht_bb_rom_data_2_0_0.INIT_0A = 3C003C003C003C003C0093009F00E300EF0053005F0023002F0093001CC33C00.
+@N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":191:31:191:57|Initial value je.ram_rom.acht_bb_rom_data_2_0_0.INIT_0B = 3C003C003C003C003C002F0093009F00E300EF0053005F0023002F0030C93C00.
+@N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":191:31:191:57|Initial value je.ram_rom.acht_bb_rom_data_2_0_0.INIT_0C = 3C003C003C003C003C0023002F0093009F00E300EF0053005F0023000CC93C00.
+@N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":191:31:191:57|Initial value je.ram_rom.acht_bb_rom_data_2_0_0.INIT_0D = 3C003C003C003C003C005F0023002F0093009F00E300EF0053005F0038CF3C00.
+@N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":191:31:191:57|Initial value je.ram_rom.acht_bb_rom_data_2_0_0.INIT_0E = 3C003C003C003C003C00FB0057000B0027003B009700CB00E700FB0016543C00.
+@N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":191:31:191:57|Initial value je.ram_rom.acht_bb_rom_data_2_0_0.INIT_0F = 3C003C003C003C003C00CF00F300FF0003000F0033003F00C300CF00A25524CE.
+@N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":191:31:191:57|Initial value je.ram_rom.acht_bb_rom_data_2_0_1.INIT_00 = 000F000F000F000F000FFF5BBF5B2FF302F000B000000008000E000F000F000D.
+@N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":191:31:191:57|Initial value je.ram_rom.acht_bb_rom_data_2_0_1.INIT_01 = 000F000F000F000F000FFF0CFF0EFF0EFF0EFF5BFFF30FF301F10010000C000F.
+@N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":191:31:191:57|Initial value je.ram_rom.acht_bb_rom_data_2_0_1.INIT_02 = 000F000F000F000F000FFF09FF0CFF0CFF0CFF0CFF4DFFF33FF303F10000000F.
+@N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":191:31:191:57|Initial value je.ram_rom.acht_bb_rom_data_2_0_1.INIT_03 = 000F000F000F000F000FFF03FF03FF03FF03FF03FF03FF59BFF20BF20020000F.
+@N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":191:31:191:57|Initial value je.ram_rom.acht_bb_rom_data_2_0_1.INIT_04 = 000F000F000F000F000FFF00FF00FF00FF00FF00FF00FF02FF032FF10030000F.
+@N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":191:31:191:57|Initial value je.ram_rom.acht_bb_rom_data_2_0_1.INIT_05 = 000F000F000F000F000FFF3FFF3FFF3FFF3FFF3FFF3FFF15FF00BFF200B0000F.
+@N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":191:31:191:57|Initial value je.ram_rom.acht_bb_rom_data_2_0_1.INIT_06 = 000F000F000F000F000FFF3CFF3CFF3CFF3CFF3CFF3CFF3EFF3FFFF300F0000F.
+@N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":191:31:191:57|Initial value je.ram_rom.acht_bb_rom_data_2_0_1.INIT_07 = 000F000F000F000F000FFF33FF33FF33FF33FF33FF33FF39FF3CFFF202F0000F.
+@N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":191:31:191:57|Initial value je.ram_rom.acht_bb_rom_data_2_0_1.INIT_08 = 000F000F000F000F000FFF30FF30FF30FF30FF30FF30FF32FF32FF9B0BF0000F.
+@N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":191:31:191:57|Initial value je.ram_rom.acht_bb_rom_data_2_0_1.INIT_09 = 000F000F000F000F000FFFCEFFCFFFCFFFCFFFCFFFCFFFCFFF65FF650FF1000F.
+@N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":191:31:191:57|Initial value je.ram_rom.acht_bb_rom_data_2_0_1.INIT_0A = 000F000F000F000F000FFFC9FFC9FFCCFFCCFFCCFFCCFFCCFFCCFFCE0FF0000F.
+@N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":191:31:191:57|Initial value je.ram_rom.acht_bb_rom_data_2_0_1.INIT_0B = 000F000F000F000F000FFFC0FFC2FFC2FFC3FFC3FFC3FFC3FFC3FFC32FF0000F.
+@N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":191:31:191:57|Initial value je.ram_rom.acht_bb_rom_data_2_0_1.INIT_0C = 000F000F000F000F000FFFFFFFFFFFD5FFD5FFC0FFC0FFC0FFC0FFC02FF0000F.
+@N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":191:31:191:57|Initial value je.ram_rom.acht_bb_rom_data_2_0_1.INIT_0D = 000F000F000F000F000FFFFCFFFCFFFCFFFEFFFEFFFFFFFFFFFFFFFFFFF0000F.
+@N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":191:31:191:57|Initial value je.ram_rom.acht_bb_rom_data_2_0_1.INIT_0E = 000F000F000F000F000FFFF3FFF3FFF3FFF3FFF3FFF9FFFCFFFCFFFCFFFD000F.
+@N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":191:31:191:57|Initial value je.ram_rom.acht_bb_rom_data_2_0_1.INIT_0F = 000F000F000F000F000FFFF0FFF0FFF0FFF0FFF0FFF0FFF0FFF3FFF3FFE7BFF0.
+@N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":191:31:191:57|Initial value je.ram_rom.acht_bb_rom_data_2_0_2.INIT_00 = 000F000F000F000F000F02A402A5000F000F000F000F000F000F000F000F000F.
+@N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":191:31:191:57|Initial value je.ram_rom.acht_bb_rom_data_2_0_2.INIT_01 = 000F000F000F000F000F03F003F003F003F002A4000F000F000F000F000F000F.
+@N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":191:31:191:57|Initial value je.ram_rom.acht_bb_rom_data_2_0_2.INIT_02 = 000F000F000F000F000F03F003F003F003F003F002F0000C000F000F000F000F.
+@N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":191:31:191:57|Initial value je.ram_rom.acht_bb_rom_data_2_0_2.INIT_03 = 000F000F000F000F000F03F003F003F003F003F003F002A4000D000F000F000F.
+@N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":191:31:191:57|Initial value je.ram_rom.acht_bb_rom_data_2_0_2.INIT_04 = 000F000F000F000F000F03F003F003F003F003F003F003F003F0000F000F000F.
+@N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":191:31:191:57|Initial value je.ram_rom.acht_bb_rom_data_2_0_2.INIT_05 = 000F000F000F000F000F03F003F003F003F003F003F003F003F0000F000F000F.
+@N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":191:31:191:57|Initial value je.ram_rom.acht_bb_rom_data_2_0_2.INIT_06 = 000F000F000F000F000F03F003F003F003F003F003F003F003F0000D000F000F.
+@N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":191:31:191:57|Initial value je.ram_rom.acht_bb_rom_data_2_0_2.INIT_07 = 000F000F000F000F000F03F003F003F003F003F003F003F003F0000D000F000F.
+@N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":191:31:191:57|Initial value je.ram_rom.acht_bb_rom_data_2_0_2.INIT_08 = 000F000F000F000F000F03F003F003F003F003F003F003F003F001F0000F000F.
+@N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":191:31:191:57|Initial value je.ram_rom.acht_bb_rom_data_2_0_2.INIT_09 = 000F000F000F000F000F03F003F003F003F003F003F003F003F003F0000F000F.
+@N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":191:31:191:57|Initial value je.ram_rom.acht_bb_rom_data_2_0_2.INIT_0A = 000F000F000F000F000F03F003F003F003F003F003F003F003F003F0000F000F.
+@N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":191:31:191:57|Initial value je.ram_rom.acht_bb_rom_data_2_0_2.INIT_0B = 000F000F000F000F000F03F003F003F003F003F003F003F003F003F0000F000F.
+@N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":191:31:191:57|Initial value je.ram_rom.acht_bb_rom_data_2_0_2.INIT_0C = 000F000F000F000F000F03F003F003F003F003F003F003F003F003F0000F000F.
+@N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":191:31:191:57|Initial value je.ram_rom.acht_bb_rom_data_2_0_2.INIT_0D = 000F000F000F000F000F03F003F003F003F003F003F003F003F003F0000F000F.
+@N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":191:31:191:57|Initial value je.ram_rom.acht_bb_rom_data_2_0_2.INIT_0E = 000F000F000F000F000F03F003F003F003F003F003F003F003F003F002B0000F.
+@N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":191:31:191:57|Initial value je.ram_rom.acht_bb_rom_data_2_0_2.INIT_0F = 000F000F000F000F000F03F003F003F003F003F003F003F003F003F002F0000F.
 @N: FX211 |Packed ROM je.ram_rom.acht_bb_rom_data_2_0[20:0] (9 input, 21 output) to Block SelectRAM 
 @N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":159:29:159:51|Initial value je.ram_rom.zzidx_rom_data_2_0_0.INIT_00 = 002A001D001A0010000D000700040002001C001B000F000E0006000500010000.
 @N: FX276 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":159:29:159:51|Initial value je.ram_rom.zzidx_rom_data_2_0_0.INIT_01 = 0035002C0028001F00180012000B0009002B0029001E00190011000C00080003.
@@ -994,6 +1018,9 @@ Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:14s; CP
 @N: FX211 |Packed ROM je.ram_rom.zzidx_rom_data_2_0[5:0] (6 input, 6 output) to Block SelectRAM 
 @N: MO106 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_mem.v":137:29:137:51|Found ROM .delname. (in view: work.top(verilog)) with 128 words by 8 bits.
 @N: MO106 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\ov7670_registers.v":51:8:51:11|Found ROM .delname. (in view: work.top(verilog)) with 62 words by 16 bits.
+@W: BN132 :|Removing instance je.ram_rom.header_rom_data_2_0_1_sr_en_0 because it is equivalent to instance je.ram_rom.header_rom_data_2_0_0_sr_en_0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :|Removing instance je.ram_rom.acht_bb_rom_data_2_0_0_sr_en_0 because it is equivalent to instance je.ram_rom.header_rom_data_2_0_0_sr_en_0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :|Removing instance je.ram_rom.acht_bb_rom_data_2_0_1_sr_en_0 because it is equivalent to instance je.ram_rom.header_rom_data_2_0_0_sr_en_0. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @N: BN362 :|Removing sequential instance je.ram_rom.zzidx_rom_data_2_0_0_OLD_0[0] (in view: work.top(verilog)) because it does not drive other instances.
 @N: BN362 :|Removing sequential instance je.ram_rom.zzidx_rom_data_2_0_0_OLD_0[1] (in view: work.top(verilog)) because it does not drive other instances.
 @N: BN362 :|Removing sequential instance je.ram_rom.zzidx_rom_data_2_0_0_OLD_0[2] (in view: work.top(verilog)) because it does not drive other instances.
@@ -1060,7 +1087,7 @@ Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:14s; CP
 @N: BN362 :|Removing sequential instance je.ram_rom.zzidx_rom_data_2_0_0_OLD[7] (in view: work.top(verilog)) because it does not drive other instances.
 @N: BN362 :|Removing sequential instance je.ram_rom.zzidx_rom_data_2_0_0_OLD[6] (in view: work.top(verilog)) because it does not drive other instances.
 
-Finished preparing to map (Real Time elapsed 0h:00m:16s; CPU Time elapsed 0h:00m:14s; Memory used current: 162MB peak: 172MB)
+Finished preparing to map (Real Time elapsed 0h:00m:16s; CPU Time elapsed 0h:00m:15s; Memory used current: 164MB peak: 188MB)
 
 @N: BN362 :|Removing sequential instance je.ram_rom.zzidx_rom_data_2_0_0_OLD[0] (in view: work.top(verilog)) because it does not drive other instances.
 @N: BN362 :|Removing sequential instance je.ram_rom.zzidx_rom_data_2_0_0_OLD[1] (in view: work.top(verilog)) because it does not drive other instances.
@@ -1077,28 +1104,28 @@ Finished preparing to map (Real Time elapsed 0h:00m:16s; CPU Time elapsed 0h:00m
 @N: BN362 :|Removing sequential instance je.ram_rom.header_rom_data_2_0_0_OLD[2] (in view: work.top(verilog)) because it does not drive other instances.
 @N: BN362 :|Removing sequential instance je.ram_rom.header_rom_data_2_0_0_OLD[3] (in view: work.top(verilog)) because it does not drive other instances.
 
-Finished technology mapping (Real Time elapsed 0h:00m:17s; CPU Time elapsed 0h:00m:15s; Memory used current: 184MB peak: 235MB)
+Finished technology mapping (Real Time elapsed 0h:00m:17s; CPU Time elapsed 0h:00m:17s; Memory used current: 190MB peak: 236MB)
 
 Pass		 CPU time		Worst Slack		Luts / Registers
 ------------------------------------------------------------
-   1		0h:00m:16s		    -9.52ns		3574 /      1355
-   2		0h:00m:16s		    -9.52ns		3456 /      1406
-   3		0h:00m:16s		    -9.52ns		3454 /      1406
-@N: FX271 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\top.v":301:11:301:12|Replicating instance je.QNT_DU_ret_116[0] (in view: work.top(verilog)) with 19 loads 1 time to improve timing.
+   1		0h:00m:17s		    -9.52ns		3640 /      1417
+   2		0h:00m:17s		    -9.52ns		3519 /      1468
+   3		0h:00m:17s		    -9.52ns		3517 /      1468
+@N: FX271 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\top.v":348:11:348:12|Replicating instance je.QNT_DU_ret_116[0] (in view: work.top(verilog)) with 19 loads 1 time to improve timing.
 Timing driven replication report
 Added 1 Registers via timing driven replication
 Added 0 LUTs via timing driven replication
 
-   4		0h:00m:17s		   -13.11ns		3458 /      1441
-   5		0h:00m:17s		   -12.78ns		3456 /      1441
-   6		0h:00m:17s		   -12.60ns		3456 /      1441
-   7		0h:00m:18s		   -12.60ns		3454 /      1441
-   8		0h:00m:18s		   -12.60ns		3453 /      1441
+   4		0h:00m:18s		   -13.11ns		3521 /      1503
+   5		0h:00m:18s		   -12.78ns		3519 /      1503
+   6		0h:00m:18s		   -12.60ns		3519 /      1503
+   7		0h:00m:19s		   -12.60ns		3517 /      1503
+   8		0h:00m:19s		   -12.60ns		3516 /      1503
 
 
-   9		0h:00m:18s		    -8.12ns		3535 /      1441
-  10		0h:00m:18s		    -7.87ns		3536 /      1442
-  11		0h:00m:18s		    -7.87ns		3536 /      1442
+   9		0h:00m:19s		    -8.12ns		3599 /      1503
+  10		0h:00m:19s		    -7.87ns		3601 /      1504
+  11		0h:00m:20s		    -7.87ns		3601 /      1504
 @N: MF322 |Retiming summary: 30 registers retimed to 174 
 
 		#####  BEGIN RETIMING REPORT  #####
@@ -1316,13 +1343,13 @@ New registers created by retiming :
 
 		#####   END RETIMING REPORT  #####
 
-@A: BN291 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\top.v":177:2:177:7|Boundary register pixel_wr_disable (in view: work.top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\top.v":199:2:199:7|Boundary register pixel_wr_disable (in view: work.top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
 
-Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:23s; CPU Time elapsed 0h:00m:20s; Memory used current: 184MB peak: 235MB)
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:22s; CPU Time elapsed 0h:00m:22s; Memory used current: 190MB peak: 236MB)
 
 @W: MT453 |clock period is too long for clock top|clk_24m, changing period from 105008.0 to 20000.0 ns, rise from 0.0 ns to 0.0 ns, and fall from 52504.0 ns to 10000.0 ns. 
 
-Finished restoring hierarchy (Real Time elapsed 0h:00m:23s; CPU Time elapsed 0h:00m:21s; Memory used current: 185MB peak: 235MB)
+Finished restoring hierarchy (Real Time elapsed 0h:00m:23s; CPU Time elapsed 0h:00m:22s; Memory used current: 191MB peak: 236MB)
 
 
 
@@ -1332,14 +1359,14 @@ Finished restoring hierarchy (Real Time elapsed 0h:00m:23s; CPU Time elapsed 0h:
 #### START OF CLOCK OPTIMIZATION REPORT #####[
 
 Clock optimization not enabled
-1 non-gated/non-generated clock tree(s) driving 1318 clock pin(s) of sequential element(s)
+1 non-gated/non-generated clock tree(s) driving 1384 clock pin(s) of sequential element(s)
 1 gated/generated clock tree(s) driving 140 clock pin(s) of sequential element(s)
 0 instances converted, 140 sequential instances remain driven by gated/generated clocks
 
 =========================== Non-Gated/Non-Generated Clocks ============================
 Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance
 ---------------------------------------------------------------------------------------
-@K:CKID0002       pclk                port                   1318       q_href         
+@K:CKID0002       pclk                port                   1384       q_href         
 =======================================================================================
 ============================================================================================================ Gated/Generated Clocks =============================================================================================================
 Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance                            Explanation                                                                                                                   
@@ -1351,33 +1378,32 @@ Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample I
 ##### END OF CLOCK OPTIMIZATION REPORT ######]
 
 
-Start Writing Netlists (Real Time elapsed 0h:00m:24s; CPU Time elapsed 0h:00m:21s; Memory used current: 149MB peak: 235MB)
+Start Writing Netlists (Real Time elapsed 0h:00m:23s; CPU Time elapsed 0h:00m:22s; Memory used current: 157MB peak: 236MB)
 
 Writing Analyst data base E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\radiant_proj\impl_1\synwork\radiant_proj_impl_1_m.srm
 
-Finished Writing Netlist Databases (Real Time elapsed 0h:00m:24s; CPU Time elapsed 0h:00m:22s; Memory used current: 185MB peak: 235MB)
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:23s; CPU Time elapsed 0h:00m:22s; Memory used current: 193MB peak: 236MB)
 
 Writing constraint files
 
-Finished Writing constraint files (Real Time elapsed 0h:00m:25s; CPU Time elapsed 0h:00m:22s; Memory used current: 185MB peak: 235MB)
+Finished Writing constraint files (Real Time elapsed 0h:00m:24s; CPU Time elapsed 0h:00m:23s; Memory used current: 193MB peak: 236MB)
 
 Writing Verilog Simulation files
 Writing XDC file E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\radiant_proj\impl_1\radiant_proj_impl_1.xdc
 
-Finished Writing Verilog Simulation files (Real Time elapsed 0h:00m:25s; CPU Time elapsed 0h:00m:23s; Memory used current: 180MB peak: 235MB)
+Finished Writing Verilog Simulation files (Real Time elapsed 0h:00m:24s; CPU Time elapsed 0h:00m:23s; Memory used current: 187MB peak: 236MB)
 
 
-Start final timing analysis (Real Time elapsed 0h:00m:26s; CPU Time elapsed 0h:00m:23s; Memory used current: 179MB peak: 235MB)
+Start final timing analysis (Real Time elapsed 0h:00m:25s; CPU Time elapsed 0h:00m:23s; Memory used current: 186MB peak: 236MB)
 
-@W: MT246 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\top.v":252:9:252:15|Blackbox HSOSC is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) 
-@W: MT246 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\jpeg_enc\jpeg_enc_dct.v":299:40:299:48|Blackbox MAC16 is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) 
-@W: MT246 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\up_spram.v":105:9:105:16|Blackbox SP256K is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) 
+@W: MT246 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\top.v":296:9:296:15|Blackbox HSOSC is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) 
+@W: MT246 :"e:\upwork\gnarly_grey\github\jpeg_encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\up_spram.v":141:9:141:16|Blackbox SP256K is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) 
 @W: MT420 |Found inferred clock top|pclk with period 10.50ns. Please declare a user-defined clock on object "p:pclk"
 @W: MT420 |Found inferred clock top|clk_24m with period 7.47ns. Please declare a user-defined clock on object "n:clk_24m"
 
 
 ##### START OF TIMING REPORT #####[
-# Timing Report written on Mon Apr 30 14:33:36 2018
+# Timing Report written on Fri Jun  8 11:33:47 2018
 #
 
 
@@ -1449,36 +1475,36 @@ Instance                                    Reference       Type        Pin     
                                             Clock                                                                 
 ------------------------------------------------------------------------------------------------------------------
 u_OV7670_Controller.I2C.busy_sr_ess[2]      top|clk_24m     FD1P3JZ     Q       busy_sr[2]      0.796       -1.317
+u_OV7670_Controller.I2C.busy_sr[31]         top|clk_24m     FD1P3DZ     Q       busy_sr[31]     0.796       -1.245
 u_OV7670_Controller.I2C.busy_sr_ess[29]     top|clk_24m     FD1P3JZ     Q       busy_sr[29]     0.796       -1.245
 u_OV7670_Controller.LUT.address[0]          top|clk_24m     FD1P3DZ     Q       address[0]      0.796       -1.214
 u_OV7670_Controller.I2C.busy_sr_ess[30]     top|clk_24m     FD1P3JZ     Q       busy_sr[30]     0.796       -1.214
-u_OV7670_Controller.I2C.divider[1]          top|clk_24m     FD1P3DZ     Q       divider[1]      0.796       -1.214
-u_OV7670_Controller.I2C.divider[4]          top|clk_24m     FD1P3DZ     Q       divider[4]      0.796       -1.173
+u_OV7670_Controller.I2C.divider[7]          top|clk_24m     FD1P3DZ     Q       divider[7]      0.796       -1.214
+u_OV7670_Controller.I2C.divider[2]          top|clk_24m     FD1P3DZ     Q       divider[2]      0.796       -1.173
 u_OV7670_Controller.LUT.address[3]          top|clk_24m     FD1P3DZ     Q       address[3]      0.796       -1.142
-u_OV7670_Controller.I2C.busy_sr[0]          top|clk_24m     FD1P3JZ     Q       busy_sr[0]      0.796       -1.142
-u_OV7670_Controller.I2C.divider[2]          top|clk_24m     FD1P3DZ     Q       divider[2]      0.796       -1.142
 u_OV7670_Controller.LUT.sreg[14]            top|clk_24m     FD1P3JZ     Q       command[14]     0.796       -1.142
+u_OV7670_Controller.LUT.address[1]          top|clk_24m     FD1P3DZ     Q       address[1]      0.796       -1.111
 ==================================================================================================================
 
 
 Ending Points with Worst Slack
 ******************************
 
-                                           Starting                                          Required           
-Instance                                   Reference       Type        Pin     Net           Time         Slack 
-                                           Clock                                                                
-----------------------------------------------------------------------------------------------------------------
-u_OV7670_Controller.I2C.sioc_temp          top|clk_24m     FD1P3DZ     D       sioc_temp     7.311        -1.317
-u_OV7670_Controller.I2C.busy_sr_ess[1]     top|clk_24m     FD1P3JZ     SP      un1_N_8_0     7.311        -1.214
-u_OV7670_Controller.I2C.busy_sr_ess[2]     top|clk_24m     FD1P3JZ     SP      un1_N_8_0     7.311        -1.214
-u_OV7670_Controller.I2C.busy_sr_ess[3]     top|clk_24m     FD1P3JZ     SP      un1_N_8_0     7.311        -1.214
-u_OV7670_Controller.I2C.busy_sr_ess[4]     top|clk_24m     FD1P3JZ     SP      un1_N_8_0     7.311        -1.214
-u_OV7670_Controller.I2C.busy_sr_ess[5]     top|clk_24m     FD1P3JZ     SP      un1_N_8_0     7.311        -1.214
-u_OV7670_Controller.I2C.busy_sr_ess[6]     top|clk_24m     FD1P3JZ     SP      un1_N_8_0     7.311        -1.214
-u_OV7670_Controller.I2C.busy_sr_ess[7]     top|clk_24m     FD1P3JZ     SP      un1_N_8_0     7.311        -1.214
-u_OV7670_Controller.I2C.busy_sr_ess[8]     top|clk_24m     FD1P3JZ     SP      un1_N_8_0     7.311        -1.214
-u_OV7670_Controller.I2C.busy_sr_ess[9]     top|clk_24m     FD1P3JZ     SP      un1_N_8_0     7.311        -1.214
-================================================================================================================
+                                           Starting                                            Required           
+Instance                                   Reference       Type        Pin     Net             Time         Slack 
+                                           Clock                                                                  
+------------------------------------------------------------------------------------------------------------------
+u_OV7670_Controller.I2C.sioc_temp          top|clk_24m     FD1P3DZ     D       sioc_temp       7.311        -1.317
+u_OV7670_Controller.I2C.busy_sr_ess[1]     top|clk_24m     FD1P3JZ     SP      un1_N_8_0_0     7.311        -1.245
+u_OV7670_Controller.I2C.busy_sr_ess[2]     top|clk_24m     FD1P3JZ     SP      un1_N_8_0_0     7.311        -1.245
+u_OV7670_Controller.I2C.busy_sr_ess[3]     top|clk_24m     FD1P3JZ     SP      un1_N_8_0_0     7.311        -1.245
+u_OV7670_Controller.I2C.busy_sr_ess[4]     top|clk_24m     FD1P3JZ     SP      un1_N_8_0_0     7.311        -1.245
+u_OV7670_Controller.I2C.busy_sr_ess[5]     top|clk_24m     FD1P3JZ     SP      un1_N_8_0_0     7.311        -1.245
+u_OV7670_Controller.I2C.busy_sr_ess[6]     top|clk_24m     FD1P3JZ     SP      un1_N_8_0_0     7.311        -1.245
+u_OV7670_Controller.I2C.busy_sr_ess[7]     top|clk_24m     FD1P3JZ     SP      un1_N_8_0_0     7.311        -1.245
+u_OV7670_Controller.I2C.busy_sr_ess[8]     top|clk_24m     FD1P3JZ     SP      un1_N_8_0_0     7.311        -1.245
+u_OV7670_Controller.I2C.busy_sr_ess[9]     top|clk_24m     FD1P3JZ     SP      un1_N_8_0_0     7.311        -1.245
+==================================================================================================================
 
 
 
@@ -1533,6 +1559,42 @@ Path information for path number 2:
     = Slack (non-critical) :                 -1.245
 
     Number of logic level(s):                3
+    Starting point:                          u_OV7670_Controller.I2C.busy_sr[31] / Q
+    Ending point:                            u_OV7670_Controller.I2C.busy_sr_ess[1] / SP
+    The start point is clocked by            top|clk_24m [rising] on pin CK
+    The end   point is clocked by            top|clk_24m [rising] on pin CK
+
+Instance / Net                                              Pin      Pin               Arrival     No. of    
+Name                                            Type        Name     Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------------------------------
+u_OV7670_Controller.I2C.busy_sr[31]             FD1P3DZ     Q        Out     0.796     0.796       -         
+busy_sr[31]                                     Net         -        -       1.599     -           8         
+u_OV7670_Controller.I2C.busy_sr_RNIDEPN[31]     LUT4        A        In      -         2.395       -         
+u_OV7670_Controller.I2C.busy_sr_RNIDEPN[31]     LUT4        Z        Out     0.661     3.056       -         
+busy_sr_0_sqmuxa_0                              Net         -        -       1.371     -           1         
+u_OV7670_Controller.I2C.divider_RNIHTKK3[6]     LUT4        A        In      -         4.427       -         
+u_OV7670_Controller.I2C.divider_RNIHTKK3[6]     LUT4        Z        Out     0.661     5.089       -         
+un1_N_8_0                                       Net         -        -       1.371     -           4         
+u_OV7670_Controller.I2C.divider_RNI1BHS7[6]     LUT4        B        In      -         6.460       -         
+u_OV7670_Controller.I2C.divider_RNI1BHS7[6]     LUT4        Z        Out     0.589     7.049       -         
+un1_N_8_0_0                                     Net         -        -       1.507     -           30        
+u_OV7670_Controller.I2C.busy_sr_ess[1]          FD1P3JZ     SP       In      -         8.556       -         
+=============================================================================================================
+Total path delay (propagation time + setup) of 8.711 is 2.863(32.9%) logic and 5.848(67.1%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 3: 
+      Requested Period:                      7.466
+    - Setup time:                            0.155
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         7.311
+
+    - Propagation time:                      8.556
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -1.245
+
+    Number of logic level(s):                3
     Starting point:                          u_OV7670_Controller.I2C.busy_sr_ess[29] / Q
     Ending point:                            u_OV7670_Controller.I2C.sioc_temp / D
     The start point is clocked by            top|clk_24m [rising] on pin CK
@@ -1558,75 +1620,39 @@ Total path delay (propagation time + setup) of 8.711 is 2.863(32.9%) logic and 5
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
 
-Path information for path number 3: 
-      Requested Period:                      7.466
-    - Setup time:                            0.155
-    + Clock delay at ending point:           0.000 (ideal)
-    = Required time:                         7.311
-
-    - Propagation time:                      8.525
-    - Clock delay at starting point:         0.000 (ideal)
-    = Slack (non-critical) :                 -1.214
-
-    Number of logic level(s):                3
-    Starting point:                          u_OV7670_Controller.LUT.address[0] / Q
-    Ending point:                            u_OV7670_Controller.LUT.sreg_3_15_0_.sreg_ret_10 / D
-    The start point is clocked by            top|clk_24m [rising] on pin CK
-    The end   point is clocked by            top|clk_24m [rising] on pin CK
-
-Instance / Net                                                         Pin      Pin               Arrival     No. of    
-Name                                                       Type        Name     Dir     Delay     Time        Fan Out(s)
-------------------------------------------------------------------------------------------------------------------------
-u_OV7670_Controller.LUT.address[0]                         FD1P3DZ     Q        Out     0.796     0.796       -         
-address[0]                                                 Net         -        -       1.599     -           45        
-u_OV7670_Controller.LUT.sreg_3_15_0_.m10                   LUT4        A        In      -         2.395       -         
-u_OV7670_Controller.LUT.sreg_3_15_0_.m10                   LUT4        Z        Out     0.661     3.056       -         
-m10                                                        Net         -        -       1.371     -           5         
-u_OV7670_Controller.LUT.sreg_3_15_0_.sreg_ret_10_RNO_0     LUT4        C        In      -         4.427       -         
-u_OV7670_Controller.LUT.sreg_3_15_0_.sreg_ret_10_RNO_0     LUT4        Z        Out     0.558     4.986       -         
-sreg_ret_10_RNO_0                                          Net         -        -       1.371     -           1         
-u_OV7670_Controller.LUT.sreg_3_15_0_.sreg_ret_10_RNO       LUT4        A        In      -         6.356       -         
-u_OV7670_Controller.LUT.sreg_3_15_0_.sreg_ret_10_RNO       LUT4        Z        Out     0.661     7.018       -         
-N_127                                                      Net         -        -       1.507     -           1         
-u_OV7670_Controller.LUT.sreg_3_15_0_.sreg_ret_10           FD1P3JZ     D        In      -         8.525       -         
-========================================================================================================================
-Total path delay (propagation time + setup) of 8.680 is 2.832(32.6%) logic and 5.848(67.4%) route.
-Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
-
-
 Path information for path number 4: 
       Requested Period:                      7.466
     - Setup time:                            0.155
     + Clock delay at ending point:           0.000 (ideal)
     = Required time:                         7.311
 
-    - Propagation time:                      8.525
+    - Propagation time:                      8.556
     - Clock delay at starting point:         0.000 (ideal)
-    = Slack (non-critical) :                 -1.214
+    = Slack (non-critical) :                 -1.245
 
     Number of logic level(s):                3
-    Starting point:                          u_OV7670_Controller.I2C.busy_sr_ess[30] / Q
-    Ending point:                            u_OV7670_Controller.I2C.sioc_temp / D
+    Starting point:                          u_OV7670_Controller.I2C.busy_sr[31] / Q
+    Ending point:                            u_OV7670_Controller.I2C.busy_sr_ess[2] / SP
     The start point is clocked by            top|clk_24m [rising] on pin CK
     The end   point is clocked by            top|clk_24m [rising] on pin CK
 
-Instance / Net                                          Pin      Pin               Arrival     No. of    
-Name                                        Type        Name     Dir     Delay     Time        Fan Out(s)
----------------------------------------------------------------------------------------------------------
-u_OV7670_Controller.I2C.busy_sr_ess[30]     FD1P3JZ     Q        Out     0.796     0.796       -         
-busy_sr[30]                                 Net         -        -       1.599     -           3         
-u_OV7670_Controller.I2C.sioc_temp_RNO_3     LUT4        C        In      -         2.395       -         
-u_OV7670_Controller.I2C.sioc_temp_RNO_3     LUT4        Z        Out     0.558     2.953       -         
-N_34_0                                      Net         -        -       1.371     -           1         
-u_OV7670_Controller.I2C.sioc_temp_RNO_0     LUT4        A        In      -         4.324       -         
-u_OV7670_Controller.I2C.sioc_temp_RNO_0     LUT4        Z        Out     0.661     4.986       -         
-N_35                                        Net         -        -       1.371     -           1         
-u_OV7670_Controller.I2C.sioc_temp_RNO       LUT4        A        In      -         6.356       -         
-u_OV7670_Controller.I2C.sioc_temp_RNO       LUT4        Z        Out     0.661     7.018       -         
-sioc_temp                                   Net         -        -       1.507     -           1         
-u_OV7670_Controller.I2C.sioc_temp           FD1P3DZ     D        In      -         8.525       -         
-=========================================================================================================
-Total path delay (propagation time + setup) of 8.680 is 2.832(32.6%) logic and 5.848(67.4%) route.
+Instance / Net                                              Pin      Pin               Arrival     No. of    
+Name                                            Type        Name     Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------------------------------
+u_OV7670_Controller.I2C.busy_sr[31]             FD1P3DZ     Q        Out     0.796     0.796       -         
+busy_sr[31]                                     Net         -        -       1.599     -           8         
+u_OV7670_Controller.I2C.busy_sr_RNIDEPN[31]     LUT4        A        In      -         2.395       -         
+u_OV7670_Controller.I2C.busy_sr_RNIDEPN[31]     LUT4        Z        Out     0.661     3.056       -         
+busy_sr_0_sqmuxa_0                              Net         -        -       1.371     -           1         
+u_OV7670_Controller.I2C.divider_RNIHTKK3[6]     LUT4        A        In      -         4.427       -         
+u_OV7670_Controller.I2C.divider_RNIHTKK3[6]     LUT4        Z        Out     0.661     5.089       -         
+un1_N_8_0                                       Net         -        -       1.371     -           4         
+u_OV7670_Controller.I2C.divider_RNI1BHS7[6]     LUT4        B        In      -         6.460       -         
+u_OV7670_Controller.I2C.divider_RNI1BHS7[6]     LUT4        Z        Out     0.589     7.049       -         
+un1_N_8_0_0                                     Net         -        -       1.507     -           30        
+u_OV7670_Controller.I2C.busy_sr_ess[2]          FD1P3JZ     SP       In      -         8.556       -         
+=============================================================================================================
+Total path delay (propagation time + setup) of 8.711 is 2.863(32.9%) logic and 5.848(67.1%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
 
@@ -1636,33 +1662,33 @@ Path information for path number 5:
     + Clock delay at ending point:           0.000 (ideal)
     = Required time:                         7.311
 
-    - Propagation time:                      8.525
+    - Propagation time:                      8.556
     - Clock delay at starting point:         0.000 (ideal)
-    = Slack (non-critical) :                 -1.214
+    = Slack (non-critical) :                 -1.245
 
     Number of logic level(s):                3
-    Starting point:                          u_OV7670_Controller.I2C.divider[1] / Q
-    Ending point:                            u_OV7670_Controller.I2C.busy_sr_ess[1] / SP
+    Starting point:                          u_OV7670_Controller.I2C.busy_sr[31] / Q
+    Ending point:                            u_OV7670_Controller.I2C.busy_sr_ess[3] / SP
     The start point is clocked by            top|clk_24m [rising] on pin CK
     The end   point is clocked by            top|clk_24m [rising] on pin CK
 
-Instance / Net                                                     Pin      Pin               Arrival     No. of    
-Name                                                   Type        Name     Dir     Delay     Time        Fan Out(s)
---------------------------------------------------------------------------------------------------------------------
-u_OV7670_Controller.I2C.divider[1]                     FD1P3DZ     Q        Out     0.796     0.796       -         
-divider[1]                                             Net         -        -       1.599     -           8         
-u_OV7670_Controller.I2C.divider_RNIPTF01[1]            LUT4        A        In      -         2.395       -         
-u_OV7670_Controller.I2C.divider_RNIPTF01[1]            LUT4        Z        Out     0.661     3.056       -         
-divider_RNIPTF01[1]                                    Net         -        -       1.371     -           1         
-u_OV7670_Controller.I2C.busy_sr_ess_RNIQ0N64[31]       LUT4        A        In      -         4.427       -         
-u_OV7670_Controller.I2C.busy_sr_ess_RNIQ0N64[31]       LUT4        Z        Out     0.661     5.089       -         
-taken_temp_0_sqmuxa_1                                  Net         -        -       1.371     -           34        
-u_OV7670_Controller.I2C.busy_sr_ess_RNILH6Q7_0[31]     LUT4        C        In      -         6.460       -         
-u_OV7670_Controller.I2C.busy_sr_ess_RNILH6Q7_0[31]     LUT4        Z        Out     0.558     7.018       -         
-un1_N_8_0                                              Net         -        -       1.507     -           31        
-u_OV7670_Controller.I2C.busy_sr_ess[1]                 FD1P3JZ     SP       In      -         8.525       -         
-====================================================================================================================
-Total path delay (propagation time + setup) of 8.680 is 2.832(32.6%) logic and 5.848(67.4%) route.
+Instance / Net                                              Pin      Pin               Arrival     No. of    
+Name                                            Type        Name     Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------------------------------
+u_OV7670_Controller.I2C.busy_sr[31]             FD1P3DZ     Q        Out     0.796     0.796       -         
+busy_sr[31]                                     Net         -        -       1.599     -           8         
+u_OV7670_Controller.I2C.busy_sr_RNIDEPN[31]     LUT4        A        In      -         2.395       -         
+u_OV7670_Controller.I2C.busy_sr_RNIDEPN[31]     LUT4        Z        Out     0.661     3.056       -         
+busy_sr_0_sqmuxa_0                              Net         -        -       1.371     -           1         
+u_OV7670_Controller.I2C.divider_RNIHTKK3[6]     LUT4        A        In      -         4.427       -         
+u_OV7670_Controller.I2C.divider_RNIHTKK3[6]     LUT4        Z        Out     0.661     5.089       -         
+un1_N_8_0                                       Net         -        -       1.371     -           4         
+u_OV7670_Controller.I2C.divider_RNI1BHS7[6]     LUT4        B        In      -         6.460       -         
+u_OV7670_Controller.I2C.divider_RNI1BHS7[6]     LUT4        Z        Out     0.589     7.049       -         
+un1_N_8_0_0                                     Net         -        -       1.507     -           30        
+u_OV7670_Controller.I2C.busy_sr_ess[3]          FD1P3JZ     SP       In      -         8.556       -         
+=============================================================================================================
+Total path delay (propagation time + setup) of 8.711 is 2.863(32.9%) logic and 5.848(67.1%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
 
@@ -1677,21 +1703,21 @@ Detailed Report for Clock: System
 Starting Points with Worst Slack
 ********************************
 
-                                                                Starting                                                       Arrival           
-Instance                                                        Reference     Type        Pin       Net                        Time        Slack 
-                                                                Clock                                                                            
--------------------------------------------------------------------------------------------------------------------------------------------------
-je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_5                     System        FD1P3DZ     Q         g0_3                       0.796       -3.719
-je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_3                     System        FD1P3DZ     Q         mult1_inf_abs0[2]          0.796       -3.647
-je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_7                     System        FD1P3DZ     Q         mult1_inf_abs0[6]          0.796       -3.616
-je.ram_rom.fdtbl_rom_data_2_0_dreg[0]                           System        FD1P3DZ     Q         fdtbl_rom_d[0]             0.796       -1.718
-je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_15                    System        FD1P3DZ     Q         mult1_inf_abs0[7]          0.796       0.170 
-je.ram_rom.dctdu_ram_dctdu_ram_0_1                              System        PDP4K       DO[1]     dctdu_ram_do[17]           0.000       0.605 
-je.ram_rom.dctdu_ram_dctdu_ram_0_1                              System        PDP4K       DO[1]     dctdu_ram_do[17]           0.000       0.605 
-je.ac0_idx[0]                                                   System        FD1P3DZ     Q         ac0_idx[0]                 0.796       0.769 
-je.un5_QNT_DU.if_generate_plus\.mult1_inf_abs1_a_0_cry_16_0     System        CCU2_B      S1        mult1_inf_abs1_a_0[17]     0.000       0.801 
-je.ac0_idx[1]                                                   System        FD1P3DZ     Q         ac0_idx[1]                 0.796       0.842 
-=================================================================================================================================================
+                                                 Starting                                                  Arrival           
+Instance                                         Reference     Type        Pin       Net                   Time        Slack 
+                                                 Clock                                                                       
+-----------------------------------------------------------------------------------------------------------------------------
+je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_5      System        FD1P3DZ     Q         g0_3                  0.796       -3.719
+je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_3      System        FD1P3DZ     Q         mult1_inf_abs0[2]     0.796       -3.647
+je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_7      System        FD1P3DZ     Q         mult1_inf_abs0[6]     0.796       -3.616
+je.ram_rom.fdtbl_rom_data_2_0_dreg[0]            System        FD1P3DZ     Q         fdtbl_rom_d[0]        0.796       -1.718
+je.ac0_idx[0]                                    System        FD1P3DZ     Q         ac0_idx[0]            0.796       -0.963
+je.ac0_idx[1]                                    System        FD1P3DZ     Q         ac0_idx[1]            0.796       -0.891
+je.end0pos[0]                                    System        FD1P3DZ     Q         end0pos[0]            0.796       -0.860
+je.end0pos[1]                                    System        FD1P3DZ     Q         end0pos[1]            0.796       -0.767
+je.un5_QNT_DU.fdtbl_rom_data_2_0_dreg_ret_15     System        FD1P3DZ     Q         mult1_inf_abs0[7]     0.796       0.170 
+je.ram_rom.dctdu_ram_dctdu_ram_0_1               System        PDP4K       DO[1]     dctdu_ram_do[17]      0.000       0.605 
+=============================================================================================================================
 
 
 Ending Points with Worst Slack
@@ -2035,56 +2061,56 @@ Path delay compensated for clock skew. Clock skew is added to clock-to-out value
 Timing exceptions that could not be applied
 None
 
-Finished final timing analysis (Real Time elapsed 0h:00m:26s; CPU Time elapsed 0h:00m:23s; Memory used current: 179MB peak: 235MB)
+Finished final timing analysis (Real Time elapsed 0h:00m:25s; CPU Time elapsed 0h:00m:24s; Memory used current: 186MB peak: 236MB)
 
 
-Finished timing report (Real Time elapsed 0h:00m:26s; CPU Time elapsed 0h:00m:23s; Memory used current: 179MB peak: 235MB)
+Finished timing report (Real Time elapsed 0h:00m:25s; CPU Time elapsed 0h:00m:24s; Memory used current: 186MB peak: 236MB)
 
 ---------------------------------------
 Resource Usage Report for top 
 
 Mapping to part: ice40up5ksg48high-performance_1.2v
 Cell usage:
-CCU2_B          552 uses
-FD1P3DZ         1223 uses
-FD1P3IZ         176 uses
-FD1P3JZ         43 uses
-GND             12 uses
+CCU2_B          545 uses
+FD1P3DZ         1262 uses
+FD1P3IZ         200 uses
+FD1P3JZ         42 uses
+GND             13 uses
 HSOSC           1 use
 INV             74 uses
-PDP4K           11 uses
+PDP4K           13 uses
 SP256K          4 uses
-VCC             12 uses
-MAC16           8 uses
-LUT4            3303 uses
+VCC             13 uses
+MAC16           3 uses
+LUT4            3389 uses
 
 I/O ports: 22
-I/O primitives: 21
-IB             14 uses
+I/O primitives: 22
+IB             15 uses
 OB             6 uses
 OBZ_B          1 use
 
 I/O Register bits:                  0
-Register bits not including I/Os:   1442 of 5280 (27%)
+Register bits not including I/Os:   1504 of 5280 (28%)
 
 RAM/ROM usage summary
-Block Rams : 11 of 30 (36%)
+Block Rams : 13 of 30 (43%)
 
 Total load per clock:
    top|pclk: 1
    top|clk_24m: 141
 
 @S |Mapping Summary:
-Total  LUTs: 3303 (62%)
+Total  LUTs: 3389 (64%)
 
 Distribution of All Consumed LUTs = LUT4 
-Distribution of All Consumed Luts 3303 = 3303 
+Distribution of All Consumed Luts 3389 = 3389 
 
 Mapper successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:26s; CPU Time elapsed 0h:00m:23s; Memory used current: 40MB peak: 235MB)
+At Mapper Exit (Real Time elapsed 0h:00m:25s; CPU Time elapsed 0h:00m:24s; Memory used current: 40MB peak: 236MB)
 
-Process took 0h:00m:26s realtime, 0h:00m:23s cputime
-# Mon Apr 30 14:33:37 2018
+Process took 0h:00m:25s realtime, 0h:00m:24s cputime
+# Fri Jun  8 11:33:47 2018
 
 ###########################################################]

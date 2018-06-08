@@ -1,7 +1,7 @@
 #--  Synopsys, Inc.
 #--  Version M-2017.03LR-SP1-1
 #--  Project file E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\radiant_proj\impl_1\run_options.txt
-#--  Written on Mon Apr 30 14:32:55 2018
+#--  Written on Fri Jun  8 11:33:14 2018
 
 
 #project files
@@ -20,6 +20,7 @@ add_file -verilog "E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/syn/
 add_file -verilog "E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/syn/jpeg_enc_ov7670_esp32/src/ov7670_esp32/spi_slave.v"
 add_file -verilog "E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/syn/jpeg_enc_ov7670_esp32/src/ov7670_esp32/top.v"
 add_file -verilog "E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/syn/jpeg_enc_ov7670_esp32/src/ov7670_esp32/up_spram.v"
+add_file -verilog "E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/syn/jpeg_enc_ov7670_esp32/src/glue_logic/sc_fifo_32.v"
 
 
 
@@ -51,6 +52,7 @@ set_option -distributed_compile 0
 
 # mapper_without_write_options
 set_option -frequency auto
+set_option -resolve_multiple_driver 1
 set_option -srs_instrumentation 1
 
 # mapper_options
@@ -64,7 +66,7 @@ set_option -rw_check_on_ram 0
 set_option -disable_io_insertion 0
 set_option -pipe 1
 set_option -retiming 1
-set_option -update_models_cp 0
+set_option -update_models_cp 1
 set_option -fix_gated_and_generated_clocks 0
 set_option -run_prop_extract 1
 

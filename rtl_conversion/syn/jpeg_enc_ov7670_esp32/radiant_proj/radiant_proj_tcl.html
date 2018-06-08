@@ -46,141 +46,253 @@ if (a)
 <link href="file:///D:/APPS/lscc/radiant/1.0/data/theme/css/light/report.css" rel="stylesheet" type="text/css" media="screen"/>
 <link href="file:///D:/APPS/lscc/radiant/1.0/data/theme/css/print/report.css" rel="stylesheet" type="text/css" media="print"/>
 </HEAD>
-<PRE><A name="pn180411153847"></A><B><U><big>pn180411153847</big></U></B>
-#Start recording tcl command: 4/11/2018 11:13:55
-#Project Location: E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/syn/jpeg_enc_ov7670_esp32/radiant_proj; Project name: radiant_proj
-prj_create -name "radiant_proj" -impl "impl_1" -dev iCE40UP5K-SG48I -performance "High-Performance_1.2V" -synthesis "synplify"
-prj_add_source "E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/syn/jpeg_enc_ov7670_esp32/src/glue_logic/jpeg_data_to_spi.v" "E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/syn/jpeg_enc_ov7670_esp32/src/glue_logic/jpeg_data_writer.v" "E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/syn/jpeg_enc_ov7670_esp32/src/glue_logic/sc_fifo.v" "E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/syn/jpeg_enc_ov7670_esp32/src/glue_logic/yuyv_to_yuv.v" "E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/syn/jpeg_enc_ov7670_esp32/src/jpeg_enc/jpeg_enc.v" "E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/syn/jpeg_enc_ov7670_esp32/src/jpeg_enc/jpeg_enc_dct.v" "E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/syn/jpeg_enc_ov7670_esp32/src/jpeg_enc/jpeg_enc_mem.v" "E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/syn/jpeg_enc_ov7670_esp32/src/ov7670_esp32/I2C_Interface.v" "E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/syn/jpeg_enc_ov7670_esp32/src/ov7670_esp32/OV7670_Controller.v" "E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/syn/jpeg_enc_ov7670_esp32/src/ov7670_esp32/OV7670_Registers.v" "E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/syn/jpeg_enc_ov7670_esp32/src/ov7670_esp32/spi_slave.v" "E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/syn/jpeg_enc_ov7670_esp32/src/ov7670_esp32/top.v" "E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/syn/jpeg_enc_ov7670_esp32/src/ov7670_esp32/up_spram.v"
-prj_save 
-prj_run Synthesis -impl impl_1
-prj_run Synthesis -impl impl_1
-prj_add_source "E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/syn/jpeg_enc_ov7670_esp32/radiant_proj/constraints.pdc"
-prj_enable_source "E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/syn/jpeg_enc_ov7670_esp32/radiant_proj/constraints.pdc"
-prj_run Map -impl impl_1
-prj_set_strategy_value -strategy Strategy1 syn_area=True
-prj_run Synthesis -impl impl_1
-prj_run Map -impl impl_1
-prj_add_source "E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/syn/jpeg_enc_ov7670_esp32/radiant_proj/fifo_mem/fifo_mem.ipx"
-prj_run Synthesis -impl impl_1
-prj_disable_source "E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/syn/jpeg_enc_ov7670_esp32/radiant_proj/fifo_mem/fifo_mem.ipx"
-prj_run Synthesis -impl impl_1
-prj_set_strategy_value -strategy Strategy1 syn_area=False
-prj_run Synthesis -impl impl_1
-prj_run Map -impl impl_1
-prj_run PAR -impl impl_1
-prj_run Synthesis -impl impl_1
-prj_run Synthesis -impl impl_1
-prj_run Map -impl impl_1
-prj_run PAR -impl impl_1
-prj_remove_source "E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/syn/jpeg_enc_ov7670_esp32/radiant_proj/fifo_mem/fifo_mem.ipx"
-#Stop recording: 4/11/2018 15:38:47
-
-
-
-<A name="pn180414174609"></A><B><U><big>pn180414174609</big></U></B>
-#Start recording tcl command: 4/14/2018 17:07:49
+<PRE><A name="pn180524155209"></A><B><U><big>pn180524155209</big></U></B>
+#Start recording tcl command: 5/24/2018 09:59:23
 #Project Location: E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/syn/jpeg_enc_ov7670_esp32/radiant_proj; Project name: radiant_proj
 prj_open "E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/syn/jpeg_enc_ov7670_esp32/radiant_proj/radiant_proj.rdf"
-prj_run Synthesis -impl impl_1
-prj_run Map -impl impl_1
-prj_run PAR -impl impl_1
-prj_set_strategy_value -strategy Strategy1 {syn_pipelining_retiming=Pipelining and Retiming}
+prj_run Export -impl impl_1
+launch_programmer_prj "D:/APPS/lscc/radiant/1.0"
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+#Stop recording: 5/24/2018 15:52:09
+
+
+
+<A name="pn180525153918"></A><B><U><big>pn180525153918</big></U></B>
+#Start recording tcl command: 5/25/2018 08:37:26
+#Project Location: E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/syn/jpeg_enc_ov7670_esp32/radiant_proj; Project name: radiant_proj
+prj_open "E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/syn/jpeg_enc_ov7670_esp32/radiant_proj/radiant_proj.rdf"
+prj_run Export -impl impl_1
+launch_programmer_prj "D:/APPS/lscc/radiant/1.0"
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
 prj_run Synthesis -impl impl_1
 prj_run Map -impl impl_1
 prj_run PAR -impl impl_1
 prj_run Export -impl impl_1
-#Stop recording: 4/14/2018 17:46:09
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+rvl_new_project
+rvl_add_trace  {{yty/data[7:0]}}
+rvl_add_trace  {{yty/je_data[7:0]}}
+rvl_set_traceoptn SampleClk=pclk
+rvl_add_trace  {{yty/img_x[8:0]}}
+rvl_del_trace {yty/img_x}
+rvl_set_tu -name TU1 -set_sig {{yty/img_col[8:0]} }
+rvl_set_tu -name TU1 -radix Dec
+rvl_set_tu -name TU1 -val 128
+rvl_save_project -overwrite E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/syn/jpeg_enc_ov7670_esp32/radiant_proj/radiant_proj.rvl
+rvl_add_tu -radix Bin 
+rvl_set_tu -name TU2 -set_sig {{je/img_col[10:0]} }
+rvl_set_tu -name TU2 -radix Dec
+rvl_set_tu -name TU2 -val 128
+rvl_save_project -overwrite E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/syn/jpeg_enc_ov7670_esp32/radiant_proj/radiant_proj.rvl
+prj_run Export -impl impl_1
+rvl_set_te -expression TU1 TE1
+rvl_add_te
+rvl_set_te -expression TU2 TE2
+rvl_save_project -overwrite E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/syn/jpeg_enc_ov7670_esp32/radiant_proj/radiant_proj.rvl
+rvl_save_project -overwrite E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/syn/jpeg_enc_ov7670_esp32/radiant_proj/radiant_proj.rvl
+prj_add_source -exclude "E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/syn/jpeg_enc_ov7670_esp32/radiant_proj/radiant_proj.rvl"
+prj_enable_source "E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/syn/jpeg_enc_ov7670_esp32/radiant_proj/radiant_proj.rvl"
+prj_run Export -impl impl_1
+rva_new_project -rva "reveal_test" -cable USB2 -rvl "E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/syn/jpeg_enc_ov7670_esp32/radiant_proj/radiant_proj.rvl" -dev "" -port 0 -xcf ""
+prj_add_source "E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/syn/jpeg_enc_ov7670_esp32/radiant_proj/reveal_test.rva"
+rva_run
+rvl_close_project
+rvl_open_project E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/syn/jpeg_enc_ov7670_esp32/radiant_proj/radiant_proj.rvl
+launch_programmer_prj "D:/APPS/lscc/radiant/1.0"
+rva_run
+rva_save_project "E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/syn/jpeg_enc_ov7670_esp32/radiant_proj/reveal_test.rva"
+rvl_close_project
+rvl_open_project E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/syn/jpeg_enc_ov7670_esp32/radiant_proj/radiant_proj.rvl
+rva_open_project "E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/syn/jpeg_enc_ov7670_esp32/radiant_proj/reveal_test.rva"
+rva_run
+rva_save_project "E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/syn/jpeg_enc_ov7670_esp32/radiant_proj/reveal_test.rva"
+rvl_close_project
+rvl_open_project E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/syn/jpeg_enc_ov7670_esp32/radiant_proj/radiant_proj.rvl
+rvl_close_project -force
+rvl_open_project E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/syn/jpeg_enc_ov7670_esp32/radiant_proj/radiant_proj.rvl
+rvl_del_core top_LA0
+rvl_save_project -overwrite E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/syn/jpeg_enc_ov7670_esp32/radiant_proj/radiant_proj.rvl
+rvl_close_project -force
+prj_run Export -impl impl_1
+prj_disable_source "E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/syn/jpeg_enc_ov7670_esp32/radiant_proj/radiant_proj.rvl"
+prj_disable_source "E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/syn/jpeg_enc_ov7670_esp32/radiant_proj/reveal_test.rva"
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+#Stop recording: 5/25/2018 15:39:18
 
 
 
-<A name="pn180416160552"></A><B><U><big>pn180416160552</big></U></B>
-#Start recording tcl command: 4/16/2018 15:25:14
+<A name="pn180528203159"></A><B><U><big>pn180528203159</big></U></B>
+#Start recording tcl command: 5/28/2018 10:13:07
 #Project Location: E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/syn/jpeg_enc_ov7670_esp32/radiant_proj; Project name: radiant_proj
 prj_open "E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/syn/jpeg_enc_ov7670_esp32/radiant_proj/radiant_proj.rdf"
 prj_run Export -impl impl_1
+launch_programmer_prj "D:/APPS/lscc/radiant/1.0"
 prj_run Export -impl impl_1
 prj_run Export -impl impl_1
 prj_run Export -impl impl_1
 prj_run Export -impl impl_1
-prj_save 
-prj_close
-#Stop recording: 4/16/2018 16:05:52
+prj_run Export -impl impl_1
+prj_set_strategy_value -strategy Strategy1 {par_sort_mode=Timing Score} par_prioritize_hldcorrection=True
+prj_run Export -impl impl_1
+prj_set_strategy_value -strategy Strategy1 par_prioritize_hldcorrection=False
+prj_run PAR -impl impl_1
+prj_set_strategy_value -strategy Strategy1 {par_sort_mode=Worst Slack} par_prioritize_hldcorrection=True
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_set_strategy_value -strategy Strategy1 par_prioritize_hldcorrection=False
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_set_strategy_value -strategy Strategy1 {par_sort_mode=Timing Score}
+prj_run Export -impl impl_1
+prj_set_strategy_value -strategy Strategy1 par_prioritize_hldcorrection=True
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_set_strategy_value -strategy Strategy1 syn_resolved_mixed_drivers=True syn_update_compile_pt_timing_data=True
+prj_set_strategy_value -strategy Strategy1 {par_sort_mode=Worst Slack} par_prioritize_hldcorrection=False
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+#Stop recording: 5/28/2018 20:31:59
 
 
 
-<A name="pn180416171359"></A><B><U><big>pn180416171359</big></U></B>
-#Start recording tcl command: 4/16/2018 16:05:54
+<A name="pn180530132123"></A><B><U><big>pn180530132123</big></U></B>
+#Start recording tcl command: 5/30/2018 10:08:47
 #Project Location: E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/syn/jpeg_enc_ov7670_esp32/radiant_proj; Project name: radiant_proj
 prj_open "E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/syn/jpeg_enc_ov7670_esp32/radiant_proj/radiant_proj.rdf"
+prj_run Export -impl impl_1
+launch_programmer_prj "D:/APPS/lscc/radiant/1.0"
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+#Stop recording: 5/30/2018 13:21:23
+
+
+
+<A name="pn180530174058"></A><B><U><big>pn180530174058</big></U></B>
+#Start recording tcl command: 5/30/2018 16:50:24
+#Project Location: E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/syn/jpeg_enc_ov7670_esp32/radiant_proj; Project name: radiant_proj
+prj_open "E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/syn/jpeg_enc_ov7670_esp32/radiant_proj/radiant_proj.rdf"
+prj_run Export -impl impl_1
+launch_programmer_prj "D:/APPS/lscc/radiant/1.0"
+#Stop recording: 5/30/2018 17:40:58
+
+
+
+<A name="pn180531165504"></A><B><U><big>pn180531165504</big></U></B>
+#Start recording tcl command: 5/31/2018 14:16:33
+#Project Location: E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/syn/jpeg_enc_ov7670_esp32/radiant_proj; Project name: radiant_proj
+prj_open "E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/syn/jpeg_enc_ov7670_esp32/radiant_proj/radiant_proj.rdf"
+rvl_open_project E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/syn/jpeg_enc_ov7670_esp32/radiant_proj/radiant_proj.rvl
+prj_enable_source "E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/syn/jpeg_enc_ov7670_esp32/radiant_proj/radiant_proj.rvl"
+prj_enable_source "E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/syn/jpeg_enc_ov7670_esp32/radiant_proj/reveal_test.rva"
+rva_open_project "E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/syn/jpeg_enc_ov7670_esp32/radiant_proj/reveal_test.rva"
+rvl_add_core top_LA0
+rvl_set_traceoptn SampleClk=pclk
+rvl_add_trace  {{je/ram_rom/du_ram_di[7:0]}}
+rvl_add_tu -radix Bin 
+rvl_set_tu -name TU1 -set_sig {{je/img_col[10:0]} {je/img_row[9:0]} }
+rvl_set_tu -name TU1 -radix Dec
+rvl_set_tu -name TU1 -radix Hex
+rvl_set_tu -name TU1 -set_sig {{je/img_col[10:0]} }
+rvl_add_tu -radix Bin 
+rvl_set_tu -name TU2 -set_sig {{je/img_row[9:0]} }
+rvl_set_tu -name TU2 -radix Dec
+rvl_set_tu -name TU1 -radix Dec
+rvl_set_tu -name TU2 -val 24
+rvl_add_te
+rvl_set_te -expression {TU1 & TU2} TE1
+rvl_save_project -overwrite E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/syn/jpeg_enc_ov7670_esp32/radiant_proj/radiant_proj.rvl
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_disable_source "E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/syn/jpeg_enc_ov7670_esp32/radiant_proj/radiant_proj.rvl"
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+rvl_set_traceoptn IncludeTrigger=on
+rvl_save_project -overwrite E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/syn/jpeg_enc_ov7670_esp32/radiant_proj/radiant_proj.rvl
+prj_run Export -impl impl_1
+launch_programmer_prj "D:/APPS/lscc/radiant/1.0"
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
 prj_run Export -impl impl_1
 prj_run Synthesis -impl impl_1
 prj_run Export -impl impl_1
-#Stop recording: 4/16/2018 17:13:59
+prj_run Export -impl impl_1
+#Stop recording: 5/31/2018 16:55:04
 
 
 
-<A name="pn180417165846"></A><B><U><big>pn180417165846</big></U></B>
-#Start recording tcl command: 4/17/2018 11:00:44
+<A name="pn180601122939"></A><B><U><big>pn180601122939</big></U></B>
+#Start recording tcl command: 6/1/2018 12:21:33
+#Project Location: E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/syn/jpeg_enc_ov7670_esp32/radiant_proj; Project name: radiant_proj
+prj_open "E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/syn/jpeg_enc_ov7670_esp32/radiant_proj/radiant_proj.rdf"
+#Stop recording: 6/1/2018 12:29:39
+
+
+
+<A name="pn180601152335"></A><B><U><big>pn180601152335</big></U></B>
+#Start recording tcl command: 6/1/2018 14:33:37
+#Project Location: E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/syn/jpeg_enc_ov7670_esp32/radiant_proj; Project name: radiant_proj
+prj_open "E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/syn/jpeg_enc_ov7670_esp32/radiant_proj/radiant_proj.rdf"
+prj_run Synthesis -impl impl_1
+prj_run Export -impl impl_1
+launch_programmer_prj "D:/APPS/lscc/radiant/1.0"
+prj_run Export -impl impl_1
+#Stop recording: 6/1/2018 15:23:35
+
+
+
+<A name="pn180602094016"></A><B><U><big>pn180602094016</big></U></B>
+#Start recording tcl command: 6/2/2018 09:19:57
+#Project Location: E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/syn/jpeg_enc_ov7670_esp32/radiant_proj; Project name: radiant_proj
+prj_open "E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/syn/jpeg_enc_ov7670_esp32/radiant_proj/radiant_proj.rdf"
+prj_archive -includeAll "E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/syn/jpeg_enc_ov7670_esp32/radiant_proj.zip"
+#Stop recording: 6/2/2018 09:40:16
+
+
+
+<A name="pn180607105453"></A><B><U><big>pn180607105453</big></U></B>
+#Start recording tcl command: 6/7/2018 09:59:29
 #Project Location: E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/syn/jpeg_enc_ov7670_esp32/radiant_proj; Project name: radiant_proj
 prj_open "E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/syn/jpeg_enc_ov7670_esp32/radiant_proj/radiant_proj.rdf"
 prj_run Export -impl impl_1
 launch_programmer_prj "D:/APPS/lscc/radiant/1.0"
 prj_run Export -impl impl_1
-launch_programmer_prj "D:/APPS/lscc/radiant/1.0"
-launch_programmer_prj "D:/APPS/lscc/radiant/1.0"
-prj_run Export -impl impl_1
-launch_programmer_prj "D:/APPS/lscc/radiant/1.0"
-prj_run Export -impl impl_1
-prj_run Export -impl impl_1
-launch_programmer_prj "D:/APPS/lscc/radiant/1.0"
-#Stop recording: 4/17/2018 16:58:46
-
-
-
-<A name="pn180418111157"></A><B><U><big>pn180418111157</big></U></B>
-#Start recording tcl command: 4/18/2018 11:02:08
-#Project Location: E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/syn/jpeg_enc_ov7670_esp32/radiant_proj; Project name: radiant_proj
-prj_open "E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/syn/jpeg_enc_ov7670_esp32/radiant_proj/radiant_proj.rdf"
-#Stop recording: 4/18/2018 11:11:57
-
-
-
-<A name="pn180418183427"></A><B><U><big>pn180418183427</big></U></B>
-#Start recording tcl command: 4/18/2018 17:56:16
-#Project Location: E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/syn/jpeg_enc_ov7670_esp32/radiant_proj; Project name: radiant_proj
-prj_open "E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/syn/jpeg_enc_ov7670_esp32/radiant_proj/radiant_proj.rdf"
-prj_run Export -impl impl_1
-launch_programmer_prj "D:/APPS/lscc/radiant/1.0"
-#Stop recording: 4/18/2018 18:34:27
-
-
-
-<A name="pn180421141139"></A><B><U><big>pn180421141139</big></U></B>
-#Start recording tcl command: 4/21/2018 10:43:03
-#Project Location: E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/syn/jpeg_enc_ov7670_esp32/radiant_proj; Project name: radiant_proj
-prj_open "E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/syn/jpeg_enc_ov7670_esp32/radiant_proj/radiant_proj.rdf"
-prj_run Export -impl impl_1
-launch_programmer_prj "D:/APPS/lscc/radiant/1.0"
-prj_run Export -impl impl_1
-launch_programmer_prj "D:/APPS/lscc/radiant/1.0"
-#Stop recording: 4/21/2018 14:11:39
-
-
-
-<A name="pn180423152106"></A><B><U><big>pn180423152106</big></U></B>
-#Start recording tcl command: 4/23/2018 09:58:50
-#Project Location: E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/syn/jpeg_enc_ov7670_esp32/radiant_proj; Project name: radiant_proj
-prj_open "E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/syn/jpeg_enc_ov7670_esp32/radiant_proj/radiant_proj.rdf"
-prj_run Export -impl impl_1
-launch_programmer_prj "D:/APPS/lscc/radiant/1.0"
-prj_run Export -impl impl_1
-launch_programmer_prj "D:/APPS/lscc/radiant/1.0"
-prj_run Export -impl impl_1
-launch_programmer_prj "D:/APPS/lscc/radiant/1.0"
-prj_run Export -impl impl_1
-launch_programmer_prj "D:/APPS/lscc/radiant/1.0"
-prj_run Export -impl impl_1
-#Stop recording: 4/23/2018 15:21:06
+#Stop recording: 6/7/2018 10:54:53
 
 
 
@@ -188,15 +300,16 @@ prj_run Export -impl impl_1
 
 <DIV id="toc" class="radiant"><span onmousemove="showTocList()">Contents</span>
 <UL id="toc_list">
-<LI><A href=#pn180411153847>pn180411153847</A></LI>
-<LI><A href=#pn180414174609>pn180414174609</A></LI>
-<LI><A href=#pn180416160552>pn180416160552</A></LI>
-<LI><A href=#pn180416171359>pn180416171359</A></LI>
-<LI><A href=#pn180417165846>pn180417165846</A></LI>
-<LI><A href=#pn180418111157>pn180418111157</A></LI>
-<LI><A href=#pn180418183427>pn180418183427</A></LI>
-<LI><A href=#pn180421141139>pn180421141139</A></LI>
-<LI><A href=#pn180423152106>pn180423152106</A></LI>
+<LI><A href=#pn180524155209>pn180524155209</A></LI>
+<LI><A href=#pn180525153918>pn180525153918</A></LI>
+<LI><A href=#pn180528203159>pn180528203159</A></LI>
+<LI><A href=#pn180530132123>pn180530132123</A></LI>
+<LI><A href=#pn180530174058>pn180530174058</A></LI>
+<LI><A href=#pn180531165504>pn180531165504</A></LI>
+<LI><A href=#pn180601122939>pn180601122939</A></LI>
+<LI><A href=#pn180601152335>pn180601152335</A></LI>
+<LI><A href=#pn180602094016>pn180602094016</A></LI>
+<LI><A href=#pn180607105453>pn180607105453</A></LI>
 </UL>
 </DIV>
 

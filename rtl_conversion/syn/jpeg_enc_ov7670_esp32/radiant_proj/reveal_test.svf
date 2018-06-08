@@ -1,0 +1,76 @@
+!
+! Diamond Reveal Analyzer SVF
+!
+! initialize SDR and SIR end state
+ENDDR IDLE;
+ENDIR IDLE;
+! initialize Header and Trailer
+HDR 0;
+HIR 0;
+TDR 0;
+TIR 0;
+
+! setTargetHubs
+! enable ER1
+SIR 8 TDI (32);
+! set reveal core
+SDR 21 TDI (00016);
+! enable ER2
+SIR 8 TDI (38);
+
+! enable ER2
+SIR 8 TDI (38);
+! enable ER2
+SIR 8 TDI (38);
+! Set Odd Parity readback
+SDR 36 TDI (c20000000);
+SDR 36 TDI (c20000000) TDO (000000000) MASK (FFFFFFFFF);
+
+! enable ER2
+SIR 8 TDI (38);
+! Set Odd Parity
+SDR 36 TDI (82000fffb);
+
+! Set LA Start/Stop readback
+SDR 36 TDI (430000000);
+SDR 36 TDI (430000000) TDO (000000000) MASK (FFFFFFFFF);
+
+! Set LA Start/Stop 
+SDR 36 TDI (03000fffe);
+
+! Get Pattern
+SDR 36 TDI (430090000);
+SDR 36 TDI (430090000) TDO (000000000) MASK (FFFFFFFFF);
+
+! setTargetHubs
+! enable ER1
+SIR 8 TDI (32);
+! set reveal core
+SDR 21 TDI (00016);
+! enable ER2
+SIR 8 TDI (38);
+
+! enable ER2
+SIR 8 TDI (38);
+! enable ER2
+SIR 8 TDI (38);
+! Set Odd Parity readback
+SDR 36 TDI (c20000000);
+SDR 36 TDI (c20000000) TDO (000000000) MASK (FFFFFFFFF);
+
+! enable ER2
+SIR 8 TDI (38);
+! Set Odd Parity
+SDR 36 TDI (82000fffb);
+
+! Set LA Start/Stop readback
+SDR 36 TDI (430000000);
+SDR 36 TDI (430000000) TDO (000000000) MASK (FFFFFFFFF);
+
+! Set LA Start/Stop 
+SDR 36 TDI (03000fffe);
+
+! Get Pattern
+SDR 36 TDI (430090000);
+SDR 36 TDI (430090000) TDO (000000000) MASK (FFFFFFFFF);
+

@@ -1,4 +1,4 @@
-#OPTIONS:"|-mixedhdl|-modhint|E:\\upwork\\gnarly_grey\\GitHub\\JPEG_Encoder\\rtl_conversion\\syn\\jpeg_enc_ov7670_esp32\\radiant_proj\\impl_1\\synwork\\_verilog_hintfile|-top|top|-layerid|0|-orig_srs|E:\\upwork\\gnarly_grey\\GitHub\\JPEG_Encoder\\rtl_conversion\\syn\\jpeg_enc_ov7670_esp32\\radiant_proj\\impl_1\\synwork\\radiant_proj_impl_1_comp.srs|-prodtype|synplify_pro|-primux|-fixsmult|-infer_seqShift|-ice|-sdff_counter|-nram|-divnmod|-nostructver|-I|E:\\upwork\\gnarly_grey\\GitHub\\JPEG_Encoder\\rtl_conversion\\syn\\jpeg_enc_ov7670_esp32\\radiant_proj|-I|E:\\upwork\\gnarly_grey\\GitHub\\JPEG_Encoder\\rtl_conversion\\syn\\jpeg_enc_ov7670_esp32\\radiant_proj\\impl_1\\|-I|D:\\APPS\\lscc\\radiant\\1.0\\synpbase\\lib|-v2001|-devicelib|D:\\APPS\\lscc\\radiant\\1.0\\synpbase\\lib\\generic\\ice40up.v|-encrypt|-pro|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-D_MULTIPLE_FILE_COMPILATION_UNIT_|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work"
+#OPTIONS:"|-mixedhdl|-modhint|E:\\upwork\\gnarly_grey\\GitHub\\JPEG_Encoder\\rtl_conversion\\syn\\jpeg_enc_ov7670_esp32\\radiant_proj\\impl_1\\synwork\\_verilog_hintfile|-top|top|-layerid|0|-orig_srs|E:\\upwork\\gnarly_grey\\GitHub\\JPEG_Encoder\\rtl_conversion\\syn\\jpeg_enc_ov7670_esp32\\radiant_proj\\impl_1\\synwork\\radiant_proj_impl_1_comp.srs|-prodtype|synplify_pro|-primux|-fixsmult|-infer_seqShift|-ice|-sdff_counter|-nram|-divnmod|-nostructver|-I|E:\\upwork\\gnarly_grey\\GitHub\\JPEG_Encoder\\rtl_conversion\\syn\\jpeg_enc_ov7670_esp32\\radiant_proj|-I|E:\\upwork\\gnarly_grey\\GitHub\\JPEG_Encoder\\rtl_conversion\\syn\\jpeg_enc_ov7670_esp32\\radiant_proj\\impl_1\\|-I|D:\\APPS\\lscc\\radiant\\1.0\\synpbase\\lib|-v2001|-devicelib|D:\\APPS\\lscc\\radiant\\1.0\\synpbase\\lib\\generic\\ice40up.v|-encrypt|-pro|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-D_MULTIPLE_FILE_COMPILATION_UNIT_|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work"
 #CUR:"D:\\APPS\\lscc\\radiant\\1.0\\synpbase\\bin64\\c_ver.exe":1513353474
 #CUR:"E:\\upwork\\gnarly_grey\\GitHub\\JPEG_Encoder\\rtl_conversion\\syn\\jpeg_enc_ov7670_esp32\\radiant_proj\\impl_1\\synwork\\_verilog_hintfile":1523426234
 #CUR:"D:\\APPS\\lscc\\radiant\\1.0\\synpbase\\lib\\generic\\ice40up.v":1513353490
@@ -24,21 +24,22 @@
 #CUR:"D:\\APPS\\lscc\\radiant\\1.0\\ip\\pmi\\../common/ram_dq/rtl/lscc_ram_dq.v":1510192101
 #CUR:"D:\\APPS\\lscc\\radiant\\1.0\\ip\\pmi\\pmi_sub.v":1510103546
 #CUR:"D:\\APPS\\lscc\\radiant\\1.0\\ip\\pmi\\../common/subtractor/rtl/lscc_subtractor.v":1509782146
-#CUR:"E:\\upwork\\gnarly_grey\\GitHub\\JPEG_Encoder\\rtl_conversion\\syn\\jpeg_enc_ov7670_esp32\\src\\glue_logic\\jpeg_data_to_spi.v":1525078255
+#CUR:"E:\\upwork\\gnarly_grey\\GitHub\\JPEG_Encoder\\rtl_conversion\\syn\\jpeg_enc_ov7670_esp32\\src\\glue_logic\\jpeg_data_to_spi.v":1527139904
 #CUR:"E:\\upwork\\gnarly_grey\\GitHub\\JPEG_Encoder\\rtl_conversion\\syn\\jpeg_enc_ov7670_esp32\\src\\glue_logic\\jpeg_data_writer.v":1523098184
-#CUR:"E:\\upwork\\gnarly_grey\\GitHub\\JPEG_Encoder\\rtl_conversion\\syn\\jpeg_enc_ov7670_esp32\\src\\glue_logic\\sc_fifo.v":1523437771
-#CUR:"E:\\upwork\\gnarly_grey\\GitHub\\JPEG_Encoder\\rtl_conversion\\syn\\jpeg_enc_ov7670_esp32\\src\\glue_logic\\yuyv_to_yuv.v":1523705746
-#CUR:"E:\\upwork\\gnarly_grey\\GitHub\\JPEG_Encoder\\rtl_conversion\\syn\\jpeg_enc_ov7670_esp32\\src\\jpeg_enc\\jpeg_enc.v":1523703739
-#CUR:"E:\\upwork\\gnarly_grey\\GitHub\\JPEG_Encoder\\rtl_conversion\\syn\\jpeg_enc_ov7670_esp32\\src\\jpeg_enc\\jpeg_enc_dct.v":1523700009
+#CUR:"E:\\upwork\\gnarly_grey\\GitHub\\JPEG_Encoder\\rtl_conversion\\syn\\jpeg_enc_ov7670_esp32\\src\\glue_logic\\sc_fifo.v":1527762286
+#CUR:"E:\\upwork\\gnarly_grey\\GitHub\\JPEG_Encoder\\rtl_conversion\\syn\\jpeg_enc_ov7670_esp32\\src\\glue_logic\\yuyv_to_yuv.v":1527843729
+#CUR:"E:\\upwork\\gnarly_grey\\GitHub\\JPEG_Encoder\\rtl_conversion\\syn\\jpeg_enc_ov7670_esp32\\src\\jpeg_enc\\jpeg_enc.v":1528434148
+#CUR:"E:\\upwork\\gnarly_grey\\GitHub\\JPEG_Encoder\\rtl_conversion\\syn\\jpeg_enc_ov7670_esp32\\src\\jpeg_enc\\jpeg_enc_dct.v":1528434237
 #CUR:"E:\\upwork\\gnarly_grey\\GitHub\\JPEG_Encoder\\rtl_conversion\\syn\\jpeg_enc_ov7670_esp32\\src\\jpeg_enc\\jpeg_enc_mem.v":1523425216
 #CUR:"E:\\upwork\\gnarly_grey\\GitHub\\JPEG_Encoder\\rtl_conversion\\syn\\jpeg_enc_ov7670_esp32\\src\\ov7670_esp32\\I2C_Interface.v":1513866168
 #CUR:"E:\\upwork\\gnarly_grey\\GitHub\\JPEG_Encoder\\rtl_conversion\\syn\\jpeg_enc_ov7670_esp32\\src\\ov7670_esp32\\OV7670_Controller.v":1513866168
-#CUR:"E:\\upwork\\gnarly_grey\\GitHub\\JPEG_Encoder\\rtl_conversion\\syn\\jpeg_enc_ov7670_esp32\\src\\ov7670_esp32\\OV7670_Registers.v":1524460700
-#CUR:"E:\\upwork\\gnarly_grey\\GitHub\\JPEG_Encoder\\rtl_conversion\\syn\\jpeg_enc_ov7670_esp32\\src\\ov7670_esp32\\spi_slave.v":1524476101
-#CUR:"E:\\upwork\\gnarly_grey\\GitHub\\JPEG_Encoder\\rtl_conversion\\syn\\jpeg_enc_ov7670_esp32\\src\\ov7670_esp32\\top.v":1525077534
-#CUR:"E:\\upwork\\gnarly_grey\\GitHub\\JPEG_Encoder\\rtl_conversion\\syn\\jpeg_enc_ov7670_esp32\\src\\ov7670_esp32\\up_spram.v":1523428242
+#CUR:"E:\\upwork\\gnarly_grey\\GitHub\\JPEG_Encoder\\rtl_conversion\\syn\\jpeg_enc_ov7670_esp32\\src\\ov7670_esp32\\OV7670_Registers.v":1525861176
+#CUR:"E:\\upwork\\gnarly_grey\\GitHub\\JPEG_Encoder\\rtl_conversion\\syn\\jpeg_enc_ov7670_esp32\\src\\ov7670_esp32\\spi_slave.v":1527653838
+#CUR:"E:\\upwork\\gnarly_grey\\GitHub\\JPEG_Encoder\\rtl_conversion\\syn\\jpeg_enc_ov7670_esp32\\src\\ov7670_esp32\\top.v":1528437750
+#CUR:"E:\\upwork\\gnarly_grey\\GitHub\\JPEG_Encoder\\rtl_conversion\\syn\\jpeg_enc_ov7670_esp32\\src\\ov7670_esp32\\up_spram.v":1528431215
+#CUR:"E:\\upwork\\gnarly_grey\\GitHub\\JPEG_Encoder\\rtl_conversion\\syn\\jpeg_enc_ov7670_esp32\\src\\glue_logic\\sc_fifo_32.v":1526275273
 #CUR:"../../src/jpeg_enc/header_rom_data.h":1523694285
-#CUR:"../../src/jpeg_enc/fdtbl_rom.mem":1522236434
+#CUR:"../../src/jpeg_enc/fdtbl_rom.mem":1528434160
 #CUR:"../../src/jpeg_enc/zzidx_rom_data.h":1522236434
 #CUR:"../../src/jpeg_enc/dcht_bc_rom.mem":1522236434
 #CUR:"../../src/jpeg_enc/dcht_bb_rom.mem":1522236434
@@ -77,6 +78,7 @@
 28			"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\spi_slave.v" verilog
 29			"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\top.v" verilog
 30			"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\ov7670_esp32\up_spram.v" verilog
+31			"E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\src\glue_logic\sc_fifo_32.v" verilog
 #Dependency Lists(Uses List)
 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17
 1 0 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17
@@ -107,8 +109,9 @@
 26 27 25
 27 -1
 28 -1
-29 30 26 21 22 19 18 28
+29 30 26 21 22 19 31 18 28
 30 -1
+31 -1
 #Dependency Lists(Users Of)
 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17
 1 0 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17
@@ -141,6 +144,7 @@
 28 29
 29 -1
 30 29
+31 29
 #Design Unit to File Association
 module work lscc_adder 2
 module work pmi_add 1
@@ -173,5 +177,6 @@ module work OV7670_Registers 27
 module work OV7670_Controller 26
 module work spi_slave 28
 module work up_spram 30
+module work sc_fifo_32 31
 module work top 29
 #Unbound instances to file Association.
