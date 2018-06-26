@@ -1,0 +1,10 @@
+{signal: [
+  {name: 'pclk',       wave: 'p................|..........'},
+  {name: 'img_req',    wave: '0.......1........|..........'},
+  {name: 'vsync',      wave: '0................|..1.......'},
+  {name: 'conv_start', wave: '0................|...1......'},
+],
+ head:{
+   text:'img_req to conv_start'   
+ },
+}

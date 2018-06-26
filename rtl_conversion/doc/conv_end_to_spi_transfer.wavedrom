@@ -1,0 +1,15 @@
+{signal: [
+  {name: 'pclk',     wave: 'p................|..........'},
+  {name: 'conv_end', wave: '0.1..............|..........'},
+  {name: 'data_rd',  wave: '0................|.......10.'},
+  {name: 'data_out', wave: 'xxx=.............|........=.', data:["data0", "data1"]},
+  ['SPI Interface', 
+   {name: 'spi_sclk', wave: 'l......h..l..h..l|.h..l..h..', },
+   {name: 'spi_ssel', wave: '1...0............|..........'},
+   {name: 'spi_miso', wave: 'x...=.....=.....=|....=.....',data:["data0[7]","data0[6]","","data0[0]"]},
+   {name: 'spi_mosi', wave: 'x................|..........'}]
+  ],
+ head:{
+   text:'conv_end to SPI transfer'   
+ },
+}

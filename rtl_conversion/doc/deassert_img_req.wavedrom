@@ -1,0 +1,17 @@
+{signal: [
+  {name: 'pclk',      wave: 'p........|..................'},
+  {name: 'conv_end',  wave: '1........|...............0..'},
+  {name: 'data_rd',   wave: '0........|.......10.........'},
+  {name: 'data_out',  wave: '=........|........x.........', data:["dataN"]},
+  ['SPI Interface', 
+   {name: 'spi_sclk', wave: 'h.l..h..l|.h..l..h..l.......', },
+   {name: 'spi_ssel', wave: '0........|.............1....'},
+   {name: 'spi_miso', wave: '=.=.....=|....=.....x.......',data:["dataN[7]","dataN[6]","","dataN[0]"]},
+   {name: 'spi_mosi', wave: 'x........|..................'}],
+  {name: 'img_req',   wave: '1........|..............0...'},
+  ],
+ 
+ head:{
+   text:'de-assert img_req'   
+ },
+}
