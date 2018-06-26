@@ -18,7 +18,7 @@
 				<BScanVal>0</BScanVal>
 			</Bypass>
 			<File>E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/rtl_conversion/syn/jpeg_enc_ov7670_esp32/radiant_proj/impl_1/radiant_proj_impl_1.bin</File>
-			<FileTime>06/08/18 11:38:44</FileTime>
+			<FileTime>06/11/18 09:38:47</FileTime>
 			<MemoryType>External SPI Flash Memory (SPI FLASH)</MemoryType>
 			<Operation>Erase,Program,Verify</Operation>
 			<Option>

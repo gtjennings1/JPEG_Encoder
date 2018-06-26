@@ -3,14 +3,14 @@ Report for cell top.verilog
                                           Cell usage:
                                cell       count    Res Usage(%)
                              CCU2_B      545       100.0
-                            FD1P3DZ     1262       100.0
+                            FD1P3DZ     1261       100.0
                             FD1P3IZ      200       100.0
-                            FD1P3JZ       42       100.0
+                            FD1P3JZ       43       100.0
                                 GND       13       100.0
                               HSOSC        1       100.0
                                  IB       15       100.0
                                 INV       74       100.0
-                               LUT4     3389       100.0
+                               LUT4     3379       100.0
                               MAC16        3       100.0
                                  OB        6       100.0
                               OBZ_B        1       100.0
@@ -34,37 +34,37 @@ SUB MODULES
                            up_spram        1       100.0
                         yuyv_to_yuv        1       100.0
                             
-                         TOTAL          5596           
+                         TOTAL          5586           
 ----------------------------------------------------------------------
 Report for cell OV7670_Controller.netlist
      Instance path:  u_OV7670_Controller
                                           Cell usage:
                                cell       count    Res Usage(%)
                              CCU2_B        5         0.9
-                            FD1P3DZ       50         4.0
+                            FD1P3DZ       49         3.9
                             FD1P3IZ       48        24.0
-                            FD1P3JZ       42       100.0
+                            FD1P3JZ       43       100.0
                                 GND        3        23.1
-                               LUT4      173         5.1
+                               LUT4      170         5.0
                                 VCC        3        23.1
 SUB MODULES 
                       I2C_Interface        1       100.0
                    OV7670_Registers        1       100.0
                             
-                         TOTAL           326           
+                         TOTAL           323           
 ----------------------------------------------------------------------
 Report for cell I2C_Interface.netlist
      Instance path:  u_OV7670_Controller.I2C
                                           Cell usage:
                                cell       count    Res Usage(%)
-                            FD1P3DZ       41         3.2
+                            FD1P3DZ       40         3.2
                             FD1P3IZ        1         0.5
-                            FD1P3JZ       31        73.8
+                            FD1P3JZ       32        74.4
                                 GND        1         7.7
-                               LUT4       63         1.9
+                               LUT4       61         1.8
                                 VCC        1         7.7
                             
-                         TOTAL           138           
+                         TOTAL           136           
 ----------------------------------------------------------------------
 Report for cell OV7670_Registers.netlist
      Instance path:  u_OV7670_Controller.LUT
@@ -73,12 +73,12 @@ Report for cell OV7670_Registers.netlist
                              CCU2_B        5         0.9
                             FD1P3DZ        9         0.7
                             FD1P3IZ       47        23.5
-                            FD1P3JZ       11        26.2
+                            FD1P3JZ       11        25.6
                                 GND        1         7.7
-                               LUT4      110         3.2
+                               LUT4      109         3.2
                                 VCC        1         7.7
                             
-                         TOTAL           184           
+                         TOTAL           183           
 ----------------------------------------------------------------------
 Report for cell spi_slave.netlist
      Instance path:  esp32_spi
@@ -113,11 +113,11 @@ Report for cell sc_fifo_32.netlist
                              CCU2_B       13         2.4
                             FD1P3DZ       22         1.7
                                 GND        1         7.7
-                               LUT4       13         0.4
+                               LUT4       14         0.4
                               PDP4K        2        15.4
                                 VCC        1         7.7
                             
-                         TOTAL            52           
+                         TOTAL            53           
 ----------------------------------------------------------------------
 Report for cell jpeg_data_writer.netlist
      Instance path:  jedw
@@ -141,24 +141,24 @@ Report for cell jpeg_enc.netlist
                             FD1P3IZ       38        19.0
                                 GND        3        23.1
                                 INV       74       100.0
-                               LUT4     2655        78.3
+                               LUT4     2647        78.3
                               PDP4K       10        76.9
                                 VCC        3        23.1
 SUB MODULES 
                        jpeg_enc_dct        1       100.0
                        jpeg_enc_mem        1       100.0
                             
-                         TOTAL          4118           
+                         TOTAL          4110           
 ----------------------------------------------------------------------
 Report for cell jpeg_enc_dct.netlist
      Instance path:  je.dct
                                           Cell usage:
                                cell       count    Res Usage(%)
                              CCU2_B      173        31.7
-                            FD1P3DZ      461        36.5
+                            FD1P3DZ      461        36.6
                                 GND        1         7.7
                                 INV       54        73.0
-                               LUT4      957        28.2
+                               LUT4      957        28.3
                                 VCC        1         7.7
                             
                          TOTAL          1647           

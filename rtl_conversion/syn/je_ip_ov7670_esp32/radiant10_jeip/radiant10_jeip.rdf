@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RadiantProject version="4.0" title="radiant10_jeip" device="iCE40UP5K-SG48I" performance_grade="High-Performance_1.2V" default_implementation="jeip_default">
+    <Options/>
+    <Implementation title="jeip_default" dir="jeip_default" description="jeip_default" synthesis="synplify" default_strategy="Strategy1">
+        <Options def_top="top"/>
+        <Source name="../src/je_ip/je_ip.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../src/je_ip/jpeg_data_to_spi.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../src/je_ip/jpeg_data_writer.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../src/je_ip/jpeg_enc.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../src/je_ip/jpeg_enc_dct.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../src/je_ip/jpeg_enc_mem.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../src/je_ip/sc_fifo.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../src/je_ip/sc_fifo_32.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../src/je_ip/yuyv_to_yuv.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../src/ov7670_esp32/I2C_Interface.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../src/ov7670_esp32/OV7670_Controller.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../src/ov7670_esp32/OV7670_Registers.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../src/ov7670_esp32/spi_slave.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../src/ov7670_esp32/top.v" type="Verilog" type_short="Verilog">
+            <Options top_module="top"/>
+        </Source>
+        <Source name="../src/ov7670_esp32/up_spram.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="jeip_constraints.pdc" type="Physical Constraints File" type_short="PDC">
+            <Options/>
+        </Source>
+        <Source name="source/jeip_default.xcf" type="Programming Project File" type_short="Programming">
+            <Options/>
+        </Source>
+    </Implementation>
+    <Strategy name="Strategy1" file="radiant10_jeip1.sty"/>
+</RadiantProject>

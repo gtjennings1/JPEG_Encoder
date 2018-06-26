@@ -13,11 +13,13 @@
 
 #define JPEG_HEADER_SIZE 607
 
+#define JPEG_SIZE_4BYTE
+
 // Wifi ssid
 const char* ssid = "IF Router 03";
 
 // Wifi password
-const char* password = "n8154900999";
+const char* password = "s9737509210";
 
 // Set the ip of the server
 const char* upload_url = "http://34.205.156.128:8080/upload?run=true&face=true";
@@ -119,31 +121,47 @@ void loop() {
 	  data_size |= pixdata;
 	  data_size <<= 8;
 	  pixdata = SPI.transfer(0xFF);
-	  data_size |= pixdata;	
-
-	  data_size = (data_size & 0x1FFFF) + JPEG_HEADER_SIZE;   
-	  Serial.print("JPEG Size: ");
-	  Serial.print(data_size);
-	  Serial.print("\n"); 	  
+	  data_size |= pixdata;
+#ifdef JPEG_SIZE_4BYTE
+    data_size <<= 8;
+	  pixdata = SPI.transfer(0xFF);
+	  data_size |= pixdata;
 	  
-      if (data_size > 0) {
-        HTTPClient http;
-        http.begin(upload_url);
+	  if (!(data_size & 0x80000000)) {
+	 	  
+#endif	  
 
-        int http_response_code = send_data(http, filename, data_size);
-
-        if (http_response_code >= 400) {
-          Serial.print("Error on sending POST: ");
-          Serial.println(http_response_code);
+  	  data_size = (data_size & 0x1FFFF) + JPEG_HEADER_SIZE;   
+  	  Serial.print("JPEG Size: ");
+  	  Serial.print(data_size);
+  	  Serial.print("\n"); 	  
+  	  
+        if (data_size > 0) {
+          HTTPClient http;
+          http.begin(upload_url);
+  
+          int http_response_code = send_data(http, filename, data_size);
+  
+          if (http_response_code >= 400) {
+            Serial.print("Error on sending POST: ");
+            Serial.println(http_response_code);
+          }
+  
+          http.end();
         }
-
-        http.end();
-      }
-	  
+  	  
+  	  digitalWrite(CSPIN, HIGH);
+  	  digitalWrite(IMG_REQ, LOW);
+      delay(100);
+#ifdef JPEG_SIZE_4BYTE	
+	  } else {
 	  digitalWrite(CSPIN, HIGH);
 	  digitalWrite(IMG_REQ, LOW);
-    delay(100);
-
+	  Serial.println("Invalid Image Size");		  
+	  }
+		  
+#endif	  
+	  
     } else {
       Serial.println("No data to send");
     }

@@ -25,11 +25,13 @@ SOFTWARE.
 #define CSPIN  5  // A1 for IU board
 #define IMG_REQ 16 //Upduino Pin 03
 #define IMG_RDY 4  //Upduino Pin 48
+
+//#define RAW_READ
 /*
 SPI  ESP32 Upduino2
 SCLK  18     47
-MISO  17     02
-MOSI  19     45
+MISO  19     02
+MOSI  17     45
 SS    05     46
  
 */
@@ -37,6 +39,8 @@ SS    05     46
 int i = 0;
 int j = 0;
 byte pixdata, pixdata_p;
+char Y0, U, Y1, V;
+char r0, g0, b0, r1, g1, b1;
 int address, jpeg_size;
   
 void setup(void)
@@ -49,12 +53,131 @@ void setup(void)
   digitalWrite(CSPIN, HIGH); 
            
   SPI.begin(18, 19, 17, 25); // sck, miso, mosi, ss (ss can be any GPIO)
-  SPI.beginTransaction(SPISettings(500000, MSBFIRST, SPI_MODE0));
+  SPI.beginTransaction(SPISettings(150000, MSBFIRST, SPI_MODE0));
   
   Serial.begin(115200);
   delay(500);
   digitalWrite(IMG_REQ, HIGH);
 
+#ifdef RAW_READ
+  //Serial.println("Reading RAW, Converting to BMP");
+  Serial.println("Reading RAW");
+  //Serial.println("424D36DC05000000000036000000280000004001000090010000010018000000000000DC050000000000000000000000000000000000");
+  delay(100);  
+  digitalWrite(CSPIN, LOW);
+  Y0 = SPI.transfer(0);
+  while(j<200)
+  {
+    while(i<(320/2))
+    {
+      Y0 = SPI.transfer(0);
+      if (Y0 < 16)
+      {
+        Serial.print("0");
+        Serial.print(Y0, HEX);
+      }
+      else
+        Serial.print(Y0, HEX);
+        
+      U  = SPI.transfer(0);
+      if (U < 16)
+      {
+        Serial.print("0");
+        Serial.print(U, HEX);
+      }
+      else
+        Serial.print(U, HEX);
+              
+      Y1 = SPI.transfer(0);
+      if (Y1 < 16)
+      {
+        Serial.print("0");
+        Serial.print(Y1, HEX);
+      }
+      else
+        Serial.print(Y1, HEX);
+              
+      V  = SPI.transfer(0);
+      if (V < 16)
+      {
+        Serial.print("0");
+        Serial.print(V, HEX);
+      }
+      else
+        Serial.print(V, HEX);      
+/*
+      U = U - 128;
+      V = V - 128;
+
+      r0 = Y0 + V + (V>>2) + (V>>3) + (V>>5);
+      if (r0 < 16)
+      {
+        Serial.print("0");
+        Serial.print(r0, HEX);
+      }
+      else
+        Serial.print(r0, HEX);
+        
+      g0 = Y0 - ((U>>2) + (U>>4) + (U>>5)) - ((V>>1) + (V>>3) + (V>>4) + (V>>5));
+      if (g0 < 16)
+      {
+        Serial.print("0");
+        Serial.print(g0, HEX);
+      }
+      else
+        Serial.print(g0, HEX);
+        
+
+      b0 = Y0 + U + (U>>1) + (U>>2) + (U>>6);
+      if (b0 < 16)
+      {
+        Serial.print("0");
+        Serial.print(b0, HEX);
+      }
+      else
+        Serial.print(b0, HEX);
+        
+
+      r1 = Y1 + V + (V>>2) + (V>>3) + (V>>5);
+      if (r1 < 16)
+      {
+        Serial.print("0");
+        Serial.print(r1, HEX);
+      }
+      else
+        Serial.print(r1, HEX);
+        
+
+      g1 = Y1 - ((U>>2) + (U>>4) + (U>>5)) - ((V>>1) + (V>>3) + (V>>4) + (V>>5));
+      if (g1 < 16)
+      {
+        Serial.print("0");
+        Serial.print(g1, HEX);
+      }
+      else
+        Serial.print(g1, HEX);
+        
+
+      b1 = Y1 + U + (U>>1) + (U>>2) + (U>>6);
+      if (b1 < 16)
+      {
+        Serial.print("0");
+        Serial.print(b1, HEX);
+      }
+      else
+        Serial.print(b1, HEX);
+*/        
+      i++;      
+      
+    }
+    i=0;
+    j++;
+    Serial.print("\n");
+  }
+
+  digitalWrite(CSPIN, HIGH);
+  Serial.print("\n"); 
+#endif  
   while (!digitalRead(IMG_RDY)){}
 
   digitalWrite(CSPIN, LOW);

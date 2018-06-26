@@ -2,12 +2,6 @@
 
 `define WIDTH   (320)//(1024)
 `define HEIGHT  (200)//(768)
-`define COLORS  (3)
-`define QUALITY (90)
-
-`define QUAL1   (`QUALITY ? `QUALITY : 90)
-`define QUAL2   ((`QUAL1 < 1) ? 1 : (`QUAL1 > 100) ? 100 : `QUAL1)
-`define QUAL3   ((`QUAL2 < 50) ? 5000/`QUAL2 : 200 - `QUAL2*2)
 
 //`define QUANT_MULT
 
@@ -17,7 +11,6 @@ module jpeg_enc (
   input           conv_en,
   input  [7:0]    fb_data,
   output          fb_rd,
-  //output [21:0]   fb_addr,
   output [7:0]    img_out,
   
   input  [9:0]    hd_addr,
@@ -36,28 +29,11 @@ module jpeg_enc (
   
   reg             du_ram_we;
   reg    [7:0]    du_ram_aw;
-  
-  //reg signed   [7:0]    YDU [63:0];
-  //reg signed   [7:0]    UDU [63:0];
-  //reg signed   [7:0]    VDU [63:0];
-  
-  //reg signed   [17:0]   DCT_DU [63:0];
-  //reg signed   [14:0]   ZIG_DU [63:0];
+
   reg signed   [14:0]   QNT_DU;
 `ifdef QUANT_MULT  
   reg signed   [25:0]   QNT_DU_pre;
 `endif  
-  //reg signed   [13:0]   DCT_UDU [63:0];
-  //reg signed   [13:0]   DCT_VDU [63:0]; 
-
-  //reg signed   [16:0]   tmp0, tmp1, tmp2, tmp3, tmp4, tmp5, tmp6, tmp7,
-  //                      tmp10, tmp11, tmp12, tmp13, tmp20, tmp21, tmp22;
-  //reg signed   [16:0]   z1, z2, z3, z4, z5, z11, z13;
-
-  //reg signed   [7:0]    xDU [7:0];     
-  //reg    [3:0]    load_xdu_cnt;
-  //reg    [2:0]    load_xdu_cnt_fl;
-
   reg    [1:0]    dct_comp_sel;
   reg    [5:0]    dct_comp_idx[7:0];
   reg    [3:0]    dct_idx_cnt;
@@ -81,7 +57,6 @@ module jpeg_enc (
   reg    [5:0]    qz_cnt;
   
   reg    [7:0]    c_state, n_state, b_state;
-  reg    [21:0]   fb_addr_reg;
   
   reg    [4:0]    wb_bit_cnt, wb_bc_tmp;
   reg    [23:0]   wb_bit_buf, wb_bb_tmp;
@@ -91,7 +66,7 @@ module jpeg_enc (
   reg    [4:0]    cb_bit_cnt;
   
   reg    [5:0]    end0pos;
-  reg signed   [14:0]   /*du_e0p,*/ du_ac0;
+  reg signed   [14:0]   du_ac0;
   reg    [7:0]    ac_idx;
   reg    [6:0]    ac0_idx;
   reg    [5:0]    ac0_cnt;
@@ -100,81 +75,69 @@ module jpeg_enc (
   
   
   assign img_out    = (byte_count != 10'h000) ? header_rom_d : img_out_reg;
-  assign img_valid  = img_valid_reg;//img_valid_reg_fl;//
+  assign img_valid  = img_valid_reg;
   assign img_done   = img_done_reg;	 
-  //assign fb_addr    = fb_addr_reg;
+  
   assign fb_rd      = fb_rd_reg[0];
   
   parameter       IDLE      = 0;
-  parameter       TX_HEADER = 1;
-  parameter       LOAD_DU   = 2;
-  parameter       WAIT_DU   = 3;
-  parameter       COMP_SEL  = 4;
-  parameter       DCT_P1    = 5;
-  parameter       DCT_P2    = 6;
-  parameter       DCT_P3    = 7;
-  parameter       DCT_P4    = 8;
-  parameter       DCT_P5    = 9;
-  parameter       DCT_P6    = 10;
-  parameter       DCT_P7    = 11;
-  parameter       QUANTIZE  = 12;
-  parameter       ZIGZAG    = 13;
-  parameter       DIFF_DC   = 14;
-  parameter       CHK_DIFF  = 15;
-  parameter       WB_HTDC0  = 16;
-  parameter       WR_BITS   = 17;
-  parameter       WB_STEP1  = 18;
-  parameter       WB_STEP2  = 19;
-  parameter       WB_STEP3  = 20;
-  parameter       WB_STEP4  = 21;
-  parameter       WB_STEP5  = 22;
-  parameter       WB_NSTATE = 23; 
-  parameter       CB_DIFF   = 24;
-  parameter       CALC_BITS = 25;
-  parameter       CB_STEP1  = 26;
-  parameter       CB_NSTATE = 27;
-  parameter       WB_HTDCB1 = 28; 
-  parameter       WB_DIFFB  = 29;
-  parameter       FIND_TR0  = 30;
-  parameter       CHECK_ELM = 31;
-  parameter       DEC_E0P   = 32;  
-  parameter       CHECK_E0P = 33;
-  parameter       ENC_AC    = 34;
-  parameter       FIND_AC0  = 35;
-  parameter       CHECK_AC0 = 36;
-  parameter       INC_AC0   = 37;
-  parameter       CHK_NRZ16 = 38;
-  parameter       WB_M16B   = 39;
-  parameter       CHK_M16B  = 40;
-  parameter       CB_DUAC   = 41;
-  parameter       PREP_ACIDX= 42;
-  parameter       WB_HTAC   = 43;
-  parameter       WB_DUAC   = 44;
-  parameter       CHK_ACIDX = 45;
-  parameter       CHK_EOP63 = 46;
-  parameter       WB_EOB    = 47;
-  parameter       EXIT_PROC = 48;
-  parameter       CHECK_EOF = 49;
-  parameter       WB_EOI    = 50;
-  parameter       EOI1      = 51;
-  parameter       EOI2      = 52;
-  parameter       CONV_DONE = 53;
-  parameter       LOAD_xDU  = 54;
-  parameter       PRE_QUANT = 55;
-  parameter       READ_TR0  = 56;
-  parameter       READ_AC0  = 57;
-  parameter       READ_HTAC = 58;
-  parameter       CB_NSTATE2= 59;
-  parameter       READ_HTAC2= 60;
+  parameter       LOAD_DU   = 1;
+  parameter       WAIT_DU   = 2;
+  parameter       COMP_SEL  = 3;
+  parameter       DCT_P1    = 4;
+  parameter       DCT_P7    = 5;
+  parameter       QUANTIZE  = 6;
+  parameter       ZIGZAG    = 7;
+  parameter       DIFF_DC   = 8;
+  parameter       CHK_DIFF  = 9;
+  parameter       WB_HTDC0  = 10;
+  parameter       WR_BITS   = 11;
+  parameter       WB_STEP1  = 12;
+  parameter       WB_STEP2  = 13;
+  parameter       WB_STEP3  = 14;
+  parameter       WB_STEP4  = 15;
+  parameter       WB_STEP5  = 16;
+  parameter       WB_NSTATE = 17; 
+  parameter       CB_DIFF   = 18;
+  parameter       CALC_BITS = 19;
+  parameter       CB_STEP1  = 20;
+  parameter       CB_NSTATE = 21;
+  parameter       WB_HTDCB1 = 22; 
+  parameter       WB_DIFFB  = 23;
+  parameter       FIND_TR0  = 24;
+  parameter       CHECK_ELM = 25;
+  parameter       DEC_E0P   = 26;  
+  parameter       CHECK_E0P = 27;
+  parameter       ENC_AC    = 28;
+  parameter       FIND_AC0  = 29;
+  parameter       CHECK_AC0 = 30;
+  parameter       INC_AC0   = 31;
+  parameter       CHK_NRZ16 = 32;
+  parameter       WB_M16B   = 33;
+  parameter       CHK_M16B  = 34;
+  parameter       CB_DUAC   = 35;
+  parameter       PREP_ACIDX= 36;
+  parameter       WB_HTAC   = 37;
+  parameter       WB_DUAC   = 38;
+  parameter       CHK_ACIDX = 39;
+  parameter       CHK_EOP63 = 40;
+  parameter       WB_EOB    = 41;
+  parameter       EXIT_PROC = 42;
+  parameter       CHECK_EOF = 43;
+  parameter       WB_EOI    = 44;
+  parameter       EOI1      = 45;
+  parameter       EOI2      = 46;
+  parameter       CONV_DONE = 47;
+  parameter       LOAD_xDU  = 48;
+  parameter       PRE_QUANT = 49;
+  parameter       READ_TR0  = 50;
+  parameter       READ_AC0  = 51;
+  parameter       READ_HTAC = 52;
+  parameter       CB_NSTATE2= 53;
+  parameter       READ_HTAC2= 54;
 `ifdef QUANT_MULT  
   parameter       PRE_ZIGZAG= 61;
 `endif  
-  
-  parameter HEADER_SIZE = 607;
-  
-//`include "jpeg_enc_inc.h"
-
-  wire            header_tx_done = (byte_count == (HEADER_SIZE-1));
   
   wire signed [14:0]   zzdu_ram_do;
   wire            inc_img_col_p = (c_state == LOAD_DU);
@@ -183,23 +146,23 @@ module jpeg_enc (
   wire            row_max = (img_row == (`HEIGHT-1));
   wire            inc_row_cnt = (&col_cnt) && rst_img_col_p;
   wire            load_du_done = (&col_cnt) && (&row_cnt) && rst_img_col_p;
-  wire            dct_done;// = ((c_state == DCT_P7) && (dct_idx_cnt == 4'hF));// && (dct_comp_sel == 2'h2));
+  wire            dct_done;
   wire            qz_done = &qz_cnt;
   wire            diff_dc_zero = !(|diff_DC);
   wire            diff_dc_neg  = diff_DC[14];
   wire            bit_cnt_gte_8 = |wb_bit_cnt[4:3];
   wire            byte_out_eq_255 = &wb_bit_buf[23:16];
-  //wire            check_next_element = ((end0pos != 6'h00) && (du_e0p == 14'h0000));
+  
   wire            check_next_element = ((end0pos != 6'h00) && (zzdu_ram_do == 15'h0000));  
   wire            e0p_zero = (end0pos == 6'h00);
   wire            inc_ac0_idx = (ac0_idx <= end0pos);
-  //wire            inc_ac0_cnt = (inc_ac0_idx && (du_ac0 == 14'h0000));
+  
   wire            inc_ac0_cnt = (inc_ac0_idx && (zzdu_ram_do == 15'h0000));
   wire            ac0_cnt_gte_16 = |ac0_cnt[5:4];
   wire            e0p_ne_63 = (end0pos != 6'h3F);
   wire            du_ac_neg = du_ac0[14];
   wire            last_comp = (dct_comp_sel == 2'h2);
-  //wire            load_xdu_done =  load_xdu_cnt[3];
+  
   wire   [7:0]    du_ram_do;
   wire signed [7:0] fdtbl_rom_d;
   wire   [5:0]    zzidx_rom_d;
@@ -220,14 +183,13 @@ module jpeg_enc (
     .reset_n        (reset_n),
     
     //Header ROM
-    .header_rom_a   (hd_addr),//(byte_count),
-    .header_rom_d   (hd_data),//(header_rom_d),
+    .header_rom_a   (hd_addr),
+    .header_rom_d   (hd_data),
     
     //DU RAM (YDU, VDU, UDU)
     .du_ram_aw      ({img_col_p_fl2, row_cnt_fl2,col_cnt_fl2}),
     .du_ram_di      (fb_data),
     .du_ram_we      (du_ram_we),
-  //.du_ram_ar      ({dct_comp_sel, dct_comp_idx[load_xdu_cnt[2:0]]}),
     .du_ram_ar      ({dct_comp_sel, du_ram_a_dct}),
     .du_ram_do      (du_ram_do),
     
@@ -317,23 +279,15 @@ module jpeg_enc (
     end
   
   //Main State Machine Next State  
-  always @ (c_state, conv_en, header_tx_done, load_du_done, load_du_done_fl[1], dct_done, qz_done, diff_dc_zero, b_state, bit_cnt_gte_8, byte_out_eq_255,
-            check_next_element, e0p_zero, inc_ac0_idx, inc_ac0_cnt, ac0_cnt_gte_16, e0p_ne_63, last_comp, last_du/*, load_xdu_done*/)
+  always @ (c_state, conv_en, load_du_done, load_du_done_fl[1], dct_done, qz_done, diff_dc_zero, b_state, bit_cnt_gte_8, byte_out_eq_255,
+            check_next_element, e0p_zero, inc_ac0_idx, inc_ac0_cnt, ac0_cnt_gte_16, e0p_ne_63, last_comp, last_du)
     case(c_state)
       IDLE        : begin
                       if (conv_en)
-                        n_state <= #1 LOAD_DU;//TX_HEADER;//
+                        n_state <= #1 LOAD_DU;
                       else
                         n_state <= #1 IDLE;
                     end
-      /*                    
-      TX_HEADER   : begin
-                      if (header_tx_done)
-                        n_state <= #1 LOAD_DU;
-                      else
-                        n_state <= #1 TX_HEADER;
-                    end
-      */              
       LOAD_DU     : begin
                       if (load_du_done)
                         n_state <= #1 WAIT_DU;
@@ -346,24 +300,14 @@ module jpeg_enc (
                       else
                         n_state <= #1 WAIT_DU;                      
                     end
-      COMP_SEL    : n_state <= #1 DCT_P1;//LOAD_xDU;//
-   /* LOAD_xDU    : begin
-                      if (load_xdu_done)
-                        n_state <= #1 DCT_P1;
-                      else
-                        n_state <= #1 LOAD_xDU;                      
-                    end */
-      DCT_P1      : n_state <= #1 DCT_P7;//DCT_P2;
-   /* DCT_P2      : n_state <= #1 DCT_P3;
-      DCT_P3      : n_state <= #1 DCT_P4;
-      DCT_P4      : n_state <= #1 DCT_P5;
-      DCT_P5      : n_state <= #1 DCT_P6;
-      DCT_P6      : n_state <= #1 DCT_P7; */
+      COMP_SEL    : n_state <= #1 DCT_P1;
+
+      DCT_P1      : n_state <= #1 DCT_P7;
       DCT_P7      : begin
                       if (dct_done)
                         n_state <= #1 PRE_QUANT;
                       else
-                        n_state <= #1 DCT_P7;//COMP_SEL;                      
+                        n_state <= #1 DCT_P7;                      
                     end
       PRE_QUANT   : n_state <= #1 QUANTIZE;
 `ifdef QUANT_MULT      
@@ -503,13 +447,6 @@ module jpeg_enc (
           img_valid_reg <= #1 1'b0;
           img_done_reg <= #1 1'b0;
           case (c_state)
-            /*
-            TX_HEADER   : begin
-                            byte_count <= #1 byte_count + 10'h001;
-                            img_out_reg <= #1 header_rom_d;//header_rom[byte_count];
-                            img_valid_reg <= #1 1'b1;
-                          end
-            */              
             WB_STEP4    : begin
                             img_out_reg <= #1 wb_bit_buf[23:16];
                             img_valid_reg <= #1 1'b1;
@@ -535,14 +472,6 @@ module jpeg_enc (
                           end            
           endcase          
         end        
-    end
-  
-  always @ (posedge clk or negedge reset_n)
-    begin
-      if (!reset_n)
-        fb_addr_reg <= #1 22'h000000;
-      else
-        fb_addr_reg <= #1 (img_row*`WIDTH*`COLORS) + (img_col*`COLORS) + img_col_p;      
     end
   
   //Handle frame buffer addressing through index counters
@@ -664,51 +593,19 @@ module jpeg_enc (
         end        
     end
    
-  //Load DU from frame buffer read
-  
+  //Load DU from frame buffer read  
   always @ (posedge clk or negedge reset_n)
     begin
       if (!reset_n)
         du_ram_we <= #1 1'b0;
       else
-      if ((c_state == LOAD_DU) || (load_du_done_fl[0]) /*|| (c_state == WAIT_DU)*/)
+      if ((c_state == LOAD_DU) || (load_du_done_fl[0]))
         du_ram_we <= #1 1'b1;
       else
         du_ram_we <= #1 1'b0;      
     end
   
-  /*
-  always @ (posedge clk)
-    begin
-      case (c_state)
-        LOAD_DU,
-        WAIT_DU : begin                  
-                    case (img_col_p_fl2)
-                      2'h0    : begin
-                                  YDU[{row_cnt_fl2,col_cnt_fl2}] <= #1 fb_data;
-                                  UDU[{row_cnt_fl2,col_cnt_fl2}] <= #1 UDU[{row_cnt_fl2,col_cnt_fl2}];
-                                  VDU[{row_cnt_fl2,col_cnt_fl2}] <= #1 VDU[{row_cnt_fl2,col_cnt_fl2}];
-                                end
-                      2'h1    : begin
-                                  YDU[{row_cnt_fl2,col_cnt_fl2}] <= #1 YDU[{row_cnt_fl2,col_cnt_fl2}];
-                                  UDU[{row_cnt_fl2,col_cnt_fl2}] <= #1 fb_data;
-                                  VDU[{row_cnt_fl2,col_cnt_fl2}] <= #1 VDU[{row_cnt_fl2,col_cnt_fl2}];        
-                                end
-                      2'h2    : begin
-                                  YDU[{row_cnt_fl2,col_cnt_fl2}] <= #1 YDU[{row_cnt_fl2,col_cnt_fl2}];
-                                  UDU[{row_cnt_fl2,col_cnt_fl2}] <= #1 UDU[{row_cnt_fl2,col_cnt_fl2}];
-                                  VDU[{row_cnt_fl2,col_cnt_fl2}] <= #1 fb_data;        
-                                end
-                      default : begin
-                                  YDU[{row_cnt_fl2,col_cnt_fl2}] <= #1 YDU[{row_cnt_fl2,col_cnt_fl2}];
-                                  UDU[{row_cnt_fl2,col_cnt_fl2}] <= #1 UDU[{row_cnt_fl2,col_cnt_fl2}];
-                                  VDU[{row_cnt_fl2,col_cnt_fl2}] <= #1 VDU[{row_cnt_fl2,col_cnt_fl2}];        
-                                end
-                    endcase
-                  end                  
-      endcase            
-    end    
-  */
+
   //Select color component while doing dct  
   always @ (posedge clk or negedge reset_n)
     begin
@@ -718,282 +615,12 @@ module jpeg_enc (
       if (c_state == WAIT_DU)
         dct_comp_sel <= #1 2'h0;
       else
-    //if ((c_state == DCT_P7) && (dct_idx_cnt == 4'hF))
       if ((c_state == EXIT_PROC))
         dct_comp_sel <= #1 dct_comp_sel + 2'h1;
       else
         dct_comp_sel <= #1 dct_comp_sel;      
     end    
-  /*
-  //index counter to select DU component for DCT
-  always @ (posedge clk or negedge reset_n)
-    begin
-      if (!reset_n)
-        dct_idx_cnt <= #1 4'h0;
-      else
-      if (c_state == WAIT_DU)
-        dct_idx_cnt <= #1 4'h0;
-      else
-      if (c_state == DCT_P7)
-        dct_idx_cnt <= #1 dct_idx_cnt + 4'h1;
-      else
-        dct_idx_cnt <= #1 dct_idx_cnt;      
-    end
-  
-  //index to select DU component for DCT
-  always @ (posedge clk or negedge reset_n)
-    begin
-      if (!reset_n)
-        begin
-          dct_comp_idx[0] <= #1 6'h00;
-          dct_comp_idx[1] <= #1 6'h00;
-          dct_comp_idx[2] <= #1 6'h00;
-          dct_comp_idx[3] <= #1 6'h00;
-          dct_comp_idx[4] <= #1 6'h00;
-          dct_comp_idx[5] <= #1 6'h00;
-          dct_comp_idx[6] <= #1 6'h00;
-          dct_comp_idx[7] <= #1 6'h00;
-        end
-      else
-      if (c_state == COMP_SEL)
-        casex (dct_idx_cnt)
-          4'b0xxx : begin
-                      dct_comp_idx[0] <= #1 {dct_idx_cnt[2:0], 3'h0};
-                      dct_comp_idx[1] <= #1 {dct_idx_cnt[2:0], 3'h0} + 6'h01;
-                      dct_comp_idx[2] <= #1 {dct_idx_cnt[2:0], 3'h0} + 6'h02;
-                      dct_comp_idx[3] <= #1 {dct_idx_cnt[2:0], 3'h0} + 6'h03;
-                      dct_comp_idx[4] <= #1 {dct_idx_cnt[2:0], 3'h0} + 6'h04;
-                      dct_comp_idx[5] <= #1 {dct_idx_cnt[2:0], 3'h0} + 6'h05;
-                      dct_comp_idx[6] <= #1 {dct_idx_cnt[2:0], 3'h0} + 6'h06;
-                      dct_comp_idx[7] <= #1 {dct_idx_cnt[2:0], 3'h0} + 6'h07;                
-                    end
-          4'b1xxx : begin
-                      dct_comp_idx[0] <= #1 {3'h0, dct_idx_cnt[2:0]};
-                      dct_comp_idx[1] <= #1 {3'h0, dct_idx_cnt[2:0]} + 6'h08;
-                      dct_comp_idx[2] <= #1 {3'h0, dct_idx_cnt[2:0]} + 6'h10;
-                      dct_comp_idx[3] <= #1 {3'h0, dct_idx_cnt[2:0]} + 6'h18;
-                      dct_comp_idx[4] <= #1 {3'h0, dct_idx_cnt[2:0]} + 6'h20;
-                      dct_comp_idx[5] <= #1 {3'h0, dct_idx_cnt[2:0]} + 6'h28;
-                      dct_comp_idx[6] <= #1 {3'h0, dct_idx_cnt[2:0]} + 6'h30;
-                      dct_comp_idx[7] <= #1 {3'h0, dct_idx_cnt[2:0]} + 6'h38;           
-                    end          
-          default : begin
-                      dct_comp_idx[0] <= #1 dct_comp_idx[0];
-                      dct_comp_idx[1] <= #1 dct_comp_idx[1];
-                      dct_comp_idx[2] <= #1 dct_comp_idx[2];
-                      dct_comp_idx[3] <= #1 dct_comp_idx[3];
-                      dct_comp_idx[4] <= #1 dct_comp_idx[4];
-                      dct_comp_idx[5] <= #1 dct_comp_idx[5];
-                      dct_comp_idx[6] <= #1 dct_comp_idx[6];
-                      dct_comp_idx[7] <= #1 dct_comp_idx[7];           
-                    end
-        endcase
-      else
-        begin
-          dct_comp_idx[0] <= #1 dct_comp_idx[0];
-          dct_comp_idx[1] <= #1 dct_comp_idx[1];
-          dct_comp_idx[2] <= #1 dct_comp_idx[2];
-          dct_comp_idx[3] <= #1 dct_comp_idx[3];
-          dct_comp_idx[4] <= #1 dct_comp_idx[4];
-          dct_comp_idx[5] <= #1 dct_comp_idx[5];
-          dct_comp_idx[6] <= #1 dct_comp_idx[6];
-          dct_comp_idx[7] <= #1 dct_comp_idx[7];          
-        end        
-    end    
-  
-  always @ (posedge clk or negedge reset_n)
-    begin
-      if (!reset_n)
-        begin
-          load_xdu_cnt <= #1 4'h0;
-          load_xdu_cnt_fl <= #1 3'h0;
-        end
-      else
-        case(c_state)
-          LOAD_xDU    : begin
-                          load_xdu_cnt <= #1 load_xdu_cnt + 4'h1;
-                          load_xdu_cnt_fl <= #1 load_xdu_cnt[2:0];
-                        end  
-          default     : begin
-                          load_xdu_cnt <= #1 4'h0;
-                          load_xdu_cnt_fl <= #1 3'h0;
-                        end  
-        endcase        
-    end
-  
-  always @ (posedge clk)
-    begin
-      if (c_state == LOAD_xDU)
-        xDU[load_xdu_cnt_fl] = du_ram_do;
-    end
-  
-  //Handle DCT variables and outputs
-  always @ (posedge clk)
-    begin
-      z2 <= #1 z2;
-      z4 <= #1 z4; 
-      z1 <= #1 z1;
-      z5 <= #1 z5;                       
-      z11 <= #1 z11;
-      z13 <= #1 z13;  
-      z3 <= #1 z3;  
-      tmp10 <= #1 tmp10;
-      tmp13 <= #1 tmp13;
-      tmp11 <= #1 tmp11;
-      tmp12 <= #1 tmp12;
-      tmp20 <= #1 tmp20;
-      tmp21 <= #1 tmp21;
-      tmp22 <= #1 tmp22;  
-      tmp0 <= #1 tmp0;
-      tmp7 <= #1 tmp7;
-      tmp1 <= #1 tmp1;
-      tmp6 <= #1 tmp6;
-      tmp2 <= #1 tmp2;
-      tmp5 <= #1 tmp5;
-      tmp3 <= #1 tmp3;
-      tmp4 <= #1 tmp4;    
-      case (c_state)
-        DCT_P1    : begin
-                      case ({dct_idx_cnt[3], dct_comp_sel})
-                      *//*
-                        3'h0      : begin
-                                      tmp0 <= #1 YDU[dct_comp_idx[0]] + YDU[dct_comp_idx[7]];
-                                      tmp7 <= #1 YDU[dct_comp_idx[0]] - YDU[dct_comp_idx[7]];
-                                      tmp1 <= #1 YDU[dct_comp_idx[1]] + YDU[dct_comp_idx[6]];
-                                      tmp6 <= #1 YDU[dct_comp_idx[1]] - YDU[dct_comp_idx[6]];
-                                      tmp2 <= #1 YDU[dct_comp_idx[2]] + YDU[dct_comp_idx[5]];
-                                      tmp5 <= #1 YDU[dct_comp_idx[2]] - YDU[dct_comp_idx[5]];
-                                      tmp3 <= #1 YDU[dct_comp_idx[3]] + YDU[dct_comp_idx[4]];
-                                      tmp4 <= #1 YDU[dct_comp_idx[3]] - YDU[dct_comp_idx[4]];
-                                    end
-                        3'h1      : begin
-                                      tmp0 <= #1 UDU[dct_comp_idx[0]] + UDU[dct_comp_idx[7]];
-                                      tmp7 <= #1 UDU[dct_comp_idx[0]] - UDU[dct_comp_idx[7]];
-                                      tmp1 <= #1 UDU[dct_comp_idx[1]] + UDU[dct_comp_idx[6]];
-                                      tmp6 <= #1 UDU[dct_comp_idx[1]] - UDU[dct_comp_idx[6]];
-                                      tmp2 <= #1 UDU[dct_comp_idx[2]] + UDU[dct_comp_idx[5]];
-                                      tmp5 <= #1 UDU[dct_comp_idx[2]] - UDU[dct_comp_idx[5]];
-                                      tmp3 <= #1 UDU[dct_comp_idx[3]] + UDU[dct_comp_idx[4]];
-                                      tmp4 <= #1 UDU[dct_comp_idx[3]] - UDU[dct_comp_idx[4]];
-                                    end
-                        3'h2      : begin
-                                      tmp0 <= #1 VDU[dct_comp_idx[0]] + VDU[dct_comp_idx[7]];
-                                      tmp7 <= #1 VDU[dct_comp_idx[0]] - VDU[dct_comp_idx[7]];
-                                      tmp1 <= #1 VDU[dct_comp_idx[1]] + VDU[dct_comp_idx[6]];
-                                      tmp6 <= #1 VDU[dct_comp_idx[1]] - VDU[dct_comp_idx[6]];
-                                      tmp2 <= #1 VDU[dct_comp_idx[2]] + VDU[dct_comp_idx[5]];
-                                      tmp5 <= #1 VDU[dct_comp_idx[2]] - VDU[dct_comp_idx[5]];
-                                      tmp3 <= #1 VDU[dct_comp_idx[3]] + VDU[dct_comp_idx[4]];
-                                      tmp4 <= #1 VDU[dct_comp_idx[3]] - VDU[dct_comp_idx[4]];
-                                    end
-                        *//*
-                        3'h0,
-                        3'h1,
-                        3'h2      : begin
-                                      tmp0 <= #1 xDU[0] + xDU[7];
-                                      tmp7 <= #1 xDU[0] - xDU[7];//VDU[dct_comp_idx[0]] - VDU[dct_comp_idx[7]];
-                                      tmp1 <= #1 xDU[1] + xDU[6];//VDU[dct_comp_idx[1]] + VDU[dct_comp_idx[6]];
-                                      tmp6 <= #1 xDU[1] - xDU[6];//VDU[dct_comp_idx[1]] - VDU[dct_comp_idx[6]];
-                                      tmp2 <= #1 xDU[2] + xDU[5];//VDU[dct_comp_idx[2]] + VDU[dct_comp_idx[5]];
-                                      tmp5 <= #1 xDU[2] - xDU[5];//VDU[dct_comp_idx[2]] - VDU[dct_comp_idx[5]];
-                                      tmp3 <= #1 xDU[3] + xDU[4];//VDU[dct_comp_idx[3]] + VDU[dct_comp_idx[4]];
-                                      tmp4 <= #1 xDU[3] - xDU[4];//VDU[dct_comp_idx[3]] - VDU[dct_comp_idx[4]];                        
-                                    end                        
-                        3'h4,
-                        3'h5,
-                        3'h6      : begin
-                                      tmp0 <= #1 DCT_DU[dct_comp_idx[0]] + DCT_DU[dct_comp_idx[7]];
-                                      tmp7 <= #1 DCT_DU[dct_comp_idx[0]] - DCT_DU[dct_comp_idx[7]];
-                                      tmp1 <= #1 DCT_DU[dct_comp_idx[1]] + DCT_DU[dct_comp_idx[6]];
-                                      tmp6 <= #1 DCT_DU[dct_comp_idx[1]] - DCT_DU[dct_comp_idx[6]];
-                                      tmp2 <= #1 DCT_DU[dct_comp_idx[2]] + DCT_DU[dct_comp_idx[5]];
-                                      tmp5 <= #1 DCT_DU[dct_comp_idx[2]] - DCT_DU[dct_comp_idx[5]];
-                                      tmp3 <= #1 DCT_DU[dct_comp_idx[3]] + DCT_DU[dct_comp_idx[4]];
-                                      tmp4 <= #1 DCT_DU[dct_comp_idx[3]] - DCT_DU[dct_comp_idx[4]];
-                                    end                        
-                        default   : begin
-                                      tmp0 <= #1 tmp0;
-                                      tmp7 <= #1 tmp7;
-                                      tmp1 <= #1 tmp1;
-                                      tmp6 <= #1 tmp6;
-                                      tmp2 <= #1 tmp2;
-                                      tmp5 <= #1 tmp5;
-                                      tmp3 <= #1 tmp3;
-                                      tmp4 <= #1 tmp4;
-                                    end
-                      endcase
-                    end
-        DCT_P2    : begin
-                      tmp10 <= #1 tmp0 + tmp3;
-                      tmp13 <= #1 tmp0 - tmp3;
-                      tmp11 <= #1 tmp1 + tmp2;
-                      tmp12 <= #1 tmp1 - tmp2;
-                      tmp20 <= #1 tmp4 + tmp5;
-                      tmp21 <= #1 tmp5 + tmp6;
-                      tmp22 <= #1 tmp6 + tmp7;
-                    end        
-        DCT_P3    : begin
-                      DCT_DU[dct_comp_idx[0]] <= #1 tmp10 + tmp11;
-                      DCT_DU[dct_comp_idx[4]] <= #1 tmp10 - tmp11;
-                      z1 <= #1 tmp12 + tmp13;
-                      z5 <= #1 tmp20 - tmp22;
-                      z2 <= #1 tmp20 * 5;//tmp20 * 9;
-                      z4 <= #1 tmp22 * 13;//tmp22 * 21;
-                      z3 <= #1 tmp21 * 7;//tmp21 * 11;
-                    end 
-        DCT_P4    : begin
-                      z1 <= #1 z1 * 7;//z1 * 11;
-                      z5 <= #1 z5 * 3;//z5 * 6;                       
-                      z11 <= #1 (tmp7 * 10) + z3;//{tmp7, 4'h0} + z3;
-                      z13 <= #1 (tmp7 * 10) - z3;//{tmp7, 4'h0} - z3;
-                    end 
-        DCT_P5    : begin
-                      DCT_DU[dct_comp_idx[2]] <= #1 (tmp13 * 10) + z1;//{tmp13, 4'h0} + z1;
-                      DCT_DU[dct_comp_idx[6]] <= #1 (tmp13 * 10) - z1;//{tmp13, 4'h0} - z1;       
-                      z2 <= #1 z2 + z5;
-                      z4 <= #1 z4 + z5;                      
-                    end
-        DCT_P6    : begin
-                      DCT_DU[dct_comp_idx[2]] <= #1 DCT_DU[dct_comp_idx[2]]/10;//DCT_DU[dct_comp_idx[2]]>>4;
-                      DCT_DU[dct_comp_idx[6]] <= #1 DCT_DU[dct_comp_idx[6]]/10;//DCT_DU[dct_comp_idx[6]]>>4;
-                      DCT_DU[dct_comp_idx[5]] <= #1 z13 + z2;
-                      DCT_DU[dct_comp_idx[3]] <= #1 z13 - z2;
-                      DCT_DU[dct_comp_idx[1]] <= #1 z11 + z4;
-                      DCT_DU[dct_comp_idx[7]] <= #1 z11 - z4;
-                    end              
-        DCT_P7    : begin
-                      DCT_DU[dct_comp_idx[5]] <= #1 DCT_DU[dct_comp_idx[5]]/10;//DCT_DU[dct_comp_idx[5]]>>4;
-                      DCT_DU[dct_comp_idx[3]] <= #1 DCT_DU[dct_comp_idx[3]]/10;//DCT_DU[dct_comp_idx[3]]>>4;
-                      DCT_DU[dct_comp_idx[1]] <= #1 DCT_DU[dct_comp_idx[1]]/10;//DCT_DU[dct_comp_idx[1]]>>4;
-                      DCT_DU[dct_comp_idx[7]] <= #1 DCT_DU[dct_comp_idx[7]]/10;//DCT_DU[dct_comp_idx[7]]>>4;
-                    end       
-        default   : begin
-                      z2 <= #1 z2;
-                      z4 <= #1 z4; 
-                      z1 <= #1 z1;
-                      z5 <= #1 z5;                       
-                      z11 <= #1 z11;
-                      z13 <= #1 z13;  
-                      z3 <= #1 z3;  
-                      tmp10 <= #1 tmp10;
-                      tmp13 <= #1 tmp13;
-                      tmp11 <= #1 tmp11;
-                      tmp12 <= #1 tmp12;
-                      tmp20 <= #1 tmp20;
-                      tmp21 <= #1 tmp21;
-                      tmp22 <= #1 tmp22;  
-                      tmp0 <= #1 tmp0;
-                      tmp7 <= #1 tmp7;
-                      tmp1 <= #1 tmp1;
-                      tmp6 <= #1 tmp6;
-                      tmp2 <= #1 tmp2;
-                      tmp5 <= #1 tmp5;
-                      tmp3 <= #1 tmp3;
-                      tmp4 <= #1 tmp4;                        
-                    end                  
-      endcase  
-    end
-  */
+
   //Quantize/Zigzag index counter
   always @ (posedge clk or negedge reset_n)
     begin
@@ -1027,23 +654,17 @@ module jpeg_enc (
           case (c_state)
 `ifdef QUANT_MULT          
             QUANTIZE  : begin
-                          QNT_DU_pre <= $signed(dctdu_ram_do) * fdtbl_rom_d;//$signed(dctdu_ram_do);//
-                          // case (dct_comp_sel)
-                            // 2'h0    : QNT_DU <= #1 /*DCT_DU[qz_cnt]*/$signed(dctdu_ram_do) / fdtbl_rom_d;//$signed(fdtbl_Y[qz_cnt]);
-                            // 2'h1,
-                            // 2'h2    : QNT_DU <= #1 /*DCT_DU[qz_cnt]*/$signed(dctdu_ram_do) / fdtbl_rom_d;//$signed(fdtbl_UV[qz_cnt]);
-                            // default : QNT_DU <= #1 QNT_DU;
-                          // endcase
+                          QNT_DU_pre <= $signed(dctdu_ram_do) * fdtbl_rom_d;
                         end
             PRE_ZIGZAG: begin
-                          QNT_DU <= QNT_DU_pre[25:11];//QNT_DU_pre[21:7];//
+                          QNT_DU <= QNT_DU_pre[25:11];
                         end
 `else
             QUANTIZE  : begin
                           QNT_DU <= #1 $signed(dctdu_ram_do) / fdtbl_rom_d;
                         end
 `endif                        
-            ZIGZAG    : zzdu_ram_we <= #1 1'b1;//ZIG_DU[zigzag_idx[qz_cnt]] <= #1 QNT_DU;
+            ZIGZAG    : zzdu_ram_we <= #1 1'b1;
             default   : QNT_DU <= #1 QNT_DU;
           endcase
         end
@@ -1074,9 +695,9 @@ module jpeg_enc (
       else
       if (c_state == DIFF_DC)
         case (dct_comp_sel)
-          2'h0    : diff_DC <= #1 zzdu_ram_do - DCY;//ZIG_DU[0] - DCY;
-          2'h1    : diff_DC <= #1 zzdu_ram_do - DCU;//ZIG_DU[0] - DCU;
-          2'h2    : diff_DC <= #1 zzdu_ram_do - DCV;//ZIG_DU[0] - DCV;
+          2'h0    : diff_DC <= #1 zzdu_ram_do - DCY;
+          2'h1    : diff_DC <= #1 zzdu_ram_do - DCU;
+          2'h2    : diff_DC <= #1 zzdu_ram_do - DCV;
           default : diff_DC <= #1 diff_DC;
         endcase
       else
@@ -1158,21 +779,6 @@ module jpeg_enc (
             WB_HTDC0  : begin
                           wb_bit_cnt <= #1 wb_bit_cnt + dcht_bc_rom_d;
                           wb_bb_tmp  <= #1 {8'h00, dcht_bb_rom_d};                        
-                       /* case (dct_comp_sel)
-                            2'h0    : begin 
-                                        wb_bit_cnt <= #1 wb_bit_cnt + ydc_ht_bc_rom[0]; 
-                                        wb_bb_tmp <= #1 {8'h00, ydc_ht_bb_rom[0]};
-                                      end
-                            2'h1,   //SOI - instead of using 16 bits for bit count, 5 bit rom can be used to save space
-                            2'h2    : begin
-                                        wb_bit_cnt <= #1 wb_bit_cnt + uvdc_ht_bc_rom[0]; 
-                                        wb_bb_tmp <= #1 {8'h00, uvdc_ht_bb_rom[0]};
-                                      end
-                            default : begin
-                                        wb_bit_cnt <= #1 wb_bit_cnt; 
-                                        wb_bb_tmp <= #1 wb_bb_tmp;
-                                      end
-                          endcase */
                         end
             WR_BITS   : begin
                           wb_bc_tmp <= #1 5'd24 - wb_bit_cnt;
@@ -1194,21 +800,6 @@ module jpeg_enc (
             WB_HTDCB1 : begin
                           wb_bit_cnt <= #1 wb_bit_cnt + dcht_bc_rom_d;
                           wb_bb_tmp  <= #1 {8'h00, dcht_bb_rom_d};            
-                       /* case (dct_comp_sel)
-                            2'h0    : begin
-                                        wb_bit_cnt <= #1 wb_bit_cnt + ydc_ht_bc_rom[cb_bit_cnt]; 
-                                        wb_bb_tmp <= #1 {8'h00, ydc_ht_bb_rom[cb_bit_cnt]};
-                                      end
-                            2'h1,   //SOI - instead of using 16 bits for bit count, 5 bit rom can be used to save space
-                            2'h2    : begin
-                                        wb_bit_cnt <= #1 wb_bit_cnt + uvdc_ht_bc_rom[cb_bit_cnt]; 
-                                        wb_bb_tmp <= #1 {8'h00, uvdc_ht_bb_rom[cb_bit_cnt]};
-                                      end
-                            default : begin
-                                        wb_bit_cnt <= #1 wb_bit_cnt; 
-                                        wb_bb_tmp <= #1 wb_bb_tmp;
-                                      end
-                          endcase */
                         end
             WB_DIFFB,
             WB_DUAC   : begin
@@ -1218,59 +809,14 @@ module jpeg_enc (
             WB_EOB    : begin
                           wb_bit_cnt <= #1 wb_bit_cnt + acht_bc_rom_d;
                           wb_bb_tmp  <= #1 {8'h00, acht_bb_rom_d};            
-                       /* case (dct_comp_sel)
-                            2'h0    : begin
-                                        wb_bit_cnt <= #1 wb_bit_cnt + yac_ht_bc_rom[0]; 
-                                        wb_bb_tmp <= #1 {8'h00, yac_ht_bb_rom[0]};
-                                      end
-                            2'h1,   //SOI - instead of using 16 bits for bit count, 5 bit rom can be used to save space
-                            2'h2    : begin
-                                        wb_bit_cnt <= #1 wb_bit_cnt + uvac_ht_bc_rom[0]; 
-                                        wb_bb_tmp <= #1 {8'h00, uvac_ht_bb_rom[0]};
-                                      end
-                            default : begin
-                                        wb_bit_cnt <= #1 wb_bit_cnt; 
-                                        wb_bb_tmp <= #1 wb_bb_tmp;
-                                      end
-                          endcase */
                         end
             WB_M16B   : begin
                           wb_bit_cnt <= #1 wb_bit_cnt + acht_bc_rom_d;
                           wb_bb_tmp  <= #1 {8'h00, acht_bb_rom_d};            
-                       /* case (dct_comp_sel)
-                            2'h0    : begin
-                                        wb_bit_cnt <= #1 wb_bit_cnt + yac_ht_bc_rom[240]; 
-                                        wb_bb_tmp <= #1 {8'h00, yac_ht_bb_rom[240]};
-                                      end
-                            2'h1,   //SOI - instead of using 16 bits for bit count, 5 bit rom can be used to save space
-                            2'h2    : begin
-                                        wb_bit_cnt <= #1 wb_bit_cnt + uvac_ht_bc_rom[240]; 
-                                        wb_bb_tmp <= #1 {8'h00, uvac_ht_bb_rom[240]};
-                                      end
-                            default : begin
-                                        wb_bit_cnt <= #1 wb_bit_cnt; 
-                                        wb_bb_tmp <= #1 wb_bb_tmp;
-                                      end
-                          endcase */
                         end
             WB_HTAC   : begin
                           wb_bit_cnt <= #1 wb_bit_cnt + acht_bc_rom_d;
                           wb_bb_tmp  <= #1 {8'h00, acht_bb_rom_d};            
-                       /* case (dct_comp_sel)
-                            2'h0    : begin
-                                        wb_bit_cnt <= #1 wb_bit_cnt + yac_ht_bc_rom[ac_idx]; 
-                                        wb_bb_tmp <= #1 {8'h00, yac_ht_bb_rom[ac_idx]};
-                                      end
-                            2'h1,   //SOI - instead of using 16 bits for bit count, 5 bit rom can be used to save space
-                            2'h2    : begin
-                                        wb_bit_cnt <= #1 wb_bit_cnt + uvac_ht_bc_rom[ac_idx]; 
-                                        wb_bb_tmp <= #1 {8'h00, uvac_ht_bb_rom[ac_idx]};
-                                      end
-                            default : begin
-                                        wb_bit_cnt <= #1 wb_bit_cnt; 
-                                        wb_bb_tmp <= #1 wb_bb_tmp;
-                                      end
-                          endcase */
                         end  
             WB_EOI    : begin
                           wb_bit_cnt <= #1 wb_bit_cnt + 5'h7; 
@@ -1435,27 +981,20 @@ module jpeg_enc (
     begin
       if (!reset_n)
         begin
-          end0pos <= #1 6'h3F;
-          //du_e0p <= #1 15'h7FFF;
+          end0pos <= #1 6'h3F;          
         end
       else
         begin
-          end0pos <= #1 end0pos;
-          //du_e0p <= #1 du_e0p;
+          end0pos <= #1 end0pos;        
           case(c_state)
             CHK_DIFF  : begin
-                          end0pos <= #1 6'h3F;
-                          //du_e0p <= #1 15'h7FFF;
-                        end
-            FIND_TR0  : begin
-                          //du_e0p <= #1 ZIG_DU[end0pos];                        
+                          end0pos <= #1 6'h3F;                     
                         end
             DEC_E0P   : begin
                           end0pos <= #1 end0pos - 6'h01;
                         end            
             default   : begin
-                          end0pos <= #1 end0pos;
-                          //du_e0p <= #1 du_e0p;                          
+                          end0pos <= #1 end0pos;                         
                         end
           endcase
         end        
@@ -1480,16 +1019,9 @@ module jpeg_enc (
                           ac0_idx <= #1 7'h01;
                           du_ac0  <= #1 15'h7FFF;
                           ac0_cnt <= #1 6'h00;            
-                        end
-            FIND_AC0  : begin
-                          //du_ac0  <= #1 ZIG_DU[ac0_idx[5:0]];
-                        end
-            READ_AC0  : begin
-                          //du_ac0 <= #1 zzdu_ram_do;
-                        end            
+                        end 
             CHECK_AC0 : begin
-                            du_ac0 <= #1 zzdu_ram_do;
-                          //ac0_idx <= #1 ac0_idx + 7'h01;
+                          du_ac0 <= #1 zzdu_ram_do;                          
                         end 
             INC_AC0   : begin
                           ac0_cnt <= #1 ac0_cnt + 6'h01;
@@ -1557,12 +1089,11 @@ module jpeg_enc (
                           DCU <= #1 15'h0000;
                           DCV <= #1 15'h0000;            
                         end
-            //WB_EOB    : begin
             EXIT_PROC : begin
                           case (dct_comp_sel)
-                            2'h0    : DCY <= #1 zzdu_ram_do;//ZIG_DU[0];
-                            2'h1    : DCU <= #1 zzdu_ram_do;//ZIG_DU[0];
-                            2'h2    : DCV <= #1 zzdu_ram_do;//ZIG_DU[0];
+                            2'h0    : DCY <= #1 zzdu_ram_do;
+                            2'h1    : DCU <= #1 zzdu_ram_do;
+                            2'h2    : DCV <= #1 zzdu_ram_do;
                           endcase 
                         end            
             default   : begin

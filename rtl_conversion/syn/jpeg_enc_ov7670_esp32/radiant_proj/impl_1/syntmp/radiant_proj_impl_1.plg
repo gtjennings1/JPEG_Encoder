@@ -19,5 +19,5 @@
 @P: top I/O Register bits : 0
 @P: top Register bits (Non I/O) : 1504 (28%)
 @P: top Block Rams : 13 of 30 (43%)
-@P: top Total Luts : 3389 of 5280 (64%)
+@P: top Total Luts : 3379 of 5280 (63%)
 @P:  CPU Time : 0h:00m:24s

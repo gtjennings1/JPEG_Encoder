@@ -97,7 +97,6 @@ module jpeg_enc_mem (
   
   initial
     begin
-      //$readmemh("../../src/header_rom_data.h", header_rom);
       $readmemh("../../src/jpeg_enc/header_rom_data.h", header_rom);
       $readmemh("../../src/jpeg_enc/fdtbl_rom.mem", fdtbl_rom);
       $readmemh("../../src/jpeg_enc/zzidx_rom_data.h", zzidx_rom);

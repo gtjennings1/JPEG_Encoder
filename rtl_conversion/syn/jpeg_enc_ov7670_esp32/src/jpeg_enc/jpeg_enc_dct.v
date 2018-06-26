@@ -178,7 +178,7 @@ module jpeg_enc_dct (
                             if (vertical_scan)
                               tmp_du[tmp_du_w_idx] <= #1 dctdu_ram_di;
                             else
-                              tmp_du[tmp_du_w_idx] <= #1 $signed(du_ram_d);//du_ram_d;//
+                              tmp_du[tmp_du_w_idx] <= #1 $signed(du_ram_d);
                           end  
             DCT_CAL_P3  : begin
                             tmp_du[0] <= #1 tmp10 + tmp11;
@@ -197,14 +197,14 @@ module jpeg_enc_dct (
                           end
 `else
             DCT_CAL_P6  : begin
-                            tmp_du[2] <= #1 (tmp0 >>> 3);//tmp0/8;//(tmp0_gt_n8) ? 18'h00000 : (tmp0 >>> 3);//4;/// 10;
-                            tmp_du[6] <= #1 (tmp7 >>> 3);//tmp7/8;//(tmp7_gt_n8) ? 18'h00000 : (tmp7 >>> 3);//4;/// 10;
+                            tmp_du[2] <= #1 (tmp0 >>> 3);
+                            tmp_du[6] <= #1 (tmp7 >>> 3);
                           end       
             DCT_CAL_P7  : begin
-                            tmp_du[5] <= #1 (tmp1 >>> 3);//tmp1/8;//(tmp1_gt_n8) ? 18'h00000 : (tmp1 >>> 3);//4;/// 10;
-                            tmp_du[3] <= #1 (tmp2 >>> 3);//tmp2/8;//(tmp2_gt_n8) ? 18'h00000 : (tmp2 >>> 3);//4;/// 10;
-                            tmp_du[1] <= #1 (tmp3 >>> 3);//tmp3/8;//(tmp3_gt_n8) ? 18'h00000 : (tmp3 >>> 3);//4;/// 10;
-                            tmp_du[7] <= #1 (tmp4 >>> 3);//tmp4/8;//(tmp4_gt_n8) ? 18'h00000 : (tmp4 >>> 3);//4;/// 10;
+                            tmp_du[5] <= #1 (tmp1 >>> 3);
+                            tmp_du[3] <= #1 (tmp2 >>> 3);
+                            tmp_du[1] <= #1 (tmp3 >>> 3);
+                            tmp_du[7] <= #1 (tmp4 >>> 3);
                           end
 `endif                          
             default     : begin
@@ -257,13 +257,11 @@ module jpeg_enc_dct (
                           end
             DCT_CAL_P3  : begin
                             tmp1 <= #1 tmp12 + tmp13; //z1
-                            tmp2 <= #1 tmp20 << 2;//* 4;//8;//5;     //z2
-                            //tmp3 <= #1 tmp21 * 5;//11;//7;     //z3
-                            tmp3 <= #1 {tmp21[15:0], 2'b00} + tmp21;
-                            //tmp4 <= #1 tmp22 * 10;//20;//13;    //z4
-                            tmp4 <= #1 {tmp22[14:0], 3'b000} + {tmp22[16:0], 1'b0};
+                            tmp2 <= #1 tmp20 << 2;    //z2                           
+                            tmp3 <= #1 {tmp21[15:0], 2'b00} + tmp21;  //z3                          
+                            tmp4 <= #1 {tmp22[14:0], 3'b000} + {tmp22[16:0], 1'b0}; //z4
                             tmp5 <= #1 tmp20 - tmp22; //z5
-                            tmp6 <= #1 tmp13 << 3;//4;//* 10;    //du2/6: (tmp13 * 10)                            
+                            tmp6 <= #1 tmp13 << 3;    //du2/6: (tmp13 * 10)                            
                           end
             DCT_CAL_P5  : begin
                             tmp0 <= #1 tmp6 + tmp10;  //du2/6: + z1
@@ -320,12 +318,10 @@ module jpeg_enc_dct (
                             tmp21 <= #1 tmp5 + tmp6;
                             tmp22 <= #1 tmp6 + tmp7;           
                           end
-            DCT_CAL_P4  : begin
-                            //tmp10 <= #1 tmp1 * 5;//11;//7;    //z1
-                            tmp10 <= #1 {tmp1[15:0], 2'b00} + tmp1;
-                            //tmp11 <= #1 tmp5 * 3;//6;//3;    //z5
-                            tmp11 <= #1 {tmp5[16:0], 1'b0} + tmp5;
-                            tmp12 <= #1 tmp7 << 3;//4;//* 10;   //z11/z13: (tmp7 * 10)           
+            DCT_CAL_P4  : begin                        
+                            tmp10 <= #1 {tmp1[15:0], 2'b00} + tmp1; //z1                           
+                            tmp11 <= #1 {tmp5[16:0], 1'b0} + tmp5; //z5
+                            tmp12 <= #1 tmp7 << 3;   //z11/z13: (tmp7 * 10)           
                           end 
             DCT_CAL_P5  : begin
                             tmp13 <= #1 tmp12 + tmp3; //z11
