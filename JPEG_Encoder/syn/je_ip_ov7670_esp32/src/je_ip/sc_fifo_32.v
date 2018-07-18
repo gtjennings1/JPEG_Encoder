@@ -1,3 +1,66 @@
+//////////////////////////////////////////////////////////////////////
+////                                                              ////
+////  eth_fifo.v                                                  ////
+////                                                              ////
+////  This file is part of the Ethernet IP core project           ////
+////  http://www.opencores.org/project,ethmac                     ////
+////                                                              ////
+////  Author(s):                                                  ////
+////      - Igor Mohor (igorM@opencores.org)                      ////
+////                                                              ////
+////  All additional information is avaliable in the Readme.txt   ////
+////  file.                                                       ////
+////                                                              ////
+//////////////////////////////////////////////////////////////////////
+////                                                              ////
+//// Copyright (C) 2001 Authors                                   ////
+////                                                              ////
+//// This source file may be used and distributed without         ////
+//// restriction provided that this copyright statement is not    ////
+//// removed from the file and that any derivative work contains  ////
+//// the original copyright notice and the associated disclaimer. ////
+////                                                              ////
+//// This source file is free software; you can redistribute it   ////
+//// and/or modify it under the terms of the GNU Lesser General   ////
+//// Public License as published by the Free Software Foundation; ////
+//// either version 2.1 of the License, or (at your option) any   ////
+//// later version.                                               ////
+////                                                              ////
+//// This source is distributed in the hope that it will be       ////
+//// useful, but WITHOUT ANY WARRANTY; without even the implied   ////
+//// warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR      ////
+//// PURPOSE.  See the GNU Lesser General Public License for more ////
+//// details.                                                     ////
+////                                                              ////
+//// You should have received a copy of the GNU Lesser General    ////
+//// Public License along with this source; if not, download it   ////
+//// from http://www.opencores.org/lgpl.shtml                     ////
+////                                                              ////
+//////////////////////////////////////////////////////////////////////
+//
+// CVS Revision History
+//
+// $Log: not supported by cvs2svn $
+// Revision 1.3  2002/04/22 13:45:52  mohor
+// Generic ram or Xilinx ram can be used in fifo (selectable by setting
+// ETH_FIFO_XILINX in eth_defines.v).
+//
+// Revision 1.2  2002/03/25 13:33:04  mohor
+// When clear and read/write are active at the same time, cnt and pointers are
+// set to 1.
+//
+// Revision 1.1  2002/02/05 16:44:39  mohor
+// Both rx and tx part are finished. Tested with wb_clk_i between 10 and 200
+// MHz. Statuses, overrun, control frame transmission and reception still  need
+// to be fixed.
+//
+//
+
+//`include "ethmac_defines.v"
+//`include "timescale.v"
+ 
+//module eth_fifo (data_in, data_out, clk, reset, write, read, clear,
+//                 almost_full, full, almost_empty, empty, cnt);
 `timescale 1ns/1ns
 
 module sc_fifo_32 #(
