@@ -1,5 +1,0 @@
-﻿  jo_jpeg.cpp
-c:\projects\projects\jpeg\c_encoder\jpegencoder_v3\jpeg-encoder\jpeg-encoder\jo_jpeg.cpp(343): warning C4309: 'argument': truncation of constant value
-c:\projects\projects\jpeg\c_encoder\jpegencoder_v3\jpeg-encoder\jpeg-encoder\jo_jpeg.cpp(344): warning C4309: 'argument': truncation of constant value
-  jpeg-encoder.vcxproj -> C:\projects\projects\jpeg\c_encoder\jpegencoder_v3\jpeg-encoder\x64\Debug\jpeg-encoder.exe
-  jpeg-encoder.vcxproj -> C:\projects\projects\jpeg\c_encoder\jpegencoder_v3\jpeg-encoder\x64\Debug\jpeg-encoder.pdb (Partial PDB)
