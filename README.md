@@ -15,11 +15,11 @@ As long as it doesn't cost me too much I will leave our person detection AI serv
   - http://34.205.156.128:8080
 
 Directories:
-  - JPEG_Encoder/doc/je_ip.odt/pdf/docx       (Document on description of JPEG IP)
-  - JPEG_Encoder/syn/je_ip_ov7670_esp32/      (FPGA Source and Lattice Radiant project)
-  - JPEG_Encoder/fw/SPI2UART_esp32            (ESP32 Arduino code to print JPEG data to terminal window)
-  - JPEG_Encoder/fw/SPI2UART_nano             (Arduino Nano code to print JPEG data to terminal window)
-  - JPEG_Encoder/fw/send_file                 (ESP32 Arduino code to send JPEG data to person detection server)
+  - /doc                         (Description of JPEG IP)
+  - /syn/je_ip_ov7670_esp32      (FPGA Source and Lattice Radiant project)
+  - /fw/SPI2UART_esp32           (ESP32 Arduino code to print JPEG data to terminal window)
+  - /fw/SPI2UART_nano            (Arduino Nano code to print JPEG data to terminal window)
+  - /fw/send_file                (ESP32 Arduino code to send JPEG data to person detection server)
 
 Code Sources and Shoutouts:
 JPEG Encoder RTL design was written from scratch, but referenced a JPEG encoder written in C++ from Jon Olick, which is public domain.  Thanks Jon for the great, simple encoder examples!
