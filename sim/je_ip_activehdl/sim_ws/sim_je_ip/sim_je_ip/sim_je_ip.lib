@@ -1,0 +1,104 @@
+timestamp=1532064884845
+
+[~A]
+E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/sim/je_ip_activehdl/sim_ws/sim_je_ip/src/tb_je_ip.v_je_ip.v_jpeg_data_to_spi.v_jpeg_data_writer.v_jpeg_enc.v_jpeg_enc_dct.v_jpeg_enc_mem.v_sc_fifo.v_sc_fifo_32.v_yuyv_to_yuv.v=0*4564*27703
+LastVerilogToplevel=tb_je_ip
+ModifyID=5
+Version=74
+e:/upwork/gnarly_grey/GitHub/JPEG_Encoder/sim/je_ip_activehdl/sim_ws/sim_je_ip/src/jpeg_data_to_spi.v=0*35037*38187
+e:/upwork/gnarly_grey/GitHub/JPEG_Encoder/sim/je_ip_activehdl/sim_ws/sim_je_ip/src/jpeg_enc_mem.v=0*32091*33669
+e:/upwork/gnarly_grey/GitHub/JPEG_Encoder/sim/je_ip_activehdl/sim_ws/sim_je_ip/src/tb_je_ip.v=0*39189*40875
+
+[$root]
+A/$root=22|||1*115692
+BinI32/$root=3*153429
+SLP=3*153533
+Version=10.4.183.6396  (Windows)|00000009789cd3f53752d02d33ca3605000a8e0244|c73a565f2ade592f8ac1c68f484c9216d8d9bdd5963ee0d78b70ed5c31a84777
+
+[je_ip]
+A/je_ip=22|./../src/je_ip.v|22|1*4510
+BinI32/je_ip=3*4841
+R=./../src/je_ip.v|22
+SLP=3*9871
+Version=10.4.183.6396  (Windows)|00000009789cd3f53752d02d33ca3605000a8e0244|4b4cddb6ee623f368f5e7084b20dd59d08358d9862a546a749eeea9ee67bdfa8
+
+[jpeg_data_to_spi]
+A/jpeg_data_to_spi=22|./../src/jpeg_data_to_spi.v|28|1*105961
+BinI32/jpeg_data_to_spi=3*134979
+R=./../src/jpeg_data_to_spi.v|28
+SLP=3*147205
+Version=10.4.183.6396  (Windows)|00000009789cd3f53752d02d33ca3605000a8e0244|fd539dc3d4bf1209192748b0fd07820a85e457a6572d922b7462d1f606448e52bb88a179078e8a610a282e4d81ea4a2e
+
+[jpeg_data_writer]
+A/jpeg_data_writer=22|./../src/jpeg_data_writer.v|28|1*45579
+BinI32/jpeg_data_writer=3*63173
+R=./../src/jpeg_data_writer.v|28
+SLP=3*68766
+Version=10.4.183.6396  (Windows)|00000009789cd3f53752d02d33ca3605000a8e0244|7e6192d92bc88f329f7dc34315aff238099ada7e50673b69bc3ce22d94f477ab3333a254147344f4da068be4858366b5
+
+[jpeg_enc]
+A/jpeg_enc=22|./../src/jpeg_enc.v|29|1*22224
+BinI32/jpeg_enc=3*26377
+R=./../src/jpeg_enc.v|29
+SLP=3*47945
+Version=10.4.183.6396  (Windows)|00000009789cd3f53752d02d33ca3605000a8e0244|c5b7a4341a5d5e6c68083ef163daff3837d41cce7d3717084c2e219b4548e8eba34930b2d72f6f7b31712512a62a93ae
+
+[jpeg_enc_dct]
+A/jpeg_enc_dct=22|./../src/jpeg_enc_dct.v|23|1*72973
+BinI32/jpeg_enc_dct=3*101283
+R=./../src/jpeg_enc_dct.v|23
+SLP=3*110346
+Version=10.4.183.6396  (Windows)|00000009789cd3f53752d02d33ca3605000a8e0244|441177e149bde8d3f8fab0f4bdfec88db9f2806b8e8b38e8e5021162351fafe0e682c7dccb02c436bc07eed689644d45
+
+[jpeg_enc_mem]
+A/jpeg_enc_mem=22|./../src/jpeg_enc_mem.v|23|1*95937
+BinI32/jpeg_enc_mem=3*128400
+R=./../src/jpeg_enc_mem.v|23
+SLP=3*132297
+Version=10.4.183.6396  (Windows)|00000009789cd3f53752d02d33ca3605000a8e0244|73a14e4e2e55075f3bab2c80a6b6eb5c29bd1a0c30598d1831e45e2ea7a29ed9f70138e15f2148d62ae2a6544e234f6c
+
+[sc_fifo]
+A/sc_fifo=22|./../src/sc_fifo.v|66|1*82330
+BinI32/sc_fifo=3*117305
+R=./../src/sc_fifo.v|66
+SLP=3*120502
+Version=10.4.183.6396  (Windows)|00000009789cd3f53752d02d33ca3605000a8e0244|64d9ef11fb593f85d24aa1d7d931cc0126527262ddaa47cb266f3a3c4d9b973a7396d82b75158a0d42d1ba28996360e1
+
+[sc_fifo_32]
+A/sc_fifo_32=22|./../src/sc_fifo_32.v|66|1*50202
+BinI32/sc_fifo_32=3*71568
+R=./../src/sc_fifo_32.v|66
+SLP=3*74809
+Version=10.4.183.6396  (Windows)|00000009789cd3f53752d02d33ca3605000a8e0244|0b4701036f8112c73a43d60eab10f66e0e3535972e406ef078890abe4d4c0d0dc4e33fc33ac3bff1825f6d3bd5810274
+
+[tb_je_ip]
+A/tb_je_ip=22|./../src/tb_je_ip.v|25|1*116066
+BinI32/tb_je_ip=3*153601
+R=./../src/tb_je_ip.v|25
+SLP=3*156054
+Version=10.4.183.6396  (Windows)|00000009789cd3f53752d02d33ca3605000a8e0244|816d85707cbb3ce5aeec5af990937f64f1e6d78b2bd53e5b11638c6f5ec5943ee10c0f0772a6afb14dbfb2b00347323e
+
+[yuyv_to_yuv]
+A/yuyv_to_yuv=22|./../src/yuyv_to_yuv.v|28|1*13516
+BinI32/yuyv_to_yuv=3*11917
+R=./../src/yuyv_to_yuv.v|28
+SLP=3*21558
+Version=10.4.183.6396  (Windows)|00000009789cd3f53752d02d33ca3605000a8e0244|38f959667e5c897f666385348fad7289292549c67e4aca4c3eb9aded9d5d9d67bacb438d1b0a1148365ffc0bc4cc1820
+
+[~MFT]
+0=4|0sim_je_ip.mgf|40875|2204
+1=4|1sim_je_ip.mgf|116066|34651
+3=8|3sim_je_ip.mgf|156054|37099
+
+[~U]
+$root=12|0*38833|
+je_ip=12|0*485|
+jpeg_data_to_spi=12|0*34541|
+jpeg_data_writer=12|0*2193|
+jpeg_enc=12|0*1444|
+jpeg_enc_dct=12|0*3805|
+jpeg_enc_mem=12|0*31650|
+sc_fifo=12|0*4225|
+sc_fifo_32=12|0*2507|
+tb_je_ip=12|0*38999||0x10
+yuyv_to_yuv=12|0*988|

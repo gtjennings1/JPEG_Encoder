@@ -1,0 +1,253 @@
+alog -O2 -sve -msg 5 -v2k5 -work sim_je_ip $dsn/src/jpeg_enc_mem.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# $root top modules: tb_je_ip.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 'jpeg_enc_mem' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.0 [s].
+alog -O2 -sve -msg 5 -v2k5 -work sim_je_ip $dsn/src/jpeg_enc_mem.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# $root top modules: tb_je_ip.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r tb_je_ip
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ns.
+# ELAB2: Elaboration final pass...
+# KERNEL: PLI/VHPI kernel's engine initialization done.
+# PLI: Loading library 'D:\APPS\lscc\radiant\1.0\active-hdl\bin\systf.dll'
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Fatal Error: jpeg_data_to_spi.v (216): Part-select direction [16:24] does not match the declared direction [16:0] for 'jpeg_size'.
+# SLP: Failed : 0.0 [s]
+# KERNEL: Error: E8005 : Kernel process initialization failed.
+# VSIM: Error: Simulation initialization failed.
+alog -O2 -sve -msg 5 -v2k5 -work sim_je_ip $dsn/src/jpeg_data_to_spi.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# $root top modules: tb_je_ip.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r tb_je_ip
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ns.
+# ELAB2: Elaboration final pass...
+# KERNEL: PLI/VHPI kernel's engine initialization done.
+# PLI: Loading library 'D:\APPS\lscc\radiant\1.0\active-hdl\bin\systf.dll'
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Warning: jpeg_data_to_spi.v (222): Indexes of part-select [23:16] are out of range [16:0] of 'jpeg_size'.
+# SLP: Warning: jpeg_data_to_spi.v (234): Replication multiplier is not positive (-1).
+# SLP: Warning: jpeg_data_to_spi.v (242): Replication multiplier is not positive (-9).
+# SLP: Warning: tb_je_ip.v (98): Length of connection (8) does not match the length of port "mem_write_addr" (17) on instance "/tb_je_ip/dut".
+# SLP: Warning: tb_je_ip.v (98): Length of connection (17) does not match the length of port "mem_write_data" (8) on instance "/tb_je_ip/dut".
+# SLP: Elaboration phase ... done : 0.1 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 2.1 [s]
+# SLP: Finished : 2.2 [s]
+# SLP: 0 primitives and 145 (100.00%) other processes in SLP
+# SLP: 368 (95.83%) signals in SLP and 15 (3.91%) interface signals
+# ELAB2: Elaboration final pass complete - time: 2.2 [s].
+# KERNEL: SLP loading done - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6118 kB (elbread=1280 elab2=4704 kernel=133 sdf=0)
+# KERNEL: ASDB file was created in location e:\upwork\gnarly_grey\GitHub\JPEG_Encoder\sim\je_ip_activehdl\sim_ws\sim_je_ip\src\wave.asdb
+#  11:02, 20 July 2018
+#  Simulation has been initialized
+endsim
+# VSIM: Simulation has finished.
+alog -O2 -sve -msg 5 -v2k5 -work sim_je_ip $dsn/src/tb_je_ip.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module je_ip found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: tb_je_ip.
+# $root top modules: tb_je_ip.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r tb_je_ip
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ns.
+# ELAB2: Elaboration final pass...
+# KERNEL: PLI/VHPI kernel's engine initialization done.
+# PLI: Loading library 'D:\APPS\lscc\radiant\1.0\active-hdl\bin\systf.dll'
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Warning: jpeg_data_to_spi.v (222): Indexes of part-select [23:16] are out of range [16:0] of 'jpeg_size'.
+# SLP: Warning: jpeg_data_to_spi.v (234): Replication multiplier is not positive (-1).
+# SLP: Warning: jpeg_data_to_spi.v (242): Replication multiplier is not positive (-9).
+# SLP: Elaboration phase ... done : 0.0 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.6 [s]
+# SLP: Finished : 0.7 [s]
+# SLP: 0 primitives and 145 (100.00%) other processes in SLP
+# SLP: 368 (95.83%) signals in SLP and 15 (3.91%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.8 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6118 kB (elbread=1280 elab2=4704 kernel=133 sdf=0)
+# KERNEL: ASDB file was created in location e:\upwork\gnarly_grey\GitHub\JPEG_Encoder\sim\je_ip_activehdl\sim_ws\sim_je_ip\src\wave.asdb
+#  11:04, 20 July 2018
+#  Simulation has been initialized
+# add wave -noreg {/tb_je_ip/dut/c_state}
+# add wave -noreg {/tb_je_ip/dut/n_state}
+# add wave -noreg {/tb_je_ip/dut/yty_req}
+# add wave -noreg {/tb_je_ip/dut/yty_rd}
+# add wave -noreg {/tb_je_ip/dut/je_wr}
+# add wave -noreg {/tb_je_ip/dut/je_en}
+# add wave -noreg {/tb_je_ip/dut/jedw_addr}
+# add wave -noreg {/tb_je_ip/dut/yty_addr}
+# add wave -noreg {/tb_je_ip/dut/jdts_addr}
+# add wave -noreg {/tb_je_ip/dut/jpeg_size}
+# add wave -noreg {/tb_je_ip/dut/jedw_data}
+# add wave -noreg {/tb_je_ip/dut/je_data}
+# add wave -noreg {/tb_je_ip/dut/yty_data}
+# add wave -noreg {/tb_je_ip/dut/hd_data}
+# add wave -noreg {/tb_je_ip/dut/hd_addr}
+# add wave -noreg {/tb_je_ip/dut/je_rd}
+# add wave -noreg {/tb_je_ip/dut/je_valid}
+# add wave -noreg {/tb_je_ip/dut/je_done}
+# add wave -noreg {/tb_je_ip/dut/jedw_wr}
+# add wave -noreg {/tb_je_ip/dut/yty_ready}
+# add wave -noreg {/tb_je_ip/dut/jedf_empty}
+# add wave -noreg {/tb_je_ip/dut/mem_wr_acc}
+# add wave -noreg {/tb_je_ip/dut/jedf_do}
+# add wave -noreg {/tb_je_ip/dut/jedf_mem_wr}
+# add wave -noreg {/tb_je_ip/dut/je_done_fl}
+# add wave -noreg {/tb_je_ip/dut/clk}
+# add wave -noreg {/tb_je_ip/dut/reset_n}
+# add wave -noreg {/tb_je_ip/dut/conv_start}
+# add wave -noreg {/tb_je_ip/dut/conv_end}
+# add wave -noreg {/tb_je_ip/dut/data_out}
+# add wave -noreg {/tb_je_ip/dut/data_rd}
+# add wave -noreg {/tb_je_ip/dut/mem_write_en}
+# add wave -noreg {/tb_je_ip/dut/mem_write_data}
+# add wave -noreg {/tb_je_ip/dut/mem_write_addr}
+# add wave -noreg {/tb_je_ip/dut/mem_read_data}
+# add wave -noreg {/tb_je_ip/dut/mem_read_addr}
+# 36 signal(s) traced.
+# Waveform file 'untitled.awc' connected to 'e:/upwork/gnarly_grey/GitHub/JPEG_Encoder/sim/je_ip_activehdl/sim_ws/sim_je_ip/src/wave.asdb'.
+# Format saved to file: E:/upwork/gnarly_grey/GitHub/JPEG_Encoder/sim/je_ip_activehdl/sim_ws/sim_je_ip/src/default.do
+# Adding file E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\sim\je_ip_activehdl\sim_ws\sim_je_ip\src\default.do ... Done
+run
+# RUNTIME: Warning: RUNTIME_0048 tb_je_ip.v (57): Cannot open file "default_320x200.yuyv"; no such file or directory.
+# KERNEL: Time: 0 ns,  Iteration: 0,  Instance: /tb_je_ip,  Process: @INITIAL#50_2@.
+# KERNEL: Could not open output file
+# RUNTIME: Info: RUNTIME_0068 tb_je_ip.v (61): $finish called.
+# KERNEL: Time: 0 ns,  Iteration: 0,  Instance: /tb_je_ip,  Process: @INITIAL#50_2@.
+# KERNEL: stopped at time: 0 ns
+# VSIM: Simulation has finished. There are no more test vectors to simulate.
+run
+endsim
+# VSIM: Simulation has finished.
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r tb_je_ip
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ns.
+# ELAB2: Elaboration final pass...
+# KERNEL: PLI/VHPI kernel's engine initialization done.
+# PLI: Loading library 'D:\APPS\lscc\radiant\1.0\active-hdl\bin\systf.dll'
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Finished. Using existing simulator library
+# SLP: 0 primitives and 145 (100.00%) other processes in SLP
+# SLP: 368 (95.83%) signals in SLP and 15 (3.91%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6118 kB (elbread=1280 elab2=4704 kernel=133 sdf=0)
+# KERNEL: ASDB file was created in location e:\upwork\gnarly_grey\GitHub\JPEG_Encoder\sim\je_ip_activehdl\sim_ws\sim_je_ip\src\wave.asdb
+#  11:09, 20 July 2018
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'e:/upwork/gnarly_grey/GitHub/JPEG_Encoder/sim/je_ip_activehdl/sim_ws/sim_je_ip/src/wave.asdb'.
+runscript {E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\sim\je_ip_activehdl\sim_ws\sim_je_ip\src\default.do}
+onerror { resume }
+transcript off
+# 36 signal(s) traced.
+run
+# KERNEL: Conversion Done
+# RUNTIME: Info: RUNTIME_0068 tb_je_ip.v (169): $finish called.
+# KERNEL: Time: 36026845 ns,  Iteration: 0,  Instance: /tb_je_ip,  Process: @ALWAYS#85,157,163_4@.
+# KERNEL: stopped at time: 36026845 ns
+# VSIM: Simulation has finished. There are no more test vectors to simulate.
+endsim
+# VSIM: Simulation has finished.

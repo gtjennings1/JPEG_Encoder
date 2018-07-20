@@ -1,0 +1,76 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=3
+Current Config=compile
+
+[Configurations]
+compile=sim_je_ip
+
+[Library]
+sim_je_ip=.\sim_je_ip\sim_je_ip.lib
+
+[Settings]
+AccessRead=1
+AccessReadWrite=0
+AccessACCB=0
+AccessACCR=0
+AccessReadWriteSLP=0
+AccessReadTopLevel=0
+DisableC=1
+ENABLE_ADV_DATAFLOW=0
+FLOW_TYPE=HDL
+LANGUAGE=VERILOG
+REFRESH_FLOW=1
+FLOWTOOLS=ONLY_IMPL
+ON_SERVERFARM_SYNTH=0
+ON_SERVERFARM_IMPL=0
+ON_SERVERFARM_SIM=0
+DVM_DISPLAY=NO
+fileopenfolder=E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\sim\je_ip_activehdl\sim_ws\sim_je_ip\src\je_ip
+
+[LocalVerilogSets]
+EnableSLP=1
+EnableDebug=0
+
+[LocalVhdlSets]
+CompileWithDebug=0
+
+[$LibMap$]
+sim_je_ip=.
+
+[IMPLEMENTATION]
+UCF=
+
+[Files]
+/tb_je_ip.v=-1
+/je_ip.v=-1
+/jpeg_data_to_spi.v=-1
+/jpeg_data_writer.v=-1
+/jpeg_enc.v=-1
+/jpeg_enc_dct.v=-1
+/jpeg_enc_mem.v=-1
+/sc_fifo.v=-1
+/sc_fifo_32.v=-1
+/yuyv_to_yuv.v=-1
+/default.do=-1
+
+[Files.Data]
+.\src\tb_je_ip.v=Verilog Source Code
+.\src\je_ip.v=Verilog Source Code
+.\src\jpeg_data_to_spi.v=Verilog Source Code
+.\src\jpeg_data_writer.v=Verilog Source Code
+.\src\jpeg_enc.v=Verilog Source Code
+.\src\jpeg_enc_dct.v=Verilog Source Code
+.\src\jpeg_enc_mem.v=Verilog Source Code
+.\src\sc_fifo.v=Verilog Source Code
+.\src\sc_fifo_32.v=Verilog Source Code
+.\src\yuyv_to_yuv.v=Verilog Source Code
+.\src\default.do=Macro
+
+[SpecTracer]
+WindowVisible=0
+[HierarchyViewer]
+HierarchyInformation=
+ShowHide=ShowTopLevel
+Selected=

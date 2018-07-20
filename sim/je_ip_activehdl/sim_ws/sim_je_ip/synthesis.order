@@ -1,0 +1,10 @@
+i<>.\src\tb_je_ip.v
+i<>.\src\je_ip.v
+i<>.\src\jpeg_data_to_spi.v
+i<>.\src\jpeg_data_writer.v
+i<>.\src\jpeg_enc.v
+i<>.\src\jpeg_enc_dct.v
+i<>.\src\jpeg_enc_mem.v
+i<>.\src\sc_fifo.v
+i<>.\src\sc_fifo_32.v
+i<>.\src\yuyv_to_yuv.v

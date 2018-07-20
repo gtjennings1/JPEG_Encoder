@@ -1,0 +1,32 @@
+Active-HDL 10.4.183.6396  2018-07-20 11:09:38
+
+Elaboration top modules:
+Verilog Module                tb_je_ip
+
+
+--------------------------------------------------------------------------------------------
+Verilog Module          | Library   | Info | Compiler Version         | Compilation Options
+--------------------------------------------------------------------------------------------
+tb_je_ip                | sim_je_ip |      | 10.4.183.6396  (Windows) | -O2 -v2k5
+je_ip                   | sim_je_ip |      | 10.4.183.6396  (Windows) | -O2 -v2k5
+yuyv_to_yuv             | sim_je_ip |      | 10.4.183.6396  (Windows) | -O2 -v2k5
+jpeg_enc                | sim_je_ip |      | 10.4.183.6396  (Windows) | -O2 -v2k5
+jpeg_data_writer        | sim_je_ip |      | 10.4.183.6396  (Windows) | -O2 -v2k5
+sc_fifo_32              | sim_je_ip |      | 10.4.183.6396  (Windows) | -O2 -v2k5
+jpeg_data_to_spi        | sim_je_ip |      | 10.4.183.6396  (Windows) | -O2 -v2k5
+sc_fifo                 | sim_je_ip |      | 10.4.183.6396  (Windows) | -O2 -v2k5
+jpeg_enc_mem            | sim_je_ip |      | 10.4.183.6396  (Windows) | -O2 -v2k5
+jpeg_enc_dct            | sim_je_ip |      | 10.4.183.6396  (Windows) | -O2 -v2k5
+--------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------
+Library                 | Comment
+--------------------------------------------------------------------------------------------
+sim_je_ip               | None
+--------------------------------------------------------------------------------------------
+
+
+Simulation Options: asim -O5 +access +r tb_je_ip
+
+
+The performance of simulation is reduced. Version Lattice Edition

@@ -1,0 +1,12 @@
+[Version]
+Version=10.4
+[Designs]
+sim_je_ip=.\sim_je_ip\sim_je_ip.adf
+[Browser]
+sort=order
+mode=none
+[Order]
+order=1
+macro=
+[Expand]
+sim_je_ip=1
