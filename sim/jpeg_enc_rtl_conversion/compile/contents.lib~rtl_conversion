@@ -1,7 +1,0 @@
-70
-~M 0 "" 0 $root
-~A 1 "" 0 $root
-~M 1 "./../src/jpeg_enc.v" 12 jpeg_enc
-~A 1 "./../src/jpeg_enc.v" 12 jpeg_enc
-~M 3 "./../src/jpeg_enc_tb.v" 3 jpeg_enc_tb
-~A 1 "./../src/jpeg_enc_tb.v" 3 jpeg_enc_tb

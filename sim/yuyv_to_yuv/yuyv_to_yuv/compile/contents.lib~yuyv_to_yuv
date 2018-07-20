@@ -1,9 +1,0 @@
-9
-~M 0 "" 0 $root
-~A 1 "" 0 $root
-~M 1 "./../src/sc_fifo.v" 3 sc_fifo
-~A 1 "./../src/sc_fifo.v" 3 sc_fifo
-~M 3 "./../src/tb_yuyv_to_yuv.v" 3 tb_yuyv_to_yuv
-~A 1 "./../src/tb_yuyv_to_yuv.v" 3 tb_yuyv_to_yuv
-~M 3 "./../src/yuyv_to_yuv.v" 7 yuyv_to_yuv
-~A 1 "./../src/yuyv_to_yuv.v" 7 yuyv_to_yuv

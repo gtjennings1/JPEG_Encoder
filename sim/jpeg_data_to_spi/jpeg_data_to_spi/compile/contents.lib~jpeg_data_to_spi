@@ -1,7 +1,0 @@
-4
-~M 0 "" 0 $root
-~A 1 "" 0 $root
-~M 1 "./../src/jpeg_data_to_spi.v" 7 jpeg_data_to_spi
-~A 1 "./../src/jpeg_data_to_spi.v" 7 jpeg_data_to_spi
-~M 3 "./../src/tb_jpeg_data_to_spi.v" 3 tb_jpeg_data_to_spi
-~A 1 "./../src/tb_jpeg_data_to_spi.v" 3 tb_jpeg_data_to_spi

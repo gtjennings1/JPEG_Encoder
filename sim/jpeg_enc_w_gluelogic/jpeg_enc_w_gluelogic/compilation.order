@@ -1,8 +1,0 @@
-.\src\tb_jpeg_enc_w_gluelogic.v
-.\src\jpeg_data_to_spi.v
-.\src\jpeg_data_writer.v
-.\src\sc_fifo.v
-.\src\yuyv_to_yuv.v
-.\src\jpeg_enc.v
-.\src\jpeg_enc_dct.v
-.\src\jpeg_enc_mem.v
