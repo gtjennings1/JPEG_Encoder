@@ -1,7 +1,0 @@
-D:\APPS\lscc\radiant\1.0\synpbase\bin64\syn_nfilter.exe  -link  -top  top  -multisrs  E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\radiant_proj\impl_1\synwork\radiant_proj_impl_1_comp.srs  -osyn  E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\radiant_proj\impl_1\synwork\radiant_proj_impl_1_mult.srs  -log  E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\radiant_proj\impl_1\synlog\radiant_proj_impl_1_multi_srs_gen.srr 
-relcom:D:\APPS\lscc\radiant\1.0\synpbase\bin64\syn_nfilter.exe -link -top top -multisrs ..\synwork\radiant_proj_impl_1_comp.srs -osyn ..\synwork\radiant_proj_impl_1_mult.srs -log ..\synlog\radiant_proj_impl_1_multi_srs_gen.srr
-rc:0 success:1 runtime:0
-file:..\synwork\radiant_proj_impl_1_comp.srs|io:i|time:1528688911|size:79483|exec:0|csum:939EE79B9E9A53B37BB95E44543C82D1
-file:..\synwork\radiant_proj_impl_1_mult.srs|io:o|time:1528688912|size:12220|exec:0|csum:
-file:..\synlog\radiant_proj_impl_1_multi_srs_gen.srr|io:o|time:1528688912|size:577|exec:0|csum:
-file:D:\APPS\lscc\radiant\1.0\synpbase\bin64\syn_nfilter.exe|io:i|time:1513353476|size:8865792|exec:1|csum:8193D59C4FC68D2D01C64740EE074FF8

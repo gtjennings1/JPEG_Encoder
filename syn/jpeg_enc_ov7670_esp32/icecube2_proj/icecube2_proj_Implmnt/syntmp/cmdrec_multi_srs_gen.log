@@ -1,7 +1,0 @@
-D:\APPS\lscc\iCEcube2.2017.08\synpbase\bin64\syn_nfilter.exe  -link  -multisrs  E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\icecube2_proj\icecube2_proj_Implmnt\synwork\icecube2_proj_comp.srs  -osyn  E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\icecube2_proj\icecube2_proj_Implmnt\synwork\icecube2_proj_mult.srs  -log  E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\icecube2_proj\icecube2_proj_Implmnt\synlog\icecube2_proj_multi_srs_gen.srr 
-rc:0 success:1 runtime:0
-file:E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\icecube2_proj\icecube2_proj_Implmnt\synwork\icecube2_proj_comp.srs|io:i|time:1523437969|size:74271|exec:0
-file:E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\icecube2_proj\icecube2_proj_Implmnt\synwork\icecube2_proj_mult.srs|io:o|time:1523437971|size:9933|exec:0
-file:E:\upwork\gnarly_grey\GitHub\JPEG_Encoder\rtl_conversion\syn\jpeg_enc_ov7670_esp32\icecube2_proj\icecube2_proj_Implmnt\synlog\icecube2_proj_multi_srs_gen.srr|io:o|time:1523437971|size:973|exec:0
-file:D:\APPS\lscc\iCEcube2.2017.08\synpbase\bin\syn_nfilter.exe|io:i|time:1517801613|size:3128320|exec:1
-file:D:\APPS\lscc\iCEcube2.2017.08\synpbase\bin64\syn_nfilter.exe|io:i|time:1517801616|size:3947520|exec:1
